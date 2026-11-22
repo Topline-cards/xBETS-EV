@@ -99,9 +99,10 @@ def fetch_sharpapi():
     else:
         key = os.environ["SHARPAPI_KEY"]
         params = {"league": "nfl", "sportsbook": ",".join(config.BET_BOOKS),
-                  "is_live": "false", "limit": 200, "market": ",".join(SHARP_MARKETS)}
+                  "is_live": "false", "limit": 200, "market": ",".join(SHARP_MARKETS),
+                  "is_main_line": "true"}       # drops alt ladders (~85% of rows)
         pages, cursor = [], None
-        for _ in range(60):                      # hard stop
+        for _ in range(40):                      # hard stop (main lines ≈ 11 pages)
             if cursor:
                 params["cursor"] = cursor
             page = _get(f"{SHARP_BASE}/odds", params, {"X-API-Key": key})
