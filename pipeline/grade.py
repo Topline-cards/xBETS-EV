@@ -20,7 +20,11 @@ def grade(now=None):
     if pending:
         wk = stats.load_weekly(season)
         wk = wk.assign(pkey=wk["player_display_name"].map(odds.pkey))
+        sched = stats.load_schedule(season).set_index("game_id")
         for r in pending:
+            if r.get("kind", "prop") != "prop":
+                _grade_game(r, sched)
+                continue
             # Wait until nflverse has published box scores for this team's game,
             # otherwise a missing player would wrongly count as "did not play".
             if r.get("team"):
@@ -44,6 +48,35 @@ def grade(now=None):
             r.update(result=res, actual=actual, profit=prof)
     _save("log.json", log)
     _save("results.json", summarize(log))
+
+
+def _settle(r, win, push=False):
+    if push:
+        r.update(result="push", profit=0.0)
+    elif win:
+        r.update(result="win", profit=round(r["units"] * (r["dec"] - 1), 2))
+    else:
+        r.update(result="loss", profit=-r["units"])
+
+
+def _grade_game(r, sched):
+    if r.get("game_id") not in sched.index:
+        return
+    g = sched.loc[r["game_id"]]
+    if g["home_score"] != g["home_score"]:          # NaN: not final yet
+        return
+    hs, as_ = float(g["home_score"]), float(g["away_score"])
+    if r["kind"] == "total":
+        tot = hs + as_
+        r["actual"] = tot
+        _settle(r, tot > r["line"] if r["side"] == "over" else tot < r["line"], tot == r["line"])
+    elif r["kind"] == "ml":
+        r["actual"] = f"{int(as_)}-{int(hs)}"
+        _settle(r, hs > as_ if r["side"] == "home" else as_ > hs, hs == as_)
+    else:                                            # spread, line = home spread
+        adj = hs + r["line"] - as_
+        r["actual"] = f"{int(as_)}-{int(hs)}"
+        _settle(r, adj > 0 if r["side"] == "home" else adj < 0, adj == 0)
 
 
 def summarize(log):

@@ -18,6 +18,30 @@ ET = ZoneInfo("America/New_York")
 
 
 # ------------------------------------------------------------------ schedule
+TEAM_NICK = {
+    "Cardinals": "ARI", "Falcons": "ATL", "Ravens": "BAL", "Bills": "BUF", "Panthers": "CAR",
+    "Bears": "CHI", "Bengals": "CIN", "Browns": "CLE", "Cowboys": "DAL", "Broncos": "DEN",
+    "Lions": "DET", "Packers": "GB", "Texans": "HOU", "Colts": "IND", "Jaguars": "JAX",
+    "Chiefs": "KC", "Rams": "LA", "Chargers": "LAC", "Raiders": "LV", "Dolphins": "MIA",
+    "Vikings": "MIN", "Patriots": "NE", "Saints": "NO", "Giants": "NYG", "Jets": "NYJ",
+    "Eagles": "PHI", "Steelers": "PIT", "Seahawks": "SEA", "49ers": "SF", "Buccaneers": "TB",
+    "Titans": "TEN", "Commanders": "WAS",
+}
+ABBR_ALIASES = {"LAR": "LA", "JAC": "JAX", "WSH": "WAS", "OAK": "LV", "SD": "LAC"}
+
+
+def team_abbr(name, abbr=None):
+    """'Philadelphia Eagles' / 'PHI Eagles' / 'PHI' -> 'PHI' (nflverse codes)."""
+    if abbr:
+        a = ABBR_ALIASES.get(abbr.upper(), abbr.upper())
+        if a in TEAM_NICK.values():
+            return a
+    for nick, a in TEAM_NICK.items():
+        if name and nick.lower() in name.lower():
+            return a
+    return None
+
+
 def load_schedule(season):
     s = nflr.load_schedules([season]).to_pandas()
     s = s[s["game_type"] == "REG"].copy()
@@ -92,7 +116,10 @@ def defense_vs_position(df):
         .sum()
         .reset_index()
     )
+    # who each defense played that week (the offense team)
+    offense = d.groupby(["opponent_team", "season", "week"])["team"].first()
     allowed, league = {}, {}
+    defense_vs_position.logs = {}
     for key, (col, positions, _) in config.PROP_STATS.items():
         for pos in positions:
             g = per_game[per_game["position"] == pos]
@@ -102,6 +129,13 @@ def defense_vs_position(df):
             league[(pos, key)] = float(by_def.mean())
             for team, v in by_def.items():
                 allowed[(team, pos, key)] = float(v)
+            # per-game log: what this defense allowed to the position each week
+            for team, gg in g.sort_values(["season", "week"]).groupby("opponent_team"):
+                defense_vs_position.logs[(team, pos, key)] = [
+                    {"season": int(r.season), "wk": int(r.week),
+                     "vs": offense.get((team, r.season, r.week), ""),
+                     "v": round(float(getattr(r, col) or 0), 1)}
+                    for r in gg.itertuples()][-8:]
     return allowed, league
 
 
@@ -122,6 +156,8 @@ def player_baselines(df):
             if pos not in positions:
                 continue
             vals = g[col].fillna(0).tolist()
+            log = [{"season": int(s), "wk": int(w), "opp": o, "v": round(float(v or 0), 1)}
+                   for s, w, o, v in zip(g["season"], g["week"], g["opponent_team"], g[col])][-10:]
             recent = vals[-config.BASELINE_GAMES:]
             if len(recent) < config.MIN_GAMES:
                 continue
@@ -140,5 +176,30 @@ def player_baselines(df):
                 "sd": round(float(sd), 1) if sd and sd == sd else None,
                 "games": len(recent),
                 "last10": [round(float(v), 1) for v in vals[-10:]],
+                "log": log,
             })
     return pd.DataFrame(out)
+
+
+# ------------------------------------------------------------------ team ratings
+def team_ratings(sched_cur, sched_prior, week):
+    """
+    Points scored / allowed per game for each team, from final scores.
+    Weeks 1-3 also include last season so there's enough data.
+    Returns ({team: {"pf":, "pa":, "games":}}, league avg points per team-game).
+    """
+    frames = [sched_cur[(sched_cur["week"] < week) & sched_cur["home_score"].notna()]]
+    if week <= 3 and sched_prior is not None:
+        frames.append(sched_prior[sched_prior["home_score"].notna()])
+    g = pd.concat(frames)
+    rows = []
+    for r in g.itertuples():
+        rows.append((r.home_team, r.home_score, r.away_score))
+        rows.append((r.away_team, r.away_score, r.home_score))
+    df = pd.DataFrame(rows, columns=["team", "pf", "pa"])
+    lg = float(df["pf"].mean()) if len(df) else 22.0
+    out = {}
+    for t, d in df.groupby("team"):
+        out[t] = {"pf": round(float(d["pf"].mean()), 1), "pa": round(float(d["pa"].mean()), 1),
+                  "games": int(len(d))}
+    return out, round(lg, 2)

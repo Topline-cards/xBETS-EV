@@ -15,12 +15,12 @@ def norm_cdf(x):
 
 
 def opponent_map(games):
-    """{team: (opponent, game_id, kickoff_iso, home/away)} for this week's games."""
+    """{team: (opponent, game_id, kickoff_iso, home/away, starting_qb_id)}."""
     m = {}
     for _, g in games.iterrows():
         k = g["kickoff"].isoformat()
-        m[g["home_team"]] = (g["away_team"], g["game_id"], k, "home")
-        m[g["away_team"]] = (g["home_team"], g["game_id"], k, "away")
+        m[g["home_team"]] = (g["away_team"], g["game_id"], k, "home", g.get("home_qb_id"))
+        m[g["away_team"]] = (g["home_team"], g["game_id"], k, "away", g.get("away_qb_id"))
     return m
 
 
@@ -31,7 +31,10 @@ def build_projections(baselines, allowed, league, games):
     for r in baselines.itertuples():
         if r.team not in opp:
             continue
-        opp_team, game_id, kickoff, side = opp[r.team]
+        opp_team, game_id, kickoff, side, starter = opp[r.team]
+        # QBs: only the team's named starter for this game (nflverse schedule).
+        if r.position == "QB" and isinstance(starter, str) and starter and r.player_id != starter:
+            continue
         lg = league.get((r.position, r.stat))
         dv = allowed.get((opp_team, r.position, r.stat))
         if not lg or dv is None:
@@ -46,6 +49,7 @@ def build_projections(baselines, allowed, league, games):
             "game_id": game_id, "kickoff": kickoff, "home_away": side,
             "headshot": r.headshot,
             "baseline": r.baseline, "sd": r.sd, "games": r.games, "last10": r.last10,
+            "log": r.log,
             "def_allowed": round(dv, 1), "league_avg": round(lg, 1),
             "matchup_factor": round(factor, 3),
             "matchup_pct": round((factor - 1) * 100, 1),

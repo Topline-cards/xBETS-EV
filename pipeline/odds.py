@@ -18,6 +18,7 @@ import unicodedata
 import requests
 
 from . import config
+from .stats import team_abbr
 
 SHARP_BASE = "https://api.sharpapi.io/api/v1"
 PINN_BASE = "https://pinnwire.com"
@@ -84,7 +85,8 @@ def _fixture(name):
 
 
 # ------------------------------------------------------------------ SharpAPI (DK / FD)
-def fetch_sharpapi_props():
+def fetch_sharpapi():
+    """Returns (props, game_lines) for DK/FD."""
     if FIXTURES:
         pages = [_fixture("sharpapi_odds.json")]
     else:
@@ -103,10 +105,13 @@ def fetch_sharpapi_props():
             cursor = pg["next_cursor"]
             time.sleep(5.5)                      # free plan: 12 req/min
 
-    grouped = {}
+    grouped, games = {}, {}
     for page in pages:
         for o in page.get("data", []):
-            if not o.get("is_player_prop") or o.get("is_live"):
+            if o.get("is_live"):
+                continue
+            if not o.get("is_player_prop"):
+                _add_game_line(games, o)
                 continue
             if o.get("is_active") is False or o.get("is_stale_pregame_price"):
                 continue
@@ -126,7 +131,51 @@ def fetch_sharpapi_props():
                 "main": bool(o.get("is_main_line", True)),
             })
             g[side] = float(o.get("odds_decimal") or 0) or None
-    return list(grouped.values())
+    return list(grouped.values()), list(games.values())
+
+
+GAME_MARKETS = {"moneyline": "ml", "point_spread": "spread", "spread": "spread",
+                "total_points": "total", "total": "total"}
+
+
+def _add_game_line(games, o):
+    """
+    Game lines, normalized to {book, kind, home, away, line, a, b}:
+      ml:     a = home price, b = away price, line None
+      spread: line = HOME spread (e.g. -3.5), a = home price, b = away price
+      total:  line = total, a = over, b = under
+    """
+    kind = GAME_MARKETS.get(o.get("market_type"))
+    if not kind or (o.get("market_segment") or "full_game") != "full_game":
+        return
+    if o.get("is_active") is False or o.get("is_stale_pregame_price"):
+        return
+    if o.get("is_alternate_line"):
+        return
+    home = team_abbr(o.get("home_team"), (o.get("home") or {}).get("abbreviation"))
+    away = team_abbr(o.get("away_team"), (o.get("away") or {}).get("abbreviation"))
+    if not home or not away:
+        return
+    st = (o.get("selection_type") or "").lower()
+    dec = float(o.get("odds_decimal") or 0) or None
+    line = o.get("line")
+    if kind == "ml":
+        if st not in ("home", "away"):
+            return
+        key_line = None
+    elif kind == "spread":
+        if st not in ("home", "away") or line is None:
+            return
+        key_line = float(line) if st == "home" else -float(line)
+    else:
+        if st not in ("over", "under") or line is None:
+            return
+        key_line = float(line)
+    k = (o["sportsbook"], kind, home, away, key_line)
+    g = games.setdefault(k, {"book": o["sportsbook"], "kind": kind, "home": home, "away": away,
+                             "line": key_line, "a": None, "b": None,
+                             "start": o.get("event_start_time"), "deep_link": o.get("deep_link")})
+    g["a" if st in ("home", "over") else "b"] = dec
 
 
 # ------------------------------------------------------------------ PinnWire (Pinnacle)
@@ -176,17 +225,44 @@ def _iter_specials(payload):
             yield sp
 
 
-def fetch_pinnacle_props():
+def _pinn_game_lines(payload):
+    out = []
+    for ev in payload.get("events", []):
+        if ev.get("special") or ev.get("parent_id"):
+            continue
+        if "nfl" not in (ev.get("league_name") or "").lower():
+            continue
+        home, away = team_abbr(ev.get("home")), team_abbr(ev.get("away"))
+        p0 = (ev.get("periods") or {}).get("num_0") or {}
+        if not home or not away or not p0:
+            continue
+        base = {"book": "pinnacle", "home": home, "away": away, "start": ev.get("starts")}
+        ml = p0.get("money_line") or {}
+        if ml.get("home") and ml.get("away"):
+            out.append(dict(base, kind="ml", line=None, a=float(ml["home"]), b=float(ml["away"])))
+        for sp in (p0.get("spreads") or {}).values():
+            if sp.get("home") and sp.get("away") and sp.get("hdp") is not None:
+                out.append(dict(base, kind="spread", line=float(sp["hdp"]),
+                                a=float(sp["home"]), b=float(sp["away"])))
+        for t in (p0.get("totals") or {}).values():
+            if t.get("over") and t.get("under") and t.get("points") is not None:
+                out.append(dict(base, kind="total", line=float(t["points"]),
+                                a=float(t["over"]), b=float(t["under"])))
+    return out
+
+
+def fetch_pinnacle():
+    """Returns (props, game_lines) from one PinnWire call."""
     if FIXTURES:
         payload = _fixture("pinnwire_markets.json")
     else:
         key = os.environ["PINNWIRE_KEY"]
         payload = _get(f"{PINN_BASE}/kit/v1/markets",
                        {"sport_id": 5, "include_specials": 1, "key": key})
-    out = []
+    props = []
     for sp in _iter_specials(payload):
         league = (sp.get("league_name") or "").lower()
         if league and "nfl" not in league:
             continue                                    # skip college etc.
-        out.extend(_parse_pinn_special(sp))
-    return out
+        props.extend(_parse_pinn_special(sp))
+    return props, _pinn_game_lines(payload)

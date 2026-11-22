@@ -37,6 +37,15 @@ MIN_BASELINE = {"pass_yds": 120, "pass_comp": 10, "pass_att": 15, "rush_yds": 12
 # Defense effect is capped so one weird game can't dominate.
 MATCHUP_FACTOR_RANGE = (0.6, 1.6)
 
+# ---------------------------------------------------------------- game lines
+GAME_MODEL_WEIGHT = 0.6      # how much of team scoring form to trust
+HOME_FIELD_PTS = 1.5
+MARGIN_SD = 13.5             # NFL final margins vary ~13-14 pts around expectation
+TOTAL_SD = 13.0
+SPREAD_MIN_EDGE = 2.5        # model must beat the spread by 2.5+ pts
+TOTAL_MIN_EDGE = 3.0         # ...or the total by 3+ pts
+ML_MIN_EDGE_PCT = 5.0        # ...or the book's win % by 5+ points
+
 # ---------------------------------------------------------------- timing
 # Odds checks only run when a game kicks off within this many hours.
 PREGAME_WINDOW_HOURS = 4

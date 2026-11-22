@@ -14,12 +14,13 @@ Everything runs on GitHub. Nothing runs on your computer.
 | Piece | What it does | Where |
 |---|---|---|
 | Stats + schedule | nflverse box scores, free, no key | `pipeline/stats.py` |
-| Cheat sheet | What each defense allows per position vs league average, then player average × matchup (50% weight) | `pipeline/matchups.py` |
-| Odds | DK/FD props from SharpAPI; Pinnacle props from PinnWire | `pipeline/odds.py` |
+| Cheat sheet (props) | What each defense allows per position vs league average, then player average × matchup (50% weight). QBs: only the named starter. | `pipeline/matchups.py` |
+| Cheat sheet (game lines) | Team points scored/allowed vs league average → projected score, margin, total; moneyline/spread/total edges | `pipeline/gamelines.py` |
+| Odds | DK/FD props + ML/spread/total from SharpAPI; Pinnacle from PinnWire (same calls) | `pipeline/odds.py` |
 | EV + units | No-vig Pinnacle fair odds, EV %, quarter-Kelly units | `pipeline/ev.py` |
 | Job | Runs every 10 min; pulls odds only within 4h of a kickoff | `pipeline/build.py`, `.github/workflows/update.yml` |
 | Grading | Grades picks each morning once box scores are posted | `pipeline/grade.py`, `.github/workflows/grade.yml` |
-| App | Static page served by GitHub Pages | `docs/index.html` |
+| App | Static page on GitHub Pages: filters by game / bet type / book; tap any bet for the full breakdown (game logs, defense log, EV and unit math, every book's price) | `docs/index.html` |
 
 **Units:** 1u = 1% of bankroll. Size = ¼ Kelly: `(b·p − (1−p)) / b × 0.25`, where `p` is Pinnacle's fair win probability and `b` is decimal odds − 1. Max 3u per bet and 5u per game (best EV bets get filled first). All settings are in `pipeline/config.py`.
 
