@@ -139,6 +139,36 @@ def defense_vs_position(df):
     return allowed, league
 
 
+def _home_away(game_id, team):
+    """nflverse game_id = SEASON_WEEK_AWAY_HOME."""
+    parts = str(game_id).split("_")
+    if len(parts) >= 4:
+        return "home" if parts[-1] == team else "away"
+    return None
+
+
+def history_vs(season, seasons_back=3):
+    """
+    Player stat lines from the last few seasons, for 'vs this opponent' trends.
+    Returns {(player_id, opponent): [{"season","wk","v": {stat: value}}...]}
+    """
+    df = nflr.load_player_stats(list(range(season - seasons_back + 1, season + 1))).to_pandas()
+    df = df[df["season_type"] == "REG"].sort_values(["season", "week"])
+    cols = {k: c for k, (c, _, _) in config.PROP_STATS.items()}
+    out = {}
+    for r in df.itertuples():
+        out.setdefault((r.player_id, r.opponent_team), []).append(
+            {"season": int(r.season), "wk": int(r.week),
+             "v": {k: round(float(getattr(r, c) or 0), 1) for k, c in cols.items()}})
+    return out
+
+
+def team_logos():
+    t = nflr.load_teams().to_pandas()
+    return {ABBR_ALIASES.get(a, a): logo for a, logo in zip(t["team_abbr"], t["team_logo_espn"])
+            if a not in ("OAK", "SD", "STL", "LAR")}
+
+
 # ------------------------------------------------------------------ player baselines
 def player_baselines(df):
     """
@@ -156,8 +186,10 @@ def player_baselines(df):
             if pos not in positions:
                 continue
             vals = g[col].fillna(0).tolist()
-            log = [{"season": int(s), "wk": int(w), "opp": o, "v": round(float(v or 0), 1)}
-                   for s, w, o, v in zip(g["season"], g["week"], g["opponent_team"], g[col])][-10:]
+            log = [{"season": int(s), "wk": int(w), "opp": o, "v": round(float(v or 0), 1),
+                    "ha": _home_away(gid, t)}
+                   for s, w, o, v, gid, t in zip(g["season"], g["week"], g["opponent_team"],
+                                                 g[col], g["game_id"], g["team"])][-10:]
             recent = vals[-config.BASELINE_GAMES:]
             if len(recent) < config.MIN_GAMES:
                 continue

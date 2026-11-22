@@ -45,6 +45,13 @@ def _after(iso, now):
     return bool(iso) and datetime.fromisoformat(str(iso).replace("Z", "+00:00")) > now
 
 
+def _safe(fn, default):
+    try:
+        return fn()
+    except Exception:
+        return default
+
+
 def best_by(rows, keyfn, scorefn):
     best = {}
     for r in rows:
@@ -70,8 +77,10 @@ def _price_side(p, dec, fair_pair, side_is_a):
     fa, fb = ev.devig_two_way(*fair_pair)
     fp = fa if side_is_a else fb
     e = ev.ev_pct(fp, dec)
-    units, kelly = ev.kelly_units(fp, dec)
+    units, kelly, trusted, note = ev.kelly_units(fp, dec, p.get("kind", "prop"))
     p.update(fair_prob=round(fp, 4), ev_pct=round(e, 2), kelly_pct=kelly, units=units,
+             trusted_prob=trusted, unit_note=note,
+             edge_trust=config.EDGE_TRUST.get(p.get("kind", "prop"), 0.5),
              pinn_dec=round(fair_pair[0] if side_is_a else fair_pair[1], 3))
     return (config.MIN_EV_PCT <= e <= config.MAX_EV_PCT and units > 0
             and p["american"] <= config.MAX_ODDS_AMERICAN)
@@ -99,6 +108,16 @@ def build(now=None, force=False):
     for r in proj:
         r["def_rank"] = matchups.rank_of(allowed, r["opp"], r["position"], r["stat"])
         r["def_log"] = stats.defense_vs_position.logs.get((r["opp"], r["position"], r["stat"]), [])
+    try:
+        hist = stats.history_vs(season)
+    except Exception:
+        hist = {}
+    for r in proj:
+        r["pkey"] = odds.pkey(r["player"])
+        games_vs = hist.get((r["player_id"], r["opp"]), [])
+        # only games before this week
+        r["vs_opp"] = [{"season": h["season"], "wk": h["wk"], "v": h["v"][r["stat"]]}
+                       for h in games_vs if (h["season"], h["wk"]) < (season, week)][-6:]
     proj_by = {(odds.pkey(r["player"]), r["stat"]): r for r in proj}
 
     # ---- game-line model --------------------------------------------
@@ -166,6 +185,7 @@ def build(now=None, force=False):
             info.update(matchups.evaluate_line(pr, b["line"]))
             info.update({k: pr[k] for k in ("projection", "baseline", "matchup_pct",
                                              "matchup_factor", "def_rank", "last10", "log", "def_log",
+                                             "vs_opp", "home_away", "player_id",
                                              "def_allowed", "league_avg", "games")})
         fair = pinn_prop.get((b["pkey"], b["stat"], b["line"]))
         for side in ("over", "under"):
@@ -258,9 +278,12 @@ def build(now=None, force=False):
         "status": status, "settings": {
             "unit_pct": config.UNIT_PCT_OF_BANKROLL, "kelly": config.KELLY_FRACTION,
             "max_units": config.MAX_UNITS_PER_BET, "max_game_units": config.MAX_UNITS_PER_GAME,
+            "max_units_prop": config.MAX_UNITS["prop"], "max_units_line": config.MAX_UNITS["line"],
+            "suspect_ev": config.SUSPECT_EV_PCT, "suspect_units": config.SUSPECT_MAX_UNITS,
             "min_ev": config.MIN_EV_PCT, "matchup_weight": config.MATCHUP_WEIGHT,
             "game_weight": config.GAME_MODEL_WEIGHT, "baseline_games": config.BASELINE_GAMES,
             "home_field": config.HOME_FIELD_PTS},
+        "logos": _safe(stats.team_logos, {}),
         "games": games_list, "game_model": sorted(gm.values(), key=lambda m: m["kickoff"]),
         "combined": combined, "ev": ev_picks, "cheat": cheat_picks, "matchups": top,
     }
@@ -275,6 +298,14 @@ def build(now=None, force=False):
         out["odds_as_of"] = _iso(now)
 
     _save("picks.json", out)
+    # every active player, for the My Players search page
+    players = {}
+    for r in baselines.itertuples():
+        k = odds.pkey(r.player)
+        if k not in players:
+            players[k] = {"pkey": k, "name": r.player, "team": r.team, "pos": r.position,
+                          "headshot": r.headshot}
+    _save("players.json", sorted(players.values(), key=lambda x: x["name"]))
     if want_odds:
         update_log(out, pinn_prop, pinn_game, now)
     _save("state.json", state)

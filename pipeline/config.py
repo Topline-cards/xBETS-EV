@@ -8,10 +8,18 @@ BET_BOOKS = ["draftkings", "fanduel"]
 
 # ---------------------------------------------------------------- sizing
 UNIT_PCT_OF_BANKROLL = 1.0   # 1 unit = 1% of bankroll
-KELLY_FRACTION = 0.25        # quarter-Kelly
-MAX_UNITS_PER_BET = 3.0
-MAX_UNITS_PER_GAME = 5.0     # props in one game are correlated
-MIN_UNITS = 0.1              # anything smaller is dropped
+KELLY_FRACTION = 0.25        # quarter-Kelly, applied to the *trusted* edge below
+# How much of Pinnacle's edge we trust. Pinnacle's main lines are very sharp;
+# its props are softer (lower limits), so only half the gap counts there.
+EDGE_TRUST = {"prop": 0.5, "ml": 0.8, "spread": 0.8, "total": 0.8}
+MAX_UNITS = {"prop": 1.5, "line": 2.0}   # per bet
+MAX_UNITS_PER_BET = 2.0      # absolute ceiling (shown in the app)
+MAX_UNITS_PER_GAME = 3.0     # bets in one game are correlated
+UNIT_STEP = 0.25             # recommend 0.25u, 0.5u, 0.75u, ...
+MIN_UNITS = 0.25             # anything smaller is dropped
+# EV this big usually means a stale or mismatched line, so size it small.
+SUSPECT_EV_PCT = 12.0
+SUSPECT_MAX_UNITS = 0.5
 
 # ---------------------------------------------------------------- EV filter
 MIN_EV_PCT = 2.0             # only show bets at least 2% +EV

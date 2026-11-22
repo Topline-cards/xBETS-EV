@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14151b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>xBETS · My Players</title>
+<style>
+  :root{--bg:#14151b;--panel:#1d1f27;--panel2:#252833;--line:#2f3240;--text:#eceef4;--dim:#9298a8;--dimmer:#646a7a;
+    --cyan:#4fd1e8;--green:#3ecf8e;--red:#ef6b6b}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif}
+  header{position:sticky;top:0;z-index:5;background:rgba(20,21,27,.97);backdrop-filter:blur(10px);
+    padding:calc(env(safe-area-inset-top) + 10px) 14px 12px;border-bottom:1px solid var(--line)}
+  .top{display:flex;align-items:center;justify-content:space-between}
+  .back{color:var(--cyan);text-decoration:none;font-weight:600;font-size:15px}
+  h1{font-size:19px;margin:8px 0 10px}
+  .search{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:11px;
+    padding:11px 12px;font:16px/1.2 inherit;outline:none}
+  .search:focus{border-color:var(--cyan)}
+  .seg{display:flex;gap:6px;margin-top:10px}
+  .seg button{flex:1;border:1px solid var(--line);background:var(--panel);color:var(--dim);border-radius:9px;padding:8px 6px;font:600 13px/1 inherit;cursor:pointer}
+  .seg button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+  main{padding:10px 12px calc(env(safe-area-inset-bottom) + 40px);max-width:720px;margin:0 auto}
+  .help{font-size:12.5px;color:var(--dim);line-height:1.5;margin:4px 2px 12px}
+  .help b{color:var(--text)}
+  .p{display:flex;align-items:center;gap:11px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 10px;margin-bottom:7px}
+  .p.up{border-color:#3b6b55}.p.down{border-color:#6b3b3b;opacity:.8}
+  .p img,.p .ph{width:40px;height:40px;border-radius:50%;object-fit:cover;background:var(--panel2);flex:0 0 40px}
+  .p .ph{display:flex;align-items:center;justify-content:center;color:var(--dim);font:700 12px/1 inherit}
+  .who{flex:1;min-width:0}
+  .nm{font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sub{font-size:12px;color:var(--dim)}
+  .btn{border:1px solid var(--line);background:var(--panel2);border-radius:10px;width:44px;height:38px;font-size:18px;cursor:pointer;filter:grayscale(1);opacity:.55}
+  .btn.on{filter:none;opacity:1}
+  .btn.upb.on{background:#173627;border-color:var(--green)}
+  .btn.dnb.on{background:#3a1b1b;border-color:var(--red)}
+  .empty{text-align:center;color:var(--dim);padding:30px 10px}
+  .count{font-size:12px;color:var(--dimmer);margin:6px 2px}
+</style>
+</head>
+<body>
+<header>
+  <div class="top"><a class="back" href="index.html">‹ Picks</a><span class="sub" id="tally"></span></div>
+  <h1>My Players</h1>
+  <input class="search" id="q" type="search" placeholder="Search a player or team (e.g. Allen, BUF)" autocomplete="off">
+  <div class="seg" id="seg">
+    <button class="on" data-f="all">All</button>
+    <button data-f="up">👍 Love list</button>
+    <button data-f="down">👎 No-bet list</button>
+  </div>
+</header>
+<main>
+  <div class="help"><b>👍 Love:</b> whenever this player has a good matchup or EV, they're pinned to the top of every list with a FAV badge.<br>
+    <b>👎 No bet:</b> they're hidden everywhere. Saved on this device.</div>
+  <div id="list"></div>
+</main>
+<script>
+const KEY = "xbets_prefs";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const norm = s => String(s || "").normalize("NFKD").replace(/[^\w\s]/g, " ").toLowerCase().replace(/\s+/g, " ").trim();
+let players = [], filter = "all";
+const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || "{}"); } catch(e) { return {}; } };
+const save = p => { try { localStorage.setItem(KEY, JSON.stringify(p)); } catch(e) {} };
+
+function render(){
+  const pf = load(), q = norm(document.getElementById("q").value);
+  // players saved earlier but not in this week's list (injured, bye) still show in the lists
+  const known = new Set(players.map(p => p.pkey));
+  const extra = Object.entries(pf).filter(([k]) => !known.has(k)).map(([k, v]) => ({pkey: k, name: v.name || k, team: v.team || "", pos: v.pos || ""}));
+  let list = players.concat(extra).filter(p => {
+    const v = (pf[p.pkey] || {}).v;
+    if (filter !== "all" && v !== filter) return false;
+    if (!q) return filter !== "all" || true;
+    return norm(p.name).includes(q) || norm(p.team) === q || norm(p.pos) === q;
+  });
+  if (filter === "all" && !q) list = list.filter(p => (pf[p.pkey] || {}).v).concat(list.filter(p => !(pf[p.pkey] || {}).v));
+  const ups = Object.values(pf).filter(v => v.v === "up").length, dns = Object.values(pf).filter(v => v.v === "down").length;
+  document.getElementById("tally").textContent = `👍 ${ups} · 👎 ${dns}`;
+  const shown = list.slice(0, 150);
+  document.getElementById("list").innerHTML = !shown.length
+    ? `<div class="empty">${filter === "up" ? "No players on your love list yet." : filter === "down" ? "Your no-bet list is empty." : "No players match."}</div>`
+    : `<div class="count">${list.length > 150 ? "Showing 150 of " + list.length + ". Keep typing to narrow it down." : list.length + " players"}</div>` +
+      shown.map(p => { const v = (pf[p.pkey] || {}).v;
+        return `<div class="p ${v || ""}">${p.headshot ? `<img src="${esc(p.headshot)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : `<div class="ph">${esc(p.pos)}</div>`}
+          <div class="who"><div class="nm">${esc(p.name)}</div><div class="sub">${esc(p.pos)}${p.team ? " · " + esc(p.team) : ""}</div></div>
+          <button class="btn upb ${v === "up" ? "on" : ""}" data-k="${esc(p.pkey)}" data-v="up" aria-label="Love">👍</button>
+          <button class="btn dnb ${v === "down" ? "on" : ""}" data-k="${esc(p.pkey)}" data-v="down" aria-label="No bet">👎</button></div>`; }).join("");
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest(".btn");
+  if (b) {
+    const pf = load(), k = b.dataset.k, v = b.dataset.v;
+    const pl = players.find(p => p.pkey === k) || {};
+    if ((pf[k] || {}).v === v) delete pf[k];          // tap again to clear
+    else pf[k] = {v, name: pl.name || (pf[k] || {}).name, team: pl.team || (pf[k] || {}).team, pos: pl.pos || (pf[k] || {}).pos};
+    save(pf); render(); return;
+  }
+  const s = e.target.closest("#seg button");
+  if (s) { filter = s.dataset.f; document.querySelectorAll("#seg button").forEach(x => x.classList.toggle("on", x === s)); render(); }
+});
+document.getElementById("q").addEventListener("input", render);
+fetch("data/players.json?t=" + Date.now()).then(r => r.json()).then(d => { players = d; render(); })
+  .catch(() => { players = []; render(); });
+</script>
+</body>
+</html>

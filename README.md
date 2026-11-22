@@ -22,7 +22,13 @@ Everything runs on GitHub. Nothing runs on your computer.
 | Grading | Grades picks each morning once box scores are posted | `pipeline/grade.py`, `.github/workflows/grade.yml` |
 | App | Static page on GitHub Pages: filters by game / bet type / book; tap any bet for the full breakdown (game logs, defense log, EV and unit math, every book's price) | `docs/index.html` |
 
-**Units:** 1u = 1% of bankroll. Size = ¼ Kelly: `(b·p − (1−p)) / b × 0.25`, where `p` is Pinnacle's fair win probability and `b` is decimal odds − 1. Max 3u per bet and 5u per game (best EV bets get filled first). All settings are in `pipeline/config.py`.
+**Recommended units:** 1u = 1% of bankroll. Sizing is deliberately cautious:
+1. Only part of the gap between Pinnacle's fair price and the book counts (50% on props, 80% on game lines).
+2. Quarter-Kelly on that trusted chance.
+3. Capped at 1.5u on props and 2u on game lines, 3u per game. EV over 12% (usually a stale line) is held to 0.5u.
+4. Rounded to 0.25u steps. Most plays land at 0.25–1u.
+
+**My Players:** `docs/players.html`. Thumbs-up players get pinned to the top of every list; thumbs-down players are hidden. Saved in the browser on each device.
 
 **API budget:** PinnWire's free plan allows 100 calls/day. The job makes one call per run, only inside the 4-hour pregame window, and stops at 90/day.
 
