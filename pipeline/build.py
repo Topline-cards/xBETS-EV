@@ -140,15 +140,25 @@ def build(now=None, force=False):
             status.update(book_props=len(b_props), book_game_lines=len(b_games))
         except Exception as e:                     # keep the app alive
             status["book_error"] = str(e)[:200]
-        if fixtures or state["pinn_calls"] < PINN_DAILY_CAP:
+        cache = _load("pinn_cache.json", {})
+        age_min = ((now - datetime.fromisoformat(cache["at"])).total_seconds() / 60
+                   if cache.get("at") else 1e9)
+        fresh_enough = age_min < config.PINN_REFRESH_MIN and not force
+        if fixtures or (not fresh_enough and state["pinn_calls"] + 2 <= PINN_DAILY_CAP):
             try:
                 p_props, p_games = odds.fetch_pinnacle()
-                state["pinn_calls"] += 0 if fixtures else 1
+                state["pinn_calls"] += 0 if fixtures else 2
+                if not fixtures:
+                    _save("pinn_cache.json", {"at": _iso(now), "props": p_props, "games": p_games})
                 status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games))
             except Exception as e:
                 status["pinnacle_error"] = str(e)[:200]
-        else:
-            status["pinnacle_error"] = "daily PinnWire budget used"
+        if not p_props and not p_games and cache.get("at") and age_min < 90:
+            p_props, p_games = cache.get("props", []), cache.get("games", [])
+            status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games),
+                          pinnacle_as_of=cache["at"])
+        if state["pinn_calls"] + 2 > PINN_DAILY_CAP and not fresh_enough and not fixtures:
+            status["pinnacle_note"] = "daily PinnWire budget used; using last Pinnacle prices"
 
     pinn_prop = {(p["pkey"], p["stat"], p["line"]): p for p in p_props
                  if p["over"] and p["under"]}

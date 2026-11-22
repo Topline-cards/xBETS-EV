@@ -85,6 +85,13 @@ def _fixture(name):
 
 
 # ------------------------------------------------------------------ SharpAPI (DK / FD)
+# Only ask for markets the app uses (the full feed is mostly 1st-half junk).
+SHARP_MARKETS = [
+    "moneyline", "point_spread", "total_points",
+    "player_passing_yards", "player_passing_completions", "player_passing_attempts",
+    "player_rushing_yards", "player_rushing_attempts", "player_total_rush_attempts",
+    "player_receiving_yards", "player_receptions", "player_total_receptions",
+]
 def fetch_sharpapi():
     """Returns (props, game_lines) for DK/FD."""
     if FIXTURES:
@@ -92,7 +99,7 @@ def fetch_sharpapi():
     else:
         key = os.environ["SHARPAPI_KEY"]
         params = {"league": "nfl", "sportsbook": ",".join(config.BET_BOOKS),
-                  "is_live": "false", "limit": 200}
+                  "is_live": "false", "limit": 200, "market": ",".join(SHARP_MARKETS)}
         pages, cursor = [], None
         for _ in range(60):                      # hard stop
             if cursor:
@@ -117,7 +124,9 @@ def fetch_sharpapi():
                 continue
             if (o.get("market_segment") or "full_game") != "full_game":
                 continue
-            stat = stat_from_text(o.get("stat_category") or o.get("market_type"))
+            if o.get("is_alternate_line"):
+                continue                     # main line only (skip alt ladders)
+            stat = stat_from_text(o.get("market_type") or o.get("stat_category"))
             if not stat or o.get("line") is None or not o.get("player_name"):
                 continue
             side = (o.get("selection_type") or o.get("selection") or "").lower()
@@ -182,33 +191,44 @@ def _add_game_line(games, o):
 _PAREN = re.compile(r"^(.*?)\s*\((.*?)\)\s*$")
 
 
-def _parse_pinn_special(sp):
+def _split_pinn_name(sp):
     """
-    Pinnacle names props like 'Josh Allen (Passing Yards)' with Over/Under
-    outcomes. Returns list of normalized rows.
+    'Tony Pollard Total Receiving Yards' (special_units 'Receiving Yards')
+      -> ('Tony Pollard', 'Receiving Yards')
+    Also handles the older 'Josh Allen (Passing Yards)' style.
     """
-    name = sp.get("special") or sp.get("name") or ""
+    name = (sp.get("special") or sp.get("name") or "").strip()
+    units = (sp.get("special_units") or "").strip()
     m = _PAREN.match(name)
-    player, stat_txt = (m.group(1), m.group(2)) if m else (None, name)
+    if m:
+        return m.group(1), m.group(2)
+    if units:
+        m = re.match(r"^(.*?)\s+(?:Total\s+)?" + re.escape(units) + r"$", name, re.I)
+        if m:
+            return m.group(1), units
+    m = re.match(r"^(.*?)\s+Total\s+(.*)$", name)
+    if m:
+        return m.group(1), m.group(2)
+    return None, name
+
+
+def _parse_pinn_special(sp):
+    """Pinnacle player props -> normalized rows (Over/Under with a line)."""
+    if sp.get("special_category") and sp.get("special_category") != "Player Props":
+        return []
+    player, stat_txt = _split_pinn_name(sp)
     stat = stat_from_text(stat_txt)
-    if not stat:
+    if not stat or not player:
         return []
     rows = {}
-    markets = sp.get("special_markets") or {}
-    period = markets.get("num_0") or []
-    for mk in period:
+    for mk in (sp.get("special_markets") or {}).get("num_0") or []:
         for pr in mk.get("prices", []):
             side = (pr.get("name") or "").strip().lower()
-            if side not in ("over", "under"):
-                continue
-            if pr.get("points") is None or not pr.get("price"):
-                continue
-            pl = player or pr.get("participant_name")
-            if not pl:
+            if side not in ("over", "under") or pr.get("points") is None or not pr.get("price"):
                 continue
             line = float(pr["points"])
-            r = rows.setdefault((pkey(pl), line), {
-                "book": "pinnacle", "player": pl, "pkey": pkey(pl), "stat": stat,
+            r = rows.setdefault((pkey(player), line), {
+                "book": "pinnacle", "player": player, "pkey": pkey(player), "stat": stat,
                 "line": line, "over": None, "under": None,
                 "start": sp.get("starts"), "deep_link": None, "main": True,
             })
@@ -230,7 +250,7 @@ def _pinn_game_lines(payload):
     for ev in payload.get("events", []):
         if ev.get("special") or ev.get("parent_id"):
             continue
-        if "nfl" not in (ev.get("league_name") or "").lower():
+        if (ev.get("league_name") or "").strip().upper() != "NFL":
             continue
         home, away = team_abbr(ev.get("home")), team_abbr(ev.get("away"))
         p0 = (ev.get("periods") or {}).get("num_0") or {}
@@ -252,17 +272,24 @@ def _pinn_game_lines(payload):
 
 
 def fetch_pinnacle():
-    """Returns (props, game_lines) from one PinnWire call."""
+    """
+    Returns (props, game_lines). Two PinnWire calls:
+      /kit/v1/markets?include_specials=1   -> player props
+      /kit/v1/prematch/fixtures            -> moneyline / spreads / totals
+    """
     if FIXTURES:
         payload = _fixture("pinnwire_markets.json")
+        main = _fixture("pinnwire_fixtures.json") if os.path.exists(
+            os.path.join(FIXTURES, "pinnwire_fixtures.json")) else payload
     else:
         key = os.environ["PINNWIRE_KEY"]
         payload = _get(f"{PINN_BASE}/kit/v1/markets",
                        {"sport_id": 5, "include_specials": 1, "key": key})
+        main = _get(f"{PINN_BASE}/kit/v1/prematch/fixtures", {"sport_id": 5, "key": key})
     props = []
     for sp in _iter_specials(payload):
         league = (sp.get("league_name") or "").lower()
         if league and "nfl" not in league:
             continue                                    # skip college etc.
         props.extend(_parse_pinn_special(sp))
-    return props, _pinn_game_lines(payload)
+    return props, _pinn_game_lines(main)

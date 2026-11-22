@@ -66,6 +66,9 @@ INACTIVE_ROSTER_STATUS = {"RES", "CUT", "RET", "DEV", "INA", "EXE", "SUS", "PUP"
 # ---------------------------------------------------------------- timing
 # Odds checks only run when a game kicks off within this many hours.
 PREGAME_WINDOW_HOURS = 4
+# Pinnacle refresh costs 2 PinnWire calls; refresh at most this often
+# (DK/FD still refresh every run). 20 min keeps a full Sunday under 100 calls.
+PINN_REFRESH_MIN = 20
 
 # ---------------------------------------------------------------- stats
 # Prop stat -> (nflverse column, positions it applies to, label)

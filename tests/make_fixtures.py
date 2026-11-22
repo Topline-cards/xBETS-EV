@@ -17,12 +17,13 @@ pr = matchups.build_projections(stats.player_baselines(b), al, lg, g)
 label = {"pass_yds": "passing_yards", "pass_comp": "pass_completions", "pass_att": "pass_attempts",
          "rush_yds": "rushing_yards", "rush_att": "rushing_attempts",
          "rec_yds": "receiving_yards", "receptions": "receptions"}
-pinn_label = {"pass_yds": "Passing Yards", "pass_comp": "Completions", "pass_att": "Pass Attempts",
-              "rush_yds": "Rushing Yards", "rush_att": "Rushing Attempts",
+# PinnWire's real wording (from the Debug feeds sample)
+pinn_label = {"pass_yds": "Passing Yards", "pass_comp": "Pass Completions", "pass_att": "Pass Attempts",
+              "rush_yds": "Rushing Yards", "rush_att": "Rush Attempts",
               "rec_yds": "Receiving Yards", "receptions": "Receptions"}
 def am(p):  # fair prob + vig -> decimal
     return round(1 / p, 3)
-sharp, specials = [], []
+sharp, specials, mains = [], [], []
 for r in pr:
     if random.random() < 0.35: continue
     line = round(r["baseline"] * random.uniform(0.92, 1.05) * 2) / 2 + 0.0
@@ -31,8 +32,8 @@ for r in pr:
     # pinnacle: ~2.5% vig
     po, pu = am(true_over * 1.025), am((1 - true_over) * 1.025)
     specials.append({"event_id": abs(hash(r["player"] + r["stat"])) % 10**9, "parent_id": 1,
-        "league_name": "NFL", "starts": r["kickoff"], "special": f"{r['player']} ({pinn_label[r['stat']]})",
-        "special_category": "Player Props",
+        "league_name": "NFL", "starts": r["kickoff"], "special": f"{r['player']} Total {pinn_label[r['stat']]}",
+        "special_category": "Player Props", "special_units": pinn_label[r["stat"]],
         "special_markets": {"num_0": [{"type": "total", "prices": [
             {"name": "Over", "points": line, "price": po}, {"name": "Under", "points": line, "price": pu}]}]}})
     for book in ("draftkings", "fanduel"):
@@ -54,7 +55,7 @@ for _, gm in g.iterrows():
     hs = -float(gm["spread_line"] or 0); tot = float(gm["total_line"] or 44.5)
     p_home = norm_cdf(-hs / 13.5)
     ev_id = abs(hash(gm["game_id"])) % 10**9
-    specials.append({"event_id": ev_id, "league_name": "NFL", "home": f"X {NAMES[h]}", "away": f"Y {NAMES[a]}",
+    mains.append({"event_id": ev_id, "league_name": "NFL", "home": f"X {NAMES[h]}", "away": f"Y {NAMES[a]}",
         "starts": gm["kickoff"].isoformat(), "parent_id": None, "periods": {"num_0": {"number": 0,
         "money_line": {"home": am(p_home * 1.02), "away": am((1 - p_home) * 1.02)},
         "spreads": {str(hs): {"hdp": hs, "home": 1.95, "away": 1.95, "max": 5000}},
@@ -77,4 +78,6 @@ json.dump({"_note": "FAKE TEST DATA", "data": sharp, "pagination": {"has_more": 
           open("tests/fixtures/sharpapi_odds.json", "w"))
 json.dump({"_note": "FAKE TEST DATA", "sport_id": 5, "events": specials},
           open("tests/fixtures/pinnwire_markets.json", "w"))
+json.dump({"_note": "FAKE TEST DATA", "sport_id": 5, "events": mains},
+          open("tests/fixtures/pinnwire_fixtures.json", "w"))
 print(len(sharp), "book rows,", len(specials), "pinnacle props")
