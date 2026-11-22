@@ -31,6 +31,18 @@ def main():
         evs = payload.get("events", [])
         nfl = [e for e in evs if "nfl" in str(e.get("league_name", "")).lower()]
         props = [e for e in nfl if e.get("special_category") == "Player Props"]
+        main = odds._get(f"{odds.PINN_BASE}/kit/v1/markets", {"sport_id": 5, "key": key})
+        mev = main.get("events", [])
+        out["pinnwire_no_specials"] = {
+            "n_events": len(mev),
+            "league_counts": collections.Counter(e.get("league_name") for e in mev).most_common(10),
+            "with_periods": sum(1 for e in mev if e.get("periods")),
+            "nfl_sample": trim(next((e for e in mev if "nfl" in str(e.get("league_name", "")).lower()), None)),
+        }
+        fx = odds._get(f"{odds.PINN_BASE}/kit/v1/prematch/fixtures", {"sport_id": 5, "key": key})
+        fev = fx.get("events", fx.get("fixtures", [])) if isinstance(fx, dict) else fx
+        out["pinnwire_fixtures"] = {"top_keys": list(fx.keys()) if isinstance(fx, dict) else None,
+                                    "n": len(fev or []), "sample": trim((fev or [None])[0])}
         out["pinnwire"] = {
             "n_events": len(evs), "n_nfl": len(nfl),
             "category_counts": collections.Counter(e.get("special_category") for e in nfl).most_common(20),
