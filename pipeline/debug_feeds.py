@@ -26,23 +26,19 @@ def main():
     # ---- PinnWire
     try:
         key = os.environ["PINNWIRE_KEY"]
-        for name, params in {
-            "football_specials_flat": {"sport_id": 5, "include_specials": 1},
-            "football_specials_nested": {"sport_id": 5, "include_specials": "nested"},
-        }.items():
-            payload = odds._get(f"{odds.PINN_BASE}/kit/v1/markets", dict(params, key=key))
-            evs = payload.get("events", []) if isinstance(payload, dict) else []
-            out[f"pinnwire_{name}"] = {
-                "top_level_keys": list(payload.keys()) if isinstance(payload, dict) else str(type(payload)),
-                "n_events": len(evs),
-                "league_counts": collections.Counter(e.get("league_name") for e in evs).most_common(15),
-                "special_names_sample": [e.get("special") or e.get("name") for e in evs
-                                         if e.get("special") or e.get("special_markets")][:25],
-                "nfl_main_event_sample": trim(next((e for e in evs if "nfl" in str(e.get("league_name", "")).lower()
-                                                    and not e.get("parent_id")), None)),
-                "nfl_special_sample": trim(next((e for e in evs if e.get("special_markets")
-                                                 or e.get("specials")), None)),
-            }
+        payload = odds._get(f"{odds.PINN_BASE}/kit/v1/markets",
+                            {"sport_id": 5, "include_specials": 1, "key": key})
+        evs = payload.get("events", [])
+        nfl = [e for e in evs if "nfl" in str(e.get("league_name", "")).lower()]
+        props = [e for e in nfl if e.get("special_category") == "Player Props"]
+        out["pinnwire"] = {
+            "n_events": len(evs), "n_nfl": len(nfl),
+            "category_counts": collections.Counter(e.get("special_category") for e in nfl).most_common(20),
+            "with_periods": sum(1 for e in nfl if e.get("periods")),
+            "main_event_sample": trim(next((e for e in nfl if e.get("periods")), None)),
+            "player_prop_names": sorted({" ".join(e.get("special", "").split()[-2:]) for e in props})[:60],
+            "player_prop_samples": [trim(e) for e in props[:3]],
+        }
     except Exception as e:
         out["pinnwire_error"] = str(e)[:300]
 
@@ -60,8 +56,16 @@ def main():
             "game_line_sample": [trim(r) for r in rows if not r.get("is_player_prop")][:4],
             "prop_sample": [trim(r) for r in rows if r.get("is_player_prop")][:2],
         }
-        mk = odds._get(f"{odds.SHARP_BASE}/markets", {"sport": "football"}, {"X-API-Key": key})
-        out["sharpapi_markets"] = trim(mk)
+        mk = odds._get(f"{odds.SHARP_BASE}/markets", {"sport": "football", "limit": 500}, {"X-API-Key": key})
+        ids = [m.get("id") for m in mk.get("data", [])]
+        out["sharpapi_market_ids"] = [i for i in ids if i and ("player" in i or i in
+                                      ("moneyline", "point_spread", "total_points", "spread", "total"))]
+        out["sharpapi_n_markets"] = len(ids)
+        pp = odds._get(f"{odds.SHARP_BASE}/odds",
+                       {"league": "nfl", "sportsbook": "draftkings", "is_live": "false", "limit": 5,
+                        "market": "player_receiving_yards,moneyline,point_spread,total_points"},
+                       {"X-API-Key": key})
+        out["sharpapi_filtered_sample"] = [trim(r) for r in pp.get("data", [])][:5]
     except Exception as e:
         out["sharpapi_error"] = str(e)[:300]
 
