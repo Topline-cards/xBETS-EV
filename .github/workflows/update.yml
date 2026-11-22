@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write          # lets the game-day loop start its own next run
 
 concurrency:
   group: picks
@@ -20,7 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 350    # game-day loop runs for hours; hands off before GitHub's 6h limit
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,16 +29,12 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Build picks
+      - name: Build picks (loops on game days)
         env:
           SHARPAPI_KEY: ${{ secrets.SHARPAPI_KEY }}
           PINNWIRE_KEY: ${{ secrets.PINNWIRE_KEY }}
-        run: python -m pipeline.build ${{ inputs.force && '--force' || '' }}
-      - name: Save results
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "xbets-bot"
           git config user.email "xbets-bot@users.noreply.github.com"
-          git add docs/data
-          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
-          git commit -m "Update picks $(date -u +%Y-%m-%dT%H:%MZ)"
-          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
+          python -m pipeline.loop ${{ inputs.force && '--force' || '' }}
