@@ -1,15 +1,16 @@
 {
- "generated_at": "2026-11-22T15:26:56-05:00",
+ "generated_at": "2026-11-22T15:27:51-05:00",
  "season": 2026,
  "week": 11,
  "stats_mode": "current_only",
  "next_kickoff": "2026-11-22T16:05:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_props": 377,
-  "book_game_lines": 33,
+  "book_props": 375,
+  "book_game_lines": 32,
   "pinnacle_props": 472,
-  "pinnacle_game_lines": 134
+  "pinnacle_game_lines": 134,
+  "pinnacle_as_of": "2026-11-22T15:26:56-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -67,13 +68,13 @@
    "kickoff": "2026-11-22T16:05:00-05:00"
   },
   {
-   "game_id": "2026_11_LV_DEN",
-   "label": "LV @ DEN",
+   "game_id": "2026_11_JAX_NYG",
+   "label": "JAX @ NYG",
    "kickoff": "2026-11-22T16:25:00-05:00"
   },
   {
-   "game_id": "2026_11_PIT_PHI",
-   "label": "PIT @ PHI",
+   "game_id": "2026_11_LV_DEN",
+   "label": "LV @ DEN",
    "kickoff": "2026-11-22T16:25:00-05:00"
   },
   {
@@ -107,6 +108,24 @@
    "home_win_prob": 0.46
   },
   {
+   "game_id": "2026_11_JAX_NYG",
+   "home": "NYG",
+   "away": "JAX",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "proj_home": 19.4,
+   "proj_away": 25.4,
+   "proj_margin": -6.0,
+   "proj_total": 44.8,
+   "home_pf": 22.6,
+   "home_pa": 21.8,
+   "away_pf": 29.9,
+   "away_pa": 16.0,
+   "home_games": 9,
+   "away_games": 9,
+   "league_avg": 23.08,
+   "home_win_prob": 0.327
+  },
+  {
    "game_id": "2026_11_LV_DEN",
    "home": "DEN",
    "away": "LV",
@@ -123,24 +142,6 @@
    "away_games": 10,
    "league_avg": 23.08,
    "home_win_prob": 0.631
-  },
-  {
-   "game_id": "2026_11_PIT_PHI",
-   "home": "PHI",
-   "away": "PIT",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "proj_home": 18.6,
-   "proj_away": 22.6,
-   "proj_margin": -4.0,
-   "proj_total": 41.1,
-   "home_pf": 16.4,
-   "home_pa": 24.6,
-   "away_pf": 22.0,
-   "away_pa": 20.2,
-   "home_games": 9,
-   "away_games": 9,
-   "league_avg": 23.08,
-   "home_win_prob": 0.385
   },
   {
    "game_id": "2026_11_MIN_SF",
@@ -202,11 +203,6 @@
      "book": "draftkings",
      "over": 2.07,
      "under": 1.735
-    },
-    {
-     "book": "fanduel",
-     "over": 2.24,
-     "under": 1.581
     },
     {
      "book": "pinnacle",
@@ -848,7 +844,7 @@
     },
     {
      "book": "fanduel",
-     "over": 1.833,
+     "over": null,
      "under": 1.893
     },
     {
@@ -1908,6 +1904,191 @@
   {
    "kind": "prop",
    "week": 11,
+   "player": "Brenton Strange",
+   "pkey": "brenton strange",
+   "stat": "receptions",
+   "stat_label": "Receptions",
+   "line": 2.5,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/43016104548392",
+   "team": "JAX",
+   "opp": "NYG",
+   "position": "TE",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/devxzxwf1sfficgncggm",
+   "books": [
+    {
+     "book": "fanduel",
+     "over": 1.556,
+     "under": 2.3
+    },
+    {
+     "book": "pinnacle",
+     "over": 1.606,
+     "under": 2.35
+    }
+   ],
+   "cheat_side": "over",
+   "proj_edge_pct": 80.0,
+   "hit_rate_over": 0.44,
+   "model_prob_over": 0.818,
+   "projection": 4.5,
+   "baseline": 4.2,
+   "matchup_pct": 12.5,
+   "matchup_factor": 1.125,
+   "def_rank": 8,
+   "last10": [
+    2.0,
+    2.0,
+    3.0,
+    7.0,
+    7.0,
+    5.0,
+    2.0,
+    2.0,
+    2.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CLE",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "DEN",
+     "v": 2.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NE",
+     "v": 3.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 7.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 7.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 5.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "IND",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "BAL",
+     "v": 2.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "TEN",
+     "v": 2.0,
+     "ha": "away"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "LA",
+     "v": 9.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TEN",
+     "v": 4.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ARI",
+     "v": 10.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "WAS",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NO",
+     "v": 2.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "HOU",
+     "v": 6.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "PHI",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "WAS",
+     "v": 8.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "away",
+   "player_id": "00-0038935",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 6.0,
+   "league_avg": 5.3,
+   "games": 6,
+   "side": "over",
+   "dec": 1.556,
+   "american": -180,
+   "title": "Over 2.5 Receptions",
+   "pinnacle_line": "2.5 o-165/u135",
+   "fair_prob": 0.594,
+   "ev_pct": -7.57,
+   "kelly_pct": -13.61,
+   "units": 0.0,
+   "trusted_prob": 0.6184,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 1.606
+  },
+  {
+   "kind": "prop",
+   "week": 11,
    "player": "Marvin Mims Jr.",
    "pkey": "marvin mims",
    "stat": "rec_yds",
@@ -2307,6 +2488,196 @@
   {
    "kind": "prop",
    "week": 11,
+   "player": "Malachi Fields",
+   "pkey": "malachi fields",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "line": 30.5,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/205849185672131",
+   "team": "NYG",
+   "opp": "JAX",
+   "position": "WR",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/tpls1aptxx9x8xaqvjtj",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 1.917,
+     "under": 1.87
+    },
+    {
+     "book": "fanduel",
+     "over": 1.885,
+     "under": 1.885
+    },
+    {
+     "book": "pinnacle",
+     "over": 1.909,
+     "under": 1.909
+    }
+   ],
+   "cheat_side": "over",
+   "proj_edge_pct": 62.3,
+   "hit_rate_over": 0.44,
+   "model_prob_over": 0.8,
+   "projection": 49.5,
+   "baseline": 46.0,
+   "matchup_pct": 15.3,
+   "matchup_factor": 1.153,
+   "def_rank": 5,
+   "last10": [
+    25.0,
+    30.0,
+    19.0,
+    52.0,
+    20.0,
+    19.0,
+    83.0,
+    40.0,
+    62.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 25.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 30.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 19.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 52.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 20.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 19.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 83.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 40.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 62.0,
+     "ha": "home"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 190.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 209.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 315.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 177.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 241.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 26.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 136.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "home",
+   "player_id": "00-0041042",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 170.2,
+   "league_avg": 147.6,
+   "games": 6,
+   "side": "over",
+   "dec": 1.917,
+   "american": -109,
+   "title": "Over 30.5 Receiving Yards",
+   "pinnacle_line": "30.5 o-110/u-110",
+   "fair_prob": 0.5,
+   "ev_pct": -4.15,
+   "kelly_pct": -4.53,
+   "units": 0.0,
+   "trusted_prob": 0.5108,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 1.909
+  },
+  {
+   "kind": "prop",
+   "week": 11,
    "player": "Aaron Jones",
    "pkey": "aaron jones",
    "stat": "receptions",
@@ -2499,6 +2870,367 @@
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.629
+  },
+  {
+   "kind": "prop",
+   "week": 11,
+   "player": "Malik Nabers",
+   "pkey": "malik nabers",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "line": 67.5,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/159477471737251",
+   "team": "NYG",
+   "opp": "JAX",
+   "position": "WR",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/w3edoyyuomqlovvp9ixc",
+   "books": [
+    {
+     "book": "fanduel",
+     "over": 1.885,
+     "under": 1.885
+    }
+   ],
+   "cheat_side": "over",
+   "proj_edge_pct": 58.4,
+   "hit_rate_over": 0.56,
+   "model_prob_over": 0.77,
+   "projection": 106.9,
+   "baseline": 99.3,
+   "matchup_pct": 15.3,
+   "matchup_factor": 1.153,
+   "def_rank": 5,
+   "last10": [
+    69.0,
+    1.0,
+    26.0,
+    112.0,
+    121.0,
+    165.0,
+    111.0,
+    43.0,
+    44.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 69.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 26.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 112.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 121.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 165.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 111.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 43.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 44.0,
+     "ha": "home"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 190.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 209.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 315.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 177.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 241.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 26.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 136.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "home",
+   "player_id": "00-0039337",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 170.2,
+   "league_avg": 147.6,
+   "games": 6,
+   "side": "over",
+   "dec": 1.885,
+   "american": -113,
+   "title": "Over 67.5 Receiving Yards"
+  },
+  {
+   "kind": "prop",
+   "week": 11,
+   "player": "Malik Nabers",
+   "pkey": "malik nabers",
+   "stat": "receptions",
+   "stat_label": "Receptions",
+   "line": 5.5,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/159828458392035",
+   "team": "NYG",
+   "opp": "JAX",
+   "position": "WR",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/w3edoyyuomqlovvp9ixc",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 1.855,
+     "under": 1.917
+    },
+    {
+     "book": "fanduel",
+     "over": 1.758,
+     "under": 1.943
+    },
+    {
+     "book": "pinnacle",
+     "over": 1.82,
+     "under": 2.01
+    }
+   ],
+   "cheat_side": "over",
+   "proj_edge_pct": 47.3,
+   "hit_rate_over": 0.56,
+   "model_prob_over": 0.785,
+   "projection": 8.1,
+   "baseline": 7.7,
+   "matchup_pct": 11.3,
+   "matchup_factor": 1.113,
+   "def_rank": 9,
+   "last10": [
+    6.0,
+    1.0,
+    5.0,
+    6.0,
+    11.0,
+    12.0,
+    7.0,
+    5.0,
+    5.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 6.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 5.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 6.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 11.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 12.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 7.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 5.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 5.0,
+     "ha": "home"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 24.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 14.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 13.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 13.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "home",
+   "player_id": "00-0039337",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 12.6,
+   "league_avg": 11.3,
+   "games": 6,
+   "side": "over",
+   "dec": 1.855,
+   "american": -117,
+   "title": "Over 5.5 Receptions",
+   "pinnacle_line": "5.5 o-122/u101",
+   "fair_prob": 0.5248,
+   "ev_pct": -2.65,
+   "kelly_pct": -3.1,
+   "units": 0.0,
+   "trusted_prob": 0.5319,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 1.82
   },
   {
    "kind": "prop",
@@ -2826,6 +3558,175 @@
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.943
+  },
+  {
+   "kind": "prop",
+   "week": 11,
+   "player": "Cam Skattebo",
+   "pkey": "cam skattebo",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "line": 14.5,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/169085542636058",
+   "team": "NYG",
+   "opp": "JAX",
+   "position": "RB",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/hlggiqdfvj1f4kntkafr",
+   "books": [
+    {
+     "book": "fanduel",
+     "over": 1.877,
+     "under": 1.885
+    },
+    {
+     "book": "pinnacle",
+     "over": 1.909,
+     "under": 1.909
+    }
+   ],
+   "cheat_side": "over",
+   "proj_edge_pct": 45.5,
+   "hit_rate_over": 0.43,
+   "model_prob_over": 0.639,
+   "projection": 21.1,
+   "baseline": 20.0,
+   "matchup_pct": 11.2,
+   "matchup_factor": 1.112,
+   "def_rank": 12,
+   "last10": [
+    0.0,
+    19.0,
+    40.0,
+    8.0,
+    12.0,
+    -3.0,
+    44.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 0.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 19.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 40.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 8.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 12.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": -3.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 44.0,
+     "ha": "home"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 47.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 31.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 71.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 32.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 24.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 7.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 66.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "home",
+   "player_id": "00-0040715",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 36.1,
+   "league_avg": 32.5,
+   "games": 6,
+   "side": "over",
+   "dec": 1.877,
+   "american": -114,
+   "title": "Over 14.5 Receiving Yards",
+   "pinnacle_line": "14.5 o-110/u-110",
+   "fair_prob": 0.5,
+   "ev_pct": -6.15,
+   "kelly_pct": -7.01,
+   "units": 0.0,
+   "trusted_prob": 0.5164,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 1.909
   },
   {
    "kind": "prop",
@@ -4288,6 +5189,196 @@
   {
    "kind": "prop",
    "week": 11,
+   "player": "Trevor Lawrence",
+   "pkey": "trevor lawrence",
+   "stat": "rush_yds",
+   "stat_label": "Rushing Yards",
+   "line": 12.5,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/247972624498391",
+   "team": "JAX",
+   "opp": "NYG",
+   "position": "QB",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/k9uzdernqkx7oquy7dkg",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 1.935,
+     "under": 1.847
+    },
+    {
+     "book": "fanduel",
+     "over": 1.943,
+     "under": 1.833
+    },
+    {
+     "book": "pinnacle",
+     "over": 1.971,
+     "under": 1.855
+    }
+   ],
+   "cheat_side": "over",
+   "proj_edge_pct": 24.8,
+   "hit_rate_over": 0.33,
+   "model_prob_over": 0.609,
+   "projection": 15.6,
+   "baseline": 12.0,
+   "matchup_pct": 60.0,
+   "matchup_factor": 1.6,
+   "def_rank": 1,
+   "last10": [
+    3.0,
+    6.0,
+    25.0,
+    0.0,
+    25.0,
+    11.0,
+    10.0,
+    -1.0,
+    27.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CLE",
+     "v": 3.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "DEN",
+     "v": 6.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NE",
+     "v": 25.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 0.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 25.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 11.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "IND",
+     "v": 10.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "BAL",
+     "v": -1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "TEN",
+     "v": 27.0,
+     "ha": "away"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "LA",
+     "v": -1.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TEN",
+     "v": 2.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ARI",
+     "v": 18.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "WAS",
+     "v": 103.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NO",
+     "v": 32.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "HOU",
+     "v": 4.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "PHI",
+     "v": 64.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "WAS",
+     "v": 28.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "away",
+   "player_id": "00-0036971",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 29.3,
+   "league_avg": 15.9,
+   "games": 6,
+   "side": "over",
+   "dec": 1.943,
+   "american": -106,
+   "title": "Over 12.5 Rushing Yards",
+   "pinnacle_line": "12.5 o-103/u-117",
+   "fair_prob": 0.4848,
+   "ev_pct": -5.8,
+   "kelly_pct": -6.15,
+   "units": 0.0,
+   "trusted_prob": 0.4998,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 1.971
+  },
+  {
+   "kind": "prop",
+   "week": 11,
    "player": "Mike Gesicki",
    "pkey": "mike gesicki",
    "stat": "rec_yds",
@@ -4867,6 +5958,196 @@
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.84
+  },
+  {
+   "kind": "prop",
+   "week": 11,
+   "player": "Malachi Fields",
+   "pkey": "malachi fields",
+   "stat": "receptions",
+   "stat_label": "Receptions",
+   "line": 2.5,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/133489453040781",
+   "team": "NYG",
+   "opp": "JAX",
+   "position": "WR",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/tpls1aptxx9x8xaqvjtj",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 2.08,
+     "under": 1.725
+    },
+    {
+     "book": "fanduel",
+     "over": 2.1,
+     "under": 1.685
+    },
+    {
+     "book": "pinnacle",
+     "over": 2.13,
+     "under": 1.73
+    }
+   ],
+   "cheat_side": "over",
+   "proj_edge_pct": 16.0,
+   "hit_rate_over": 0.33,
+   "model_prob_over": 0.716,
+   "projection": 2.9,
+   "baseline": 2.7,
+   "matchup_pct": 11.3,
+   "matchup_factor": 1.113,
+   "def_rank": 9,
+   "last10": [
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    4.0,
+    3.0,
+    3.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 2.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 2.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 4.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 3.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 3.0,
+     "ha": "home"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 24.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 14.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 13.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 13.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "home",
+   "player_id": "00-0041042",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 12.6,
+   "league_avg": 11.3,
+   "games": 6,
+   "side": "over",
+   "dec": 2.1,
+   "american": 110,
+   "title": "Over 2.5 Receptions",
+   "pinnacle_line": "2.5 o113/u-137",
+   "fair_prob": 0.4482,
+   "ev_pct": -5.88,
+   "kelly_pct": -5.35,
+   "units": 0.0,
+   "trusted_prob": 0.4622,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 2.13
   },
   {
    "kind": "prop",
@@ -7288,14 +8569,14 @@
    "side": "away",
    "team": "NYJ",
    "opp": "LAC",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118298595722147",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/207223697454606",
    "game_id": "2026_11_NYJ_LAC",
    "kickoff": "2026-11-22T16:05:00-05:00",
    "home": "LAC",
    "away": "NYJ",
-   "dec": 2.52,
-   "american": 152,
+   "dec": 2.48,
+   "american": 148,
    "game_model": {
     "game_id": "2026_11_NYJ_LAC",
     "home": "LAC",
@@ -7316,11 +8597,6 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.556,
-     "b": 2.52
-    },
-    {
      "book": "fanduel",
      "a": 1.568,
      "b": 2.48
@@ -7332,15 +8608,15 @@
     }
    ],
    "model_prob": 0.54,
-   "model_edge": 15.83,
-   "model_edge_txt": "+15.8%",
+   "model_edge": 15.26,
+   "model_edge_txt": "+15.3%",
    "cheat_side": "away",
    "pinnacle_line": "LAC -168 / NYJ +150",
    "fair_prob": 0.3895,
-   "ev_pct": -1.85,
-   "kelly_pct": -1.21,
+   "ev_pct": -3.4,
+   "kelly_pct": -2.3,
    "units": 0.0,
-   "trusted_prob": 0.391,
+   "trusted_prob": 0.3922,
    "unit_note": null,
    "edge_trust": 0.8,
    "pinn_dec": 2.5
@@ -7757,6 +9033,158 @@
  ],
  "matchups": [
   {
+   "player": "Trevor Lawrence",
+   "player_id": "00-0036971",
+   "team": "JAX",
+   "injury_status": null,
+   "injury": null,
+   "opp": "NYG",
+   "position": "QB",
+   "stat": "rush_yds",
+   "stat_label": "Rushing Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/k9uzdernqkx7oquy7dkg",
+   "baseline": 12.0,
+   "sd": 11.2,
+   "games": 6,
+   "last10": [
+    3.0,
+    6.0,
+    25.0,
+    0.0,
+    25.0,
+    11.0,
+    10.0,
+    -1.0,
+    27.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CLE",
+     "v": 3.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "DEN",
+     "v": 6.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NE",
+     "v": 25.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 0.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 25.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 11.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "IND",
+     "v": 10.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "BAL",
+     "v": -1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "TEN",
+     "v": 27.0,
+     "ha": "away"
+    }
+   ],
+   "def_allowed": 29.3,
+   "league_avg": 15.9,
+   "matchup_factor": 1.6,
+   "matchup_pct": 60.0,
+   "projection": 15.6,
+   "def_rank": 1,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "LA",
+     "v": -1.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TEN",
+     "v": 2.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ARI",
+     "v": 18.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "WAS",
+     "v": 103.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NO",
+     "v": 32.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "HOU",
+     "v": 4.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "PHI",
+     "v": 64.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "WAS",
+     "v": 28.0
+    }
+   ],
+   "pkey": "trevor lawrence",
+   "vs_opp": []
+  },
+  {
    "player": "Jayden Daniels",
    "player_id": "00-0039910",
    "team": "WAS",
@@ -7897,110 +9325,6 @@
      "v": 39.0
     }
    ]
-  },
-  {
-   "player": "Dameon Pierce",
-   "player_id": "00-0037258",
-   "team": "PHI",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PIT",
-   "position": "RB",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/oai3defivyfyofxxh4ux",
-   "baseline": 2.3,
-   "sd": 1.5,
-   "games": 3,
-   "last10": [
-    2.0,
-    4.0,
-    1.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "JAX",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "CAR",
-     "v": 4.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "DAL",
-     "v": 1.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 6.4,
-   "league_avg": 4.4,
-   "matchup_factor": 1.473,
-   "matchup_pct": 47.3,
-   "projection": 2.8,
-   "def_rank": 1,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "NE",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CIN",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "CLE",
-     "v": 8.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "IND",
-     "v": 4.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "TB",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "NO",
-     "v": 10.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "CLE",
-     "v": 8.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "CIN",
-     "v": 12.0
-    }
-   ],
-   "pkey": "dameon pierce",
-   "vs_opp": []
   },
   {
    "player": "Aaron Jones",
@@ -8741,301 +10065,156 @@
    ]
   },
   {
-   "player": "Rico Dowdle",
-   "player_id": "00-0036139",
-   "team": "PIT",
+   "player": "Isaiah Likely",
+   "player_id": "00-0037838",
+   "team": "NYG",
    "injury_status": null,
    "injury": null,
-   "opp": "PHI",
-   "position": "RB",
+   "opp": "JAX",
+   "position": "TE",
    "stat": "rec_yds",
    "stat_label": "Receiving Yards",
-   "game_id": "2026_11_PIT_PHI",
+   "game_id": "2026_11_JAX_NYG",
    "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mx2bxccuzmdvzbksypws",
-   "baseline": 15.0,
-   "sd": 16.4,
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/b1pahldt9ixp9lssxi2d",
+   "baseline": 75.2,
+   "sd": 39.8,
    "games": 6,
    "last10": [
-    6.0,
-    22.0,
-    9.0,
-    45.0,
-    0.0,
-    8.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 6.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 22.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 9.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 45.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 8.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 17.4,
-   "league_avg": 32.5,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 12.0,
-   "def_rank": 31,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 30.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 4.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 74.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 30.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 12.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 8.0
-    }
-   ],
-   "pkey": "rico dowdle",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 10,
-     "v": 3.0
-    },
-    {
-     "season": 2024,
-     "wk": 17,
-     "v": 4.0
-    }
-   ]
-  },
-  {
-   "player": "Jaylen Warren",
-   "player_id": "00-0037228",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "RB",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dkiteytgnxar1mpaxcxv",
-   "baseline": 35.0,
-   "sd": 23.2,
-   "games": 6,
-   "last10": [
-    27.0,
-    34.0,
-    49.0,
+    78.0,
     33.0,
-    87.0,
-    28.0,
-    36.0,
-    0.0,
-    26.0
+    13.0,
+    66.0,
+    94.0,
+    99.0,
+    12.0,
+    53.0,
+    127.0
    ],
    "log": [
     {
      "season": 2026,
      "wk": 1,
-     "opp": "ATL",
-     "v": 27.0,
+     "opp": "DAL",
+     "v": 78.0,
      "ha": "home"
     },
     {
      "season": 2026,
      "wk": 2,
-     "opp": "NE",
-     "v": 34.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 49.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
+     "opp": "LA",
      "v": 33.0,
      "ha": "away"
     },
     {
      "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 87.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 28.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 36.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 26.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 17.4,
-   "league_avg": 32.5,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 28.0,
-   "def_rank": 31,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 30.0
-    },
-    {
-     "season": 2026,
      "wk": 3,
-     "vs": "CHI",
-     "v": 4.0
+     "opp": "TEN",
+     "v": 13.0,
+     "ha": "home"
     },
     {
      "season": 2026,
      "wk": 4,
-     "vs": "LA",
-     "v": 74.0
+     "opp": "ARI",
+     "v": 66.0,
+     "ha": "home"
     },
     {
      "season": 2026,
      "wk": 5,
-     "vs": "JAX",
-     "v": 30.0
+     "opp": "WAS",
+     "v": 94.0,
+     "ha": "away"
     },
     {
      "season": 2026,
      "wk": 6,
-     "vs": "CAR",
-     "v": 1.0
+     "opp": "NO",
+     "v": 99.0,
+     "ha": "home"
     },
     {
      "season": 2026,
      "wk": 7,
-     "vs": "DAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 12.0
+     "opp": "HOU",
+     "v": 12.0,
+     "ha": "away"
     },
     {
      "season": 2026,
      "wk": 9,
-     "vs": "NYG",
-     "v": 8.0
+     "opp": "PHI",
+     "v": 53.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 127.0,
+     "ha": "home"
     }
    ],
-   "pkey": "jaylen warren",
-   "vs_opp": [
+   "def_allowed": 31.0,
+   "league_avg": 54.0,
+   "matchup_factor": 0.6,
+   "matchup_pct": -40.0,
+   "projection": 60.2,
+   "def_rank": 32,
+   "def_log": [
     {
-     "season": 2024,
-     "wk": 15,
-     "v": 3.0
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 49.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 42.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 38.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 39.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 18.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 24.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 29.0
     }
-   ]
+   ],
+   "pkey": "isaiah likely",
+   "vs_opp": []
   },
   {
    "player": "Michael Mayer",
@@ -10020,6 +11199,158 @@
    "vs_opp": []
   },
   {
+   "player": "Bhayshul Tuten",
+   "player_id": "00-0040719",
+   "team": "JAX",
+   "injury_status": null,
+   "injury": null,
+   "opp": "NYG",
+   "position": "RB",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ryjnphuyjbedmgpx5qqj",
+   "baseline": 28.3,
+   "sd": 19.1,
+   "games": 6,
+   "last10": [
+    22.0,
+    -3.0,
+    17.0,
+    18.0,
+    24.0,
+    48.0,
+    55.0,
+    0.0,
+    25.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CLE",
+     "v": 22.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "DEN",
+     "v": -3.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NE",
+     "v": 17.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 18.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 24.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 48.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "IND",
+     "v": 55.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "BAL",
+     "v": 0.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "TEN",
+     "v": 25.0,
+     "ha": "away"
+    }
+   ],
+   "def_allowed": 21.7,
+   "league_avg": 32.5,
+   "matchup_factor": 0.667,
+   "matchup_pct": -33.3,
+   "projection": 23.6,
+   "def_rank": 28,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "LA",
+     "v": 25.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TEN",
+     "v": 22.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ARI",
+     "v": -1.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "WAS",
+     "v": 17.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NO",
+     "v": 35.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "HOU",
+     "v": 15.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "PHI",
+     "v": 20.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "WAS",
+     "v": 31.0
+    }
+   ],
+   "pkey": "bhayshul tuten",
+   "vs_opp": []
+  },
+  {
    "player": "George Kittle",
    "player_id": "00-0033288",
    "team": "SF",
@@ -10330,303 +11661,6 @@
    "vs_opp": []
   },
   {
-   "player": "Rico Dowdle",
-   "player_id": "00-0036139",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "RB",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mx2bxccuzmdvzbksypws",
-   "baseline": 2.5,
-   "sd": 2.0,
-   "games": 6,
-   "last10": [
-    2.0,
-    2.0,
-    3.0,
-    6.0,
-    0.0,
-    2.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 3.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 6.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 2.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 3.1,
-   "league_avg": 4.4,
-   "matchup_factor": 0.711,
-   "matchup_pct": -28.9,
-   "projection": 2.1,
-   "def_rank": 32,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 11.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 2.0
-    }
-   ],
-   "pkey": "rico dowdle",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 10,
-     "v": 3.0
-    },
-    {
-     "season": 2024,
-     "wk": 17,
-     "v": 1.0
-    }
-   ]
-  },
-  {
-   "player": "Jaylen Warren",
-   "player_id": "00-0037228",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "RB",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dkiteytgnxar1mpaxcxv",
-   "baseline": 3.3,
-   "sd": 1.7,
-   "games": 6,
-   "last10": [
-    5.0,
-    2.0,
-    3.0,
-    3.0,
-    6.0,
-    2.0,
-    3.0,
-    1.0,
-    5.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 5.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 3.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
-     "v": 3.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 6.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 3.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 5.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 3.1,
-   "league_avg": 4.4,
-   "matchup_factor": 0.711,
-   "matchup_pct": -28.9,
-   "projection": 2.8,
-   "def_rank": 32,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 11.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 2.0
-    }
-   ],
-   "pkey": "jaylen warren",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 15,
-     "v": 1.0
-    }
-   ]
-  },
-  {
    "player": "Ashton Jeanty",
    "player_id": "00-0040122",
    "team": "LV",
@@ -10796,6 +11830,254 @@
      "v": 8.0
     }
    ]
+  },
+  {
+   "player": "Devin Singletary",
+   "player_id": "00-0035250",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "RB",
+   "stat": "rush_yds",
+   "stat_label": "Rushing Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xy2r2msxjqneml2c1cdc",
+   "baseline": 19.0,
+   "sd": 14.3,
+   "games": 6,
+   "last10": [
+    16.0,
+    9.0,
+    14.0,
+    41.0,
+    31.0,
+    3.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 16.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 9.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 14.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 41.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 31.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 3.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 67.4,
+   "league_avg": 92.2,
+   "matchup_factor": 0.731,
+   "matchup_pct": -26.9,
+   "projection": 16.4,
+   "def_rank": 30,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 76.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 63.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 17.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 20.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 95.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 142.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 61.0
+    }
+   ],
+   "pkey": "devin singletary",
+   "vs_opp": []
+  },
+  {
+   "player": "Najee Harris",
+   "player_id": "00-0036893",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "RB",
+   "stat": "rush_yds",
+   "stat_label": "Rushing Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ltgvb1mjrpfkxyw9dbir",
+   "baseline": 19.8,
+   "sd": 21.0,
+   "games": 5,
+   "last10": [
+    6.0,
+    52.0,
+    30.0,
+    9.0,
+    2.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 6.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 52.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 30.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 9.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 2.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 67.4,
+   "league_avg": 92.2,
+   "matchup_factor": 0.731,
+   "matchup_pct": -26.9,
+   "projection": 17.1,
+   "def_rank": 30,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 76.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 63.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 17.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 20.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 95.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 142.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 61.0
+    }
+   ],
+   "pkey": "najee harris",
+   "vs_opp": []
   },
   {
    "player": "Keaton Mitchell",
@@ -11249,6 +12531,142 @@
     }
    ],
    "pkey": "omarion hampton",
+   "vs_opp": []
+  },
+  {
+   "player": "Cam Skattebo",
+   "player_id": "00-0040715",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "RB",
+   "stat": "rush_yds",
+   "stat_label": "Rushing Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/hlggiqdfvj1f4kntkafr",
+   "baseline": 69.2,
+   "sd": 27.7,
+   "games": 6,
+   "last10": [
+    81.0,
+    36.0,
+    60.0,
+    58.0,
+    59.0,
+    124.0,
+    78.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 81.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 36.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 60.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 58.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 59.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 124.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 78.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 67.4,
+   "league_avg": 92.2,
+   "matchup_factor": 0.731,
+   "matchup_pct": -26.9,
+   "projection": 59.9,
+   "def_rank": 30,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 76.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 63.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 17.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 20.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 95.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 142.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 61.0
+    }
+   ],
+   "pkey": "cam skattebo",
    "vs_opp": []
   },
   {
@@ -11946,249 +13364,155 @@
    "vs_opp": []
   },
   {
-   "player": "Saquon Barkley",
-   "player_id": "00-0034844",
-   "team": "PHI",
+   "player": "Bhayshul Tuten",
+   "player_id": "00-0040719",
+   "team": "JAX",
    "injury_status": null,
    "injury": null,
-   "opp": "PIT",
+   "opp": "NYG",
    "position": "RB",
-   "stat": "rush_yds",
-   "stat_label": "Rushing Yards",
-   "game_id": "2026_11_PIT_PHI",
+   "stat": "receptions",
+   "stat_label": "Receptions",
+   "game_id": "2026_11_JAX_NYG",
    "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/qcayrzjpura2zydszonh",
-   "baseline": 35.5,
-   "sd": 32.8,
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ryjnphuyjbedmgpx5qqj",
+   "baseline": 2.2,
+   "sd": 1.1,
    "games": 6,
    "last10": [
-    83.0,
-    9.0,
-    82.0,
-    8.0,
-    62.0,
-    30.0,
-    22.0
+    1.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    4.0,
+    2.0,
+    0.0,
+    3.0
    ],
    "log": [
     {
      "season": 2026,
      "wk": 1,
-     "opp": "WAS",
-     "v": 83.0,
+     "opp": "CLE",
+     "v": 1.0,
      "ha": "home"
     },
     {
      "season": 2026,
      "wk": 2,
-     "opp": "TEN",
-     "v": 9.0,
+     "opp": "DEN",
+     "v": 2.0,
      "ha": "away"
     },
     {
      "season": 2026,
      "wk": 3,
-     "opp": "CHI",
-     "v": 82.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LA",
-     "v": 8.0,
+     "opp": "NE",
+     "v": 2.0,
      "ha": "home"
     },
     {
      "season": 2026,
-     "wk": 7,
-     "opp": "DAL",
-     "v": 62.0,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 2.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 4.0,
      "ha": "home"
     },
     {
      "season": 2026,
      "wk": 8,
-     "opp": "WAS",
-     "v": 30.0,
-     "ha": "away"
+     "opp": "IND",
+     "v": 2.0,
+     "ha": "home"
     },
     {
      "season": 2026,
      "wk": 9,
-     "opp": "NYG",
-     "v": 22.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 70.0,
-   "league_avg": 92.2,
-   "matchup_factor": 0.759,
-   "matchup_pct": -24.1,
-   "projection": 31.2,
-   "def_rank": 28,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "NE",
-     "v": 119.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CIN",
-     "v": 70.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "CLE",
-     "v": 90.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "IND",
-     "v": 61.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "TB",
-     "v": 63.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "NO",
-     "v": 11.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "CLE",
-     "v": 32.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "CIN",
-     "v": 70.0
-    }
-   ],
-   "pkey": "saquon barkley",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 15,
-     "v": 65.0
-    }
-   ]
-  },
-  {
-   "player": "Dameon Pierce",
-   "player_id": "00-0037258",
-   "team": "PHI",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PIT",
-   "position": "RB",
-   "stat": "rush_yds",
-   "stat_label": "Rushing Yards",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/oai3defivyfyofxxh4ux",
-   "baseline": 32.0,
-   "sd": 16.7,
-   "games": 3,
-   "last10": [
-    14.0,
-    35.0,
-    47.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "JAX",
-     "v": 14.0,
+     "opp": "BAL",
+     "v": 0.0,
      "ha": "away"
     },
     {
      "season": 2026,
-     "wk": 6,
-     "opp": "CAR",
-     "v": 35.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "DAL",
-     "v": 47.0,
-     "ha": "home"
+     "wk": 10,
+     "opp": "TEN",
+     "v": 3.0,
+     "ha": "away"
     }
    ],
-   "def_allowed": 70.0,
-   "league_avg": 92.2,
-   "matchup_factor": 0.759,
-   "matchup_pct": -24.1,
-   "projection": 28.1,
+   "def_allowed": 3.3,
+   "league_avg": 4.4,
+   "matchup_factor": 0.762,
+   "matchup_pct": -23.8,
+   "projection": 1.9,
    "def_rank": 28,
    "def_log": [
     {
      "season": 2026,
      "wk": 2,
-     "vs": "NE",
-     "v": 119.0
+     "vs": "LA",
+     "v": 3.0
     },
     {
      "season": 2026,
      "wk": 3,
-     "vs": "CIN",
-     "v": 70.0
+     "vs": "TEN",
+     "v": 4.0
     },
     {
      "season": 2026,
      "wk": 4,
-     "vs": "CLE",
-     "v": 90.0
+     "vs": "ARI",
+     "v": 3.0
     },
     {
      "season": 2026,
      "wk": 5,
-     "vs": "IND",
-     "v": 61.0
+     "vs": "WAS",
+     "v": 2.0
     },
     {
      "season": 2026,
      "wk": 6,
-     "vs": "TB",
-     "v": 63.0
+     "vs": "NO",
+     "v": 4.0
     },
     {
      "season": 2026,
      "wk": 7,
-     "vs": "NO",
-     "v": 11.0
+     "vs": "HOU",
+     "v": 1.0
     },
     {
      "season": 2026,
-     "wk": 8,
-     "vs": "CLE",
-     "v": 32.0
+     "wk": 9,
+     "vs": "PHI",
+     "v": 3.0
     },
     {
      "season": 2026,
      "wk": 10,
-     "vs": "CIN",
-     "v": 70.0
+     "vs": "WAS",
+     "v": 5.0
     }
    ],
-   "pkey": "dameon pierce",
+   "pkey": "bhayshul tuten",
    "vs_opp": []
   },
   {
@@ -12614,6 +13938,270 @@
    "vs_opp": []
   },
   {
+   "player": "Devin Singletary",
+   "player_id": "00-0035250",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "RB",
+   "stat": "receptions",
+   "stat_label": "Receptions",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xy2r2msxjqneml2c1cdc",
+   "baseline": 1.7,
+   "sd": 1.6,
+   "games": 6,
+   "last10": [
+    4.0,
+    0.0,
+    1.0,
+    3.0,
+    2.0,
+    0.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 4.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 0.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 1.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 3.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 2.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 0.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 5.3,
+   "league_avg": 4.4,
+   "matchup_factor": 1.219,
+   "matchup_pct": 21.9,
+   "projection": 1.9,
+   "def_rank": 4,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 11.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 3.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 3.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 4.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 3.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 9.0
+    }
+   ],
+   "pkey": "devin singletary",
+   "vs_opp": []
+  },
+  {
+   "player": "Cam Skattebo",
+   "player_id": "00-0040715",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "RB",
+   "stat": "receptions",
+   "stat_label": "Receptions",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/hlggiqdfvj1f4kntkafr",
+   "baseline": 2.3,
+   "sd": 1.4,
+   "games": 6,
+   "last10": [
+    0.0,
+    4.0,
+    3.0,
+    1.0,
+    2.0,
+    1.0,
+    3.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 0.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 4.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 3.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 1.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 2.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 3.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 5.3,
+   "league_avg": 4.4,
+   "matchup_factor": 1.219,
+   "matchup_pct": 21.9,
+   "projection": 2.6,
+   "def_rank": 4,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 11.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 3.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 3.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 4.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 3.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 9.0
+    }
+   ],
+   "pkey": "cam skattebo",
+   "vs_opp": []
+  },
+  {
    "player": "Aaron Jones",
    "player_id": "00-0033293",
    "team": "MIN",
@@ -12892,919 +14480,155 @@
    "vs_opp": []
   },
   {
-   "player": "Pat Freiermuth",
-   "player_id": "00-0036894",
-   "team": "PIT",
+   "player": "Isaiah Likely",
+   "player_id": "00-0037838",
+   "team": "NYG",
    "injury_status": null,
    "injury": null,
-   "opp": "PHI",
+   "opp": "JAX",
    "position": "TE",
    "stat": "receptions",
    "stat_label": "Receptions",
-   "game_id": "2026_11_PIT_PHI",
+   "game_id": "2026_11_JAX_NYG",
    "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pyrdsypgggjshiaygkr7",
-   "baseline": 2.7,
-   "sd": 1.3,
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/b1pahldt9ixp9lssxi2d",
+   "baseline": 6.7,
+   "sd": 3.0,
    "games": 6,
    "last10": [
-    5.0,
-    4.0,
-    2.0,
-    3.0,
+    8.0,
     5.0,
     2.0,
-    2.0,
-    2.0,
-    2.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 5.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 4.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
-     "v": 3.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 5.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 2.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 4.2,
-   "league_avg": 5.3,
-   "matchup_factor": 0.792,
-   "matchup_pct": -20.8,
-   "projection": 2.4,
-   "def_rank": 30,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 9.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 4.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 5.0
-    }
-   ],
-   "pkey": "pat freiermuth",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 15,
-     "v": 3.0
-    }
-   ]
-  },
-  {
-   "player": "Darnell Washington",
-   "player_id": "00-0038558",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "TE",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/inwx7uipfktapaump5pj",
-   "baseline": 2.3,
-   "sd": 1.1,
-   "games": 6,
-   "last10": [
-    2.0,
-    1.0,
-    3.0,
-    3.0,
-    2.0,
-    4.0,
-    1.0,
-    3.0,
-    1.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 3.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
-     "v": 3.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 4.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 3.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 1.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 4.2,
-   "league_avg": 5.3,
-   "matchup_factor": 0.792,
-   "matchup_pct": -20.8,
-   "projection": 2.1,
-   "def_rank": 30,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 9.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 4.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 5.0
-    }
-   ],
-   "pkey": "darnell washington",
-   "vs_opp": []
-  },
-  {
-   "player": "Pat Freiermuth",
-   "player_id": "00-0036894",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "TE",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pyrdsypgggjshiaygkr7",
-   "baseline": 27.0,
-   "sd": 11.9,
-   "games": 6,
-   "last10": [
-    46.0,
-    32.0,
-    30.0,
-    17.0,
-    44.0,
-    11.0,
-    20.0,
-    35.0,
-    35.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 46.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 32.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 30.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
-     "v": 17.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 44.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 11.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 20.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 35.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 35.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 42.9,
-   "league_avg": 54.0,
-   "matchup_factor": 0.794,
-   "matchup_pct": -20.6,
-   "projection": 24.2,
-   "def_rank": 28,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 13.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 47.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 67.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 88.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 46.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 11.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 32.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 53.0
-    }
-   ],
-   "pkey": "pat freiermuth",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 15,
-     "v": 22.0
-    }
-   ]
-  },
-  {
-   "player": "Darnell Washington",
-   "player_id": "00-0038558",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "TE",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/inwx7uipfktapaump5pj",
-   "baseline": 27.8,
-   "sd": 31.2,
-   "games": 6,
-   "last10": [
-    18.0,
     7.0,
-    67.0,
-    27.0,
-    12.0,
-    25.0,
-    4.0,
-    94.0,
-    5.0
+    11.0,
+    6.0,
+    2.0,
+    5.0,
+    9.0
    ],
    "log": [
     {
      "season": 2026,
      "wk": 1,
-     "opp": "ATL",
-     "v": 18.0,
+     "opp": "DAL",
+     "v": 8.0,
      "ha": "home"
     },
     {
      "season": 2026,
      "wk": 2,
-     "opp": "NE",
-     "v": 7.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 67.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
-     "v": 27.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 12.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 25.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 4.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 94.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
+     "opp": "LA",
      "v": 5.0,
      "ha": "away"
-    }
-   ],
-   "def_allowed": 42.9,
-   "league_avg": 54.0,
-   "matchup_factor": 0.794,
-   "matchup_pct": -20.6,
-   "projection": 24.9,
-   "def_rank": 28,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 13.0
     },
     {
      "season": 2026,
      "wk": 3,
-     "vs": "CHI",
-     "v": 47.0
+     "opp": "TEN",
+     "v": 2.0,
+     "ha": "home"
     },
     {
      "season": 2026,
      "wk": 4,
-     "vs": "LA",
-     "v": 67.0
+     "opp": "ARI",
+     "v": 7.0,
+     "ha": "home"
     },
     {
      "season": 2026,
      "wk": 5,
-     "vs": "JAX",
-     "v": 88.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 46.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 11.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 32.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 53.0
-    }
-   ],
-   "pkey": "darnell washington",
-   "vs_opp": []
-  },
-  {
-   "player": "DK Metcalf",
-   "player_id": "00-0035640",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "WR",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/kxql4sjfelubhxawu2zh",
-   "baseline": 55.7,
-   "sd": 36.5,
-   "games": 6,
-   "last10": [
-    40.0,
-    27.0,
-    31.0,
-    115.0,
-    12.0,
-    93.0,
-    56.0,
-    4.0,
-    54.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 40.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 27.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 31.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
-     "v": 115.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 12.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 93.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 56.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 4.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 54.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 177.6,
-   "league_avg": 147.6,
-   "matchup_factor": 1.203,
-   "matchup_pct": 20.3,
-   "projection": 61.3,
-   "def_rank": 3,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 140.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 196.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 176.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 204.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 234.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 201.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 173.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 137.0
-    }
-   ],
-   "pkey": "dk metcalf",
-   "vs_opp": []
-  },
-  {
-   "player": "Germie Bernard",
-   "player_id": "00-0041489",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "WR",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/rsbtypbsvxux94vokb5q",
-   "baseline": 39.2,
-   "sd": 31.8,
-   "games": 6,
-   "last10": [
-    35.0,
-    14.0,
-    11.0,
-    80.0,
-    87.0,
-    27.0,
-    30.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 35.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 14.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
+     "opp": "WAS",
      "v": 11.0,
      "ha": "away"
     },
     {
      "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 80.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
      "wk": 6,
-     "opp": "TB",
-     "v": 87.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
      "opp": "NO",
-     "v": 27.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 30.0,
+     "v": 6.0,
      "ha": "home"
     },
     {
      "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 0.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 177.6,
-   "league_avg": 147.6,
-   "matchup_factor": 1.203,
-   "matchup_pct": 20.3,
-   "projection": 43.2,
-   "def_rank": 3,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 140.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 196.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 176.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 204.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 234.0
-    },
-    {
-     "season": 2026,
      "wk": 7,
-     "vs": "DAL",
-     "v": 201.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 173.0
+     "opp": "HOU",
+     "v": 2.0,
+     "ha": "away"
     },
     {
      "season": 2026,
      "wk": 9,
-     "vs": "NYG",
-     "v": 137.0
+     "opp": "PHI",
+     "v": 5.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 9.0,
+     "ha": "home"
     }
    ],
-   "pkey": "germie bernard",
+   "def_allowed": 4.2,
+   "league_avg": 5.3,
+   "matchup_factor": 0.792,
+   "matchup_pct": -20.8,
+   "projection": 6.0,
+   "def_rank": 29,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 4.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 1.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 4.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 6.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 7.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 4.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 3.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 6.0
+    }
+   ],
+   "pkey": "isaiah likely",
    "vs_opp": []
   },
   {
@@ -13966,303 +14790,6 @@
    ]
   },
   {
-   "player": "Rico Dowdle",
-   "player_id": "00-0036139",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "RB",
-   "stat": "rush_att",
-   "stat_label": "Rush Attempts",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mx2bxccuzmdvzbksypws",
-   "baseline": 8.5,
-   "sd": 3.4,
-   "games": 6,
-   "last10": [
-    8.0,
-    7.0,
-    7.0,
-    9.0,
-    15.0,
-    5.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 8.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 7.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 7.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 9.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 15.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 5.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 26.7,
-   "league_avg": 22.3,
-   "matchup_factor": 1.197,
-   "matchup_pct": 19.7,
-   "projection": 9.3,
-   "def_rank": 2,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 25.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 30.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 21.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 24.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 29.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 36.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 24.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 24.0
-    }
-   ],
-   "pkey": "rico dowdle",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 10,
-     "v": 12.0
-    },
-    {
-     "season": 2024,
-     "wk": 17,
-     "v": 23.0
-    }
-   ]
-  },
-  {
-   "player": "Jaylen Warren",
-   "player_id": "00-0037228",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "RB",
-   "stat": "rush_att",
-   "stat_label": "Rush Attempts",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dkiteytgnxar1mpaxcxv",
-   "baseline": 14.7,
-   "sd": 3.8,
-   "games": 6,
-   "last10": [
-    10.0,
-    11.0,
-    17.0,
-    17.0,
-    15.0,
-    14.0,
-    18.0,
-    17.0,
-    7.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 10.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 11.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 17.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
-     "v": 17.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 15.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 14.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 18.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 17.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 7.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 26.7,
-   "league_avg": 22.3,
-   "matchup_factor": 1.197,
-   "matchup_pct": 19.7,
-   "projection": 16.1,
-   "def_rank": 2,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 25.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 30.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 21.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 24.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 29.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 36.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 24.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 24.0
-    }
-   ],
-   "pkey": "jaylen warren",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 15,
-     "v": 4.0
-    }
-   ]
-  },
-  {
    "player": "Brock Purdy",
    "player_id": "00-0037834",
    "team": "SF",
@@ -14419,6 +14946,390 @@
      "v": 28.0
     }
    ]
+  },
+  {
+   "player": "Devin Singletary",
+   "player_id": "00-0035250",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "RB",
+   "stat": "rush_att",
+   "stat_label": "Rush Attempts",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xy2r2msxjqneml2c1cdc",
+   "baseline": 6.7,
+   "sd": 7.2,
+   "games": 6,
+   "last10": [
+    6.0,
+    3.0,
+    4.0,
+    5.0,
+    21.0,
+    1.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 6.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 3.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 4.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 5.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 21.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 1.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 18.0,
+   "league_avg": 22.3,
+   "matchup_factor": 0.808,
+   "matchup_pct": -19.2,
+   "projection": 6.1,
+   "def_rank": 31,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 16.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 19.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 26.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 13.0
+    }
+   ],
+   "pkey": "devin singletary",
+   "vs_opp": []
+  },
+  {
+   "player": "Najee Harris",
+   "player_id": "00-0036893",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "RB",
+   "stat": "rush_att",
+   "stat_label": "Rush Attempts",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ltgvb1mjrpfkxyw9dbir",
+   "baseline": 6.2,
+   "sd": 2.6,
+   "games": 5,
+   "last10": [
+    4.0,
+    9.0,
+    9.0,
+    5.0,
+    4.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 4.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 9.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 9.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 5.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 4.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 18.0,
+   "league_avg": 22.3,
+   "matchup_factor": 0.808,
+   "matchup_pct": -19.2,
+   "projection": 5.6,
+   "def_rank": 31,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 16.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 19.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 26.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 13.0
+    }
+   ],
+   "pkey": "najee harris",
+   "vs_opp": []
+  },
+  {
+   "player": "Cam Skattebo",
+   "player_id": "00-0040715",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "RB",
+   "stat": "rush_att",
+   "stat_label": "Rush Attempts",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/hlggiqdfvj1f4kntkafr",
+   "baseline": 16.3,
+   "sd": 2.9,
+   "games": 6,
+   "last10": [
+    18.0,
+    12.0,
+    20.0,
+    18.0,
+    13.0,
+    17.0,
+    18.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 18.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 12.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 20.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 18.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 13.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 17.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 18.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 18.0,
+   "league_avg": 22.3,
+   "matchup_factor": 0.808,
+   "matchup_pct": -19.2,
+   "projection": 14.7,
+   "def_rank": 31,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 12.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 16.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 19.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 26.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 13.0
+    }
+   ],
+   "pkey": "cam skattebo",
+   "vs_opp": []
   },
   {
    "player": "George Kittle",
@@ -14733,303 +15644,6 @@
      "season": 2024,
      "wk": 2,
      "v": 319.0
-    }
-   ]
-  },
-  {
-   "player": "Rico Dowdle",
-   "player_id": "00-0036139",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "RB",
-   "stat": "rush_yds",
-   "stat_label": "Rushing Yards",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mx2bxccuzmdvzbksypws",
-   "baseline": 33.3,
-   "sd": 15.1,
-   "games": 6,
-   "last10": [
-    15.0,
-    22.0,
-    40.0,
-    41.0,
-    56.0,
-    26.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 15.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 22.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 40.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 41.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 56.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 26.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 108.9,
-   "league_avg": 92.2,
-   "matchup_factor": 1.181,
-   "matchup_pct": 18.1,
-   "projection": 36.3,
-   "def_rank": 9,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 115.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 115.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 94.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 77.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 119.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 196.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 112.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 51.0
-    }
-   ],
-   "pkey": "rico dowdle",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 10,
-     "v": 53.0
-    },
-    {
-     "season": 2024,
-     "wk": 17,
-     "v": 104.0
-    }
-   ]
-  },
-  {
-   "player": "Jaylen Warren",
-   "player_id": "00-0037228",
-   "team": "PIT",
-   "injury_status": null,
-   "injury": null,
-   "opp": "PHI",
-   "position": "RB",
-   "stat": "rush_yds",
-   "stat_label": "Rushing Yards",
-   "game_id": "2026_11_PIT_PHI",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dkiteytgnxar1mpaxcxv",
-   "baseline": 83.8,
-   "sd": 43.1,
-   "games": 6,
-   "last10": [
-    46.0,
-    43.0,
-    127.0,
-    93.0,
-    101.0,
-    50.0,
-    101.0,
-    143.0,
-    15.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ATL",
-     "v": 46.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "NE",
-     "v": 43.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "CIN",
-     "v": 127.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "CLE",
-     "v": 93.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "IND",
-     "v": 101.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "TB",
-     "v": 50.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NO",
-     "v": 101.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "CLE",
-     "v": 143.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CIN",
-     "v": 15.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 108.9,
-   "league_avg": 92.2,
-   "matchup_factor": 1.181,
-   "matchup_pct": 18.1,
-   "projection": 91.4,
-   "def_rank": 9,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "TEN",
-     "v": 115.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "CHI",
-     "v": 115.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LA",
-     "v": 94.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "JAX",
-     "v": 77.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "CAR",
-     "v": 119.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "DAL",
-     "v": 196.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "WAS",
-     "v": 112.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYG",
-     "v": 51.0
-    }
-   ],
-   "pkey": "jaylen warren",
-   "vs_opp": [
-    {
-     "season": 2024,
-     "wk": 15,
-     "v": 12.0
     }
    ]
   },
@@ -16321,6 +16935,158 @@
    ]
   },
   {
+   "player": "Trevor Lawrence",
+   "player_id": "00-0036971",
+   "team": "JAX",
+   "injury_status": null,
+   "injury": null,
+   "opp": "NYG",
+   "position": "QB",
+   "stat": "pass_yds",
+   "stat_label": "Passing Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/k9uzdernqkx7oquy7dkg",
+   "baseline": 278.0,
+   "sd": 61.8,
+   "games": 6,
+   "last10": [
+    245.0,
+    189.0,
+    182.0,
+    227.0,
+    331.0,
+    306.0,
+    210.0,
+    242.0,
+    352.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CLE",
+     "v": 245.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "DEN",
+     "v": 189.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NE",
+     "v": 182.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 227.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 331.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 306.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "IND",
+     "v": 210.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "BAL",
+     "v": 242.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "TEN",
+     "v": 352.0,
+     "ha": "away"
+    }
+   ],
+   "def_allowed": 195.9,
+   "league_avg": 234.6,
+   "matchup_factor": 0.835,
+   "matchup_pct": -16.5,
+   "projection": 255.1,
+   "def_rank": 30,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "LA",
+     "v": 327.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TEN",
+     "v": 181.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ARI",
+     "v": 166.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "WAS",
+     "v": 199.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NO",
+     "v": 144.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "HOU",
+     "v": 153.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "PHI",
+     "v": 169.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "WAS",
+     "v": 249.0
+    }
+   ],
+   "pkey": "trevor lawrence",
+   "vs_opp": []
+  },
+  {
    "player": "Evan Engram",
    "player_id": "00-0033881",
    "team": "DEN",
@@ -16935,6 +17701,310 @@
     }
    ],
    "pkey": "omarion hampton",
+   "vs_opp": []
+  },
+  {
+   "player": "Malik Nabers",
+   "player_id": "00-0039337",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/w3edoyyuomqlovvp9ixc",
+   "baseline": 99.3,
+   "sd": 53.3,
+   "games": 6,
+   "last10": [
+    69.0,
+    1.0,
+    26.0,
+    112.0,
+    121.0,
+    165.0,
+    111.0,
+    43.0,
+    44.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 69.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 26.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 112.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 121.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 165.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 111.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 43.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 44.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 170.2,
+   "league_avg": 147.6,
+   "matchup_factor": 1.153,
+   "matchup_pct": 15.3,
+   "projection": 106.9,
+   "def_rank": 5,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 190.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 209.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 315.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 177.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 241.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 26.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 136.0
+    }
+   ],
+   "pkey": "malik nabers",
+   "vs_opp": []
+  },
+  {
+   "player": "Malachi Fields",
+   "player_id": "00-0041042",
+   "team": "NYG",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/tpls1aptxx9x8xaqvjtj",
+   "baseline": 46.0,
+   "sd": 22.6,
+   "games": 6,
+   "last10": [
+    25.0,
+    30.0,
+    19.0,
+    52.0,
+    20.0,
+    19.0,
+    83.0,
+    40.0,
+    62.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "DAL",
+     "v": 25.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LA",
+     "v": 30.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "TEN",
+     "v": 19.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "ARI",
+     "v": 52.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "WAS",
+     "v": 20.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "NO",
+     "v": 19.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "HOU",
+     "v": 83.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "PHI",
+     "v": 40.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "WAS",
+     "v": 62.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 170.2,
+   "league_avg": 147.6,
+   "matchup_factor": 1.153,
+   "matchup_pct": 15.3,
+   "projection": 49.5,
+   "def_rank": 5,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "DEN",
+     "v": 190.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 209.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 315.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 177.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 241.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 26.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 136.0
+    }
+   ],
+   "pkey": "malachi fields",
    "vs_opp": []
   },
   {
@@ -18059,6 +19129,462 @@
     }
    ],
    "pkey": "jonah coleman",
+   "vs_opp": []
+  },
+  {
+   "player": "Jakobi Meyers",
+   "player_id": "00-0034960",
+   "team": "JAX",
+   "injury_status": null,
+   "injury": null,
+   "opp": "NYG",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zrs4ij8mvw7wr1uujwew",
+   "baseline": 46.0,
+   "sd": 20.3,
+   "games": 6,
+   "last10": [
+    40.0,
+    28.0,
+    64.0,
+    33.0,
+    37.0,
+    83.0,
+    24.0,
+    65.0,
+    34.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CLE",
+     "v": 40.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "DEN",
+     "v": 28.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NE",
+     "v": 64.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 33.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 37.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 83.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "IND",
+     "v": 24.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "BAL",
+     "v": 65.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "TEN",
+     "v": 34.0,
+     "ha": "away"
+    }
+   ],
+   "def_allowed": 126.6,
+   "league_avg": 147.6,
+   "matchup_factor": 0.857,
+   "matchup_pct": -14.3,
+   "projection": 42.7,
+   "def_rank": 26,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "LA",
+     "v": 226.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TEN",
+     "v": 129.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ARI",
+     "v": 107.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "WAS",
+     "v": 121.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NO",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "HOU",
+     "v": 94.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "PHI",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "WAS",
+     "v": 152.0
+    }
+   ],
+   "pkey": "jakobi meyers",
+   "vs_opp": []
+  },
+  {
+   "player": "Parker Washington",
+   "player_id": "00-0038606",
+   "team": "JAX",
+   "injury_status": null,
+   "injury": null,
+   "opp": "NYG",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/yn0hc5xrz5nqeccg8two",
+   "baseline": 70.7,
+   "sd": 48.0,
+   "games": 6,
+   "last10": [
+    83.0,
+    98.0,
+    40.0,
+    7.0,
+    124.0,
+    64.0,
+    16.0,
+    61.0,
+    152.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CLE",
+     "v": 83.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "DEN",
+     "v": 98.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NE",
+     "v": 40.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 7.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 124.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 64.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "IND",
+     "v": 16.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "BAL",
+     "v": 61.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "TEN",
+     "v": 152.0,
+     "ha": "away"
+    }
+   ],
+   "def_allowed": 126.6,
+   "league_avg": 147.6,
+   "matchup_factor": 0.857,
+   "matchup_pct": -14.3,
+   "projection": 65.6,
+   "def_rank": 26,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "LA",
+     "v": 226.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TEN",
+     "v": 129.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ARI",
+     "v": 107.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "WAS",
+     "v": 121.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NO",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "HOU",
+     "v": 94.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "PHI",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "WAS",
+     "v": 152.0
+    }
+   ],
+   "pkey": "parker washington",
+   "vs_opp": []
+  },
+  {
+   "player": "Josh Cameron",
+   "player_id": "00-0041100",
+   "team": "JAX",
+   "injury_status": null,
+   "injury": null,
+   "opp": "NYG",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_11_JAX_NYG",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jwb3wyhoqqq52mfiyxxc",
+   "baseline": 26.3,
+   "sd": 24.2,
+   "games": 6,
+   "last10": [
+    20.0,
+    0.0,
+    12.0,
+    42.0,
+    43.0,
+    0.0,
+    0.0,
+    6.0,
+    67.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CLE",
+     "v": 20.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "DEN",
+     "v": 0.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NE",
+     "v": 12.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "CIN",
+     "v": 42.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PHI",
+     "v": 43.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "HOU",
+     "v": 0.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "IND",
+     "v": 0.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "BAL",
+     "v": 6.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "TEN",
+     "v": 67.0,
+     "ha": "away"
+    }
+   ],
+   "def_allowed": 126.6,
+   "league_avg": 147.6,
+   "matchup_factor": 0.857,
+   "matchup_pct": -14.3,
+   "projection": 24.4,
+   "def_rank": 26,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "LA",
+     "v": 226.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TEN",
+     "v": 129.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ARI",
+     "v": 107.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "WAS",
+     "v": 121.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NO",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "HOU",
+     "v": 94.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "PHI",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "WAS",
+     "v": 152.0
+    }
+   ],
+   "pkey": "josh cameron",
    "vs_opp": []
   },
   {
@@ -19250,295 +20776,7 @@
      "v": 20.0
     }
    ]
-  },
-  {
-   "player": "Treylon Burks",
-   "player_id": "00-0037742",
-   "team": "WAS",
-   "injury_status": null,
-   "injury": null,
-   "opp": "CIN",
-   "position": "WR",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "game_id": "2026_11_CIN_WAS",
-   "kickoff": "2026-11-23T20:15:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/bmozbzdxgnnwdniuvgnn",
-   "baseline": 43.3,
-   "sd": 29.0,
-   "games": 6,
-   "last10": [
-    0.0,
-    13.0,
-    47.0,
-    26.0,
-    66.0,
-    81.0,
-    27.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DAL",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "SEA",
-     "v": 13.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "IND",
-     "v": 47.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "NYG",
-     "v": 26.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "SF",
-     "v": 66.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "PHI",
-     "v": 81.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYG",
-     "v": 27.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 128.3,
-   "league_avg": 147.6,
-   "matchup_factor": 0.869,
-   "matchup_pct": -13.1,
-   "projection": 40.5,
-   "def_rank": 25,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "HOU",
-     "v": 138.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "PIT",
-     "v": 144.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "JAX",
-     "v": 99.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "MIA",
-     "v": 95.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "BAL",
-     "v": 210.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "TEN",
-     "v": 172.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "ATL",
-     "v": 89.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "PIT",
-     "v": 69.0
-    }
-   ],
-   "pkey": "treylon burks",
-   "vs_opp": []
-  },
-  {
-   "player": "Antonio Williams",
-   "player_id": "00-0041040",
-   "team": "WAS",
-   "injury_status": null,
-   "injury": null,
-   "opp": "CIN",
-   "position": "WR",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "game_id": "2026_11_CIN_WAS",
-   "kickoff": "2026-11-23T20:15:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/noywrsgaqoqlv64c12yw",
-   "baseline": 37.2,
-   "sd": 16.9,
-   "games": 6,
-   "last10": [
-    64.0,
-    24.0,
-    15.0,
-    21.0,
-    31.0,
-    50.0,
-    54.0,
-    25.0,
-    42.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "PHI",
-     "v": 64.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DAL",
-     "v": 24.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "SEA",
-     "v": 15.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "IND",
-     "v": 21.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "NYG",
-     "v": 31.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "SF",
-     "v": 50.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "PHI",
-     "v": 54.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "LA",
-     "v": 25.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYG",
-     "v": 42.0,
-     "ha": "away"
-    }
-   ],
-   "def_allowed": 128.3,
-   "league_avg": 147.6,
-   "matchup_factor": 0.869,
-   "matchup_pct": -13.1,
-   "projection": 34.8,
-   "def_rank": 25,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "HOU",
-     "v": 138.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "PIT",
-     "v": 144.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "JAX",
-     "v": 99.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "MIA",
-     "v": 95.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "BAL",
-     "v": 210.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "TEN",
-     "v": 172.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "ATL",
-     "v": 89.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "PIT",
-     "v": 69.0
-    }
-   ],
-   "pkey": "antonio williams",
-   "vs_opp": []
   }
  ],
- "odds_as_of": "2026-11-22T15:26:56-05:00"
+ "odds_as_of": "2026-11-22T15:27:51-05:00"
 }
