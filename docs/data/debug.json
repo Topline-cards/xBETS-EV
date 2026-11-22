@@ -1,149 +1,156 @@
 {
- "pinnwire_football_specials_flat": {
-  "top_level_keys": [
-   "sport_id",
-   "last",
-   "generated_at",
-   "events"
-  ],
-  "n_events": 778,
-  "league_counts": [
+ "pinnwire": {
+  "n_events": 777,
+  "n_nfl": 773,
+  "category_counts": [
    [
-    "NFL",
-    773
+    "Player Props",
+    574
    ],
    [
-    "NCAA",
-    5
-   ]
-  ],
-  "special_names_sample": [
-   "Dallas Cowboys Points Range 1st Quarter",
-   "Winning Margin Range",
-   "Dallas Cowboys Points Range",
-   "Denver Broncos Points Range 1st Quarter",
-   "Winning Margin Range",
-   "Winning Margin Range",
-   "New York Giants Points Range 1st Half",
-   "Total Points Range",
-   "Las Vegas Raiders Points Range",
-   "Jacksonville Jaguars Points Range",
-   "Bo Nix Total Touchdown Passes",
-   "Tony Pollard Total Receiving Yards",
-   "Jayden Daniels Total Rushing Yards",
-   "Ollie Gordon II Total Receiving Yards",
-   "Total Points Range",
-   "Chicago Bears Points Range",
-   "Winning Margin Range",
-   "Winning Margin Range",
-   "New Orleans Saints Points Range 1st Quarter",
-   "New Orleans Saints Points Range 1st Half",
-   "Joe Milton III Total Interceptions",
-   "Winning Margin Range",
-   "Brian Thomas Total Receptions",
-   "Total Points Range",
-   "Winning Margin Range"
-  ],
-  "nfl_main_event_sample": {
-   "event_id": 1633099350,
-   "sport_id": 5,
-   "league_id": 889,
-   "league_name": "NFL",
-   "special": "New York Giants To Make the Playoffs",
-   "special_category": "Team to Make Playoffs",
-   "special_units": "Playoffs",
-   "parent_id": null,
-   "starts": "2026-11-22T18:00:00Z",
-   "start_ts": "2026-11-22T18:00:00Z",
-   "event_type": "prematch",
-   "is_have_odds": true,
-   "special_markets": {
-    "num_0": [
-     {
-      "type": "moneyline",
-      "key": "s;0;m",
-      "side": null,
-      "max_risk": 1000,
-      "prices": [
-       {
-        "name": "Yes",
-        "participant_id": 1633099351,
-        "points": null,
-        "price": 1.699
-       },
-       {
-        "name": "No",
-        "participant_id": 1633099352,
-        "points": null,
-        "price": 2.18
-       }
-      ]
-     }
-    ]
-   }
-  },
-  "nfl_special_sample": {
-   "event_id": 1640606488,
-   "sport_id": 5,
-   "league_id": 889,
-   "league_name": "NFL",
-   "special": "Dallas Cowboys Points Range 1st Quarter",
-   "special_category": "Game Props",
-   "special_units": "Points",
-   "parent_id": 1640125303,
-   "starts": "2026-11-22T18:00:00Z",
-   "start_ts": "2026-11-22T18:00:00Z",
-   "event_type": "prematch",
-   "is_have_odds": true,
-   "special_markets": {
-    "num_3": [
-     {
-      "type": "moneyline",
-      "key": "s;3;m",
-      "side": null,
-      "max_risk": 250,
-      "prices": [
-       {
-        "name": "0 - 5",
-        "participant_id": 1640606490,
-        "points": null,
-        "price": 3
-       },
-       {
-        "name": "6 - 10",
-        "participant_id": 1640606491,
-        "points": null,
-        "price": 1.847
-       },
-       {
-        "name": "11 - 15",
-        "participant_id": 1640606492,
-        "points": null,
-        "price": 6
-       }
-      ]
-     }
-    ]
-   }
-  }
- },
- "pinnwire_football_specials_nested": {
-  "top_level_keys": [
-   "sport_id",
-   "last",
-   "generated_at",
-   "events"
-  ],
-  "n_events": 5,
-  "league_counts": [
+    "Game Props",
+    187
+   ],
    [
-    "NCAA",
+    "Futures",
+    7
+   ],
+   [
+    "Team to Make Playoffs",
     5
    ]
   ],
-  "special_names_sample": [],
-  "nfl_main_event_sample": null,
-  "nfl_special_sample": null
+  "with_periods": 0,
+  "main_event_sample": null,
+  "player_prop_names": [
+   "Field Goals",
+   "Pass Attempts",
+   "Pass Completions",
+   "Passing Yards",
+   "Receiving Yards",
+   "Rush Attempts",
+   "Rushing Yards",
+   "Total Interceptions",
+   "Total Receptions",
+   "Total Touchdowns",
+   "Touchdown Passes"
+  ],
+  "player_prop_samples": [
+   {
+    "event_id": 1640640657,
+    "sport_id": 5,
+    "league_id": 889,
+    "league_name": "NFL",
+    "special": "Bo Nix Total Touchdown Passes",
+    "special_category": "Player Props",
+    "special_units": "Touchdown Passes",
+    "parent_id": 1640142355,
+    "starts": "2026-11-22T21:25:00Z",
+    "start_ts": "2026-11-22T21:25:00Z",
+    "event_type": "prematch",
+    "is_have_odds": true,
+    "special_markets": {
+     "num_0": [
+      {
+       "type": "total",
+       "key": "s;0;ou",
+       "side": null,
+       "max_risk": 500,
+       "prices": [
+        {
+         "name": "Over",
+         "participant_id": 1640640658,
+         "points": 1.5,
+         "price": 1.787
+        },
+        {
+         "name": "Under",
+         "participant_id": 1640640659,
+         "points": 1.5,
+         "price": 2.01
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "event_id": 1640640705,
+    "sport_id": 5,
+    "league_id": 889,
+    "league_name": "NFL",
+    "special": "Tony Pollard Total Receiving Yards",
+    "special_category": "Player Props",
+    "special_units": "Receiving Yards",
+    "parent_id": 1640125303,
+    "starts": "2026-11-22T18:00:00Z",
+    "start_ts": "2026-11-22T18:00:00Z",
+    "event_type": "prematch",
+    "is_have_odds": true,
+    "special_markets": {
+     "num_0": [
+      {
+       "type": "total",
+       "key": "s;0;ou",
+       "side": null,
+       "max_risk": 500,
+       "prices": [
+        {
+         "name": "Over",
+         "participant_id": 1640640706,
+         "points": 20.5,
+         "price": 1.901
+        },
+        {
+         "name": "Under",
+         "participant_id": 1640640707,
+         "points": 20.5,
+         "price": 1.885
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "event_id": 1640640786,
+    "sport_id": 5,
+    "league_id": 889,
+    "league_name": "NFL",
+    "special": "Jayden Daniels Total Rushing Yards",
+    "special_category": "Player Props",
+    "special_units": "Rushing Yards",
+    "parent_id": 1640253467,
+    "starts": "2026-11-24T01:15:00Z",
+    "start_ts": "2026-11-24T01:15:00Z",
+    "event_type": "prematch",
+    "is_have_odds": true,
+    "special_markets": {
+     "num_0": [
+      {
+       "type": "total",
+       "key": "s;0;ou",
+       "side": null,
+       "max_risk": 500,
+       "prices": [
+        {
+         "name": "Over",
+         "participant_id": 1640640787,
+         "points": 41.5,
+         "price": 1.909
+        },
+        {
+         "name": "Under",
+         "participant_id": 1640640788,
+         "points": 41.5,
+         "price": 1.877
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  },
  "sharpapi": {
   "pagination": {
@@ -152,7 +159,7 @@
    "count": 200,
    "has_more": true,
    "next_offset": 200,
-   "next_cursor": "eyJlIjoibmZsX2JlYXJzX3NhaW50c18yMDI2LTExLTIyX2IyIiwiYiI6ImRyYWZ0a2luZ3MiLCJtIjoiMXN0X2hhbGZfdG90YWxfZmllbGRfZ29hbHMiLCJpIjoiMTg5OTkxNjU5OTE3MzY4IiwicyI6MTc5NTM3MDQwMDAwMDAwMDAwMCwiZyI6MTM2ODYsInAiOjgwNzcwMjIyMTQyNzMwNzQ0NjZ9"
+   "next_cursor": "eyJlIjoibmZsX2JlYXJzX3NhaW50c18yMDI2LTExLTIyX2IyIiwiYiI6ImRyYWZ0a2luZ3MiLCJtIjoiMXN0X2hhbGZfdG90YWxfZmllbGRfZ29hbHMiLCJpIjoiMTg5OTkxNjU5OTE3MzY4IiwicyI6MTc5NTM3MDQwMDAwMDAwMDAwMCwiZyI6MTQxNjAsInAiOjgwNzcwMjIyMTQyNzMwNzQ0NjZ9"
   },
   "market_type_counts": [
    [
@@ -232,7 +239,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "timestamp": "2026-11-22T05:17:55.224144199Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100107050466036",
     "market_id": "334520701",
@@ -264,7 +271,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "timestamp": "2026-11-22T05:17:55.224144199Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "deep_link": "https://api.sharpapi.io/api/v1/deeplink/10033310387441",
     "market_id": "334520701",
@@ -296,7 +303,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "timestamp": "2026-11-22T05:17:55.224144199Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100382864549736",
     "market_id": "334520701",
@@ -328,7 +335,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "timestamp": "2026-11-22T05:17:55.224144199Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "deep_link": "https://api.sharpapi.io/api/v1/deeplink/106210274151333",
     "market_id": "334520701",
@@ -361,7 +368,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "timestamp": "2026-11-22T05:17:55.224144199Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "player_name": "Luther Burden III",
     "stat_category": "1st_half_anytime_touchdown_scorer",
@@ -393,7 +400,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "timestamp": "2026-11-22T05:17:55.224144199Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "player_name": "Alvin Kamara",
     "stat_category": "1st_half_anytime_touchdown_scorer",
@@ -407,59 +414,235 @@
    }
   ]
  },
- "sharpapi_markets": {
-  "data": [
-   {
-    "id": "outright",
-    "name": "Outright",
-    "numerical_id": 902,
-    "market_type_id": 25,
-    "event_count": 1273,
-    "sports": [
-     "football"
-    ],
-    "sportsbooks": [
-     "ballybet",
-     "betmgm",
-     "betonline",
-     "\u2026 8 more"
-    ]
-   },
-   {
-    "id": "moneyline",
-    "name": "Moneyline",
-    "numerical_id": 878,
-    "market_type_id": 1,
-    "event_count": 100,
-    "sports": [
-     "football"
-    ],
-    "sportsbooks": [
-     "ballybet",
-     "bet365",
-     "betfair",
-     "\u2026 25 more"
-    ]
-   },
-   {
-    "id": "win_total_over_under",
-    "name": "Win Total Over/Under",
-    "numerical_id": 1387,
-    "market_type_id": 5,
-    "event_count": 100,
-    "sports": [
-     "football"
-    ],
-    "sportsbooks": [
-     "ballybet",
-     "betmgm",
-     "gemini",
-     "\u2026 1 more"
-    ]
-   },
-   "\u2026 162 more"
-  ],
-  "sport": "football",
-  "updated_at": "2026-11-22T05:16:51.500898949Z"
- }
+ "sharpapi_market_ids": [
+  "moneyline",
+  "total_points",
+  "point_spread",
+  "player_passing_yards",
+  "player_passing_touchdowns",
+  "player_receiving_yards",
+  "player_rushing_yards",
+  "player_touchdowns",
+  "player_receptions",
+  "player_rushing_+_receiving_yards",
+  "player_interceptions",
+  "player_extra_points_made",
+  "player_field_goals_made",
+  "player_kicking_points",
+  "player_longest_passing_completion",
+  "player_longest_reception",
+  "player_longest_rush",
+  "player_passing_+_rushing_yards",
+  "player_passing_attempts",
+  "player_passing_completions",
+  "player_rushing_attempts",
+  "1st_half_player_passing_touchdowns",
+  "1st_half_player_passing_yards",
+  "1st_half_player_receiving_yards",
+  "1st_half_player_rushing_yards",
+  "1st_quarter_player_passing_touchdowns",
+  "1st_quarter_player_passing_yards",
+  "1st_quarter_player_receiving_yards",
+  "1st_quarter_player_rushing_yards",
+  "player_assists",
+  "player_defensive_interceptions",
+  "player_goals",
+  "player_passes",
+  "player_passing_yards_combo_",
+  "player_points",
+  "player_receiving_yards_combo_",
+  "player_rushing_yards_combo_",
+  "player_sacks",
+  "player_tackles",
+  "player_tackles_+_assists",
+  "player_total_receptions",
+  "player_total_rush_attempts",
+  "player_touchdowns_combo_",
+  "most_receiving_yards_player",
+  "most_rushing_yards_player",
+  "most_receptions_player"
+ ],
+ "sharpapi_n_markets": 165,
+ "sharpapi_filtered_sample": [
+  {
+   "id": "11941048040995",
+   "sportsbook": "draftkings",
+   "event_id": "nfl_bears_saints_2026-11-22_b2",
+   "event_uuid": "84d1c5427ef88fe4",
+   "sport": "football",
+   "league": "nfl",
+   "home_team": "Chicago Bears",
+   "away_team": "New Orleans Saints",
+   "market_type": "moneyline",
+   "selection": "New Orleans Saints",
+   "selection_type": "away",
+   "team_side": "away",
+   "odds_american": 471,
+   "odds_decimal": 5.71,
+   "odds_probability": 0.1751,
+   "line": null,
+   "event_start_time": "2026-11-22T18:00Z",
+   "is_live": false,
+   "is_active": true,
+   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "price_updated_at": "2026-11-22T04:41:16.247344Z",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/11941048040995",
+   "market_id": "1_84695456",
+   "selection_id": "0ML84695456_3",
+   "is_alternate_line": false,
+   "is_main_line": true,
+   "is_stale_pregame_price": false,
+   "is_player_prop": false,
+   "is_impossible_scoreline": false,
+   "home": {
+    "id": "chicago_bears",
+    "numerical_id": 600,
+    "name": "Chicago Bears",
+    "abbreviation": "CHI",
+    "logo": "https://cdn.sharpapi.io/teams/football/600.png",
+    "city": "Chicago",
+    "mascot": "Bears",
+    "conference": "NFC",
+    "division": "North Division"
+   }
+  },
+  {
+   "id": "267112420257593",
+   "sportsbook": "draftkings",
+   "event_id": "nfl_bears_saints_2026-11-22_b2",
+   "event_uuid": "84d1c5427ef88fe4",
+   "sport": "football",
+   "league": "nfl",
+   "home_team": "Chicago Bears",
+   "away_team": "New Orleans Saints",
+   "market_type": "moneyline",
+   "selection": "Chicago Bears",
+   "selection_type": "home",
+   "team_side": "home",
+   "odds_american": -640,
+   "odds_decimal": 1.156,
+   "odds_probability": 0.8649,
+   "line": null,
+   "event_start_time": "2026-11-22T18:00Z",
+   "is_live": false,
+   "is_active": true,
+   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "price_updated_at": "2026-11-22T04:41:16.247344Z",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/267112420257593",
+   "market_id": "1_84695456",
+   "selection_id": "0ML84695456_1",
+   "is_alternate_line": false,
+   "is_main_line": true,
+   "is_stale_pregame_price": false,
+   "is_player_prop": false,
+   "is_impossible_scoreline": false,
+   "home": {
+    "id": "chicago_bears",
+    "numerical_id": 600,
+    "name": "Chicago Bears",
+    "abbreviation": "CHI",
+    "logo": "https://cdn.sharpapi.io/teams/football/600.png",
+    "city": "Chicago",
+    "mascot": "Bears",
+    "conference": "NFC",
+    "division": "North Division"
+   }
+  },
+  {
+   "id": "101351280210941",
+   "sportsbook": "draftkings",
+   "event_id": "nfl_bears_saints_2026-11-22_b2",
+   "event_uuid": "84d1c5427ef88fe4",
+   "sport": "football",
+   "league": "nfl",
+   "home_team": "Chicago Bears",
+   "away_team": "New Orleans Saints",
+   "market_type": "player_receiving_yards",
+   "selection": "Over",
+   "selection_type": "over",
+   "odds_american": 181,
+   "odds_decimal": 2.81,
+   "odds_probability": 0.3559,
+   "line": 69.5,
+   "event_start_time": "2026-11-22T18:00Z",
+   "is_live": false,
+   "is_active": true,
+   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "price_updated_at": "2026-11-22T04:41:16.247344Z",
+   "player_name": "Jordyn Tyson",
+   "stat_category": "receiving_yards",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/101351280210941",
+   "market_id": "389625247",
+   "selection_id": "0QA389625247#2367260454_13L88808Q1-2016709064Q20",
+   "is_alternate_line": true,
+   "is_main_line": false,
+   "is_stale_pregame_price": false,
+   "is_player_prop": true,
+   "is_impossible_scoreline": false
+  },
+  {
+   "id": "10378669405395",
+   "sportsbook": "draftkings",
+   "event_id": "nfl_bears_saints_2026-11-22_b2",
+   "event_uuid": "84d1c5427ef88fe4",
+   "sport": "football",
+   "league": "nfl",
+   "home_team": "Chicago Bears",
+   "away_team": "New Orleans Saints",
+   "market_type": "player_receiving_yards",
+   "selection": "Over",
+   "selection_type": "over",
+   "odds_american": -113,
+   "odds_decimal": 1.885,
+   "odds_probability": 0.5305,
+   "line": 7.5,
+   "event_start_time": "2026-11-22T18:00Z",
+   "is_live": false,
+   "is_active": true,
+   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "price_updated_at": "2026-11-22T04:41:16.247344Z",
+   "player_name": "Noah Fant",
+   "stat_category": "receiving_yards",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/10378669405395",
+   "market_id": "389625346",
+   "selection_id": "0QA389625346#2369893525_13L88808Q12113801461Q20",
+   "is_alternate_line": false,
+   "is_main_line": true,
+   "is_stale_pregame_price": false,
+   "is_player_prop": true,
+   "is_impossible_scoreline": false
+  },
+  {
+   "id": "106941724635605",
+   "sportsbook": "draftkings",
+   "event_id": "nfl_bears_saints_2026-11-22_b2",
+   "event_uuid": "84d1c5427ef88fe4",
+   "sport": "football",
+   "league": "nfl",
+   "home_team": "Chicago Bears",
+   "away_team": "New Orleans Saints",
+   "market_type": "player_receiving_yards",
+   "selection": "Over",
+   "selection_type": "over",
+   "odds_american": 163,
+   "odds_decimal": 2.63,
+   "odds_probability": 0.3802,
+   "line": 29.5,
+   "event_start_time": "2026-11-22T18:00Z",
+   "is_live": false,
+   "is_active": true,
+   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "price_updated_at": "2026-11-22T04:41:16.247344Z",
+   "player_name": "Kalif Raymond",
+   "stat_category": "receiving_yards",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/106941724635605",
+   "market_id": "389624718",
+   "selection_id": "0QA389624718#2367258952_13L88808Q1628754404Q20",
+   "is_alternate_line": true,
+   "is_main_line": false,
+   "is_stale_pregame_price": false,
+   "is_player_prop": true,
+   "is_impossible_scoreline": false
+  }
+ ]
 }
