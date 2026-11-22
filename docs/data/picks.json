@@ -1,15 +1,16 @@
 {
- "generated_at": "2026-11-22T10:04:12-05:00",
+ "generated_at": "2026-11-22T10:15:17-05:00",
  "season": 2026,
  "week": 11,
  "stats_mode": "current_only",
  "next_kickoff": "2026-11-22T13:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_props": 874,
-  "book_game_lines": 166,
+  "book_props": 869,
+  "book_game_lines": 165,
   "pinnacle_props": 472,
-  "pinnacle_game_lines": 322
+  "pinnacle_game_lines": 322,
+  "pinnacle_as_of": "2026-11-22T10:04:12-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -340,122 +341,94 @@
    "home_win_prob": 0.321
   }
  ],
- "combined": [
+ "combined": [],
+ "ev": [
   {
    "kind": "prop",
    "week": 11,
-   "player": "Chris Olave",
-   "pkey": "chris olave",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "line": 5.5,
+   "player": "Caleb Williams",
+   "pkey": "caleb williams",
+   "stat": "pass_att",
+   "stat_label": "Pass Attempts",
+   "line": 29.5,
    "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/113471884963870",
-   "team": "NO",
-   "opp": "CHI",
-   "position": "WR",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/117942714613738",
+   "team": "CHI",
+   "opp": "NO",
+   "position": "QB",
    "game_id": "2026_11_NO_CHI",
    "kickoff": "2026-11-22T13:00:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/u1wdmijwkbobujmw7kbb",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/h4qs11kutwiw7whekmyt",
    "books": [
     {
      "book": "draftkings",
-     "over": 2.0,
-     "under": 1.781
-    },
-    {
-     "book": "fanduel",
-     "over": 1.909,
-     "under": 1.769
+     "over": 1.8,
+     "under": 1.98
     },
     {
      "book": "pinnacle",
-     "over": 2.24,
-     "under": 1.667
+     "over": 2.07,
+     "under": 1.775
     }
    ],
-   "cheat_side": "under",
-   "proj_edge_pct": -12.7,
+   "cheat_side": null,
+   "proj_edge_pct": 9.2,
    "hit_rate_over": 0.67,
-   "model_prob_over": 0.39,
-   "projection": 4.8,
-   "baseline": 5.3,
-   "matchup_pct": -18.3,
-   "matchup_factor": 0.817,
-   "def_rank": 29,
+   "model_prob_over": 0.74,
+   "projection": 32.2,
+   "baseline": 32.5,
+   "matchup_pct": -1.9,
+   "matchup_factor": 0.981,
+   "def_rank": 18,
    "last10": [
-    10.0,
-    8.0,
-    9.0,
-    8.0,
-    4.0,
-    4.0,
-    6.0,
-    7.0,
-    3.0
+    29.0,
+    26.0,
+    36.0,
+    33.0,
+    34.0,
+    37.0
    ],
    "log": [
     {
      "season": 2026,
      "wk": 1,
-     "opp": "DET",
-     "v": 10.0,
+     "opp": "CAR",
+     "v": 29.0,
      "ha": "away"
     },
     {
      "season": 2026,
      "wk": 2,
-     "opp": "BAL",
-     "v": 8.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LV",
-     "v": 9.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "ATL",
-     "v": 8.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
      "opp": "MIN",
-     "v": 4.0,
+     "v": 26.0,
      "ha": "home"
     },
     {
      "season": 2026,
      "wk": 6,
-     "opp": "NYG",
-     "v": 4.0,
+     "opp": "ATL",
+     "v": 36.0,
      "ha": "away"
     },
     {
      "season": 2026,
      "wk": 7,
-     "opp": "PIT",
-     "v": 6.0,
+     "opp": "NE",
+     "v": 33.0,
      "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "SEA",
+     "v": 34.0,
+     "ha": "away"
     },
     {
      "season": 2026,
      "wk": 9,
-     "opp": "CLE",
-     "v": 7.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CAR",
-     "v": 3.0,
+     "opp": "TB",
+     "v": 37.0,
      "ha": "home"
     }
    ],
@@ -463,82 +436,80 @@
     {
      "season": 2026,
      "wk": 2,
-     "vs": "MIN",
-     "v": 5.0
+     "vs": "BAL",
+     "v": 31.0
     },
     {
      "season": 2026,
      "wk": 3,
-     "vs": "PHI",
-     "v": 11.0
+     "vs": "LV",
+     "v": 33.0
     },
     {
      "season": 2026,
      "wk": 4,
-     "vs": "NYJ",
-     "v": 5.0
+     "vs": "ATL",
+     "v": 20.0
     },
     {
      "season": 2026,
      "wk": 5,
-     "vs": "GB",
-     "v": 16.0
+     "vs": "MIN",
+     "v": 30.0
     },
     {
      "season": 2026,
      "wk": 6,
-     "vs": "ATL",
-     "v": 9.0
+     "vs": "NYG",
+     "v": 47.0
     },
     {
      "season": 2026,
      "wk": 7,
-     "vs": "NE",
-     "v": 7.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "SEA",
-     "v": 10.0
+     "vs": "PIT",
+     "v": 30.0
     },
     {
      "season": 2026,
      "wk": 9,
-     "vs": "TB",
-     "v": 7.0
+     "vs": "CLE",
+     "v": 31.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "CAR",
+     "v": 30.0
     }
    ],
    "vs_opp": [
     {
      "season": 2025,
      "wk": 7,
-     "v": 5.0
+     "v": 26.0
     }
    ],
-   "home_away": "away",
-   "player_id": "00-0037239",
+   "home_away": "home",
+   "player_id": "00-0039918",
    "injury_status": null,
    "injury": null,
-   "def_allowed": 9.2,
-   "league_avg": 11.3,
+   "def_allowed": 32.3,
+   "league_avg": 33.0,
    "games": 6,
    "side": "under",
-   "dec": 1.781,
-   "american": -128,
-   "title": "Under 5.5 Receptions",
-   "pinnacle_line": "5.5 o124/u-150",
-   "fair_prob": 0.5733,
-   "ev_pct": 2.11,
-   "kelly_pct": 2.7,
-   "units": 0.25,
-   "trusted_prob": 0.5674,
+   "dec": 1.98,
+   "american": -102,
+   "title": "Under 29.5 Pass Attempts",
+   "pinnacle_line": "29.5 o107/u-129",
+   "fair_prob": 0.5384,
+   "ev_pct": 6.6,
+   "kelly_pct": 6.73,
+   "units": 0.75,
+   "trusted_prob": 0.5217,
    "unit_note": null,
    "edge_trust": 0.5,
-   "pinn_dec": 1.667
-  }
- ],
- "ev": [
+   "pinn_dec": 1.775
+  },
   {
    "kind": "prop",
    "week": 11,
@@ -1061,369 +1032,6 @@
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.758
-  },
-  {
-   "kind": "prop",
-   "week": 11,
-   "player": "Caleb Williams",
-   "pkey": "caleb williams",
-   "stat": "pass_att",
-   "stat_label": "Pass Attempts",
-   "line": 29.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/117942714613738",
-   "team": "CHI",
-   "opp": "NO",
-   "position": "QB",
-   "game_id": "2026_11_NO_CHI",
-   "kickoff": "2026-11-22T13:00:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/h4qs11kutwiw7whekmyt",
-   "books": [
-    {
-     "book": "draftkings",
-     "over": 1.877,
-     "under": 1.901
-    },
-    {
-     "book": "pinnacle",
-     "over": 2.07,
-     "under": 1.775
-    }
-   ],
-   "cheat_side": null,
-   "proj_edge_pct": 9.2,
-   "hit_rate_over": 0.67,
-   "model_prob_over": 0.74,
-   "projection": 32.2,
-   "baseline": 32.5,
-   "matchup_pct": -1.9,
-   "matchup_factor": 0.981,
-   "def_rank": 18,
-   "last10": [
-    29.0,
-    26.0,
-    36.0,
-    33.0,
-    34.0,
-    37.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "CAR",
-     "v": 29.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "MIN",
-     "v": 26.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "ATL",
-     "v": 36.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NE",
-     "v": 33.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "SEA",
-     "v": 34.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "TB",
-     "v": 37.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "BAL",
-     "v": 31.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LV",
-     "v": 33.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "ATL",
-     "v": 20.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "MIN",
-     "v": 30.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "NYG",
-     "v": 47.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "PIT",
-     "v": 30.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "CLE",
-     "v": 31.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "CAR",
-     "v": 30.0
-    }
-   ],
-   "vs_opp": [
-    {
-     "season": 2025,
-     "wk": 7,
-     "v": 26.0
-    }
-   ],
-   "home_away": "home",
-   "player_id": "00-0039918",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 32.3,
-   "league_avg": 33.0,
-   "games": 6,
-   "side": "under",
-   "dec": 1.901,
-   "american": -111,
-   "title": "Under 29.5 Pass Attempts",
-   "pinnacle_line": "29.5 o107/u-129",
-   "fair_prob": 0.5384,
-   "ev_pct": 2.34,
-   "kelly_pct": 2.6,
-   "units": 0.25,
-   "trusted_prob": 0.5322,
-   "unit_note": null,
-   "edge_trust": 0.5,
-   "pinn_dec": 1.775
-  },
-  {
-   "kind": "prop",
-   "week": 11,
-   "player": "Chris Olave",
-   "pkey": "chris olave",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "line": 5.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/113471884963870",
-   "team": "NO",
-   "opp": "CHI",
-   "position": "WR",
-   "game_id": "2026_11_NO_CHI",
-   "kickoff": "2026-11-22T13:00:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/u1wdmijwkbobujmw7kbb",
-   "books": [
-    {
-     "book": "draftkings",
-     "over": 2.0,
-     "under": 1.781
-    },
-    {
-     "book": "fanduel",
-     "over": 1.909,
-     "under": 1.769
-    },
-    {
-     "book": "pinnacle",
-     "over": 2.24,
-     "under": 1.667
-    }
-   ],
-   "cheat_side": "under",
-   "proj_edge_pct": -12.7,
-   "hit_rate_over": 0.67,
-   "model_prob_over": 0.39,
-   "projection": 4.8,
-   "baseline": 5.3,
-   "matchup_pct": -18.3,
-   "matchup_factor": 0.817,
-   "def_rank": 29,
-   "last10": [
-    10.0,
-    8.0,
-    9.0,
-    8.0,
-    4.0,
-    4.0,
-    6.0,
-    7.0,
-    3.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DET",
-     "v": 10.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "BAL",
-     "v": 8.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LV",
-     "v": 9.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "ATL",
-     "v": 8.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "MIN",
-     "v": 4.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "NYG",
-     "v": 4.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "PIT",
-     "v": 6.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "CLE",
-     "v": 7.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "CAR",
-     "v": 3.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "MIN",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "PHI",
-     "v": 11.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NYJ",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "GB",
-     "v": 16.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "ATL",
-     "v": 9.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "NE",
-     "v": 7.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "SEA",
-     "v": 10.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "TB",
-     "v": 7.0
-    }
-   ],
-   "vs_opp": [
-    {
-     "season": 2025,
-     "wk": 7,
-     "v": 5.0
-    }
-   ],
-   "home_away": "away",
-   "player_id": "00-0037239",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 9.2,
-   "league_avg": 11.3,
-   "games": 6,
-   "side": "under",
-   "dec": 1.781,
-   "american": -128,
-   "title": "Under 5.5 Receptions",
-   "pinnacle_line": "5.5 o124/u-150",
-   "fair_prob": 0.5733,
-   "ev_pct": 2.11,
-   "kelly_pct": 2.7,
-   "units": 0.25,
-   "trusted_prob": 0.5674,
-   "unit_note": null,
-   "edge_trust": 0.5,
-   "pinn_dec": 1.667
   },
   {
    "kind": "prop",
@@ -4365,6 +3973,11 @@
    "kickoff": "2026-11-22T13:00:00-05:00",
    "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/nzqdkcpzcnspgfpflxcu",
    "books": [
+    {
+     "book": "draftkings",
+     "over": 1.877,
+     "under": 1.909
+    },
     {
      "book": "fanduel",
      "over": 1.885,
@@ -7450,6 +7063,11 @@
    "kickoff": "2026-11-22T13:00:00-05:00",
    "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pwko5dybmjie8qqo4qz2",
    "books": [
+    {
+     "book": "draftkings",
+     "over": 1.855,
+     "under": 1.935
+    },
     {
      "book": "fanduel",
      "over": 1.885,
@@ -10537,8 +10155,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.901,
-     "under": 1.877
+     "over": 1.862,
+     "under": 1.909
     }
    ],
    "cheat_side": "over",
@@ -10667,8 +10285,8 @@
    "league_avg": 3.8,
    "games": 6,
    "side": "over",
-   "dec": 1.901,
-   "american": -111,
+   "dec": 1.862,
+   "american": -116,
    "title": "Over 4.5 Rush Attempts"
   },
   {
@@ -11434,6 +11052,183 @@
   {
    "kind": "prop",
    "week": 11,
+   "player": "Colston Loveland",
+   "pkey": "colston loveland",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "line": 48.5,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/171637920937490",
+   "team": "CHI",
+   "opp": "NO",
+   "position": "TE",
+   "game_id": "2026_11_NO_CHI",
+   "kickoff": "2026-11-22T13:00:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/tdeidev1typrqjijtb3a",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 1.885,
+     "under": 1.901
+    }
+   ],
+   "cheat_side": "over",
+   "proj_edge_pct": 25.4,
+   "hit_rate_over": 0.56,
+   "model_prob_over": 0.673,
+   "projection": 60.8,
+   "baseline": 54.8,
+   "matchup_pct": 21.9,
+   "matchup_factor": 1.219,
+   "def_rank": 5,
+   "last10": [
+    0.0,
+    3.0,
+    31.0,
+    57.0,
+    19.0,
+    65.0,
+    69.0,
+    65.0,
+    54.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "CAR",
+     "v": 0.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "MIN",
+     "v": 3.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "PHI",
+     "v": 31.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "NYJ",
+     "v": 57.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "GB",
+     "v": 19.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "ATL",
+     "v": 65.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "NE",
+     "v": 69.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "SEA",
+     "v": 65.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "TB",
+     "v": 54.0,
+     "ha": "home"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "BAL",
+     "v": 49.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "LV",
+     "v": 148.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "ATL",
+     "v": 56.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "MIN",
+     "v": 50.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NYG",
+     "v": 99.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "PIT",
+     "v": 24.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "CLE",
+     "v": 42.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "CAR",
+     "v": 72.0
+    }
+   ],
+   "vs_opp": [
+    {
+     "season": 2025,
+     "wk": 7,
+     "v": 24.0
+    }
+   ],
+   "home_away": "home",
+   "player_id": "00-0040126",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 65.9,
+   "league_avg": 54.0,
+   "games": 6,
+   "side": "over",
+   "dec": 1.885,
+   "american": -113,
+   "title": "Over 48.5 Receiving Yards"
+  },
+  {
+   "kind": "prop",
+   "week": 11,
    "player": "D'Andre Swift",
    "pkey": "d andre swift",
    "stat": "rec_yds",
@@ -11828,8 +11623,8 @@
    "stat": "receptions",
    "stat_label": "Receptions",
    "line": 4.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/114923003618339",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/25708950755049",
    "team": "CHI",
    "opp": "NO",
    "position": "TE",
@@ -11839,8 +11634,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.87,
-     "under": 1.909
+     "over": 1.917,
+     "under": 1.862
     },
     {
      "book": "fanduel",
@@ -12003,15 +11798,15 @@
    "league_avg": 5.3,
    "games": 6,
    "side": "over",
-   "dec": 1.893,
-   "american": -112,
+   "dec": 1.917,
+   "american": -109,
    "title": "Over 4.5 Receptions",
    "pinnacle_line": "4.5 o-117/u-103",
    "fair_prob": 0.5152,
-   "ev_pct": -2.48,
-   "kelly_pct": -2.78,
+   "ev_pct": -1.24,
+   "kelly_pct": -1.36,
    "units": 0.0,
-   "trusted_prob": 0.5217,
+   "trusted_prob": 0.5184,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.855
@@ -12213,202 +12008,6 @@
    "american": -113,
    "title": "Over 92.5 Rushing Yards",
    "pinnacle_line": "92.5 o-110/u-110",
-   "fair_prob": 0.5,
-   "ev_pct": -5.75,
-   "kelly_pct": -6.5,
-   "units": 0.0,
-   "trusted_prob": 0.5153,
-   "unit_note": null,
-   "edge_trust": 0.5,
-   "pinn_dec": 1.909
-  },
-  {
-   "kind": "prop",
-   "week": 11,
-   "player": "Colston Loveland",
-   "pkey": "colston loveland",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "line": 49.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/177540126344586",
-   "team": "CHI",
-   "opp": "NO",
-   "position": "TE",
-   "game_id": "2026_11_NO_CHI",
-   "kickoff": "2026-11-22T13:00:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/tdeidev1typrqjijtb3a",
-   "books": [
-    {
-     "book": "draftkings",
-     "over": 1.877,
-     "under": 1.909
-    },
-    {
-     "book": "fanduel",
-     "over": 1.885,
-     "under": 1.885
-    },
-    {
-     "book": "pinnacle",
-     "over": 1.909,
-     "under": 1.909
-    }
-   ],
-   "cheat_side": "over",
-   "proj_edge_pct": 22.8,
-   "hit_rate_over": 0.56,
-   "model_prob_over": 0.659,
-   "projection": 60.8,
-   "baseline": 54.8,
-   "matchup_pct": 21.9,
-   "matchup_factor": 1.219,
-   "def_rank": 5,
-   "last10": [
-    0.0,
-    3.0,
-    31.0,
-    57.0,
-    19.0,
-    65.0,
-    69.0,
-    65.0,
-    54.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "CAR",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "MIN",
-     "v": 3.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "PHI",
-     "v": 31.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NYJ",
-     "v": 57.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "GB",
-     "v": 19.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "ATL",
-     "v": 65.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "NE",
-     "v": 69.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "SEA",
-     "v": 65.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "TB",
-     "v": 54.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 2,
-     "vs": "BAL",
-     "v": 49.0
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LV",
-     "v": 148.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "ATL",
-     "v": 56.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "MIN",
-     "v": 50.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "NYG",
-     "v": 99.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "PIT",
-     "v": 24.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "CLE",
-     "v": 42.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "CAR",
-     "v": 72.0
-    }
-   ],
-   "vs_opp": [
-    {
-     "season": 2025,
-     "wk": 7,
-     "v": 24.0
-    }
-   ],
-   "home_away": "home",
-   "player_id": "00-0040126",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 65.9,
-   "league_avg": 54.0,
-   "games": 6,
-   "side": "over",
-   "dec": 1.885,
-   "american": -113,
-   "title": "Over 49.5 Receiving Yards",
-   "pinnacle_line": "49.5 o-110/u-110",
    "fair_prob": 0.5,
    "ev_pct": -5.75,
    "kelly_pct": -6.5,
@@ -14915,6 +14514,177 @@
   {
    "kind": "prop",
    "week": 11,
+   "player": "Justin Herbert",
+   "pkey": "justin herbert",
+   "stat": "pass_yds",
+   "stat_label": "Passing Yards",
+   "line": 205.5,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/119191259507887",
+   "team": "LAC",
+   "opp": "NYJ",
+   "position": "QB",
+   "game_id": "2026_11_NYJ_LAC",
+   "kickoff": "2026-11-22T16:05:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jnkspnntgebegzp4ghve",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 1.901,
+     "under": 1.885
+    }
+   ],
+   "cheat_side": "under",
+   "proj_edge_pct": -15.9,
+   "hit_rate_over": 0.33,
+   "model_prob_over": 0.225,
+   "projection": 172.9,
+   "baseline": 182.2,
+   "matchup_pct": -10.3,
+   "matchup_factor": 0.897,
+   "def_rank": 27,
+   "last10": [
+    209.0,
+    192.0,
+    226.0,
+    189.0,
+    121.0,
+    204.0,
+    257.0,
+    193.0,
+    129.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "ARI",
+     "v": 209.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "LV",
+     "v": 192.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "BUF",
+     "v": 226.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "SEA",
+     "v": 189.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "DEN",
+     "v": 121.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "KC",
+     "v": 204.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "LA",
+     "v": 257.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "HOU",
+     "v": 193.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "BAL",
+     "v": 129.0,
+     "ha": "away"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "DET",
+     "v": 269.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CHI",
+     "v": 268.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "CLE",
+     "v": 155.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "NE",
+     "v": 235.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "MIA",
+     "v": 208.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "LV",
+     "v": 247.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "KC",
+     "v": 242.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "BUF",
+     "v": 196.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "home",
+   "player_id": "00-0036355",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 210.5,
+   "league_avg": 234.6,
+   "games": 6,
+   "side": "under",
+   "dec": 1.885,
+   "american": -113,
+   "title": "Under 205.5 Passing Yards"
+  },
+  {
+   "kind": "prop",
+   "week": 11,
    "player": "Brevyn Spann-Ford",
    "pkey": "brevyn spann ford",
    "stat": "rec_yds",
@@ -15090,177 +14860,6 @@
    "dec": 1.885,
    "american": -113,
    "title": "Under 21.5 Receiving Yards"
-  },
-  {
-   "kind": "prop",
-   "week": 11,
-   "player": "Justin Herbert",
-   "pkey": "justin herbert",
-   "stat": "pass_yds",
-   "stat_label": "Passing Yards",
-   "line": 204.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/248359458467505",
-   "team": "LAC",
-   "opp": "NYJ",
-   "position": "QB",
-   "game_id": "2026_11_NYJ_LAC",
-   "kickoff": "2026-11-22T16:05:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jnkspnntgebegzp4ghve",
-   "books": [
-    {
-     "book": "draftkings",
-     "over": 1.885,
-     "under": 1.901
-    }
-   ],
-   "cheat_side": "under",
-   "proj_edge_pct": -15.5,
-   "hit_rate_over": 0.33,
-   "model_prob_over": 0.232,
-   "projection": 172.9,
-   "baseline": 182.2,
-   "matchup_pct": -10.3,
-   "matchup_factor": 0.897,
-   "def_rank": 27,
-   "last10": [
-    209.0,
-    192.0,
-    226.0,
-    189.0,
-    121.0,
-    204.0,
-    257.0,
-    193.0,
-    129.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "ARI",
-     "v": 209.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "LV",
-     "v": 192.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "BUF",
-     "v": 226.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "SEA",
-     "v": 189.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "DEN",
-     "v": 121.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "KC",
-     "v": 204.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "LA",
-     "v": 257.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "HOU",
-     "v": 193.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "BAL",
-     "v": 129.0,
-     "ha": "away"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "DET",
-     "v": 269.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "CHI",
-     "v": 268.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "CLE",
-     "v": 155.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "NE",
-     "v": 235.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "MIA",
-     "v": 208.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "LV",
-     "v": 247.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "KC",
-     "v": 242.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "BUF",
-     "v": 196.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "home",
-   "player_id": "00-0036355",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 210.5,
-   "league_avg": 234.6,
-   "games": 6,
-   "side": "under",
-   "dec": 1.901,
-   "american": -111,
-   "title": "Under 204.5 Passing Yards"
   },
   {
    "kind": "prop",
@@ -16024,8 +15623,8 @@
    "stat": "receptions",
    "stat_label": "Receptions",
    "line": 5.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/113471884963870",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/171603165193344",
    "team": "NO",
    "opp": "CHI",
    "position": "WR",
@@ -16035,8 +15634,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 2.0,
-     "under": 1.781
+     "over": 2.08,
+     "under": 1.725
     },
     {
      "book": "fanduel",
@@ -16199,15 +15798,15 @@
    "league_avg": 11.3,
    "games": 6,
    "side": "under",
-   "dec": 1.781,
-   "american": -128,
+   "dec": 1.769,
+   "american": -130,
    "title": "Under 5.5 Receptions",
    "pinnacle_line": "5.5 o124/u-150",
    "fair_prob": 0.5733,
-   "ev_pct": 2.11,
-   "kelly_pct": 2.7,
+   "ev_pct": 1.42,
+   "kelly_pct": 1.85,
    "units": 0.25,
-   "trusted_prob": 0.5674,
+   "trusted_prob": 0.5693,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.667
@@ -18793,8 +18392,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 2.22,
-     "under": 1.641
+     "over": 2.26,
+     "under": 1.621
     },
     {
      "book": "fanduel",
@@ -18957,15 +18556,15 @@
    "league_avg": 5.3,
    "games": 6,
    "side": "under",
-   "dec": 1.641,
-   "american": -156,
+   "dec": 1.621,
+   "american": -161,
    "title": "Under 2.5 Receptions",
    "pinnacle_line": "2.5 o127/u-154",
    "fair_prob": 0.5792,
-   "ev_pct": -4.95,
-   "kelly_pct": -7.72,
+   "ev_pct": -6.11,
+   "kelly_pct": -9.83,
    "units": 0.0,
-   "trusted_prob": 0.5943,
+   "trusted_prob": 0.5981,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.649
@@ -18989,7 +18588,7 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.935,
+     "over": 1.926,
      "under": 1.84
     },
     {
@@ -19271,7 +18870,7 @@
     {
      "book": "draftkings",
      "a": 1.578,
-     "b": 2.45
+     "b": 2.46
     },
     {
      "book": "fanduel",
@@ -19338,6 +18937,11 @@
    },
    "books": [
     {
+     "book": "draftkings",
+     "a": 1.152,
+     "b": 5.78
+    },
+    {
      "book": "fanduel",
      "a": 1.143,
      "b": 6.0
@@ -19361,6 +18965,75 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "pinn_dec": 5.98
+  },
+  {
+   "kind": "ml",
+   "week": 11,
+   "player": "MIA @ BUF",
+   "pkey": "2026_11_MIA_BUF",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "MIA Moneyline",
+   "line": null,
+   "side": "away",
+   "team": "MIA",
+   "opp": "BUF",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118898886735270",
+   "game_id": "2026_11_MIA_BUF",
+   "kickoff": "2026-11-22T13:00:00-05:00",
+   "home": "BUF",
+   "away": "MIA",
+   "dec": 10.8,
+   "american": 980,
+   "game_model": {
+    "game_id": "2026_11_MIA_BUF",
+    "home": "BUF",
+    "away": "MIA",
+    "kickoff": "2026-11-22T13:00:00-05:00",
+    "proj_home": 30.6,
+    "proj_away": 17.9,
+    "proj_margin": 12.7,
+    "proj_total": 48.5,
+    "home_pf": 31.9,
+    "home_pa": 22.1,
+    "away_pf": 16.4,
+    "away_pa": 24.9,
+    "home_games": 9,
+    "away_games": 9,
+    "league_avg": 23.08,
+    "home_win_prob": 0.827
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.065,
+     "b": 9.9
+    },
+    {
+     "book": "fanduel",
+     "a": 1.056,
+     "b": 10.8
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.069,
+     "b": 11.37
+    }
+   ],
+   "model_prob": 0.173,
+   "model_edge": 8.39,
+   "model_edge_txt": "+8.4%",
+   "cheat_side": "away",
+   "pinnacle_line": "BUF -1449 / MIA +1037",
+   "fair_prob": 0.0859,
+   "ev_pct": -7.19,
+   "kelly_pct": -0.73,
+   "units": 0.0,
+   "trusted_prob": 0.0873,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "pinn_dec": 11.37
   },
   {
    "kind": "total",
@@ -19430,75 +19103,6 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "pinn_dec": 1.885
-  },
-  {
-   "kind": "ml",
-   "week": 11,
-   "player": "MIA @ BUF",
-   "pkey": "2026_11_MIA_BUF",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "MIA Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "MIA",
-   "opp": "BUF",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118898886735270",
-   "game_id": "2026_11_MIA_BUF",
-   "kickoff": "2026-11-22T13:00:00-05:00",
-   "home": "BUF",
-   "away": "MIA",
-   "dec": 10.0,
-   "american": 900,
-   "game_model": {
-    "game_id": "2026_11_MIA_BUF",
-    "home": "BUF",
-    "away": "MIA",
-    "kickoff": "2026-11-22T13:00:00-05:00",
-    "proj_home": 30.6,
-    "proj_away": 17.9,
-    "proj_margin": 12.7,
-    "proj_total": 48.5,
-    "home_pf": 31.9,
-    "home_pa": 22.1,
-    "away_pf": 16.4,
-    "away_pa": 24.9,
-    "home_games": 9,
-    "away_games": 9,
-    "league_avg": 23.08,
-    "home_win_prob": 0.827
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.064,
-     "b": 9.9
-    },
-    {
-     "book": "fanduel",
-     "a": 1.063,
-     "b": 10.0
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.069,
-     "b": 11.37
-    }
-   ],
-   "model_prob": 0.173,
-   "model_edge": 7.69,
-   "model_edge_txt": "+7.7%",
-   "cheat_side": "away",
-   "pinnacle_line": "BUF -1449 / MIA +1037",
-   "fair_prob": 0.0859,
-   "ev_pct": -14.06,
-   "kelly_pct": -1.56,
-   "units": 0.0,
-   "trusted_prob": 0.0888,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "pinn_dec": 11.37
   },
   {
    "kind": "ml",
@@ -19610,7 +19214,7 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.457,
+     "a": 1.455,
      "b": 2.83
     },
     {
@@ -19625,7 +19229,7 @@
     }
    ],
    "model_prob": 0.402,
-   "model_edge": 6.21,
+   "model_edge": 6.24,
    "model_edge_txt": "+6.2%",
    "cheat_side": "away",
    "pinnacle_line": "DET -199 / TB +177",
@@ -19977,75 +19581,6 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "pinn_dec": 1.806
-  },
-  {
-   "kind": "ml",
-   "week": 11,
-   "player": "TEN @ DAL",
-   "pkey": "2026_11_TEN_DAL",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "TEN Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "TEN",
-   "opp": "DAL",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/34606429088169",
-   "game_id": "2026_11_TEN_DAL",
-   "kickoff": "2026-11-22T13:00:00-05:00",
-   "home": "DAL",
-   "away": "TEN",
-   "dec": 4.09,
-   "american": 309,
-   "game_model": {
-    "game_id": "2026_11_TEN_DAL",
-    "home": "DAL",
-    "away": "TEN",
-    "kickoff": "2026-11-22T13:00:00-05:00",
-    "proj_home": 29.8,
-    "proj_away": 22.1,
-    "proj_margin": 7.6,
-    "proj_total": 51.9,
-    "home_pf": 28.6,
-    "home_pa": 28.2,
-    "away_pf": 18.6,
-    "away_pa": 26.6,
-    "home_games": 10,
-    "away_games": 9,
-    "league_avg": 23.08,
-    "home_win_prob": 0.714
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.256,
-     "b": 4.09
-    },
-    {
-     "book": "fanduel",
-     "a": 1.267,
-     "b": 4.0
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.262,
-     "b": 4.2
-    }
-   ],
-   "model_prob": 0.286,
-   "model_edge": 5.11,
-   "model_edge_txt": "+5.1%",
-   "cheat_side": "away",
-   "pinnacle_line": "DAL -382 / TEN +320",
-   "fair_prob": 0.2311,
-   "ev_pct": -5.5,
-   "kelly_pct": -1.78,
-   "units": 0.0,
-   "trusted_prob": 0.2337,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "pinn_dec": 4.2
   },
   {
    "kind": "spread",
@@ -32428,5 +31963,5 @@
    "vs_opp": []
   }
  ],
- "odds_as_of": "2026-11-22T10:04:12-05:00"
+ "odds_as_of": "2026-11-22T10:15:17-05:00"
 }
