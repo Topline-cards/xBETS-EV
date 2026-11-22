@@ -104,7 +104,8 @@ def build(now=None, force=False):
     def_df, base_df, mode = stats.stats_frames(season, week)
     allowed, league = stats.defense_vs_position(def_df)
     baselines = stats.player_baselines(base_df)
-    proj = matchups.build_projections(baselines, allowed, league, week_games)
+    avail = stats.availability(season, week)
+    proj = matchups.build_projections(baselines, allowed, league, week_games, avail)
     for r in proj:
         r["def_rank"] = matchups.rank_of(allowed, r["opp"], r["position"], r["stat"])
         r["def_log"] = stats.defense_vs_position.logs.get((r["opp"], r["position"], r["stat"]), [])
@@ -186,6 +187,7 @@ def build(now=None, force=False):
             info.update({k: pr[k] for k in ("projection", "baseline", "matchup_pct",
                                              "matchup_factor", "def_rank", "last10", "log", "def_log",
                                              "vs_opp", "home_away", "player_id",
+                                             "injury_status", "injury",
                                              "def_allowed", "league_avg", "games")})
         fair = pinn_prop.get((b["pkey"], b["stat"], b["line"]))
         for side in ("over", "under"):

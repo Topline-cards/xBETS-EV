@@ -169,6 +169,46 @@ def team_logos():
             if a not in ("OAK", "SD", "STL", "LAR")}
 
 
+def availability(season, week):
+    """
+    {player_id: {"status": "Out"/"Doubtful"/"Questionable"/None,
+                 "injury": "Knee", "team": current team, "hide": bool, "why": str}}
+    Sources: the official weekly injury report for THIS week, and the latest
+    weekly roster (catches IR, cuts, trades).
+    """
+    out = {}
+    try:
+        r = nflr.load_rosters_weekly([season]).to_pandas()
+        r = r[r["week"] <= week]
+        if not r.empty:
+            r = r[r["week"] == r["week"].max()]
+            for row in r.itertuples():
+                if not isinstance(row.gsis_id, str):
+                    continue
+                inactive = row.status in config.INACTIVE_ROSTER_STATUS
+                out[row.gsis_id] = {"team": row.team, "status": None, "injury": None,
+                                    "hide": inactive,
+                                    "why": (row.status_description_abbr or row.status) if inactive else None}
+    except Exception:
+        pass
+    try:
+        inj = nflr.load_injuries([season]).to_pandas()
+        inj = inj[inj["week"] == week]                 # only this week's report
+        hide = set(config.HIDE_INJURY_STATUS) | ({"Doubtful"} if config.HIDE_DOUBTFUL else set())
+        for row in inj.itertuples():
+            if not isinstance(row.gsis_id, str) or not isinstance(row.report_status, str):
+                continue
+            a = out.setdefault(row.gsis_id, {"team": row.team, "hide": False, "why": None})
+            a["status"] = row.report_status
+            a["injury"] = row.report_primary_injury if isinstance(row.report_primary_injury, str) else None
+            if row.report_status in hide:
+                a["hide"] = True
+                a["why"] = f"{row.report_status}" + (f" ({a['injury']})" if a["injury"] else "")
+    except Exception:
+        pass
+    return out
+
+
 # ------------------------------------------------------------------ player baselines
 def player_baselines(df):
     """

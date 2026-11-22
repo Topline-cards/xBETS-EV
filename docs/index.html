@@ -68,6 +68,7 @@
   .tr.ev .tx b{color:var(--green)}
   .tr.urow{border-top:1px solid #2d3a33;background:linear-gradient(90deg,rgba(62,207,142,.08),transparent);margin:0 -13px;padding:9px 14px}
   .tr.urow .pv{color:var(--green);font-size:17px}
+  .inj{display:inline-block;font-size:11px;font-weight:800;color:#2a1d05;background:var(--amber);border-radius:5px;padding:2px 5px;margin-left:6px;vertical-align:2px}
   .fav-b{display:inline-block;font-size:11px;font-weight:700;color:#0d2a1d;background:var(--green);border-radius:5px;padding:2px 5px;margin-left:6px;vertical-align:2px}
   .note-amber{color:var(--amber);font-size:12px}
   .toplink{display:inline-flex;align-items:center;gap:5px;color:var(--cyan);text-decoration:none;font-size:13px;font-weight:600;
@@ -277,8 +278,8 @@ function card(p, mode, i, inDetail){
   }
   return `<div class="tc ${inDetail ? "snap" : ""} ${fav ? "fav" : ""}" ${inDetail ? "" : `data-i="${i}"`}>
     <div class="th">${logoImg(team)}
-      <div class="tm"><div class="tn">${name}${fav ? '<span class="fav-b">👍 FAV</span>' : ""}</div><div class="tb">${bet}</div>
-        <div class="sub">${when(p.kickoff)}${p.capped && p.units ? " · game cap" : ""}</div></div>
+      <div class="tm"><div class="tn">${name}${p.injury_status ? `<span class="inj">${esc(p.injury_status[0])}</span>` : ""}${fav ? '<span class="fav-b">👍 FAV</span>' : ""}</div><div class="tb">${bet}</div>
+        <div class="sub">${when(p.kickoff)}${p.capped && p.units ? " · game cap" : ""}${p.injury_status ? ` · <span style="color:var(--amber)">${esc(p.injury_status)}${p.injury ? " (" + esc(p.injury) + ")" : ""}: check status before betting</span>` : ""}</div></div>
       <div class="tp"><div class="odds">${am(p.american)}</div><span class="bk ${esc(p.book)}">${p.book === "draftkings" ? "DK" : p.book === "fanduel" ? "FD" : esc(p.book)}</span></div>
     </div>
     ${rows.filter(Boolean).join("")}
@@ -337,7 +338,7 @@ function projTables(){
   if (showProps && rows.length) {
     h += `<h2>Biggest player matchups</h2><div class="card" style="cursor:default"><table>
       <tr><th>Player</th><th>Stat</th><th class="num">Avg→Proj</th><th class="num">Def</th></tr>
-      ${S.mShown.map((r, i) => `<tr class="tap" data-m="${i}"><td><b>${esc(r.player)}</b><div class="sub">${esc(r.position)} · ${esc(r.team)} vs ${esc(r.opp)}</div></td>
+      ${S.mShown.map((r, i) => `<tr class="tap" data-m="${i}"><td><b>${esc(r.player)}</b>${r.injury_status ? `<span class="inj">${esc(r.injury_status[0])}</span>` : ""}<div class="sub">${esc(r.position)} · ${esc(r.team)} vs ${esc(r.opp)}</div></td>
         <td>${esc(r.stat_label)}</td><td class="num">${r.baseline}→<b>${r.projection}</b></td>
         <td class="num ${r.matchup_pct > 0 ? "good" : "bad"}">${pct(r.matchup_pct, 0)}</td></tr>`).join("")}</table></div>`;
   }

@@ -24,14 +24,21 @@ def opponent_map(games):
     return m
 
 
-def build_projections(baselines, allowed, league, games):
-    """Every player/stat for this week's games with matchup factor + projection."""
+def build_projections(baselines, allowed, league, games, avail=None):
+    """Every player/stat for this week's games with matchup factor + projection.
+    avail: injury/roster info; players ruled out are skipped, traded players
+    are moved to their current team."""
     opp = opponent_map(games)
+    avail = avail or {}
     rows = []
     for r in baselines.itertuples():
-        if r.team not in opp:
+        a = avail.get(r.player_id, {})
+        if a.get("hide"):
             continue
-        opp_team, game_id, kickoff, side, starter = opp[r.team]
+        team = a.get("team") or r.team
+        if team not in opp:
+            continue
+        opp_team, game_id, kickoff, side, starter = opp[team]
         # QBs: only the team's named starter for this game (nflverse schedule).
         if r.position == "QB" and isinstance(starter, str) and starter and r.player_id != starter:
             continue
@@ -43,7 +50,8 @@ def build_projections(baselines, allowed, league, games):
         factor = min(max(dv / lg, lo), hi)
         proj = r.baseline * (1 + config.MATCHUP_WEIGHT * (factor - 1))
         rows.append({
-            "player": r.player, "player_id": r.player_id, "team": r.team,
+            "player": r.player, "player_id": r.player_id, "team": team,
+            "injury_status": a.get("status"), "injury": a.get("injury"),
             "opp": opp_team, "position": r.position, "stat": r.stat,
             "stat_label": config.PROP_STATS[r.stat][2],
             "game_id": game_id, "kickoff": kickoff, "home_away": side,

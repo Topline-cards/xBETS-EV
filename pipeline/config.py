@@ -54,6 +54,15 @@ SPREAD_MIN_EDGE = 2.5        # model must beat the spread by 2.5+ pts
 TOTAL_MIN_EDGE = 3.0         # ...or the total by 3+ pts
 ML_MIN_EDGE_PCT = 5.0        # ...or the book's win % by 5+ points
 
+# ---------------------------------------------------------------- injuries
+# Hide players with these injury-report statuses for the game.
+HIDE_INJURY_STATUS = {"Out"}
+# Doubtful players almost never play; set True to hide them as well.
+HIDE_DOUBTFUL = True
+# Roster statuses that mean "not playing": reserve/IR, cut, retired, traded away
+# (re-checked against their new team), practice squad, inactive.
+INACTIVE_ROSTER_STATUS = {"RES", "CUT", "RET", "DEV", "INA", "EXE", "SUS", "PUP", "NON"}
+
 # ---------------------------------------------------------------- timing
 # Odds checks only run when a game kicks off within this many hours.
 PREGAME_WINDOW_HOURS = 4
