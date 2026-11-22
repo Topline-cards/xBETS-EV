@@ -1,6 +1,466 @@
 {
+ "pinnwire_no_specials": {
+  "n_events": 5,
+  "league_counts": [
+   [
+    "NCAA",
+    5
+   ]
+  ],
+  "with_periods": 5,
+  "nfl_sample": null
+ },
+ "pinnwire_fixtures": {
+  "top_keys": [
+   "sport_id",
+   "last",
+   "generated_at",
+   "events"
+  ],
+  "n": 28,
+  "sample": {
+   "event_id": 1640095130,
+   "sport_id": 5,
+   "league_id": 889,
+   "league_name": "NFL",
+   "home": "Buffalo Bills",
+   "away": "Miami Dolphins",
+   "starts": "2026-11-22T18:00:00Z",
+   "start_ts": "2026-11-22T18:00:00Z",
+   "event_type": "prematch",
+   "units": "Regular",
+   "parent_id": null,
+   "is_have_odds": true,
+   "is_have_periods": true,
+   "periods": {
+    "num_0": {
+     "number": 0,
+     "money_line": {
+      "home": 1.071,
+      "away": 9.79
+     },
+     "spreads": {
+      "-17": {
+       "hdp": -17,
+       "home": 2.07,
+       "away": 1.833,
+       "max": 40000
+      },
+      "-10.5": {
+       "hdp": -10.5,
+       "home": 1.465,
+       "away": 2.8,
+       "max": 40000
+      },
+      "-14.5": {
+       "hdp": -14.5,
+       "home": 1.806,
+       "away": 2.07,
+       "max": 40000
+      },
+      "-15": {
+       "hdp": -15,
+       "home": 1.847,
+       "away": 2.02,
+       "max": 40000
+      },
+      "-15.5": {
+       "hdp": -15.5,
+       "home": 1.901,
+       "away": 1.962,
+       "max": 40000
+      },
+      "-16": {
+       "hdp": -16,
+       "home": 1.943,
+       "away": 1.926,
+       "max": 40000
+      },
+      "-16.5": {
+       "hdp": -16.5,
+       "home": 1.98,
+       "away": 1.901,
+       "max": 40000
+      },
+      "-17.5": {
+       "hdp": -17.5,
+       "home": 2.15,
+       "away": 1.763,
+       "max": 40000
+      },
+      "-18": {
+       "hdp": -18,
+       "home": 2.24,
+       "away": 1.699,
+       "max": 40000
+      },
+      "-18.5": {
+       "hdp": -18.5,
+       "home": 2.33,
+       "away": 1.645,
+       "max": 40000
+      },
+      "-19": {
+       "hdp": -19,
+       "home": 2.39,
+       "away": 1.613,
+       "max": 40000
+      },
+      "-19.5": {
+       "hdp": -19.5,
+       "home": 2.43,
+       "away": 1.595,
+       "max": 40000
+      },
+      "-24.5": {
+       "hdp": -24.5,
+       "home": 3.52,
+       "away": 1.316,
+       "max": 40000
+      }
+     },
+     "totals": {
+      "42": {
+       "points": 42,
+       "over": 1.633,
+       "under": 2.34,
+       "max": 10000
+      },
+      "43": {
+       "points": 43,
+       "over": 1.73,
+       "under": 2.17,
+       "max": 10000
+      },
+      "44": {
+       "points": 44,
+       "over": 1.84,
+       "under": 2.02,
+       "max": 10000
+      },
+      "45": {
+       "points": 45,
+       "over": 1.98,
+       "under": 1.877,
+       "max": 10000
+      },
+      "46": {
+       "points": 46,
+       "over": 2.12,
+       "under": 1.763,
+       "max": 10000
+      },
+      "47": {
+       "points": 47,
+       "over": 2.28,
+       "under": 1.667,
+       "max": 10000
+      },
+      "44.5": {
+       "points": 44.5,
+       "over": 1.917,
+       "under": 1.952,
+       "max": 10000
+      },
+      "37.5": {
+       "points": 37.5,
+       "over": 1.33,
+       "under": 3.4,
+       "max": 10000
+      },
+      "42.5": {
+       "points": 42.5,
+       "over": 1.676,
+       "under": 2.26,
+       "max": 10000
+      },
+      "43.5": {
+       "points": 43.5,
+       "over": 1.781,
+       "under": 2.1,
+       "max": 10000
+      },
+      "45.5": {
+       "points": 45.5,
+       "over": 2.05,
+       "under": 1.82,
+       "max": 10000
+      },
+      "46.5": {
+       "points": 46.5,
+       "over": 2.2,
+       "under": 1.709,
+       "max": 10000
+      },
+      "51.5": {
+       "points": 51.5,
+       "over": 3.1,
+       "under": 1.386,
+       "max": 10000
+      }
+     },
+     "team_total": {
+      "home": {
+       "points": 31.5,
+       "over": 2.23,
+       "under": 1.694
+      },
+      "away": {
+       "points": 14.5,
+       "over": 2.11,
+       "under": 1.769
+      }
+     },
+     "team_totals": {
+      "home": {
+       "31.5": {
+        "points": 31.5,
+        "over": 2.23,
+        "under": 1.694,
+        "max": 3000
+       }
+      },
+      "away": {
+       "14.5": {
+        "points": 14.5,
+        "over": 2.11,
+        "under": 1.769,
+        "max": 3000
+       }
+      }
+     }
+    },
+    "num_3": {
+     "number": 3,
+     "money_line": {
+      "home": 1.25,
+      "away": 4.12
+     },
+     "spreads": {
+      "-4": {
+       "hdp": -4,
+       "home": 1.917,
+       "away": 1.952,
+       "max": 4000
+      },
+      "-3.5": {
+       "hdp": -3.5,
+       "home": 1.725,
+       "away": 2.17,
+       "max": 4000
+      },
+      "-4.5": {
+       "hdp": -4.5,
+       "home": 2.14,
+       "away": 1.746,
+       "max": 4000
+      }
+     },
+     "totals": {
+      "10": {
+       "points": 10,
+       "over": 2.36,
+       "under": 1.606,
+       "max": 2000
+      },
+      "9.5": {
+       "points": 9.5,
+       "over": 1.901,
+       "under": 1.952,
+       "max": 2000
+      },
+      "7.5": {
+       "points": 7.5,
+       "over": 1.847,
+       "under": 1.99,
+       "max": 2000
+      }
+     },
+     "team_total": {
+      "home": {
+       "points": 6.5,
+       "over": 1.481,
+       "under": 2.73
+      },
+      "away": {
+       "points": 0.5,
+       "over": 1.98,
+       "under": 1.877
+      }
+     },
+     "team_totals": {
+      "home": {
+       "6.5": {
+        "points": 6.5,
+        "over": 1.481,
+        "under": 2.73,
+        "max": 2000
+       }
+      },
+      "away": {
+       "0.5": {
+        "points": 0.5,
+        "over": 1.98,
+        "under": 1.877,
+        "max": 2000
+       }
+      }
+     }
+    },
+    "num_1": {
+     "number": 1,
+     "money_line": {
+      "home": 1.155,
+      "away": 5.8
+     },
+     "spreads": {
+      "-10": {
+       "hdp": -10,
+       "home": 2.02,
+       "away": 1.87,
+       "max": 10000
+      },
+      "-7": {
+       "hdp": -7,
+       "home": 1.617,
+       "away": 2.38,
+       "max": 10000
+      },
+      "-7.5": {
+       "hdp": -7.5,
+       "home": 1.763,
+       "away": 2.13,
+       "max": 10000
+      },
+      "-8.5": {
+       "hdp": -8.5,
+       "home": 1.877,
+       "away": 1.98,
+       "max": 10000
+      },
+      "-9.5": {
+       "hdp": -9.5,
+       "home": 1.909,
+       "away": 1.962,
+       "max": 10000
+      },
+      "-10.5": {
+       "hdp": -10.5,
+       "home": 2.12,
+       "away": 1.781,
+       "max": 10000
+      },
+      "-11.5": {
+       "hdp": -11.5,
+       "home": 2.49,
+       "away": 1.568,
+       "max": 10000
+      },
+      "-12.5": {
+       "hdp": -12.5,
+       "home": 2.54,
+       "away": 1.549,
+       "max": 10000
+      },
+      "-13": {
+       "hdp": -13,
+       "home": 2.63,
+       "away": 1.518,
+       "max": 10000
+      }
+     },
+     "totals": {
+      "22": {
+       "points": 22,
+       "over": 1.662,
+       "under": 2.27,
+       "max": 5000
+      },
+      "23": {
+       "points": 23,
+       "over": 1.746,
+       "under": 2.13,
+       "max": 5000
+      },
+      "24": {
+       "points": 24,
+       "over": 2.06,
+       "under": 1.826,
+       "max": 5000
+      },
+      "26": {
+       "points": 26,
+       "over": 2.34,
+       "under": 1.625,
+       "max": 5000
+      },
+      "22.5": {
+       "points": 22.5,
+       "over": 1.676,
+       "under": 2.25,
+       "max": 5000
+      },
+      "23.5": {
+       "points": 23.5,
+       "over": 1.847,
+       "under": 2.01,
+       "max": 5000
+      },
+      "24.5": {
+       "points": 24.5,
+       "over": 2.26,
+       "under": 1.676,
+       "max": 5000
+      },
+      "25.5": {
+       "points": 25.5,
+       "over": 2.27,
+       "under": 1.662,
+       "max": 5000
+      },
+      "26.5": {
+       "points": 26.5,
+       "over": 2.39,
+       "under": 1.602,
+       "max": 5000
+      }
+     },
+     "team_total": {
+      "home": {
+       "points": 16.5,
+       "over": 1.885,
+       "under": 1.98
+      },
+      "away": {
+       "points": 6.5,
+       "over": 1.806,
+       "under": 2.09
+      }
+     },
+     "team_totals": {
+      "home": {
+       "16.5": {
+        "points": 16.5,
+        "over": 1.885,
+        "under": 1.98,
+        "max": 2000
+       }
+      },
+      "away": {
+       "6.5": {
+        "points": 6.5,
+        "over": 1.806,
+        "under": 2.09,
+        "max": 2000
+       }
+      }
+     }
+    }
+   }
+  }
+ },
  "pinnwire": {
-  "n_events": 777,
+  "n_events": 778,
   "n_nfl": 773,
   "category_counts": [
    [
@@ -159,7 +619,7 @@
    "count": 200,
    "has_more": true,
    "next_offset": 200,
-   "next_cursor": "eyJlIjoibmZsX2JlYXJzX3NhaW50c18yMDI2LTExLTIyX2IyIiwiYiI6ImRyYWZ0a2luZ3MiLCJtIjoiMXN0X2hhbGZfdG90YWxfZmllbGRfZ29hbHMiLCJpIjoiMTg5OTkxNjU5OTE3MzY4IiwicyI6MTc5NTM3MDQwMDAwMDAwMDAwMCwiZyI6MTQxNjAsInAiOjgwNzcwMjIyMTQyNzMwNzQ0NjZ9"
+   "next_cursor": "eyJlIjoibmZsX2JlYXJzX3NhaW50c18yMDI2LTExLTIyX2IyIiwiYiI6ImRyYWZ0a2luZ3MiLCJtIjoiMXN0X2hhbGZfdG90YWxfZmllbGRfZ29hbHMiLCJpIjoiMTg5OTkxNjU5OTE3MzY4IiwicyI6MTc5NTM3MDQwMDAwMDAwMDAwMCwiZyI6MTQ3MDcsInAiOjgwNzcwMjIyMTQyNzMwNzQ0NjZ9"
   },
   "market_type_counts": [
    [
@@ -239,7 +699,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:17:55.224144199Z",
+    "timestamp": "2026-11-22T05:19:08.271755499Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100107050466036",
     "market_id": "334520701",
@@ -271,7 +731,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:17:55.224144199Z",
+    "timestamp": "2026-11-22T05:19:08.271755499Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "deep_link": "https://api.sharpapi.io/api/v1/deeplink/10033310387441",
     "market_id": "334520701",
@@ -303,7 +763,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:17:55.224144199Z",
+    "timestamp": "2026-11-22T05:19:08.271755499Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100382864549736",
     "market_id": "334520701",
@@ -335,7 +795,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:17:55.224144199Z",
+    "timestamp": "2026-11-22T05:19:08.271755499Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "deep_link": "https://api.sharpapi.io/api/v1/deeplink/106210274151333",
     "market_id": "334520701",
@@ -368,7 +828,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:17:55.224144199Z",
+    "timestamp": "2026-11-22T05:19:08.271755499Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "player_name": "Luther Burden III",
     "stat_category": "1st_half_anytime_touchdown_scorer",
@@ -400,7 +860,7 @@
     "event_start_time": "2026-11-22T18:00Z",
     "is_live": false,
     "is_active": true,
-    "timestamp": "2026-11-22T05:17:55.224144199Z",
+    "timestamp": "2026-11-22T05:19:08.271755499Z",
     "price_updated_at": "2026-11-22T04:41:16.247344Z",
     "player_name": "Alvin Kamara",
     "stat_category": "1st_half_anytime_touchdown_scorer",
@@ -484,7 +944,7 @@
    "event_start_time": "2026-11-22T18:00Z",
    "is_live": false,
    "is_active": true,
-   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "timestamp": "2026-11-22T05:19:08.271755499Z",
    "price_updated_at": "2026-11-22T04:41:16.247344Z",
    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/11941048040995",
    "market_id": "1_84695456",
@@ -526,7 +986,7 @@
    "event_start_time": "2026-11-22T18:00Z",
    "is_live": false,
    "is_active": true,
-   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "timestamp": "2026-11-22T05:19:08.271755499Z",
    "price_updated_at": "2026-11-22T04:41:16.247344Z",
    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/267112420257593",
    "market_id": "1_84695456",
@@ -567,7 +1027,7 @@
    "event_start_time": "2026-11-22T18:00Z",
    "is_live": false,
    "is_active": true,
-   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "timestamp": "2026-11-22T05:19:08.271755499Z",
    "price_updated_at": "2026-11-22T04:41:16.247344Z",
    "player_name": "Jordyn Tyson",
    "stat_category": "receiving_yards",
@@ -599,7 +1059,7 @@
    "event_start_time": "2026-11-22T18:00Z",
    "is_live": false,
    "is_active": true,
-   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "timestamp": "2026-11-22T05:19:08.271755499Z",
    "price_updated_at": "2026-11-22T04:41:16.247344Z",
    "player_name": "Noah Fant",
    "stat_category": "receiving_yards",
@@ -631,7 +1091,7 @@
    "event_start_time": "2026-11-22T18:00Z",
    "is_live": false,
    "is_active": true,
-   "timestamp": "2026-11-22T05:17:55.224144199Z",
+   "timestamp": "2026-11-22T05:19:08.271755499Z",
    "price_updated_at": "2026-11-22T04:41:16.247344Z",
    "player_name": "Kalif Raymond",
    "stat_category": "receiving_yards",
