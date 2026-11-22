@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14151b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>xBETS · NFL Props</title>
+<style>
+  :root{
+    --bg:#14151b; --panel:#1d1f27; --panel2:#252833; --line:#2f3240;
+    --text:#eceef4; --dim:#9298a8; --dimmer:#646a7a;
+    --cyan:#4fd1e8; --green:#3ecf8e; --red:#ef6b6b; --amber:#f0b54a; --violet:#9d8bf0;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif}
+  header{position:sticky;top:0;z-index:10;background:rgba(20,21,27,.96);
+    backdrop-filter:blur(10px);padding:calc(env(safe-area-inset-top) + 10px) 14px 0;border-bottom:1px solid var(--line)}
+  .top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+  h1{font-size:19px;margin:0;letter-spacing:.02em}
+  h1 b{color:var(--cyan)}
+  .meta{font-size:12px;color:var(--dim);text-align:right}
+  .tabs{display:flex;gap:4px;margin-top:10px;overflow-x:auto;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;border:0;background:none;color:var(--dim);font:600 14px/1 inherit;
+    padding:10px 10px 12px;border-bottom:2px solid transparent;cursor:pointer}
+  .tab.on{color:var(--text);border-color:var(--cyan)}
+  .tab .n{font-weight:500;color:var(--dimmer);margin-left:4px;font-size:12px}
+  main{padding:12px 12px calc(env(safe-area-inset-bottom) + 40px);max-width:720px;margin:0 auto}
+  .banner{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;
+    font-size:13px;color:var(--dim);margin-bottom:10px}
+  .banner b{color:var(--text)}
+  .banner.warn{border-color:#5a4720;color:#e6cf9c}
+  .filters{display:flex;gap:6px;margin:0 0 10px;overflow-x:auto;scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;border:1px solid var(--line);background:var(--panel);color:var(--dim);
+    border-radius:999px;padding:6px 11px;font:500 13px/1 inherit;cursor:pointer}
+  .chip.on{background:var(--cyan);border-color:var(--cyan);color:#071419}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}
+  .row{display:flex;align-items:center;gap:10px}
+  .head img{width:42px;height:42px;border-radius:50%;object-fit:cover;background:var(--panel2);flex:0 0 42px}
+  .who{flex:1;min-width:0}
+  .name{font-weight:650;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sub{font-size:12px;color:var(--dim)}
+  .units{text-align:right;flex:0 0 auto}
+  .units .u{font:700 22px/1 inherit;color:var(--green)}
+  .units .ul{font-size:11px;color:var(--dim);margin-top:3px}
+  .prop{display:flex;justify-content:space-between;align-items:center;margin-top:10px;
+    background:var(--panel2);border-radius:9px;padding:9px 11px}
+  .prop .pl{font-weight:650}
+  .side-over{color:var(--green)} .side-under{color:var(--red)}
+  .odds{font-weight:700;font-variant-numeric:tabular-nums}
+  .book{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px}
+  .s{background:var(--bg);border-radius:8px;padding:7px 8px}
+  .s .k{font-size:10.5px;color:var(--dimmer);text-transform:uppercase;letter-spacing:.05em}
+  .s .v{font-weight:650;font-variant-numeric:tabular-nums;margin-top:2px}
+  .good{color:var(--green)} .bad{color:var(--red)}
+  .bars{display:flex;align-items:flex-end;gap:3px;height:40px;margin-top:10px;position:relative}
+  .bar{flex:1;border-radius:3px 3px 0 0;min-height:2px}
+  .lineMark{position:absolute;left:0;right:0;border-top:1px dashed var(--amber)}
+  .barlbl{display:flex;justify-content:space-between;font-size:10.5px;color:var(--dimmer);margin-top:3px}
+  .foot{display:flex;justify-content:space-between;align-items:center;margin-top:9px;font-size:12px;color:var(--dim)}
+  .betlink{color:var(--cyan);text-decoration:none;font-weight:600}
+  .tag{display:inline-block;font-size:10.5px;padding:2px 6px;border-radius:5px;background:var(--panel2);color:var(--dim);margin-left:4px}
+  .tag.cap{color:var(--amber)}
+  .empty{text-align:center;color:var(--dim);padding:40px 10px}
+  .empty b{display:block;color:var(--text);font-size:16px;margin-bottom:6px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  td,th{padding:7px 6px;border-bottom:1px solid var(--line);text-align:left}
+  th{color:var(--dimmer);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  .sumgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .sum h3{margin:0 0 6px;font-size:13px;color:var(--dim);font-weight:600}
+  .sum .big{font:700 20px/1.1 inherit}
+  .help{font-size:12.5px;color:var(--dim);line-height:1.5}
+  .help b{color:var(--text)}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1><b>xBETS</b> NFL Props</h1>
+    <div class="meta" id="meta">Loading…</div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab on" data-t="combined">EV + Cheat Sheet<span class="n" id="n-combined"></span></button>
+    <button class="tab" data-t="ev">EV<span class="n" id="n-ev"></span></button>
+    <button class="tab" data-t="cheat">Cheat Sheet<span class="n" id="n-cheat"></span></button>
+    <button class="tab" data-t="results">Results</button>
+  </nav>
+</header>
+<main id="main"></main>
+
+<script>
+const S = {data:null, results:null, tab:"combined", book:"all", stat:"all"};
+const BOOK = {draftkings:"DraftKings", fanduel:"FanDuel"};
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const am = a => a > 0 ? "+" + a : String(a);
+const pct = (v, d=1) => v == null ? "–" : (v > 0 ? "+" : "") + v.toFixed(d) + "%";
+const when = iso => { if(!iso) return ""; const d = new Date(iso);
+  return d.toLocaleString([], {weekday:"short", hour:"numeric", minute:"2-digit"}); };
+const ago = iso => { if(!iso) return "never"; const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  return m < 1 ? "just now" : m < 60 ? m + "m ago" : m < 1440 ? Math.round(m/60) + "h ago" : Math.round(m/1440) + "d ago"; };
+
+async function load(){
+  const bust = "?t=" + Date.now();
+  try { S.data = await (await fetch("data/picks.json" + bust)).json(); } catch(e){ S.data = null; }
+  try { S.results = await (await fetch("data/results.json" + bust)).json(); } catch(e){ S.results = null; }
+  render();
+}
+
+function filtered(list){
+  return (list || []).filter(p =>
+    (S.book === "all" || p.book === S.book) && (S.stat === "all" || p.stat === S.stat));
+}
+
+function bars(p){
+  const vals = p.last10 || []; if(!vals.length) return "";
+  const max = Math.max(p.line * 1.4, ...vals, 1);
+  const linePct = Math.min(p.line / max * 100, 100);
+  const b = vals.map(v => {
+    const hit = p.side === "over" ? v > p.line : v < p.line;
+    return `<div class="bar" title="${v}" style="height:${Math.max(v / max * 100, 4)}%;background:${hit ? "var(--green)" : "#4a4f60"}"></div>`;
+  }).join("");
+  const hits = vals.filter(v => p.side === "over" ? v > p.line : v < p.line).length;
+  return `<div class="bars">${b}<div class="lineMark" style="bottom:${linePct}%"></div></div>
+    <div class="barlbl"><span>Last ${vals.length} games</span><span>Hit ${p.side} ${p.line} in ${hits}/${vals.length}</span></div>`;
+}
+
+function card(p, mode){
+  const showUnits = mode !== "cheat";
+  const sideCls = p.side === "over" ? "side-over" : "side-under";
+  const match = p.matchup_pct == null ? "" : `<div class="s"><div class="k">Matchup</div>
+      <div class="v ${(p.side === "over") === (p.matchup_pct > 0) ? "good" : "bad"}">${pct(p.matchup_pct, 0)}</div></div>`;
+  const rank = p.def_rank ? `<div class="s"><div class="k">Def rank</div><div class="v">${p.def_rank}/32</div></div>` : "";
+  const projBox = p.projection == null ? "" : `<div class="s"><div class="k">Projection</div><div class="v">${p.projection}</div></div>`;
+  const evBox = p.ev_pct == null ? "" : `<div class="s"><div class="k">EV</div><div class="v good">${pct(p.ev_pct)}</div></div>
+      <div class="s"><div class="k">Fair win %</div><div class="v">${(p.fair_prob * 100).toFixed(1)}%</div></div>
+      <div class="s"><div class="k">Pinnacle</div><div class="v" style="font-size:12.5px">${esc(p.pinnacle_line).replace(" ", "<br>")}</div></div>`;
+  const cheatEdge = p.proj_edge_pct == null ? "" : `<div class="s"><div class="k">Proj vs line</div>
+      <div class="v ${(p.side === "over") === (p.proj_edge_pct > 0) ? "good" : "bad"}">${pct(p.proj_edge_pct, 0)}</div></div>`;
+  const unitsHtml = showUnits ? `<div class="units"><div class="u">${p.units ? p.units.toFixed(1) + "u" : "–"}</div>
+      <div class="ul">${p.units ? "¼ Kelly" : "game limit"}</div></div>` : "";
+  const capTag = p.capped ? `<span class="tag cap">game cap${p.full_units ? " (was " + p.full_units + "u)" : ""}</span>` : "";
+  const img = p.headshot ? `<img src="${esc(p.headshot)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : `<img alt="">`;
+  const opp = p.team ? `${esc(p.team)} vs ${esc(p.opp)} · ` : "";
+  return `<div class="card">
+    <div class="row head">${img}
+      <div class="who"><div class="name">${esc(p.player)}</div>
+        <div class="sub">${p.position ? esc(p.position) + " · " : ""}${opp}${when(p.kickoff)}</div></div>
+      ${unitsHtml}
+    </div>
+    <div class="prop">
+      <div><span class="pl ${sideCls}">${p.side === "over" ? "Over" : "Under"} ${p.line}</span> ${esc(p.stat_label)}${capTag}</div>
+      <div style="text-align:right"><div class="odds">${am(p.american)}</div><div class="book">${BOOK[p.book] || esc(p.book)}</div></div>
+    </div>
+    <div class="stats" ${mode === "cheat" ? 'style="grid-template-columns:repeat(2,1fr)"' : ""}>${mode === "cheat" ? projBox + cheatEdge + match + rank : evBox + projBox + match + (mode === "combined" ? cheatEdge : "")}</div>
+    ${bars(p)}
+    <div class="foot"><span>${p.baseline != null ? "Avg " + p.baseline + " · def allows " + p.def_allowed + " (lg " + p.league_avg + ")" : ""}</span>
+      ${p.deep_link ? `<a class="betlink" href="${esc(p.deep_link)}" target="_blank" rel="noopener">Bet ›</a>` : ""}</div>
+  </div>`;
+}
+
+function filterBar(list){
+  const stats = [...new Map((list || []).map(p => [p.stat, p.stat_label])).entries()];
+  const chip = (k, v, cur, attr) => `<button class="chip ${cur === k ? "on" : ""}" data-${attr}="${k}">${v}</button>`;
+  return `<div class="filters">${chip("all","All books",S.book,"book")}${chip("draftkings","DK",S.book,"book")}${chip("fanduel","FD",S.book,"book")}
+    <span style="width:6px"></span>${chip("all","All stats",S.stat,"stat")}${stats.map(([k,v]) => chip(k, v, S.stat, "stat")).join("")}</div>`;
+}
+
+function banner(){
+  const d = S.data, st = d.status || {};
+  const parts = [];
+  if (d.odds_as_of) parts.push(`Odds updated <b>${ago(d.odds_as_of)}</b>`);
+  if (!st.odds_checked && d.next_kickoff) parts.push(`Odds checks start 4h before kickoff (next: <b>${when(d.next_kickoff)}</b>)`);
+  const errs = [st.book_error && "DK/FD feed: " + st.book_error, st.pinnacle_error && "Pinnacle feed: " + st.pinnacle_error].filter(Boolean);
+  return `<div class="banner">${parts.join(" · ") || "Waiting for first odds check"}</div>` +
+    (errs.length ? `<div class="banner warn">${errs.map(esc).join("<br>")}</div>` : "");
+}
+
+const INTRO = {
+  combined: "Cheat-sheet plays that are also +EV against Pinnacle's fair line. The strictest list.",
+  ev: "DraftKings/FanDuel prices better than Pinnacle's no-vig fair line. Units = ¼ Kelly, 1u = 1% of bankroll, max 3u per bet and 5u per game.",
+  cheat: "Defense-vs-position plays: the projection beats the line and the defense is soft (or tough, for unders). No unit sizing; tracked at 1u flat in Results.",
+};
+
+function renderList(mode){
+  const all = S.data[mode] || [];
+  const list = filtered(all);
+  let html = banner() + `<div class="help" style="margin:0 2px 10px">${INTRO[mode]}</div>` + filterBar(all);
+  if (!list.length) {
+    html += `<div class="empty"><b>No plays right now</b>${all.length ? "Try another filter." :
+      mode === "cheat" ? "Lines aren't posted yet. Top matchups are below." : "Check back closer to kickoff."}</div>`;
+    if (mode === "cheat" && !all.length) html += matchupTable();
+  } else html += list.map(p => card(p, mode)).join("");
+  return html;
+}
+
+function matchupTable(){
+  const rows = (S.data.matchups || []).slice(0, 40).map(r => `<tr><td><b>${esc(r.player)}</b><div class="sub">${esc(r.team)} vs ${esc(r.opp)}</div></td>
+     <td>${esc(r.stat_label)}</td><td class="num">${r.baseline}→<b>${r.projection}</b></td>
+     <td class="num ${r.matchup_pct > 0 ? "good" : "bad"}">${pct(r.matchup_pct, 0)}</td></tr>`).join("");
+  return `<div class="card"><table><tr><th>Player</th><th>Stat</th><th class="num">Avg→Proj</th><th class="num">Def</th></tr>${rows}</table></div>`;
+}
+
+function renderResults(){
+  const R = S.results;
+  if (!R) return `<div class="empty"><b>No results yet</b>Picks get graded the morning after games, once box scores are in.</div>`;
+  const box = (k, label) => { const r = R[k] || {};
+    return `<div class="card sum"><h3>${label}</h3>
+      <div class="big ${r.profit_units > 0 ? "good" : r.profit_units < 0 ? "bad" : ""}">${r.profit_units == null ? "–" : (r.profit_units > 0 ? "+" : "") + r.profit_units + "u"}</div>
+      <div class="sub">${r.wins || 0}-${r.losses || 0}${r.pushes ? "-" + r.pushes : ""} · ROI ${r.roi_pct == null ? "–" : pct(r.roi_pct)}</div>
+      <div class="sub">Beat close: ${r.beat_close_pct == null ? "–" : r.beat_close_pct + "%"}</div></div>`; };
+  const rows = (R.recent || []).slice(0, 80).map(r => `<tr><td>${esc(r.player)}<div class="sub">${r.mode === "combined" ? "EV+CS" : r.mode === "ev" ? "EV" : "CS"} · ${r.side === "over" ? "O" : "U"} ${r.line} ${esc(r.stat_label)}</div></td>
+      <td class="num">${am(r.american)}<div class="sub">${r.units}u</div></td>
+      <td class="num">${r.actual ?? ""}<div class="sub ${r.result === "win" ? "good" : r.result === "loss" ? "bad" : ""}">${r.result || "pending"}</div></td></tr>`).join("");
+  return `<div class="help" style="margin:0 2px 10px">Paper trading: every pick is logged at the price first seen. <b>Beat close</b> is how often that price beat Pinnacle's final fair line. Over a few hundred bets, it's the best sign the edges are real.</div>
+    <div class="sumgrid">${box("combined","EV + CS")}${box("ev","EV")}${box("cheat","Cheat Sheet")}</div>
+    <div class="card"><table><tr><th>Pick</th><th class="num">Price</th><th class="num">Result</th></tr>${rows}</table></div>`;
+}
+
+function render(){
+  const d = S.data;
+  if (!d) { $("#main").innerHTML = `<div class="empty"><b>No data yet</b>The first GitHub run hasn't finished.</div>`; $("#meta").textContent = ""; return; }
+  $("#meta").innerHTML = `Week ${d.week} · ${d.season}`;
+  for (const k of ["combined","ev","cheat"]) $("#n-" + k).textContent = (d[k] || []).length || "";
+  $("#main").innerHTML = S.tab === "results" ? renderResults() : renderList(S.tab);
+}
+
+document.addEventListener("click", e => {
+  const t = e.target.closest(".tab"); if (t) { document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t)); S.tab = t.dataset.t; S.stat = "all"; render(); window.scrollTo(0,0); return; }
+  const c = e.target.closest(".chip"); if (c) { if (c.dataset.book) S.book = c.dataset.book; if (c.dataset.stat) S.stat = c.dataset.stat; render(); }
+});
+load();
+setInterval(load, 120000);
+</script>
+</body>
+</html>
