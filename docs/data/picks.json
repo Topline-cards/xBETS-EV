@@ -1,15 +1,16 @@
 {
- "generated_at": "2026-11-22T15:48:42-05:00",
+ "generated_at": "2026-11-22T15:59:08-05:00",
  "season": 2026,
  "week": 11,
  "stats_mode": "current_only",
  "next_kickoff": "2026-11-22T16:05:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_props": 370,
-  "book_game_lines": 33,
+  "book_props": 378,
+  "book_game_lines": 30,
   "pinnacle_props": 472,
-  "pinnacle_game_lines": 134
+  "pinnacle_game_lines": 134,
+  "pinnacle_as_of": "2026-11-22T15:48:42-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -181,75 +182,6 @@
  ],
  "combined": [],
  "ev": [
-  {
-   "kind": "spread",
-   "week": 11,
-   "player": "LV @ DEN",
-   "pkey": "2026_11_LV_DEN",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "DEN -10.5",
-   "line": -10.5,
-   "side": "home",
-   "team": "DEN",
-   "opp": "LV",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/13056602123780",
-   "game_id": "2026_11_LV_DEN",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home": "DEN",
-   "away": "LV",
-   "dec": 1.901,
-   "american": -111,
-   "game_model": {
-    "game_id": "2026_11_LV_DEN",
-    "home": "DEN",
-    "away": "LV",
-    "kickoff": "2026-11-22T16:25:00-05:00",
-    "proj_home": 26.5,
-    "proj_away": 22.0,
-    "proj_margin": 4.5,
-    "proj_total": 48.5,
-    "home_pf": 22.0,
-    "home_pa": 20.7,
-    "away_pf": 25.1,
-    "away_pa": 28.9,
-    "home_games": 9,
-    "away_games": 10,
-    "league_avg": 23.08,
-    "home_win_prob": 0.631
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.901,
-     "b": 1.926
-    },
-    {
-     "book": "fanduel",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.781,
-     "b": 2.14
-    }
-   ],
-   "model_prob": 0.328,
-   "model_edge": -6.0,
-   "model_edge_txt": "-6.0 pts",
-   "cheat_side": null,
-   "pinnacle_line": "DEN -10.5 -128 / LV +10.5 114",
-   "fair_prob": 0.5458,
-   "ev_pct": 3.75,
-   "kelly_pct": 4.16,
-   "units": 0.75,
-   "trusted_prob": 0.5418,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "pinn_dec": 1.781
-  },
   {
    "kind": "prop",
    "week": 11,
@@ -642,6 +574,212 @@
   {
    "kind": "prop",
    "week": 11,
+   "player": "Bo Nix",
+   "pkey": "bo nix",
+   "stat": "pass_att",
+   "stat_label": "Pass Attempts",
+   "line": 30.5,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/104204479402436",
+   "team": "DEN",
+   "opp": "LV",
+   "position": "QB",
+   "game_id": "2026_11_LV_DEN",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zvo9xatffmqn9lnukpgk",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 2.01,
+     "under": 1.781
+    },
+    {
+     "book": "pinnacle",
+     "over": 1.87,
+     "under": 1.952
+    }
+   ],
+   "cheat_side": null,
+   "proj_edge_pct": 0.7,
+   "hit_rate_over": 0.56,
+   "model_prob_over": 0.516,
+   "projection": 30.7,
+   "baseline": 32.3,
+   "matchup_pct": -10.2,
+   "matchup_factor": 0.898,
+   "def_rank": 27,
+   "last10": [
+    28.0,
+    31.0,
+    34.0,
+    42.0,
+    27.0,
+    27.0,
+    29.0,
+    32.0,
+    37.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "KC",
+     "v": 28.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "JAX",
+     "v": 31.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "LA",
+     "v": 34.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "SF",
+     "v": 42.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "LAC",
+     "v": 27.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "SEA",
+     "v": 27.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "ARI",
+     "v": 29.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "KC",
+     "v": 32.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "CAR",
+     "v": 37.0,
+     "ha": "away"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NO",
+     "v": 42.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "KC",
+     "v": 30.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "NE",
+     "v": 34.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "BUF",
+     "v": 33.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "LA",
+     "v": 29.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "NYJ",
+     "v": 32.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "SF",
+     "v": 25.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "SEA",
+     "v": 17.0
+    }
+   ],
+   "vs_opp": [
+    {
+     "season": 2024,
+     "wk": 5,
+     "v": 27.0
+    },
+    {
+     "season": 2024,
+     "wk": 12,
+     "v": 42.0
+    },
+    {
+     "season": 2025,
+     "wk": 10,
+     "v": 28.0
+    },
+    {
+     "season": 2025,
+     "wk": 14,
+     "v": 38.0
+    }
+   ],
+   "home_away": "home",
+   "player_id": "00-0039732",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 29.6,
+   "league_avg": 33.0,
+   "games": 6,
+   "side": "over",
+   "dec": 2.01,
+   "american": 101,
+   "title": "Over 30.5 Pass Attempts",
+   "pinnacle_line": "30.5 o-115/u-105",
+   "fair_prob": 0.5107,
+   "ev_pct": 2.66,
+   "kelly_pct": 2.63,
+   "units": 0.25,
+   "trusted_prob": 0.5041,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 1.87
+  },
+  {
+   "kind": "prop",
+   "week": 11,
    "player": "Mason Taylor",
    "pkey": "mason taylor",
    "stat": "receptions",
@@ -663,7 +801,7 @@
     },
     {
      "book": "fanduel",
-     "over": 1.8,
+     "over": 1.781,
      "under": 1.893
     },
     {
@@ -1351,8 +1489,8 @@
    "stat": "rush_yds",
    "stat_label": "Rushing Yards",
    "line": 21.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/200828106595227",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/141017955935913",
    "team": "DEN",
    "opp": "LV",
    "position": "RB",
@@ -1362,8 +1500,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.926,
-     "under": 1.862
+     "over": 1.877,
+     "under": 1.909
     },
     {
      "book": "fanduel",
@@ -1536,15 +1674,15 @@
    "league_avg": 92.2,
    "games": 6,
    "side": "over",
-   "dec": 1.926,
-   "american": -108,
+   "dec": 1.885,
+   "american": -113,
    "title": "Over 21.5 Rushing Yards",
    "pinnacle_line": "21.5 o-117/u-103",
    "fair_prob": 0.5152,
-   "ev_pct": -0.78,
-   "kelly_pct": -0.84,
+   "ev_pct": -2.89,
+   "kelly_pct": -3.27,
    "units": 0.0,
-   "trusted_prob": 0.5172,
+   "trusted_prob": 0.5228,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.855
@@ -1568,7 +1706,7 @@
    "books": [
     {
      "book": "fanduel",
-     "over": 1.549,
+     "over": 1.562,
      "under": 2.3
     },
     {
@@ -1721,15 +1859,15 @@
    "league_avg": 5.3,
    "games": 6,
    "side": "over",
-   "dec": 1.549,
-   "american": -182,
+   "dec": 1.562,
+   "american": -178,
    "title": "Over 2.5 Receptions",
    "pinnacle_line": "2.5 o-165/u135",
    "fair_prob": 0.594,
-   "ev_pct": -7.98,
-   "kelly_pct": -14.54,
+   "ev_pct": -7.21,
+   "kelly_pct": -12.83,
    "units": 0.0,
-   "trusted_prob": 0.6198,
+   "trusted_prob": 0.6171,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.606
@@ -1742,8 +1880,8 @@
    "stat": "rec_yds",
    "stat_label": "Receiving Yards",
    "line": 9.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/176550215051195",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/161567687265915",
    "team": "DEN",
    "opp": "LV",
    "position": "WR",
@@ -1751,11 +1889,6 @@
    "kickoff": "2026-11-22T16:25:00-05:00",
    "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zbdjtph5xplbf4yocz0l",
    "books": [
-    {
-     "book": "draftkings",
-     "over": 1.885,
-     "under": 1.901
-    },
     {
      "book": "fanduel",
      "over": 1.885,
@@ -1932,8 +2065,8 @@
    "stat": "rec_yds",
    "stat_label": "Receiving Yards",
    "line": 28.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/143368093509643",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/124615073629807",
    "team": "LV",
    "opp": "DEN",
    "position": "RB",
@@ -1943,8 +2076,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.877,
-     "under": 1.909
+     "over": 1.893,
+     "under": 1.893
     },
     {
      "book": "fanduel",
@@ -2120,15 +2253,15 @@
    "league_avg": 32.5,
    "games": 6,
    "side": "over",
-   "dec": 1.885,
-   "american": -113,
+   "dec": 1.893,
+   "american": -112,
    "title": "Over 28.5 Receiving Yards",
    "pinnacle_line": "28.5 o-107/u-113",
    "fair_prob": 0.4935,
-   "ev_pct": -6.98,
-   "kelly_pct": -7.89,
+   "ev_pct": -6.59,
+   "kelly_pct": -7.38,
    "units": 0.0,
-   "trusted_prob": 0.512,
+   "trusted_prob": 0.5109,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.935
@@ -3057,8 +3190,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.917,
-     "under": 1.87
+     "over": 1.909,
+     "under": 1.877
     },
     {
      "book": "fanduel",
@@ -3194,15 +3327,15 @@
    "league_avg": 147.6,
    "games": 5,
    "side": "over",
-   "dec": 1.917,
-   "american": -109,
+   "dec": 1.909,
+   "american": -110,
    "title": "Over 27.5 Receiving Yards",
    "pinnacle_line": "27.5 o-107/u-113",
    "fair_prob": 0.4935,
-   "ev_pct": -5.4,
-   "kelly_pct": -5.89,
+   "ev_pct": -5.8,
+   "kelly_pct": -6.38,
    "units": 0.0,
-   "trusted_prob": 0.5076,
+   "trusted_prob": 0.5086,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.935
@@ -3599,12 +3732,12 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.735,
-     "under": 2.07
+     "over": 1.719,
+     "under": 2.09
     },
     {
      "book": "fanduel",
-     "over": 1.649,
+     "over": 1.658,
      "under": 2.12
     },
     {
@@ -3776,15 +3909,15 @@
    "league_avg": 4.4,
    "games": 6,
    "side": "over",
-   "dec": 1.735,
-   "american": -136,
+   "dec": 1.719,
+   "american": -139,
    "title": "Over 3.5 Receptions",
    "pinnacle_line": "3.5 o-150/u123",
    "fair_prob": 0.5722,
-   "ev_pct": -0.72,
-   "kelly_pct": -0.98,
+   "ev_pct": -1.63,
+   "kelly_pct": -2.27,
    "units": 0.0,
-   "trusted_prob": 0.5743,
+   "trusted_prob": 0.577,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.667
@@ -5221,8 +5354,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.885,
-     "under": 1.901
+     "over": 1.862,
+     "under": 1.926
     }
    ],
    "cheat_side": "under",
@@ -5340,8 +5473,8 @@
    "league_avg": 147.6,
    "games": 4,
    "side": "under",
-   "dec": 1.901,
-   "american": -111,
+   "dec": 1.926,
+   "american": -108,
    "title": "Under 19.5 Receiving Yards"
   },
   {
@@ -5543,8 +5676,8 @@
    "stat": "receptions",
    "stat_label": "Receptions",
    "line": 3.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/15601027917676",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/133701576373606",
    "team": "LV",
    "opp": "DEN",
    "position": "TE",
@@ -5554,8 +5687,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.847,
-     "under": 1.926
+     "over": 1.787,
+     "under": 1.99
     },
     {
      "book": "fanduel",
@@ -5731,15 +5864,15 @@
    "league_avg": 5.3,
    "games": 6,
    "side": "over",
-   "dec": 1.847,
-   "american": -118,
+   "dec": 1.82,
+   "american": -122,
    "title": "Over 3.5 Receptions",
    "pinnacle_line": "3.5 o-122/u101",
    "fair_prob": 0.5248,
-   "ev_pct": -3.07,
-   "kelly_pct": -3.62,
+   "ev_pct": -4.49,
+   "kelly_pct": -5.47,
    "units": 0.0,
-   "trusted_prob": 0.5331,
+   "trusted_prob": 0.5371,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 1.82
@@ -8111,8 +8244,8 @@
    "kickoff": "2026-11-22T16:25:00-05:00",
    "home": "DEN",
    "away": "LV",
-   "dec": 5.8,
-   "american": 480,
+   "dec": 6.0,
+   "american": 500,
    "game_model": {
     "game_id": "2026_11_LV_DEN",
     "home": "DEN",
@@ -8134,13 +8267,13 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.17,
-     "b": 5.39
+     "a": 1.154,
+     "b": 5.75
     },
     {
      "book": "fanduel",
-     "a": 1.154,
-     "b": 5.8
+     "a": 1.143,
+     "b": 6.0
     },
     {
      "book": "pinnacle",
@@ -8149,15 +8282,15 @@
     }
    ],
    "model_prob": 0.369,
-   "model_edge": 20.31,
-   "model_edge_txt": "+20.3%",
+   "model_edge": 20.9,
+   "model_edge_txt": "+20.9%",
    "cheat_side": "away",
    "pinnacle_line": "DEN -676 / LV +521",
    "fair_prob": 0.156,
-   "ev_pct": -9.51,
-   "kelly_pct": -1.98,
+   "ev_pct": -6.39,
+   "kelly_pct": -1.28,
    "units": 0.0,
-   "trusted_prob": 0.1593,
+   "trusted_prob": 0.1581,
    "unit_note": null,
    "edge_trust": 0.8,
    "pinn_dec": 6.21
@@ -8174,14 +8307,14 @@
    "side": "away",
    "team": "NYJ",
    "opp": "LAC",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118298595722147",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/207223697454606",
    "game_id": "2026_11_NYJ_LAC",
    "kickoff": "2026-11-22T16:05:00-05:00",
    "home": "LAC",
    "away": "NYJ",
-   "dec": 2.52,
-   "american": 152,
+   "dec": 2.5,
+   "american": 150,
    "game_model": {
     "game_id": "2026_11_NYJ_LAC",
     "home": "LAC",
@@ -8202,14 +8335,9 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.552,
-     "b": 2.52
-    },
-    {
      "book": "fanduel",
-     "a": 1.568,
-     "b": 2.48
+     "a": 1.562,
+     "b": 2.5
     },
     {
      "book": "pinnacle",
@@ -8218,82 +8346,18 @@
     }
    ],
    "model_prob": 0.54,
-   "model_edge": 15.89,
-   "model_edge_txt": "+15.9%",
+   "model_edge": 15.55,
+   "model_edge_txt": "+15.5%",
    "cheat_side": "away",
    "pinnacle_line": "LAC -168 / NYJ +151",
    "fair_prob": 0.3886,
-   "ev_pct": -2.09,
-   "kelly_pct": -1.37,
+   "ev_pct": -2.86,
+   "kelly_pct": -1.91,
    "units": 0.0,
-   "trusted_prob": 0.3902,
+   "trusted_prob": 0.3908,
    "unit_note": null,
    "edge_trust": 0.8,
    "pinn_dec": 2.51
-  },
-  {
-   "kind": "total",
-   "week": 11,
-   "player": "LV @ DEN",
-   "pkey": "2026_11_LV_DEN",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 40.5",
-   "line": 40.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/101179901122533",
-   "game_id": "2026_11_LV_DEN",
-   "kickoff": "2026-11-22T16:25:00-05:00",
-   "home": "DEN",
-   "away": "LV",
-   "dec": 1.855,
-   "american": -117,
-   "game_model": {
-    "game_id": "2026_11_LV_DEN",
-    "home": "DEN",
-    "away": "LV",
-    "kickoff": "2026-11-22T16:25:00-05:00",
-    "proj_home": 26.5,
-    "proj_away": 22.0,
-    "proj_margin": 4.5,
-    "proj_total": 48.5,
-    "home_pf": 22.0,
-    "home_pa": 20.7,
-    "away_pf": 25.1,
-    "away_pa": 28.9,
-    "home_games": 9,
-    "away_games": 10,
-    "league_avg": 23.08,
-    "home_win_prob": 0.631
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.855,
-     "b": 1.98
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.8,
-     "b": 2.09
-    }
-   ],
-   "model_prob": 0.731,
-   "model_edge": 8.0,
-   "model_edge_txt": "+8.0 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "40.5 o-125/u109",
-   "fair_prob": 0.5373,
-   "ev_pct": -0.34,
-   "kelly_pct": -0.39,
-   "units": 0.0,
-   "trusted_prob": 0.5376,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "pinn_dec": 1.8
   },
   {
    "kind": "ml",
@@ -8371,13 +8435,82 @@
    "pkey": "2026_11_LV_DEN",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "LV +10.5",
-   "line": -10.5,
+   "title": "LV +11.5",
+   "line": -11.5,
    "side": "away",
    "team": "LV",
    "opp": "DEN",
    "book": "fanduel",
    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118156185626038",
+   "game_id": "2026_11_LV_DEN",
+   "kickoff": "2026-11-22T16:25:00-05:00",
+   "home": "DEN",
+   "away": "LV",
+   "dec": 1.909,
+   "american": -110,
+   "game_model": {
+    "game_id": "2026_11_LV_DEN",
+    "home": "DEN",
+    "away": "LV",
+    "kickoff": "2026-11-22T16:25:00-05:00",
+    "proj_home": 26.5,
+    "proj_away": 22.0,
+    "proj_margin": 4.5,
+    "proj_total": 48.5,
+    "home_pf": 22.0,
+    "home_pa": 20.7,
+    "away_pf": 25.1,
+    "away_pa": 28.9,
+    "home_games": 9,
+    "away_games": 10,
+    "league_avg": 23.08,
+    "home_win_prob": 0.631
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.943,
+     "b": 1.885
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.901,
+     "b": 2.01
+    }
+   ],
+   "model_prob": 0.698,
+   "model_edge": 7.0,
+   "model_edge_txt": "+7.0 pts",
+   "cheat_side": "away",
+   "pinnacle_line": "DEN -11.5 -111 / LV +11.5 101",
+   "fair_prob": 0.4861,
+   "ev_pct": -7.21,
+   "kelly_pct": -7.93,
+   "units": 0.0,
+   "trusted_prob": 0.4936,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "pinn_dec": 2.01
+  },
+  {
+   "kind": "total",
+   "week": 11,
+   "player": "LV @ DEN",
+   "pkey": "2026_11_LV_DEN",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Over 41.5",
+   "line": 41.5,
+   "side": "over",
+   "team": null,
+   "opp": null,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/199105277443644",
    "game_id": "2026_11_LV_DEN",
    "kickoff": "2026-11-22T16:25:00-05:00",
    "home": "DEN",
@@ -8405,33 +8538,33 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.901,
-     "b": 1.926
+     "a": 1.935,
+     "b": 1.893
     },
     {
      "book": "fanduel",
-     "a": 1.87,
-     "b": 1.952
+     "a": 1.952,
+     "b": 1.87
     },
     {
      "book": "pinnacle",
-     "a": 1.781,
-     "b": 2.14
+     "a": 1.935,
+     "b": 1.935
     }
    ],
-   "model_prob": 0.672,
-   "model_edge": 6.0,
-   "model_edge_txt": "+6.0 pts",
-   "cheat_side": "away",
-   "pinnacle_line": "DEN -10.5 -128 / LV +10.5 114",
-   "fair_prob": 0.4542,
-   "ev_pct": -11.34,
-   "kelly_pct": -11.91,
+   "model_prob": 0.705,
+   "model_edge": 7.0,
+   "model_edge_txt": "+7.0 pts",
+   "cheat_side": "over",
+   "pinnacle_line": "41.5 o-107/u-107",
+   "fair_prob": 0.5,
+   "ev_pct": -2.4,
+   "kelly_pct": -2.52,
    "units": 0.0,
-   "trusted_prob": 0.4658,
+   "trusted_prob": 0.5025,
    "unit_note": null,
    "edge_trust": 0.8,
-   "pinn_dec": 2.14
+   "pinn_dec": 1.935
   },
   {
    "kind": "total",
@@ -8514,14 +8647,14 @@
    "side": "away",
    "team": "NYJ",
    "opp": "LAC",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/160325505138719",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/186874407490563",
    "game_id": "2026_11_NYJ_LAC",
    "kickoff": "2026-11-22T16:05:00-05:00",
    "home": "LAC",
    "away": "NYJ",
-   "dec": 1.98,
-   "american": -102,
+   "dec": 1.962,
+   "american": -104,
    "game_model": {
     "game_id": "2026_11_NYJ_LAC",
     "home": "LAC",
@@ -8542,11 +8675,6 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.847,
-     "b": 1.98
-    },
-    {
      "book": "fanduel",
      "a": 1.862,
      "b": 1.962
@@ -8563,10 +8691,10 @@
    "cheat_side": "away",
    "pinnacle_line": "LAC -3 -112 / NYJ +3 102",
    "fair_prob": 0.4838,
-   "ev_pct": -4.21,
-   "kelly_pct": -4.3,
+   "ev_pct": -5.08,
+   "kelly_pct": -5.28,
    "units": 0.0,
-   "trusted_prob": 0.488,
+   "trusted_prob": 0.489,
    "unit_note": null,
    "edge_trust": 0.8,
    "pinn_dec": 2.02
@@ -20388,5 +20516,5 @@
    ]
   }
  ],
- "odds_as_of": "2026-11-22T15:48:42-05:00"
+ "odds_as_of": "2026-11-22T15:59:08-05:00"
 }
