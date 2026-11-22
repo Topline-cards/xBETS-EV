@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T18:01:33-05:00",
+ "generated_at": "2026-11-22T18:11:47-05:00",
  "season": 2026,
  "week": 11,
  "stats_mode": "current_only",
@@ -7,10 +7,9 @@
  "status": {
   "odds_checked": true,
   "book_props": 144,
-  "book_game_lines": 72,
+  "book_game_lines": 71,
   "pinnacle_props": 194,
-  "pinnacle_game_lines": 161,
-  "pinnacle_as_of": "2026-11-22T17:51:18-05:00"
+  "pinnacle_game_lines": 188
  },
  "settings": {
   "unit_pct": 1.0,
@@ -111,8 +110,148 @@
    "home_win_prob": 0.321
   }
  ],
- "combined": [],
- "ev": [],
+ "combined": [
+  {
+   "kind": "total",
+   "week": 11,
+   "player": "MIN @ SF",
+   "pkey": "2026_11_MIN_SF",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Under 45.5",
+   "line": 45.5,
+   "side": "under",
+   "team": null,
+   "opp": null,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/166620451046664",
+   "game_id": "2026_11_MIN_SF",
+   "kickoff": "2026-11-22T20:20:00-05:00",
+   "home": "SF",
+   "away": "MIN",
+   "dec": 1.962,
+   "american": -104,
+   "game_model": {
+    "game_id": "2026_11_MIN_SF",
+    "home": "SF",
+    "away": "MIN",
+    "kickoff": "2026-11-22T20:20:00-05:00",
+    "proj_home": 21.3,
+    "proj_away": 19.6,
+    "proj_margin": 1.7,
+    "proj_total": 40.9,
+    "home_pf": 31.2,
+    "home_pa": 21.8,
+    "away_pf": 19.6,
+    "away_pa": 14.0,
+    "home_games": 9,
+    "away_games": 9,
+    "league_avg": 23.08,
+    "home_win_prob": 0.551
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.962
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.08,
+     "b": 1.806
+    }
+   ],
+   "model_prob": 0.638,
+   "model_edge": 4.6,
+   "model_edge_txt": "+4.6 pts",
+   "cheat_side": "under",
+   "pinnacle_line": "45.5 o108/u-124",
+   "fair_prob": 0.5353,
+   "ev_pct": 5.02,
+   "kelly_pct": 5.22,
+   "units": 1.0,
+   "trusted_prob": 0.5301,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "pinn_dec": 1.806
+  }
+ ],
+ "ev": [
+  {
+   "kind": "total",
+   "week": 11,
+   "player": "MIN @ SF",
+   "pkey": "2026_11_MIN_SF",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Under 45.5",
+   "line": 45.5,
+   "side": "under",
+   "team": null,
+   "opp": null,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/166620451046664",
+   "game_id": "2026_11_MIN_SF",
+   "kickoff": "2026-11-22T20:20:00-05:00",
+   "home": "SF",
+   "away": "MIN",
+   "dec": 1.962,
+   "american": -104,
+   "game_model": {
+    "game_id": "2026_11_MIN_SF",
+    "home": "SF",
+    "away": "MIN",
+    "kickoff": "2026-11-22T20:20:00-05:00",
+    "proj_home": 21.3,
+    "proj_away": 19.6,
+    "proj_margin": 1.7,
+    "proj_total": 40.9,
+    "home_pf": 31.2,
+    "home_pa": 21.8,
+    "away_pf": 19.6,
+    "away_pa": 14.0,
+    "home_games": 9,
+    "away_games": 9,
+    "league_avg": 23.08,
+    "home_win_prob": 0.551
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.962
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.08,
+     "b": 1.806
+    }
+   ],
+   "model_prob": 0.638,
+   "model_edge": 4.6,
+   "model_edge_txt": "+4.6 pts",
+   "cheat_side": "under",
+   "pinnacle_line": "45.5 o108/u-124",
+   "fair_prob": 0.5353,
+   "ev_pct": 5.02,
+   "kelly_pct": 5.22,
+   "units": 1.0,
+   "trusted_prob": 0.5301,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "pinn_dec": 1.806
+  }
+ ],
  "cheat": [
   {
    "kind": "prop",
@@ -3081,23 +3220,23 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.49,
-     "b": 2.81
+     "a": 1.493,
+     "b": 2.8
     }
    ],
    "model_prob": 0.449,
    "model_edge": 10.06,
    "model_edge_txt": "+10.1%",
    "cheat_side": "away",
-   "pinnacle_line": "SF -204 / MIN +181",
-   "fair_prob": 0.3465,
-   "ev_pct": -4.36,
-   "kelly_pct": -2.48,
+   "pinnacle_line": "SF -203 / MIN +180",
+   "fair_prob": 0.3478,
+   "ev_pct": -4.01,
+   "kelly_pct": -2.28,
    "units": 0.0,
-   "trusted_prob": 0.3497,
+   "trusted_prob": 0.3507,
    "unit_note": null,
    "edge_trust": 0.8,
-   "pinn_dec": 2.81
+   "pinn_dec": 2.8
   },
   {
    "kind": "total",
@@ -3150,23 +3289,23 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.952,
-     "b": 1.917
+     "a": 2.08,
+     "b": 1.806
     }
    ],
    "model_prob": 0.638,
    "model_edge": 4.6,
    "model_edge_txt": "+4.6 pts",
    "cheat_side": "under",
-   "pinnacle_line": "45.5 o-105/u-109",
-   "fair_prob": 0.5045,
-   "ev_pct": -1.01,
-   "kelly_pct": -1.05,
-   "units": 0.0,
-   "trusted_prob": 0.5056,
+   "pinnacle_line": "45.5 o108/u-124",
+   "fair_prob": 0.5353,
+   "ev_pct": 5.02,
+   "kelly_pct": 5.22,
+   "units": 1.0,
+   "trusted_prob": 0.5301,
    "unit_note": null,
    "edge_trust": 0.8,
-   "pinn_dec": 1.917
+   "pinn_dec": 1.806
   },
   {
    "kind": "total",
@@ -14452,5 +14591,5 @@
    ]
   }
  ],
- "odds_as_of": "2026-11-22T18:01:33-05:00"
+ "odds_as_of": "2026-11-22T18:11:47-05:00"
 }
