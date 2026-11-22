@@ -1,0 +1,465 @@
+{
+ "pinnwire_football_specials_flat": {
+  "top_level_keys": [
+   "sport_id",
+   "last",
+   "generated_at",
+   "events"
+  ],
+  "n_events": 778,
+  "league_counts": [
+   [
+    "NFL",
+    773
+   ],
+   [
+    "NCAA",
+    5
+   ]
+  ],
+  "special_names_sample": [
+   "Dallas Cowboys Points Range 1st Quarter",
+   "Winning Margin Range",
+   "Dallas Cowboys Points Range",
+   "Denver Broncos Points Range 1st Quarter",
+   "Winning Margin Range",
+   "Winning Margin Range",
+   "New York Giants Points Range 1st Half",
+   "Total Points Range",
+   "Las Vegas Raiders Points Range",
+   "Jacksonville Jaguars Points Range",
+   "Bo Nix Total Touchdown Passes",
+   "Tony Pollard Total Receiving Yards",
+   "Jayden Daniels Total Rushing Yards",
+   "Ollie Gordon II Total Receiving Yards",
+   "Total Points Range",
+   "Chicago Bears Points Range",
+   "Winning Margin Range",
+   "Winning Margin Range",
+   "New Orleans Saints Points Range 1st Quarter",
+   "New Orleans Saints Points Range 1st Half",
+   "Joe Milton III Total Interceptions",
+   "Winning Margin Range",
+   "Brian Thomas Total Receptions",
+   "Total Points Range",
+   "Winning Margin Range"
+  ],
+  "nfl_main_event_sample": {
+   "event_id": 1633099350,
+   "sport_id": 5,
+   "league_id": 889,
+   "league_name": "NFL",
+   "special": "New York Giants To Make the Playoffs",
+   "special_category": "Team to Make Playoffs",
+   "special_units": "Playoffs",
+   "parent_id": null,
+   "starts": "2026-11-22T18:00:00Z",
+   "start_ts": "2026-11-22T18:00:00Z",
+   "event_type": "prematch",
+   "is_have_odds": true,
+   "special_markets": {
+    "num_0": [
+     {
+      "type": "moneyline",
+      "key": "s;0;m",
+      "side": null,
+      "max_risk": 1000,
+      "prices": [
+       {
+        "name": "Yes",
+        "participant_id": 1633099351,
+        "points": null,
+        "price": 1.699
+       },
+       {
+        "name": "No",
+        "participant_id": 1633099352,
+        "points": null,
+        "price": 2.18
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "nfl_special_sample": {
+   "event_id": 1640606488,
+   "sport_id": 5,
+   "league_id": 889,
+   "league_name": "NFL",
+   "special": "Dallas Cowboys Points Range 1st Quarter",
+   "special_category": "Game Props",
+   "special_units": "Points",
+   "parent_id": 1640125303,
+   "starts": "2026-11-22T18:00:00Z",
+   "start_ts": "2026-11-22T18:00:00Z",
+   "event_type": "prematch",
+   "is_have_odds": true,
+   "special_markets": {
+    "num_3": [
+     {
+      "type": "moneyline",
+      "key": "s;3;m",
+      "side": null,
+      "max_risk": 250,
+      "prices": [
+       {
+        "name": "0 - 5",
+        "participant_id": 1640606490,
+        "points": null,
+        "price": 3
+       },
+       {
+        "name": "6 - 10",
+        "participant_id": 1640606491,
+        "points": null,
+        "price": 1.847
+       },
+       {
+        "name": "11 - 15",
+        "participant_id": 1640606492,
+        "points": null,
+        "price": 6
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "pinnwire_football_specials_nested": {
+  "top_level_keys": [
+   "sport_id",
+   "last",
+   "generated_at",
+   "events"
+  ],
+  "n_events": 5,
+  "league_counts": [
+   [
+    "NCAA",
+    5
+   ]
+  ],
+  "special_names_sample": [],
+  "nfl_main_event_sample": null,
+  "nfl_special_sample": null
+ },
+ "sharpapi": {
+  "pagination": {
+   "limit": 200,
+   "offset": 0,
+   "count": 200,
+   "has_more": true,
+   "next_offset": 200,
+   "next_cursor": "eyJlIjoibmZsX2JlYXJzX3NhaW50c18yMDI2LTExLTIyX2IyIiwiYiI6ImRyYWZ0a2luZ3MiLCJtIjoiMXN0X2hhbGZfdG90YWxfZmllbGRfZ29hbHMiLCJpIjoiMTg5OTkxNjU5OTE3MzY4IiwicyI6MTc5NTM3MDQwMDAwMDAwMDAwMCwiZyI6MTM2ODYsInAiOjgwNzcwMjIyMTQyNzMwNzQ0NjZ9"
+  },
+  "market_type_counts": [
+   [
+    "1st_half_correct_score",
+    100
+   ],
+   [
+    "1st_half_anytime_touchdown_scorer",
+    28
+   ],
+   [
+    "1st_half_point_spread",
+    26
+   ],
+   [
+    "1st_half_player_receiving_yards",
+    20
+   ],
+   [
+    "1st_half_player_rushing_yards",
+    10
+   ],
+   [
+    "1st_half_player_passing_yards",
+    4
+   ],
+   [
+    "1st_half_team_total",
+    4
+   ],
+   [
+    "1st_half_moneyline_3-way",
+    3
+   ],
+   [
+    "1st_half_first_team_to_score",
+    2
+   ],
+   [
+    "1st_half_moneyline",
+    2
+   ],
+   [
+    "1st_half_total_field_goals",
+    1
+   ]
+  ],
+  "stat_category_counts": [
+   [
+    null,
+    172
+   ],
+   [
+    "1st_half_anytime_touchdown_scorer",
+    28
+   ]
+  ],
+  "game_line_sample": [
+   {
+    "id": "100107050466036",
+    "sportsbook": "draftkings",
+    "event_id": "nfl_bears_saints_2026-11-22_b2",
+    "event_uuid": "84d1c5427ef88fe4",
+    "sport": "football",
+    "league": "nfl",
+    "home_team": "Chicago Bears",
+    "away_team": "New Orleans Saints",
+    "market_type": "1st_half_correct_score",
+    "selection": "CHI Bears 20-0 NO Saints",
+    "selection_type": "other",
+    "team_side": "home",
+    "market_segment": "1st_half",
+    "odds_american": 5500,
+    "odds_decimal": 56,
+    "odds_probability": 0.0179,
+    "line": null,
+    "event_start_time": "2026-11-22T18:00Z",
+    "is_live": false,
+    "is_active": true,
+    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "price_updated_at": "2026-11-22T04:41:16.247344Z",
+    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100107050466036",
+    "market_id": "334520701",
+    "selection_id": "0QA334520701#2151504855_13L88808Q11684600928Q20",
+    "is_alternate_line": false,
+    "is_main_line": true,
+    "is_stale_pregame_price": false,
+    "is_player_prop": false,
+    "is_impossible_scoreline": false
+   },
+   {
+    "id": "10033310387441",
+    "sportsbook": "draftkings",
+    "event_id": "nfl_bears_saints_2026-11-22_b2",
+    "event_uuid": "84d1c5427ef88fe4",
+    "sport": "football",
+    "league": "nfl",
+    "home_team": "Chicago Bears",
+    "away_team": "New Orleans Saints",
+    "market_type": "1st_half_correct_score",
+    "selection": "CHI Bears 6-0 NO Saints",
+    "selection_type": "other",
+    "team_side": "home",
+    "market_segment": "1st_half",
+    "odds_american": 11000,
+    "odds_decimal": 111,
+    "odds_probability": 0.009,
+    "line": null,
+    "event_start_time": "2026-11-22T18:00Z",
+    "is_live": false,
+    "is_active": true,
+    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "price_updated_at": "2026-11-22T04:41:16.247344Z",
+    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/10033310387441",
+    "market_id": "334520701",
+    "selection_id": "0QA334520701#2151504951_13L88808Q1-1350702814Q20",
+    "is_alternate_line": false,
+    "is_main_line": true,
+    "is_stale_pregame_price": false,
+    "is_player_prop": false,
+    "is_impossible_scoreline": false
+   },
+   {
+    "id": "100382864549736",
+    "sportsbook": "draftkings",
+    "event_id": "nfl_bears_saints_2026-11-22_b2",
+    "event_uuid": "84d1c5427ef88fe4",
+    "sport": "football",
+    "league": "nfl",
+    "home_team": "Chicago Bears",
+    "away_team": "New Orleans Saints",
+    "market_type": "1st_half_correct_score",
+    "selection": "CHI Bears 17-13 NO Saints",
+    "selection_type": "other",
+    "team_side": "home",
+    "market_segment": "1st_half",
+    "odds_american": 5000,
+    "odds_decimal": 51,
+    "odds_probability": 0.0196,
+    "line": null,
+    "event_start_time": "2026-11-22T18:00Z",
+    "is_live": false,
+    "is_active": true,
+    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "price_updated_at": "2026-11-22T04:41:16.247344Z",
+    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100382864549736",
+    "market_id": "334520701",
+    "selection_id": "0QA334520701#2151504762_13L88808Q1-1038859548Q20",
+    "is_alternate_line": false,
+    "is_main_line": true,
+    "is_stale_pregame_price": false,
+    "is_player_prop": false,
+    "is_impossible_scoreline": false
+   },
+   {
+    "id": "106210274151333",
+    "sportsbook": "draftkings",
+    "event_id": "nfl_bears_saints_2026-11-22_b2",
+    "event_uuid": "84d1c5427ef88fe4",
+    "sport": "football",
+    "league": "nfl",
+    "home_team": "Chicago Bears",
+    "away_team": "New Orleans Saints",
+    "market_type": "1st_half_correct_score",
+    "selection": "CHI Bears 14-9 NO Saints",
+    "selection_type": "other",
+    "team_side": "home",
+    "market_segment": "1st_half",
+    "odds_american": 7500,
+    "odds_decimal": 76,
+    "odds_probability": 0.0132,
+    "line": null,
+    "event_start_time": "2026-11-22T18:00Z",
+    "is_live": false,
+    "is_active": true,
+    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "price_updated_at": "2026-11-22T04:41:16.247344Z",
+    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/106210274151333",
+    "market_id": "334520701",
+    "selection_id": "0QA334520701#2151504942_13L88808Q1-1852398026Q20",
+    "is_alternate_line": false,
+    "is_main_line": true,
+    "is_stale_pregame_price": false,
+    "is_player_prop": false,
+    "is_impossible_scoreline": false
+   }
+  ],
+  "prop_sample": [
+   {
+    "id": "103604235823243",
+    "sportsbook": "draftkings",
+    "event_id": "nfl_bears_saints_2026-11-22_b2",
+    "event_uuid": "84d1c5427ef88fe4",
+    "sport": "football",
+    "league": "nfl",
+    "home_team": "Chicago Bears",
+    "away_team": "New Orleans Saints",
+    "market_type": "1st_half_anytime_touchdown_scorer",
+    "selection": "Luther Burden III",
+    "selection_type": "other",
+    "market_segment": "1st_half",
+    "odds_american": 280,
+    "odds_decimal": 3.8,
+    "odds_probability": 0.2632,
+    "line": null,
+    "event_start_time": "2026-11-22T18:00Z",
+    "is_live": false,
+    "is_active": true,
+    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "price_updated_at": "2026-11-22T04:41:16.247344Z",
+    "player_name": "Luther Burden III",
+    "stat_category": "1st_half_anytime_touchdown_scorer",
+    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/103604235823243",
+    "market_id": "390286849",
+    "selection_id": "0QA390286849#2370196278_13L88808Q11385742945Q20",
+    "is_alternate_line": false,
+    "is_main_line": true,
+    "is_stale_pregame_price": false,
+    "is_player_prop": true
+   },
+   {
+    "id": "104554022639765",
+    "sportsbook": "draftkings",
+    "event_id": "nfl_bears_saints_2026-11-22_b2",
+    "event_uuid": "84d1c5427ef88fe4",
+    "sport": "football",
+    "league": "nfl",
+    "home_team": "Chicago Bears",
+    "away_team": "New Orleans Saints",
+    "market_type": "1st_half_anytime_touchdown_scorer",
+    "selection": "Alvin Kamara",
+    "selection_type": "other",
+    "market_segment": "1st_half",
+    "odds_american": 900,
+    "odds_decimal": 10,
+    "odds_probability": 0.1,
+    "line": null,
+    "event_start_time": "2026-11-22T18:00Z",
+    "is_live": false,
+    "is_active": true,
+    "timestamp": "2026-11-22T05:16:47.403440616Z",
+    "price_updated_at": "2026-11-22T04:41:16.247344Z",
+    "player_name": "Alvin Kamara",
+    "stat_category": "1st_half_anytime_touchdown_scorer",
+    "deep_link": "https://api.sharpapi.io/api/v1/deeplink/104554022639765",
+    "market_id": "390286849",
+    "selection_id": "0QA390286849#2370196291_13L88808Q1-1358996187Q20",
+    "is_alternate_line": false,
+    "is_main_line": true,
+    "is_stale_pregame_price": false,
+    "is_player_prop": true
+   }
+  ]
+ },
+ "sharpapi_markets": {
+  "data": [
+   {
+    "id": "outright",
+    "name": "Outright",
+    "numerical_id": 902,
+    "market_type_id": 25,
+    "event_count": 1273,
+    "sports": [
+     "football"
+    ],
+    "sportsbooks": [
+     "ballybet",
+     "betmgm",
+     "betonline",
+     "\u2026 8 more"
+    ]
+   },
+   {
+    "id": "moneyline",
+    "name": "Moneyline",
+    "numerical_id": 878,
+    "market_type_id": 1,
+    "event_count": 100,
+    "sports": [
+     "football"
+    ],
+    "sportsbooks": [
+     "ballybet",
+     "bet365",
+     "betfair",
+     "\u2026 25 more"
+    ]
+   },
+   {
+    "id": "win_total_over_under",
+    "name": "Win Total Over/Under",
+    "numerical_id": 1387,
+    "market_type_id": 5,
+    "event_count": 100,
+    "sports": [
+     "football"
+    ],
+    "sportsbooks": [
+     "ballybet",
+     "betmgm",
+     "gemini",
+     "\u2026 1 more"
+    ]
+   },
+   "\u2026 162 more"
+  ],
+  "sport": "football",
+  "updated_at": "2026-11-22T05:16:51.500898949Z"
+ }
+}
