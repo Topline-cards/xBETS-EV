@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T19:13:13-05:00",
+ "generated_at": "2026-11-22T19:23:28-05:00",
  "season": 2026,
  "week": 11,
  "stats_mode": "current_only",
@@ -7,9 +7,10 @@
  "status": {
   "odds_checked": true,
   "book_props": 144,
-  "book_game_lines": 106,
+  "book_game_lines": 103,
   "pinnacle_props": 152,
-  "pinnacle_game_lines": 188
+  "pinnacle_game_lines": 188,
+  "pinnacle_as_of": "2026-11-22T19:13:13-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -2857,8 +2858,8 @@
    "books": [
     {
      "book": "draftkings",
-     "over": 1.82,
-     "under": 1.962
+     "over": 1.794,
+     "under": 1.99
     }
    ],
    "cheat_side": "over",
@@ -3019,9 +3020,200 @@
    "league_avg": 21.1,
    "games": 6,
    "side": "over",
-   "dec": 1.82,
-   "american": -122,
+   "dec": 1.794,
+   "american": -126,
    "title": "Over 21.5 Completions"
+  },
+  {
+   "kind": "prop",
+   "week": 11,
+   "player": "Brock Purdy",
+   "pkey": "brock purdy",
+   "stat": "pass_comp",
+   "stat_label": "Completions",
+   "line": 20.5,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/14196393307249",
+   "team": "SF",
+   "opp": "MIN",
+   "position": "QB",
+   "game_id": "2026_11_MIN_SF",
+   "kickoff": "2026-11-22T20:20:00-05:00",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xs2fyj1sqdgwvt9ihbri",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 2.05,
+     "under": 1.746
+    },
+    {
+     "book": "pinnacle",
+     "over": 2.0,
+     "under": 1.826
+    }
+   ],
+   "cheat_side": "under",
+   "proj_edge_pct": -8.3,
+   "hit_rate_over": 0.44,
+   "model_prob_over": 0.323,
+   "projection": 18.8,
+   "baseline": 20.8,
+   "matchup_pct": -19.3,
+   "matchup_factor": 0.807,
+   "def_rank": 32,
+   "last10": [
+    25.0,
+    20.0,
+    15.0,
+    19.0,
+    19.0,
+    21.0,
+    27.0,
+    17.0,
+    22.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "LA",
+     "v": 25.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "MIA",
+     "v": 20.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "ARI",
+     "v": 15.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "DEN",
+     "v": 19.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "SEA",
+     "v": 19.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "WAS",
+     "v": 21.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "ATL",
+     "v": 27.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "LV",
+     "v": 17.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "DAL",
+     "v": 22.0,
+     "ha": "away"
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "vs": "CHI",
+     "v": 20.0
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TB",
+     "v": 17.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "MIA",
+     "v": 9.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "NO",
+     "v": 16.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "IND",
+     "v": 13.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "DET",
+     "v": 18.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BUF",
+     "v": 21.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "GB",
+     "v": 18.0
+    }
+   ],
+   "vs_opp": [
+    {
+     "season": 2024,
+     "wk": 2,
+     "v": 28.0
+    }
+   ],
+   "home_away": "home",
+   "player_id": "00-0037834",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 17.0,
+   "league_avg": 21.1,
+   "games": 6,
+   "side": "under",
+   "dec": 1.746,
+   "american": -134,
+   "title": "Under 20.5 Completions",
+   "pinnacle_line": "20.5 o100/u-121",
+   "fair_prob": 0.5227,
+   "ev_pct": -8.73,
+   "kelly_pct": -11.7,
+   "units": 0.0,
+   "trusted_prob": 0.5477,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 1.826
   },
   {
    "kind": "ml",
@@ -3062,6 +3254,11 @@
     "home_win_prob": 0.551
    },
    "books": [
+    {
+     "book": "draftkings",
+     "a": 1.495,
+     "b": 2.69
+    },
     {
      "book": "fanduel",
      "a": 1.476,
@@ -14499,5 +14696,5 @@
    ]
   }
  ],
- "odds_as_of": "2026-11-22T19:13:13-05:00"
+ "odds_as_of": "2026-11-22T19:23:28-05:00"
 }
