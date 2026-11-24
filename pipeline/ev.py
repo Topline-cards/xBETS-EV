@@ -82,7 +82,7 @@ def size_slate(picks):
         elif _cheat_disagrees(p):
             conf *= config.CONF_DISAGREES
             why.append("matchup points the other way")
-        if p.get("injury_status") == "Questionable":
+        if p.get("injury_status") in ("Questionable", "Day-To-Day"):
             conf *= config.CONF_QUESTIONABLE
             why.append("questionable")
         n_g = by_game.get(p.get("game_id"), 1)

@@ -27,7 +27,7 @@ def _line(p, star):
     return f"{'⭐ ' if star else ''}{bet} {odds} {book} · EV +{p['ev_pct']:.1f}% · {p['units']}u"
 
 
-def notify_new(out, load, save):
+def notify_new(out, load, save, sport="NFL"):
     topic = os.environ.get("NTFY_TOPIC", "").strip()
     seen = load("notified.json", {})
     if seen.get("week") != out["week"]:
@@ -46,13 +46,14 @@ def notify_new(out, load, save):
         lines = [_line(p, _key(p) in combined_keys) for p in new[:MAX_LINES]]
         if len(new) > MAX_LINES:
             lines.append(f"+{len(new) - MAX_LINES} more in the app")
-        title = (f"{len(new)} new EV play{'s' if len(new) > 1 else ''}"
+        title = (f"{sport}: {len(new)} new EV play{'s' if len(new) > 1 else ''}"
                  + (f" ({n_star} also on the cheat sheet ⭐)" if n_star else ""))
         try:
             requests.post(f"https://ntfy.sh/{topic}", data="\n".join(lines).encode(),
-                          headers={"Title": title.encode(), "Click": APP_URL,
+                          headers={"Title": title.encode(),
+                                   "Click": APP_URL + ("" if sport == "NFL" else f"?sport={sport.lower()}"),
                                    "Priority": "high" if n_star else "default",
-                                   "Tags": "football"}, timeout=15)
+                                   "Tags": "football" if sport == "NFL" else "basketball"}, timeout=15)
         except Exception as e:
             print("notify failed:", e)
 

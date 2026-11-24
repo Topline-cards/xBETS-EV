@@ -78,7 +78,7 @@ def rank_of(allowed, opp_team, position, stat):
     return None
 
 
-def evaluate_line(proj_row, line):
+def evaluate_line(proj_row, line, cfg=config):
     """
     Cheat-sheet read on a specific prop line.
     Returns dict with side ('over'/'under'/None), edge %, hit rate, model prob.
@@ -92,9 +92,9 @@ def evaluate_line(proj_row, line):
 
     side = None
     f = proj_row["matchup_factor"]
-    if edge >= config.CHEAT_MIN_EDGE_PCT and f >= config.MATCHUP_GOOD:
+    if edge >= cfg.CHEAT_MIN_EDGE_PCT and f >= cfg.MATCHUP_GOOD:
         side = "over"
-    elif edge <= -config.CHEAT_MIN_EDGE_PCT and f <= config.MATCHUP_BAD:
+    elif edge <= -cfg.CHEAT_MIN_EDGE_PCT and f <= cfg.MATCHUP_BAD:
         side = "under"
     return {
         "cheat_side": side,

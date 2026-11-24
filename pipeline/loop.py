@@ -9,6 +9,8 @@ Game-day loop. GitHub's schedule is unreliable, so one run keeps itself going:
   * stops when no game kicks off in the next LOOKAHEAD_H hours
   * grades finished picks at the start of each run
 
+Covers every sport: NFL (Sundays + Thanksgiving) and NBA (Wed, Fri + Christmas).
+
   python -m pipeline.loop
 """
 import os
@@ -60,16 +62,55 @@ def today_games(sched, now):
                  (sched["kickoff"] < now + timedelta(hours=LOOKAHEAD_H))]
 
 
+def grade_all():
+    """Grade every sport; returns how many started picks still wait on box scores."""
+    from . import grade
+    from .nba import grade as nba_grade
+    pending = 0
+    for name, fn in (("NFL", grade.grade), ("NBA", nba_grade.grade)):
+        try:
+            pending += fn() or 0
+        except Exception as e:
+            print(f"{name} grading error:", e)
+    return pending
+
+
+def build_all(now, force):
+    from .nba import build as nba_build
+    for name, fn in (("NFL", build.build), ("NBA", nba_build.build)):
+        try:
+            o = fn(now=now, force=force)
+            print(f"{now:%H:%M} {name} {o['week']}: combined={len(o['combined'])} ev={len(o['ev'])} "
+                  f"cheat={len(o['cheat'])} {o['status']}", flush=True)
+        except Exception as e:
+            print(f"{name} build error:", e, flush=True)
+
+
+def all_slates(now):
+    """Kickoff times of every covered game, all sports."""
+    from .nba import stats as nba_stats
+    import pandas as pd
+    parts = []
+    try:
+        parts.append(stats.slate(stats.load_schedule(stats.season_for(now)))[["kickoff"]])
+    except Exception as e:
+        print("NFL schedule error:", e)
+    try:
+        parts.append(nba_stats.slate(nba_stats.load_schedule(nba_stats.season_for(now)))[["kickoff"]])
+    except Exception as e:
+        print("NBA schedule error:", e)
+    return pd.concat(parts) if parts else pd.DataFrame({"kickoff": []})
+
+
 def wait_and_grade(start):
     """
     After the last game, box scores post overnight. Check hourly and grade,
     so My Results / Results update the next morning without GitHub's cron.
     """
-    from . import grade
     deadline = time.time() + 16 * 3600
     while time.time() < deadline:
         try:
-            pending = grade.grade()
+            pending = grade_all()
             commit(f"Grade results {datetime.now(ET):%Y-%m-%d %H:%M} ET")
             print(f"graded; {pending} still waiting on box scores", flush=True)
             if not pending:
@@ -86,21 +127,14 @@ def wait_and_grade(start):
 def main(force_first=False):
     start = time.time()
     first = True
-    try:
-        from . import grade
-        grade.grade()
-    except Exception as e:
-        print("grading skipped:", e)
+    grade_all()
     while True:
         now = datetime.now(ET)
-        o = build.build(now=now, force=force_first and first)
+        build_all(now, force_first and first)
         first = False
-        print(f"{now:%H:%M} week {o['week']}: combined={len(o['combined'])} ev={len(o['ev'])} "
-              f"cheat={len(o['cheat'])} {o['status']}", flush=True)
         commit(f"Update picks {now:%Y-%m-%d %H:%M} ET")
 
-        sched = stats.slate(stats.load_schedule(stats.season_for(now)))
-        games = today_games(sched, datetime.now(ET))
+        games = today_games(all_slates(now), datetime.now(ET))
         upcoming = games[games["kickoff"] > datetime.now(ET)]
         if upcoming.empty:
             wait_and_grade(start)

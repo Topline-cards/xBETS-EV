@@ -103,7 +103,10 @@ document.addEventListener("click", e => {
   if (s) { filter = s.dataset.f; document.querySelectorAll("#seg button").forEach(x => x.classList.toggle("on", x === s)); render(); }
 });
 document.getElementById("q").addEventListener("input", render);
-fetch("data/players.json?t=" + Date.now()).then(r => r.json()).then(d => { players = d; render(); })
+const SPORT = new URLSearchParams(location.search).get("sport") === "nba" ? "nba" : "nfl";
+document.querySelector("h1").textContent = "My Players · " + SPORT.toUpperCase();
+document.querySelector(".back").href = "index.html?sport=" + SPORT;
+fetch((SPORT === "nba" ? "data/nba/" : "data/") + "players.json?t=" + Date.now()).then(r => r.json()).then(d => { players = d; render(); })
   .catch(() => { players = []; render(); });
 </script>
 </body>

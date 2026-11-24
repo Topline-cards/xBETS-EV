@@ -92,14 +92,17 @@ SHARP_MARKETS = [
     "player_rushing_yards", "player_rushing_attempts", "player_total_rush_attempts",
     "player_receiving_yards", "player_receptions", "player_total_receptions",
 ]
-def fetch_sharpapi():
-    """Returns (props, game_lines) for DK/FD."""
+def fetch_sharpapi(league="nfl", markets=None, stat_fn=None, abbr=None, fixture="sharpapi_odds.json"):
+    """Returns (props, game_lines) for DK/FD. Defaults = NFL."""
+    markets = markets or SHARP_MARKETS
+    stat_fn = stat_fn or stat_from_text
+    abbr = abbr or team_abbr
     if FIXTURES:
-        pages = [_fixture("sharpapi_odds.json")]
+        pages = [_fixture(fixture)]
     else:
         key = os.environ["SHARPAPI_KEY"]
-        params = {"league": "nfl", "sportsbook": ",".join(config.BET_BOOKS),
-                  "is_live": "false", "limit": 200, "market": ",".join(SHARP_MARKETS),
+        params = {"league": league, "sportsbook": ",".join(config.BET_BOOKS),
+                  "is_live": "false", "limit": 200, "market": ",".join(markets),
                   "is_main_line": "true"}       # drops alt ladders (~85% of rows)
         pages, cursor = [], None
         for _ in range(40):                      # hard stop (main lines ≈ 11 pages)
@@ -119,7 +122,7 @@ def fetch_sharpapi():
             if o.get("is_live"):
                 continue
             if not o.get("is_player_prop"):
-                _add_game_line(games, o)
+                _add_game_line(games, o, abbr)
                 continue
             if o.get("is_active") is False or o.get("is_stale_pregame_price"):
                 continue
@@ -127,7 +130,7 @@ def fetch_sharpapi():
                 continue
             if o.get("is_alternate_line"):
                 continue                     # main line only (skip alt ladders)
-            stat = stat_from_text(o.get("market_type") or o.get("stat_category"))
+            stat = stat_fn(o.get("market_type") or o.get("stat_category"))
             if not stat or o.get("line") is None or not o.get("player_name"):
                 continue
             side = (o.get("selection_type") or o.get("selection") or "").lower()
@@ -148,7 +151,7 @@ GAME_MARKETS = {"moneyline": "ml", "point_spread": "spread", "spread": "spread",
                 "total_points": "total", "total": "total"}
 
 
-def _add_game_line(games, o):
+def _add_game_line(games, o, abbr=None):
     """
     Game lines, normalized to {book, kind, home, away, line, a, b}:
       ml:     a = home price, b = away price, line None
@@ -162,8 +165,9 @@ def _add_game_line(games, o):
         return
     if o.get("is_alternate_line"):
         return
-    home = team_abbr(o.get("home_team"), (o.get("home") or {}).get("abbreviation"))
-    away = team_abbr(o.get("away_team"), (o.get("away") or {}).get("abbreviation"))
+    abbr = abbr or team_abbr
+    home = abbr(o.get("home_team"), (o.get("home") or {}).get("abbreviation"))
+    away = abbr(o.get("away_team"), (o.get("away") or {}).get("abbreviation"))
     if not home or not away:
         return
     st = (o.get("selection_type") or "").lower()
@@ -213,12 +217,12 @@ def _split_pinn_name(sp):
     return None, name
 
 
-def _parse_pinn_special(sp):
+def _parse_pinn_special(sp, stat_fn=None):
     """Pinnacle player props -> normalized rows (Over/Under with a line)."""
     if sp.get("special_category") and sp.get("special_category") != "Player Props":
         return []
     player, stat_txt = _split_pinn_name(sp)
-    stat = stat_from_text(stat_txt)
+    stat = (stat_fn or stat_from_text)(stat_txt)
     if not stat or not player:
         return []
     rows = {}
@@ -246,14 +250,15 @@ def _iter_specials(payload):
             yield sp
 
 
-def _pinn_game_lines(payload):
+def _pinn_game_lines(payload, league="NFL", abbr=None):
+    abbr = abbr or team_abbr
     out = []
     for ev in payload.get("events", []):
         if ev.get("special") or ev.get("parent_id"):
             continue
-        if (ev.get("league_name") or "").strip().upper() != "NFL":
+        if (ev.get("league_name") or "").strip().upper() != league.upper():
             continue
-        home, away = team_abbr(ev.get("home")), team_abbr(ev.get("away"))
+        home, away = abbr(ev.get("home")), abbr(ev.get("away"))
         p0 = (ev.get("periods") or {}).get("num_0") or {}
         if not home or not away or not p0:
             continue
@@ -272,25 +277,26 @@ def _pinn_game_lines(payload):
     return out
 
 
-def fetch_pinnacle():
+def fetch_pinnacle(sport_id=5, league="NFL", stat_fn=None, abbr=None, prefix=""):
     """
     Returns (props, game_lines). Two PinnWire calls:
       /kit/v1/markets?include_specials=1   -> player props
       /kit/v1/prematch/fixtures            -> moneyline / spreads / totals
+    PinnWire sport ids: 5 = football, 3 = basketball.
     """
     if FIXTURES:
-        payload = _fixture("pinnwire_markets.json")
-        main = _fixture("pinnwire_fixtures.json") if os.path.exists(
-            os.path.join(FIXTURES, "pinnwire_fixtures.json")) else payload
+        payload = _fixture(prefix + "pinnwire_markets.json")
+        main = _fixture(prefix + "pinnwire_fixtures.json") if os.path.exists(
+            os.path.join(FIXTURES, prefix + "pinnwire_fixtures.json")) else payload
     else:
         key = os.environ["PINNWIRE_KEY"]
         payload = _get(f"{PINN_BASE}/kit/v1/markets",
-                       {"sport_id": 5, "include_specials": 1, "key": key})
-        main = _get(f"{PINN_BASE}/kit/v1/prematch/fixtures", {"sport_id": 5, "key": key})
+                       {"sport_id": sport_id, "include_specials": 1, "key": key})
+        main = _get(f"{PINN_BASE}/kit/v1/prematch/fixtures", {"sport_id": sport_id, "key": key})
     props = []
     for sp in _iter_specials(payload):
-        league = (sp.get("league_name") or "").lower()
-        if league and "nfl" not in league:
+        lg = (sp.get("league_name") or "").strip().upper()
+        if lg and lg != league.upper():
             continue                                    # skip college etc.
-        props.extend(_parse_pinn_special(sp))
-    return props, _pinn_game_lines(main)
+        props.extend(_parse_pinn_special(sp, stat_fn))
+    return props, _pinn_game_lines(main, league, abbr)

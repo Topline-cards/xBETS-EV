@@ -88,6 +88,19 @@
   .presets{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
   .chip{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:999px;padding:7px 12px;font:600 13px/1 inherit;cursor:pointer}
   .chip.on{background:var(--cyan);border-color:var(--cyan);color:#071419}
+  .menu{border:0;background:none;color:var(--text);font-size:22px;line-height:1;padding:2px 10px 2px 0;cursor:pointer}
+  .drawer{position:fixed;top:0;bottom:0;left:0;width:min(290px,82vw);background:var(--bg);border-right:1px solid var(--line);
+    z-index:31;transform:translateX(-102%);transition:transform .22s ease;padding:18px 14px;overflow-y:auto}
+  .drawer.open{transform:none}
+  .dshade{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:30;opacity:0;pointer-events:none;transition:opacity .2s}
+  .dshade.open{opacity:1;pointer-events:auto}
+  .drawer h4{margin:16px 4px 8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+  .sp{display:flex;align-items:center;gap:12px;width:100%;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:12px;margin-bottom:8px;color:var(--text);font:inherit;text-align:left;cursor:pointer;text-decoration:none}
+  .sp.on{border-color:var(--cyan);background:rgba(73,212,232,.08)}
+  .sp .em{font-size:24px} .sp b{display:block;font-size:16px} .sp .sub{margin:0}
+  .sp .ck{margin-left:auto;color:var(--cyan);font-weight:700}
+  .sporttag{font-size:11px;font-weight:700;color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:1px 4px;margin-right:4px}
   .gear{border:1px solid #2b4a52;background:none;color:var(--cyan);border-radius:999px;padding:5px 9px;margin-left:6px;font-size:14px;cursor:pointer}
   .unitset{display:flex;align-items:center;gap:4px;color:var(--dim);font-size:13px;white-space:nowrap}
   .unitset input{width:62px;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:7px;padding:5px 6px;font:600 14px/1 inherit}
@@ -155,9 +168,10 @@
 <body>
 <header>
   <div class="top">
-    <h1><b>xBETS</b> NFL</h1>
+    <div style="display:flex;align-items:center"><button class="menu" id="open-menu" aria-label="Sports menu">☰</button>
+    <h1><b>xBETS</b> <span id="sport-name">NFL</span></h1></div>
     <div style="display:flex;align-items:center"><div class="meta" id="meta">Loading…</div>
-      <a class="toplink" href="players.html">👍 Players</a><button class="gear" id="open-settings2" aria-label="Settings">⚙️</button></div>
+<button class="gear" id="open-settings2" aria-label="Settings">⚙️</button></div>
   </div>
   <nav class="tabs" id="tabs">
     <button class="tab on" data-t="combined">EV + Cheat Sheet<span class="n" id="n-combined"></span></button>
@@ -168,10 +182,23 @@
 </header>
 <main id="main"></main>
 <div class="shade" id="shade"></div>
+<div class="dshade" id="dshade"></div>
+<nav class="drawer" id="drawer" aria-label="Sports"></nav>
 <div class="sheet" id="sheet"></div>
 
 <script>
-const S = {data:null, results:null, tab:"combined", game:"all", type:"all", book:"all", shown:[], mShown:[], gmShown:[]};
+const SPORTS = {
+  nfl: {name:"NFL", em:"🏈", days:"Sundays + Thanksgiving", base:"data/", kick:"kickoff"},
+  nba: {name:"NBA", em:"🏀", days:"Wednesdays, Fridays + Christmas", base:"data/nba/", kick:"tip-off"},
+};
+const SPORT_KEY = "xbets_sport";
+const initialSport = (() => { const q = new URLSearchParams(location.search).get("sport");
+  if (q && SPORTS[q]) return q; try { const v = localStorage.getItem(SPORT_KEY); if (SPORTS[v]) return v; } catch(e){} return "nfl"; })();
+const S = {sport: initialSport, data:null, results:null, gradedBy:{}, tab:"combined", game:"all", type:"all", book:"all", shown:[], mShown:[], gmShown:[]};
+const SP = () => SPORTS[S.sport];
+const POS_NAME = {G:"guards", F:"forwards", C:"centers"};
+const posName = p => POS_NAME[p] || (p ? p + "s" : "");
+const logLbl = g => g.lbl || (g.season !== S.data.season ? g.season + " " : "") + "Wk " + g.wk;
 const BOOK = {draftkings:"DraftKings", fanduel:"FanDuel", pinnacle:"Pinnacle"};
 const KIND = {ml:"Moneyline", spread:"Spread", total:"Total"};
 const $ = s => document.querySelector(s);
@@ -189,9 +216,11 @@ const sideWins = (p, v) => p.side === "over" ? v > p.line : v < p.line;
 
 async function load(){
   const bust = "?t=" + Date.now();
-  try { S.data = await (await fetch("data/picks.json" + bust)).json(); } catch(e){ S.data = null; }
-  try { S.results = await (await fetch("data/results.json" + bust)).json(); } catch(e){ S.results = null; }
-  try { S.graded = await (await fetch("data/graded.json" + bust)).json(); } catch(e){ S.graded = {}; }
+  const base = SP().base;
+  try { S.data = await (await fetch(base + "picks.json" + bust)).json(); } catch(e){ S.data = null; }
+  try { S.results = await (await fetch(base + "results.json" + bust)).json(); } catch(e){ S.results = null; }
+  await Promise.all(Object.entries(SPORTS).map(async ([k, v]) => {
+    try { S.gradedBy[k] = await (await fetch(v.base + "graded.json" + bust)).json(); } catch(e){ S.gradedBy[k] = S.gradedBy[k] || {}; } }));
   render();
 }
 
@@ -243,12 +272,12 @@ const PREF_KEY = "xbets_prefs", UNIT_KEY = "xbets_unit_usd", MY_KEY = "xbets_myb
 const myBets = () => { try { return JSON.parse(localStorage.getItem(MY_KEY) || "[]"); } catch(e){ return []; } };
 const saveMyBets = a => { try { localStorage.setItem(MY_KEY, JSON.stringify(a)); } catch(e){} };
 const betKey = p => `${p.week}|${p.pkey}|${p.stat}|${p.side}|${p.line}`;
-const isMine = p => myBets().some(b => b.key === betKey(p) && b.book === p.book);
-const gradeOf = b => (S.graded || {})[b.key] || null;
+const isMine = p => myBets().some(b => b.key === betKey(p) && b.book === p.book && (b.sport || "nfl") === S.sport);
+const gradeOf = b => (S.gradedBy[b.sport || "nfl"] || {})[b.key] || null;
 function toggleMine(p){
-  const a = myBets(), i = a.findIndex(b => b.key === betKey(p) && b.book === p.book);
+  const a = myBets(), i = a.findIndex(b => b.key === betKey(p) && b.book === p.book && (b.sport || "nfl") === S.sport);
   if (i >= 0) a.splice(i, 1);
-  else a.push({id: Date.now(), key: betKey(p), season: S.data.season, week: p.week, player: p.player, title: p.title,
+  else a.push({id: Date.now(), sport: S.sport, key: betKey(p), season: S.data.season, week: p.week, player: p.player, title: p.title,
     stat_label: p.stat_label, kind: p.kind || "prop", book: p.book, american: p.american, dec: p.dec,
     units: p.units || 0, stake: p.units && unitUsd() ? +(p.units * unitUsd()).toFixed(2) : null,
     kickoff: p.kickoff, team: p.team, opp: p.opp, ev_pct: p.ev_pct, added_at: new Date().toISOString()});
@@ -264,7 +293,7 @@ const prefs = () => { try { return JSON.parse(localStorage.getItem(PREF_KEY) || 
 const prefOf = p => p && p.pkey ? (prefs()[p.pkey] || {}).v : null;
 const pctCls = v => v == null ? "" : v >= 0.6 ? "hi" : v <= 0.4 ? "lo" : "";
 const shortName = n => { const a = String(n || "").split(" "); return a.length > 1 && a[0].length > 2 ? a[0][0] + ". " + a.slice(1).join(" ") : n; };
-const STAT_SHORT = {pass_yds:"Pass Yds", pass_comp:"Pass Compl", pass_att:"Pass Att", rush_yds:"Rush Yds", rush_att:"Rush Att", rec_yds:"Rec Yds", receptions:"Receptions"};
+const STAT_SHORT = {pts:"Points", reb:"Rebounds", ast:"Assists", fg3:"3-Pointers", pra:"Pts+Reb+Ast", pass_yds:"Pass Yds", pass_comp:"Pass Compl", pass_att:"Pass Att", rush_yds:"Rush Yds", rush_att:"Rush Att", rec_yds:"Rec Yds", receptions:"Receptions"};
 
 function trow(icon, text, val, cls="", rowCls=""){
   return `<div class="tr ${rowCls}">${ICON[icon]}<div class="tx">${text}</div><div class="pv ${cls}">${val ?? ""}</div></div>`;
@@ -276,7 +305,7 @@ function hitRow(icon, label, vals, p){
 }
 function logoImg(team){
   const u = team && S.data.logos ? S.data.logos[team] : null;
-  const txt = `<div class="logo txt">${esc(team || "NFL")}</div>`;
+  const txt = `<div class="logo txt">${esc(team || SP().name)}</div>`;
   return u ? `<img class="logo" src="${esc(u)}" alt="${esc(team)}" loading="lazy" onerror="this.outerHTML='${txt.replace(/"/g, "&quot;")}'">` : txt;
 }
 
@@ -294,7 +323,7 @@ function card(p, mode, i, inDetail){
     if (p.home_away) rows.push(hitRow("pin", `${p.home_away} games`, (p.log || []).filter(g => g.ha === p.home_away).map(g => g.v), p));
     if (p.matchup_pct != null) {
       const good = (p.side === "over") === (p.matchup_pct > 0);
-      rows.push(trow("target", `${esc(p.opp)} allows ${pct(p.matchup_pct, 0)} to ${esc(p.position)}s · rank ${p.def_rank}/32`,
+      rows.push(trow("target", `${esc(p.opp)} allows ${pct(p.matchup_pct, 0)} to ${esc(posName(p.position))} · rank ${p.def_rank}/${p.def_n || 32}`,
         good ? "✓" : "✗", good ? "hi" : "lo"));
     }
     if (p.projection != null) rows.push(trow("chart", `Projection ${p.projection} vs line ${p.line}`, pct(p.proj_edge_pct, 0),
@@ -336,7 +365,7 @@ function banner(){
   const d = S.data, st = d.status || {};
   const parts = [];
   if (d.odds_as_of) parts.push(`Odds updated <b>${ago(d.odds_as_of)}</b>`);
-  if (!st.odds_checked && d.next_kickoff) parts.push(`Odds checks start 4h before kickoff (next: <b>${when(d.next_kickoff)}</b>)`);
+  if (!st.odds_checked && d.next_kickoff) parts.push(`Odds checks start 4h before ${SP().kick} (next: <b>${when(d.next_kickoff)}</b>)`);
   const errs = [st.book_error && "DK/FD feed: " + st.book_error, st.pinnacle_error && "Pinnacle feed: " + st.pinnacle_error].filter(Boolean);
   return `<div class="banner">${parts.join(" · ") || "Waiting for first odds check"}</div>` +
     (errs.length ? `<div class="banner warn">${errs.map(esc).join("<br>")}</div>` : "");
@@ -385,7 +414,7 @@ function renderList(mode){
   let html = banner() + (mode !== "cheat" ? budgetBar(mode) : "") + `<div class="help">${INTRO[mode]}</div>` + filterBar();
   if (!list.length) {
     html += `<div class="empty"><b>No plays right now</b>${all.length ? "Nothing matches these filters." :
-      mode === "cheat" ? "Lines aren't posted yet. Projections are below." : "Check back closer to kickoff."}</div>`;
+      mode === "cheat" ? "Lines aren't posted yet. Projections are below." : "Check back closer to " + SP().kick + "."}</div>`;
   } else {
     const funded = mode === "cheat" ? list : list.filter(p => p.units);
     const skipped = mode === "cheat" ? [] : list.filter(p => !p.units);
@@ -484,7 +513,7 @@ function propModelSection(p){
   return `<div class="sec"><h3>Cheat sheet math</h3><div class="calc">
     <span class="note">1. Player's average over his last ${Math.min(n, p.games || n)} games:</span>
     <span class="eq">${esc(p.stat_label)} avg = ${p.baseline}</span>
-    <span class="note">2. What ${esc(p.opp)} allows per game to ${esc(p.position)}s vs the league:</span>
+    <span class="note">2. What ${esc(p.opp)} allows per game to ${esc(posName(p.position))} vs the league:</span>
     <span class="eq">${esc(p.opp)} ${p.def_allowed} vs league ${p.league_avg} → <b class="${p.matchup_pct > 0 ? "good" : "bad"}">${pct(p.matchup_pct, 1)}</b> (rank ${p.def_rank ?? "–"}/32, 1 = softest)</span>
     <span class="note">3. Projection, trusting ${Math.round(w * 100)}% of the matchup effect (defense numbers are noisy):</span>
     <span class="eq">${p.baseline} × (1 + ${w} × ${(f - 1).toFixed(3)}) = <b>${p.projection}</b></span>
@@ -496,11 +525,11 @@ function gameLog(p){
   const hasLine = p.line != null && p.side;
   const rows = log.slice().reverse().map(g => {
     const hit = hasLine ? sideWins(p, g.v) : null;
-    return `<tr><td>${g.season !== S.data.season ? g.season + " " : ""}Wk ${g.wk}</td><td>vs ${esc(g.opp)}</td>
+    return `<tr><td>${esc(logLbl(g))}</td><td>vs ${esc(g.opp)}</td>
       <td class="num"><b>${g.v}</b></td><td class="num ${hit == null ? "" : hit ? "good" : "bad"}">${hit == null ? "" : hit ? "✓" : "✗"}</td></tr>`;
   }).join("");
   return `<div class="sec"><h3>${esc(p.player)} · recent ${esc(p.stat_label)}</h3>${bars(p)}<table style="margin-top:8px">
-    <tr><th>Week</th><th>Opp</th><th class="num">${esc(p.stat_label)}</th><th class="num">${hasLine ? (p.side === "over" ? "O" : "U") + " " + p.line : ""}</th></tr>${rows}</table></div>`;
+    <tr><th>${S.sport === "nfl" ? "Week" : "Game"}</th><th>Opp</th><th class="num">${esc(p.stat_label)}</th><th class="num">${hasLine ? (p.side === "over" ? "O" : "U") + " " + p.line : ""}</th></tr>${rows}</table></div>`;
 }
 
 function defLog(p){
@@ -508,15 +537,15 @@ function defLog(p){
   const lg = p.league_avg, max = Math.max(...log.map(g => g.v), lg * 1.3, 1);
   const soft = v => v > lg;      // allowed more than league avg = soft
   const b = log.map(g => `<div class="bar" style="height:${Math.max(g.v / max * 100, 4)}%;background:${soft(g.v) ? "var(--green)" : "var(--red)"};opacity:.85"></div>`).join("");
-  const rows = log.slice().reverse().map(g => `<tr><td>${g.season !== S.data.season ? g.season + " " : ""}Wk ${g.wk}</td>
+  const rows = log.slice().reverse().map(g => `<tr><td>${esc(logLbl(g))}</td>
       <td>vs ${esc(g.vs)}</td><td class="num"><b>${g.v}</b></td>
       <td class="num ${soft(g.v) ? "good" : "bad"}">${pct((g.v / lg - 1) * 100, 0)}</td></tr>`).join("");
-  return `<div class="sec"><h3>${esc(p.opp)} defense · ${esc(p.stat_label)} allowed to ${esc(p.position)}s</h3>
-    <div class="calc note">All ${esc(p.position)}s combined, per game. Green = gave up more than league avg (${lg}), red = less.
+  return `<div class="sec"><h3>${esc(p.opp)} defense · ${esc(p.stat_label)} allowed to ${esc(posName(p.position))}</h3>
+    <div class="calc note">All ${esc(posName(p.position))} combined, per game. Green = gave up more than league avg (${lg}), red = less.
       Season avg <b style="color:var(--text)">${p.def_allowed}</b> · rank ${p.def_rank ?? "–"}/32 (1 = softest).</div>
     <div class="bars">${b}<div class="lineMark" style="bottom:${Math.min(lg / max * 100, 100)}%"></div></div>
     <div class="barlbl"><span>Last ${log.length} games</span><span>dashed = league avg</span></div>
-    <table style="margin-top:8px"><tr><th>Week</th><th>Opponent</th><th class="num">Allowed</th><th class="num">vs avg</th></tr>${rows}</table></div>`;
+    <table style="margin-top:8px"><tr><th>${S.sport === "nfl" ? "Week" : "Game"}</th><th>Opponent</th><th class="num">Allowed</th><th class="num">vs avg</th></tr>${rows}</table></div>`;
 }
 
 function gameModelSection(m, p){
@@ -543,7 +572,7 @@ function openDetail(p, opts = {}){
   S.detailPick = p;
   const prop = isProp(p);
   const head = `<div class="row" style="margin-bottom:10px">
-      ${prop && p.headshot ? `<img class="avatar" src="${esc(p.headshot)}" alt="" onerror="this.style.visibility='hidden'">` : `<div class="avatar">${esc(prop ? p.position || "" : "NFL")}</div>`}
+      ${prop && p.headshot ? `<img class="avatar" src="${esc(p.headshot)}" alt="" onerror="this.style.visibility='hidden'">` : `<div class="avatar">${esc(prop ? p.position || "" : SP().name)}</div>`}
       <div class="who"><div class="name" style="white-space:normal">${esc(p.player)}</div>
       <div class="sub">${prop ? `${esc(p.position || "")} · ${esc(p.team || "")} vs ${esc(p.opp || "")} · ` : ""}${when(p.kickoff)}</div></div></div>`;
   let betBox = "";
@@ -591,7 +620,7 @@ function renderMine(){
   const profit = settled.reduce((t, b) => t + (betProfit(b) || 0), 0);
   const atRisk = pending.reduce((t, b) => t + (b.stake ?? b.units * (unitUsd() || 0)), 0);
   const row = b => { const g = gradeOf(b), pr = betProfit(b);
-    return `<div class="mb" data-mine="${b.id}"><div class="who"><div class="name" style="font-size:15px">${esc(b.kind === "prop" ? b.player + " · " : "")}${esc(b.title)}</div>
+    return `<div class="mb" data-mine="${b.id}"><div class="who"><div class="name" style="font-size:15px"><span class="sporttag">${SPORTS[b.sport || "nfl"].name}</span>${esc(b.kind === "prop" ? b.player + " · " : "")}${esc(b.title)}</div>
       <div class="sub">${BOOK[b.book] || esc(b.book)} ${am(b.american)} · ${b.stake != null ? money(b.stake) : b.units + "u"} · ${when(b.kickoff)}${g && g.actual != null ? " · actual " + esc(g.actual) : ""}</div></div>
       <div class="pl-amt ${pr > 0 ? "good" : pr < 0 ? "bad" : ""}">${pr == null ? "" : (pr > 0 ? "+" : "") + money(pr)}</div>
       <span class="res ${g ? g.result : "pending"}">${g ? g.result : "pending"}</span></div>`; };
@@ -634,16 +663,47 @@ function renderResults(){
     <div class="card" style="cursor:default"><table><tr><th>Pick</th><th class="num">Price</th><th class="num">Result</th></tr>${rows}</table></div>`;
 }
 
+function syncSport(){
+  $("#sport-name").textContent = SP().name;
+  document.title = "xBETS · " + SP().name;
+}
+function renderDrawer(){
+  $("#drawer").innerHTML = `<h1 style="margin:2px 4px 4px"><b>xBETS</b></h1><h4>Sports</h4>` +
+    Object.entries(SPORTS).map(([k, v]) => `<button class="sp ${k === S.sport ? "on" : ""}" data-sport="${k}">
+      <span class="em">${v.em}</span><span><b>${v.name}</b><span class="sub">${v.days}</span></span>${k === S.sport ? '<span class="ck">✓</span>' : ""}</button>`).join("") +
+    `<h4>More</h4><a class="sp" href="players.html?sport=${S.sport}"><span class="em">👍</span><span><b>My Players</b><span class="sub">Players you like or never bet</span></span></a>
+     <button class="sp" id="open-settings3"><span class="em">⚙️</span><span><b>Unit size</b><span class="sub">$${unitUsd() || 0} per unit</span></span></button>`;
+}
+function openMenu(){ renderDrawer(); $("#drawer").classList.add("open"); $("#dshade").classList.add("open"); }
+function closeMenu(){ $("#drawer").classList.remove("open"); $("#dshade").classList.remove("open"); }
+function setSport(k){
+  if (!SPORTS[k]) return;
+  S.sport = k; S.game = "all"; S.type = "all"; S.book = "all"; S.data = null;
+  try { localStorage.setItem(SPORT_KEY, k); } catch(e){}
+  history.replaceState(history.state, "", "?sport=" + k);
+  syncSport(); closeMenu(); $("#main").innerHTML = `<div class="empty">Loading ${SP().name}…</div>`; window.scrollTo(0, 0); load();
+}
+
 function render(){
   const d = S.data;
-  if (!d) { $("#main").innerHTML = `<div class="empty"><b>No data yet</b>The first GitHub run hasn't finished.</div>`; $("#meta").textContent = ""; return; }
-  $("#meta").innerHTML = `Week ${d.week} · ${d.season}`;
+  syncSport();
+  if (!d) {
+    $("#meta").textContent = "";
+    $("#main").innerHTML = S.tab === "mine" ? renderMine() : `<div class="empty"><b>No ${SP().name} data yet</b>The first update for ${SP().name} hasn't run. It starts on game days (${SP().days.toLowerCase()}).</div>`;
+    return; }
+  $("#meta").innerHTML = S.sport === "nfl" ? `Week ${d.week} · ${d.season}`
+    : d.day ? new Date(d.day + "T12:00").toLocaleDateString([], {weekday:"short", month:"short", day:"numeric"}) : "No games soon";
   $("#n-mine").textContent = myBets().filter(b => !gradeOf(b)).length || "";
   for (const k of ["combined","ev"]) $("#n-" + k).textContent = applyBudget((d[k] || []).slice().sort((a, b) => (b.ev_pct || 0) - (a.ev_pct || 0)), k).filter(p => k === "cheat" || p.units).length || "";
   $("#main").innerHTML = S.tab === "results" ? renderResults() : S.tab === "mine" ? renderMine() : renderList(S.tab);
 }
 
 document.addEventListener("click", e => {
+  if (e.target.closest("#open-menu")) { openMenu(); return; }
+  if (e.target === $("#dshade")) { closeMenu(); return; }
+  const spb = e.target.closest("[data-sport]");
+  if (spb) { setSport(spb.dataset.sport); return; }
+  if (e.target.closest("#open-settings3")) { closeMenu(); openSettings(); return; }
   if (e.target.closest(".close") || e.target === $("#shade")) { closeDetail(); return; }
   const t = e.target.closest(".tab");
   if (t) { document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t)); S.tab = t.dataset.t; render(); window.scrollTo(0,0); return; }

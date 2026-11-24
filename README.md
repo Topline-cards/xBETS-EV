@@ -1,4 +1,4 @@
-# xBETS NFL Props
+# xBETS · NFL + NBA
 
 Phone app for NFL player props with three views:
 
@@ -35,6 +35,13 @@ Last Sunday replayed: 23 plays, 8u total.
 **API budget:** PinnWire's free plan allows 100 calls/day. The job makes one call per run, only inside the 4-hour pregame window, and stops at 90/day.
 
 **Sundays + Thanksgiving:** the app covers Sunday games and every Thanksgiving Day game (`GAME_WEEKDAYS` in `pipeline/config.py`). Games on other days still feed the stats.
+
+**NBA:** Wednesdays, Fridays and Christmas Day (`pipeline/nba/config.py`). Switch sports with the ☰ menu in the app.
+- Stats: ESPN box scores and schedule (sportsdataverse releases, updated daily); injuries from ESPN's injury report (Out / Doubtful hidden, Day-To-Day sized down).
+- Props: points, rebounds, assists, threes made, points + rebounds + assists. Also moneyline, spread, total.
+- Cheat sheet: player's last 10 games x what the opponent allows to guards / forwards / centers.
+- Same EV math and unit sizing as the NFL. PinnWire's 100 calls a day are shared by both sports.
+- Output: `docs/data/nba/`. Grading: `python -m pipeline.nba.grade`.
 
 **Phone alerts:** install the free **ntfy** app, subscribe to a private topic name, and save that name as the repo secret `NTFY_TOPIC`. Each new EV play is announced once (⭐ = also a cheat-sheet play); tapping the alert opens the app.
 
