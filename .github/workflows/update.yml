@@ -33,6 +33,7 @@ jobs:
         env:
           SHARPAPI_KEY: ${{ secrets.SHARPAPI_KEY }}
           PINNWIRE_KEY: ${{ secrets.PINNWIRE_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "xbets-bot"

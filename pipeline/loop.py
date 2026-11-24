@@ -76,7 +76,7 @@ def main(force_first=False):
               f"cheat={len(o['cheat'])} {o['status']}", flush=True)
         commit(f"Update picks {now:%Y-%m-%d %H:%M} ET")
 
-        sched = stats.load_schedule(stats.season_for(now))
+        sched = stats.slate(stats.load_schedule(stats.season_for(now)))
         games = today_games(sched, datetime.now(ET))
         upcoming = games[games["kickoff"] > datetime.now(ET)]
         if upcoming.empty:

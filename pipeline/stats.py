@@ -49,6 +49,11 @@ def load_schedule(season):
     return s
 
 
+def slate(sched):
+    """Only the games the app covers (Sunday by default)."""
+    return sched[sched["kickoff"].dt.dayofweek.isin(config.GAME_WEEKDAYS)]
+
+
 def current_week(sched, now=None):
     """Week of the next game that hasn't kicked off yet."""
     now = now or datetime.now(ET)

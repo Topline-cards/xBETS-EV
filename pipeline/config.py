@@ -63,6 +63,14 @@ HIDE_DOUBTFUL = True
 # (re-checked against their new team), practice squad, inactive.
 INACTIVE_ROSTER_STATUS = {"RES", "CUT", "RET", "DEV", "INA", "EXE", "SUS", "PUP", "NON"}
 
+# ---------------------------------------------------------------- alerts
+NOTIFY_MIN_EV_PCT = 2.0      # phone alert for new EV plays at/above this
+
+# ---------------------------------------------------------------- slate
+# Which days' games the app covers (Mon=0 ... Sun=6). Sunday only.
+# Games on other days still count toward stats; they just aren't bet on.
+GAME_WEEKDAYS = {6}
+
 # ---------------------------------------------------------------- timing
 # Odds checks only run when a game kicks off within this many hours.
 PREGAME_WINDOW_HOURS = 4

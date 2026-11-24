@@ -14,7 +14,7 @@ import json
 import os
 from datetime import datetime
 
-from . import config, ev, gamelines, matchups, odds, stats
+from . import config, ev, gamelines, matchups, notify, odds, stats
 from .stats import ET
 
 DATA = os.environ.get("DATA_DIR") or os.path.join(os.path.dirname(__file__), "..", "docs", "data")
@@ -90,9 +90,10 @@ def _price_side(p, dec, fair_pair, side_is_a):
 def build(now=None, force=False):
     now = now or datetime.now(ET)
     season = stats.season_for(now)
-    sched = stats.load_schedule(season)
-    week = stats.current_week(sched, now)
-    week_games = sched[(sched["week"] == week) & (sched["kickoff"] > now)]
+    sched = stats.load_schedule(season)          # all games (for stats)
+    games_sl = stats.slate(sched)                 # games the app covers (Sundays)
+    week = stats.current_week(games_sl, now)
+    week_games = games_sl[(games_sl["week"] == week) & (games_sl["kickoff"] > now)]
     prior_sched = stats.load_schedule(season - 1) if week <= 3 else None
 
     state = _load("state.json", {})
@@ -127,7 +128,7 @@ def build(now=None, force=False):
     gm_by_teams = {(m["home"], m["away"]): m for m in gm.values()}
 
     # ---- odds (only near kickoff, unless forced) --------------------
-    soon = stats.games_in_window(sched, config.PREGAME_WINDOW_HOURS, now)
+    soon = stats.games_in_window(games_sl, config.PREGAME_WINDOW_HOURS, now)
     fixtures = bool(os.environ.get("ODDS_FIXTURES"))
     want_odds = force or not soon.empty or fixtures
     status = {"odds_checked": False,
@@ -283,7 +284,7 @@ def build(now=None, force=False):
                    "kickoff": g["kickoff"].isoformat()}
                   for _, g in week_games.sort_values("kickoff").iterrows()]
 
-    nxt = sched[sched["kickoff"] > now].sort_values("kickoff").head(1)
+    nxt = games_sl[games_sl["kickoff"] > now].sort_values("kickoff").head(1)
     out = {
         "generated_at": _iso(now), "season": season, "week": week, "stats_mode": mode,
         "next_kickoff": _iso(nxt.iloc[0]["kickoff"]) if len(nxt) else None,
@@ -320,6 +321,12 @@ def build(now=None, force=False):
     _save("players.json", sorted(players.values(), key=lambda x: x["name"]))
     if want_odds:
         update_log(out, pinn_prop, pinn_game, now)
+        try:
+            n = notify.notify_new(out, _load, _save)
+            if n:
+                print(f"alerted {n} new EV plays")
+        except Exception as e:
+            print("notify error:", e)
     _save("state.json", state)
     return out
 
