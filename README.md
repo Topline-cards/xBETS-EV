@@ -36,7 +36,7 @@ Last Sunday replayed: 23 plays, 8u total.
 
 **Sundays + Thanksgiving:** the app covers Sunday games and every Thanksgiving Day game (`GAME_WEEKDAYS` in `pipeline/config.py`). Games on other days still feed the stats.
 
-**NBA:** Wednesdays, Fridays and Christmas Day (`pipeline/nba/config.py`). Switch sports with the ☰ menu in the app.
+**NBA:** Monday through Friday, plus Christmas Day (`pipeline/nba/config.py`). Switch sports with the ☰ menu in the app.
 - Stats: ESPN box scores and schedule (sportsdataverse releases, updated daily); injuries from ESPN's injury report (Out / Doubtful hidden, Day-To-Day sized down).
 - Props: points, rebounds, assists, threes made, points + rebounds + assists. Also moneyline, spread, total.
 - Cheat sheet: player's last 10 games x what the opponent allows to guards / forwards / centers.

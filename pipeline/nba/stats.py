@@ -56,7 +56,7 @@ def load_schedule(season):
 
 
 def slate(sched):
-    """Games the app covers: Wednesdays, Fridays and Christmas Day."""
+    """Games the app covers: Monday-Friday and Christmas Day."""
     if sched.empty:
         return sched
     keep = sched["kickoff"].dt.date.map(

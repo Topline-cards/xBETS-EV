@@ -3,8 +3,8 @@ NBA knobs. Sizing, EV filters and books are shared with the NFL (pipeline/config
 """
 
 # ---------------------------------------------------------------- slate
-# Mon=0 ... Sun=6. Wednesday + Friday, plus Christmas Day whatever the weekday.
-GAME_WEEKDAYS = {2, 4}
+# Mon=0 ... Sun=6. Monday through Friday, plus Christmas Day whatever the weekday.
+GAME_WEEKDAYS = {0, 1, 2, 3, 4}
 GAME_HOLIDAYS = {"christmas"}
 
 # ---------------------------------------------------------------- props
