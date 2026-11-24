@@ -71,6 +71,15 @@
   .inj{display:inline-block;font-size:11px;font-weight:800;color:#2a1d05;background:var(--amber);border-radius:5px;padding:2px 5px;margin-left:6px;vertical-align:2px}
   .fav-b{display:inline-block;font-size:11px;font-weight:700;color:#0d2a1d;background:var(--green);border-radius:5px;padding:2px 5px;margin-left:6px;vertical-align:2px}
   .budget{color:var(--text)}
+  .addbtn{display:block;width:calc(100% + 26px);margin:6px -13px -6px;border:0;border-top:1px solid #262935;background:none;
+    color:var(--cyan);font:650 14px/1 inherit;padding:12px;border-radius:0 0 14px 14px;cursor:pointer}
+  .addbtn.on{color:var(--green);background:rgba(62,207,142,.07)}
+  .mb{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px;cursor:pointer}
+  .mb .who{flex:1;min-width:0} .mb .who .name{white-space:normal;overflow:visible}
+  .mb .res{font:700 12px/1 inherit;padding:4px 7px;border-radius:6px;text-transform:uppercase;letter-spacing:.04em}
+  .res.win{background:#173627;color:var(--green)} .res.loss{background:#3a1b1b;color:var(--red)}
+  .res.push,.res.void{background:var(--panel2);color:var(--dim)} .res.pending{background:#2a2412;color:var(--amber)}
+  .pl-amt{font-weight:700;font-variant-numeric:tabular-nums;text-align:right;min-width:62px}
   .more-btn{display:block;width:100%;margin:4px 0 10px;border:1px dashed var(--line);background:none;color:var(--dim);border-radius:10px;padding:11px;font:600 13px/1 inherit;cursor:pointer}
   .meter{height:6px;background:var(--panel2);border-radius:3px;margin-top:8px;overflow:hidden}
   .meter div{height:100%;background:var(--green)}
@@ -153,8 +162,8 @@
   <nav class="tabs" id="tabs">
     <button class="tab on" data-t="combined">EV + Cheat Sheet<span class="n" id="n-combined"></span></button>
     <button class="tab" data-t="ev">EV<span class="n" id="n-ev"></span></button>
-    <button class="tab" data-t="cheat">Cheat Sheet<span class="n" id="n-cheat"></span></button>
-    <button class="tab" data-t="results">Results</button>
+    <button class="tab" data-t="mine">My Results<span class="n" id="n-mine"></span></button>
+    <button class="tab" data-t="results">Record</button>
   </nav>
 </header>
 <main id="main"></main>
@@ -182,6 +191,7 @@ async function load(){
   const bust = "?t=" + Date.now();
   try { S.data = await (await fetch("data/picks.json" + bust)).json(); } catch(e){ S.data = null; }
   try { S.results = await (await fetch("data/results.json" + bust)).json(); } catch(e){ S.results = null; }
+  try { S.graded = await (await fetch("data/graded.json" + bust)).json(); } catch(e){ S.graded = {}; }
   render();
 }
 
@@ -229,7 +239,21 @@ const ICON = {
   dollar:'<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15.9V19h-2v-1.1a3.6 3.6 0 0 1-3-3.4h2a1.8 1.8 0 0 0 2 1.6c1.2 0 2-.6 2-1.4s-.6-1.2-2.3-1.6c-2-.5-3.4-1.2-3.4-3.1a3 3 0 0 1 2.7-2.9V6h2v1.1a3.2 3.2 0 0 1 2.7 3.1h-2a1.6 1.6 0 0 0-1.8-1.3c-1 0-1.6.5-1.6 1.2s.7 1.1 2.3 1.5c2 .5 3.4 1.3 3.4 3.2a3.1 3.1 0 0 1-3 3.1z"/></svg>',
   stack:'<svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5zm-7.6 7.3L2 11.5l10 5 10-5-2.4-1.2L12 14zm0 4L2 15.5l10 5 10-5-2.4-1.2L12 18z"/></svg>',
 };
-const PREF_KEY = "xbets_prefs", UNIT_KEY = "xbets_unit_usd";
+const PREF_KEY = "xbets_prefs", UNIT_KEY = "xbets_unit_usd", MY_KEY = "xbets_mybets";
+const myBets = () => { try { return JSON.parse(localStorage.getItem(MY_KEY) || "[]"); } catch(e){ return []; } };
+const saveMyBets = a => { try { localStorage.setItem(MY_KEY, JSON.stringify(a)); } catch(e){} };
+const betKey = p => `${p.week}|${p.pkey}|${p.stat}|${p.side}|${p.line}`;
+const isMine = p => myBets().some(b => b.key === betKey(p) && b.book === p.book);
+const gradeOf = b => (S.graded || {})[b.key] || null;
+function toggleMine(p){
+  const a = myBets(), i = a.findIndex(b => b.key === betKey(p) && b.book === p.book);
+  if (i >= 0) a.splice(i, 1);
+  else a.push({id: Date.now(), key: betKey(p), season: S.data.season, week: p.week, player: p.player, title: p.title,
+    stat_label: p.stat_label, kind: p.kind || "prop", book: p.book, american: p.american, dec: p.dec,
+    units: p.units || 0, stake: p.units && unitUsd() ? +(p.units * unitUsd()).toFixed(2) : null,
+    kickoff: p.kickoff, team: p.team, opp: p.opp, ev_pct: p.ev_pct, added_at: new Date().toISOString()});
+  saveMyBets(a);
+}
 const BUDGET_KEY = "xbets_budget_units";
 const getNum = k => { try { return parseFloat(localStorage.getItem(k)) || 0; } catch(e){ return 0; } };
 const setNum = (k, v) => { try { v ? localStorage.setItem(k, String(v)) : localStorage.removeItem(k); } catch(e){} };
@@ -304,6 +328,7 @@ function card(p, mode, i, inDetail){
       <div class="tp"><div class="odds">${am(p.american)}</div><span class="bk ${esc(p.book)}">${p.book === "draftkings" ? "DK" : p.book === "fanduel" ? "FD" : esc(p.book)}</span></div>
     </div>
     ${rows.filter(Boolean).join("")}
+    ${mode !== "cheat" ? `<button class="addbtn ${isMine(p) ? "on" : ""}" data-add="${inDetail ? "detail" : i}">${isMine(p) ? "✓ In My Results" : "＋ Add to My Results"}</button>` : ""}
   </div>`;
 }
 
@@ -515,6 +540,7 @@ function gameModelSection(m, p){
 }
 
 function openDetail(p, opts = {}){
+  S.detailPick = p;
   const prop = isProp(p);
   const head = `<div class="row" style="margin-bottom:10px">
       ${prop && p.headshot ? `<img class="avatar" src="${esc(p.headshot)}" alt="" onerror="this.style.visibility='hidden'">` : `<div class="avatar">${esc(prop ? p.position || "" : "NFL")}</div>`}
@@ -544,8 +570,51 @@ function closeDetail(fromPop){
   if (!$("#sheet").classList.contains("open")) return;
   $("#sheet").classList.remove("open"); $("#shade").classList.remove("open"); document.body.classList.remove("lock");
   if (!fromPop) history.back();
+  if (S.data && S.tab !== "results") render();
 }
 window.addEventListener("popstate", () => closeDetail(true));
+
+/* ---------------- my results ---------------- */
+function money(v){ return (v < 0 ? "-$" : "$") + Math.abs(v).toFixed(2).replace(/\.00$/, ""); }
+function betProfit(b){
+  const g = gradeOf(b); if (!g) return null;
+  const stake = b.stake ?? (b.units * (unitUsd() || 0));
+  return g.result === "win" ? stake * (b.dec - 1) : g.result === "loss" ? -stake : 0;
+}
+function renderMine(){
+  const bets = myBets().sort((a, b) => new Date(b.kickoff) - new Date(a.kickoff));
+  if (!bets.length) return `<div class="empty"><b>No bets saved yet</b>Tap <b>＋ Add to My Results</b> on any EV play to track it here. It grades itself after the game.</div>`;
+  const settled = bets.filter(b => gradeOf(b)), pending = bets.filter(b => !gradeOf(b));
+  const W = settled.filter(b => gradeOf(b).result === "win").length, L = settled.filter(b => gradeOf(b).result === "loss").length;
+  const P = settled.length - W - L;
+  const risked = settled.filter(b => ["win","loss"].includes(gradeOf(b).result)).reduce((t, b) => t + (b.stake ?? b.units * (unitUsd() || 0)), 0);
+  const profit = settled.reduce((t, b) => t + (betProfit(b) || 0), 0);
+  const atRisk = pending.reduce((t, b) => t + (b.stake ?? b.units * (unitUsd() || 0)), 0);
+  const row = b => { const g = gradeOf(b), pr = betProfit(b);
+    return `<div class="mb" data-mine="${b.id}"><div class="who"><div class="name" style="font-size:15px">${esc(b.kind === "prop" ? b.player + " · " : "")}${esc(b.title)}</div>
+      <div class="sub">${BOOK[b.book] || esc(b.book)} ${am(b.american)} · ${b.stake != null ? money(b.stake) : b.units + "u"} · ${when(b.kickoff)}${g && g.actual != null ? " · actual " + esc(g.actual) : ""}</div></div>
+      <div class="pl-amt ${pr > 0 ? "good" : pr < 0 ? "bad" : ""}">${pr == null ? "" : (pr > 0 ? "+" : "") + money(pr)}</div>
+      <span class="res ${g ? g.result : "pending"}">${g ? g.result : "pending"}</span></div>`; };
+  return `<div class="sumgrid">
+      <div class="card sum" style="cursor:default"><h3>Profit</h3><div class="big ${profit > 0 ? "good" : profit < 0 ? "bad" : ""}">${(profit > 0 ? "+" : "") + money(profit)}</div><div class="sub">ROI ${risked ? pct(profit / risked * 100) : "–"}</div></div>
+      <div class="card sum" style="cursor:default"><h3>Record</h3><div class="big">${W}-${L}${P ? "-" + P : ""}</div><div class="sub">${settled.length} settled</div></div>
+      <div class="card sum" style="cursor:default"><h3>Pending</h3><div class="big">${pending.length}</div><div class="sub">${money(atRisk)} at risk</div></div></div>
+    ${pending.length ? `<h2>Pending</h2>${pending.map(row).join("")}` : ""}
+    ${settled.length ? `<h2>Settled</h2>${settled.map(row).join("")}` : ""}
+    <div class="help" style="margin-top:12px">Tap a bet to change the stake or odds you actually got, or remove it. Saved on this device until accounts are added.</div>`;
+}
+function openMine(id){
+  const b = myBets().find(x => x.id === id); if (!b) return;
+  $("#sheet").innerHTML = `<div class="grab"><div class="bar0"></div><button class="close" aria-label="Close">✕</button></div>
+    <div class="sec"><div class="sub">${BOOK[b.book] || esc(b.book)} · ${when(b.kickoff)}</div>
+      <div style="font-weight:700;font-size:17px;margin-top:2px">${esc(b.kind === "prop" ? b.player + " · " : "")}${esc(b.title)}</div>
+      <label class="field">Stake $ <input id="mb-stake" type="number" inputmode="decimal" step="0.5" value="${b.stake ?? ""}"></label>
+      <label class="field">Odds <input id="mb-odds" type="number" inputmode="numeric" step="1" value="${b.american}"></label>
+      <button class="bet" id="mb-save" data-id="${b.id}" style="width:100%;border:0;margin-top:14px">Save</button>
+      <button class="chip" id="mb-del" data-id="${b.id}" style="width:100%;margin-top:10px;color:var(--red);padding:11px">Remove bet</button></div>`;
+  $("#sheet").classList.add("open"); $("#shade").classList.add("open"); document.body.classList.add("lock");
+  history.pushState({sheet:1}, "");
+}
 
 /* ---------------- results ---------------- */
 function renderResults(){
@@ -557,11 +626,11 @@ function renderResults(){
       <div class="sub">${r.wins || 0}-${r.losses || 0}${r.pushes ? "-" + r.pushes : ""}</div>
       <div class="sub">ROI ${r.roi_pct == null ? "–" : pct(r.roi_pct)}</div>
       <div class="sub">Beat close ${r.beat_close_pct == null ? "–" : r.beat_close_pct + "%"}</div></div>`; };
-  const rows = (R.recent || []).slice(0, 100).map(r => `<tr><td>${esc(r.player)}<div class="sub">${r.mode === "combined" ? "EV+CS" : r.mode === "ev" ? "EV" : "CS"} · ${esc(r.title || ((r.side === "over" ? "O " : "U ") + r.line + " " + r.stat_label))}</div></td>
+  const rows = (R.recent || []).filter(r => r.mode !== "cheat").slice(0, 100).map(r => `<tr><td>${esc(r.player)}<div class="sub">${r.mode === "combined" ? "EV+CS" : r.mode === "ev" ? "EV" : "CS"} · ${esc(r.title || ((r.side === "over" ? "O " : "U ") + r.line + " " + r.stat_label))}</div></td>
       <td class="num">${am(r.american)}<div class="sub">${r.units}u</div></td>
       <td class="num">${r.actual ?? ""}<div class="sub ${r.result === "win" ? "good" : r.result === "loss" ? "bad" : ""}">${r.result || "pending"}</div></td></tr>`).join("");
-  return `<div class="help">Paper trading: every pick is logged at the price first seen. <b>Beat close</b> is how often that price beat Pinnacle's final fair line. Over a few hundred bets, it's the best sign the edges are real.</div>
-    <div class="sumgrid">${sbox("combined","EV + CS")}${sbox("ev","EV")}${sbox("cheat","Cheat Sheet")}</div>
+  return `<div class="help">App record: every EV play the app lists is logged at the price first seen and recommended units. <b>Beat close</b> is how often that price beat Pinnacle's final fair line. Over a few hundred bets, it's the best sign the edges are real.</div>
+    <div class="sumgrid" style="grid-template-columns:repeat(2,1fr)">${sbox("combined","EV + Cheat Sheet")}${sbox("ev","EV")}</div>
     <div class="card" style="cursor:default"><table><tr><th>Pick</th><th class="num">Price</th><th class="num">Result</th></tr>${rows}</table></div>`;
 }
 
@@ -569,14 +638,36 @@ function render(){
   const d = S.data;
   if (!d) { $("#main").innerHTML = `<div class="empty"><b>No data yet</b>The first GitHub run hasn't finished.</div>`; $("#meta").textContent = ""; return; }
   $("#meta").innerHTML = `Week ${d.week} · ${d.season}`;
-  for (const k of ["combined","ev","cheat"]) $("#n-" + k).textContent = applyBudget((d[k] || []).slice().sort((a, b) => (b.ev_pct || 0) - (a.ev_pct || 0)), k).filter(p => k === "cheat" || p.units).length || "";
-  $("#main").innerHTML = S.tab === "results" ? renderResults() : renderList(S.tab);
+  $("#n-mine").textContent = myBets().filter(b => !gradeOf(b)).length || "";
+  for (const k of ["combined","ev"]) $("#n-" + k).textContent = applyBudget((d[k] || []).slice().sort((a, b) => (b.ev_pct || 0) - (a.ev_pct || 0)), k).filter(p => k === "cheat" || p.units).length || "";
+  $("#main").innerHTML = S.tab === "results" ? renderResults() : S.tab === "mine" ? renderMine() : renderList(S.tab);
 }
 
 document.addEventListener("click", e => {
   if (e.target.closest(".close") || e.target === $("#shade")) { closeDetail(); return; }
   const t = e.target.closest(".tab");
   if (t) { document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t)); S.tab = t.dataset.t; render(); window.scrollTo(0,0); return; }
+  const ab = e.target.closest(".addbtn");
+  if (ab) {
+    const p = ab.dataset.add === "detail" ? S.detailPick : S.shown[+ab.dataset.add];
+    if (p) { toggleMine(p); const on = isMine(p);
+      ab.classList.toggle("on", on); ab.textContent = on ? "✓ In My Results" : "＋ Add to My Results";
+      $("#n-mine").textContent = myBets().filter(b => !gradeOf(b)).length || ""; }
+    return;
+  }
+  const mb = e.target.closest(".mb[data-mine]");
+  if (mb) { openMine(+mb.dataset.mine); return; }
+  if (e.target.id === "mb-save" || e.target.id === "mb-del") {
+    const id = +e.target.dataset.id, a = myBets(), i = a.findIndex(x => x.id === id);
+    if (i >= 0) {
+      if (e.target.id === "mb-del") a.splice(i, 1);
+      else { const st = parseFloat($("#mb-stake").value), od = parseInt($("#mb-odds").value, 10);
+        if (!isNaN(st)) a[i].stake = st;
+        if (od && Math.abs(od) >= 100) { a[i].american = od; a[i].dec = od > 0 ? 1 + od / 100 : 1 + 100 / -od; } }
+      saveMyBets(a);
+    }
+    closeDetail(); render(); return;
+  }
   if (e.target.id === "open-settings" || e.target.id === "open-settings2") { openSettings(); return; }
   const pre = e.target.closest("[data-unit]");
   if (pre) { $("#set-unit").value = pre.dataset.unit; document.querySelectorAll("[data-unit]").forEach(x => x.classList.toggle("on", x === pre)); return; }

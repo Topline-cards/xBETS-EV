@@ -32,6 +32,8 @@ def grade(now=None):
             else:   # unknown team: grade only if the player shows up
                 team_rows = wk[(wk["week"] == r["week"]) & (wk["pkey"] == r["pkey"])]
             if team_rows.empty:
+                if (now - datetime.fromisoformat(r["kickoff"])).days >= 4:
+                    r.update(result="void", actual=None, profit=0.0)   # no box score ever came
                 continue
             col = config.PROP_STATS[r["stat"]][0]
             row = team_rows[team_rows["pkey"] == r["pkey"]]
@@ -48,6 +50,16 @@ def grade(now=None):
             r.update(result=res, actual=actual, profit=prof)
     _save("log.json", log)
     _save("results.json", summarize(log))
+    # every graded bet, keyed the way the app saves "My Results" bets
+    graded = {}
+    for r in log["picks"].values():
+        if r["result"] is None:
+            continue
+        k = f"{r['week']}|{r['pkey']}|{r['stat']}|{r['side']}|{r['line']}"
+        graded[k] = {"result": r["result"], "actual": r.get("actual")}
+    _save("graded.json", graded)
+    return sum(1 for r in log["picks"].values() if r["result"] is None
+               and datetime.fromisoformat(r["kickoff"]) < now)
 
 
 def _settle(r, win, push=False):
@@ -61,6 +73,7 @@ def _settle(r, win, push=False):
 
 def _grade_game(r, sched):
     if r.get("game_id") not in sched.index:
+        r.update(result="void", actual=None, profit=0.0)
         return
     g = sched.loc[r["game_id"]]
     if g["home_score"] != g["home_score"]:          # NaN: not final yet

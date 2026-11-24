@@ -60,6 +60,29 @@ def today_games(sched, now):
                  (sched["kickoff"] < now + timedelta(hours=LOOKAHEAD_H))]
 
 
+def wait_and_grade(start):
+    """
+    After the last game, box scores post overnight. Check hourly and grade,
+    so My Results / Results update the next morning without GitHub's cron.
+    """
+    from . import grade
+    deadline = time.time() + 16 * 3600
+    while time.time() < deadline:
+        try:
+            pending = grade.grade()
+            commit(f"Grade results {datetime.now(ET):%Y-%m-%d %H:%M} ET")
+            print(f"graded; {pending} still waiting on box scores", flush=True)
+            if not pending:
+                return
+        except Exception as e:
+            print("grading error:", e)
+        if (time.time() - start) / 60 + 60 > MAX_RUNTIME_MIN:
+            print("Handing off grading to a new run.")
+            relaunch()
+            return
+        time.sleep(3600)
+
+
 def main(force_first=False):
     start = time.time()
     first = True
@@ -80,7 +103,7 @@ def main(force_first=False):
         games = today_games(sched, datetime.now(ET))
         upcoming = games[games["kickoff"] > datetime.now(ET)]
         if upcoming.empty:
-            print(f"No games in the next {LOOKAHEAD_H}h. Done.")
+            wait_and_grade(start)
             return
         nxt = upcoming["kickoff"].min()
         window_opens = nxt - timedelta(hours=config.PREGAME_WINDOW_HOURS)
