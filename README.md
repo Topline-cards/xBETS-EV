@@ -22,11 +22,13 @@ Everything runs on GitHub. Nothing runs on your computer.
 | Grading | Grades picks each morning once box scores are posted | `pipeline/grade.py`, `.github/workflows/grade.yml` |
 | App | Static page on GitHub Pages: filters by game / bet type / book; tap any bet for the full breakdown (game logs, defense log, EV and unit math, every book's price) | `docs/index.html` |
 
-**Recommended units:** 1u = 1% of bankroll. Sizing is deliberately cautious:
-1. Only part of the gap between Pinnacle's fair price and the book counts (50% on props, 80% on game lines).
-2. Quarter-Kelly on that trusted chance.
-3. Capped at 1.5u on props and 2u on game lines, 3u per game. EV over 12% (usually a stale line) is held to 0.5u.
-4. Rounded to 0.25u steps. Most plays land at 0.25–1u.
+**Recommended units:** 1u = $10 by default (change it under ⚙️). No budget cap, so no +EV play is ever voided. Each stake is:
+1. Base: quarter-Kelly on a trusted chance (only 50% of Pinnacle's prop edge counts, 80% on game lines).
+2. × confidence: 1.25 if the cheat sheet agrees, 0.6 if the matchup points the other way, 0.5 if Questionable.
+3. × correlation: 1/√(bets in the same game) and 1/(bets on the same player).
+4. Capped at 1.5u props / 2u lines (0.5u if EV > 12%), rounded to 0.25u, never below 0.25u.
+
+Last Sunday replayed: 23 plays, 8u total.
 
 **My Players:** `docs/players.html`. Thumbs-up players get pinned to the top of every list; thumbs-down players are hidden. Saved in the browser on each device.
 

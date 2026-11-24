@@ -77,8 +77,10 @@ def _price_side(p, dec, fair_pair, side_is_a):
     fa, fb = ev.devig_two_way(*fair_pair)
     fp = fa if side_is_a else fb
     e = ev.ev_pct(fp, dec)
-    units, kelly, trusted, note = ev.kelly_units(fp, dec, p.get("kind", "prop"))
+    base, kelly, trusted, note = ev.kelly_units(fp, dec, p.get("kind", "prop"))
+    units = base
     p.update(fair_prob=round(fp, 4), ev_pct=round(e, 2), kelly_pct=kelly, units=units,
+             base_units=base,
              trusted_prob=trusted, unit_note=note,
              edge_trust=config.EDGE_TRUST.get(p.get("kind", "prop"), 0.5),
              pinn_dec=round(fair_pair[0] if side_is_a else fair_pair[1], 3))
@@ -269,14 +271,12 @@ def build(now=None, force=False):
                           lambda p: (abs(p.get("proj_edge_pct") or p.get("model_edge") or 0), p["dec"]))
     combined = [dict(p) for p in ev_picks if p.get("cheat_side") == p["side"]]
 
-    ev.cap_per_game(ev_picks)
-    ev.cap_per_game(combined)
-    # Sunday budget: units already recommended on games that have kicked off
-    log_now = _load("log.json", {"picks": {}})["picks"].values()
-    used = {m: sum(r["units"] for r in log_now if r["mode"] == m and r["week"] == week
-                   and not _after(r["kickoff"], now)) for m in ("ev", "combined")}
-    slate_ev = ev.cap_slate(ev_picks, used["ev"])
-    slate_comb = ev.cap_slate(combined, used["combined"])
+    slate_ev = ev.size_slate(ev_picks)
+    sized = {(p["pkey"], p["stat"], p["side"], p["line"]): p for p in ev_picks}
+    for c in combined:                      # same bet, same size on both tabs
+        src = sized[(c["pkey"], c["stat"], c["side"], c["line"])]
+        c.update(units=src["units"], sizing=src["sizing"])
+    slate_comb = round(sum(c["units"] for c in combined), 2)
     ev_picks.sort(key=lambda p: -p["ev_pct"])
     combined.sort(key=lambda p: -p["ev_pct"])
     cheat_picks.sort(key=lambda p: (p["kind"] != "prop",
@@ -296,8 +296,8 @@ def build(now=None, force=False):
         "next_kickoff": _iso(nxt.iloc[0]["kickoff"]) if len(nxt) else None,
         "status": status, "settings": {
             "unit_pct": config.UNIT_PCT_OF_BANKROLL, "kelly": config.KELLY_FRACTION,
-            "max_units": config.MAX_UNITS_PER_BET, "max_game_units": config.MAX_UNITS_PER_GAME,
-            "slate_max_units": config.SLATE_MAX_UNITS, "unit_usd": config.UNIT_USD,
+            "max_units": config.MAX_UNITS_PER_BET,
+            "unit_usd": config.UNIT_USD,
             "max_units_prop": config.MAX_UNITS["prop"], "max_units_line": config.MAX_UNITS["line"],
             "suspect_ev": config.SUSPECT_EV_PCT, "suspect_units": config.SUSPECT_MAX_UNITS,
             "min_ev": config.MIN_EV_PCT, "matchup_weight": config.MATCHUP_WEIGHT,
@@ -306,8 +306,7 @@ def build(now=None, force=False):
         "logos": _safe(stats.team_logos, {}),
         "games": games_list, "game_model": sorted(gm.values(), key=lambda m: m["kickoff"]),
         "combined": combined, "ev": ev_picks, "cheat": cheat_picks, "matchups": top,
-        "slate_units": {"ev": slate_ev, "combined": slate_comb,
-                        "ev_started": round(used["ev"], 2), "combined_started": round(used["combined"], 2)},
+        "slate_units": {"ev": slate_ev, "combined": slate_comb},
     }
     # Keep the last odds board if this run didn't pull odds
     if not want_odds:

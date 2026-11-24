@@ -234,26 +234,7 @@ const BUDGET_KEY = "xbets_budget_units";
 const getNum = k => { try { return parseFloat(localStorage.getItem(k)) || 0; } catch(e){ return 0; } };
 const setNum = (k, v) => { try { v ? localStorage.setItem(k, String(v)) : localStorage.removeItem(k); } catch(e){} };
 const unitUsd = () => getNum(UNIT_KEY) || (S.data && S.data.settings && S.data.settings.unit_usd) || 0;
-const appCap = () => (S.data && S.data.settings && S.data.settings.slate_max_units) || 10;
-const myBudget = () => { const b = getNum(BUDGET_KEY); return b ? Math.min(b, appCap()) : appCap(); };
-
-// Apply the user's own Sunday budget on top of the app's: best EV first.
-function applyBudget(list, mode){
-  if (mode === "cheat") return list;
-  const startedKey = mode + "_started";
-  let left = myBudget() - ((S.data.slate_units || {})[startedKey] || 0);
-  return list.map(p => {
-    if (!p.units) return p;
-    const q = Object.assign({}, p);
-    if (q.units > left) {
-      const fit = Math.floor(Math.max(left, 0) / 0.25) * 0.25;
-      if (fit < 0.25) { q.units = 0; q.over_budget = true; }
-      else { q.full_units = q.full_units || p.units; q.units = fit; }
-    }
-    left -= q.units;
-    return q;
-  });
-}
+function applyBudget(list, mode){ return list; }   // no budget cap: every +EV play is sized, none voided
 const usd = u => { const d = unitUsd(); if (!d || !u) return ""; const v = u * d; return "$" + (Number.isInteger(v) ? v : v.toFixed(2)); };
 const prefs = () => { try { return JSON.parse(localStorage.getItem(PREF_KEY) || "{}"); } catch(e){ return {}; } };
 const prefOf = p => p && p.pkey ? (prefs()[p.pkey] || {}).v : null;
@@ -310,10 +291,11 @@ function card(p, mode, i, inDetail){
   }
   if (mode !== "cheat") {
     const u = p.units ? `${p.units}u${unitUsd() ? " · " + usd(p.units) : ""}` : "–";
-    const sub = !p.units ? `<span class="note-amber"> ${p.over_budget ? "over today's budget, skip" : "game limit reached"}</span>`
-      : (p.full_units && p.full_units > p.units ? `<span class="note-amber"> (trimmed to fit budget)</span>` : "")
-        + (p.unit_note ? `<br><span class="note-amber">${esc(p.unit_note)}</span>` : "");
-    rows.push(trow("stack", `Recommended units${sub}`, u, "", "urow"));
+    const why = p.sizing && p.sizing.conf_why && p.sizing.conf_why.length ? p.sizing.conf_why.join(", ") : "";
+    const shared = p.sizing && (p.sizing.game_bets > 1 || p.sizing.player_bets > 1) ? `shared with ${p.sizing.game_bets - 1} other bet${p.sizing.game_bets > 2 ? "s" : ""} in this game` : "";
+    const sub = [why, shared].filter(Boolean).length ? `<br><span class="sub">${esc([why, shared].filter(Boolean).join(" · "))}</span>` : "";
+    const warn = p.unit_note ? `<br><span class="note-amber">${esc(p.unit_note)}</span>` : "";
+    rows.push(trow("stack", `Recommended units${sub}${warn}`, u, "", "urow"));
   }
   return `<div class="tc ${inDetail ? "snap" : ""} ${fav ? "fav" : ""}" ${inDetail ? "" : `data-i="${i}"`}>
     <div class="th">${logoImg(team)}
@@ -337,25 +319,22 @@ function banner(){
 
 const INTRO = {
   combined: "Cheat-sheet plays that are also +EV against Pinnacle's fair line. The strictest list. Tap any bet to see the numbers behind it.",
-  ev: "DraftKings/FanDuel prices at least 3% better than Pinnacle's no-vig fair line. Most plays are 0.25–1u, and the whole Sunday stays within your budget (⚙️), best EV first. Tap any bet for the math.",
+  ev: "DraftKings/FanDuel prices at least 3% better than Pinnacle's no-vig fair line. Every play gets a stake sized by edge, confidence and how many bets share the same game. Tap any bet for the math.",
   cheat: "Matchup plays: player projections from defense vs position, plus a team scoring model for moneyline, spread and total. Tracked at 1u flat in Results.",
 };
 
 function budgetBar(mode){
-  const su = S.data.slate_units || {};
-  const cap = myBudget();
-  const used = applyBudget((S.data[mode] || []).slice().sort((a, b) => (b.ev_pct || 0) - (a.ev_pct || 0)), mode)
-    .reduce((t, p) => t + (p.units || 0), 0) + (su[mode + "_started"] || 0);
+  const list = S.data[mode] || [];
+  const total = list.reduce((t, p) => t + (p.units || 0), 0);
   const d = unitUsd();
-  const money = v => d ? ` ($${(v * d).toFixed(0)})` : "";
   return `<div class="banner budget"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
-      <div><b>Sunday budget:</b> ${+used.toFixed(2)}u of ${cap}u${money(cap)}<div class="sub">1 unit = ${d ? "$" + d : "not set"}</div></div>
-      <button class="chip" id="open-settings">⚙️ Edit</button></div>
-    <div class="meter"><div style="width:${Math.min(used / cap * 100, 100)}%"></div></div></div>`;
+      <div><b>Today:</b> ${list.length} play${list.length === 1 ? "" : "s"} · ${+total.toFixed(2)}u${d ? " ($" + (total * d).toFixed(0) + ")" : ""}
+        <div class="sub">1 unit = ${d ? "$" + d : "not set"} · sized by edge, confidence and correlation</div></div>
+      <button class="chip" id="open-settings">⚙️ Unit</button></div></div>`;
 }
 
 function openSettings(){
-  const d = unitUsd(), cap = appCap(), b = getNum(BUDGET_KEY);
+  const d = unitUsd();
   $("#sheet").innerHTML = `<div class="grab"><div class="bar0"></div><button class="close" aria-label="Close">✕</button></div>
     <h2 style="margin-top:4px">Settings</h2>
     <div class="sec"><h3>Unit size</h3>
@@ -363,16 +342,9 @@ function openSettings(){
       <label class="field">$ <input id="set-unit" type="number" inputmode="decimal" min="1" step="1" value="${d || ""}" placeholder="10"> per unit</label>
       <div class="presets">${[5, 10, 20, 25, 50, 100].map(v => `<button class="chip ${v === d ? "on" : ""}" data-unit="${v}">$${v}</button>`).join("")}</div>
     </div>
-    <div class="sec"><h3>Sunday budget</h3>
-      <div class="calc note">The most you want to bet across a whole Sunday. Best-EV plays are funded first. The app's own limit is ${cap}u.</div>
-      <label class="field"><input id="set-budget" type="number" inputmode="decimal" min="1" max="${cap}" step="0.5" value="${b || ""}" placeholder="${cap}"> units</label>
-      <div class="sub" id="budget-usd" style="margin-top:6px"></div>
-    </div>
     <button class="bet" id="save-settings" style="width:100%;border:0;font-size:16px">Save</button>
     <div class="help" style="margin-top:10px">Saved on this device. These will move to your account once accounts are added.</div>`;
-  const upd = () => { const u = parseFloat($("#set-unit").value) || 0, bu = Math.min(parseFloat($("#set-budget").value) || cap, cap);
-    $("#budget-usd").textContent = u ? `= up to $${(u * bu).toFixed(0)} per Sunday` : ""; };
-  $("#set-unit").addEventListener("input", upd); $("#set-budget").addEventListener("input", upd); upd();
+
   $("#sheet").scrollTop = 0;
   $("#sheet").classList.add("open"); $("#shade").classList.add("open"); document.body.classList.add("lock");
   history.pushState({sheet:1}, "");
@@ -455,8 +427,8 @@ function evSection(p){
   if (p.ev_pct == null) return `<div class="sec"><h3>EV</h3><div class="calc note">Pinnacle has no matching line on this bet, so there's no fair price to compare against. No EV or unit sizing.</div></div>`;
   const b = p.dec - 1, bookP = 1 / p.dec, tp = p.trusted_prob ?? p.fair_prob, trust = p.edge_trust ?? 0.5;
   const full = (b * tp - (1 - tp)) / b * 100;
+  const z = p.sizing || {base: p.units, conf: 1, corr: 1, game_bets: 1, player_bets: 1, raw: p.units, cap: 2, conf_why: []};
   const cap = isProp(p) ? (st.max_units_prop ?? 1.5) : (st.max_units_line ?? 2);
-  const capNote = p.capped ? `<span class="note">Trimmed by the ${st.max_game_units ?? 3}u per-game cap, since bets in the same game tend to win or lose together and higher-EV ones were filled first.</span>` : "";
   const sus = p.unit_note ? `<span class="note" style="color:var(--amber)">EV over ${st.suspect_ev ?? 12}% usually means a stale or mismatched line, so it's held to ${st.suspect_units ?? 0.5}u. Check the price is still there.</span>` : "";
   return `<div class="sec"><h3>EV &amp; recommended units</h3><div class="calc">
     <span class="note">1. Pinnacle's price with the vig removed gives the fair chance this hits:</span>
@@ -465,11 +437,15 @@ function evSection(p){
     <span class="eq">EV = ${p.fair_prob.toFixed(4)} × ${p.dec} − 1 = <b class="good">${pct(p.ev_pct, 2)}</b></span>
     <span class="note">3. For sizing, only trust ${Math.round(trust * 100)}% of the gap between Pinnacle and this book${isProp(p) ? " (Pinnacle props are less sharp than its game lines)" : ""}:</span>
     <span class="eq">${p1(bookP)} + ${trust} × (${p1(p.fair_prob)} − ${p1(bookP)}) = ${p1(tp)}</span>
-    <span class="note">4. Kelly on that chance, then ¼ of it, capped at ${cap}u and rounded to 0.25u:</span>
-    <span class="eq">Kelly ${full.toFixed(2)}% × ¼ = ${(full / 4).toFixed(2)}% of bankroll → <b class="good">${p.units || 0}u recommended</b></span>
-    ${sus}${capNote}
-    ${p.over_budget ? `<span class="note" style="color:var(--amber)">Today's ${st.slate_max_units ?? 10}u Sunday budget is already used by higher-EV plays, so this one is a skip.</span>` : ""}
-    <span class="note">${unitUsd() ? `At your unit size ($${unitUsd()}), that's <b style="color:var(--text)">${usd(p.units) || "$0"}</b>. ` : "Set your unit size in ⚙️ Settings to see dollar amounts. "}Whole Sunday is capped at ${st.slate_max_units ?? 10}u.</span>
+    <span class="note">4. Quarter-Kelly on that chance is the base stake:</span>
+    <span class="eq">Kelly ${full.toFixed(2)}% × ¼ = <b>${z.base}u</b> base</span>
+    <span class="note">5. Confidence${z.conf_why && z.conf_why.length ? " (" + esc(z.conf_why.join(", ")) + ")" : ""}:</span>
+    <span class="eq">× ${z.conf}${z.conf === 1 ? " (no adjustment)" : ""}</span>
+    <span class="note">6. Correlation: bets in the same game (or on the same player) win and lose together, so they share a stake:</span>
+    <span class="eq">${z.game_bets} bet${z.game_bets > 1 ? "s" : ""} in this game${z.player_bets > 1 ? ", " + z.player_bets + " on this player" : ""} → × ${z.corr}</span>
+    <span class="eq">${z.base} × ${z.conf} × ${z.corr} = ${z.raw}u${z.raw >= z.cap ? " (capped at " + z.cap + "u)" : ""} → <b class="good">${p.units}u recommended</b>${unitUsd() ? " = " + usd(p.units) : ""}</span>
+    <span class="note">Rounded to 0.25u, never below 0.25u, so every +EV play still gets a bet.</span>
+    ${sus}
   </div></div>`;
 }
 
@@ -603,11 +579,9 @@ document.addEventListener("click", e => {
   if (t) { document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t)); S.tab = t.dataset.t; render(); window.scrollTo(0,0); return; }
   if (e.target.id === "open-settings" || e.target.id === "open-settings2") { openSettings(); return; }
   const pre = e.target.closest("[data-unit]");
-  if (pre) { $("#set-unit").value = pre.dataset.unit; document.querySelectorAll("[data-unit]").forEach(x => x.classList.toggle("on", x === pre)); $("#set-unit").dispatchEvent(new Event("input")); return; }
+  if (pre) { $("#set-unit").value = pre.dataset.unit; document.querySelectorAll("[data-unit]").forEach(x => x.classList.toggle("on", x === pre)); return; }
   if (e.target.id === "save-settings") {
     setNum(UNIT_KEY, parseFloat($("#set-unit").value) || 0);
-    const bu = parseFloat($("#set-budget").value) || 0;
-    setNum(BUDGET_KEY, bu && bu < appCap() ? bu : 0);
     closeDetail(); render(); return;
   }
   if (e.target.id === "toggle-skipped") { S.showSkipped = !S.showSkipped; render(); return; }

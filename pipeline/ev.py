@@ -34,12 +34,10 @@ def ev_pct(fair_p, dec):
 
 def kelly_units(fair_p, dec, kind="prop"):
     """
-    Recommended units. Steps:
-      1. Trust only part of the gap between Pinnacle's fair price and the
-         book's own price (EDGE_TRUST): p = book_p + trust * (fair_p - book_p)
-      2. Full Kelly on that trusted p, then KELLY_FRACTION of it
-      3. Cap per bet type, cap suspiciously big EV, round to 0.25u steps
-    Returns (units, full_kelly_pct_raw, trusted_p, note)
+    Base stake for one bet, before confidence/correlation (see size_slate).
+      1. Trust only part of the gap between Pinnacle and the book (EDGE_TRUST)
+      2. Quarter-Kelly on that trusted chance
+    Returns (units_float, full_kelly_pct_raw, trusted_p, note)
     """
     b = dec - 1
     full_raw = (b * fair_p - (1 - fair_p)) / b
@@ -50,55 +48,65 @@ def kelly_units(fair_p, dec, kind="prop"):
     if full <= 0:
         return 0.0, round(full_raw * 100, 2), round(p, 4), None
     units = full * config.KELLY_FRACTION * 100 / config.UNIT_PCT_OF_BANKROLL
-    cap = config.MAX_UNITS["prop" if kind == "prop" else "line"]
     note = None
     if ev_pct(fair_p, dec) >= config.SUSPECT_EV_PCT:
-        cap = min(cap, config.SUSPECT_MAX_UNITS)
         note = "big edge: double-check the line before betting"
-    units = min(units, cap)
+    return units, round(full_raw * 100, 2), round(p, 4), note
+
+
+def _round_units(u):
     step = config.UNIT_STEP
-    units = round(units / step) * step
-    if units < config.MIN_UNITS:
-        units = config.MIN_UNITS if full > 0.002 else 0.0
-    return round(units, 2), round(full_raw * 100, 2), round(p, 4), note
+    return max(round(u / step) * step, config.MIN_UNITS)
 
 
-def cap_per_game(picks, key="units"):
+def size_slate(picks):
     """
-    Keep each game's total at or under MAX_UNITS_PER_GAME. Best EV bets get
-    their full size first; once a game's budget is used, later bets in that
-    game are trimmed, then marked 'game limit reached' (0 units).
+    Final recommended units for every EV play. Nothing is dropped:
+      base (trusted quarter-Kelly)
+      x confidence (cheat sheet agrees / disagrees / questionable)
+      x correlation (1/sqrt(n) per game, 1/n per player)
+      capped per bet type and for suspicious EV, rounded to 0.25u (min 0.25u)
+    Stores the steps on each pick so the app can show the math.
     """
-    spent = {}
-    for p in sorted(picks, key=lambda x: -x.get("ev_pct", 0)):
-        left = config.MAX_UNITS_PER_GAME - spent.get(p["game_id"], 0)
-        want = p[key]
-        if want > left:
-            p["full_units"] = want
-            step = config.UNIT_STEP
-            p[key] = (int(left / step) * step) if left >= config.MIN_UNITS else 0.0
-            p["capped"] = True
-        spent[p["game_id"]] = spent.get(p["game_id"], 0) + p[key]
-    return picks
+    by_game, by_player = {}, {}
+    for p in picks:
+        by_game[p.get("game_id")] = by_game.get(p.get("game_id"), 0) + 1
+        if p.get("kind", "prop") == "prop":
+            by_player[p["pkey"]] = by_player.get(p["pkey"], 0) + 1
+    for p in picks:
+        base = p.get("base_units") or 0.0
+        conf, why = 1.0, []
+        if p.get("cheat_side") == p["side"]:
+            conf *= config.CONF_AGREES
+            why.append("cheat sheet agrees")
+        elif _cheat_disagrees(p):
+            conf *= config.CONF_DISAGREES
+            why.append("matchup points the other way")
+        if p.get("injury_status") == "Questionable":
+            conf *= config.CONF_QUESTIONABLE
+            why.append("questionable")
+        n_g = by_game.get(p.get("game_id"), 1)
+        n_p = by_player.get(p["pkey"], 1) if p.get("kind", "prop") == "prop" else 1
+        corr = (1 / n_g ** 0.5) * (1 / n_p)
+        cap = config.MAX_UNITS["prop" if p.get("kind", "prop") == "prop" else "line"]
+        if p.get("unit_note"):
+            cap = min(cap, config.SUSPECT_MAX_UNITS)
+        raw = min(base * conf * corr, cap)
+        p.update(units=_round_units(raw) if base > 0 else 0.0,
+                 sizing={"base": round(base, 2), "conf": round(conf, 2), "conf_why": why,
+                         "game_bets": n_g, "player_bets": n_p, "corr": round(corr, 2),
+                         "cap": cap, "raw": round(raw, 2)})
+    return round(sum(p["units"] for p in picks), 2)
 
 
-def cap_slate(picks, already_used, key="units"):
-    """
-    Keep the whole slate within SLATE_MAX_UNITS. `already_used` = units on
-    plays whose games have started. Best EV first; the rest get 0 and
-    over_budget=True.
-    """
-    left = config.SLATE_MAX_UNITS - already_used
-    step = config.UNIT_STEP
-    for p in sorted(picks, key=lambda x: -x.get("ev_pct", 0)):
-        want = p[key]
-        if not want:
-            continue
-        if want > left:
-            p["full_units"] = p.get("full_units", want)
-            p[key] = int(max(left, 0) / step) * step
-            p["over_budget"] = p[key] < config.MIN_UNITS
-            if p["over_budget"]:
-                p[key] = 0.0
-        left -= p[key]
-    return round(config.SLATE_MAX_UNITS - left, 2)
+def _cheat_disagrees(p):
+    """Projection and matchup both lean the opposite way of this bet."""
+    if p.get("kind", "prop") == "prop":
+        e, m = p.get("proj_edge_pct"), p.get("matchup_pct")
+        if e is None or m is None:
+            return False
+        sign = 1 if p["side"] == "over" else -1
+        return e * sign < 0 and m * sign < 0
+    return (p.get("model_edge") or 0) < -1.0
+
+

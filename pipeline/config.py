@@ -14,10 +14,13 @@ KELLY_FRACTION = 0.25        # quarter-Kelly, applied to the *trusted* edge belo
 EDGE_TRUST = {"prop": 0.5, "ml": 0.8, "spread": 0.8, "total": 0.8}
 MAX_UNITS = {"prop": 1.5, "line": 2.0}   # per bet
 MAX_UNITS_PER_BET = 2.0      # absolute ceiling (shown in the app)
-MAX_UNITS_PER_GAME = 3.0     # bets in one game are correlated
-# Total budget for the whole Sunday. Best-EV plays are funded first; plays past
-# the budget show "over budget" (0u). Units on games that already started count.
-SLATE_MAX_UNITS = 10.0
+# Confidence: how the cheat sheet's read changes the stake
+CONF_AGREES = 1.25           # cheat sheet likes the same side (EV + Cheat Sheet)
+CONF_DISAGREES = 0.6         # projection AND matchup point the other way
+CONF_QUESTIONABLE = 0.5      # player is Questionable on the injury report
+# Correlated bets share their stake instead of hard caps:
+#   same game: each bet x 1/sqrt(bets in that game)
+#   same player: each bet x 1/(bets on that player)
 UNIT_USD = 10.0              # default $ per unit shown in the app (changeable in-app)
 UNIT_STEP = 0.25             # recommend 0.25u, 0.5u, 0.75u, ...
 MIN_UNITS = 0.25             # anything smaller is dropped
