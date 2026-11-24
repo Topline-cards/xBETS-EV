@@ -15,6 +15,9 @@ EDGE_TRUST = {"prop": 0.5, "ml": 0.8, "spread": 0.8, "total": 0.8}
 MAX_UNITS = {"prop": 1.5, "line": 2.0}   # per bet
 MAX_UNITS_PER_BET = 2.0      # absolute ceiling (shown in the app)
 MAX_UNITS_PER_GAME = 3.0     # bets in one game are correlated
+# Total budget for the whole Sunday. Best-EV plays are funded first; plays past
+# the budget show "over budget" (0u). Units on games that already started count.
+SLATE_MAX_UNITS = 10.0
 UNIT_STEP = 0.25             # recommend 0.25u, 0.5u, 0.75u, ...
 MIN_UNITS = 0.25             # anything smaller is dropped
 # EV this big usually means a stale or mismatched line, so size it small.
@@ -22,7 +25,7 @@ SUSPECT_EV_PCT = 12.0
 SUSPECT_MAX_UNITS = 0.5
 
 # ---------------------------------------------------------------- EV filter
-MIN_EV_PCT = 2.0             # only show bets at least 2% +EV
+MIN_EV_PCT = 3.0             # only show bets at least 3% +EV
 MAX_EV_PCT = 25.0            # bigger than this is almost always a bad match / stale line
 MAX_ODDS_AMERICAN = 300      # ignore long shots; fair-line estimates get shaky
 
@@ -64,7 +67,7 @@ HIDE_DOUBTFUL = True
 INACTIVE_ROSTER_STATUS = {"RES", "CUT", "RET", "DEV", "INA", "EXE", "SUS", "PUP", "NON"}
 
 # ---------------------------------------------------------------- alerts
-NOTIFY_MIN_EV_PCT = 2.0      # phone alert for new EV plays at/above this
+NOTIFY_MIN_EV_PCT = 3.0      # phone alert for new EV plays at/above this
 
 # ---------------------------------------------------------------- slate
 # Which days' games the app covers (Mon=0 ... Sun=6). Sunday only.

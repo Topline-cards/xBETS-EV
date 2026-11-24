@@ -80,3 +80,25 @@ def cap_per_game(picks, key="units"):
             p["capped"] = True
         spent[p["game_id"]] = spent.get(p["game_id"], 0) + p[key]
     return picks
+
+
+def cap_slate(picks, already_used, key="units"):
+    """
+    Keep the whole slate within SLATE_MAX_UNITS. `already_used` = units on
+    plays whose games have started. Best EV first; the rest get 0 and
+    over_budget=True.
+    """
+    left = config.SLATE_MAX_UNITS - already_used
+    step = config.UNIT_STEP
+    for p in sorted(picks, key=lambda x: -x.get("ev_pct", 0)):
+        want = p[key]
+        if not want:
+            continue
+        if want > left:
+            p["full_units"] = p.get("full_units", want)
+            p[key] = int(max(left, 0) / step) * step
+            p["over_budget"] = p[key] < config.MIN_UNITS
+            if p["over_budget"]:
+                p[key] = 0.0
+        left -= p[key]
+    return round(config.SLATE_MAX_UNITS - left, 2)

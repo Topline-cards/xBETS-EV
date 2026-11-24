@@ -271,6 +271,12 @@ def build(now=None, force=False):
 
     ev.cap_per_game(ev_picks)
     ev.cap_per_game(combined)
+    # Sunday budget: units already recommended on games that have kicked off
+    log_now = _load("log.json", {"picks": {}})["picks"].values()
+    used = {m: sum(r["units"] for r in log_now if r["mode"] == m and r["week"] == week
+                   and not _after(r["kickoff"], now)) for m in ("ev", "combined")}
+    slate_ev = ev.cap_slate(ev_picks, used["ev"])
+    slate_comb = ev.cap_slate(combined, used["combined"])
     ev_picks.sort(key=lambda p: -p["ev_pct"])
     combined.sort(key=lambda p: -p["ev_pct"])
     cheat_picks.sort(key=lambda p: (p["kind"] != "prop",
@@ -291,6 +297,7 @@ def build(now=None, force=False):
         "status": status, "settings": {
             "unit_pct": config.UNIT_PCT_OF_BANKROLL, "kelly": config.KELLY_FRACTION,
             "max_units": config.MAX_UNITS_PER_BET, "max_game_units": config.MAX_UNITS_PER_GAME,
+            "slate_max_units": config.SLATE_MAX_UNITS,
             "max_units_prop": config.MAX_UNITS["prop"], "max_units_line": config.MAX_UNITS["line"],
             "suspect_ev": config.SUSPECT_EV_PCT, "suspect_units": config.SUSPECT_MAX_UNITS,
             "min_ev": config.MIN_EV_PCT, "matchup_weight": config.MATCHUP_WEIGHT,
@@ -299,6 +306,8 @@ def build(now=None, force=False):
         "logos": _safe(stats.team_logos, {}),
         "games": games_list, "game_model": sorted(gm.values(), key=lambda m: m["kickoff"]),
         "combined": combined, "ev": ev_picks, "cheat": cheat_picks, "matchups": top,
+        "slate_units": {"ev": slate_ev, "combined": slate_comb,
+                        "ev_started": round(used["ev"], 2), "combined_started": round(used["combined"], 2)},
     }
     # Keep the last odds board if this run didn't pull odds
     if not want_odds:

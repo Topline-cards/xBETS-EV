@@ -70,6 +70,12 @@
   .tr.urow .pv{color:var(--green);font-size:17px}
   .inj{display:inline-block;font-size:11px;font-weight:800;color:#2a1d05;background:var(--amber);border-radius:5px;padding:2px 5px;margin-left:6px;vertical-align:2px}
   .fav-b{display:inline-block;font-size:11px;font-weight:700;color:#0d2a1d;background:var(--green);border-radius:5px;padding:2px 5px;margin-left:6px;vertical-align:2px}
+  .budget{color:var(--text)}
+  .more-btn{display:block;width:100%;margin:4px 0 10px;border:1px dashed var(--line);background:none;color:var(--dim);border-radius:10px;padding:11px;font:600 13px/1 inherit;cursor:pointer}
+  .meter{height:6px;background:var(--panel2);border-radius:3px;margin-top:8px;overflow:hidden}
+  .meter div{height:100%;background:var(--green)}
+  .unitset{display:flex;align-items:center;gap:4px;color:var(--dim);font-size:13px;white-space:nowrap}
+  .unitset input{width:62px;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:7px;padding:5px 6px;font:600 14px/1 inherit}
   .note-amber{color:var(--amber);font-size:12px}
   .toplink{display:inline-flex;align-items:center;gap:5px;color:var(--cyan);text-decoration:none;font-size:13px;font-weight:600;
     border:1px solid #2b4a52;border-radius:999px;padding:5px 10px;margin-left:8px}.card.snap:active{background:var(--panel)}
@@ -217,7 +223,9 @@ const ICON = {
   dollar:'<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15.9V19h-2v-1.1a3.6 3.6 0 0 1-3-3.4h2a1.8 1.8 0 0 0 2 1.6c1.2 0 2-.6 2-1.4s-.6-1.2-2.3-1.6c-2-.5-3.4-1.2-3.4-3.1a3 3 0 0 1 2.7-2.9V6h2v1.1a3.2 3.2 0 0 1 2.7 3.1h-2a1.6 1.6 0 0 0-1.8-1.3c-1 0-1.6.5-1.6 1.2s.7 1.1 2.3 1.5c2 .5 3.4 1.3 3.4 3.2a3.1 3.1 0 0 1-3 3.1z"/></svg>',
   stack:'<svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5zm-7.6 7.3L2 11.5l10 5 10-5-2.4-1.2L12 14zm0 4L2 15.5l10 5 10-5-2.4-1.2L12 18z"/></svg>',
 };
-const PREF_KEY = "xbets_prefs";
+const PREF_KEY = "xbets_prefs", UNIT_KEY = "xbets_unit_usd";
+const unitUsd = () => { try { return parseFloat(localStorage.getItem(UNIT_KEY)) || 0; } catch(e){ return 0; } };
+const usd = u => { const d = unitUsd(); return d && u ? "$" + (u * d).toFixed(u * d < 10 ? 2 : 0) : ""; };
 const prefs = () => { try { return JSON.parse(localStorage.getItem(PREF_KEY) || "{}"); } catch(e){ return {}; } };
 const prefOf = p => p && p.pkey ? (prefs()[p.pkey] || {}).v : null;
 const pctCls = v => v == null ? "" : v >= 0.6 ? "hi" : v <= 0.4 ? "lo" : "";
@@ -272,8 +280,10 @@ function card(p, mode, i, inDetail){
     rows.push(trow("dollar", `EV <b>${pct(p.ev_pct)}</b> vs Pinnacle fair ${p1(p.fair_prob)}`, "", "", "ev"));
   }
   if (mode !== "cheat") {
-    const u = p.units ? `${p.units}u` : "–";
-    const sub = !p.units ? `<span class="note-amber"> game limit reached</span>` : p.unit_note ? `<br><span class="note-amber">${esc(p.unit_note)}</span>` : "";
+    const u = p.units ? `${p.units}u${unitUsd() ? " · " + usd(p.units) : ""}` : "–";
+    const sub = !p.units ? `<span class="note-amber"> ${p.over_budget ? "over today's budget, skip" : "game limit reached"}</span>`
+      : (p.full_units && p.full_units > p.units ? `<span class="note-amber"> (trimmed to fit budget)</span>` : "")
+        + (p.unit_note ? `<br><span class="note-amber">${esc(p.unit_note)}</span>` : "");
     rows.push(trow("stack", `Recommended units${sub}`, u, "", "urow"));
   }
   return `<div class="tc ${inDetail ? "snap" : ""} ${fav ? "fav" : ""}" ${inDetail ? "" : `data-i="${i}"`}>
@@ -298,9 +308,23 @@ function banner(){
 
 const INTRO = {
   combined: "Cheat-sheet plays that are also +EV against Pinnacle's fair line. The strictest list. Tap any bet to see the numbers behind it.",
-  ev: "DraftKings/FanDuel prices better than Pinnacle's no-vig fair line. Recommended units (1u = 1% of bankroll): most plays 0.25–1u, max 1.5u on props and 2u on game lines. Tap any bet for the math.",
+  ev: "DraftKings/FanDuel prices at least 3% better than Pinnacle's no-vig fair line. Most plays are 0.25–1u, and the whole Sunday is capped at 10u, best EV first. Tap any bet for the math.",
   cheat: "Matchup plays: player projections from defense vs position, plus a team scoring model for moneyline, spread and total. Tracked at 1u flat in Results.",
 };
+
+function budgetBar(mode){
+  const st = S.data.settings || {}, su = S.data.slate_units || {};
+  const cap = st.slate_max_units || 10;
+  const used = (su[mode] || 0);
+  const started = su[mode + "_started"] || 0;
+  const d = unitUsd();
+  const money = v => d ? ` ($${(v * d).toFixed(0)})` : "";
+  const pctw = Math.min(used / cap * 100, 100);
+  return `<div class="banner budget"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+      <div><b>Sunday budget:</b> ${used}u of ${cap}u${money(used)}${started ? ` <span class="sub">(${started}u on games already started)</span>` : ""}</div>
+      <label class="unitset">1u = $<input id="unit-usd" type="number" inputmode="decimal" min="0" step="1" value="${d || ""}" placeholder="10"></label></div>
+    <div class="meter"><div style="width:${pctw}%"></div></div></div>`;
+}
 
 function renderList(mode){
   const pf = prefs();
@@ -308,11 +332,18 @@ function renderList(mode){
   const list = all.filter(matches);
   list.sort((a, b) => ((pf[b.pkey] || {}).v === "up") - ((pf[a.pkey] || {}).v === "up"));
   S.shown = list;
-  let html = banner() + `<div class="help">${INTRO[mode]}</div>` + filterBar();
+  let html = banner() + (mode !== "cheat" ? budgetBar(mode) : "") + `<div class="help">${INTRO[mode]}</div>` + filterBar();
   if (!list.length) {
     html += `<div class="empty"><b>No plays right now</b>${all.length ? "Nothing matches these filters." :
       mode === "cheat" ? "Lines aren't posted yet. Projections are below." : "Check back closer to kickoff."}</div>`;
-  } else html += list.map((p, i) => card(p, mode, i)).join("");
+  } else {
+    const funded = mode === "cheat" ? list : list.filter(p => p.units);
+    const skipped = mode === "cheat" ? [] : list.filter(p => !p.units);
+    const shown = S.showSkipped ? funded.concat(skipped) : funded;
+    S.shown = shown;
+    html += shown.map((p, i) => card(p, mode, i)).join("");
+    if (skipped.length) html += `<button class="chip more-btn" id="toggle-skipped">${S.showSkipped ? "Hide" : "Show"} ${skipped.length} skipped play${skipped.length > 1 ? "s" : ""} (over budget or game limit)</button>`;
+  }
   if (mode === "cheat") html += projTables();
   return html;
 }
@@ -384,7 +415,8 @@ function evSection(p){
     <span class="note">4. Kelly on that chance, then ¼ of it, capped at ${cap}u and rounded to 0.25u:</span>
     <span class="eq">Kelly ${full.toFixed(2)}% × ¼ = ${(full / 4).toFixed(2)}% of bankroll → <b class="good">${p.units || 0}u recommended</b></span>
     ${sus}${capNote}
-    <span class="note">1u = ${st.unit_pct ?? 1}% of your bankroll.</span>
+    ${p.over_budget ? `<span class="note" style="color:var(--amber)">Today's ${st.slate_max_units ?? 10}u Sunday budget is already used by higher-EV plays, so this one is a skip.</span>` : ""}
+    <span class="note">${unitUsd() ? `At your unit size ($${unitUsd()}), that's <b style="color:var(--text)">${usd(p.units) || "$0"}</b>. ` : "Set your $ per unit on the EV tab to see dollar amounts. "}Whole Sunday is capped at ${st.slate_max_units ?? 10}u.</span>
   </div></div>`;
 }
 
@@ -508,7 +540,7 @@ function render(){
   const d = S.data;
   if (!d) { $("#main").innerHTML = `<div class="empty"><b>No data yet</b>The first GitHub run hasn't finished.</div>`; $("#meta").textContent = ""; return; }
   $("#meta").innerHTML = `Week ${d.week} · ${d.season}`;
-  for (const k of ["combined","ev","cheat"]) $("#n-" + k).textContent = (d[k] || []).length || "";
+  for (const k of ["combined","ev","cheat"]) $("#n-" + k).textContent = (d[k] || []).filter(p => k === "cheat" || p.units).length || "";
   $("#main").innerHTML = S.tab === "results" ? renderResults() : renderList(S.tab);
 }
 
@@ -516,6 +548,7 @@ document.addEventListener("click", e => {
   if (e.target.closest(".close") || e.target === $("#shade")) { closeDetail(); return; }
   const t = e.target.closest(".tab");
   if (t) { document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t)); S.tab = t.dataset.t; render(); window.scrollTo(0,0); return; }
+  if (e.target.id === "toggle-skipped") { S.showSkipped = !S.showSkipped; render(); return; }
   const c = e.target.closest(".tc[data-i]");
   if (c) { openDetail(S.shown[+c.dataset.i], {mode: S.tab}); return; }
   const m = e.target.closest("tr[data-m]");
@@ -524,6 +557,7 @@ document.addEventListener("click", e => {
   if (g) { const gm = S.gmShown[+g.dataset.gm]; openDetail({player: `${gm.away} @ ${gm.home}`, kind: "game", kickoff: gm.kickoff, game_model: gm}, {gameOnly: true}); }
 });
 document.addEventListener("change", e => {
+  if (e.target.id === "unit-usd") { try { localStorage.setItem(UNIT_KEY, String(parseFloat(e.target.value) || "")); } catch(_){} render(); return; }
   if (e.target.id === "f-game") S.game = e.target.value;
   if (e.target.id === "f-type") S.type = e.target.value;
   if (e.target.id === "f-book") S.book = e.target.value;
