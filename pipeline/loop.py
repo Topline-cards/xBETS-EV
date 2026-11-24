@@ -105,7 +105,9 @@ def all_slates(now):
 def wait_and_grade(start):
     """
     After the last game, box scores post overnight. Check hourly and grade,
-    so My Results / Results update the next morning without GitHub's cron.
+    so My Results / Record update the next morning without GitHub's cron.
+    Returns "games" as soon as a covered game (any sport) comes within
+    LOOKAHEAD_H, so the caller goes back to refreshing odds.
     """
     deadline = time.time() + 16 * 3600
     while time.time() < deadline:
@@ -114,14 +116,19 @@ def wait_and_grade(start):
             commit(f"Grade results {datetime.now(ET):%Y-%m-%d %H:%M} ET")
             print(f"graded; {pending} still waiting on box scores", flush=True)
             if not pending:
-                return
+                return "done"
         except Exception as e:
             print("grading error:", e)
+        now = datetime.now(ET)
+        g = today_games(all_slates(now), now)
+        if not g[g["kickoff"] > now].empty:          # only games that haven't started
+            return "games"
         if (time.time() - start) / 60 + 60 > MAX_RUNTIME_MIN:
             print("Handing off grading to a new run.")
             relaunch()
-            return
+            return "done"
         time.sleep(3600)
+    return "done"
 
 
 def main(force_first=False):
@@ -137,7 +144,8 @@ def main(force_first=False):
         games = today_games(all_slates(now), datetime.now(ET))
         upcoming = games[games["kickoff"] > datetime.now(ET)]
         if upcoming.empty:
-            wait_and_grade(start)
+            if wait_and_grade(start) == "games":
+                continue                      # a game day is coming: back to refreshing
             return
         nxt = upcoming["kickoff"].min()
         window_opens = nxt - timedelta(hours=config.PREGAME_WINDOW_HOURS)
