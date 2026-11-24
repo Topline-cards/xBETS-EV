@@ -49,9 +49,24 @@ def load_schedule(season):
     return s
 
 
+def is_holiday(d, name):
+    """d: a date. thanksgiving = 4th Thursday of November; christmas = Dec 25."""
+    if name == "thanksgiving":
+        return d.month == 11 and d.weekday() == 3 and 22 <= d.day <= 28
+    if name == "christmas":
+        return d.month == 12 and d.day == 25
+    return False
+
+
+def covered_day(d, weekdays, holidays):
+    return d.weekday() in weekdays or any(is_holiday(d, h) for h in holidays)
+
+
 def slate(sched):
-    """Only the games the app covers (Sunday by default)."""
-    return sched[sched["kickoff"].dt.dayofweek.isin(config.GAME_WEEKDAYS)]
+    """Only the games the app covers (Sundays + Thanksgiving)."""
+    days = sched["kickoff"].dt.date
+    keep = days.map(lambda d: covered_day(d, config.GAME_WEEKDAYS, config.GAME_HOLIDAYS))
+    return sched[keep]
 
 
 def current_week(sched, now=None):

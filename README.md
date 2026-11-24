@@ -34,7 +34,7 @@ Last Sunday replayed: 23 plays, 8u total.
 
 **API budget:** PinnWire's free plan allows 100 calls/day. The job makes one call per run, only inside the 4-hour pregame window, and stops at 90/day.
 
-**Sunday only:** the app covers Sunday games (`GAME_WEEKDAYS` in `pipeline/config.py`). Games on other days still feed the stats.
+**Sundays + Thanksgiving:** the app covers Sunday games and every Thanksgiving Day game (`GAME_WEEKDAYS` in `pipeline/config.py`). Games on other days still feed the stats.
 
 **Phone alerts:** install the free **ntfy** app, subscribe to a private topic name, and save that name as the repo secret `NTFY_TOPIC`. Each new EV play is announced once (⭐ = also a cheat-sheet play); tapping the alert opens the app.
 

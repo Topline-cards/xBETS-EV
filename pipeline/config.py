@@ -76,7 +76,8 @@ NOTIFY_MIN_EV_PCT = 3.0      # phone alert for new EV plays at/above this
 # ---------------------------------------------------------------- slate
 # Which days' games the app covers (Mon=0 ... Sun=6). Sunday only.
 # Games on other days still count toward stats; they just aren't bet on.
-GAME_WEEKDAYS = {6}
+GAME_WEEKDAYS = {6}          # Sunday
+GAME_HOLIDAYS = {"thanksgiving"}   # always covered, whatever the weekday
 
 # ---------------------------------------------------------------- timing
 # Odds checks only run when a game kicks off within this many hours.
