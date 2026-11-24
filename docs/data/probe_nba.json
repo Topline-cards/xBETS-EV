@@ -1,471 +1,882 @@
 {
- "sharp_markets": [
-  [
-   "correct_score",
-   300
-  ],
-  [
-   "player_points",
-   28
-  ],
-  [
-   "player_points_+_rebounds",
-   26
-  ],
-  [
-   "player_made_threes",
-   24
-  ],
-  [
-   "player_rebounds",
-   24
-  ],
-  [
-   "player_points_+_rebounds_+_assists",
-   22
-  ],
-  [
-   "player_points_combo_",
-   18
-  ],
-  [
-   "player_points_h2h_moneyline",
-   16
-  ],
-  [
-   "player_points_+_assists",
-   14
-  ],
-  [
-   "most_points_player",
-   13
-  ],
-  [
-   "most_made_threes_player",
-   12
-  ],
-  [
-   "most_rebounds_player",
-   12
-  ],
-  [
-   "player_rebounds_+_assists",
-   12
-  ],
-  [
-   "most_assists_player",
-   11
-  ],
-  [
-   "1st_3_minutes_player_assists",
-   10
-  ],
-  [
-   "1st_3_minutes_player_points",
-   10
-  ],
-  [
-   "1st_3_minutes_player_rebounds",
-   10
-  ],
-  [
-   "most_points_+_rebounds_+_assists_player",
-   10
-  ],
-  [
-   "player_assists",
-   10
-  ],
-  [
-   "player_made_threes_combo_",
-   9
-  ],
-  [
-   "player_made_threes_h2h_moneyline",
-   8
-  ],
-  [
-   "player_points_h2h_spread",
-   8
-  ],
-  [
-   "player_rebounds_combo_",
-   8
-  ],
-  [
-   "player_double_double",
-   7
-  ],
-  [
-   "1st_quarter_player_points",
-   6
-  ],
-  [
-   "halftime_fulltime",
-   6
-  ],
-  [
-   "player_assists_combo_",
-   6
-  ],
-  [
-   "player_made_threes_each_",
-   6
-  ],
-  [
-   "player_made_threes_either_",
-   6
-  ],
-  [
-   "player_points_each_",
-   6
-  ],
-  [
-   "player_points_either_",
-   6
-  ],
-  [
-   "highest_scoring_quarter",
-   5
-  ],
-  [
-   "1st_half_team_total",
-   4
-  ],
-  [
-   "1st_quarter_player_rebounds",
-   4
-  ],
-  [
-   "1st_quarter_team_total",
-   4
-  ],
-  [
-   "2nd_half_team_total",
-   4
-  ],
-  [
-   "2nd_quarter_team_total",
-   4
-  ],
-  [
-   "2nd_quarter_team_total_odd_even",
-   4
-  ],
-  [
-   "player_assists_each_",
-   4
-  ],
-  [
-   "player_assists_either_",
-   4
-  ],
-  [
-   "player_assists_h2h_moneyline",
-   4
-  ],
-  [
-   "player_made_threes_h2h_spread",
-   4
-  ],
-  [
-   "player_rebounds_each_",
-   4
-  ],
-  [
-   "1st_half_race_to_40_points_3-way",
-   3
-  ],
-  [
-   "1st_half_race_to_45_points_3-way",
-   3
-  ],
-  [
-   "1st_half_race_to_50_points_3-way",
-   3
-  ],
-  [
-   "1st_half_race_to_55_points_3-way",
-   3
-  ],
-  [
-   "1st_half_race_to_60_points_3-way",
-   3
-  ],
-  [
-   "1st_quarter_player_assists",
-   3
-  ],
-  [
-   "2nd_half_race_to_40_points_3-way",
-   3
-  ],
-  [
-   "2nd_half_race_to_45_points_3-way",
-   3
-  ],
-  [
-   "2nd_half_race_to_50_points_3-way",
-   3
-  ],
-  [
-   "2nd_half_race_to_55_points_3-way",
-   3
-  ],
-  [
-   "2nd_half_race_to_60_points_3-way",
-   3
-  ],
-  [
-   "highest_scoring_half",
-   3
-  ],
-  [
-   "1st_half_moneyline",
-   2
-  ],
-  [
-   "1st_half_point_spread",
-   2
-  ],
-  [
-   "1st_half_total_points",
-   2
-  ],
-  [
-   "1st_half_total_points_odd_even",
-   2
-  ],
-  [
-   "1st_quarter_moneyline",
-   2
-  ]
+ "sharp_error": "skipped",
+ "pinn_sports_err": [
+  "/kit/v1/sports: 403 Client Error: Forbidden for url: https://pinnwire.com/kit/v1/sports?key=pk_f",
+  "/kit/v1/meta/sports: 403 Client Error: Forbidden for url: https://pinnwire.com/kit/v1/meta/sports?key",
+  "/v1/sports: 403 Client Error: Forbidden for url: https://pinnwire.com/v1/sports?key=pk_fab44"
  ],
- "sharp_line_sample": [
-  {
-   "id": "132341759448448",
-   "sportsbook": "draftkings",
-   "event_id": "nba_jazz_lakers_2026-11-23_b3",
-   "event_uuid": "95c79a7fafaff321",
-   "sport": "basketball",
-   "league": "nba",
-   "home_team": "Los Angeles Lakers",
-   "away_team": "Utah Jazz",
-   "market_type": "1st_half_moneyline",
-   "selection": "Utah Jazz",
-   "selection_type": "away",
-   "team_side": "away",
-   "market_segment": "1st_half",
-   "odds_american": 330,
-   "odds_decimal": 4.3,
-   "odds_probability": 0.2326,
-   "line": null,
-   "event_start_time": "2026-11-24T03:00Z",
-   "is_live": false,
-   "is_active": true,
-   "season_type": "Regular Season",
-   "timestamp": "2026-11-24T02:02:13.055952773Z",
-   "price_updated_at": "2026-11-24T01:50:48.525391Z",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/132341759448448",
-   "market_id": "1_87390079",
-   "selection_id": "0ML87390079_3",
-   "is_alternate_line": false,
-   "is_main_line": true,
-   "is_stale_pregame_price": false,
-   "is_player_prop": false
-  },
-  {
-   "id": "155348394981672",
-   "sportsbook": "draftkings",
-   "event_id": "nba_jazz_lakers_2026-11-23_b3",
-   "event_uuid": "95c79a7fafaff321",
-   "sport": "basketball",
-   "league": "nba",
-   "home_team": "Los Angeles Lakers",
-   "away_team": "Utah Jazz",
-   "market_type": "1st_half_moneyline",
-   "selection": "Los Angeles Lakers",
-   "selection_type": "home",
-   "team_side": "home",
-   "market_segment": "1st_half",
-   "odds_american": -425,
-   "odds_decimal": 1.235,
-   "odds_probability": 0.8095,
-   "line": null,
-   "event_start_time": "2026-11-24T03:00Z",
-   "is_live": false,
-   "is_active": true,
-   "season_type": "Regular Season",
-   "timestamp": "2026-11-24T02:02:13.055952773Z",
-   "price_updated_at": "2026-11-24T01:50:48.525391Z",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/155348394981672",
-   "market_id": "1_87390079",
-   "selection_id": "0ML87390079_1",
-   "is_alternate_line": false,
-   "is_main_line": true,
-   "is_stale_pregame_price": false,
-   "is_player_prop": false
-  },
-  {
-   "id": "252479636708744",
-   "sportsbook": "draftkings",
-   "event_id": "nba_jazz_lakers_2026-11-23_b3",
-   "event_uuid": "95c79a7fafaff321",
-   "sport": "basketball",
-   "league": "nba",
-   "home_team": "Los Angeles Lakers",
-   "away_team": "Utah Jazz",
-   "market_type": "1st_half_point_spread",
-   "selection": "UTA Jazz",
-   "selection_type": "away",
-   "team_side": "away",
-   "market_segment": "1st_half",
-   "odds_american": -105,
-   "odds_decimal": 1.952,
-   "odds_probability": 0.5122,
-   "line": 7.5,
-   "event_start_time": "2026-11-24T03:00Z",
-   "is_live": false,
-   "is_active": true,
-   "season_type": "Regular Season",
-   "timestamp": "2026-11-24T02:02:13.055952773Z",
-   "price_updated_at": "2026-11-24T01:50:48.525391Z",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/252479636708744",
-   "market_id": "2_87390079",
-   "selection_id": "0HC87390079P750_3",
-   "is_alternate_line": false,
-   "is_main_line": true,
-   "is_stale_pregame_price": false,
-   "is_player_prop": false
-  }
- ],
- "sharp_prop_sample": [
-  {
-   "id": "122158688313838",
-   "sportsbook": "draftkings",
-   "event_id": "nba_jazz_lakers_2026-11-23_b3",
-   "event_uuid": "95c79a7fafaff321",
-   "sport": "basketball",
-   "league": "nba",
-   "home_team": "Los Angeles Lakers",
-   "away_team": "Utah Jazz",
-   "market_type": "1st_3_minutes_player_assists",
-   "selection": "Walker Kessler Over",
-   "selection_type": "over",
-   "odds_american": 349,
-   "odds_decimal": 4.49,
-   "odds_probability": 0.2227,
-   "line": 0.5,
-   "event_start_time": "2026-11-24T03:00Z",
-   "is_live": false,
-   "is_active": true,
-   "season_type": "Regular Season",
-   "timestamp": "2026-11-24T02:02:13.055952773Z",
-   "price_updated_at": "2026-11-24T01:50:48.525391Z",
-   "player_name": "Walker Kessler",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/122158688313838",
-   "market_id": "391885897",
-   "selection_id": "0QA391885897#2377799357_13L42648Q11600327088Q20",
-   "is_alternate_line": false,
-   "is_main_line": true,
-   "is_stale_pregame_price": false,
-   "is_player_prop": true,
-   "is_impossible_scoreline": false
-  },
-  {
-   "id": "123710835521913",
-   "sportsbook": "draftkings",
-   "event_id": "nba_jazz_lakers_2026-11-23_b3",
-   "event_uuid": "95c79a7fafaff321",
-   "sport": "basketball",
-   "league": "nba",
-   "home_team": "Los Angeles Lakers",
-   "away_team": "Utah Jazz",
-   "market_type": "1st_3_minutes_player_assists",
-   "selection": "Quentin Grimes Over",
-   "selection_type": "over",
-   "odds_american": 232,
-   "odds_decimal": 3.32,
-   "odds_probability": 0.3012,
-   "line": 0.5,
-   "event_start_time": "2026-11-24T03:00Z",
-   "is_live": false,
-   "is_active": true,
-   "season_type": "Regular Season",
-   "timestamp": "2026-11-24T02:02:13.055952773Z",
-   "price_updated_at": "2026-11-24T01:50:48.525391Z",
-   "player_name": "Quentin Grimes",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/123710835521913",
-   "market_id": "391885893",
-   "selection_id": "0QA391885893#2377799984_13L42648Q11600327088Q20",
-   "is_alternate_line": false,
-   "is_main_line": true,
-   "is_stale_pregame_price": false,
-   "is_player_prop": true,
-   "is_impossible_scoreline": false
-  },
-  {
-   "id": "16890074427776",
-   "sportsbook": "draftkings",
-   "event_id": "nba_jazz_lakers_2026-11-23_b3",
-   "event_uuid": "95c79a7fafaff321",
-   "sport": "basketball",
-   "league": "nba",
-   "home_team": "Los Angeles Lakers",
-   "away_team": "Utah Jazz",
-   "market_type": "1st_3_minutes_player_assists",
-   "selection": "Mo Bamba Over",
-   "selection_type": "over",
-   "odds_american": 325,
-   "odds_decimal": 4.25,
-   "odds_probability": 0.2353,
-   "line": 0.5,
-   "event_start_time": "2026-11-24T03:00Z",
-   "is_live": false,
-   "is_active": true,
-   "season_type": "Regular Season",
-   "timestamp": "2026-11-24T02:02:13.055952773Z",
-   "price_updated_at": "2026-11-24T01:50:48.525391Z",
-   "player_name": "Mo Bamba",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/16890074427776",
-   "market_id": "391919295",
-   "selection_id": "0QA391919295#2377981923_13L42648Q11600327088Q20",
-   "is_alternate_line": false,
-   "is_main_line": true,
-   "is_stale_pregame_price": false,
-   "is_player_prop": true,
-   "is_impossible_scoreline": false
-  }
- ],
- "sharp_pages_seen": 800,
+ "pinn_basketball_id": null,
  "pinn_leagues": [
   [
-   "NHL",
-   351
+   "NBA",
+   81
   ],
   [
-   "Sweden - SHL",
+   "NCAA",
+   4
+  ],
+  [
+   "El Salvador - Liga Mayor de Baloncesto",
    1
   ],
   [
-   "Finland - SM Liiga",
+   "Europe - Euroleague",
    1
   ],
   [
-   "Europe - Champions Hockey League",
+   "Germany - Bundesliga",
    1
   ]
  ],
  "pinn_nba": {
-  "n": 0,
-  "cats": [],
-  "prop_names": [],
-  "units": [],
-  "prop_sample": []
+  "n": 81,
+  "cats": [
+   [
+    "Player Props",
+    59
+   ],
+   [
+    "General",
+    10
+   ],
+   [
+    null,
+    7
+   ],
+   [
+    "Futures",
+    3
+   ],
+   [
+    "Half",
+    2
+   ]
+  ],
+  "prop_names": [
+   "Ace Bailey Total Points",
+   "Ace Bailey Total Rebounds",
+   "Ace Bailey Total Threes Made",
+   "Collin Sexton Total Points",
+   "Collin Sexton Total Threes Made",
+   "Darius Acuff Total Assists",
+   "Darius Acuff Total Points",
+   "Darius Acuff Total Pts & Rebs & Asts",
+   "Darius Acuff Total Rebounds",
+   "Darius Acuff Total Threes Made",
+   "Darryn Peterson Total Assists",
+   "Darryn Peterson Total Points",
+   "Darryn Peterson Total Pts & Rebs & Asts",
+   "Darryn Peterson Total Rebounds",
+   "Darryn Peterson Total Threes Made",
+   "De'Andre Hunter Total Points",
+   "De'Andre Hunter Total Rebounds",
+   "De'Andre Hunter Total Threes Made",
+   "Devin Vassell Total Points",
+   "Devin Vassell Total Rebounds",
+   "Domantas Sabonis Total Assists",
+   "Domantas Sabonis Total Points",
+   "Domantas Sabonis Total Pts & Rebs & Asts",
+   "Domantas Sabonis Total Rebounds",
+   "Jake LaRavia Total Points",
+   "Jake LaRavia Total Threes Made",
+   "Julian Champagnie Total Points",
+   "Julian Champagnie Total Rebounds",
+   "Keegan Murray Total Points",
+   "Keegan Murray Total Rebounds",
+   "Keyonte George Total Assists",
+   "Keyonte George Total Points",
+   "Keyonte George Total Pts & Rebs & Asts",
+   "Keyonte George Total Rebounds",
+   "Keyonte George Total Threes Made",
+   "Luka Doncic Total Assists",
+   "Luka Doncic Total Points",
+   "Luka Doncic Total Pts & Rebs & Asts",
+   "Luka Doncic Total Rebounds",
+   "Luka Doncic Total Threes Made",
+   "Matisse Thybulle Total Points",
+   "Mo Bamba Total Points",
+   "Mo Bamba Total Rebounds",
+   "Quentin Grimes Total Assists",
+   "Quentin Grimes Total Points",
+   "Quentin Grimes Total Rebounds",
+   "Quentin Grimes Total Threes Made",
+   "Sandro Mamukelashvili Total Points",
+   "Sandro Mamukelashvili Total Rebounds",
+   "Sandro Mamukelashvili Total Threes Made",
+   "Walker Kessler Total Points",
+   "Walker Kessler Total Rebounds",
+   "Zach LaVine Total Assists",
+   "Zach LaVine Total Points",
+   "Zach LaVine Total Pts & Rebs & Asts",
+   "Zach LaVine Total Rebounds",
+   "Zach LaVine Total Threes Made",
+   "Ziaire Williams Total Points",
+   "Ziaire Williams Total Threes Made"
+  ],
+  "units": [
+   [
+    "Points",
+    19
+   ],
+   [
+    "Rebounds",
+    15
+   ],
+   [
+    "Threes Made",
+    12
+   ],
+   [
+    "Assists",
+    7
+   ],
+   [
+    "Pts & Rebs & Asts",
+    6
+   ]
+  ],
+  "prop_sample": [
+   {
+    "event_id": 1641011135,
+    "sport_id": 3,
+    "league_id": 487,
+    "league_name": "NBA",
+    "special": "Darius Acuff Total Rebounds",
+    "special_category": "Player Props",
+    "special_units": "Rebounds",
+    "parent_id": 1640570249,
+    "starts": "2026-11-24T03:10:00Z",
+    "start_ts": "2026-11-24T03:10:00Z",
+    "event_type": "prematch",
+    "is_have_odds": true,
+    "special_markets": {
+     "num_0": [
+      {
+       "type": "total",
+       "key": "s;0;ou",
+       "side": null,
+       "max_risk": 250,
+       "prices": [
+        {
+         "name": "Over",
+         "participant_id": 1641011136,
+         "points": 3.5,
+         "price": 2.38
+        },
+        {
+         "name": "Under",
+         "participant_id": 1641011137,
+         "points": 3.5,
+         "price": 1.541
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "event_id": 1641011675,
+    "sport_id": 3,
+    "league_id": 487,
+    "league_name": "NBA",
+    "special": "Matisse Thybulle Total Points",
+    "special_category": "Player Props",
+    "special_units": "Points",
+    "parent_id": 1640571826,
+    "starts": "2026-11-24T03:10:00Z",
+    "start_ts": "2026-11-24T03:10:00Z",
+    "event_type": "prematch",
+    "is_have_odds": true,
+    "special_markets": {
+     "num_0": [
+      {
+       "type": "total",
+       "key": "s;0;ou",
+       "side": null,
+       "max_risk": 250,
+       "prices": [
+        {
+         "name": "Over",
+         "participant_id": 1641011676,
+         "points": 6.5,
+         "price": 1.82
+        },
+        {
+         "name": "Under",
+         "participant_id": 1641011677,
+         "points": 6.5,
+         "price": 1.926
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  },
  "pinn_fixtures": {
-  "n": 0,
-  "sample": null
+  "n": 2,
+  "sample": {
+   "event_id": 1640571826,
+   "sport_id": 3,
+   "league_id": 487,
+   "league_name": "NBA",
+   "home": "Los Angeles Lakers",
+   "away": "Utah Jazz",
+   "starts": "2026-11-24T03:10:00Z",
+   "start_ts": "2026-11-24T03:10:00Z",
+   "event_type": "prematch",
+   "units": "Regular",
+   "parent_id": null,
+   "is_have_odds": true,
+   "is_have_periods": true,
+   "periods": {
+    "num_0": {
+     "number": 0,
+     "money_line": {
+      "home": 1.135,
+      "away": 6.34
+     },
+     "spreads": {
+      "-14": {
+       "hdp": -14,
+       "home": 2.09,
+       "away": 1.8,
+       "max": 20000
+      },
+      "-11.5": {
+       "hdp": -11.5,
+       "home": 1.73,
+       "away": 2.2,
+       "max": 20000
+      },
+      "-12": {
+       "hdp": -12,
+       "home": 1.781,
+       "away": 2.11,
+       "max": 20000
+      },
+      "-12.5": {
+       "hdp": -12.5,
+       "home": 1.847,
+       "away": 2.03,
+       "max": 20000
+      },
+      "-13": {
+       "hdp": -13,
+       "home": 1.935,
+       "away": 1.952,
+       "max": 20000
+      },
+      "-13.5": {
+       "hdp": -13.5,
+       "home": 2.01,
+       "away": 1.862,
+       "max": 20000
+      },
+      "-14.5": {
+       "hdp": -14.5,
+       "home": 2.17,
+       "away": 1.741,
+       "max": 20000
+      },
+      "-15": {
+       "hdp": -15,
+       "home": 2.25,
+       "away": 1.694,
+       "max": 20000
+      },
+      "-15.5": {
+       "hdp": -15.5,
+       "home": 2.34,
+       "away": 1.645,
+       "max": 20000
+      },
+      "-10.5": {
+       "hdp": -10.5,
+       "home": 1.633,
+       "away": 2.37,
+       "max": 20000
+      },
+      "-11": {
+       "hdp": -11,
+       "home": 1.68,
+       "away": 2.28,
+       "max": 20000
+      }
+     },
+     "totals": {
+      "223": {
+       "points": 223,
+       "over": 1.758,
+       "under": 2.13,
+       "max": 7500
+      },
+      "224": {
+       "points": 224,
+       "over": 1.84,
+       "under": 2.02,
+       "max": 7500
+      },
+      "225": {
+       "points": 225,
+       "over": 1.935,
+       "under": 1.917,
+       "max": 7500
+      },
+      "226": {
+       "points": 226,
+       "over": 2.04,
+       "under": 1.826,
+       "max": 7500
+      },
+      "227": {
+       "points": 227,
+       "over": 2.15,
+       "under": 1.741,
+       "max": 7500
+      },
+      "228": {
+       "points": 228,
+       "over": 2.27,
+       "under": 1.671,
+       "max": 7500
+      },
+      "225.5": {
+       "points": 225.5,
+       "over": 2,
+       "under": 1.877,
+       "max": 7500
+      },
+      "223.5": {
+       "points": 223.5,
+       "over": 1.8,
+       "under": 2.07,
+       "max": 7500
+      },
+      "224.5": {
+       "points": 224.5,
+       "over": 1.885,
+       "under": 1.962,
+       "max": 7500
+      },
+      "226.5": {
+       "points": 226.5,
+       "over": 2.09,
+       "under": 1.781,
+       "max": 7500
+      },
+      "227.5": {
+       "points": 227.5,
+       "over": 2.2,
+       "under": 1.709,
+       "max": 7500
+      }
+     },
+     "team_total": {
+      "home": {
+       "points": 121.5,
+       "over": 2.32,
+       "under": 1.629
+      },
+      "away": {
+       "points": 107.5,
+       "over": 2.15,
+       "under": 1.73
+      }
+     },
+     "team_totals": {
+      "home": {
+       "119.5": {
+        "points": 119.5,
+        "over": 1.98,
+        "under": 1.877,
+        "max": 2000
+       },
+       "117.5": {
+        "points": 117.5,
+        "over": 1.704,
+        "under": 2.18,
+        "max": 2000
+       },
+       "118.5": {
+        "points": 118.5,
+        "over": 1.826,
+        "under": 2.01,
+        "max": 2000
+       },
+       "120.5": {
+        "points": 120.5,
+        "over": 2.13,
+        "under": 1.741,
+        "max": 2000
+       },
+       "121.5": {
+        "points": 121.5,
+        "over": 2.32,
+        "under": 1.629,
+        "max": 2000
+       }
+      },
+      "away": {
+       "105.5": {
+        "points": 105.5,
+        "over": 1.855,
+        "under": 2.01,
+        "max": 2000
+       },
+       "103.5": {
+        "points": 103.5,
+        "over": 1.613,
+        "under": 2.35,
+        "max": 2000
+       },
+       "104.5": {
+        "points": 104.5,
+        "over": 1.719,
+        "under": 2.16,
+        "max": 2000
+       },
+       "106.5": {
+        "points": 106.5,
+        "over": 1.98,
+        "under": 1.855,
+        "max": 2000
+       },
+       "107.5": {
+        "points": 107.5,
+        "over": 2.15,
+        "under": 1.73,
+        "max": 2000
+       }
+      }
+     }
+    },
+    "num_1": {
+     "number": 1,
+     "money_line": {
+      "home": 1.239,
+      "away": 4.35
+     },
+     "spreads": {
+      "-8": {
+       "hdp": -8,
+       "home": 2.01,
+       "away": 1.877,
+       "max": 5000
+      },
+      "-6": {
+       "hdp": -6,
+       "home": 1.719,
+       "away": 2.21,
+       "max": 5000
+      },
+      "-6.5": {
+       "hdp": -6.5,
+       "home": 1.775,
+       "away": 2.13,
+       "max": 5000
+      },
+      "-7": {
+       "hdp": -7,
+       "home": 1.84,
+       "away": 2.04,
+       "max": 5000
+      },
+      "-7.5": {
+       "hdp": -7.5,
+       "home": 1.909,
+       "away": 1.952,
+       "max": 5000
+      },
+      "-8.5": {
+       "hdp": -8.5,
+       "home": 2.1,
+       "away": 1.787,
+       "max": 5000
+      },
+      "-9": {
+       "hdp": -9,
+       "home": 2.2,
+       "away": 1.725,
+       "max": 5000
+      },
+      "-9.5": {
+       "hdp": -9.5,
+       "home": 2.3,
+       "away": 1.667,
+       "max": 5000
+      },
+      "-10": {
+       "hdp": -10,
+       "home": 2.4,
+       "away": 1.617,
+       "max": 5000
+      }
+     },
+     "totals": {
+      "108": {
+       "points": 108,
+       "over": 1.735,
+       "under": 2.16,
+       "max": 3000
+      },
+      "109": {
+       "points": 109,
+       "over": 1.862,
+       "under": 1.99,
+       "max": 3000
+      },
+      "110": {
+       "points": 110,
+       "over": 2.02,
+       "under": 1.862,
+       "max": 3000
+      },
+      "111": {
+       "points": 111,
+       "over": 2.17,
+       "under": 1.73,
+       "max": 3000
+      },
+      "112": {
+       "points": 112,
+       "over": 2.34,
+       "under": 1.633,
+       "max": 3000
+      },
+      "108.5": {
+       "points": 108.5,
+       "over": 1.8,
+       "under": 2.07,
+       "max": 3000
+      },
+      "109.5": {
+       "points": 109.5,
+       "over": 1.935,
+       "under": 1.917,
+       "max": 3000
+      },
+      "110.5": {
+       "points": 110.5,
+       "over": 2.08,
+       "under": 1.794,
+       "max": 3000
+      },
+      "111.5": {
+       "points": 111.5,
+       "over": 2.24,
+       "under": 1.685,
+       "max": 3000
+      }
+     },
+     "team_total": {
+      "away": {
+       "points": 50.5,
+       "over": 1.833,
+       "under": 2.02
+      },
+      "home": {
+       "points": 58.5,
+       "over": 1.885,
+       "under": 1.962
+      }
+     },
+     "team_totals": {
+      "home": {
+       "58.5": {
+        "points": 58.5,
+        "over": 1.885,
+        "under": 1.962,
+        "max": 1000
+       }
+      },
+      "away": {
+       "50.5": {
+        "points": 50.5,
+        "over": 1.833,
+        "under": 2.02,
+        "max": 1000
+       }
+      }
+     }
+    },
+    "num_3": {
+     "number": 3,
+     "money_line": {
+      "home": 1.368,
+      "away": 3.18
+     },
+     "spreads": {
+      "-4.5": {
+       "hdp": -4.5,
+       "home": 2.01,
+       "away": 1.847,
+       "max": 3000
+      },
+      "-2.5": {
+       "hdp": -2.5,
+       "home": 1.662,
+       "away": 2.26,
+       "max": 3000
+      },
+      "-3": {
+       "hdp": -3,
+       "home": 1.725,
+       "away": 2.15,
+       "max": 3000
+      },
+      "-3.5": {
+       "hdp": -3.5,
+       "home": 1.82,
+       "away": 2.03,
+       "max": 3000
+      },
+      "-4": {
+       "hdp": -4,
+       "home": 1.909,
+       "away": 1.926,
+       "max": 3000
+      },
+      "-5": {
+       "hdp": -5,
+       "home": 2.12,
+       "away": 1.746,
+       "max": 3000
+      },
+      "-5.5": {
+       "hdp": -5.5,
+       "home": 2.23,
+       "away": 1.676,
+       "max": 3000
+      },
+      "-6": {
+       "hdp": -6,
+       "home": 2.39,
+       "away": 1.595,
+       "max": 3000
+      },
+      "-6.5": {
+       "hdp": -6.5,
+       "home": 2.51,
+       "away": 1.543,
+       "max": 3000
+      }
+     },
+     "totals": {
+      "54": {
+       "points": 54,
+       "over": 1.709,
+       "under": 2.16,
+       "max": 1000
+      },
+      "55": {
+       "points": 55,
+       "over": 1.87,
+       "under": 1.952,
+       "max": 1000
+      },
+      "56": {
+       "points": 56,
+       "over": 2.06,
+       "under": 1.781,
+       "max": 1000
+      },
+      "57": {
+       "points": 57,
+       "over": 2.28,
+       "under": 1.637,
+       "max": 1000
+      },
+      "55.5": {
+       "points": 55.5,
+       "over": 1.971,
+       "under": 1.87,
+       "max": 1000
+      },
+      "53.5": {
+       "points": 53.5,
+       "over": 1.649,
+       "under": 2.26,
+       "max": 1000
+      },
+      "54.5": {
+       "points": 54.5,
+       "over": 1.794,
+       "under": 2.04,
+       "max": 1000
+      },
+      "56.5": {
+       "points": 56.5,
+       "over": 2.15,
+       "under": 1.714,
+       "max": 1000
+      },
+      "57.5": {
+       "points": 57.5,
+       "over": 2.38,
+       "under": 1.588,
+       "max": 1000
+      }
+     },
+     "team_total": {
+      "home": {
+       "points": 29.5,
+       "over": 1.877,
+       "under": 1.962
+      },
+      "away": {
+       "points": 25.5,
+       "over": 1.87,
+       "under": 1.962
+      }
+     },
+     "team_totals": {
+      "home": {
+       "29.5": {
+        "points": 29.5,
+        "over": 1.877,
+        "under": 1.962,
+        "max": 1000
+       }
+      },
+      "away": {
+       "25.5": {
+        "points": 25.5,
+        "over": 1.87,
+        "under": 1.962,
+        "max": 1000
+       }
+      }
+     }
+    },
+    "num_4": {
+     "number": 4,
+     "money_line": {
+      "home": 1.391,
+      "away": 3.07
+     },
+     "spreads": {
+      "-4": {
+       "hdp": -4,
+       "home": 1.971,
+       "away": 1.885,
+       "max": 3000
+      },
+      "-2.5": {
+       "hdp": -2.5,
+       "home": 1.699,
+       "away": 2.2,
+       "max": 3000
+      },
+      "-3": {
+       "hdp": -3,
+       "home": 1.769,
+       "away": 2.09,
+       "max": 3000
+      },
+      "-3.5": {
+       "hdp": -3.5,
+       "home": 1.862,
+       "away": 1.971,
+       "max": 3000
+      },
+      "-4.5": {
+       "hdp": -4.5,
+       "home": 2.06,
+       "away": 1.787,
+       "max": 3000
+      },
+      "-5": {
+       "hdp": -5,
+       "home": 2.19,
+       "away": 1.699,
+       "max": 3000
+      },
+      "-5.5": {
+       "hdp": -5.5,
+       "home": 2.3,
+       "away": 1.637,
+       "max": 3000
+      }
+     },
+     "totals": {
+      "53": {
+       "points": 53,
+       "over": 1.752,
+       "under": 2.09,
+       "max": 1000
+      },
+      "54": {
+       "points": 54,
+       "over": 1.935,
+       "under": 1.901,
+       "max": 1000
+      },
+      "55": {
+       "points": 55,
+       "over": 2.13,
+       "under": 1.725,
+       "max": 1000
+      },
+      "52.5": {
+       "points": 52.5,
+       "over": 1.69,
+       "under": 2.19,
+       "max": 1000
+      },
+      "53.5": {
+       "points": 53.5,
+       "over": 1.84,
+       "under": 1.98,
+       "max": 1000
+      },
+      "54.5": {
+       "points": 54.5,
+       "over": 2.02,
+       "under": 1.806,
+       "max": 1000
+      },
+      "55.5": {
+       "points": 55.5,
+       "over": 2.23,
+       "under": 1.667,
+       "max": 1000
+      }
+     },
+     "team_total": {
+      "away": {
+       "points": 25.5,
+       "over": 2.03,
+       "under": 1.82
+      },
+      "home": {
+       "points": 28.5,
+       "over": 1.82,
+       "under": 2.02
+      }
+     },
+     "team_totals": {
+      "home": {
+       "28.5": {
+        "points": 28.5,
+        "over": 1.82,
+        "under": 2.02,
+        "max": 1000
+       }
+      },
+      "away": {
+       "25.5": {
+        "points": 25.5,
+        "over": 2.03,
+        "under": 1.82,
+        "max": 1000
+       }
+      }
+     }
+    }
+   }
+  }
  },
  "espn_injuries": {
   "status": 200,
