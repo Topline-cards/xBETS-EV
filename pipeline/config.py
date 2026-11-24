@@ -18,6 +18,7 @@ MAX_UNITS_PER_GAME = 3.0     # bets in one game are correlated
 # Total budget for the whole Sunday. Best-EV plays are funded first; plays past
 # the budget show "over budget" (0u). Units on games that already started count.
 SLATE_MAX_UNITS = 10.0
+UNIT_USD = 10.0              # default $ per unit shown in the app (changeable in-app)
 UNIT_STEP = 0.25             # recommend 0.25u, 0.5u, 0.75u, ...
 MIN_UNITS = 0.25             # anything smaller is dropped
 # EV this big usually means a stale or mismatched line, so size it small.

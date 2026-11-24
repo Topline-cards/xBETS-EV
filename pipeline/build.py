@@ -297,7 +297,7 @@ def build(now=None, force=False):
         "status": status, "settings": {
             "unit_pct": config.UNIT_PCT_OF_BANKROLL, "kelly": config.KELLY_FRACTION,
             "max_units": config.MAX_UNITS_PER_BET, "max_game_units": config.MAX_UNITS_PER_GAME,
-            "slate_max_units": config.SLATE_MAX_UNITS,
+            "slate_max_units": config.SLATE_MAX_UNITS, "unit_usd": config.UNIT_USD,
             "max_units_prop": config.MAX_UNITS["prop"], "max_units_line": config.MAX_UNITS["line"],
             "suspect_ev": config.SUSPECT_EV_PCT, "suspect_units": config.SUSPECT_MAX_UNITS,
             "min_ev": config.MIN_EV_PCT, "matchup_weight": config.MATCHUP_WEIGHT,

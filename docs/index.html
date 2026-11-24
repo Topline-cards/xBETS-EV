@@ -224,7 +224,8 @@ const ICON = {
   stack:'<svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5zm-7.6 7.3L2 11.5l10 5 10-5-2.4-1.2L12 14zm0 4L2 15.5l10 5 10-5-2.4-1.2L12 18z"/></svg>',
 };
 const PREF_KEY = "xbets_prefs", UNIT_KEY = "xbets_unit_usd";
-const unitUsd = () => { try { return parseFloat(localStorage.getItem(UNIT_KEY)) || 0; } catch(e){ return 0; } };
+const unitUsd = () => { let v = 0; try { v = parseFloat(localStorage.getItem(UNIT_KEY)) || 0; } catch(e){}
+  return v || (S.data && S.data.settings && S.data.settings.unit_usd) || 0; };
 const usd = u => { const d = unitUsd(); return d && u ? "$" + (u * d).toFixed(u * d < 10 ? 2 : 0) : ""; };
 const prefs = () => { try { return JSON.parse(localStorage.getItem(PREF_KEY) || "{}"); } catch(e){ return {}; } };
 const prefOf = p => p && p.pkey ? (prefs()[p.pkey] || {}).v : null;
