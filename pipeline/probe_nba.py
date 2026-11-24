@@ -14,6 +14,8 @@ from .debug_feeds import trim
 def main():
     out = {}
     try:
+        if os.environ.get("SKIP_SHARP"):
+            raise RuntimeError("skipped")
         key = os.environ["SHARPAPI_KEY"]
         h = {"X-API-Key": key}
         base = {"league": "nba", "sportsbook": "draftkings,fanduel", "is_live": "false",
@@ -38,7 +40,22 @@ def main():
         out["sharp_error"] = str(e)[:300]
     try:
         key = os.environ["PINNWIRE_KEY"]
-        pay = odds._get(f"{odds.PINN_BASE}/kit/v1/markets", {"sport_id": 4, "include_specials": 1, "key": key})
+        sid = None
+        for path in ("/kit/v1/sports", "/kit/v1/meta/sports", "/v1/sports"):
+            try:
+                sp = odds._get(f"{odds.PINN_BASE}{path}", {"key": key})
+                lst = sp.get("sports", sp.get("data", sp)) if isinstance(sp, dict) else sp
+                out["pinn_sports"] = trim(lst)
+                for x in (lst if isinstance(lst, list) else []):
+                    if "basket" in str(x).lower():
+                        sid = x.get("id") or x.get("sport_id")
+                        break
+                break
+            except Exception as e:
+                out.setdefault("pinn_sports_err", []).append(f"{path}: {str(e)[:80]}")
+        out["pinn_basketball_id"] = sid
+        sid = sid or 3
+        pay = odds._get(f"{odds.PINN_BASE}/kit/v1/markets", {"sport_id": sid, "include_specials": 1, "key": key})
         evs = [e for e in pay.get("events", []) if str(e.get("league_name", "")).upper() == "NBA"]
         props = [e for e in evs if e.get("special_category") == "Player Props"]
         out["pinn_leagues"] = collections.Counter(e.get("league_name") for e in pay.get("events", [])).most_common(8)
@@ -46,7 +63,7 @@ def main():
                            "prop_names": sorted({e.get("special", "") for e in props})[:80],
                            "units": collections.Counter(e.get("special_units") for e in props).most_common(),
                            "prop_sample": [trim(e) for e in props[:2]]}
-        fx = odds._get(f"{odds.PINN_BASE}/kit/v1/prematch/fixtures", {"sport_id": 4, "key": key})
+        fx = odds._get(f"{odds.PINN_BASE}/kit/v1/prematch/fixtures", {"sport_id": sid, "key": key})
         fev = fx.get("events", []) if isinstance(fx, dict) else fx
         nba = [e for e in fev if str(e.get("league_name", "")).upper() == "NBA"]
         out["pinn_fixtures"] = {"n": len(nba), "sample": trim(nba[0] if nba else None)}
