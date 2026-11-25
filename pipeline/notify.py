@@ -52,8 +52,8 @@ def notify_new(out, load, save, sport="NFL"):
             requests.post(f"https://ntfy.sh/{topic}", data="\n".join(lines).encode(),
                           headers={"Title": title.encode(),
                                    "Click": APP_URL + ("" if sport == "NFL" else f"?sport={sport.lower()}"),
-                                   "Priority": "high" if n_star else "default",
-                                   "Tags": "football" if sport == "NFL" else "basketball"}, timeout=15)
+                                   "Tags": "football" if sport == "NFL" else "basketball",
+                                   "Priority": "high"}, timeout=15)
         except Exception as e:
             print("notify failed:", e)
 

@@ -13,7 +13,7 @@ def main():
         raise SystemExit(1)
     r = requests.post(f"https://ntfy.sh/{topic}", timeout=20,
                       data="Alerts are working. You'll get one like this for every new EV play.".encode(),
-                      headers={"Title": "xBETS test alert", "Click": APP_URL, "Tags": "white_check_mark"})
+                      headers={"Title": "xBETS test alert", "Click": APP_URL, "Tags": "white_check_mark", "Priority": "high"})
     print("ntfy:", r.status_code)
     r.raise_for_status()
 
