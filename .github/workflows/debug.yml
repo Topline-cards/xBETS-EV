@@ -34,6 +34,7 @@ jobs:
         env:
           SHARPAPI_KEY: ${{ secrets.SHARPAPI_KEY }}
           PINNWIRE_KEY: ${{ secrets.PINNWIRE_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SKIP_SHARP: ${{ inputs.nba && '1' || '' }}
         run: python -m pipeline.${{ inputs.module != '' && inputs.module || (inputs.nba && 'probe_nba' || (inputs.probe && 'probe_sharp' || 'debug_feeds')) }}
       - name: Save sample
