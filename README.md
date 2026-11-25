@@ -67,7 +67,7 @@ Last Sunday replayed: 23 plays, 8u total.
    - `PINNWIRE_KEY`: your PinnWire key
 2. **Pages:** Settings → Pages → Source: *Deploy from a branch* → Branch `main`, folder `/docs`.
 3. **First run:** Actions → *Update picks* → Run workflow (tick *force* to pull odds immediately).
-4. On your phone, open `https://topline-cards.github.io/xbets-ev-app/`, then Share → *Add to Home Screen*.
+4. On your phone, open `https://topline-cards.github.io/xBETS-EV/`, then Share → *Add to Home Screen*.
 
 ## Testing offline
 

@@ -12,7 +12,14 @@ import requests
 
 from . import config
 
-APP_URL = "https://topline-cards.github.io/xbets-ev-app/"
+def _app_url():
+    """GitHub Pages URL of whatever this repo is called (set by Actions as GITHUB_REPOSITORY)."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "Topline-cards/xBETS-EV")
+    owner, name = repo.split("/", 1)
+    return f"https://{owner.lower()}.github.io/{name}/"
+
+
+APP_URL = _app_url()
 MAX_LINES = 8
 
 
