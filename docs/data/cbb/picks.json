@@ -1,14 +1,14 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T16:25:30-05:00",
+ "generated_at": "2026-11-25T16:36:52-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T16:30:00-05:00",
+ "next_kickoff": "2026-11-25T17:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 182,
-  "book_unmatched": 24,
+  "book_game_lines": 175,
+  "book_unmatched": 26,
   "book_unmatched_games": [
    "Arkansas @ Michigan State",
    "Baylor @ Gonzaga",
@@ -27,12 +27,12 @@
    "SMU @ LSU",
    "Saint Mary's @ UCLA",
    "Saint Marys @ UCLA",
+   "South Carolina @ USC",
    "St. John's @ Louisville",
-   "St. Johns @ Louisville",
-   "TCU @ Creighton"
+   "St. Johns @ Louisville"
   ],
-  "pinnacle_game_lines": 533,
-  "pinnacle_unmatched": 4,
+  "pinnacle_game_lines": 514,
+  "pinnacle_unmatched": 5,
   "pinnacle_as_of": "2026-11-25T16:25:30-05:00"
  },
  "settings": {
@@ -557,11 +557,6 @@
  },
  "games": [
   {
-   "game_id": "401921670",
-   "label": "South Carolina @ USC",
-   "kickoff": "2026-11-25T16:30:00-05:00"
-  },
-  {
    "game_id": "401920237",
    "label": "Holy Cross @ Dartmouth",
    "kickoff": "2026-11-25T17:00:00-05:00"
@@ -728,27 +723,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401921670",
-   "home": "USC",
-   "away": "South Carolina",
-   "kickoff": "2026-11-25T16:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 78.4,
-   "proj_away": 68.6,
-   "proj_margin": 9.7,
-   "proj_total": 147.0,
-   "home_win_prob": 0.812,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": 1.222,
-   "home_em": 22.5,
-   "away_em": 9.6,
-   "home_t": 71.0,
-   "away_t": 66.8,
-   "league_avg": 107.8
-  },
   {
    "game_id": "401920237",
    "home": "Dartmouth",
@@ -2714,6 +2688,89 @@
    "pinn_dec": 2.09
   },
   {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Holy Cross @ Dartmouth",
+   "pkey": "401920237",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Dartmouth -12.5",
+   "line": -12.5,
+   "side": "home",
+   "team": "Dartmouth",
+   "opp": "Holy Cross",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/140265310795100",
+   "game_id": "401920237",
+   "kickoff": "2026-11-25T17:00:00-05:00",
+   "home": "Dartmouth",
+   "away": "Holy Cross",
+   "dec": 1.98,
+   "american": -102,
+   "game_model": {
+    "game_id": "401920237",
+    "home": "Dartmouth",
+    "away": "Holy Cross",
+    "kickoff": "2026-11-25T17:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 85.1,
+    "proj_away": 61.1,
+    "proj_margin": 24.0,
+    "proj_total": 146.3,
+    "home_win_prob": 0.985,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 2.635,
+    "home_em": -12.6,
+    "away_em": -19.9,
+    "home_t": 69.0,
+    "away_t": 70.4,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.98,
+     "b": 1.847
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.01,
+     "b": 1.833
+    }
+   ],
+   "model_prob": 0.852,
+   "model_edge": 11.5,
+   "model_edge_txt": "+11.5 pts \u00b7 STRONG",
+   "cheat_side": "home",
+   "cbb_tier": "STRONG",
+   "pinnacle_line": "Dartmouth -12.5 101 / Holy Cross +12.5 -120",
+   "fair_prob": 0.4755,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4755,
+    0.477
+   ],
+   "devig_all": {
+    "multiplicative": 0.477,
+    "additive": 0.476,
+    "power": 0.4755
+   },
+   "ev_pct": -5.86,
+   "min_ev": 1.99,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -5.97,
+   "trusted_prob": 0.4814,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 2.01
+  },
+  {
    "kind": "ml",
    "week": "2026-11-25",
    "player": "Grand Canyon @ Colorado",
@@ -4131,6 +4188,89 @@
    "pinn_dec": 1.893
   },
   {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Norfolk St @ NC State",
+   "pkey": "401918960",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Norfolk St +28.5",
+   "line": -28.5,
+   "side": "away",
+   "team": "Norfolk St",
+   "opp": "NC State",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/148741030735399",
+   "game_id": "401918960",
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "home": "NC State",
+   "away": "Norfolk St",
+   "dec": 1.893,
+   "american": -112,
+   "game_model": {
+    "game_id": "401918960",
+    "home": "NC State",
+    "away": "Norfolk St",
+    "kickoff": "2026-11-25T19:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 89.2,
+    "proj_away": 66.6,
+    "proj_margin": 22.6,
+    "proj_total": 155.8,
+    "home_win_prob": 0.98,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 2.459,
+    "home_em": 19.8,
+    "away_em": -18.7,
+    "home_t": 68.6,
+    "away_t": 67.7,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.926,
+     "b": 1.893
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.855,
+     "b": 1.98
+    }
+   ],
+   "model_prob": 0.704,
+   "model_edge": 5.9,
+   "model_edge_txt": "+5.9 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "NC State -28.5 -117 / Norfolk St +28.5 -102",
+   "fair_prob": 0.4826,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4826,
+    0.4837
+   ],
+   "devig_all": {
+    "multiplicative": 0.4837,
+    "additive": 0.483,
+    "power": 0.4826
+   },
+   "ev_pct": -8.64,
+   "min_ev": 1.71,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -9.68,
+   "trusted_prob": 0.4917,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.98
+  },
+  {
    "kind": "ml",
    "week": "2026-11-25",
    "player": "CSU Northridge @ Weber St",
@@ -4472,6 +4612,89 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
+   "player": "Miss Valley St @ New Mexico",
+   "pkey": "401924897",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Miss Valley St +36.5",
+   "line": -36.5,
+   "side": "away",
+   "team": "Miss Valley St",
+   "opp": "New Mexico",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/117826223464981",
+   "game_id": "401924897",
+   "kickoff": "2026-11-25T21:00:00-05:00",
+   "home": "New Mexico",
+   "away": "Miss Valley St",
+   "dec": 1.909,
+   "american": -110,
+   "game_model": {
+    "game_id": "401924897",
+    "home": "New Mexico",
+    "away": "Miss Valley St",
+    "kickoff": "2026-11-25T21:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 88.4,
+    "proj_away": 57.1,
+    "proj_margin": 31.3,
+    "proj_total": 145.5,
+    "home_win_prob": 0.998,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 3.548,
+    "home_em": 11.7,
+    "away_em": -18.9,
+    "home_t": 70.5,
+    "away_t": 68.6,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.05,
+     "b": 1.8
+    }
+   ],
+   "model_prob": 0.682,
+   "model_edge": 5.2,
+   "model_edge_txt": "+5.2 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "New Mexico -36.5 105 / Miss Valley St +36.5 -125",
+   "fair_prob": 0.5325,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5325,
+    0.5346
+   ],
+   "devig_all": {
+    "multiplicative": 0.5325,
+    "additive": 0.5339,
+    "power": 0.5346
+   },
+   "ev_pct": 1.65,
+   "min_ev": 1.76,
+   "units": 0.3626076893403669,
+   "base_units": 0.3626076893403669,
+   "kelly_pct": 1.81,
+   "trusted_prob": 0.5307,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.8
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
    "player": "Grand Canyon @ Colorado",
    "pkey": "401921671",
    "stat": "spread",
@@ -4644,60 +4867,6 @@
    "tier": "single",
    "second_ev": -2.5,
    "pinn_dec": 1.862
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Norfolk St @ NC State",
-   "pkey": "401918960",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Norfolk St +27.5",
-   "line": -27.5,
-   "side": "away",
-   "team": "Norfolk St",
-   "opp": "NC State",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/10556325242320",
-   "game_id": "401918960",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "NC State",
-   "away": "Norfolk St",
-   "dec": 1.98,
-   "american": -102,
-   "game_model": {
-    "game_id": "401918960",
-    "home": "NC State",
-    "away": "Norfolk St",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 89.2,
-    "proj_away": 66.6,
-    "proj_margin": 22.6,
-    "proj_total": 155.8,
-    "home_win_prob": 0.98,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 2.459,
-    "home_em": 19.8,
-    "away_em": -18.7,
-    "home_t": 68.6,
-    "away_t": 67.7,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    }
-   ],
-   "model_prob": 0.672,
-   "model_edge": 4.9,
-   "model_edge_txt": "+4.9 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD"
   },
   {
    "kind": "spread",
@@ -4962,89 +5131,6 @@
    "tier": "single",
    "second_ev": -1.65,
    "pinn_dec": 1.885
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Miss Valley St @ New Mexico",
-   "pkey": "401924897",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Miss Valley St +35.5",
-   "line": -35.5,
-   "side": "away",
-   "team": "Miss Valley St",
-   "opp": "New Mexico",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/117826223464981",
-   "game_id": "401924897",
-   "kickoff": "2026-11-25T21:00:00-05:00",
-   "home": "New Mexico",
-   "away": "Miss Valley St",
-   "dec": 1.962,
-   "american": -104,
-   "game_model": {
-    "game_id": "401924897",
-    "home": "New Mexico",
-    "away": "Miss Valley St",
-    "kickoff": "2026-11-25T21:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 88.4,
-    "proj_away": 57.1,
-    "proj_margin": 31.3,
-    "proj_total": 145.5,
-    "home_win_prob": 0.998,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 3.548,
-    "home_em": 11.7,
-    "away_em": -18.9,
-    "home_t": 70.5,
-    "away_t": 68.6,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.847,
-     "b": 1.962
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.855,
-     "b": 1.98
-    }
-   ],
-   "model_prob": 0.649,
-   "model_edge": 4.2,
-   "model_edge_txt": "+4.2 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "New Mexico -35.5 -117 / Miss Valley St +35.5 -102",
-   "fair_prob": 0.4826,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4826,
-    0.4837
-   ],
-   "devig_all": {
-    "multiplicative": 0.4837,
-    "additive": 0.483,
-    "power": 0.4826
-   },
-   "ev_pct": -5.31,
-   "min_ev": 1.93,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -5.52,
-   "trusted_prob": 0.488,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.98
   },
   {
    "kind": "spread",
@@ -5629,5 +5715,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T16:25:30-05:00"
+ "odds_as_of": "2026-11-25T16:36:52-05:00"
 }
