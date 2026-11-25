@@ -1,14 +1,14 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T12:20:02-05:00",
+ "generated_at": "2026-11-25T12:30:31-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T12:30:00-05:00",
+ "next_kickoff": "2026-11-25T13:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 298,
-  "book_unmatched": 13,
+  "book_game_lines": 284,
+  "book_unmatched": 15,
   "book_unmatched_games": [
    "Baylor @ Gonzaga",
    "Clemson @ Colorado State",
@@ -18,14 +18,16 @@
    "Maryland @ San Diego State",
    "Miami FL @ Michigan",
    "Mississippi Valley @ New Mexico",
+   "Northern Colorado @ Detroit Mercy",
    "St. Johns @ Louisville",
    "TCU @ Creighton",
    "Tennessee @ Iowa State",
    "Texas Tech @ Oregon",
-   "West Florida @ NW State"
+   "West Florida @ NW State",
+   "Yale @ Wright State"
   ],
-  "pinnacle_game_lines": 895,
-  "pinnacle_unmatched": 3,
+  "pinnacle_game_lines": 857,
+  "pinnacle_unmatched": 5,
   "pinnacle_as_of": "2026-11-25T12:20:02-05:00"
  },
  "settings": {
@@ -550,16 +552,6 @@
  },
  "games": [
   {
-   "game_id": "401920547",
-   "label": "N Colorado @ Detroit Mercy",
-   "kickoff": "2026-11-25T12:30:00-05:00"
-  },
-  {
-   "game_id": "401928831",
-   "label": "Yale @ Wright St",
-   "kickoff": "2026-11-25T12:30:00-05:00"
-  },
-  {
    "game_id": "401911029",
    "label": "E Kentucky @ Miami OH",
    "kickoff": "2026-11-25T13:00:00-05:00"
@@ -856,48 +848,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401920547",
-   "home": "Detroit Mercy",
-   "away": "N Colorado",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 64.2,
-   "proj_away": 85.9,
-   "proj_margin": -21.7,
-   "proj_total": 150.0,
-   "home_win_prob": 0.024,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": -2.719,
-   "home_em": -15.7,
-   "away_em": -11.3,
-   "home_t": 70.0,
-   "away_t": 70.4,
-   "league_avg": 107.8
-  },
-  {
-   "game_id": "401928831",
-   "home": "Wright St",
-   "away": "Yale",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 75.5,
-   "proj_away": 63.4,
-   "proj_margin": 12.1,
-   "proj_total": 139.0,
-   "home_win_prob": 0.865,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": 1.52,
-   "home_em": 9.4,
-   "away_em": -3.0,
-   "home_t": 67.8,
-   "away_t": 65.5,
-   "league_avg": 107.8
-  },
   {
    "game_id": "401911029",
    "home": "Miami OH",
@@ -2142,336 +2092,226 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Yale @ Wright St",
-   "pkey": "401928831",
+   "player": "Georgia St @ FGCU",
+   "pkey": "401921703",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "Wright St -3.5",
-   "line": -3.5,
-   "side": "home",
-   "team": "Wright St",
-   "opp": "Yale",
+   "title": "Georgia St -1.5",
+   "line": 1.5,
+   "side": "away",
+   "team": "Georgia St",
+   "opp": "FGCU",
    "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/210175067446557",
-   "game_id": "401928831",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "home": "Wright St",
-   "away": "Yale",
-   "dec": 1.893,
-   "american": -112,
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/116837529736984",
+   "game_id": "401921703",
+   "kickoff": "2026-11-25T16:00:00-05:00",
+   "home": "FGCU",
+   "away": "Georgia St",
+   "dec": 1.952,
+   "american": -105,
    "game_model": {
-    "game_id": "401928831",
-    "home": "Wright St",
-    "away": "Yale",
-    "kickoff": "2026-11-25T12:30:00-05:00",
+    "game_id": "401921703",
+    "home": "FGCU",
+    "away": "Georgia St",
+    "kickoff": "2026-11-25T16:00:00-05:00",
     "neutral": true,
     "non_d1": null,
-    "proj_home": 75.5,
-    "proj_away": 63.4,
-    "proj_margin": 12.1,
-    "proj_total": 139.0,
-    "home_win_prob": 0.865,
+    "proj_home": 70.6,
+    "proj_away": 73.6,
+    "proj_margin": -3.0,
+    "proj_total": 144.2,
+    "home_win_prob": 0.394,
     "model": "FULL",
     "slope": 7.97,
-    "matchup_x": 1.52,
-    "home_em": 9.4,
-    "away_em": -3.0,
-    "home_t": 67.8,
-    "away_t": 65.5,
+    "matchup_x": -0.371,
+    "home_em": -6.8,
+    "away_em": -1.5,
+    "home_t": 67.4,
+    "away_t": 66.2,
     "league_avg": 107.8
    },
    "books": [
     {
      "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
+     "a": 1.87,
+     "b": 1.952
     },
     {
      "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
+     "a": 1.926,
+     "b": 1.893
     },
     {
      "book": "pinnacle",
-     "a": 1.746,
-     "b": 2.12
+     "a": 2.06,
+     "b": 1.794
     }
    ],
-   "model_prob": 0.783,
-   "model_edge": 8.6,
-   "model_edge_txt": "+8.6 pts \u00b7 STRONG",
-   "cheat_side": "home",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Wright St -3.5 -134 / Yale +3.5 112",
-   "fair_prob": 0.5484,
+   "model_prob": 0.554,
+   "model_edge": 1.5,
+   "model_edge_txt": "+1.5 pts \u00b7 LEAN",
+   "cheat_side": "away",
+   "cbb_tier": "LEAN",
+   "pinnacle_line": "FGCU +1.5 106 / Georgia St -1.5 -126",
+   "fair_prob": 0.5345,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5484,
-    0.5516
+    0.5345,
+    0.5367
    ],
    "devig_all": {
-    "multiplicative": 0.5484,
-    "additive": 0.5505,
-    "power": 0.5516
+    "multiplicative": 0.5345,
+    "additive": 0.536,
+    "power": 0.5367
    },
-   "ev_pct": 3.81,
-   "min_ev": 1.71,
-   "units": 0.25,
-   "base_units": 0.8525237100191263,
-   "kelly_pct": 4.26,
-   "trusted_prob": 0.5443,
+   "ev_pct": 4.34,
+   "min_ev": 1.9,
+   "units": 0.5,
+   "base_units": 0.9109819329911482,
+   "kelly_pct": 4.55,
+   "trusted_prob": 0.5301,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -1.7,
-   "pinn_dec": 1.746,
+   "second_ev": -1.56,
+   "pinn_dec": 1.794,
    "sizing": {
-    "base": 0.85,
+    "base": 0.91,
     "conf": 0.47,
     "conf_why": [
      "cheat sheet agrees",
      "one sharp source only",
      "lane still testing"
     ],
-    "game_bets": 2,
+    "game_bets": 1,
     "player_bets": 1,
-    "corr": 0.71,
+    "corr": 1.0,
     "cap": 2.0,
-    "raw": 0.28
+    "raw": 0.43
    },
    "lane": "cbb:spread",
    "lane_status": "testing",
    "lane_info": {
     "graded": 0,
     "days": 0,
-    "ev_vs_close": -3.04,
+    "ev_vs_close": -3.38,
     "roi_pct": null
    },
-   "exp_profit_units": 0.01
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Yale @ Wright St",
-   "pkey": "401928831",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Wright St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Wright St",
-   "opp": "Yale",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/154905927965800",
-   "game_id": "401928831",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "home": "Wright St",
-   "away": "Yale",
-   "dec": 1.568,
-   "american": -176,
-   "game_model": {
-    "game_id": "401928831",
-    "home": "Wright St",
-    "away": "Yale",
-    "kickoff": "2026-11-25T12:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 75.5,
-    "proj_away": 63.4,
-    "proj_margin": 12.1,
-    "proj_total": 139.0,
-    "home_win_prob": 0.865,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 1.52,
-    "home_em": 9.4,
-    "away_em": -3.0,
-    "home_t": 67.8,
-    "away_t": 65.5,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.505,
-     "b": 2.64
-    },
-    {
-     "book": "fanduel",
-     "a": 1.568,
-     "b": 2.42
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.483,
-     "b": 2.74
-    }
-   ],
-   "model_prob": 0.865,
-   "model_edge": 25.82,
-   "model_edge_txt": "+25.8%",
-   "cheat_side": "home",
-   "pinnacle_line": "Wright St -207 / Yale +174",
-   "fair_prob": 0.6488,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.6488,
-    0.6577
-   ],
-   "devig_all": {
-    "multiplicative": 0.6488,
-    "additive": 0.6547,
-    "power": 0.6577
-   },
-   "ev_pct": 1.74,
-   "min_ev": 1.0,
-   "units": 0.25,
-   "base_units": 0.6113403127741116,
-   "kelly_pct": 3.06,
-   "trusted_prob": 0.6466,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -0.13,
-   "pinn_dec": 1.483,
-   "sizing": {
-    "base": 0.61,
-    "conf": 0.47,
-    "conf_why": [
-     "cheat sheet agrees",
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 2,
-    "player_bets": 1,
-    "corr": 0.71,
-    "cap": 2.0,
-    "raw": 0.2
-   },
-   "lane": "cbb:ml",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 0,
-    "days": 0,
-    "ev_vs_close": -2.49,
-    "roi_pct": null
-   },
-   "exp_profit_units": 0.004
+   "exp_profit_units": 0.022
   }
  ],
  "ev": [
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Yale @ Wright St",
-   "pkey": "401928831",
+   "player": "Georgia St @ FGCU",
+   "pkey": "401921703",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "Wright St -3.5",
-   "line": -3.5,
-   "side": "home",
-   "team": "Wright St",
-   "opp": "Yale",
+   "title": "Georgia St -1.5",
+   "line": 1.5,
+   "side": "away",
+   "team": "Georgia St",
+   "opp": "FGCU",
    "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/210175067446557",
-   "game_id": "401928831",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "home": "Wright St",
-   "away": "Yale",
-   "dec": 1.893,
-   "american": -112,
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/116837529736984",
+   "game_id": "401921703",
+   "kickoff": "2026-11-25T16:00:00-05:00",
+   "home": "FGCU",
+   "away": "Georgia St",
+   "dec": 1.952,
+   "american": -105,
    "game_model": {
-    "game_id": "401928831",
-    "home": "Wright St",
-    "away": "Yale",
-    "kickoff": "2026-11-25T12:30:00-05:00",
+    "game_id": "401921703",
+    "home": "FGCU",
+    "away": "Georgia St",
+    "kickoff": "2026-11-25T16:00:00-05:00",
     "neutral": true,
     "non_d1": null,
-    "proj_home": 75.5,
-    "proj_away": 63.4,
-    "proj_margin": 12.1,
-    "proj_total": 139.0,
-    "home_win_prob": 0.865,
+    "proj_home": 70.6,
+    "proj_away": 73.6,
+    "proj_margin": -3.0,
+    "proj_total": 144.2,
+    "home_win_prob": 0.394,
     "model": "FULL",
     "slope": 7.97,
-    "matchup_x": 1.52,
-    "home_em": 9.4,
-    "away_em": -3.0,
-    "home_t": 67.8,
-    "away_t": 65.5,
+    "matchup_x": -0.371,
+    "home_em": -6.8,
+    "away_em": -1.5,
+    "home_t": 67.4,
+    "away_t": 66.2,
     "league_avg": 107.8
    },
    "books": [
     {
      "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
+     "a": 1.87,
+     "b": 1.952
     },
     {
      "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
+     "a": 1.926,
+     "b": 1.893
     },
     {
      "book": "pinnacle",
-     "a": 1.746,
-     "b": 2.12
+     "a": 2.06,
+     "b": 1.794
     }
    ],
-   "model_prob": 0.783,
-   "model_edge": 8.6,
-   "model_edge_txt": "+8.6 pts \u00b7 STRONG",
-   "cheat_side": "home",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Wright St -3.5 -134 / Yale +3.5 112",
-   "fair_prob": 0.5484,
+   "model_prob": 0.554,
+   "model_edge": 1.5,
+   "model_edge_txt": "+1.5 pts \u00b7 LEAN",
+   "cheat_side": "away",
+   "cbb_tier": "LEAN",
+   "pinnacle_line": "FGCU +1.5 106 / Georgia St -1.5 -126",
+   "fair_prob": 0.5345,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5484,
-    0.5516
+    0.5345,
+    0.5367
    ],
    "devig_all": {
-    "multiplicative": 0.5484,
-    "additive": 0.5505,
-    "power": 0.5516
+    "multiplicative": 0.5345,
+    "additive": 0.536,
+    "power": 0.5367
    },
-   "ev_pct": 3.81,
-   "min_ev": 1.71,
-   "units": 0.25,
-   "base_units": 0.8525237100191263,
-   "kelly_pct": 4.26,
-   "trusted_prob": 0.5443,
+   "ev_pct": 4.34,
+   "min_ev": 1.9,
+   "units": 0.5,
+   "base_units": 0.9109819329911482,
+   "kelly_pct": 4.55,
+   "trusted_prob": 0.5301,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -1.7,
-   "pinn_dec": 1.746,
+   "second_ev": -1.56,
+   "pinn_dec": 1.794,
    "lane": "cbb:spread",
    "lane_status": "testing",
    "lane_info": {
     "graded": 0,
     "days": 0,
-    "ev_vs_close": -3.04,
+    "ev_vs_close": -3.38,
     "roi_pct": null
    },
    "sizing": {
-    "base": 0.85,
+    "base": 0.91,
     "conf": 0.47,
     "conf_why": [
      "cheat sheet agrees",
      "one sharp source only",
      "lane still testing"
     ],
-    "game_bets": 2,
+    "game_bets": 1,
     "player_bets": 1,
-    "corr": 0.71,
+    "corr": 1.0,
     "cap": 2.0,
-    "raw": 0.28
+    "raw": 0.43
    },
-   "exp_profit_units": 0.01
+   "exp_profit_units": 0.022
   },
   {
    "kind": "total",
@@ -2559,7 +2399,7 @@
    "lane_info": {
     "graded": 0,
     "days": 0,
-    "ev_vs_close": -0.03,
+    "ev_vs_close": 0.22,
     "roi_pct": null
    },
    "sizing": {
@@ -2668,7 +2508,7 @@
    "lane_info": {
     "graded": 0,
     "days": 0,
-    "ev_vs_close": -0.03,
+    "ev_vs_close": 0.22,
     "roi_pct": null
    },
    "sizing": {
@@ -2687,114 +2527,108 @@
    "exp_profit_units": 0.005
   },
   {
-   "kind": "ml",
+   "kind": "total",
    "week": "2026-11-25",
-   "player": "Yale @ Wright St",
-   "pkey": "401928831",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Wright St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Wright St",
-   "opp": "Yale",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/154905927965800",
-   "game_id": "401928831",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "home": "Wright St",
-   "away": "Yale",
-   "dec": 1.568,
-   "american": -176,
+   "player": "South Carolina @ USC",
+   "pkey": "401921670",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Over 144.5",
+   "line": 144.5,
+   "side": "over",
+   "team": null,
+   "opp": null,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/156546897785348",
+   "game_id": "401921670",
+   "kickoff": "2026-11-25T16:30:00-05:00",
+   "home": "USC",
+   "away": "South Carolina",
+   "dec": 1.87,
+   "american": -115,
    "game_model": {
-    "game_id": "401928831",
-    "home": "Wright St",
-    "away": "Yale",
-    "kickoff": "2026-11-25T12:30:00-05:00",
+    "game_id": "401921670",
+    "home": "USC",
+    "away": "South Carolina",
+    "kickoff": "2026-11-25T16:30:00-05:00",
     "neutral": true,
     "non_d1": null,
-    "proj_home": 75.5,
-    "proj_away": 63.4,
-    "proj_margin": 12.1,
-    "proj_total": 139.0,
-    "home_win_prob": 0.865,
+    "proj_home": 78.4,
+    "proj_away": 68.6,
+    "proj_margin": 9.7,
+    "proj_total": 147.0,
+    "home_win_prob": 0.812,
     "model": "FULL",
     "slope": 7.97,
-    "matchup_x": 1.52,
-    "home_em": 9.4,
-    "away_em": -3.0,
-    "home_t": 67.8,
-    "away_t": 65.5,
+    "matchup_x": 1.222,
+    "home_em": 22.5,
+    "away_em": 9.6,
+    "home_t": 71.0,
+    "away_t": 66.8,
     "league_avg": 107.8
    },
    "books": [
     {
      "book": "draftkings",
-     "a": 1.505,
-     "b": 2.64
-    },
-    {
-     "book": "fanduel",
-     "a": 1.568,
-     "b": 2.42
+     "a": 1.87,
+     "b": 1.952
     },
     {
      "book": "pinnacle",
-     "a": 1.483,
-     "b": 2.74
+     "a": 1.741,
+     "b": 2.09
     }
    ],
-   "model_prob": 0.865,
-   "model_edge": 25.82,
-   "model_edge_txt": "+25.8%",
-   "cheat_side": "home",
-   "pinnacle_line": "Wright St -207 / Yale +174",
-   "fair_prob": 0.6488,
+   "model_prob": 0.566,
+   "model_edge": 2.5,
+   "model_edge_txt": "+2.5 pts",
+   "cheat_side": null,
+   "pinnacle_line": "144.5 o-135/u109",
+   "fair_prob": 0.5455,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.6488,
-    0.6577
+    0.5455,
+    0.5492
    ],
    "devig_all": {
-    "multiplicative": 0.6488,
-    "additive": 0.6547,
-    "power": 0.6577
+    "multiplicative": 0.5455,
+    "additive": 0.548,
+    "power": 0.5492
    },
-   "ev_pct": 1.74,
-   "min_ev": 1.0,
+   "ev_pct": 2.02,
+   "min_ev": 1.64,
    "units": 0.25,
-   "base_units": 0.6113403127741116,
-   "kelly_pct": 3.06,
-   "trusted_prob": 0.6466,
+   "base_units": 0.4638505597110052,
+   "kelly_pct": 2.32,
+   "trusted_prob": 0.5434,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -0.13,
-   "pinn_dec": 1.483,
-   "lane": "cbb:ml",
+   "second_ev": null,
+   "pinn_dec": 1.741,
+   "lane": "cbb:total",
    "lane_status": "testing",
    "lane_info": {
     "graded": 0,
     "days": 0,
-    "ev_vs_close": -2.49,
+    "ev_vs_close": 0.22,
     "roi_pct": null
    },
    "sizing": {
-    "base": 0.61,
-    "conf": 0.47,
+    "base": 0.46,
+    "conf": 0.38,
     "conf_why": [
-     "cheat sheet agrees",
      "one sharp source only",
      "lane still testing"
     ],
-    "game_bets": 2,
+    "game_bets": 1,
     "player_bets": 1,
-    "corr": 0.71,
+    "corr": 1.0,
     "cap": 2.0,
-    "raw": 0.2
+    "raw": 0.17
    },
-   "exp_profit_units": 0.004
+   "exp_profit_units": 0.005
   }
  ],
  "cheat": [
@@ -3405,93 +3239,6 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
-   "player": "N Colorado @ Detroit Mercy",
-   "pkey": "401920547",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "N Colorado Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "N Colorado",
-   "opp": "Detroit Mercy",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100854989719829",
-   "game_id": "401920547",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "home": "Detroit Mercy",
-   "away": "N Colorado",
-   "dec": 1.465,
-   "american": -215,
-   "game_model": {
-    "game_id": "401920547",
-    "home": "Detroit Mercy",
-    "away": "N Colorado",
-    "kickoff": "2026-11-25T12:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 64.2,
-    "proj_away": 85.9,
-    "proj_margin": -21.7,
-    "proj_total": 150.0,
-    "home_win_prob": 0.024,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -2.719,
-    "home_em": -15.7,
-    "away_em": -11.3,
-    "home_t": 70.0,
-    "away_t": 70.4,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.85,
-     "b": 1.444
-    },
-    {
-     "book": "fanduel",
-     "a": 2.76,
-     "b": 1.465
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.81,
-     "b": 1.465
-    }
-   ],
-   "model_prob": 0.976,
-   "model_edge": 32.27,
-   "model_edge_txt": "+32.3%",
-   "cheat_side": "away",
-   "pinnacle_line": "Detroit Mercy +181 / N Colorado -215",
-   "fair_prob": 0.6573,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.6573,
-    0.6664
-   ],
-   "devig_all": {
-    "multiplicative": 0.6573,
-    "additive": 0.6634,
-    "power": 0.6664
-   },
-   "ev_pct": -3.7,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -7.97,
-   "trusted_prob": 0.6624,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.77,
-   "pinn_dec": 1.465
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
    "player": "SC Upstate @ The Citadel",
    "pkey": "401922285",
    "stat": "ml",
@@ -3575,93 +3322,6 @@
    "tier": "single",
    "second_ev": -3.95,
    "pinn_dec": 1.562
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Yale @ Wright St",
-   "pkey": "401928831",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Wright St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Wright St",
-   "opp": "Yale",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/154905927965800",
-   "game_id": "401928831",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "home": "Wright St",
-   "away": "Yale",
-   "dec": 1.568,
-   "american": -176,
-   "game_model": {
-    "game_id": "401928831",
-    "home": "Wright St",
-    "away": "Yale",
-    "kickoff": "2026-11-25T12:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 75.5,
-    "proj_away": 63.4,
-    "proj_margin": 12.1,
-    "proj_total": 139.0,
-    "home_win_prob": 0.865,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 1.52,
-    "home_em": 9.4,
-    "away_em": -3.0,
-    "home_t": 67.8,
-    "away_t": 65.5,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.505,
-     "b": 2.64
-    },
-    {
-     "book": "fanduel",
-     "a": 1.568,
-     "b": 2.42
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.483,
-     "b": 2.74
-    }
-   ],
-   "model_prob": 0.865,
-   "model_edge": 25.82,
-   "model_edge_txt": "+25.8%",
-   "cheat_side": "home",
-   "pinnacle_line": "Wright St -207 / Yale +174",
-   "fair_prob": 0.6488,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.6488,
-    0.6577
-   ],
-   "devig_all": {
-    "multiplicative": 0.6488,
-    "additive": 0.6547,
-    "power": 0.6577
-   },
-   "ev_pct": 1.74,
-   "min_ev": 1.0,
-   "units": 0.6113403127741116,
-   "base_units": 0.6113403127741116,
-   "kelly_pct": 3.06,
-   "trusted_prob": 0.6466,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -0.13,
-   "pinn_dec": 1.483
   },
   {
    "kind": "ml",
@@ -4110,8 +3770,8 @@
    "side": "away",
    "team": "Lindenwood",
    "opp": "Stony Brook",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/117554652909774",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/244798271036567",
    "game_id": "401926835",
    "kickoff": "2026-11-25T13:00:00-05:00",
    "home": "Stony Brook",
@@ -4142,8 +3802,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.148,
-     "b": 5.9
+     "a": 1.143,
+     "b": 6.0
     },
     {
      "book": "fanduel",
@@ -4157,7 +3817,7 @@
     }
    ],
    "model_prob": 0.313,
-   "model_edge": 15.27,
+   "model_edge": 15.3,
    "model_edge_txt": "+15.3%",
    "cheat_side": "away",
    "pinnacle_line": "Stony Brook -680 / Lindenwood +500",
@@ -4182,7 +3842,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -15.28,
+   "second_ev": -16.79,
    "pinn_dec": 6.0
   },
   {
@@ -5704,6 +5364,93 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
+   "player": "Georgia St @ FGCU",
+   "pkey": "401921703",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Georgia St Moneyline",
+   "line": null,
+   "side": "away",
+   "team": "Georgia St",
+   "opp": "FGCU",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/172748045381459",
+   "game_id": "401921703",
+   "kickoff": "2026-11-25T16:00:00-05:00",
+   "home": "FGCU",
+   "away": "Georgia St",
+   "dec": 1.847,
+   "american": -118,
+   "game_model": {
+    "game_id": "401921703",
+    "home": "FGCU",
+    "away": "Georgia St",
+    "kickoff": "2026-11-25T16:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 70.6,
+    "proj_away": 73.6,
+    "proj_margin": -3.0,
+    "proj_total": 144.2,
+    "home_win_prob": 0.394,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": -0.371,
+    "home_em": -6.8,
+    "away_em": -1.5,
+    "home_t": 67.4,
+    "away_t": 66.2,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.98,
+     "b": 1.847
+    },
+    {
+     "book": "fanduel",
+     "a": 2.04,
+     "b": 1.82
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.09,
+     "b": 1.787
+    }
+   ],
+   "model_prob": 0.606,
+   "model_edge": 8.86,
+   "model_edge_txt": "+8.9%",
+   "cheat_side": "away",
+   "pinnacle_line": "FGCU +109 / Georgia St -127",
+   "fair_prob": 0.5391,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5391,
+    0.5413
+   ],
+   "devig_all": {
+    "multiplicative": 0.5391,
+    "additive": 0.5406,
+    "power": 0.5413
+   },
+   "ev_pct": -0.43,
+   "min_ev": 1.57,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -0.51,
+   "trusted_prob": 0.5395,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -2.39,
+   "pinn_dec": 1.787
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-25",
    "player": "Bethune @ Richmond",
    "pkey": "401911241",
    "stat": "ml",
@@ -5787,94 +5534,6 @@
    "tier": "single",
    "second_ev": -3.58,
    "pinn_dec": 1.131
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Yale @ Wright St",
-   "pkey": "401928831",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Wright St -3.5",
-   "line": -3.5,
-   "side": "home",
-   "team": "Wright St",
-   "opp": "Yale",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/210175067446557",
-   "game_id": "401928831",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "home": "Wright St",
-   "away": "Yale",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401928831",
-    "home": "Wright St",
-    "away": "Yale",
-    "kickoff": "2026-11-25T12:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 75.5,
-    "proj_away": 63.4,
-    "proj_margin": 12.1,
-    "proj_total": 139.0,
-    "home_win_prob": 0.865,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 1.52,
-    "home_em": 9.4,
-    "away_em": -3.0,
-    "home_t": 67.8,
-    "away_t": 65.5,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.746,
-     "b": 2.12
-    }
-   ],
-   "model_prob": 0.783,
-   "model_edge": 8.6,
-   "model_edge_txt": "+8.6 pts \u00b7 STRONG",
-   "cheat_side": "home",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Wright St -3.5 -134 / Yale +3.5 112",
-   "fair_prob": 0.5484,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5484,
-    0.5516
-   ],
-   "devig_all": {
-    "multiplicative": 0.5484,
-    "additive": 0.5505,
-    "power": 0.5516
-   },
-   "ev_pct": 3.81,
-   "min_ev": 1.71,
-   "units": 0.8525237100191263,
-   "base_units": 0.8525237100191263,
-   "kelly_pct": 4.26,
-   "trusted_prob": 0.5443,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.7,
-   "pinn_dec": 1.746
   },
   {
    "kind": "ml",
@@ -5962,93 +5621,6 @@
    "tier": "single",
    "second_ev": -3.71,
    "pinn_dec": 1.775
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "UConn @ Duke",
-   "pkey": "401909568",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Duke Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Duke",
-   "opp": "UConn",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/143500358608565",
-   "game_id": "401909568",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "Duke",
-   "away": "UConn",
-   "dec": 2.1,
-   "american": 110,
-   "game_model": {
-    "game_id": "401909568",
-    "home": "Duke",
-    "away": "UConn",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 73.6,
-    "proj_away": 72.5,
-    "proj_margin": 1.1,
-    "proj_total": 146.2,
-    "home_win_prob": 0.54,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 0.138,
-    "home_em": 25.8,
-    "away_em": 26.0,
-    "home_t": 71.5,
-    "away_t": 67.1,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.1,
-     "b": 1.769
-    },
-    {
-     "book": "fanduel",
-     "a": 2.02,
-     "b": 1.82
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.01,
-     "b": 1.847
-    }
-   ],
-   "model_prob": 0.54,
-   "model_edge": 8.28,
-   "model_edge_txt": "+8.3%",
-   "cheat_side": "home",
-   "pinnacle_line": "Duke +101 / UConn -118",
-   "fair_prob": 0.4776,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4776,
-    0.4789
-   ],
-   "devig_all": {
-    "multiplicative": 0.4789,
-    "additive": 0.478,
-    "power": 0.4776
-   },
-   "ev_pct": 0.3,
-   "min_ev": 2.37,
-   "units": 0.05523984330931112,
-   "base_units": 0.05523984330931112,
-   "kelly_pct": 0.28,
-   "trusted_prob": 0.4773,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -0.84,
-   "pinn_dec": 2.01
   },
   {
    "kind": "ml",
@@ -6194,93 +5766,6 @@
    "tier": "single",
    "second_ev": -1.88,
    "pinn_dec": 1.617
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Georgia St @ FGCU",
-   "pkey": "401921703",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Georgia St Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Georgia St",
-   "opp": "FGCU",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/87965397289442",
-   "game_id": "401921703",
-   "kickoff": "2026-11-25T16:00:00-05:00",
-   "home": "FGCU",
-   "away": "Georgia St",
-   "dec": 1.82,
-   "american": -122,
-   "game_model": {
-    "game_id": "401921703",
-    "home": "FGCU",
-    "away": "Georgia St",
-    "kickoff": "2026-11-25T16:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 70.6,
-    "proj_away": 73.6,
-    "proj_margin": -3.0,
-    "proj_total": 144.2,
-    "home_win_prob": 0.394,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -0.371,
-    "home_em": -6.8,
-    "away_em": -1.5,
-    "home_t": 67.4,
-    "away_t": 66.2,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.14,
-     "b": 1.741
-    },
-    {
-     "book": "fanduel",
-     "a": 2.04,
-     "b": 1.82
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.09,
-     "b": 1.787
-    }
-   ],
-   "model_prob": 0.606,
-   "model_edge": 7.75,
-   "model_edge_txt": "+7.8%",
-   "cheat_side": "away",
-   "pinnacle_line": "FGCU +109 / Georgia St -127",
-   "fair_prob": 0.5391,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5391,
-    0.5413
-   ],
-   "devig_all": {
-    "multiplicative": 0.5391,
-    "additive": 0.5406,
-    "power": 0.5413
-   },
-   "ev_pct": -1.89,
-   "min_ev": 1.48,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.3,
-   "trusted_prob": 0.5412,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "prime",
-   "second_ev": 0.36,
-   "pinn_dec": 1.787
   },
   {
    "kind": "spread",
@@ -6801,6 +6286,93 @@
    "tier": "single",
    "second_ev": -3.73,
    "pinn_dec": 1.926
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-25",
+   "player": "UConn @ Duke",
+   "pkey": "401909568",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Duke Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "Duke",
+   "opp": "UConn",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/143500358608565",
+   "game_id": "401909568",
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "home": "Duke",
+   "away": "UConn",
+   "dec": 2.02,
+   "american": 102,
+   "game_model": {
+    "game_id": "401909568",
+    "home": "Duke",
+    "away": "UConn",
+    "kickoff": "2026-11-25T19:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 73.6,
+    "proj_away": 72.5,
+    "proj_margin": 1.1,
+    "proj_total": 146.2,
+    "home_win_prob": 0.54,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 0.138,
+    "home_em": 25.8,
+    "away_em": 26.0,
+    "home_t": 71.5,
+    "away_t": 67.1,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 2.02,
+     "b": 1.82
+    },
+    {
+     "book": "fanduel",
+     "a": 2.02,
+     "b": 1.82
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.01,
+     "b": 1.847
+    }
+   ],
+   "model_prob": 0.54,
+   "model_edge": 6.6,
+   "model_edge_txt": "+6.6%",
+   "cheat_side": "home",
+   "pinnacle_line": "Duke +101 / UConn -118",
+   "fair_prob": 0.4776,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4776,
+    0.4789
+   ],
+   "devig_all": {
+    "multiplicative": 0.4789,
+    "additive": 0.478,
+    "power": 0.4776
+   },
+   "ev_pct": -3.52,
+   "min_ev": 2.12,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -3.45,
+   "trusted_prob": 0.4811,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -4.61,
+   "pinn_dec": 2.01
   },
   {
    "kind": "ml",
@@ -7637,6 +7209,88 @@
    "pinn_dec": 1.885
   },
   {
+   "kind": "total",
+   "week": "2026-11-25",
+   "player": "E Kentucky @ Miami OH",
+   "pkey": "401911029",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Under 159.5",
+   "line": 159.5,
+   "side": "under",
+   "team": null,
+   "opp": null,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/258553467729529",
+   "game_id": "401911029",
+   "kickoff": "2026-11-25T13:00:00-05:00",
+   "home": "Miami OH",
+   "away": "E Kentucky",
+   "dec": 1.909,
+   "american": -110,
+   "game_model": {
+    "game_id": "401911029",
+    "home": "Miami OH",
+    "away": "E Kentucky",
+    "kickoff": "2026-11-25T13:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 77.6,
+    "proj_away": 76.4,
+    "proj_margin": 1.2,
+    "proj_total": 154.0,
+    "home_win_prob": 0.543,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": -0.229,
+    "home_em": 8.9,
+    "away_em": -7.8,
+    "home_t": 70.7,
+    "away_t": 68.8,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.98,
+     "b": 1.826
+    }
+   ],
+   "model_prob": 0.643,
+   "model_edge": 5.5,
+   "model_edge_txt": "+5.5 pts",
+   "cheat_side": "under",
+   "pinnacle_line": "159.5 o-102/u-121",
+   "fair_prob": 0.5202,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5202,
+    0.5219
+   ],
+   "devig_all": {
+    "multiplicative": 0.5202,
+    "additive": 0.5213,
+    "power": 0.5219
+   },
+   "ev_pct": -0.69,
+   "min_ev": 1.76,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -0.76,
+   "trusted_prob": 0.521,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.826
+  },
+  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "Washington @ VCU",
@@ -7723,88 +7377,6 @@
    "tier": "single",
    "second_ev": -4.55,
    "pinn_dec": 1.971
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "Bellarmine @ N Kentucky",
-   "pkey": "401921108",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 145.5",
-   "line": 145.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/272234698138625",
-   "game_id": "401921108",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "N Kentucky",
-   "away": "Bellarmine",
-   "dec": 1.87,
-   "american": -115,
-   "game_model": {
-    "game_id": "401921108",
-    "home": "N Kentucky",
-    "away": "Bellarmine",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 78.6,
-    "proj_away": 72.3,
-    "proj_margin": 6.3,
-    "proj_total": 150.8,
-    "home_win_prob": 0.716,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 0.411,
-    "home_em": -8.3,
-    "away_em": -9.5,
-    "home_t": 71.6,
-    "away_t": 65.2,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.787,
-     "b": 2.03
-    }
-   ],
-   "model_prob": 0.638,
-   "model_edge": 5.3,
-   "model_edge_txt": "+5.3 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "145.5 o-127/u103",
-   "fair_prob": 0.5318,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5318,
-    0.5344
-   ],
-   "devig_all": {
-    "multiplicative": 0.5318,
-    "additive": 0.5335,
-    "power": 0.5344
-   },
-   "ev_pct": -0.55,
-   "min_ev": 1.64,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -0.63,
-   "trusted_prob": 0.5324,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.787
   },
   {
    "kind": "total",
@@ -8081,14 +7653,14 @@
    "side": "away",
    "team": "AR-Pine Bluff",
    "opp": "South Dakota",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/262816276830988",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/131619278230414",
    "game_id": "401929406",
    "kickoff": "2026-11-25T14:00:00-05:00",
    "home": "South Dakota",
    "away": "AR-Pine Bluff",
-   "dec": 1.926,
-   "american": -108,
+   "dec": 1.909,
+   "american": -110,
    "game_model": {
     "game_id": "401929406",
     "home": "South Dakota",
@@ -8113,8 +7685,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
+     "a": 1.926,
+     "b": 1.893
     },
     {
      "book": "fanduel",
@@ -8145,16 +7717,16 @@
     "additive": 0.4863,
     "power": 0.486
    },
-   "ev_pct": -6.39,
-   "min_ev": 1.82,
+   "ev_pct": -7.22,
+   "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -6.9,
-   "trusted_prob": 0.4927,
+   "kelly_pct": -7.94,
+   "trusted_prob": 0.4936,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.7,
+   "second_ev": -3.73,
    "pinn_dec": 1.971
   },
   {
@@ -9186,14 +8758,14 @@
    "side": "home",
    "team": "Saint Louis",
    "opp": "Stanford",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/104531096660644",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/230725377625728",
    "game_id": "401921672",
    "kickoff": "2026-11-25T23:59:00-05:00",
    "home": "Saint Louis",
    "away": "Stanford",
-   "dec": 1.952,
-   "american": -105,
+   "dec": 1.909,
+   "american": -110,
    "game_model": {
     "game_id": "401921672",
     "home": "Saint Louis",
@@ -9216,11 +8788,6 @@
     "league_avg": 107.8
    },
    "books": [
-    {
-     "book": "draftkings",
-     "a": 1.952,
-     "b": 1.87
-    },
     {
      "book": "fanduel",
      "a": 1.909,
@@ -9250,16 +8817,16 @@
     "additive": 0.4884,
     "power": 0.4882
    },
-   "ev_pct": -4.7,
-   "min_ev": 1.9,
+   "ev_pct": -6.8,
+   "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.94,
-   "trusted_prob": 0.493,
+   "kelly_pct": -7.48,
+   "trusted_prob": 0.4953,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -2.4,
+   "second_ev": null,
    "pinn_dec": 1.971
   },
   {
@@ -9565,8 +9132,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.87,
-     "b": 1.952
+     "a": 1.847,
+     "b": 1.98
     },
     {
      "book": "fanduel",
@@ -9605,8 +9172,8 @@
    "trusted_prob": 0.5101,
    "unit_note": null,
    "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -0.77,
+   "tier": "prime",
+   "second_ev": 0.53,
    "pinn_dec": 1.893
   },
   {
@@ -9627,8 +9194,8 @@
    "kickoff": "2026-11-25T16:00:00-05:00",
    "home": "FGCU",
    "away": "Georgia St",
-   "dec": 1.893,
-   "american": -112,
+   "dec": 1.952,
+   "american": -105,
    "game_model": {
     "game_id": "401921703",
     "home": "FGCU",
@@ -9653,8 +9220,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
+     "a": 1.87,
+     "b": 1.952
     },
     {
      "book": "fanduel",
@@ -9685,23 +9252,23 @@
     "additive": 0.536,
     "power": 0.5367
    },
-   "ev_pct": 1.18,
-   "min_ev": 1.71,
-   "units": 0.26487510830648664,
-   "base_units": 0.26487510830648664,
-   "kelly_pct": 1.32,
-   "trusted_prob": 0.5333,
+   "ev_pct": 4.34,
+   "min_ev": 1.9,
+   "units": 0.9109819329911482,
+   "base_units": 0.9109819329911482,
+   "kelly_pct": 4.55,
+   "trusted_prob": 0.5301,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.53,
+   "second_ev": -1.56,
    "pinn_dec": 1.794
   }
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 1.0,
+  "ev": 1.25,
   "combined": 0.5
  },
- "odds_as_of": "2026-11-25T12:20:02-05:00"
+ "odds_as_of": "2026-11-25T12:30:31-05:00"
 }
