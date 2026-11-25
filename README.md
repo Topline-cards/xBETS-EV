@@ -39,7 +39,7 @@ Last Sunday replayed: 23 plays, 8u total.
 **NBA:** Monday through Friday, plus Christmas Day (`pipeline/nba/config.py`). Switch sports with the ☰ menu in the app.
 - Stats: ESPN box scores and schedule (sportsdataverse releases, updated daily); injuries from ESPN's injury report (Out / Doubtful hidden, Day-To-Day sized down).
 - Props: points, rebounds, assists, threes made, points + rebounds + assists. Also moneyline, spread, total.
-- Cheat sheet: player's last 10 games x what the opponent allows to guards / forwards / centers.
+- Cheat sheet (your NBA notebook): what each defense allows per game to PG / SG / SF / PF / C (Basketball-Reference positions, ESPN fallback; zero-filled games; first 14 days blend last season with this season x2), ranked 1-30. Player projection = last 10 games x that matchup.
 - Same EV math and unit sizing as the NFL. PinnWire's 100 calls a day are shared by both sports.
 - Output: `docs/data/nba/`. Grading: `python -m pipeline.nba.grade`.
 
