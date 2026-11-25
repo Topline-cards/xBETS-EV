@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T00:05:32-05:00",
+ "generated_at": "2026-11-25T00:15:56-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
  "next_kickoff": "2026-11-25T00:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 218,
+  "book_game_lines": 217,
   "book_unmatched": 19,
   "book_unmatched_games": [
    "Akron @ Appalachian State",
@@ -1893,7 +1893,12 @@
    },
    "lane": "cbb:total",
    "lane_status": "testing",
-   "lane_info": null,
+   "lane_info": {
+    "graded": 0,
+    "days": 0,
+    "ev_vs_close": 2.59,
+    "roi_pct": null
+   },
    "exp_profit_units": 0.005
   }
  ],
@@ -1939,11 +1944,6 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
      "book": "fanduel",
      "a": 1.87,
      "b": 1.952
@@ -1980,11 +1980,16 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.3,
+   "second_ev": null,
    "pinn_dec": 1.8,
    "lane": "cbb:total",
    "lane_status": "testing",
-   "lane_info": null,
+   "lane_info": {
+    "graded": 0,
+    "days": 0,
+    "ev_vs_close": 2.59,
+    "roi_pct": null
+   },
    "sizing": {
     "base": 0.68,
     "conf": 0.38,
@@ -2086,7 +2091,12 @@
    "pinn_dec": 1.769,
    "lane": "cbb:total",
    "lane_status": "testing",
-   "lane_info": null,
+   "lane_info": {
+    "graded": 0,
+    "days": 0,
+    "ev_vs_close": 2.59,
+    "roi_pct": null
+   },
    "sizing": {
     "base": 0.54,
     "conf": 0.38,
@@ -2183,7 +2193,12 @@
    "pinn_dec": 1.775,
    "lane": "cbb:total",
    "lane_status": "testing",
-   "lane_info": null,
+   "lane_info": {
+    "graded": 0,
+    "days": 0,
+    "ev_vs_close": 2.59,
+    "roi_pct": null
+   },
    "sizing": {
     "base": 0.46,
     "conf": 0.47,
@@ -2299,14 +2314,14 @@
    "side": "away",
    "team": "Northern Iowa",
    "opp": "Charlotte",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/25235488267131",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/65341263523918",
    "game_id": "401921702",
    "kickoff": "2026-11-25T11:00:00-05:00",
    "home": "Charlotte",
    "away": "Northern Iowa",
-   "dec": 4.1,
-   "american": 310,
+   "dec": 3.75,
+   "american": 275,
    "game_model": {
     "game_id": "401921702",
     "home": "Charlotte",
@@ -2334,13 +2349,13 @@
     },
     {
      "book": "fanduel",
-     "a": 1.26,
-     "b": 4.1
+     "a": 1.29,
+     "b": 3.75
     }
    ],
    "model_prob": 0.494,
-   "model_edge": 25.89,
-   "model_edge_txt": "+25.9%",
+   "model_edge": 23.8,
+   "model_edge_txt": "+23.8%",
    "cheat_side": "away"
   },
   {
@@ -3863,91 +3878,6 @@
    "pinn_dec": 3.19
   },
   {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Gonzaga @ Kansas St",
-   "pkey": "401909800",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Kansas St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Kansas St",
-   "opp": "Gonzaga",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/163780761987538",
-   "game_id": "401909800",
-   "kickoff": "2026-11-25T00:30:00-05:00",
-   "home": "Kansas St",
-   "away": "Gonzaga",
-   "dec": 10.5,
-   "american": 950,
-   "game_model": {
-    "game_id": "401909800",
-    "home": "Kansas St",
-    "away": "Gonzaga",
-    "kickoff": "2026-11-25T00:30:00-05:00",
-    "neutral": true,
-    "proj_home": 72.5,
-    "proj_away": 81.7,
-    "proj_margin": -9.1,
-    "proj_total": 154.2,
-    "home_pf": 79.9,
-    "home_pa": 75.3,
-    "away_pf": 83.2,
-    "away_pa": 67.2,
-    "home_games": 5,
-    "away_games": 4,
-    "league_avg": 75.2,
-    "home_win_prob": 0.203
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 10.5,
-     "b": 1.061
-    },
-    {
-     "book": "fanduel",
-     "a": 10.2,
-     "b": 1.059
-    },
-    {
-     "book": "pinnacle",
-     "a": 10.05,
-     "b": 1.065
-    }
-   ],
-   "model_prob": 0.203,
-   "model_edge": 11.12,
-   "model_edge_txt": "+11.1%",
-   "cheat_side": "home",
-   "pinnacle_line": "Kansas St +905 / Gonzaga -1538",
-   "fair_prob": 0.07,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.07,
-    0.0958
-   ],
-   "devig_all": {
-    "multiplicative": 0.0958,
-    "additive": 0.0803,
-    "power": 0.07
-   },
-   "ev_pct": -26.5,
-   "min_ev": 10.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.79,
-   "trusted_prob": 0.075,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -31.56,
-   "pinn_dec": 10.05
-  },
-  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "Longwood @ George Mason",
@@ -3997,6 +3927,91 @@
    "model_edge": 11.0,
    "model_edge_txt": "+11.0 pts",
    "cheat_side": "away"
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-25",
+   "player": "Gonzaga @ Kansas St",
+   "pkey": "401909800",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Kansas St Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "Kansas St",
+   "opp": "Gonzaga",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/143904816671755",
+   "game_id": "401909800",
+   "kickoff": "2026-11-25T00:30:00-05:00",
+   "home": "Kansas St",
+   "away": "Gonzaga",
+   "dec": 10.2,
+   "american": 920,
+   "game_model": {
+    "game_id": "401909800",
+    "home": "Kansas St",
+    "away": "Gonzaga",
+    "kickoff": "2026-11-25T00:30:00-05:00",
+    "neutral": true,
+    "proj_home": 72.5,
+    "proj_away": 81.7,
+    "proj_margin": -9.1,
+    "proj_total": 154.2,
+    "home_pf": 79.9,
+    "home_pa": 75.3,
+    "away_pf": 83.2,
+    "away_pa": 67.2,
+    "home_games": 5,
+    "away_games": 4,
+    "league_avg": 75.2,
+    "home_win_prob": 0.203
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 10.2,
+     "b": 1.059
+    },
+    {
+     "book": "draftkings",
+     "a": 9.5,
+     "b": 1.069
+    },
+    {
+     "book": "pinnacle",
+     "a": 10.05,
+     "b": 1.065
+    }
+   ],
+   "model_prob": 0.203,
+   "model_edge": 10.89,
+   "model_edge_txt": "+10.9%",
+   "cheat_side": "home",
+   "pinnacle_line": "Kansas St +905 / Gonzaga -1538",
+   "fair_prob": 0.07,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.07,
+    0.0958
+   ],
+   "devig_all": {
+    "multiplicative": 0.0958,
+    "additive": 0.0803,
+    "power": 0.07
+   },
+   "ev_pct": -28.6,
+   "min_ev": 10.0,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -3.11,
+   "trusted_prob": 0.0756,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -24.32,
+   "pinn_dec": 10.05
   },
   {
    "kind": "ml",
@@ -4689,8 +4704,8 @@
    "kickoff": "2026-11-25T11:00:00-05:00",
    "home": "Charlotte",
    "away": "Northern Iowa",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.833,
+   "american": -120,
    "game_model": {
     "game_id": "401921702",
     "home": "Charlotte",
@@ -4713,94 +4728,14 @@
    "books": [
     {
      "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.98,
+     "b": 1.833
     }
    ],
    "model_prob": 0.775,
    "model_edge": 8.3,
    "model_edge_txt": "+8.3 pts",
    "cheat_side": "away"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Northeastern @ Wisconsin",
-   "pkey": "401911028",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Northeastern +20.5",
-   "line": -20.5,
-   "side": "away",
-   "team": "Northeastern",
-   "opp": "Wisconsin",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/137050928391968",
-   "game_id": "401911028",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "Wisconsin",
-   "away": "Northeastern",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401911028",
-    "home": "Wisconsin",
-    "away": "Northeastern",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": false,
-    "proj_home": 85.2,
-    "proj_away": 72.9,
-    "proj_margin": 12.3,
-    "proj_total": 158.1,
-    "home_pf": 80.8,
-    "home_pa": 71.5,
-    "away_pf": 77.8,
-    "away_pa": 80.2,
-    "home_games": 6,
-    "away_games": 6,
-    "league_avg": 75.2,
-    "home_win_prob": 0.869
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.05,
-     "b": 1.8
-    }
-   ],
-   "model_prob": 0.772,
-   "model_edge": 8.2,
-   "model_edge_txt": "+8.2 pts",
-   "cheat_side": "away",
-   "pinnacle_line": "Wisconsin -20.5 105 / Northeastern +20.5 -125",
-   "fair_prob": 0.5325,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5325,
-    0.5346
-   ],
-   "devig_all": {
-    "multiplicative": 0.5325,
-    "additive": 0.5339,
-    "power": 0.5346
-   },
-   "ev_pct": 0.8,
-   "min_ev": 1.71,
-   "units": 0.17829874492808795,
-   "base_units": 0.17829874492808795,
-   "kelly_pct": 0.89,
-   "trusted_prob": 0.5316,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.8
   },
   {
    "kind": "ml",
@@ -4886,57 +4821,6 @@
    "tier": "single",
    "second_ev": -4.53,
    "pinn_dec": 2.5
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "SMU @ Utah State",
-   "pkey": "401918971",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Under 168.5",
-   "line": 168.5,
-   "side": "under",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/259863851692803",
-   "game_id": "401918971",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "Utah State",
-   "away": "SMU",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401918971",
-    "home": "Utah State",
-    "away": "SMU",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": true,
-    "proj_home": 81.6,
-    "proj_away": 78.8,
-    "proj_margin": 2.8,
-    "proj_total": 160.4,
-    "home_pf": 85.6,
-    "home_pa": 70.9,
-    "away_pf": 84.0,
-    "away_pa": 72.8,
-    "home_games": 5,
-    "away_games": 6,
-    "league_avg": 75.2,
-    "home_win_prob": 0.601
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    }
-   ],
-   "model_prob": 0.705,
-   "model_edge": 8.1,
-   "model_edge_txt": "+8.1 pts",
-   "cheat_side": "under"
   },
   {
    "kind": "total",
@@ -5121,62 +5005,6 @@
    "cheat_side": "over"
   },
   {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Northeastern @ Wisconsin",
-   "pkey": "401911028",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Northeastern Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Northeastern",
-   "opp": "Wisconsin",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/275927670202756",
-   "game_id": "401911028",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "Wisconsin",
-   "away": "Northeastern",
-   "dec": 17.0,
-   "american": 1600,
-   "game_model": {
-    "game_id": "401911028",
-    "home": "Wisconsin",
-    "away": "Northeastern",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": false,
-    "proj_home": 85.2,
-    "proj_away": 72.9,
-    "proj_margin": 12.3,
-    "proj_total": 158.1,
-    "home_pf": 80.8,
-    "home_pa": 71.5,
-    "away_pf": 77.8,
-    "away_pa": 80.2,
-    "home_games": 6,
-    "away_games": 6,
-    "league_avg": 75.2,
-    "home_win_prob": 0.869
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.025,
-     "b": 17.0
-    },
-    {
-     "book": "fanduel",
-     "a": 1.025,
-     "b": 15.0
-    }
-   ],
-   "model_prob": 0.131,
-   "model_edge": 7.41,
-   "model_edge_txt": "+7.4%",
-   "cheat_side": "away"
-  },
-  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "E Kentucky @ Miami OH",
@@ -5335,6 +5163,86 @@
    "cheat_side": "over"
   },
   {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Northeastern @ Wisconsin",
+   "pkey": "401911028",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Northeastern +19.5",
+   "line": -19.5,
+   "side": "away",
+   "team": "Northeastern",
+   "opp": "Wisconsin",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/228823460519512",
+   "game_id": "401911028",
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "home": "Wisconsin",
+   "away": "Northeastern",
+   "dec": 1.98,
+   "american": -102,
+   "game_model": {
+    "game_id": "401911028",
+    "home": "Wisconsin",
+    "away": "Northeastern",
+    "kickoff": "2026-11-25T19:00:00-05:00",
+    "neutral": false,
+    "proj_home": 85.2,
+    "proj_away": 72.9,
+    "proj_margin": 12.3,
+    "proj_total": 158.1,
+    "home_pf": 80.8,
+    "home_pa": 71.5,
+    "away_pf": 77.8,
+    "away_pa": 80.2,
+    "home_games": 6,
+    "away_games": 6,
+    "league_avg": 75.2,
+    "home_win_prob": 0.869
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.833,
+     "b": 1.98
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.855,
+     "b": 1.99
+    }
+   ],
+   "model_prob": 0.744,
+   "model_edge": 7.2,
+   "model_edge_txt": "+7.2 pts",
+   "cheat_side": "away",
+   "pinnacle_line": "Wisconsin -19.5 -117 / Northeastern +19.5 -101",
+   "fair_prob": 0.4813,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4813,
+    0.4824
+   ],
+   "devig_all": {
+    "multiplicative": 0.4824,
+    "additive": 0.4817,
+    "power": 0.4813
+   },
+   "ev_pct": -4.69,
+   "min_ev": 1.99,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -4.79,
+   "trusted_prob": 0.4861,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.99
+  },
+  {
    "kind": "total",
    "week": "2026-11-25",
    "player": "Incarnate Word @ Hawai'i",
@@ -5388,6 +5296,62 @@
   {
    "kind": "total",
    "week": "2026-11-25",
+   "player": "SMU @ Utah State",
+   "pkey": "401918971",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Under 167.5",
+   "line": 167.5,
+   "side": "under",
+   "team": null,
+   "opp": null,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/134227476494361",
+   "game_id": "401918971",
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "home": "Utah State",
+   "away": "SMU",
+   "dec": 1.909,
+   "american": -110,
+   "game_model": {
+    "game_id": "401918971",
+    "home": "Utah State",
+    "away": "SMU",
+    "kickoff": "2026-11-25T19:00:00-05:00",
+    "neutral": true,
+    "proj_home": 81.6,
+    "proj_away": 78.8,
+    "proj_margin": 2.8,
+    "proj_total": 160.4,
+    "home_pf": 85.6,
+    "home_pa": 70.9,
+    "away_pf": 84.0,
+    "away_pa": 72.8,
+    "home_games": 5,
+    "away_games": 6,
+    "league_avg": 75.2,
+    "home_win_prob": 0.601
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    }
+   ],
+   "model_prob": 0.682,
+   "model_edge": 7.1,
+   "model_edge_txt": "+7.1 pts",
+   "cheat_side": "under"
+  },
+  {
+   "kind": "total",
+   "week": "2026-11-25",
    "player": "Arizona St @ LSU",
    "pkey": "401921669",
    "stat": "total",
@@ -5403,8 +5367,8 @@
    "kickoff": "2026-11-25T14:00:00-05:00",
    "home": "LSU",
    "away": "Arizona St",
-   "dec": 1.926,
-   "american": -108,
+   "dec": 1.893,
+   "american": -112,
    "game_model": {
     "game_id": "401921669",
     "home": "LSU",
@@ -5427,8 +5391,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
+     "a": 1.893,
+     "b": 1.926
     }
    ],
    "model_prob": 0.675,
@@ -5493,6 +5457,57 @@
    "cheat_side": "away"
   },
   {
+   "kind": "ml",
+   "week": "2026-11-25",
+   "player": "Northeastern @ Wisconsin",
+   "pkey": "401911028",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Northeastern Moneyline",
+   "line": null,
+   "side": "away",
+   "team": "Northeastern",
+   "opp": "Wisconsin",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/14205731302883",
+   "game_id": "401911028",
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "home": "Wisconsin",
+   "away": "Northeastern",
+   "dec": 15.0,
+   "american": 1400,
+   "game_model": {
+    "game_id": "401911028",
+    "home": "Wisconsin",
+    "away": "Northeastern",
+    "kickoff": "2026-11-25T19:00:00-05:00",
+    "neutral": false,
+    "proj_home": 85.2,
+    "proj_away": 72.9,
+    "proj_margin": 12.3,
+    "proj_total": 158.1,
+    "home_pf": 80.8,
+    "home_pa": 71.5,
+    "away_pf": 77.8,
+    "away_pa": 80.2,
+    "home_games": 6,
+    "away_games": 6,
+    "league_avg": 75.2,
+    "home_win_prob": 0.869
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.025,
+     "b": 15.0
+    }
+   ],
+   "model_prob": 0.131,
+   "model_edge": 6.7,
+   "model_edge_txt": "+6.7%",
+   "cheat_side": "away"
+  },
+  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "Gonzaga @ Kansas St",
@@ -5533,11 +5548,6 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
      "book": "fanduel",
      "a": 1.877,
      "b": 1.943
@@ -5574,7 +5584,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.14,
+   "second_ev": null,
    "pinn_dec": 1.82
   },
   {
@@ -5646,8 +5656,8 @@
    "kickoff": "2026-11-25T16:00:00-05:00",
    "home": "Marshall",
    "away": "Prairie View",
-   "dec": 1.98,
-   "american": -102,
+   "dec": 1.847,
+   "american": -118,
    "game_model": {
     "game_id": "401920858",
     "home": "Marshall",
@@ -5670,8 +5680,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.847,
-     "b": 1.98
+     "a": 1.98,
+     "b": 1.847
     }
    ],
    "model_prob": 0.72,
@@ -6206,14 +6216,14 @@
    "side": "over",
    "team": null,
    "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/278686801816479",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/218620874877975",
    "game_id": "401920916",
    "kickoff": "2026-11-25T19:00:00-05:00",
    "home": "SIUE",
    "away": "N Illinois",
-   "dec": 1.87,
-   "american": -115,
+   "dec": 1.909,
+   "american": -110,
    "game_model": {
     "game_id": "401920916",
     "home": "SIUE",
@@ -6234,6 +6244,11 @@
     "home_win_prob": 0.693
    },
    "books": [
+    {
+     "book": "draftkings",
+     "a": 1.909,
+     "b": 1.909
+    },
     {
      "book": "fanduel",
      "a": 1.87,
@@ -6262,16 +6277,16 @@
     "additive": 0.509,
     "power": 0.5092
    },
-   "ev_pct": -4.9,
-   "min_ev": 1.64,
+   "ev_pct": -2.92,
+   "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -5.64,
-   "trusted_prob": 0.5138,
+   "kelly_pct": -3.21,
+   "trusted_prob": 0.5116,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
+   "second_ev": -2.5,
    "pinn_dec": 1.87
   },
   {
@@ -7150,5 +7165,5 @@
   "ev": 0.75,
   "combined": 0.25
  },
- "odds_as_of": "2026-11-25T00:05:32-05:00"
+ "odds_as_of": "2026-11-25T00:15:56-05:00"
 }
