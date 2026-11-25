@@ -1,14 +1,14 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-24T22:22:01-05:00",
+ "generated_at": "2026-11-24T22:32:24-05:00",
  "season": 2027,
  "week": "2026-11-24",
  "day": "2026-11-24",
- "next_kickoff": "2026-11-24T22:30:00-05:00",
+ "next_kickoff": "2026-11-24T23:59:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 18,
-  "book_unmatched": 73,
+  "book_game_lines": 5,
+  "book_unmatched": 76,
   "book_unmatched_games": [
    "Abilene Christian @ South Dakota State",
    "Akron @ Appalachian State",
@@ -31,8 +31,8 @@
    "Eastern Kentucky @ Miami (OH)",
    "Eastern Kentucky @ Miami OH"
   ],
-  "pinnacle_game_lines": 57,
-  "pinnacle_unmatched": 9,
+  "pinnacle_game_lines": 19,
+  "pinnacle_unmatched": 11,
   "pinnacle_as_of": "2026-11-24T22:22:01-05:00"
  },
  "settings": {
@@ -546,60 +546,12 @@
  },
  "games": [
   {
-   "game_id": "401921712",
-   "label": "VCU @ Colorado St",
-   "kickoff": "2026-11-24T22:30:00-05:00"
-  },
-  {
-   "game_id": "401915943",
-   "label": "Oregon @ St John's",
-   "kickoff": "2026-11-24T22:30:00-05:00"
-  },
-  {
    "game_id": "401909763",
    "label": "Stanford @ Colorado",
    "kickoff": "2026-11-24T23:59:00-05:00"
   }
  ],
  "game_model": [
-  {
-   "game_id": "401921712",
-   "home": "Colorado St",
-   "away": "VCU",
-   "kickoff": "2026-11-24T22:30:00-05:00",
-   "neutral": true,
-   "proj_home": 73.0,
-   "proj_away": 76.8,
-   "proj_margin": -3.8,
-   "proj_total": 149.8,
-   "home_pf": 76.2,
-   "home_pa": 71.7,
-   "away_pf": 80.7,
-   "away_pa": 71.4,
-   "home_games": 6,
-   "away_games": 5,
-   "league_avg": 75.2,
-   "home_win_prob": 0.365
-  },
-  {
-   "game_id": "401915943",
-   "home": "St John's",
-   "away": "Oregon",
-   "kickoff": "2026-11-24T22:30:00-05:00",
-   "neutral": true,
-   "proj_home": 80.2,
-   "proj_away": 71.7,
-   "proj_margin": 8.5,
-   "proj_total": 151.9,
-   "home_pf": 84.2,
-   "home_pa": 68.7,
-   "away_pf": 77.3,
-   "away_pa": 72.5,
-   "home_games": 5,
-   "away_games": 4,
-   "league_avg": 75.2,
-   "home_win_prob": 0.78
-  },
   {
    "game_id": "401909763",
    "home": "Colorado",
@@ -792,251 +744,6 @@
    "tier": "single",
    "second_ev": -5.22,
    "pinn_dec": 2.54
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-24",
-   "player": "Oregon @ St John's",
-   "pkey": "401915943",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Under 157.5",
-   "line": 157.5,
-   "side": "under",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/158820989188147",
-   "game_id": "401915943",
-   "kickoff": "2026-11-24T22:30:00-05:00",
-   "home": "St John's",
-   "away": "Oregon",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401915943",
-    "home": "St John's",
-    "away": "Oregon",
-    "kickoff": "2026-11-24T22:30:00-05:00",
-    "neutral": true,
-    "proj_home": 80.2,
-    "proj_away": 71.7,
-    "proj_margin": 8.5,
-    "proj_total": 151.9,
-    "home_pf": 84.2,
-    "home_pa": 68.7,
-    "away_pf": 77.3,
-    "away_pa": 72.5,
-    "home_games": 5,
-    "away_games": 4,
-    "league_avg": 75.2,
-    "home_win_prob": 0.78
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.893
-    }
-   ],
-   "model_prob": 0.646,
-   "model_edge": 5.6,
-   "model_edge_txt": "+5.6 pts",
-   "cheat_side": "under",
-   "pinnacle_line": "157.5 o-110/u-112",
-   "fair_prob": 0.5021,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5021,
-    0.5023
-   ],
-   "devig_all": {
-    "multiplicative": 0.5021,
-    "additive": 0.5022,
-    "power": 0.5023
-   },
-   "ev_pct": -4.15,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.56,
-   "trusted_prob": 0.5065,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.893
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-24",
-   "player": "Oregon @ St John's",
-   "pkey": "401915943",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Oregon Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Oregon",
-   "opp": "St John's",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/221772295801498",
-   "game_id": "401915943",
-   "kickoff": "2026-11-24T22:30:00-05:00",
-   "home": "St John's",
-   "away": "Oregon",
-   "dec": 5.7,
-   "american": 470,
-   "game_model": {
-    "game_id": "401915943",
-    "home": "St John's",
-    "away": "Oregon",
-    "kickoff": "2026-11-24T22:30:00-05:00",
-    "neutral": true,
-    "proj_home": 80.2,
-    "proj_away": 71.7,
-    "proj_margin": 8.5,
-    "proj_total": 151.9,
-    "home_pf": 84.2,
-    "home_pa": 68.7,
-    "away_pf": 77.3,
-    "away_pa": 72.5,
-    "home_games": 5,
-    "away_games": 4,
-    "league_avg": 75.2,
-    "home_win_prob": 0.78
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.154,
-     "b": 5.7
-    },
-    {
-     "book": "fanduel",
-     "a": 1.172,
-     "b": 5.3
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.155,
-     "b": 5.8
-    }
-   ],
-   "model_prob": 0.22,
-   "model_edge": 5.16,
-   "model_edge_txt": "+5.2%",
-   "cheat_side": "away",
-   "pinnacle_line": "St John's -645 / Oregon +480",
-   "fair_prob": 0.1459,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.1459,
-    0.1661
-   ],
-   "devig_all": {
-    "multiplicative": 0.1661,
-    "additive": 0.1533,
-    "power": 0.1459
-   },
-   "ev_pct": -16.81,
-   "min_ev": 8.7,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.58,
-   "trusted_prob": 0.1518,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -8.78,
-   "pinn_dec": 5.8
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-24",
-   "player": "Oregon @ St John's",
-   "pkey": "401915943",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Oregon +11.5",
-   "line": -11.5,
-   "side": "away",
-   "team": "Oregon",
-   "opp": "St John's",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/128823691079276",
-   "game_id": "401915943",
-   "kickoff": "2026-11-24T22:30:00-05:00",
-   "home": "St John's",
-   "away": "Oregon",
-   "dec": 1.847,
-   "american": -118,
-   "game_model": {
-    "game_id": "401915943",
-    "home": "St John's",
-    "away": "Oregon",
-    "kickoff": "2026-11-24T22:30:00-05:00",
-    "neutral": true,
-    "proj_home": 80.2,
-    "proj_away": 71.7,
-    "proj_margin": 8.5,
-    "proj_total": 151.9,
-    "home_pf": 84.2,
-    "home_pa": 68.7,
-    "away_pf": 77.3,
-    "away_pa": 72.5,
-    "home_games": 5,
-    "away_games": 4,
-    "league_avg": 75.2,
-    "home_win_prob": 0.78
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.98,
-     "b": 1.847
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.0,
-     "b": 1.84
-    }
-   ],
-   "model_prob": 0.607,
-   "model_edge": 3.0,
-   "model_edge_txt": "+3.0 pts",
-   "cheat_side": "away",
-   "pinnacle_line": "St John's -11.5 100 / Oregon +11.5 -119",
-   "fair_prob": 0.5208,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5208,
-    0.5222
-   ],
-   "devig_all": {
-    "multiplicative": 0.5208,
-    "additive": 0.5217,
-    "power": 0.5222
-   },
-   "ev_pct": -3.8,
-   "min_ev": 1.57,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.49,
-   "trusted_prob": 0.525,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.84
   }
  ],
  "matchups": [],
@@ -1044,5 +751,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-24T22:22:01-05:00"
+ "odds_as_of": "2026-11-24T22:32:24-05:00"
 }
