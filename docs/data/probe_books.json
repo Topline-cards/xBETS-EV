@@ -1,0 +1,604 @@
+{
+ "list/sportsbooks": {
+  "status": 200,
+  "body": {
+   "data": [
+    {
+     "id": "onexbet",
+     "display_name": "1xBet",
+     "short_name": "1xBet",
+     "numerical_id": 27,
+     "category": "sharp",
+     "is_sharp": true,
+     "has_live_odds": true,
+     "has_player_props": false,
+     "logo": "https://cdn.sharpapi.io/sportsbooks/onexbet.png",
+     "pricing_model": "back",
+     "is_pickem": false,
+     "has_limits": false,
+     "regions": [
+      "GLOBAL"
+     ],
+     "requires_tier": "sharp",
+     "status": "active",
+     "event_count": 3376,
+     "last_update": "2026-11-25T02:35:49.037034664Z",
+     "coming_soon": false,
+     "currently_serving": true,
+     "idle_reason": null,
+     "outage": null
+    },
+    {
+     "id": "bovada",
+     "display_name": "Bovada",
+     "short_name": "Bovada",
+     "numerical_id": 14,
+     "category": "regional",
+     "is_sharp": false,
+     "has_live_odds": true,
+     "has_player_props": true,
+     "logo": "https://cdn.sharpapi.io/sportsbooks/bovada.png",
+     "pricing_model": "back",
+     "is_pickem": false,
+     "has_limits": false,
+     "regions": [
+      "US"
+     ],
+     "requires_tier": "hobby",
+     "status": "active",
+     "event_count": 1943,
+     "last_update": "2026-11-25T02:35:49.065902832Z",
+     "coming_soon": false,
+     "currently_serving": true,
+     "idle_reason": null,
+     "outage": null
+    },
+    {
+     "id": "saba",
+     "display_name": "SABA",
+     "short_name": "SABA",
+     "numerical_id": 32,
+     "category": "regional",
+     "is_sharp": false,
+     "has_live_odds": true,
+     "has_player_props": true,
+     "logo": "https://cdn.sharpapi.io/sportsbooks/saba.png",
+     "pricing_model": "back",
+     "is_pickem": false,
+     "has_limits": false,
+     "regions": [
+      "GLOBAL"
+     ],
+     "requires_tier": "pro",
+     "status": "active",
+     "event_count": 1676,
+     "last_update": "2026-11-25T02:35:49.017016109Z",
+     "coming_soon": false,
+     "currently_serving": true,
+     "idle_reason": null,
+     "outage": null
+    },
+    "\u2026 66 more"
+   ],
+   "retired": [
+    {
+     "id": "188bet",
+     "display_name": "188bet"
+    },
+    {
+     "id": "betano",
+     "display_name": "Betano"
+    },
+    {
+     "id": "galera",
+     "display_name": "Galera.bet"
+    },
+    "\u2026 5 more"
+   ],
+   "updated_at": "2026-11-25T02:35:53.491453845Z"
+  }
+ },
+ "list/books": {
+  "status": 404,
+  "body": "{\"error\":{\"code\":\"not_found\",\"docs\":\"https://docs.sharpapi.io/en/api-reference/overview\",\"message\":\"No endpoint exists at this path. See the API reference for the available endpoints.\"}}\n"
+ },
+ "list/meta/sportsbooks": {
+  "status": 404,
+  "body": "{\"error\":{\"code\":\"not_found\",\"docs\":\"https://docs.sharpapi.io/en/api-reference/overview\",\"message\":\"No endpoint exists at this path. See the API reference for the available endpoints.\"}}\n"
+ },
+ "books": {
+  "pinnacle": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "pinnacle"
+     ],
+     "required_tier": "sharp"
+    },
+    "message": "the requested sportsbooks require sharp tier or higher; your current plan is free. Start Sharp for $399/mo, with 25 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/sharp",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/sharp?utm_source=api&utm_medium=403&utm_campaign=sharp-plan-books",
+    "upgrade_note": "Start Sharp for $399/mo, with 25 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "circa": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "circa"
+     ],
+     "required_tier": "sharp"
+    },
+    "message": "the requested sportsbooks require sharp tier or higher; your current plan is free. Start Sharp for $399/mo, with 25 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/sharp",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/sharp?utm_source=api&utm_medium=403&utm_campaign=sharp-plan-books",
+    "upgrade_note": "Start Sharp for $399/mo, with 25 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "bookmaker": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "bookmaker"
+     ],
+     "required_tier": "sharp"
+    },
+    "message": "the requested sportsbooks require sharp tier or higher; your current plan is free. Start Sharp for $399/mo, with 25 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/sharp",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/sharp?utm_source=api&utm_medium=403&utm_campaign=sharp-plan-books",
+    "upgrade_note": "Start Sharp for $399/mo, with 25 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "betonline": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "betonline"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "kalshi": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "kalshi"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "novig": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "novig"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "prophetx": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "prophetx"
+     ],
+     "required_tier": "sharp"
+    },
+    "message": "the requested sportsbooks require sharp tier or higher; your current plan is free. Start Sharp for $399/mo, with 25 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/sharp",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/sharp?utm_source=api&utm_medium=403&utm_campaign=sharp-plan-books",
+    "upgrade_note": "Start Sharp for $399/mo, with 25 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "polymarket": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "polymarket"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "caesars": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "caesars"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "betmgm": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "betmgm"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "espnbet": {
+   "status": 400,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "invalid_filter",
+    "details": {
+     "fields": {
+      "sportsbook": [
+       "espnbet"
+      ]
+     },
+     "reference": {
+      "sportsbook": "/api/v1/sportsbooks"
+     }
+    },
+    "docs": "https://docs.sharpapi.io/en/api-reference/common-4xx-errors",
+    "message": "Invalid value for sportsbook: \"espnbet\". See GET /api/v1/sportsbooks for valid values."
+   }
+  },
+  "fanatics": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "fanatics"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "bet365": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "bet365"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "betrivers": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "betrivers"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "hardrock": {
+   "status": 403,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "tier_restricted",
+    "details": {
+     "allowed": [
+      "draftkings",
+      "fanduel"
+     ],
+     "field": "sportsbook",
+     "requested": [
+      "hardrock"
+     ],
+     "required_tier": "hobby"
+    },
+    "message": "the requested sportsbooks require hobby tier or higher; your current plan is free. Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible): https://sharpapi.io/dashboard/billing/upgrade/hobby",
+    "upgrade": "https://sharpapi.io/dashboard/billing/upgrade/hobby?utm_source=api&utm_medium=403&utm_campaign=hobby-plan-books",
+    "upgrade_note": "Start Hobby for $79/mo, with 5 sportsbooks of your choice (3-day free trial if eligible)"
+   }
+  },
+  "sporttrade": {
+   "status": 400,
+   "rows": 0,
+   "markets": [],
+   "msg": {
+    "code": "invalid_filter",
+    "details": {
+     "fields": {
+      "sportsbook": [
+       "sporttrade"
+      ]
+     },
+     "reference": {
+      "sportsbook": "/api/v1/sportsbooks"
+     }
+    },
+    "docs": "https://docs.sharpapi.io/en/api-reference/common-4xx-errors",
+    "message": "Invalid value for sportsbook: \"sporttrade\". See GET /api/v1/sportsbooks for valid values."
+   }
+  }
+ },
+ "td_markets": [],
+ "td_sample": [],
+ "pinn_units": [
+  [
+   "Points",
+   192
+  ],
+  [
+   "Receptions",
+   60
+  ],
+  [
+   "Receiving Yards",
+   59
+  ],
+  [
+   "Rushing Yards",
+   29
+  ],
+  [
+   "Rush Attempts",
+   17
+  ],
+  [
+   "Pass Attempts",
+   10
+  ],
+  [
+   "Place 1st",
+   9
+  ],
+  [
+   "Touchdown Passes",
+   9
+  ],
+  [
+   "Pass Completions",
+   9
+  ],
+  [
+   "Playoffs",
+   7
+  ],
+  [
+   "Interceptions",
+   7
+  ],
+  [
+   "Passing Yards",
+   6
+  ],
+  [
+   "Field Goals",
+   6
+  ]
+ ],
+ "pinn_td_names": [
+  "Bo Nix Total Touchdown Passes",
+  "Caleb Williams Total Touchdown Passes",
+  "Dak Prescott Total Touchdown Passes",
+  "Jared Goff Total Touchdown Passes",
+  "Joe Milton III Total Touchdown Passes",
+  "Jordan Love Total Touchdown Passes",
+  "Josh Allen Total Touchdown Passes",
+  "Matthew Stafford Total Touchdown Passes",
+  "Patrick Mahomes Total Touchdown Passes"
+ ],
+ "pinn_td_sample": [
+  {
+   "event_id": 1641021169,
+   "sport_id": 5,
+   "league_id": 889,
+   "league_name": "NFL",
+   "special": "Joe Milton III Total Touchdown Passes",
+   "special_category": "Player Props",
+   "special_units": "Touchdown Passes",
+   "parent_id": 1640324449,
+   "starts": "2026-11-26T21:30:00Z",
+   "start_ts": "2026-11-26T21:30:00Z",
+   "event_type": "prematch",
+   "is_have_odds": true,
+   "special_markets": {
+    "num_0": [
+     {
+      "type": "total",
+      "key": "s;0;ou",
+      "side": null,
+      "max_risk": 250,
+      "prices": [
+       {
+        "name": "Over",
+        "participant_id": 1641021170,
+        "points": 0.5,
+        "price": 1.37
+       },
+       {
+        "name": "Under",
+        "participant_id": 1641021171,
+        "points": 0.5,
+        "price": 2.94
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "event_id": 1641020715,
+   "sport_id": 5,
+   "league_id": 889,
+   "league_name": "NFL",
+   "special": "Jordan Love Total Touchdown Passes",
+   "special_category": "Player Props",
+   "special_units": "Touchdown Passes",
+   "parent_id": 1640290614,
+   "starts": "2026-11-26T01:00:00Z",
+   "start_ts": "2026-11-26T01:00:00Z",
+   "event_type": "prematch",
+   "is_have_odds": true,
+   "special_markets": {
+    "num_0": [
+     {
+      "type": "total",
+      "key": "s;0;ou",
+      "side": null,
+      "max_risk": 500,
+      "prices": [
+       {
+        "name": "Over",
+        "participant_id": 1641020716,
+        "points": 1.5,
+        "price": 1.893
+       },
+       {
+        "name": "Under",
+        "participant_id": 1641020717,
+        "points": 1.5,
+        "price": 1.893
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
