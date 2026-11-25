@@ -47,7 +47,7 @@ Last Sunday replayed: 23 plays, 8u total.
 
 **College basketball (CBB):** Tuesdays, Wednesdays, Fridays and Saturdays; moneyline, spread and total only (`pipeline/cbb/`).
 - EV vs Pinnacle's NCAA lines (same rules as NFL/NBA). On NBA days the NBA's Pinnacle call already carries the college lines, so CBB costs no extra PinnWire calls.
-- Cheat sheet: ridge-regression team ratings (offense/defense) from every completed game this season (last season blended in early), 3-pt home court, no home court at neutral sites.
+- Cheat sheet = your CBB Daily Edges model (`pipeline/cbb/torvik.py`): four factors z-scored, weights 35/25/20/15/10, slope calibrated on recent finals (anchored to 6.09 / 10.15), 3-pt home court, 14-day blend, non-D1 stand-in, tiers LEAN 1.5 / GOOD 3 / STRONG 6 / CHECK >12. barttorvik.com blocks GitHub, so four factors come from your Sports-Reference fallback and adjusted efficiency/tempo are computed from ESPN box scores (Torvik-style ridge fit). Totals: tempo x efficiency.
 - Team names are matched game by game across ESPN, DraftKings/FanDuel and Pinnacle; anything not clearly matched is skipped, never guessed.
 
 ## Pricing rules (from the +EV Best Practices Playbook)

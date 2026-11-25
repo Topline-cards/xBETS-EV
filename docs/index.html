@@ -584,8 +584,21 @@ function defLog(p){
     <table style="margin-top:8px"><tr><th>${S.sport === "nfl" ? "Week" : "Game"}</th><th>Opponent</th><th class="num">Allowed</th><th class="num">vs avg</th></tr>${rows}</table></div>`;
 }
 
+function cbbModelSection(m, p){
+  const read = p ? `<span class="eq">${p.kind === "ml" ? `Model win % ${p1(p.model_prob)} vs book ${p1(1 / p.dec)} (with vig)`
+      : p.kind === "spread" ? `Your model vs this spread: ${esc(p.model_edge_txt)}` : `Projected total vs this line: ${esc(p.model_edge_txt)}`}</span>` +
+    (p.cheat_side ? `<b class="good">Cheat sheet likes this side</b>` : `<span class="note">Cheat-sheet play needs LEAN or better on spreads (1.5+ pts, not CHECK over 12), 5+ pts on totals, 5%+ on moneylines.</span>`) : "";
+  return `<div class="sec"><h3>CBB Daily Edges model</h3><div class="calc">
+    <span class="note">Adjusted efficiency margin (points per 100 possessions vs an average team) and tempo:</span>
+    <span class="eq">${esc(m.home)}: ${m.home_em > 0 ? "+" : ""}${m.home_em} · ${m.home_t} poss<br>${esc(m.away)}${m.non_d1 === "away" ? " (non-D1, estimated)" : ""}: ${m.away_em > 0 ? "+" : ""}${m.away_em} · ${m.away_t} poss</span>
+    <span class="note">${m.model === "FULL" ? "Shooting (eFG) 35% · rebounding 25% · efficiency 20% · turnovers 15% · free throws 10%" : "Efficiency only (four factors missing for a team)"}, z-scored, × slope ${m.slope} pts${m.neutral ? " · neutral site" : " + 3 pts home court"}:</span>
+    <span class="eq">${m.proj_margin >= 0 ? esc(m.home) : esc(m.away)} by ${Math.abs(m.proj_margin)} · Total ${m.proj_total} (tempo × efficiency) · ${esc(m.home)} win ${p1(m.home_win_prob)}</span>
+    ${read}</div></div>`;
+}
+
 function gameModelSection(m, p){
   if (!m) return "";
+  if (m.model) return cbbModelSection(m, p);
   const st = S.data.settings || {};
   const w = st.game_weight ?? 0.6, hfa = st.home_field ?? 1.5;
   let read = "";

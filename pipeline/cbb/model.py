@@ -19,12 +19,67 @@ def _cache_dir():
     return os.path.join(base, "cache")
 
 
+HFA_EFF = 3.0 / 70 * 100 / 2       # 3 pts home court ~ 4.3 pts per 100 possessions, split by side
+RIDGE_EFF = 8.0
+
+
+def ratings_from_box(season, sched=None):
+    """
+    Torvik-style adjusted ratings from ESPN team box scores (used when barttorvik.com blocks us):
+      possessions = FGA - ORB + TO + 0.475*FTA (averaged over both teams),
+      points per 100 possessions = avg + offense(team) - defense(opponent) +/- home court,
+      possessions = avg + pace(team) + pace(opponent); both fit by ridge regression.
+    Returns DataFrame [team, adjoe, adjde, adjt, gp] like Torvik's team_results.csv.
+    """
+    from ..nba.stats import REL, _hour, _parquet
+    b = _parquet(f"{REL}/espn_mens_college_basketball_team_boxscores/team_box_{season}.parquet", _hour())
+    if b is None or b.empty:
+        return None
+    b = b[b["season_type"].isin([2, 3])].copy()
+    b["poss"] = (b["field_goals_attempted"] - b["offensive_rebounds"] + b["total_turnovers"]
+                 + 0.475 * b["free_throws_attempted"])
+    g = b.groupby("game_id")["poss"].transform("mean")
+    b = b[(g > 40) & (g < 110)].copy()
+    b["gposs"] = b.groupby("game_id")["poss"].transform("mean")
+    teams = sorted(set(b["team_location"]))
+    ix = {t: i for i, t in enumerate(teams)}
+    b = b[b["opponent_team_location"].isin(ix)]
+    neutral = {}
+    if sched is not None and "neutral_site" in sched:
+        neutral = dict(zip(sched["game_id"].astype(str), sched["neutral_site"]))
+    n, rows = len(teams), len(b)
+    X = np.zeros((rows, 2 * n))
+    Xp = np.zeros((rows, n))
+    y, yp = np.zeros(rows), np.zeros(rows)
+    for k, r in enumerate(b.itertuples()):
+        t, o = ix[r.team_location], ix[r.opponent_team_location]
+        side = 0.0 if neutral.get(str(r.game_id)) else (1.0 if r.team_home_away == "home" else -1.0)
+        X[k, t], X[k, n + o] = 1.0, -1.0
+        y[k] = r.team_score / r.gposs * 100 - side * HFA_EFF
+        Xp[k, t] = Xp[k, o] = 1.0
+        yp[k] = r.gposs
+    mu, mut = y.mean(), yp.mean()
+    beta = np.linalg.solve(X.T @ X + RIDGE_EFF * np.eye(2 * n), X.T @ (y - mu))
+    pace = np.linalg.solve(Xp.T @ Xp + RIDGE_EFF * np.eye(n), Xp.T @ (yp - mut))
+    gp = b.groupby("team_location").size()
+    return pd.DataFrame({"team": teams, "adjoe": mu + beta[:n], "adjde": mu - beta[n:],
+                         "adjt": mut + pace, "gp": [int(gp.get(t, 0)) for t in teams]})
+
+
 def fit(sched, today):
     """Load Torvik tables, blend, z-score, calibrate slopes on ESPN finals. Returns ctx or None."""
     T.set_cache_dir(_cache_dir())
     T.RUN_LOG.clear()
     cur_y = T.season_year(today)
     tables = T.load_all_tables(cur_y)
+    for key, yr in (("cur_res", cur_y), ("prev_res", cur_y - 1)):
+        if tables[key] is None:                  # barttorvik.com blocks GitHub: compute them
+            try:
+                prev_sched = sched if yr == cur_y else None
+                tables[key] = ratings_from_box(yr, prev_sched)
+                T.log(f"  ratings {yr}: computed from ESPN box scores ({0 if tables[key] is None else len(tables[key])} teams)")
+            except Exception as e:
+                T.log(f"  ratings {yr}: box-score fit failed ({type(e).__name__}: {str(e)[:80]})")
     names = []
     for k in ("cur_res", "prev_res"):
         if tables[k] is not None:
@@ -51,9 +106,11 @@ def fit(sched, today):
     d1 = Z.drop(index=T.NON_D1_KEY)
     return {"R": R, "Z": Z, "slopes": slopes, "info": info,
             "avg_t": float(d1["adjt"].mean()) if d1["adjt"].notna().any() else 68.0,
-            "avg_eff": float(d1["adjoe"].mean()), "sources": {k: (None if v is None else str(v["source"].iloc[0])
-                                                                  if "source" in v else "Torvik")
-                                                              for k, v in tables.items()},
+            "avg_eff": float(d1["adjoe"].mean()),
+            "sources": {k: (None if v is None else (str(v["source"].iloc[0]) if "source" in v else
+                                                    ("Torvik" if "Torvik" in " ".join(T.RUN_LOG) and False else
+                                                     "ESPN box scores (adjusted)")))
+                        for k, v in tables.items()},
             "log": list(T.RUN_LOG)}
 
 

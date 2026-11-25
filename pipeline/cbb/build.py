@@ -14,7 +14,7 @@ from .. import build as pb
 from .. import config as shared
 from .. import ev, gamelines, notify, odds
 from ..stats import ET
-from . import config, stats
+from . import config, model, stats
 
 RAW = lambda n, h=None: n            # noqa: E731  keep feed team names; matched per game below
 
@@ -65,9 +65,18 @@ def _build(now, force):
     if state.get("pinn_day") != today:
         state.update(pinn_day=today, pinn_calls=0)
 
-    prior = stats.load_schedule(season - 1)
-    ratings, mu, hca = stats.team_ratings(sched, prior, now)
-    gm = stats.project_games(day_games, ratings, mu, hca)
+    model_note = "CBB Daily Edges model"
+    try:
+        ctx = model.fit(sched, now.date())
+        gm = model.project_games(day_games, ctx) if ctx else {}
+    except Exception as e:
+        print("CBB model failed:", e)
+        ctx, gm = None, {}
+    if not gm:                       # fallback: simple ridge ratings from final scores
+        prior = stats.load_schedule(season - 1)
+        ratings, mu, hca = stats.team_ratings(sched, prior, now)
+        gm = stats.project_games(day_games, ratings, mu, hca)
+        model_note = "fallback ratings (your model's data was unavailable)"
     gm_by_id = {m["game_id"]: m for m in gm.values()}
 
     soon = stats.games_in_window(sl, shared.PREGAME_WINDOW_HOURS, now)
@@ -151,6 +160,14 @@ def _build(now, force):
             if m:
                 implied = (own[0] if i == 0 else own[1]) if own else 1 / dec
                 p.update(gamelines.evaluate(m, g["kind"], side, g["line"], implied, config))
+                if g["kind"] == "spread":         # your tiers; CHECK (>12 pts off the market) is never a play
+                    edge = (m["proj_margin"] + g["line"]) * (1 if side == "home" else -1)
+                    t = model.tier(edge) if edge > 0 else None
+                    p["cbb_tier"] = t
+                    if t:
+                        p["model_edge_txt"] = f"{p.get('model_edge_txt', '')} · {t}"
+                    if t == "CHECK":
+                        p["cheat_side"] = None
             if fair:
                 fa_, fb_ = ev.decimal_to_american(fair["a"]), ev.decimal_to_american(fair["b"])
                 if g["kind"] == "total":
@@ -190,7 +207,9 @@ def _build(now, force):
                      "max_units_prop": shared.MAX_UNITS["prop"], "max_units_line": shared.MAX_UNITS["line"],
                      "suspect_ev": shared.SUSPECT_EV_PCT, "suspect_units": shared.SUSPECT_MAX_UNITS,
                      "min_ev": shared.MIN_EV_PCT, "game_weight": config.GAME_MODEL_WEIGHT,
-                     "home_field": config.HOME_FIELD_PTS, "lines_only": True},
+                     "home_field": config.HOME_FIELD_PTS, "lines_only": True, "model": model_note,
+                     "model_sources": (ctx or {}).get("sources"),
+                     "slopes": {k: round(v["slope"], 2) for k, v in (ctx or {}).get("slopes", {}).items()}},
         "logos": pb._safe(lambda: stats.team_logos(sched), {}),
         "games": games_list, "game_model": sorted(gm.values(), key=lambda m: m["kickoff"]),
         "combined": combined, "ev": ev_picks, "cheat": cheat_picks, "matchups": [],
