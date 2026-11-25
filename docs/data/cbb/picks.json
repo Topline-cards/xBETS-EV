@@ -1,38 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T00:26:17-05:00",
+ "generated_at": "2026-11-25T00:36:39-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T00:30:00-05:00",
+ "next_kickoff": "2026-11-25T10:00:00-05:00",
  "status": {
-  "odds_checked": true,
-  "book_game_lines": 219,
-  "book_unmatched": 19,
-  "book_unmatched_games": [
-   "Akron @ Appalachian State",
-   "Albany NY @ Syracuse",
-   "Alcorn @ Texas State",
-   "Arizona @ Ole Miss",
-   "BYU @ Providence",
-   "CSU Bakersfield @ Pepperdine",
-   "Duke @ Connecticut",
-   "Grambling @ New Orleans",
-   "Maryland @ San Diego State",
-   "Miami FL @ Michigan",
-   "Mississippi Valley @ New Mexico",
-   "Northern Colorado @ Detroit Mercy",
-   "Ole Miss @ Arizona",
-   "Providence @ BYU",
-   "SE Louisiana @ North Dakota",
-   "Stanford @ Colorado",
-   "TCU @ Creighton",
-   "Tennessee @ Iowa State",
-   "UC Davis @ Nebraska Omaha"
-  ],
-  "pinnacle_game_lines": 276,
-  "pinnacle_unmatched": 2,
-  "pinnacle_as_of": "2026-11-25T00:26:17-05:00"
+  "odds_checked": false,
+  "reason": "no game within 4h"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -545,11 +520,6 @@
  },
  "games": [
   {
-   "game_id": "401909800",
-   "label": "Gonzaga @ Kansas St",
-   "kickoff": "2026-11-25T00:30:00-05:00"
-  },
-  {
    "game_id": "401927399",
    "label": "St Bonaventure @ Belmont",
    "kickoff": "2026-11-25T10:00:00-05:00"
@@ -846,25 +816,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401909800",
-   "home": "Kansas St",
-   "away": "Gonzaga",
-   "kickoff": "2026-11-25T00:30:00-05:00",
-   "neutral": true,
-   "proj_home": 72.5,
-   "proj_away": 81.7,
-   "proj_margin": -9.1,
-   "proj_total": 154.2,
-   "home_pf": 79.9,
-   "home_pa": 75.3,
-   "away_pf": 83.2,
-   "away_pa": 67.2,
-   "home_games": 5,
-   "away_games": 4,
-   "league_avg": 75.2,
-   "home_win_prob": 0.203
-  },
   {
    "game_id": "401927399",
    "home": "Belmont",
@@ -3926,91 +3877,6 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
-   "player": "Gonzaga @ Kansas St",
-   "pkey": "401909800",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Kansas St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Kansas St",
-   "opp": "Gonzaga",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/143904816671755",
-   "game_id": "401909800",
-   "kickoff": "2026-11-25T00:30:00-05:00",
-   "home": "Kansas St",
-   "away": "Gonzaga",
-   "dec": 9.6,
-   "american": 860,
-   "game_model": {
-    "game_id": "401909800",
-    "home": "Kansas St",
-    "away": "Gonzaga",
-    "kickoff": "2026-11-25T00:30:00-05:00",
-    "neutral": true,
-    "proj_home": 72.5,
-    "proj_away": 81.7,
-    "proj_margin": -9.1,
-    "proj_total": 154.2,
-    "home_pf": 79.9,
-    "home_pa": 75.3,
-    "away_pf": 83.2,
-    "away_pa": 67.2,
-    "home_games": 5,
-    "away_games": 4,
-    "league_avg": 75.2,
-    "home_win_prob": 0.203
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 9.6,
-     "b": 1.069
-    },
-    {
-     "book": "draftkings",
-     "a": 9.5,
-     "b": 1.069
-    },
-    {
-     "book": "pinnacle",
-     "a": 10.05,
-     "b": 1.065
-    }
-   ],
-   "model_prob": 0.203,
-   "model_edge": 10.28,
-   "model_edge_txt": "+10.3%",
-   "cheat_side": "home",
-   "pinnacle_line": "Kansas St +905 / Gonzaga -1538",
-   "fair_prob": 0.07,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.07,
-    0.0958
-   ],
-   "devig_all": {
-    "multiplicative": 0.0958,
-    "additive": 0.0803,
-    "power": 0.07
-   },
-   "ev_pct": -32.8,
-   "min_ev": 10.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.81,
-   "trusted_prob": 0.0768,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -28.77,
-   "pinn_dec": 10.05
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
    "player": "Liberty @ Princeton",
    "pkey": "401924737",
    "stat": "ml",
@@ -6025,91 +5891,6 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Gonzaga @ Kansas St",
-   "pkey": "401909800",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Kansas St +14.5",
-   "line": 14.5,
-   "side": "home",
-   "team": "Kansas St",
-   "opp": "Gonzaga",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/168017397698068",
-   "game_id": "401909800",
-   "kickoff": "2026-11-25T00:30:00-05:00",
-   "home": "Kansas St",
-   "away": "Gonzaga",
-   "dec": 1.952,
-   "american": -105,
-   "game_model": {
-    "game_id": "401909800",
-    "home": "Kansas St",
-    "away": "Gonzaga",
-    "kickoff": "2026-11-25T00:30:00-05:00",
-    "neutral": true,
-    "proj_home": 72.5,
-    "proj_away": 81.7,
-    "proj_margin": -9.1,
-    "proj_total": 154.2,
-    "home_pf": 79.9,
-    "home_pa": 75.3,
-    "away_pf": 83.2,
-    "away_pa": 67.2,
-    "home_games": 5,
-    "away_games": 4,
-    "league_avg": 75.2,
-    "home_win_prob": 0.203
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.952,
-     "b": 1.87
-    },
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.01,
-     "b": 1.833
-    }
-   ],
-   "model_prob": 0.688,
-   "model_edge": 5.4,
-   "model_edge_txt": "+5.4 pts",
-   "cheat_side": "home",
-   "pinnacle_line": "Kansas St +14.5 101 / Gonzaga -14.5 -120",
-   "fair_prob": 0.4755,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4755,
-    0.477
-   ],
-   "devig_all": {
-    "multiplicative": 0.477,
-    "additive": 0.476,
-    "power": 0.4755
-   },
-   "ev_pct": -7.19,
-   "min_ev": 1.9,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -7.55,
-   "trusted_prob": 0.4828,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.4,
-   "pinn_dec": 2.01
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
    "player": "Rice @ Ohio",
    "pkey": "401928845",
    "stat": "spread",
@@ -7177,8 +6958,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.75,
-  "combined": 0.25
+  "ev": 0,
+  "combined": 0
  },
  "odds_as_of": "2026-11-25T00:26:17-05:00"
 }
