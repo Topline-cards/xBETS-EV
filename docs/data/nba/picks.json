@@ -1,17 +1,16 @@
 {
  "sport": "nba",
- "generated_at": "2026-11-24T20:45:23-05:00",
+ "generated_at": "2026-11-24T20:55:49-05:00",
  "season": 2027,
  "week": "2026-11-24",
  "day": "2026-11-24",
  "next_kickoff": "2026-11-24T22:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_props": 311,
+  "book_props": 299,
   "book_game_lines": 30,
   "pinnacle_props": 39,
-  "pinnacle_game_lines": 115,
-  "pinnacle_as_of": "2026-11-24T20:34:56-05:00"
+  "pinnacle_game_lines": 230
  },
  "settings": {
   "unit_pct": 1.0,
@@ -526,18 +525,13 @@
    "stat": "fg3",
    "stat_label": "Threes Made",
    "line": 0.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/131815892467606",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/48190583440133",
    "books": [
     {
      "book": "draftkings",
      "over": 1.437,
      "under": 2.71
-    },
-    {
-     "book": "fanduel",
-     "over": 1.5,
-     "under": 2.54
     }
    ],
    "team": "DAL",
@@ -728,8 +722,8 @@
    "hit_rate_over": 0.6,
    "model_prob_over": 0.691,
    "side": "over",
-   "dec": 1.5,
-   "american": -200,
+   "dec": 1.437,
+   "american": -229,
    "title": "Over 0.5 Threes Made"
   },
   {
@@ -969,18 +963,13 @@
    "stat": "ast",
    "stat_label": "Assists",
    "line": 1.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/254368867222225",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/188297598236010",
    "books": [
     {
      "book": "draftkings",
      "over": 1.725,
      "under": 2.05
-    },
-    {
-     "book": "fanduel",
-     "over": 1.735,
-     "under": null
     }
    ],
    "team": "DAL",
@@ -1171,8 +1160,8 @@
    "hit_rate_over": 0.6,
    "model_prob_over": 0.758,
    "side": "over",
-   "dec": 1.735,
-   "american": -136,
+   "dec": 1.725,
+   "american": -138,
    "title": "Over 1.5 Assists"
   },
   {
@@ -1421,11 +1410,6 @@
      "under": 2.15
     },
     {
-     "book": "fanduel",
-     "over": 1.649,
-     "under": 2.2
-    },
-    {
      "book": "pinnacle",
      "over": 1.671,
      "under": 2.12
@@ -1641,18 +1625,13 @@
    "stat": "pts",
    "stat_label": "Points",
    "line": 7.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/199866830579156",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/154416078802071",
    "books": [
     {
      "book": "draftkings",
      "over": 1.82,
      "under": 1.952
-    },
-    {
-     "book": "fanduel",
-     "over": 1.909,
-     "under": 1.847
     }
    ],
    "team": "DAL",
@@ -1843,8 +1822,8 @@
    "hit_rate_over": 0.5,
    "model_prob_over": 0.683,
    "side": "over",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.82,
+   "american": -122,
    "title": "Over 7.5 Points"
   },
   {
@@ -2079,7 +2058,7 @@
     },
     {
      "book": "fanduel",
-     "over": 1.658,
+     "over": null,
      "under": 2.16
     }
    ],
@@ -2507,215 +2486,6 @@
   {
    "kind": "prop",
    "week": "2026-11-24",
-   "player": "Naji Marshall",
-   "pkey": "naji marshall",
-   "stat": "pts",
-   "stat_label": "Points",
-   "line": 9.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/247988169771746",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 1.769,
-     "under": 1.98
-    }
-   ],
-   "team": "DAL",
-   "opp": "DEN",
-   "position": "F",
-   "game_id": "401909316",
-   "kickoff": "2026-11-24T22:00:00-05:00",
-   "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278594.png",
-   "projection": 11.4,
-   "baseline": 10.3,
-   "matchup_pct": 22.1,
-   "matchup_factor": 1.221,
-   "def_rank": 1,
-   "def_n": 30,
-   "last10": [
-    22.0,
-    7.0,
-    8.0,
-    6.0,
-    13.0,
-    12.0,
-    13.0,
-    12.0,
-    4.0,
-    6.0
-   ],
-   "log": [
-    {
-     "season": 2027,
-     "wk": "2026-11-04",
-     "lbl": "11/4",
-     "opp": "SA",
-     "v": 22.0,
-     "ha": "away",
-     "min": 26
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-06",
-     "lbl": "11/6",
-     "opp": "UTAH",
-     "v": 7.0,
-     "ha": "home",
-     "min": 25
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-08",
-     "lbl": "11/8",
-     "opp": "BKN",
-     "v": 8.0,
-     "ha": "home",
-     "min": 15
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-09",
-     "lbl": "11/9",
-     "opp": "IND",
-     "v": 6.0,
-     "ha": "home",
-     "min": 25
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-12",
-     "lbl": "11/12",
-     "opp": "MIN",
-     "v": 13.0,
-     "ha": "away",
-     "min": 23
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-14",
-     "lbl": "11/14",
-     "opp": "CLE",
-     "v": 12.0,
-     "ha": "away",
-     "min": 30
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-15",
-     "lbl": "11/15",
-     "opp": "BOS",
-     "v": 13.0,
-     "ha": "away",
-     "min": 23
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-18",
-     "lbl": "11/18",
-     "opp": "GS",
-     "v": 12.0,
-     "ha": "home",
-     "min": 27
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-21",
-     "lbl": "11/21",
-     "opp": "LAC",
-     "v": 4.0,
-     "ha": "home",
-     "min": 14
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-22",
-     "lbl": "11/22",
-     "opp": "UTAH",
-     "v": 6.0,
-     "ha": "away",
-     "min": 25
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2027,
-     "wk": "2026-11-07",
-     "lbl": "11/7",
-     "vs": "IND",
-     "v": 61.0
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-09",
-     "lbl": "11/9",
-     "vs": "HOU",
-     "v": 49.0
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-11",
-     "lbl": "11/11",
-     "vs": "MEM",
-     "v": 73.0
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-14",
-     "lbl": "11/14",
-     "vs": "NO",
-     "v": 55.0
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-16",
-     "lbl": "11/16",
-     "vs": "PHX",
-     "v": 44.0
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-18",
-     "lbl": "11/18",
-     "vs": "BOS",
-     "v": 49.0
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-20",
-     "lbl": "11/20",
-     "vs": "HOU",
-     "v": 44.0
-    },
-    {
-     "season": 2027,
-     "wk": "2026-11-22",
-     "lbl": "11/22",
-     "vs": "CHI",
-     "v": 74.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "away",
-   "player_id": "4278594",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 52.1,
-   "league_avg": 42.7,
-   "games": 10,
-   "minutes": 23.8,
-   "cheat_side": "over",
-   "proj_edge_pct": 20.0,
-   "hit_rate_over": 0.5,
-   "model_prob_over": 0.648,
-   "side": "over",
-   "dec": 1.769,
-   "american": -130,
-   "title": "Over 9.5 Points"
-  },
-  {
-   "kind": "prop",
-   "week": "2026-11-24",
    "player": "Aaron Gordon",
    "pkey": "aaron gordon",
    "stat": "reb",
@@ -2950,18 +2720,13 @@
    "stat": "ast",
    "stat_label": "Assists",
    "line": 2.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/220386916501413",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/104083679865132",
    "books": [
     {
      "book": "draftkings",
      "over": 2.09,
      "under": 1.694
-    },
-    {
-     "book": "fanduel",
-     "over": 2.1,
-     "under": 1.704
     }
    ],
    "team": "DEN",
@@ -3152,8 +2917,8 @@
    "hit_rate_over": 0.8,
    "model_prob_over": 0.642,
    "side": "over",
-   "dec": 2.1,
-   "american": 110,
+   "dec": 2.09,
+   "american": 109,
    "title": "Over 2.5 Assists"
   },
   {
@@ -3164,18 +2929,13 @@
    "stat": "pts",
    "stat_label": "Points",
    "line": 12.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/161836865583757",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/228960309812845",
    "books": [
     {
      "book": "draftkings",
      "over": 1.909,
      "under": 1.87
-    },
-    {
-     "book": "fanduel",
-     "over": 1.926,
-     "under": 1.833
     },
     {
      "book": "pinnacle",
@@ -3371,16 +3131,16 @@
    "hit_rate_over": 0.4,
    "model_prob_over": 0.613,
    "side": "over",
-   "dec": 1.926,
-   "american": -108,
+   "dec": 1.909,
+   "american": -110,
    "title": "Over 12.5 Points",
    "pinnacle_line": "12.5 o100/u-132",
    "fair_prob": 0.4678,
-   "ev_pct": -9.9,
-   "kelly_pct": -10.69,
+   "ev_pct": -10.7,
+   "kelly_pct": -11.77,
    "units": 0.0,
    "base_units": 0.0,
-   "trusted_prob": 0.4935,
+   "trusted_prob": 0.4958,
    "unit_note": null,
    "edge_trust": 0.5,
    "pinn_dec": 2.0
@@ -4285,7 +4045,7 @@
    "stat_label": "Rebounds",
    "line": 4.5,
    "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/139432677355745",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/93564833131770",
    "books": [
     {
      "book": "draftkings",
@@ -4295,7 +4055,7 @@
     {
      "book": "fanduel",
      "over": 1.98,
-     "under": 1.781
+     "under": null
     },
     {
      "book": "pinnacle",
@@ -4715,6 +4475,230 @@
    "title": "Over 19.5 Pts + Reb + Ast"
   },
   {
+   "kind": "prop",
+   "week": "2026-11-24",
+   "player": "Naji Marshall",
+   "pkey": "naji marshall",
+   "stat": "pts",
+   "stat_label": "Points",
+   "line": 10.5,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/235596430898631",
+   "books": [
+    {
+     "book": "draftkings",
+     "over": 2.01,
+     "under": 1.781
+    },
+    {
+     "book": "pinnacle",
+     "over": 2.2,
+     "under": 1.625
+    }
+   ],
+   "team": "DAL",
+   "opp": "DEN",
+   "position": "F",
+   "game_id": "401909316",
+   "kickoff": "2026-11-24T22:00:00-05:00",
+   "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278594.png",
+   "projection": 11.4,
+   "baseline": 10.3,
+   "matchup_pct": 22.1,
+   "matchup_factor": 1.221,
+   "def_rank": 1,
+   "def_n": 30,
+   "last10": [
+    22.0,
+    7.0,
+    8.0,
+    6.0,
+    13.0,
+    12.0,
+    13.0,
+    12.0,
+    4.0,
+    6.0
+   ],
+   "log": [
+    {
+     "season": 2027,
+     "wk": "2026-11-04",
+     "lbl": "11/4",
+     "opp": "SA",
+     "v": 22.0,
+     "ha": "away",
+     "min": 26
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-06",
+     "lbl": "11/6",
+     "opp": "UTAH",
+     "v": 7.0,
+     "ha": "home",
+     "min": 25
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-08",
+     "lbl": "11/8",
+     "opp": "BKN",
+     "v": 8.0,
+     "ha": "home",
+     "min": 15
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-09",
+     "lbl": "11/9",
+     "opp": "IND",
+     "v": 6.0,
+     "ha": "home",
+     "min": 25
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-12",
+     "lbl": "11/12",
+     "opp": "MIN",
+     "v": 13.0,
+     "ha": "away",
+     "min": 23
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-14",
+     "lbl": "11/14",
+     "opp": "CLE",
+     "v": 12.0,
+     "ha": "away",
+     "min": 30
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-15",
+     "lbl": "11/15",
+     "opp": "BOS",
+     "v": 13.0,
+     "ha": "away",
+     "min": 23
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-18",
+     "lbl": "11/18",
+     "opp": "GS",
+     "v": 12.0,
+     "ha": "home",
+     "min": 27
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-21",
+     "lbl": "11/21",
+     "opp": "LAC",
+     "v": 4.0,
+     "ha": "home",
+     "min": 14
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-22",
+     "lbl": "11/22",
+     "opp": "UTAH",
+     "v": 6.0,
+     "ha": "away",
+     "min": 25
+    }
+   ],
+   "def_log": [
+    {
+     "season": 2027,
+     "wk": "2026-11-07",
+     "lbl": "11/7",
+     "vs": "IND",
+     "v": 61.0
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-09",
+     "lbl": "11/9",
+     "vs": "HOU",
+     "v": 49.0
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-11",
+     "lbl": "11/11",
+     "vs": "MEM",
+     "v": 73.0
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-14",
+     "lbl": "11/14",
+     "vs": "NO",
+     "v": 55.0
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-16",
+     "lbl": "11/16",
+     "vs": "PHX",
+     "v": 44.0
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-18",
+     "lbl": "11/18",
+     "vs": "BOS",
+     "v": 49.0
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-20",
+     "lbl": "11/20",
+     "vs": "HOU",
+     "v": 44.0
+    },
+    {
+     "season": 2027,
+     "wk": "2026-11-22",
+     "lbl": "11/22",
+     "vs": "CHI",
+     "v": 74.0
+    }
+   ],
+   "vs_opp": [],
+   "home_away": "away",
+   "player_id": "4278594",
+   "injury_status": null,
+   "injury": null,
+   "def_allowed": 52.1,
+   "league_avg": 42.7,
+   "games": 10,
+   "minutes": 23.8,
+   "cheat_side": "over",
+   "proj_edge_pct": 8.6,
+   "hit_rate_over": 0.5,
+   "model_prob_over": 0.571,
+   "side": "over",
+   "dec": 2.01,
+   "american": 101,
+   "title": "Over 10.5 Points",
+   "pinnacle_line": "10.5 o120/u-160",
+   "fair_prob": 0.4248,
+   "ev_pct": -14.61,
+   "kelly_pct": -14.46,
+   "units": 0.0,
+   "base_units": 0.0,
+   "trusted_prob": 0.4612,
+   "unit_note": null,
+   "edge_trust": 0.5,
+   "pinn_dec": 2.2
+  },
+  {
    "kind": "ml",
    "week": "2026-11-24",
    "player": "DAL @ DEN",
@@ -4765,24 +4749,24 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.353,
-     "b": 3.45
+     "a": 1.36,
+     "b": 3.41
     }
    ],
    "model_prob": 0.386,
    "model_edge": 10.73,
    "model_edge_txt": "+10.7%",
    "cheat_side": "away",
-   "pinnacle_line": "DEN -283 / DAL +245",
-   "fair_prob": 0.2817,
-   "ev_pct": -2.81,
-   "kelly_pct": -1.15,
+   "pinnacle_line": "DEN -278 / DAL +241",
+   "fair_prob": 0.2851,
+   "ev_pct": -1.64,
+   "kelly_pct": -0.67,
    "units": 0.0,
    "base_units": 0.0,
-   "trusted_prob": 0.2833,
+   "trusted_prob": 0.2861,
    "unit_note": null,
    "edge_trust": 0.8,
-   "pinn_dec": 3.45
+   "pinn_dec": 3.41
   },
   {
    "kind": "total",
@@ -4830,24 +4814,24 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.943,
-     "b": 1.943
+     "a": 1.935,
+     "b": 1.952
     }
    ],
    "model_prob": 0.624,
    "model_edge": 5.7,
    "model_edge_txt": "+5.7 pts",
    "cheat_side": "under",
-   "pinnacle_line": "234.5 o-106/u-106",
-   "fair_prob": 0.5,
-   "ev_pct": -4.55,
-   "kelly_pct": -5.01,
+   "pinnacle_line": "234.5 o-107/u-105",
+   "fair_prob": 0.4978,
+   "ev_pct": -4.97,
+   "kelly_pct": -5.46,
    "units": 0.0,
    "base_units": 0.0,
-   "trusted_prob": 0.5048,
+   "trusted_prob": 0.503,
    "unit_note": null,
    "edge_trust": 0.8,
-   "pinn_dec": 1.943
+   "pinn_dec": 1.952
   },
   {
    "kind": "spread",
@@ -4900,24 +4884,24 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.962,
-     "b": 1.943
+     "a": 1.98,
+     "b": 1.926
     }
    ],
    "model_prob": 0.652,
    "model_edge": 4.9,
    "model_edge_txt": "+4.9 pts",
    "cheat_side": "away",
-   "pinnacle_line": "DEN -8.5 -104 / DAL +8.5 -106",
-   "fair_prob": 0.5024,
-   "ev_pct": -4.89,
-   "kelly_pct": -5.48,
+   "pinnacle_line": "DEN -8.5 -102 / DAL +8.5 -108",
+   "fair_prob": 0.5069,
+   "ev_pct": -4.04,
+   "kelly_pct": -4.53,
    "units": 0.0,
    "base_units": 0.0,
-   "trusted_prob": 0.5076,
+   "trusted_prob": 0.5112,
    "unit_note": null,
    "edge_trust": 0.8,
-   "pinn_dec": 1.943
+   "pinn_dec": 1.926
   }
  ],
  "matchups": [
@@ -17846,5 +17830,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-24T20:45:23-05:00"
+ "odds_as_of": "2026-11-24T20:55:49-05:00"
 }
