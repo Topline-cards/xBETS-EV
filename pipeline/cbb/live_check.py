@@ -1,6 +1,5 @@
 """Forced CBB build into a scratch folder: shows live team matching (1 PinnWire call). Not committed."""
 import json
-import os
 import tempfile
 
 from .. import build as pb

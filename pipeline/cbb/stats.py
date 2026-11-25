@@ -149,7 +149,7 @@ def project_games(games, ratings, mu, hca):
 
 
 # ------------------------------------------------------------------ name matching
-_SUBS = [(r"&", " and "), (r"\bst\.?$", " state"), (r"^st\.? ", "saint "), (r"\bst\.? ", "state "),
+_SUBS = [(r"'", ""), (r"[()]", " "), (r"&", " and "), (r"\bst\.?$", " state"), (r"^st\.? ", "saint "), (r"\bst\.? ", "state "),
          (r"\buniv(ersity)?\b", ""), (r"\bthe\b", ""), (r"[^a-z0-9() ]", " ")]
 
 
@@ -158,6 +158,33 @@ def _n(x):
     for a, b in _SUBS:
         x = re.sub(a, b, x)
     return re.sub(r"\s+", " ", x).strip()
+
+
+# Feed name -> ESPN-style name (normalized). Common college naming differences.
+ALIAS = {
+    "appalachian state": "app state", "connecticut": "uconn", "albany": "ualbany", "albany ny": "ualbany",
+    "csu bakersfield": "bakersfield", "cal state bakersfield": "bakersfield", "alcorn": "alcorn state",
+    "florida international": "fiu", "ole miss": "mississippi", "mississippi": "ole miss",
+    "north carolina state": "nc state", "pittsburgh": "pitt", "pennsylvania": "penn",
+    "massachusetts": "umass", "southern mississippi": "southern miss", "sam houston state": "sam houston",
+    "mcneese state": "mcneese", "nicholls state": "nicholls", "grambling state": "grambling",
+    "prairie view a and m": "prairie view", "florida atlantic": "fau", "florida gulf coast": "fgcu",
+    "east tennessee state": "etsu", "middle tennessee state": "middle tennessee", "western kentucky": "wku",
+    "unc wilmington": "uncw", "unc greensboro": "uncg", "unc asheville": "unca", "detroit": "detroit mercy",
+    "loyola chicago": "loyola chicago", "loyola chi": "loyola chicago", "illinois chicago": "uic",
+    "siu edwardsville": "siue", "louisiana monroe": "ul monroe", "ul lafayette": "louisiana",
+    "louisiana lafayette": "louisiana", "texas a and m corpus christi": "texas a and m cc",
+    "miami fl": "miami", "miami florida": "miami", "miami ohio": "miami oh", "st johns": "saint johns",
+    "saint marys ca": "saint marys", "st marys": "saint marys", "uc santa barbara": "ucsb",
+    "cal state fullerton": "csu fullerton", "cal state northridge": "csu northridge", "csun": "csu northridge",
+    "long beach state": "long beach st", "usc": "southern california", "southern california": "usc",
+    "central connecticut state": "central connecticut", "tennessee martin": "ut martin",
+    "texas rio grande valley": "ut rio grande valley", "utrgv": "ut rio grande valley",
+    "arkansas little rock": "little rock", "ualr": "little rock", "umkc": "kansas city",
+    "fort wayne": "purdue fort wayne", "iupui": "iu indianapolis", "queens nc": "queens",
+    "omaha": "omaha", "nebraska omaha": "omaha", "liu brooklyn": "liu", "long island": "liu",
+    "stephen f austin": "sfa", "texas southern": "texas southern", "kansas city": "kansas city",
+}
 
 
 def aliases(row, side):
@@ -173,9 +200,10 @@ def _sim(name, al):
     n = _n(name)
     if not n:
         return 0.0
-    if n in al:
+    cands = {n, _n(ALIAS.get(n, n))}
+    if cands & al:
         return 1.0
-    return max(SequenceMatcher(None, n, a).ratio() for a in al)
+    return max(SequenceMatcher(None, c, a).ratio() for c in cands for a in al)
 
 
 def matcher(day_games):
