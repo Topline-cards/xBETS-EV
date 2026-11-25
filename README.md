@@ -45,6 +45,11 @@ Last Sunday replayed: 23 plays, 8u total.
 
 **Phone alerts:** install the free **ntfy** app, subscribe to a private topic name, and save that name as the repo secret `NTFY_TOPIC`. Each new EV play is announced once (⭐ = also a cheat-sheet play); tapping the alert opens the app.
 
+**College basketball (CBB):** Tuesdays, Wednesdays, Fridays and Saturdays; moneyline, spread and total only (`pipeline/cbb/`).
+- EV vs Pinnacle's NCAA lines (same rules as NFL/NBA). On NBA days the NBA's Pinnacle call already carries the college lines, so CBB costs no extra PinnWire calls.
+- Cheat sheet: ridge-regression team ratings (offense/defense) from every completed game this season (last season blended in early), 3-pt home court, no home court at neutral sites.
+- Team names are matched game by game across ESPN, DraftKings/FanDuel and Pinnacle; anything not clearly matched is skipped, never guessed.
+
 ## Pricing rules (from the +EV Best Practices Playbook)
 - **Fair line:** Pinnacle (PinnWire). Devigged four ways (multiplicative, additive, power, Shin; Shin skipped on main lines); we bet off the **worst** result for our side.
 - **Sliding EV threshold:** ~1% at -150, 3% at +130, 5% at +175, 6.5% at +250, 8% at +400, 10% at +600 and longer. No odds cap. Over 15% EV = "too good to be true": flagged and held to 0.5u; over 30% dropped as bad data.

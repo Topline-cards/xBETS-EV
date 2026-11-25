@@ -31,8 +31,9 @@ def _load(name, default):
 
 
 def _save(name, obj):
-    os.makedirs(DATA, exist_ok=True)
-    with open(os.path.join(DATA, name), "w") as f:
+    path = os.path.join(DATA, name)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
         json.dump(obj, f, indent=1, default=str)
 
 

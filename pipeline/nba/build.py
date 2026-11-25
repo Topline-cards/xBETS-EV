@@ -135,6 +135,10 @@ def _build(now, force):
                 state["pinn_calls"] += 0 if fixtures else 2
                 if not fixtures:
                     pb._save("pinn_cache.json", {"at": pb._iso(now), "props": p_props, "games": p_games})
+                    raw = odds.LAST_FIXTURES.get(config.PINN_SPORT_ID)
+                    if raw:                       # same call carries college basketball lines
+                        pb._save("../cbb/pinn_cache.json", {"at": pb._iso(now), "games": odds._pinn_game_lines(
+                            raw, "NCAA", lambda n, h=None: n)})
                 status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games))
             except Exception as e:
                 status["pinnacle_error"] = str(e)[:200]

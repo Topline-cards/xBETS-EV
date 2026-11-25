@@ -9,7 +9,7 @@ Game-day loop. GitHub's schedule is unreliable, so one run keeps itself going:
   * stops when no game kicks off in the next LOOKAHEAD_H hours
   * grades finished picks at the start of each run
 
-Covers every sport: NFL (Sundays + Thanksgiving) and NBA (Wed, Fri + Christmas).
+Covers every sport: NFL (Sundays + Thanksgiving), NBA (Mon-Fri + Christmas), CBB (Tue/Wed/Fri/Sat).
 
   python -m pipeline.loop
 """
@@ -65,9 +65,10 @@ def today_games(sched, now):
 def grade_all():
     """Grade every sport; returns how many started picks still wait on box scores."""
     from . import grade
+    from .cbb import grade as cbb_grade
     from .nba import grade as nba_grade
     pending = 0
-    for name, fn in (("NFL", grade.grade), ("NBA", nba_grade.grade)):
+    for name, fn in (("NFL", grade.grade), ("NBA", nba_grade.grade), ("CBB", cbb_grade.grade)):
         try:
             pending += fn() or 0
         except Exception as e:
@@ -76,8 +77,10 @@ def grade_all():
 
 
 def build_all(now, force):
+    from .cbb import build as cbb_build
     from .nba import build as nba_build
-    for name, fn in (("NFL", build.build), ("NBA", nba_build.build)):
+    # NBA before CBB: its Pinnacle basketball call also carries the college lines
+    for name, fn in (("NFL", build.build), ("NBA", nba_build.build), ("CBB", cbb_build.build)):
         try:
             o = fn(now=now, force=force)
             print(f"{now:%H:%M} {name} {o['week']}: combined={len(o['combined'])} ev={len(o['ev'])} "
@@ -99,6 +102,11 @@ def all_slates(now):
         parts.append(nba_stats.slate(nba_stats.load_schedule(nba_stats.season_for(now)))[["kickoff"]])
     except Exception as e:
         print("NBA schedule error:", e)
+    try:
+        from .cbb import stats as cbb_stats
+        parts.append(cbb_stats.slate(cbb_stats.load_schedule(cbb_stats.season_for(now)))[["kickoff"]])
+    except Exception as e:
+        print("CBB schedule error:", e)
     return pd.concat(parts) if parts else pd.DataFrame({"kickoff": []})
 
 

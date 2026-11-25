@@ -289,6 +289,18 @@ def _pinn_game_lines(payload, league="NFL", abbr=None):
     return out
 
 
+LAST_FIXTURES = {}
+
+
+def fetch_pinnacle_fixtures(sport_id):
+    """Game lines only (1 PinnWire call)."""
+    if FIXTURES:
+        return None
+    main = _get(f"{PINN_BASE}/kit/v1/prematch/fixtures", {"sport_id": sport_id, "key": os.environ["PINNWIRE_KEY"]})
+    LAST_FIXTURES[sport_id] = main
+    return main
+
+
 def fetch_pinnacle(sport_id=5, league="NFL", stat_fn=None, abbr=None, prefix=""):
     """
     Returns (props, game_lines). Two PinnWire calls:
@@ -305,6 +317,7 @@ def fetch_pinnacle(sport_id=5, league="NFL", stat_fn=None, abbr=None, prefix="")
         payload = _get(f"{PINN_BASE}/kit/v1/markets",
                        {"sport_id": sport_id, "include_specials": 1, "key": key})
         main = _get(f"{PINN_BASE}/kit/v1/prematch/fixtures", {"sport_id": sport_id, "key": key})
+    LAST_FIXTURES[sport_id] = main          # e.g. the NBA call also carries college basketball
     props = []
     for sp in _iter_specials(payload):
         lg = (sp.get("league_name") or "").strip().upper()

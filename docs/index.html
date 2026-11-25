@@ -196,6 +196,7 @@
 const SPORTS = {
   nfl: {name:"NFL", em:"🏈", days:"Sundays + Thanksgiving", base:"data/", kick:"kickoff"},
   nba: {name:"NBA", em:"🏀", days:"Mon–Fri + Christmas", base:"data/nba/", kick:"tip-off"},
+  cbb: {name:"CBB", em:"🎓", days:"Tue, Wed, Fri + Sat · ML, spread, total", base:"data/cbb/", kick:"tip-off"},
 };
 const SPORT_KEY = "xbets_sport";
 const initialSport = (() => { const q = new URLSearchParams(location.search).get("sport");
@@ -718,7 +719,7 @@ function renderDrawer(){
   $("#drawer").innerHTML = `<h1 style="margin:2px 4px 4px"><b>xBETS</b></h1><h4>Sports</h4>` +
     Object.entries(SPORTS).map(([k, v]) => `<button class="sp ${k === S.sport ? "on" : ""}" data-sport="${k}">
       <span class="em">${v.em}</span><span><b>${v.name}</b><span class="sub">${v.days}</span></span>${k === S.sport ? '<span class="ck">✓</span>' : ""}</button>`).join("") +
-    `<h4>More</h4><a class="sp" href="players.html?sport=${S.sport}"><span class="em">👍</span><span><b>My Players</b><span class="sub">Players you like or never bet</span></span></a>
+    `<h4>More</h4>${S.sport === "cbb" ? "" : `<a class="sp" href="players.html?sport=${S.sport}"><span class="em">👍</span><span><b>My Players</b><span class="sub">Players you like or never bet</span></span></a>`}
      <button class="sp" id="open-settings3"><span class="em">⚙️</span><span><b>Unit size</b><span class="sub">$${unitUsd() || 0} per unit</span></span></button>`;
 }
 function openMenu(){ renderDrawer(); $("#drawer").classList.add("open"); $("#dshade").classList.add("open"); }
