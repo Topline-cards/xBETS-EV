@@ -221,8 +221,8 @@
    "min_ev": 1.9,
    "fair_method": "multiplicative",
    "result": null,
-   "close_fair_prob": 0.5276,
-   "clv_pct": 2.99
+   "close_fair_prob": 0.5318,
+   "clv_pct": 3.81
   },
   "ev|2026-11-25|401917545|total|over|152.5|fanduel": {
    "mode": "ev",
@@ -253,8 +253,8 @@
    "min_ev": 1.76,
    "fair_method": "multiplicative",
    "result": null,
-   "close_fair_prob": 0.5368,
-   "clv_pct": 2.48
+   "close_fair_prob": 0.5318,
+   "clv_pct": 1.52
   },
   "ev|2026-11-25|401917182|total|under|164.5|fanduel": {
    "mode": "ev",
@@ -593,8 +593,8 @@
    "min_ev": 8.3,
    "fair_method": "power",
    "result": null,
-   "close_fair_prob": 0.181,
-   "clv_pct": -4.07
+   "close_fair_prob": 0.1783,
+   "clv_pct": -5.5
   },
   "cheat|2026-11-25|401911029|ml|away|None|draftkings": {
    "mode": "cheat",
@@ -1517,8 +1517,8 @@
    "min_ev": 1.71,
    "fair_method": "multiplicative",
    "result": null,
-   "close_fair_prob": 0.5282,
-   "clv_pct": -0.01
+   "close_fair_prob": 0.5295,
+   "clv_pct": 0.23
   },
   "cheat|2026-11-25|401917182|ml|home|None|draftkings": {
    "mode": "cheat",
@@ -2099,8 +2099,8 @@
    "min_ev": 1.82,
    "fair_method": "multiplicative",
    "result": null,
-   "close_fair_prob": 0.5112,
-   "clv_pct": -1.54
+   "close_fair_prob": 0.5066,
+   "clv_pct": -2.43
   },
   "cheat|2026-11-25|401929005|spread|away|-16.5|draftkings": {
    "mode": "cheat",
@@ -4619,8 +4619,8 @@
    "min_ev": 1.87,
    "fair_method": "multiplicative",
    "result": null,
-   "close_fair_prob": 0.5282,
-   "clv_pct": 2.63
+   "close_fair_prob": 0.5295,
+   "clv_pct": 2.88
   },
   "ev|2026-11-25|401911028|spread|away|-20.5|fanduel": {
    "mode": "ev",
@@ -4651,8 +4651,8 @@
    "min_ev": 1.87,
    "fair_method": "multiplicative",
    "result": null,
-   "close_fair_prob": 0.5282,
-   "clv_pct": 2.63
+   "close_fair_prob": 0.5295,
+   "clv_pct": 2.88
   },
   "cheat|2026-11-25|401922285|ml|home|None|fanduel": {
    "mode": "cheat",
@@ -4743,8 +4743,70 @@
    "min_ev": 1.87,
    "fair_method": "multiplicative",
    "result": null,
-   "close_fair_prob": 0.5282,
-   "clv_pct": 2.63
+   "close_fair_prob": 0.5295,
+   "clv_pct": 2.88
+  },
+  "cheat|2026-11-25|401909568|ml|home|None|fanduel": {
+   "mode": "cheat",
+   "kind": "ml",
+   "first_seen": "2026-11-25T06:22:06-05:00",
+   "week": "2026-11-25",
+   "player": "UConn @ Duke",
+   "title": "Duke Moneyline",
+   "pkey": "401909568",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "side": "home",
+   "line": null,
+   "book": "fanduel",
+   "dec": 2.22,
+   "american": 122,
+   "units": 1.0,
+   "ev_pct": -1.16,
+   "fair_prob": 0.4452,
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "team": "Duke",
+   "opp": "UConn",
+   "game_id": "401909568",
+   "home": "Duke",
+   "away": "UConn",
+   "tier": "single",
+   "fair_source": "Pinnacle",
+   "min_ev": 2.75,
+   "fair_method": "power",
+   "result": null,
+   "close_fair_prob": 0.4482,
+   "clv_pct": -0.5
+  },
+  "cheat|2026-11-25|401921108|ml|home|None|fanduel": {
+   "mode": "cheat",
+   "kind": "ml",
+   "first_seen": "2026-11-25T06:22:06-05:00",
+   "week": "2026-11-25",
+   "player": "Bellarmine @ N Kentucky",
+   "title": "N Kentucky Moneyline",
+   "pkey": "401921108",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "side": "home",
+   "line": null,
+   "book": "fanduel",
+   "dec": 1.364,
+   "american": -275,
+   "units": 1.0,
+   "ev_pct": null,
+   "fair_prob": null,
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "team": "N Kentucky",
+   "opp": "Bellarmine",
+   "game_id": "401921108",
+   "home": "N Kentucky",
+   "away": "Bellarmine",
+   "tier": null,
+   "fair_source": null,
+   "min_ev": null,
+   "fair_method": null,
+   "result": null
   }
  }
 }
