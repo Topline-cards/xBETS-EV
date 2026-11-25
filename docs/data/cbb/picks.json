@@ -1,32 +1,38 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T14:21:20-05:00",
+ "generated_at": "2026-11-25T14:32:35-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T14:30:00-05:00",
+ "next_kickoff": "2026-11-25T15:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 232,
-  "book_unmatched": 13,
+  "book_game_lines": 221,
+  "book_unmatched": 19,
   "book_unmatched_games": [
+   "Arkansas @ Michigan State",
    "Baylor @ Gonzaga",
    "Clemson @ Colorado State",
    "Colorado State @ Clemson",
+   "Gonzaga @ Baylor",
    "Grambling @ New Orleans",
    "Kansas State @ Alabama",
    "Maryland @ San Diego State",
    "Miami FL @ Michigan",
    "Mississippi Valley @ New Mexico",
+   "Ole Miss @ Arizona",
+   "Oregon @ Texas Tech",
    "St. Johns @ Louisville",
    "TCU @ Creighton",
    "Tennessee @ Iowa State",
+   "Texas A&M @ Xavier",
    "Texas Tech @ Oregon",
-   "West Florida @ NW State"
+   "West Florida @ NW State",
+   "Xavier @ Texas A&M"
   ],
-  "pinnacle_game_lines": 695,
-  "pinnacle_unmatched": 7,
-  "pinnacle_as_of": "2026-11-25T14:10:02-05:00"
+  "pinnacle_game_lines": 657,
+  "pinnacle_unmatched": 8,
+  "pinnacle_as_of": "2026-11-25T14:32:35-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -550,16 +556,6 @@
  },
  "games": [
   {
-   "game_id": "401920809",
-   "label": "Texas A&M @ Xavier",
-   "kickoff": "2026-11-25T14:30:00-05:00"
-  },
-  {
-   "game_id": "401921715",
-   "label": "Ole Miss @ Arizona",
-   "kickoff": "2026-11-25T14:30:00-05:00"
-  },
-  {
    "game_id": "401919042",
    "label": "Jackson St @ Oklahoma St",
    "kickoff": "2026-11-25T15:00:00-05:00"
@@ -776,48 +772,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401920809",
-   "home": "Xavier",
-   "away": "Texas A&M",
-   "kickoff": "2026-11-25T14:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 82.2,
-   "proj_away": 86.2,
-   "proj_margin": -3.9,
-   "proj_total": 168.4,
-   "home_win_prob": 0.36,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": -0.493,
-   "home_em": 16.2,
-   "away_em": 21.7,
-   "home_t": 73.2,
-   "away_t": 74.3,
-   "league_avg": 107.8
-  },
-  {
-   "game_id": "401921715",
-   "home": "Arizona",
-   "away": "Ole Miss",
-   "kickoff": "2026-11-25T14:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 72.4,
-   "proj_away": 81.0,
-   "proj_margin": -8.6,
-   "proj_total": 153.4,
-   "home_win_prob": 0.216,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": -1.082,
-   "home_em": 28.0,
-   "away_em": 22.3,
-   "home_t": 71.9,
-   "away_t": 70.3,
-   "league_avg": 107.8
-  },
   {
    "game_id": "401919042",
    "home": "Oklahoma St",
@@ -1722,318 +1676,9 @@
    "league_avg": 107.8
   }
  ],
- "combined": [
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "SE Louisiana @ North Dakota",
-   "pkey": "401920548",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 140.5",
-   "line": 140.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/149410805572365",
-   "game_id": "401920548",
-   "kickoff": "2026-11-25T15:00:00-05:00",
-   "home": "North Dakota",
-   "away": "SE Louisiana",
-   "dec": 1.926,
-   "american": -108,
-   "game_model": {
-    "game_id": "401920548",
-    "home": "North Dakota",
-    "away": "SE Louisiana",
-    "kickoff": "2026-11-25T15:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 81.3,
-    "proj_away": 67.9,
-    "proj_margin": 13.4,
-    "proj_total": 149.2,
-    "home_win_prob": 0.889,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 1.686,
-    "home_em": -10.8,
-    "away_em": -10.7,
-    "home_t": 69.5,
-    "away_t": 67.7,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.758,
-     "b": 2.07
-    }
-   ],
-   "model_prob": 0.719,
-   "model_edge": 8.7,
-   "model_edge_txt": "+8.7 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "140.5 o-132/u107",
-   "fair_prob": 0.5408,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5408,
-    0.544
-   ],
-   "devig_all": {
-    "multiplicative": 0.5408,
-    "additive": 0.5429,
-    "power": 0.544
-   },
-   "ev_pct": 4.15,
-   "min_ev": 1.82,
-   "units": 0.5,
-   "base_units": 0.896091322098621,
-   "kelly_pct": 4.48,
-   "trusted_prob": 0.5364,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.7,
-   "pinn_dec": 1.758,
-   "sizing": {
-    "base": 0.9,
-    "conf": 0.47,
-    "conf_why": [
-     "cheat sheet agrees",
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 1,
-    "player_bets": 1,
-    "corr": 1.0,
-    "cap": 2.0,
-    "raw": 0.42
-   },
-   "lane": "cbb:total",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 0,
-    "days": 0,
-    "ev_vs_close": 0.43,
-    "roi_pct": null
-   },
-   "exp_profit_units": 0.021
-  }
- ],
- "ev": [
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "SE Louisiana @ North Dakota",
-   "pkey": "401920548",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 140.5",
-   "line": 140.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/149410805572365",
-   "game_id": "401920548",
-   "kickoff": "2026-11-25T15:00:00-05:00",
-   "home": "North Dakota",
-   "away": "SE Louisiana",
-   "dec": 1.926,
-   "american": -108,
-   "game_model": {
-    "game_id": "401920548",
-    "home": "North Dakota",
-    "away": "SE Louisiana",
-    "kickoff": "2026-11-25T15:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 81.3,
-    "proj_away": 67.9,
-    "proj_margin": 13.4,
-    "proj_total": 149.2,
-    "home_win_prob": 0.889,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 1.686,
-    "home_em": -10.8,
-    "away_em": -10.7,
-    "home_t": 69.5,
-    "away_t": 67.7,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.758,
-     "b": 2.07
-    }
-   ],
-   "model_prob": 0.719,
-   "model_edge": 8.7,
-   "model_edge_txt": "+8.7 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "140.5 o-132/u107",
-   "fair_prob": 0.5408,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5408,
-    0.544
-   ],
-   "devig_all": {
-    "multiplicative": 0.5408,
-    "additive": 0.5429,
-    "power": 0.544
-   },
-   "ev_pct": 4.15,
-   "min_ev": 1.82,
-   "units": 0.5,
-   "base_units": 0.896091322098621,
-   "kelly_pct": 4.48,
-   "trusted_prob": 0.5364,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.7,
-   "pinn_dec": 1.758,
-   "lane": "cbb:total",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 0,
-    "days": 0,
-    "ev_vs_close": 0.43,
-    "roi_pct": null
-   },
-   "sizing": {
-    "base": 0.9,
-    "conf": 0.47,
-    "conf_why": [
-     "cheat sheet agrees",
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 1,
-    "player_bets": 1,
-    "corr": 1.0,
-    "cap": 2.0,
-    "raw": 0.42
-   },
-   "exp_profit_units": 0.021
-  }
- ],
+ "combined": [],
+ "ev": [],
  "cheat": [
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Ole Miss @ Arizona",
-   "pkey": "401921715",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Ole Miss Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Ole Miss",
-   "opp": "Arizona",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/210121599426798",
-   "game_id": "401921715",
-   "kickoff": "2026-11-25T14:30:00-05:00",
-   "home": "Arizona",
-   "away": "Ole Miss",
-   "dec": 2.9,
-   "american": 190,
-   "game_model": {
-    "game_id": "401921715",
-    "home": "Arizona",
-    "away": "Ole Miss",
-    "kickoff": "2026-11-25T14:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 72.4,
-    "proj_away": 81.0,
-    "proj_margin": -8.6,
-    "proj_total": 153.4,
-    "home_win_prob": 0.216,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -1.082,
-    "home_em": 28.0,
-    "away_em": 22.3,
-    "home_t": 71.9,
-    "away_t": 70.3,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.435,
-     "b": 2.9
-    },
-    {
-     "book": "fanduel",
-     "a": 1.455,
-     "b": 2.88
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.435,
-     "b": 2.92
-    }
-   ],
-   "model_prob": 0.784,
-   "model_edge": 45.3,
-   "model_edge_txt": "+45.3%",
-   "cheat_side": "away",
-   "pinnacle_line": "Arizona -230 / Ole Miss +192",
-   "fair_prob": 0.3194,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.3194,
-    0.3295
-   ],
-   "devig_all": {
-    "multiplicative": 0.3295,
-    "additive": 0.3228,
-    "power": 0.3194
-   },
-   "ev_pct": -7.39,
-   "min_ev": 5.3,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.89,
-   "trusted_prob": 0.3244,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -5.14,
-   "pinn_dec": 2.92
-  },
   {
    "kind": "ml",
    "week": "2026-11-25",
@@ -2133,14 +1778,14 @@
    "side": "home",
    "team": "North Dakota",
    "opp": "SE Louisiana",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/171441371147327",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/259253135742516",
    "game_id": "401920548",
    "kickoff": "2026-11-25T15:00:00-05:00",
    "home": "North Dakota",
    "away": "SE Louisiana",
-   "dec": 1.943,
-   "american": -106,
+   "dec": 2.0,
+   "american": 100,
    "game_model": {
     "game_id": "401920548",
     "home": "North Dakota",
@@ -2164,44 +1809,49 @@
    },
    "books": [
     {
+     "book": "draftkings",
+     "a": 2.0,
+     "b": 1.833
+    },
+    {
      "book": "fanduel",
      "a": 1.943,
      "b": 1.885
     },
     {
      "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.935
+     "a": 1.99,
+     "b": 1.87
     }
    ],
    "model_prob": 0.889,
-   "model_edge": 39.66,
-   "model_edge_txt": "+39.7%",
+   "model_edge": 41.08,
+   "model_edge_txt": "+41.1%",
    "cheat_side": "home",
-   "pinnacle_line": "North Dakota -110 / SE Louisiana -107",
-   "fair_prob": 0.5034,
-   "fair_method": "multiplicative",
+   "pinnacle_line": "North Dakota -101 / SE Louisiana -115",
+   "fair_prob": 0.4836,
+   "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5034,
-    0.5036
+    0.4836,
+    0.4845
    ],
    "devig_all": {
-    "multiplicative": 0.5034,
-    "additive": 0.5035,
-    "power": 0.5036
+    "multiplicative": 0.4845,
+    "additive": 0.4839,
+    "power": 0.4836
    },
-   "ev_pct": -2.19,
-   "min_ev": 1.87,
+   "ev_pct": -3.28,
+   "min_ev": 2.05,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.33,
-   "trusted_prob": 0.5056,
+   "kelly_pct": -3.28,
+   "trusted_prob": 0.4869,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.909
+   "second_ev": -1.62,
+   "pinn_dec": 1.99
   },
   {
    "kind": "ml",
@@ -3373,8 +3023,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.971,
-     "b": 1.862
+     "a": 2.03,
+     "b": 1.813
     }
    ],
    "model_prob": 0.862,
@@ -3382,30 +3032,30 @@
    "model_edge_txt": "+12.0 pts \u00b7 STRONG",
    "cheat_side": "away",
    "cbb_tier": "STRONG",
-   "pinnacle_line": "Syracuse -26.5 -103 / UAlbany +26.5 -116",
-   "fair_prob": 0.5142,
+   "pinnacle_line": "Syracuse -26.5 103 / UAlbany +26.5 -123",
+   "fair_prob": 0.5282,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5142,
-    0.5152
+    0.5282,
+    0.5301
    ],
    "devig_all": {
-    "multiplicative": 0.5142,
-    "additive": 0.5149,
-    "power": 0.5152
+    "multiplicative": 0.5282,
+    "additive": 0.5295,
+    "power": 0.5301
    },
-   "ev_pct": -1.84,
+   "ev_pct": 0.84,
    "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.02,
-   "trusted_prob": 0.5161,
+   "units": 0.1847543588602943,
+   "base_units": 0.1847543588602943,
+   "kelly_pct": 0.92,
+   "trusted_prob": 0.5274,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": null,
-   "pinn_dec": 1.862
+   "pinn_dec": 1.813
   },
   {
    "kind": "total",
@@ -4294,38 +3944,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.758,
-     "b": 2.07
+     "a": 1.893,
+     "b": 1.926
     }
    ],
    "model_prob": 0.719,
    "model_edge": 8.7,
    "model_edge_txt": "+8.7 pts",
    "cheat_side": "over",
-   "pinnacle_line": "140.5 o-132/u107",
-   "fair_prob": 0.5408,
+   "pinnacle_line": "140.5 o-112/u-108",
+   "fair_prob": 0.5043,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5408,
-    0.544
+    0.5043,
+    0.5046
    ],
    "devig_all": {
-    "multiplicative": 0.5408,
-    "additive": 0.5429,
-    "power": 0.544
+    "multiplicative": 0.5043,
+    "additive": 0.5045,
+    "power": 0.5046
    },
-   "ev_pct": 4.15,
+   "ev_pct": -2.87,
    "min_ev": 1.82,
-   "units": 0.896091322098621,
-   "base_units": 0.896091322098621,
-   "kelly_pct": 4.48,
-   "trusted_prob": 0.5364,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -3.1,
+   "trusted_prob": 0.5073,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.7,
-   "pinn_dec": 1.758
+   "pinn_dec": 1.893
   },
   {
    "kind": "ml",
@@ -5279,38 +4929,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.943,
-     "b": 1.862
+     "a": 1.952,
+     "b": 1.847
     }
    ],
    "model_prob": 0.653,
    "model_edge": 5.9,
    "model_edge_txt": "+5.9 pts",
    "cheat_side": "over",
-   "pinnacle_line": "146.5 o-106/u-116",
-   "fair_prob": 0.4885,
+   "pinnacle_line": "146.5 o-105/u-118",
+   "fair_prob": 0.4851,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4885,
-    0.4894
+    0.4851,
+    0.4862
    ],
    "devig_all": {
-    "multiplicative": 0.4894,
-    "additive": 0.4888,
-    "power": 0.4885
+    "multiplicative": 0.4862,
+    "additive": 0.4854,
+    "power": 0.4851
    },
-   "ev_pct": -5.91,
+   "ev_pct": -6.58,
    "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -6.38,
-   "trusted_prob": 0.4947,
+   "kelly_pct": -7.1,
+   "trusted_prob": 0.4919,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.7,
-   "pinn_dec": 1.943
+   "pinn_dec": 1.952
   },
   {
    "kind": "ml",
@@ -7194,8 +6844,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.5,
-  "combined": 0.5
+  "ev": 0,
+  "combined": 0
  },
- "odds_as_of": "2026-11-25T14:21:20-05:00"
+ "odds_as_of": "2026-11-25T14:32:35-05:00"
 }
