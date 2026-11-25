@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T15:17:42-05:00",
+ "generated_at": "2026-11-25T15:28:58-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
  "next_kickoff": "2026-11-25T15:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 199,
+  "book_game_lines": 202,
   "book_unmatched": 25,
   "book_unmatched_games": [
    "Arkansas @ Michigan State",
@@ -3518,11 +3518,6 @@
      "b": 2.1
     },
     {
-     "book": "fanduel",
-     "a": 1.758,
-     "b": 2.1
-    },
-    {
      "book": "pinnacle",
      "a": 1.775,
      "b": 2.1
@@ -3554,7 +3549,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.71,
+   "second_ev": null,
    "pinn_dec": 1.775
   },
   {
@@ -4054,6 +4049,88 @@
    "pinn_dec": 1.952
   },
   {
+   "kind": "total",
+   "week": "2026-11-25",
+   "player": "Arkansas St @ FIU",
+   "pkey": "401928359",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Under 178.5",
+   "line": 178.5,
+   "side": "under",
+   "team": null,
+   "opp": null,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/41210667369326",
+   "game_id": "401928359",
+   "kickoff": "2026-11-25T15:30:00-05:00",
+   "home": "FIU",
+   "away": "Arkansas St",
+   "dec": 1.87,
+   "american": -115,
+   "game_model": {
+    "game_id": "401928359",
+    "home": "FIU",
+    "away": "Arkansas St",
+    "kickoff": "2026-11-25T15:30:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 87.7,
+    "proj_away": 84.2,
+    "proj_margin": 3.5,
+    "proj_total": 171.9,
+    "home_win_prob": 0.626,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 0.069,
+    "home_em": -0.8,
+    "away_em": -1.3,
+    "home_t": 73.7,
+    "away_t": 73.7,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.952,
+     "b": 1.87
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.926,
+     "b": 1.877
+    }
+   ],
+   "model_prob": 0.67,
+   "model_edge": 6.6,
+   "model_edge_txt": "+6.6 pts",
+   "cheat_side": "under",
+   "pinnacle_line": "178.5 o-108/u-114",
+   "fair_prob": 0.5064,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5064,
+    0.507
+   ],
+   "devig_all": {
+    "multiplicative": 0.5064,
+    "additive": 0.5068,
+    "power": 0.507
+   },
+   "ev_pct": -5.3,
+   "min_ev": 1.64,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -6.09,
+   "trusted_prob": 0.5121,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.877
+  },
+  {
    "kind": "ml",
    "week": "2026-11-25",
    "player": "UAlbany @ Syracuse",
@@ -4155,8 +4232,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.952,
+     "b": 1.87
     },
     {
      "book": "fanduel",
@@ -4196,7 +4273,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -2.4,
+   "second_ev": -0.31,
    "pinn_dec": 1.926
   },
   {
@@ -4636,14 +4713,14 @@
    "side": "over",
    "team": null,
    "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/23650733696058",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/119840969078557",
    "game_id": "401911241",
    "kickoff": "2026-11-25T18:00:00-05:00",
    "home": "Richmond",
    "away": "Bethune",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.87,
+   "american": -115,
    "game_model": {
     "game_id": "401911241",
     "home": "Richmond",
@@ -4672,11 +4749,6 @@
      "b": 1.952
     },
     {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
      "book": "pinnacle",
      "a": 1.877,
      "b": 1.926
@@ -4699,99 +4771,17 @@
     "additive": 0.5068,
     "power": 0.507
    },
-   "ev_pct": -3.32,
-   "min_ev": 1.76,
+   "ev_pct": -5.3,
+   "min_ev": 1.64,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.65,
-   "trusted_prob": 0.5099,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.5,
-   "pinn_dec": 1.877
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "Arkansas St @ FIU",
-   "pkey": "401928359",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Under 177.5",
-   "line": 177.5,
-   "side": "under",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/255581554745170",
-   "game_id": "401928359",
-   "kickoff": "2026-11-25T15:30:00-05:00",
-   "home": "FIU",
-   "away": "Arkansas St",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401928359",
-    "home": "FIU",
-    "away": "Arkansas St",
-    "kickoff": "2026-11-25T15:30:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 87.7,
-    "proj_away": 84.2,
-    "proj_margin": 3.5,
-    "proj_total": 171.9,
-    "home_win_prob": 0.626,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 0.069,
-    "home_em": -0.8,
-    "away_em": -1.3,
-    "home_t": 73.7,
-    "away_t": 73.7,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.847,
-     "b": 1.952
-    }
-   ],
-   "model_prob": 0.646,
-   "model_edge": 5.6,
-   "model_edge_txt": "+5.6 pts",
-   "cheat_side": "under",
-   "pinnacle_line": "177.5 o-118/u-105",
-   "fair_prob": 0.4851,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4851,
-    0.4862
-   ],
-   "devig_all": {
-    "multiplicative": 0.4862,
-    "additive": 0.4854,
-    "power": 0.4851
-   },
-   "ev_pct": -7.4,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -8.14,
-   "trusted_prob": 0.4928,
+   "kelly_pct": -6.09,
+   "trusted_prob": 0.5121,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": null,
-   "pinn_dec": 1.952
+   "pinn_dec": 1.877
   },
   {
    "kind": "spread",
@@ -5983,6 +5973,89 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
+   "player": "Prairie View @ Marshall",
+   "pkey": "401920858",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Prairie View +14.5",
+   "line": -14.5,
+   "side": "away",
+   "team": "Prairie View",
+   "opp": "Marshall",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/250046254950618",
+   "game_id": "401920858",
+   "kickoff": "2026-11-25T16:00:00-05:00",
+   "home": "Marshall",
+   "away": "Prairie View",
+   "dec": 1.893,
+   "american": -112,
+   "game_model": {
+    "game_id": "401920858",
+    "home": "Marshall",
+    "away": "Prairie View",
+    "kickoff": "2026-11-25T16:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 82.8,
+    "proj_away": 70.8,
+    "proj_margin": 12.1,
+    "proj_total": 153.6,
+    "home_win_prob": 0.863,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 1.136,
+    "home_em": -2.0,
+    "away_em": -10.2,
+    "home_t": 72.0,
+    "away_t": 70.4,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.926,
+     "b": 1.893
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.05,
+     "b": 1.8
+    }
+   ],
+   "model_prob": 0.586,
+   "model_edge": 2.4,
+   "model_edge_txt": "+2.4 pts \u00b7 LEAN",
+   "cheat_side": "away",
+   "cbb_tier": "LEAN",
+   "pinnacle_line": "Marshall -14.5 105 / Prairie View +14.5 -125",
+   "fair_prob": 0.5325,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5325,
+    0.5346
+   ],
+   "devig_all": {
+    "multiplicative": 0.5325,
+    "additive": 0.5339,
+    "power": 0.5346
+   },
+   "ev_pct": 0.8,
+   "min_ev": 1.71,
+   "units": 0.17829874492808795,
+   "base_units": 0.17829874492808795,
+   "kelly_pct": 0.89,
+   "trusted_prob": 0.5316,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.8
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
    "player": "SMU @ Utah State",
    "pkey": "401918971",
    "stat": "spread",
@@ -6067,94 +6140,6 @@
    "tier": "single",
    "second_ev": -4.68,
    "pinn_dec": 2.0
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Arkansas St @ FIU",
-   "pkey": "401928359",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "FIU -1.5",
-   "line": -1.5,
-   "side": "home",
-   "team": "FIU",
-   "opp": "Arkansas St",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/254793811545394",
-   "game_id": "401928359",
-   "kickoff": "2026-11-25T15:30:00-05:00",
-   "home": "FIU",
-   "away": "Arkansas St",
-   "dec": 1.87,
-   "american": -115,
-   "game_model": {
-    "game_id": "401928359",
-    "home": "FIU",
-    "away": "Arkansas St",
-    "kickoff": "2026-11-25T15:30:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 87.7,
-    "proj_away": 84.2,
-    "proj_margin": 3.5,
-    "proj_total": 171.9,
-    "home_win_prob": 0.626,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 0.069,
-    "home_em": -0.8,
-    "away_em": -1.3,
-    "home_t": 73.7,
-    "away_t": 73.7,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.833,
-     "b": 2.01
-    }
-   ],
-   "model_prob": 0.572,
-   "model_edge": 2.0,
-   "model_edge_txt": "+2.0 pts \u00b7 LEAN",
-   "cheat_side": "home",
-   "cbb_tier": "LEAN",
-   "pinnacle_line": "FIU -1.5 -120 / Arkansas St +1.5 101",
-   "fair_prob": 0.523,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.523,
-    0.5245
-   ],
-   "devig_all": {
-    "multiplicative": 0.523,
-    "additive": 0.524,
-    "power": 0.5245
-   },
-   "ev_pct": -2.19,
-   "min_ev": 1.64,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.52,
-   "trusted_prob": 0.5254,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.9,
-   "pinn_dec": 1.833
   },
   {
    "kind": "spread",
@@ -6333,5 +6318,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T15:17:42-05:00"
+ "odds_as_of": "2026-11-25T15:28:58-05:00"
 }
