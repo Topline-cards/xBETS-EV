@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T06:32:35-05:00",
+ "generated_at": "2026-11-25T06:43:03-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
  "next_kickoff": "2026-11-25T10:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 265,
+  "book_game_lines": 267,
   "book_unmatched": 19,
   "book_unmatched_games": [
    "Arizona @ Ole Miss",
@@ -30,9 +30,9 @@
    "Washington @ VCU",
    "West Florida @ NW State"
   ],
-  "pinnacle_game_lines": 295,
+  "pinnacle_game_lines": 276,
   "pinnacle_unmatched": 0,
-  "pinnacle_as_of": "2026-11-25T06:22:06-05:00"
+  "pinnacle_as_of": "2026-11-25T06:43:03-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -4174,6 +4174,11 @@
      "book": "draftkings",
      "a": null,
      "b": 41.0
+    },
+    {
+     "book": "fanduel",
+     "a": null,
+     "b": 26.0
     }
    ],
    "model_prob": 0.12,
@@ -5651,41 +5656,12 @@
      "book": "fanduel",
      "a": 2.55,
      "b": 1.532
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.61,
-     "b": 1.526
     }
    ],
    "model_prob": 0.428,
    "model_edge": 7.27,
    "model_edge_txt": "+7.3%",
-   "cheat_side": "home",
-   "pinnacle_line": "Belmont +161 / St Bonaventure -190",
-   "fair_prob": 0.3614,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.3614,
-    0.369
-   ],
-   "devig_all": {
-    "multiplicative": 0.369,
-    "additive": 0.3639,
-    "power": 0.3614
-   },
-   "ev_pct": -2.43,
-   "min_ev": 4.78,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -1.43,
-   "trusted_prob": 0.3632,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -0.96,
-   "pinn_dec": 2.61
+   "cheat_side": "home"
   },
   {
    "kind": "ml",
@@ -7582,42 +7558,13 @@
      "book": "fanduel",
      "a": 1.893,
      "b": 1.926
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.862,
-     "b": 1.98
     }
    ],
    "model_prob": 0.59,
    "model_edge": 2.5,
    "model_edge_txt": "+2.5 pts \u00b7 LEAN",
    "cheat_side": "home",
-   "cbb_tier": "LEAN",
-   "pinnacle_line": "Belmont +4.5 -116 / St Bonaventure -4.5 -102",
-   "fair_prob": 0.5154,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5154,
-    0.5163
-   ],
-   "devig_all": {
-    "multiplicative": 0.5154,
-    "additive": 0.516,
-    "power": 0.5163
-   },
-   "ev_pct": -1.62,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -1.78,
-   "trusted_prob": 0.5171,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.73,
-   "pinn_dec": 1.862
+   "cbb_tier": "LEAN"
   },
   {
    "kind": "spread",
@@ -7789,60 +7736,6 @@
    "model_edge": 2.1,
    "model_edge_txt": "+2.1 pts \u00b7 LEAN",
    "cheat_side": "home",
-   "cbb_tier": "LEAN"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "South Carolina @ USC",
-   "pkey": "401921670",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "South Carolina +11.5",
-   "line": -11.5,
-   "side": "away",
-   "team": "South Carolina",
-   "opp": "USC",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/200807705681049",
-   "game_id": "401921670",
-   "kickoff": "2026-11-25T16:30:00-05:00",
-   "home": "USC",
-   "away": "South Carolina",
-   "dec": 1.877,
-   "american": -114,
-   "game_model": {
-    "game_id": "401921670",
-    "home": "USC",
-    "away": "South Carolina",
-    "kickoff": "2026-11-25T16:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 79.5,
-    "proj_away": 69.6,
-    "proj_margin": 9.8,
-    "proj_total": 149.1,
-    "home_win_prob": 0.814,
-    "model": "FULL",
-    "slope": 7.62,
-    "matchup_x": 1.29,
-    "home_em": 18.0,
-    "away_em": 9.1,
-    "home_t": 72.3,
-    "away_t": 69.2,
-    "league_avg": 105.5
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.943,
-     "b": 1.877
-    }
-   ],
-   "model_prob": 0.561,
-   "model_edge": 1.7,
-   "model_edge_txt": "+1.7 pts \u00b7 LEAN",
-   "cheat_side": "away",
    "cbb_tier": "LEAN"
   },
   {
@@ -8052,5 +7945,5 @@
   "ev": 0.25,
   "combined": 0.25
  },
- "odds_as_of": "2026-11-25T06:32:35-05:00"
+ "odds_as_of": "2026-11-25T06:43:03-05:00"
 }
