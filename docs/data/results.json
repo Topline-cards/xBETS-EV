@@ -1,4 +1,142 @@
 {
+ "lanes": {
+  "nfl:receptions": {
+   "bets": 24,
+   "graded": 23,
+   "days": 2,
+   "ev_vs_close": 1.8,
+   "t_stat": 2.81,
+   "roi_pct": 25.9,
+   "profit_units": 2.33,
+   "expected_units": 0.32,
+   "checks": {
+    "ev_vs_close": true,
+    "roi": true,
+    "bets": false,
+    "days": false
+   },
+   "status": "testing"
+  },
+  "nfl:rec_yds": {
+   "bets": 10,
+   "graded": 9,
+   "days": 2,
+   "ev_vs_close": -0.45,
+   "t_stat": -0.32,
+   "roi_pct": 30.5,
+   "profit_units": 1.22,
+   "expected_units": 0.14,
+   "checks": {
+    "ev_vs_close": false,
+    "roi": true,
+    "bets": false,
+    "days": false
+   },
+   "status": "testing"
+  },
+  "nfl:rush_att": {
+   "bets": 5,
+   "graded": 5,
+   "days": 1,
+   "ev_vs_close": 3.01,
+   "t_stat": 10.7,
+   "roi_pct": 50.7,
+   "profit_units": 1.14,
+   "expected_units": 0.08,
+   "checks": {
+    "ev_vs_close": true,
+    "roi": true,
+    "bets": false,
+    "days": false
+   },
+   "status": "testing"
+  },
+  "nfl:pass_att": {
+   "bets": 3,
+   "graded": 3,
+   "days": 1,
+   "ev_vs_close": 1.35,
+   "t_stat": 0.96,
+   "roi_pct": -2.0,
+   "profit_units": -0.02,
+   "expected_units": 0.03,
+   "checks": {
+    "ev_vs_close": true,
+    "roi": false,
+    "bets": false,
+    "days": false
+   },
+   "status": "testing"
+  },
+  "nfl:rush_yds": {
+   "bets": 2,
+   "graded": 2,
+   "days": 1,
+   "ev_vs_close": -0.65,
+   "t_stat": -0.24,
+   "roi_pct": -37.3,
+   "profit_units": -0.28,
+   "expected_units": 0.02,
+   "checks": {
+    "ev_vs_close": false,
+    "roi": false,
+    "bets": false,
+    "days": false
+   },
+   "status": "testing"
+  },
+  "nfl:pass_comp": {
+   "bets": 2,
+   "graded": 1,
+   "days": 1,
+   "ev_vs_close": 2.6,
+   "t_stat": 5.37,
+   "roi_pct": 90.0,
+   "profit_units": 0.45,
+   "expected_units": 0.02,
+   "checks": {
+    "ev_vs_close": true,
+    "roi": true,
+    "bets": false,
+    "days": false
+   },
+   "status": "testing"
+  },
+  "nfl:spread": {
+   "bets": 1,
+   "graded": 1,
+   "days": 1,
+   "ev_vs_close": 3.38,
+   "t_stat": null,
+   "roi_pct": 90.7,
+   "profit_units": 0.68,
+   "expected_units": 0.02,
+   "checks": {
+    "ev_vs_close": true,
+    "roi": true,
+    "bets": false,
+    "days": false
+   },
+   "status": "testing"
+  },
+  "nfl:total": {
+   "bets": 2,
+   "graded": 2,
+   "days": 1,
+   "ev_vs_close": -0.15,
+   "t_stat": -0.11,
+   "roi_pct": 94.0,
+   "profit_units": 1.41,
+   "expected_units": 0.06,
+   "checks": {
+    "ev_vs_close": false,
+    "roi": true,
+    "bets": false,
+    "days": false
+   },
+   "status": "testing"
+  }
+ },
  "combined": {
   "picks": 7,
   "graded": 7,
@@ -9,7 +147,8 @@
   "profit_units": 2.05,
   "roi_pct": 58.6,
   "avg_clv_pct": 0.95,
-  "beat_close_pct": 71.4
+  "beat_close_pct": 71.4,
+  "expected_units": 0.13
  },
  "ev": {
   "picks": 49,
@@ -21,7 +160,8 @@
   "profit_units": 6.93,
   "roi_pct": 35.1,
   "avg_clv_pct": 1.32,
-  "beat_close_pct": 69.4
+  "beat_close_pct": 69.4,
+  "expected_units": 0.68
  },
  "cheat": {
   "picks": 346,
@@ -33,7 +173,8 @@
   "profit_units": -56.55,
   "roi_pct": -18.9,
   "avg_clv_pct": -4.09,
-  "beat_close_pct": 14.5
+  "beat_close_pct": 14.5,
+  "expected_units": -6.81
  },
  "recent": [
   {
