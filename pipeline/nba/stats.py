@@ -171,6 +171,7 @@ def fetch_positions(year, max_age_h=20):
                          headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                                                 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"})
         if r.status_code == 200:
+            r.encoding = "utf-8"                 # accented names (Dončić, Jokić)
             df = pd.read_html(io.StringIO(r.text), attrs={"id": "per_game_stats"})[0]
             df = df[(df["Player"] != "Player") & (df["Player"] != "League Average")].dropna(subset=["Pos"])
             df["POS"] = df["Pos"].astype(str).str.split("-").str[0]
