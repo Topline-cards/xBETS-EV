@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T07:04:00-05:00",
+ "generated_at": "2026-11-25T07:14:30-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
  "next_kickoff": "2026-11-25T10:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 294,
+  "book_game_lines": 293,
   "book_unmatched": 12,
   "book_unmatched_games": [
    "Baylor @ Gonzaga",
@@ -2508,14 +2508,14 @@
    "side": "home",
    "team": "Penn State",
    "opp": "Memphis",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/156428604361658",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/146606042420507",
    "game_id": "401917182",
    "kickoff": "2026-11-25T17:00:00-05:00",
    "home": "Penn State",
    "away": "Memphis",
-   "dec": 2.5,
-   "american": 150,
+   "dec": 2.46,
+   "american": 146,
    "game_model": {
     "game_id": "401917182",
     "home": "Penn State",
@@ -2540,8 +2540,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 2.5,
-     "b": 1.556
+     "a": 2.45,
+     "b": 1.571
     },
     {
      "book": "fanduel",
@@ -2555,8 +2555,8 @@
     }
    ],
    "model_prob": 0.841,
-   "model_edge": 45.74,
-   "model_edge_txt": "+45.7%",
+   "model_edge": 45.26,
+   "model_edge_txt": "+45.3%",
    "cheat_side": "home",
    "pinnacle_line": "Penn State +145 / Memphis -171",
    "fair_prob": 0.3865,
@@ -2571,16 +2571,16 @@
     "additive": 0.3886,
     "power": 0.3865
    },
-   "ev_pct": -3.37,
-   "min_ev": 3.89,
+   "ev_pct": -4.92,
+   "min_ev": 3.71,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.25,
-   "trusted_prob": 0.3892,
+   "kelly_pct": -3.37,
+   "trusted_prob": 0.3905,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.89,
+   "second_ev": -5.71,
    "pinn_dec": 2.45
   },
   {
@@ -5168,6 +5168,64 @@
    "pinn_dec": 1.893
   },
   {
+   "kind": "ml",
+   "week": "2026-11-25",
+   "player": "Virginia @ Marquette",
+   "pkey": "401920428",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Marquette Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "Marquette",
+   "opp": "Virginia",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/275731555031860",
+   "game_id": "401920428",
+   "kickoff": "2026-11-25T12:00:00-05:00",
+   "home": "Marquette",
+   "away": "Virginia",
+   "dec": 3.1,
+   "american": 210,
+   "game_model": {
+    "game_id": "401920428",
+    "home": "Marquette",
+    "away": "Virginia",
+    "kickoff": "2026-11-25T12:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 74.2,
+    "proj_away": 77.4,
+    "proj_margin": -3.2,
+    "proj_total": 151.5,
+    "home_win_prob": 0.386,
+    "model": "FULL",
+    "slope": 7.54,
+    "matchup_x": -0.424,
+    "home_em": 14.4,
+    "away_em": 16.2,
+    "home_t": 69.9,
+    "away_t": 71.8,
+    "league_avg": 105.6
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 3.1,
+     "b": 1.388
+    },
+    {
+     "book": "fanduel",
+     "a": 3.02,
+     "b": 1.408
+    }
+   ],
+   "model_prob": 0.386,
+   "model_edge": 7.67,
+   "model_edge_txt": "+7.7%",
+   "cheat_side": "home"
+  },
+  {
    "kind": "total",
    "week": "2026-11-25",
    "player": "Incarnate Word @ Hawai'i",
@@ -5276,59 +5334,6 @@
    "model_prob": 0.691,
    "model_edge": 7.5,
    "model_edge_txt": "+7.5 pts",
-   "cheat_side": "over"
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "Northern Iowa @ Charlotte",
-   "pkey": "401921702",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 144.5",
-   "line": 144.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118447212130509",
-   "game_id": "401921702",
-   "kickoff": "2026-11-25T11:00:00-05:00",
-   "home": "Charlotte",
-   "away": "Northern Iowa",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401921702",
-    "home": "Charlotte",
-    "away": "Northern Iowa",
-    "kickoff": "2026-11-25T11:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 80.7,
-    "proj_away": 71.1,
-    "proj_margin": 9.6,
-    "proj_total": 151.9,
-    "home_win_prob": 0.809,
-    "model": "FULL",
-    "slope": 7.54,
-    "matchup_x": 1.277,
-    "home_em": 5.5,
-    "away_em": -1.9,
-    "home_t": 68.9,
-    "away_t": 72.3,
-    "league_avg": 105.6
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    }
-   ],
-   "model_prob": 0.689,
-   "model_edge": 7.4,
-   "model_edge_txt": "+7.4 pts",
    "cheat_side": "over"
   },
   {
@@ -5924,64 +5929,6 @@
    "pinn_dec": 1.926
   },
   {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Virginia @ Marquette",
-   "pkey": "401920428",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Marquette Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Marquette",
-   "opp": "Virginia",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/234795262215261",
-   "game_id": "401920428",
-   "kickoff": "2026-11-25T12:00:00-05:00",
-   "home": "Marquette",
-   "away": "Virginia",
-   "dec": 3.02,
-   "american": 202,
-   "game_model": {
-    "game_id": "401920428",
-    "home": "Marquette",
-    "away": "Virginia",
-    "kickoff": "2026-11-25T12:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 74.2,
-    "proj_away": 77.4,
-    "proj_margin": -3.2,
-    "proj_total": 151.5,
-    "home_win_prob": 0.386,
-    "model": "FULL",
-    "slope": 7.54,
-    "matchup_x": -0.424,
-    "home_em": 14.4,
-    "away_em": 16.2,
-    "home_t": 69.9,
-    "away_t": 71.8,
-    "league_avg": 105.6
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 3.0,
-     "b": 1.408
-    },
-    {
-     "book": "fanduel",
-     "a": 3.02,
-     "b": 1.408
-    }
-   ],
-   "model_prob": 0.386,
-   "model_edge": 6.8,
-   "model_edge_txt": "+6.8%",
-   "cheat_side": "home"
-  },
-  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "Portland St @ UC Riverside",
@@ -6213,6 +6160,59 @@
    "model_edge": 6.5,
    "model_edge_txt": "+6.5%",
    "cheat_side": "home"
+  },
+  {
+   "kind": "total",
+   "week": "2026-11-25",
+   "player": "Northern Iowa @ Charlotte",
+   "pkey": "401921702",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Over 145.5",
+   "line": 145.5,
+   "side": "over",
+   "team": null,
+   "opp": null,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/13100770356226",
+   "game_id": "401921702",
+   "kickoff": "2026-11-25T11:00:00-05:00",
+   "home": "Charlotte",
+   "away": "Northern Iowa",
+   "dec": 1.87,
+   "american": -115,
+   "game_model": {
+    "game_id": "401921702",
+    "home": "Charlotte",
+    "away": "Northern Iowa",
+    "kickoff": "2026-11-25T11:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 80.7,
+    "proj_away": 71.1,
+    "proj_margin": 9.6,
+    "proj_total": 151.9,
+    "home_win_prob": 0.809,
+    "model": "FULL",
+    "slope": 7.54,
+    "matchup_x": 1.277,
+    "home_em": 5.5,
+    "away_em": -1.9,
+    "home_t": 68.9,
+    "away_t": 72.3,
+    "league_avg": 105.6
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.87,
+     "b": 1.952
+    }
+   ],
+   "model_prob": 0.665,
+   "model_edge": 6.4,
+   "model_edge_txt": "+6.4 pts",
+   "cheat_side": "over"
   },
   {
    "kind": "ml",
@@ -6746,8 +6746,8 @@
    "side": "home",
    "team": "Richmond",
    "opp": "Bethune",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/162429212931615",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/173642421634436",
    "game_id": "401911241",
    "kickoff": "2026-11-25T18:00:00-05:00",
    "home": "Richmond",
@@ -6778,8 +6778,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.87,
+     "b": 1.952
     },
     {
      "book": "fanduel",
@@ -8192,8 +8192,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.87,
+     "b": 1.952
     },
     {
      "book": "fanduel",
@@ -8414,5 +8414,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T07:04:00-05:00"
+ "odds_as_of": "2026-11-25T07:14:30-05:00"
 }
