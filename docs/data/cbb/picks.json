@@ -1,15 +1,16 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T16:49:50-05:00",
+ "generated_at": "2026-11-25T17:01:05-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T17:00:00-05:00",
+ "next_kickoff": "2026-11-25T17:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 175,
-  "book_unmatched": 26,
+  "book_game_lines": 149,
+  "book_unmatched": 30,
   "book_unmatched_games": [
+   "Alcorn @ Texas State",
    "Arkansas @ Michigan State",
    "Baylor @ Gonzaga",
    "Clemson @ Colorado State",
@@ -17,22 +18,21 @@
    "Creighton @ TCU",
    "Georgetown @ Texas",
    "Gonzaga @ Baylor",
+   "Holy Cross @ Dartmouth",
    "Iowa State @ Tennessee",
    "Kansas State @ Alabama",
    "Maryland @ San Diego State",
+   "Memphis @ Penn State",
    "Miami FL @ Michigan",
    "Michigan @ Miami",
    "Mississippi Valley @ New Mexico",
    "Oregon @ Texas Tech",
+   "Portland State @ UC Riverside",
    "SMU @ LSU",
-   "Saint Mary's @ UCLA",
-   "Saint Marys @ UCLA",
-   "South Carolina @ USC",
-   "St. John's @ Louisville",
-   "St. Johns @ Louisville"
+   "Saint Mary's @ UCLA"
   ],
-  "pinnacle_game_lines": 514,
-  "pinnacle_unmatched": 5,
+  "pinnacle_game_lines": 437,
+  "pinnacle_unmatched": 10,
   "pinnacle_as_of": "2026-11-25T16:48:07-05:00"
  },
  "settings": {
@@ -557,31 +557,6 @@
  },
  "games": [
   {
-   "game_id": "401920237",
-   "label": "Holy Cross @ Dartmouth",
-   "kickoff": "2026-11-25T17:00:00-05:00"
-  },
-  {
-   "game_id": "401925688",
-   "label": "Alcorn St @ Texas St",
-   "kickoff": "2026-11-25T17:00:00-05:00"
-  },
-  {
-   "game_id": "401925917",
-   "label": "Portland St @ UC Riverside",
-   "kickoff": "2026-11-25T17:00:00-05:00"
-  },
-  {
-   "game_id": "401917182",
-   "label": "Memphis @ Penn State",
-   "kickoff": "2026-11-25T17:00:00-05:00"
-  },
-  {
-   "game_id": "401926065",
-   "label": "Southern @ Nebraska",
-   "kickoff": "2026-11-25T17:00:00-05:00"
-  },
-  {
    "game_id": "401921716",
    "label": "BYU @ Providence",
    "kickoff": "2026-11-25T17:30:00-05:00"
@@ -723,111 +698,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401920237",
-   "home": "Dartmouth",
-   "away": "Holy Cross",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 85.1,
-   "proj_away": 61.1,
-   "proj_margin": 24.0,
-   "proj_total": 146.3,
-   "home_win_prob": 0.985,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": 2.635,
-   "home_em": -12.6,
-   "away_em": -19.9,
-   "home_t": 69.0,
-   "away_t": 70.4,
-   "league_avg": 107.8
-  },
-  {
-   "game_id": "401925688",
-   "home": "Texas St",
-   "away": "Alcorn St",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 97.2,
-   "proj_away": 53.9,
-   "proj_margin": 43.3,
-   "proj_total": 151.1,
-   "home_win_prob": 1.0,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": 5.43,
-   "home_em": 11.6,
-   "away_em": -23.7,
-   "home_t": 67.0,
-   "away_t": 71.7,
-   "league_avg": 107.8
-  },
-  {
-   "game_id": "401925917",
-   "home": "UC Riverside",
-   "away": "Portland St",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 74.2,
-   "proj_away": 78.3,
-   "proj_margin": -4.0,
-   "proj_total": 152.5,
-   "home_win_prob": 0.357,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": -0.88,
-   "home_em": -6.3,
-   "away_em": -4.0,
-   "home_t": 70.5,
-   "away_t": 70.1,
-   "league_avg": 107.8
-  },
-  {
-   "game_id": "401917182",
-   "home": "Penn State",
-   "away": "Memphis",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 91.3,
-   "proj_away": 81.3,
-   "proj_margin": 10.0,
-   "proj_total": 172.6,
-   "home_win_prob": 0.818,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": 1.253,
-   "home_em": 8.2,
-   "away_em": 12.0,
-   "home_t": 71.0,
-   "away_t": 71.5,
-   "league_avg": 107.8
-  },
-  {
-   "game_id": "401926065",
-   "home": "Nebraska",
-   "away": "Southern",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 92.2,
-   "proj_away": 57.2,
-   "proj_margin": 35.0,
-   "proj_total": 149.4,
-   "home_win_prob": 0.999,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": 4.014,
-   "home_em": 23.8,
-   "away_em": -12.0,
-   "home_t": 68.8,
-   "away_t": 71.6,
-   "league_avg": 107.8
-  },
   {
    "game_id": "401921716",
    "home": "Providence",
@@ -1421,112 +1291,6 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Portland St @ UC Riverside",
-   "pkey": "401925917",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Portland St +3.5",
-   "line": -3.5,
-   "side": "away",
-   "team": "Portland St",
-   "opp": "UC Riverside",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/213178610484499",
-   "game_id": "401925917",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "UC Riverside",
-   "away": "Portland St",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401925917",
-    "home": "UC Riverside",
-    "away": "Portland St",
-    "kickoff": "2026-11-25T17:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 74.2,
-    "proj_away": 78.3,
-    "proj_margin": -4.0,
-    "proj_total": 152.5,
-    "home_win_prob": 0.357,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -0.88,
-    "home_em": -6.3,
-    "away_em": -4.0,
-    "home_t": 70.5,
-    "away_t": 70.1,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.12,
-     "b": 1.752
-    }
-   ],
-   "model_prob": 0.752,
-   "model_edge": 7.5,
-   "model_edge_txt": "+7.5 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "UC Riverside -3.5 112 / Portland St +3.5 -133",
-   "fair_prob": 0.5475,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5475,
-    0.5506
-   ],
-   "devig_all": {
-    "multiplicative": 0.5475,
-    "additive": 0.5495,
-    "power": 0.5506
-   },
-   "ev_pct": 3.65,
-   "min_ev": 1.71,
-   "units": 0.5,
-   "base_units": 0.8164974595800218,
-   "kelly_pct": 4.08,
-   "trusted_prob": 0.5437,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.752,
-   "sizing": {
-    "base": 0.82,
-    "conf": 0.47,
-    "conf_why": [
-     "cheat sheet agrees",
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 1,
-    "player_bets": 1,
-    "corr": 1.0,
-    "cap": 2.0,
-    "raw": 0.38
-   },
-   "lane": "cbb:spread",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 0,
-    "days": 0,
-    "ev_vs_close": -1.68,
-    "roi_pct": null
-   },
-   "exp_profit_units": 0.018
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
    "player": "Miss Valley St @ New Mexico",
    "pkey": "401924897",
    "stat": "spread",
@@ -1635,85 +1399,85 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Portland St @ UC Riverside",
-   "pkey": "401925917",
+   "player": "E Washington @ LMU",
+   "pkey": "401917545",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "Portland St +3.5",
-   "line": -3.5,
+   "title": "E Washington +8.5",
+   "line": -8.5,
    "side": "away",
-   "team": "Portland St",
-   "opp": "UC Riverside",
+   "team": "E Washington",
+   "opp": "LMU",
    "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/213178610484499",
-   "game_id": "401925917",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "UC Riverside",
-   "away": "Portland St",
-   "dec": 1.893,
-   "american": -112,
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/153629596081166",
+   "game_id": "401917545",
+   "kickoff": "2026-11-25T21:00:00-05:00",
+   "home": "LMU",
+   "away": "E Washington",
+   "dec": 1.87,
+   "american": -115,
    "game_model": {
-    "game_id": "401925917",
-    "home": "UC Riverside",
-    "away": "Portland St",
-    "kickoff": "2026-11-25T17:00:00-05:00",
+    "game_id": "401917545",
+    "home": "LMU",
+    "away": "E Washington",
+    "kickoff": "2026-11-25T21:00:00-05:00",
     "neutral": false,
     "non_d1": null,
-    "proj_home": 74.2,
-    "proj_away": 78.3,
-    "proj_margin": -4.0,
-    "proj_total": 152.5,
-    "home_win_prob": 0.357,
+    "proj_home": 84.6,
+    "proj_away": 70.1,
+    "proj_margin": 14.6,
+    "proj_total": 154.7,
+    "home_win_prob": 0.908,
     "model": "FULL",
     "slope": 7.97,
-    "matchup_x": -0.88,
-    "home_em": -6.3,
-    "away_em": -4.0,
-    "home_t": 70.5,
-    "away_t": 70.1,
+    "matchup_x": 1.453,
+    "home_em": 2.1,
+    "away_em": -2.8,
+    "home_t": 68.6,
+    "away_t": 70.3,
     "league_avg": 107.8
    },
    "books": [
     {
      "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
+     "a": 1.952,
+     "b": 1.87
     },
     {
      "book": "pinnacle",
-     "a": 2.12,
-     "b": 1.752
+     "a": 2.15,
+     "b": 1.73
     }
    ],
-   "model_prob": 0.752,
-   "model_edge": 7.5,
-   "model_edge_txt": "+7.5 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "UC Riverside -3.5 112 / Portland St +3.5 -133",
-   "fair_prob": 0.5475,
+   "model_prob": 0.29,
+   "model_edge": -6.1,
+   "model_edge_txt": "-6.1 pts",
+   "cheat_side": null,
+   "cbb_tier": null,
+   "pinnacle_line": "LMU -8.5 115 / E Washington +8.5 -137",
+   "fair_prob": 0.5541,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5475,
-    0.5506
+    0.5541,
+    0.5576
    ],
    "devig_all": {
-    "multiplicative": 0.5475,
-    "additive": 0.5495,
-    "power": 0.5506
+    "multiplicative": 0.5541,
+    "additive": 0.5565,
+    "power": 0.5576
    },
-   "ev_pct": 3.65,
-   "min_ev": 1.71,
-   "units": 0.5,
-   "base_units": 0.8164974595800218,
-   "kelly_pct": 4.08,
-   "trusted_prob": 0.5437,
+   "ev_pct": 3.62,
+   "min_ev": 1.64,
+   "units": 0.25,
+   "base_units": 0.8324446024410468,
+   "kelly_pct": 4.16,
+   "trusted_prob": 0.5503,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": null,
-   "pinn_dec": 1.752,
+   "pinn_dec": 1.73,
    "lane": "cbb:spread",
    "lane_status": "testing",
    "lane_info": {
@@ -1723,10 +1487,10 @@
     "roi_pct": null
    },
    "sizing": {
-    "base": 0.82,
-    "conf": 0.47,
+    "base": 0.83,
+    "conf": 0.22,
     "conf_why": [
-     "cheat sheet agrees",
+     "matchup points the other way",
      "one sharp source only",
      "lane still testing"
     ],
@@ -1734,9 +1498,9 @@
     "player_bets": 1,
     "corr": 1.0,
     "cap": 2.0,
-    "raw": 0.38
+    "raw": 0.19
    },
-   "exp_profit_units": 0.018
+   "exp_profit_units": 0.009
   },
   {
    "kind": "spread",
@@ -1846,93 +1610,6 @@
   }
  ],
  "cheat": [
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Memphis @ Penn State",
-   "pkey": "401917182",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Penn State Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Penn State",
-   "opp": "Memphis",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/156428604361658",
-   "game_id": "401917182",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "Penn State",
-   "away": "Memphis",
-   "dec": 2.5,
-   "american": 150,
-   "game_model": {
-    "game_id": "401917182",
-    "home": "Penn State",
-    "away": "Memphis",
-    "kickoff": "2026-11-25T17:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 91.3,
-    "proj_away": 81.3,
-    "proj_margin": 10.0,
-    "proj_total": 172.6,
-    "home_win_prob": 0.818,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 1.253,
-    "home_em": 8.2,
-    "away_em": 12.0,
-    "home_t": 71.0,
-    "away_t": 71.5,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.5,
-     "b": 1.556
-    },
-    {
-     "book": "fanduel",
-     "a": 2.42,
-     "b": 1.568
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.47,
-     "b": 1.578
-    }
-   ],
-   "model_prob": 0.818,
-   "model_edge": 43.44,
-   "model_edge_txt": "+43.4%",
-   "cheat_side": "home",
-   "pinnacle_line": "Penn State +147 / Memphis -173",
-   "fair_prob": 0.3834,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.3834,
-    0.3898
-   ],
-   "devig_all": {
-    "multiplicative": 0.3898,
-    "additive": 0.3856,
-    "power": 0.3834
-   },
-   "ev_pct": -4.14,
-   "min_ev": 3.89,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.76,
-   "trusted_prob": 0.3867,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.78,
-   "pinn_dec": 2.47
-  },
   {
    "kind": "ml",
    "week": "2026-11-25",
@@ -2192,93 +1869,6 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
-   "player": "Portland St @ UC Riverside",
-   "pkey": "401925917",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Portland St Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Portland St",
-   "opp": "UC Riverside",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/19149833321344",
-   "game_id": "401925917",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "UC Riverside",
-   "away": "Portland St",
-   "dec": 2.3,
-   "american": 130,
-   "game_model": {
-    "game_id": "401925917",
-    "home": "UC Riverside",
-    "away": "Portland St",
-    "kickoff": "2026-11-25T17:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 74.2,
-    "proj_away": 78.3,
-    "proj_margin": -4.0,
-    "proj_total": 152.5,
-    "home_win_prob": 0.357,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -0.88,
-    "home_em": -6.3,
-    "away_em": -4.0,
-    "home_t": 70.5,
-    "away_t": 70.1,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.645,
-     "b": 2.3
-    },
-    {
-     "book": "fanduel",
-     "a": 1.667,
-     "b": 2.25
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.725,
-     "b": 2.18
-    }
-   ],
-   "model_prob": 0.643,
-   "model_edge": 22.6,
-   "model_edge_txt": "+22.6%",
-   "cheat_side": "away",
-   "pinnacle_line": "UC Riverside -138 / Portland St +118",
-   "fair_prob": 0.4384,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4384,
-    0.4417
-   ],
-   "devig_all": {
-    "multiplicative": 0.4417,
-    "additive": 0.4395,
-    "power": 0.4384
-   },
-   "ev_pct": 0.83,
-   "min_ev": 3.0,
-   "units": 0.1275098819995418,
-   "base_units": 0.1275098819995418,
-   "kelly_pct": 0.64,
-   "trusted_prob": 0.4377,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.26,
-   "pinn_dec": 2.18
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
    "player": "E Washington @ LMU",
    "pkey": "401917545",
    "stat": "ml",
@@ -2320,8 +1910,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.308,
-     "b": 3.6
+     "a": 1.29,
+     "b": 3.75
     },
     {
      "book": "fanduel",
@@ -2360,7 +1950,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -2.96,
+   "second_ev": -1.56,
    "pinn_dec": 1.319
   },
   {
@@ -2801,93 +2391,6 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
-   "player": "Holy Cross @ Dartmouth",
-   "pkey": "401920237",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Dartmouth Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Dartmouth",
-   "opp": "Holy Cross",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/28894265064409",
-   "game_id": "401920237",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "Dartmouth",
-   "away": "Holy Cross",
-   "dec": 1.118,
-   "american": -847,
-   "game_model": {
-    "game_id": "401920237",
-    "home": "Dartmouth",
-    "away": "Holy Cross",
-    "kickoff": "2026-11-25T17:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 85.1,
-    "proj_away": 61.1,
-    "proj_margin": 24.0,
-    "proj_total": 146.3,
-    "home_win_prob": 0.985,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 2.635,
-    "home_em": -12.6,
-    "away_em": -19.9,
-    "home_t": 69.0,
-    "away_t": 70.4,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.118,
-     "b": 6.75
-    },
-    {
-     "book": "fanduel",
-     "a": 1.114,
-     "b": 6.9
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.116,
-     "b": 7.01
-    }
-   ],
-   "model_prob": 0.985,
-   "model_edge": 12.71,
-   "model_edge_txt": "+12.7%",
-   "cheat_side": "home",
-   "pinnacle_line": "Dartmouth -862 / Holy Cross +601",
-   "fair_prob": 0.8627,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.8627,
-    0.8852
-   ],
-   "devig_all": {
-    "multiplicative": 0.8627,
-    "additive": 0.8767,
-    "power": 0.8852
-   },
-   "ev_pct": -3.55,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -30.12,
-   "trusted_prob": 0.869,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.74,
-   "pinn_dec": 1.116
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
    "player": "Stanford @ Saint Louis",
    "pkey": "401921672",
    "stat": "ml",
@@ -3114,94 +2617,6 @@
    "pinn_dec": 2.09
   },
   {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Holy Cross @ Dartmouth",
-   "pkey": "401920237",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Dartmouth -12.5",
-   "line": -12.5,
-   "side": "home",
-   "team": "Dartmouth",
-   "opp": "Holy Cross",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/169117091958829",
-   "game_id": "401920237",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "Dartmouth",
-   "away": "Holy Cross",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401920237",
-    "home": "Dartmouth",
-    "away": "Holy Cross",
-    "kickoff": "2026-11-25T17:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 85.1,
-    "proj_away": 61.1,
-    "proj_margin": 24.0,
-    "proj_total": 146.3,
-    "home_win_prob": 0.985,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 2.635,
-    "home_em": -12.6,
-    "away_em": -19.9,
-    "home_t": 69.0,
-    "away_t": 70.4,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.855,
-     "b": 1.98
-    }
-   ],
-   "model_prob": 0.852,
-   "model_edge": 11.5,
-   "model_edge_txt": "+11.5 pts \u00b7 STRONG",
-   "cheat_side": "home",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Dartmouth -12.5 -117 / Holy Cross +12.5 -102",
-   "fair_prob": 0.5163,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5163,
-    0.5174
-   ],
-   "devig_all": {
-    "multiplicative": 0.5163,
-    "additive": 0.517,
-    "power": 0.5174
-   },
-   "ev_pct": -1.44,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -1.58,
-   "trusted_prob": 0.5178,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.73,
-   "pinn_dec": 1.855
-  },
-  {
    "kind": "ml",
    "week": "2026-11-25",
    "player": "Grand Canyon @ Colorado",
@@ -3374,88 +2789,6 @@
    "tier": "single",
    "second_ev": -3.75,
    "pinn_dec": 2.01
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "Memphis @ Penn State",
-   "pkey": "401917182",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 162.5",
-   "line": 162.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/54680346332223",
-   "game_id": "401917182",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "Penn State",
-   "away": "Memphis",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401917182",
-    "home": "Penn State",
-    "away": "Memphis",
-    "kickoff": "2026-11-25T17:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 91.3,
-    "proj_away": 81.3,
-    "proj_margin": 10.0,
-    "proj_total": 172.6,
-    "home_win_prob": 0.818,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 1.253,
-    "home_em": 8.2,
-    "away_em": 12.0,
-    "home_t": 71.0,
-    "away_t": 71.5,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.893,
-     "b": 1.909
-    }
-   ],
-   "model_prob": 0.75,
-   "model_edge": 10.1,
-   "model_edge_txt": "+10.1 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "162.5 o-112/u-110",
-   "fair_prob": 0.5021,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5021,
-    0.5023
-   ],
-   "devig_all": {
-    "multiplicative": 0.5021,
-    "additive": 0.5022,
-    "power": 0.5023
-   },
-   "ev_pct": -4.15,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.56,
-   "trusted_prob": 0.5065,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.893
   },
   {
    "kind": "spread",
@@ -3867,89 +3200,6 @@
    "pinn_dec": 1.943
   },
   {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Portland St @ UC Riverside",
-   "pkey": "401925917",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Portland St +3.5",
-   "line": -3.5,
-   "side": "away",
-   "team": "Portland St",
-   "opp": "UC Riverside",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/213178610484499",
-   "game_id": "401925917",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "UC Riverside",
-   "away": "Portland St",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401925917",
-    "home": "UC Riverside",
-    "away": "Portland St",
-    "kickoff": "2026-11-25T17:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 74.2,
-    "proj_away": 78.3,
-    "proj_margin": -4.0,
-    "proj_total": 152.5,
-    "home_win_prob": 0.357,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -0.88,
-    "home_em": -6.3,
-    "away_em": -4.0,
-    "home_t": 70.5,
-    "away_t": 70.1,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.12,
-     "b": 1.752
-    }
-   ],
-   "model_prob": 0.752,
-   "model_edge": 7.5,
-   "model_edge_txt": "+7.5 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "UC Riverside -3.5 112 / Portland St +3.5 -133",
-   "fair_prob": 0.5475,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5475,
-    0.5506
-   ],
-   "devig_all": {
-    "multiplicative": 0.5475,
-    "additive": 0.5495,
-    "power": 0.5506
-   },
-   "ev_pct": 3.65,
-   "min_ev": 1.71,
-   "units": 0.8164974595800218,
-   "base_units": 0.8164974595800218,
-   "kelly_pct": 4.08,
-   "trusted_prob": 0.5437,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.752
-  },
-  {
    "kind": "ml",
    "week": "2026-11-25",
    "player": "SMU @ Utah State",
@@ -4167,11 +3417,6 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
      "book": "fanduel",
      "a": 1.952,
      "b": 1.87
@@ -4209,7 +3454,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.3,
+   "second_ev": null,
    "pinn_dec": 1.952
   },
   {
@@ -4538,14 +3783,14 @@
    "side": "over",
    "team": null,
    "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/217539440223421",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/228874178562723",
    "game_id": "401909720",
    "kickoff": "2026-11-25T18:00:00-05:00",
    "home": "Syracuse",
    "away": "UAlbany",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.952,
+   "american": -105,
    "game_model": {
     "game_id": "401909720",
     "home": "Syracuse",
@@ -4575,8 +3820,8 @@
     },
     {
      "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.952,
+     "b": 1.87
     },
     {
      "book": "pinnacle",
@@ -4601,16 +3846,16 @@
     "additive": 0.5022,
     "power": 0.5023
    },
-   "ev_pct": -4.15,
-   "min_ev": 1.76,
+   "ev_pct": -1.99,
+   "min_ev": 1.9,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.56,
-   "trusted_prob": 0.5065,
+   "kelly_pct": -2.09,
+   "trusted_prob": 0.5041,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.55,
+   "second_ev": -2.4,
    "pinn_dec": 1.893
   },
   {
@@ -6138,8 +5383,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.75,
-  "combined": 0.75
+  "ev": 0.5,
+  "combined": 0.25
  },
- "odds_as_of": "2026-11-25T16:49:50-05:00"
+ "odds_as_of": "2026-11-25T17:01:05-05:00"
 }
