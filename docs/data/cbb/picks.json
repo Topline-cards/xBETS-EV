@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T13:13:23-05:00",
+ "generated_at": "2026-11-25T13:24:44-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
  "next_kickoff": "2026-11-25T13:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 267,
+  "book_game_lines": 268,
   "book_unmatched": 13,
   "book_unmatched_games": [
    "Baylor @ Gonzaga",
@@ -25,8 +25,8 @@
    "West Florida @ NW State"
   ],
   "pinnacle_game_lines": 781,
-  "pinnacle_unmatched": 5,
-  "pinnacle_as_of": "2026-11-25T13:01:58-05:00"
+  "pinnacle_unmatched": 4,
+  "pinnacle_as_of": "2026-11-25T13:24:44-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -2039,7 +2039,7 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.437,
+     "a": 1.435,
      "b": 2.92
     }
    ],
@@ -2047,25 +2047,25 @@
    "model_edge": 45.3,
    "model_edge_txt": "+45.3%",
    "cheat_side": "away",
-   "pinnacle_line": "Arizona -229 / Ole Miss +192",
-   "fair_prob": 0.3199,
+   "pinnacle_line": "Arizona -230 / Ole Miss +192",
+   "fair_prob": 0.3194,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.3199,
-    0.3298
+    0.3194,
+    0.3295
    ],
    "devig_all": {
-    "multiplicative": 0.3298,
-    "additive": 0.3233,
-    "power": 0.3199
+    "multiplicative": 0.3295,
+    "additive": 0.3228,
+    "power": 0.3194
    },
-   "ev_pct": -7.22,
+   "ev_pct": -7.39,
    "min_ev": 5.3,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.8,
-   "trusted_prob": 0.3249,
+   "kelly_pct": -3.89,
+   "trusted_prob": 0.3244,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
@@ -2940,6 +2940,93 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
+   "player": "Arizona St @ LSU",
+   "pkey": "401921669",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "LSU Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "LSU",
+   "opp": "Arizona St",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/134599888038426",
+   "game_id": "401921669",
+   "kickoff": "2026-11-25T14:00:00-05:00",
+   "home": "LSU",
+   "away": "Arizona St",
+   "dec": 1.625,
+   "american": -160,
+   "game_model": {
+    "game_id": "401921669",
+    "home": "LSU",
+    "away": "Arizona St",
+    "kickoff": "2026-11-25T14:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 78.5,
+    "proj_away": 71.3,
+    "proj_margin": 7.2,
+    "proj_total": 149.9,
+    "home_win_prob": 0.744,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 0.906,
+    "home_em": 21.0,
+    "away_em": 13.2,
+    "home_t": 70.7,
+    "away_t": 66.3,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.556,
+     "b": 2.5
+    },
+    {
+     "book": "fanduel",
+     "a": 1.625,
+     "b": 2.34
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.595,
+     "b": 2.43
+    }
+   ],
+   "model_prob": 0.744,
+   "model_edge": 15.38,
+   "model_edge_txt": "+15.4%",
+   "cheat_side": "home",
+   "pinnacle_line": "LSU -168 / Arizona St +143",
+   "fair_prob": 0.6037,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.6037,
+    0.6097
+   ],
+   "devig_all": {
+    "multiplicative": 0.6037,
+    "additive": 0.6077,
+    "power": 0.6097
+   },
+   "ev_pct": -1.89,
+   "min_ev": 1.0,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -3.03,
+   "trusted_prob": 0.6061,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "prime",
+   "second_ev": 0.16,
+   "pinn_dec": 1.595
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-25",
    "player": "St Thomas @ UNC Wilmington",
    "pkey": "401920847",
    "stat": "ml",
@@ -3068,8 +3155,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 2.8,
-     "b": 1.459
+     "a": 2.9,
+     "b": 1.435
     },
     {
      "book": "fanduel",
@@ -3107,8 +3194,8 @@
    "trusted_prob": 0.6511,
    "unit_note": null,
    "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.39,
+   "tier": "prime",
+   "second_ev": 0.35,
    "pinn_dec": 1.488
   },
   {
@@ -3336,99 +3423,41 @@
      "book": "fanduel",
      "a": 1.909,
      "b": 1.909
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.901,
+     "b": 1.917
     }
    ],
    "model_prob": 0.798,
    "model_edge": 12.5,
    "model_edge_txt": "+12.5 pts",
-   "cheat_side": "over"
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Arizona St @ LSU",
-   "pkey": "401921669",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "LSU Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "LSU",
-   "opp": "Arizona St",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/177233447697208",
-   "game_id": "401921669",
-   "kickoff": "2026-11-25T14:00:00-05:00",
-   "home": "LSU",
-   "away": "Arizona St",
-   "dec": 1.541,
-   "american": -185,
-   "game_model": {
-    "game_id": "401921669",
-    "home": "LSU",
-    "away": "Arizona St",
-    "kickoff": "2026-11-25T14:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 78.5,
-    "proj_away": 71.3,
-    "proj_margin": 7.2,
-    "proj_total": 149.9,
-    "home_win_prob": 0.744,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 0.906,
-    "home_em": 21.0,
-    "away_em": 13.2,
-    "home_t": 70.7,
-    "away_t": 66.3,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.541,
-     "b": 2.54
-    },
-    {
-     "book": "fanduel",
-     "a": 1.532,
-     "b": 2.55
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.588,
-     "b": 2.45
-    }
-   ],
-   "model_prob": 0.744,
-   "model_edge": 12.16,
-   "model_edge_txt": "+12.2%",
-   "cheat_side": "home",
-   "pinnacle_line": "LSU -170 / Arizona St +145",
-   "fair_prob": 0.6067,
+   "cheat_side": "over",
+   "pinnacle_line": "150.5 o-111/u-109",
+   "fair_prob": 0.5021,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.6067,
-    0.6128
+    0.5021,
+    0.5022
    ],
    "devig_all": {
-    "multiplicative": 0.6067,
-    "additive": 0.6108,
-    "power": 0.6128
+    "multiplicative": 0.5021,
+    "additive": 0.5022,
+    "power": 0.5022
    },
-   "ev_pct": -6.5,
-   "min_ev": 1.0,
+   "ev_pct": -3.3,
+   "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -12.02,
-   "trusted_prob": 0.6152,
+   "kelly_pct": -3.56,
+   "trusted_prob": 0.5055,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.73,
-   "pinn_dec": 1.588
+   "second_ev": -3.7,
+   "pinn_dec": 1.901
   },
   {
    "kind": "ml",
@@ -3566,8 +3595,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.98,
-     "b": 1.877
+     "a": 1.99,
+     "b": 1.855
     }
    ],
    "model_prob": 0.862,
@@ -3575,30 +3604,30 @@
    "model_edge_txt": "+12.0 pts \u00b7 STRONG",
    "cheat_side": "away",
    "cbb_tier": "STRONG",
-   "pinnacle_line": "Syracuse -26.5 -102 / UAlbany +26.5 -114",
-   "fair_prob": 0.5134,
+   "pinnacle_line": "Syracuse -26.5 -101 / UAlbany +26.5 -117",
+   "fair_prob": 0.5176,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5134,
-    0.5141
+    0.5176,
+    0.5187
    ],
    "devig_all": {
-    "multiplicative": 0.5134,
-    "additive": 0.5139,
-    "power": 0.5141
+    "multiplicative": 0.5176,
+    "additive": 0.5183,
+    "power": 0.5187
    },
-   "ev_pct": 0.21,
+   "ev_pct": 1.03,
    "min_ev": 1.9,
-   "units": 0.043356725630354705,
-   "base_units": 0.043356725630354705,
-   "kelly_pct": 0.22,
-   "trusted_prob": 0.5131,
+   "units": 0.21571177235523462,
+   "base_units": 0.21571177235523462,
+   "kelly_pct": 1.08,
+   "trusted_prob": 0.5165,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -2.4,
-   "pinn_dec": 1.877
+   "pinn_dec": 1.855
   },
   {
    "kind": "ml",
@@ -3918,93 +3947,6 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
-   "player": "Abilene Chrstn @ S Dakota St",
-   "pkey": "401917967",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "S Dakota St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "S Dakota St",
-   "opp": "Abilene Chrstn",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/130944696623970",
-   "game_id": "401917967",
-   "kickoff": "2026-11-25T14:00:00-05:00",
-   "home": "S Dakota St",
-   "away": "Abilene Chrstn",
-   "dec": 1.339,
-   "american": -295,
-   "game_model": {
-    "game_id": "401917967",
-    "home": "S Dakota St",
-    "away": "Abilene Chrstn",
-    "kickoff": "2026-11-25T14:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 77.0,
-    "proj_away": 66.6,
-    "proj_margin": 10.3,
-    "proj_total": 143.6,
-    "home_win_prob": 0.826,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 0.92,
-    "home_em": -2.7,
-    "away_em": -10.4,
-    "home_t": 67.5,
-    "away_t": 69.0,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.308,
-     "b": 3.6
-    },
-    {
-     "book": "fanduel",
-     "a": 1.339,
-     "b": 3.35
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.33,
-     "b": 3.49
-    }
-   ],
-   "model_prob": 0.826,
-   "model_edge": 11.16,
-   "model_edge_txt": "+11.2%",
-   "cheat_side": "home",
-   "pinnacle_line": "S Dakota St -303 / Abilene Chrstn +249",
-   "fair_prob": 0.7241,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.7241,
-    0.7372
-   ],
-   "devig_all": {
-    "multiplicative": 0.7241,
-    "additive": 0.7327,
-    "power": 0.7372
-   },
-   "ev_pct": -3.05,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -8.99,
-   "trusted_prob": 0.7286,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.78,
-   "pinn_dec": 1.33
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
    "player": "Grand Canyon @ Colorado",
    "pkey": "401921671",
    "stat": "ml",
@@ -4257,6 +4199,93 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 1.917
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-25",
+   "player": "Abilene Chrstn @ S Dakota St",
+   "pkey": "401917967",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "S Dakota St Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "S Dakota St",
+   "opp": "Abilene Chrstn",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/130944696623970",
+   "game_id": "401917967",
+   "kickoff": "2026-11-25T14:00:00-05:00",
+   "home": "S Dakota St",
+   "away": "Abilene Chrstn",
+   "dec": 1.323,
+   "american": -310,
+   "game_model": {
+    "game_id": "401917967",
+    "home": "S Dakota St",
+    "away": "Abilene Chrstn",
+    "kickoff": "2026-11-25T14:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 77.0,
+    "proj_away": 66.6,
+    "proj_margin": 10.3,
+    "proj_total": 143.6,
+    "home_win_prob": 0.826,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 0.92,
+    "home_em": -2.7,
+    "away_em": -10.4,
+    "home_t": 67.5,
+    "away_t": 69.0,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.308,
+     "b": 3.6
+    },
+    {
+     "book": "fanduel",
+     "a": 1.323,
+     "b": 3.5
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.319,
+     "b": 3.56
+    }
+   ],
+   "model_prob": 0.826,
+   "model_edge": 10.03,
+   "model_edge_txt": "+10.0%",
+   "cheat_side": "home",
+   "pinnacle_line": "S Dakota St -313 / Abilene Chrstn +256",
+   "fair_prob": 0.7297,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.7297,
+    0.7434
+   ],
+   "devig_all": {
+    "multiplicative": 0.7297,
+    "additive": 0.7386,
+    "power": 0.7434
+   },
+   "ev_pct": -3.47,
+   "min_ev": 1.0,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -10.73,
+   "trusted_prob": 0.7349,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -2.96,
+   "pinn_dec": 1.319
   },
   {
    "kind": "spread",
@@ -5390,38 +5419,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 2.01,
-     "b": 1.847
+     "a": 1.98,
+     "b": 1.877
     }
    ],
    "model_prob": 0.54,
    "model_edge": 6.18,
    "model_edge_txt": "+6.2%",
    "cheat_side": "home",
-   "pinnacle_line": "Duke +101 / UConn -118",
-   "fair_prob": 0.4776,
+   "pinnacle_line": "Duke -102 / UConn -114",
+   "fair_prob": 0.4859,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4776,
-    0.4789
+    0.4859,
+    0.4866
    ],
    "devig_all": {
-    "multiplicative": 0.4789,
-    "additive": 0.478,
-    "power": 0.4776
+    "multiplicative": 0.4866,
+    "additive": 0.4861,
+    "power": 0.4859
    },
-   "ev_pct": -4.47,
+   "ev_pct": -2.82,
    "min_ev": 2.05,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.47,
-   "trusted_prob": 0.4821,
+   "kelly_pct": -2.82,
+   "trusted_prob": 0.4887,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -4.66,
-   "pinn_dec": 2.01
+   "pinn_dec": 1.98
   },
   {
    "kind": "total",
@@ -5704,38 +5733,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.98,
-     "b": 1.826
+     "a": 1.99,
+     "b": 1.82
     }
    ],
    "model_prob": 0.653,
    "model_edge": 5.9,
    "model_edge_txt": "+5.9 pts",
    "cheat_side": "over",
-   "pinnacle_line": "146.5 o-102/u-121",
-   "fair_prob": 0.4781,
+   "pinnacle_line": "146.5 o-101/u-122",
+   "fair_prob": 0.4759,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4781,
-    0.4798
+    0.4759,
+    0.4777
    ],
    "devig_all": {
-    "multiplicative": 0.4798,
-    "additive": 0.4787,
-    "power": 0.4781
+    "multiplicative": 0.4777,
+    "additive": 0.4765,
+    "power": 0.4759
    },
-   "ev_pct": -7.91,
+   "ev_pct": -8.34,
    "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -8.54,
-   "trusted_prob": 0.4864,
+   "kelly_pct": -9.0,
+   "trusted_prob": 0.4846,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.7,
-   "pinn_dec": 1.98
+   "pinn_dec": 1.99
   },
   {
    "kind": "ml",
@@ -6305,19 +6334,14 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
      "book": "fanduel",
      "a": 1.909,
      "b": 1.909
     },
     {
      "book": "pinnacle",
-     "a": 1.98,
-     "b": 1.87
+     "a": 1.962,
+     "b": 1.893
     }
    ],
    "model_prob": 0.672,
@@ -6325,30 +6349,30 @@
    "model_edge_txt": "+4.9 pts \u00b7 GOOD",
    "cheat_side": "away",
    "cbb_tier": "GOOD",
-   "pinnacle_line": "South Dakota -21.5 -102 / AR-Pine Bluff +21.5 -115",
-   "fair_prob": 0.5143,
+   "pinnacle_line": "South Dakota -21.5 -104 / AR-Pine Bluff +21.5 -112",
+   "fair_prob": 0.5089,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5143,
-    0.5151
+    0.5089,
+    0.5095
    ],
    "devig_all": {
-    "multiplicative": 0.5143,
-    "additive": 0.5149,
-    "power": 0.5151
+    "multiplicative": 0.5089,
+    "additive": 0.5093,
+    "power": 0.5095
    },
-   "ev_pct": -1.82,
+   "ev_pct": -2.84,
    "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.01,
-   "trusted_prob": 0.5162,
+   "kelly_pct": -3.13,
+   "trusted_prob": 0.5119,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.73,
-   "pinn_dec": 1.87
+   "second_ev": null,
+   "pinn_dec": 1.893
   },
   {
    "kind": "spread",
@@ -6617,89 +6641,6 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Akron @ App State",
-   "pkey": "401928836",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Akron -4.5",
-   "line": 4.5,
-   "side": "away",
-   "team": "Akron",
-   "opp": "App State",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/113179976218556",
-   "game_id": "401928836",
-   "kickoff": "2026-11-25T15:00:00-05:00",
-   "home": "App State",
-   "away": "Akron",
-   "dec": 1.87,
-   "american": -115,
-   "game_model": {
-    "game_id": "401928836",
-    "home": "App State",
-    "away": "Akron",
-    "kickoff": "2026-11-25T15:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 57.0,
-    "proj_away": 65.9,
-    "proj_margin": -8.8,
-    "proj_total": 122.9,
-    "home_win_prob": 0.211,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -1.107,
-    "home_em": -0.8,
-    "away_em": 7.5,
-    "home_t": 64.4,
-    "away_t": 64.7,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.952,
-     "b": 1.87
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.971,
-     "b": 1.87
-    }
-   ],
-   "model_prob": 0.652,
-   "model_edge": 4.3,
-   "model_edge_txt": "+4.3 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "App State +4.5 -103 / Akron -4.5 -115",
-   "fair_prob": 0.5131,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5131,
-    0.514
-   ],
-   "devig_all": {
-    "multiplicative": 0.5131,
-    "additive": 0.5137,
-    "power": 0.514
-   },
-   "ev_pct": -4.04,
-   "min_ev": 1.64,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.65,
-   "trusted_prob": 0.5175,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.87
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
    "player": "E Michigan @ UTEP",
    "pkey": "401920550",
    "stat": "spread",
@@ -6871,42 +6812,213 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Abilene Chrstn @ S Dakota St",
-   "pkey": "401917967",
+   "player": "BYU @ Providence",
+   "pkey": "401921716",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "S Dakota St -6.5",
-   "line": -6.5,
-   "side": "home",
-   "team": "S Dakota St",
-   "opp": "Abilene Chrstn",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/195039417496189",
-   "game_id": "401917967",
-   "kickoff": "2026-11-25T14:00:00-05:00",
-   "home": "S Dakota St",
-   "away": "Abilene Chrstn",
+   "title": "BYU -1.5",
+   "line": 1.5,
+   "side": "away",
+   "team": "BYU",
+   "opp": "Providence",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/107532513861888",
+   "game_id": "401921716",
+   "kickoff": "2026-11-25T17:30:00-05:00",
+   "home": "Providence",
+   "away": "BYU",
    "dec": 1.833,
    "american": -120,
    "game_model": {
-    "game_id": "401917967",
-    "home": "S Dakota St",
-    "away": "Abilene Chrstn",
-    "kickoff": "2026-11-25T14:00:00-05:00",
-    "neutral": false,
+    "game_id": "401921716",
+    "home": "Providence",
+    "away": "BYU",
+    "kickoff": "2026-11-25T17:30:00-05:00",
+    "neutral": true,
     "non_d1": null,
-    "proj_home": 77.0,
-    "proj_away": 66.6,
-    "proj_margin": 10.3,
-    "proj_total": 143.6,
-    "home_win_prob": 0.826,
+    "proj_home": 73.4,
+    "proj_away": 78.9,
+    "proj_margin": -5.5,
+    "proj_total": 152.3,
+    "home_win_prob": 0.307,
     "model": "FULL",
     "slope": 7.97,
-    "matchup_x": 0.92,
-    "home_em": -2.7,
-    "away_em": -10.4,
-    "home_t": 67.5,
-    "away_t": 69.0,
+    "matchup_x": -0.694,
+    "home_em": 13.5,
+    "away_em": 20.7,
+    "home_t": 70.1,
+    "away_t": 71.4,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 2.0,
+     "b": 1.833
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.09,
+     "b": 1.769
+    }
+   ],
+   "model_prob": 0.642,
+   "model_edge": 4.0,
+   "model_edge_txt": "+4.0 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Providence +1.5 109 / BYU -1.5 -130",
+   "fair_prob": 0.5416,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5416,
+    0.5443
+   ],
+   "devig_all": {
+    "multiplicative": 0.5416,
+    "additive": 0.5434,
+    "power": 0.5443
+   },
+   "ev_pct": -0.73,
+   "min_ev": 1.52,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -0.87,
+   "trusted_prob": 0.5424,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.769
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Arizona St @ LSU",
+   "pkey": "401921669",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "LSU -3.5",
+   "line": -3.5,
+   "side": "home",
+   "team": "LSU",
+   "opp": "Arizona St",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/226997882468364",
+   "game_id": "401921669",
+   "kickoff": "2026-11-25T14:00:00-05:00",
+   "home": "LSU",
+   "away": "Arizona St",
+   "dec": 1.909,
+   "american": -110,
+   "game_model": {
+    "game_id": "401921669",
+    "home": "LSU",
+    "away": "Arizona St",
+    "kickoff": "2026-11-25T14:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 78.5,
+    "proj_away": 71.3,
+    "proj_margin": 7.2,
+    "proj_total": 149.9,
+    "home_win_prob": 0.744,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 0.906,
+    "home_em": 21.0,
+    "away_em": 13.2,
+    "home_t": 70.7,
+    "away_t": 66.3,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.893,
+     "b": 1.926
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.847,
+     "b": 1.99
+    }
+   ],
+   "model_prob": 0.632,
+   "model_edge": 3.7,
+   "model_edge_txt": "+3.7 pts \u00b7 GOOD",
+   "cheat_side": "home",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "LSU -3.5 -118 / Arizona St +3.5 -101",
+   "fair_prob": 0.5186,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5186,
+    0.5199
+   ],
+   "devig_all": {
+    "multiplicative": 0.5186,
+    "additive": 0.5195,
+    "power": 0.5199
+   },
+   "ev_pct": -0.99,
+   "min_ev": 1.76,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -1.09,
+   "trusted_prob": 0.5197,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -3.73,
+   "pinn_dec": 1.847
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Akron @ App State",
+   "pkey": "401928836",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Akron -5.5",
+   "line": 5.5,
+   "side": "away",
+   "team": "Akron",
+   "opp": "App State",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/111778927710789",
+   "game_id": "401928836",
+   "kickoff": "2026-11-25T15:00:00-05:00",
+   "home": "App State",
+   "away": "Akron",
+   "dec": 1.98,
+   "american": -102,
+   "game_model": {
+    "game_id": "401928836",
+    "home": "App State",
+    "away": "Akron",
+    "kickoff": "2026-11-25T15:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 57.0,
+    "proj_away": 65.9,
+    "proj_margin": -8.8,
+    "proj_total": 122.9,
+    "home_win_prob": 0.211,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": -1.107,
+    "home_em": -0.8,
+    "away_em": 7.5,
+    "home_t": 64.4,
+    "away_t": 64.7,
     "league_avg": 107.8
    },
    "books": [
@@ -6917,39 +7029,39 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.833,
-     "b": 2.01
+     "a": 1.787,
+     "b": 2.07
     }
    ],
-   "model_prob": 0.635,
-   "model_edge": 3.8,
-   "model_edge_txt": "+3.8 pts \u00b7 GOOD",
-   "cheat_side": "home",
+   "model_prob": 0.618,
+   "model_edge": 3.3,
+   "model_edge_txt": "+3.3 pts \u00b7 GOOD",
+   "cheat_side": "away",
    "cbb_tier": "GOOD",
-   "pinnacle_line": "S Dakota St -6.5 -120 / Abilene Chrstn +6.5 101",
-   "fair_prob": 0.523,
-   "fair_method": "multiplicative",
+   "pinnacle_line": "App State +5.5 -127 / Akron -5.5 107",
+   "fair_prob": 0.461,
+   "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.523,
-    0.5245
+    0.461,
+    0.4633
    ],
    "devig_all": {
-    "multiplicative": 0.523,
-    "additive": 0.524,
-    "power": 0.5245
+    "multiplicative": 0.4633,
+    "additive": 0.4617,
+    "power": 0.461
    },
-   "ev_pct": -4.13,
-   "min_ev": 1.52,
+   "ev_pct": -8.73,
+   "min_ev": 1.99,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.96,
-   "trusted_prob": 0.5275,
+   "kelly_pct": -8.91,
+   "trusted_prob": 0.4698,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": null,
-   "pinn_dec": 1.833
+   "pinn_dec": 2.07
   },
   {
    "kind": "spread",
@@ -7038,89 +7150,6 @@
    "tier": "single",
    "second_ev": -3.73,
    "pinn_dec": 1.901
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "BYU @ Providence",
-   "pkey": "401921716",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "BYU -2.5",
-   "line": 2.5,
-   "side": "away",
-   "team": "BYU",
-   "opp": "Providence",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/114833891713235",
-   "game_id": "401921716",
-   "kickoff": "2026-11-25T17:30:00-05:00",
-   "home": "Providence",
-   "away": "BYU",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401921716",
-    "home": "Providence",
-    "away": "BYU",
-    "kickoff": "2026-11-25T17:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 73.4,
-    "proj_away": 78.9,
-    "proj_margin": -5.5,
-    "proj_total": 152.3,
-    "home_win_prob": 0.307,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -0.694,
-    "home_em": 13.5,
-    "away_em": 20.7,
-    "home_t": 70.1,
-    "away_t": 71.4,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.943
-    }
-   ],
-   "model_prob": 0.607,
-   "model_edge": 3.0,
-   "model_edge_txt": "+3.0 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "Providence +2.5 -110 / BYU -2.5 -106",
-   "fair_prob": 0.4953,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4953,
-    0.4956
-   ],
-   "devig_all": {
-    "multiplicative": 0.4956,
-    "additive": 0.4954,
-    "power": 0.4953
-   },
-   "ev_pct": -5.44,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -5.99,
-   "trusted_prob": 0.501,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.943
   },
   {
    "kind": "spread",
@@ -7272,42 +7301,42 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Arizona St @ LSU",
-   "pkey": "401921669",
+   "player": "Abilene Chrstn @ S Dakota St",
+   "pkey": "401917967",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "LSU -4.5",
-   "line": -4.5,
+   "title": "S Dakota St -7.5",
+   "line": -7.5,
    "side": "home",
-   "team": "LSU",
-   "opp": "Arizona St",
+   "team": "S Dakota St",
+   "opp": "Abilene Chrstn",
    "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/141861008378823",
-   "game_id": "401921669",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/116349367375695",
+   "game_id": "401917967",
    "kickoff": "2026-11-25T14:00:00-05:00",
-   "home": "LSU",
-   "away": "Arizona St",
+   "home": "S Dakota St",
+   "away": "Abilene Chrstn",
    "dec": 1.926,
    "american": -108,
    "game_model": {
-    "game_id": "401921669",
-    "home": "LSU",
-    "away": "Arizona St",
+    "game_id": "401917967",
+    "home": "S Dakota St",
+    "away": "Abilene Chrstn",
     "kickoff": "2026-11-25T14:00:00-05:00",
-    "neutral": true,
+    "neutral": false,
     "non_d1": null,
-    "proj_home": 78.5,
-    "proj_away": 71.3,
-    "proj_margin": 7.2,
-    "proj_total": 149.9,
-    "home_win_prob": 0.744,
+    "proj_home": 77.0,
+    "proj_away": 66.6,
+    "proj_margin": 10.3,
+    "proj_total": 143.6,
+    "home_win_prob": 0.826,
     "model": "FULL",
     "slope": 7.97,
-    "matchup_x": 0.906,
-    "home_em": 21.0,
-    "away_em": 13.2,
-    "home_t": 70.7,
-    "away_t": 66.3,
+    "matchup_x": 0.92,
+    "home_em": -2.7,
+    "away_em": -10.4,
+    "home_t": 67.5,
+    "away_t": 69.0,
     "league_avg": 107.8
    },
    "books": [
@@ -7323,39 +7352,39 @@
     },
     {
      "book": "pinnacle",
-     "a": 2.04,
-     "b": 1.813
+     "a": 1.98,
+     "b": 1.855
     }
    ],
-   "model_prob": 0.597,
-   "model_edge": 2.7,
-   "model_edge_txt": "+2.7 pts \u00b7 LEAN",
+   "model_prob": 0.6,
+   "model_edge": 2.8,
+   "model_edge_txt": "+2.8 pts \u00b7 LEAN",
    "cheat_side": "home",
    "cbb_tier": "LEAN",
-   "pinnacle_line": "LSU -4.5 104 / Arizona St +4.5 -123",
-   "fair_prob": 0.4687,
+   "pinnacle_line": "S Dakota St -7.5 -102 / Abilene Chrstn +7.5 -117",
+   "fair_prob": 0.4826,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4687,
-    0.4705
+    0.4826,
+    0.4837
    ],
    "devig_all": {
-    "multiplicative": 0.4705,
-    "additive": 0.4693,
-    "power": 0.4687
+    "multiplicative": 0.4837,
+    "additive": 0.483,
+    "power": 0.4826
    },
-   "ev_pct": -9.73,
+   "ev_pct": -7.05,
    "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -10.51,
-   "trusted_prob": 0.4788,
+   "kelly_pct": -7.61,
+   "trusted_prob": 0.4899,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.7,
-   "pinn_dec": 2.04
+   "pinn_dec": 1.98
   },
   {
    "kind": "spread",
@@ -7411,8 +7440,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.926,
-     "b": 1.926
+     "a": 1.893,
+     "b": 1.962
     }
    ],
    "model_prob": 0.593,
@@ -7420,30 +7449,30 @@
    "model_edge_txt": "+2.6 pts \u00b7 LEAN",
    "cheat_side": "home",
    "cbb_tier": "LEAN",
-   "pinnacle_line": "Duke +1.5 -108 / UConn -1.5 -108",
-   "fair_prob": 0.5,
+   "pinnacle_line": "Duke +1.5 -112 / UConn -1.5 -104",
+   "fair_prob": 0.5089,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5,
-    0.5
+    0.5089,
+    0.5095
    ],
    "devig_all": {
-    "multiplicative": 0.5,
-    "additive": 0.5,
-    "power": 0.5
+    "multiplicative": 0.5089,
+    "additive": 0.5093,
+    "power": 0.5095
    },
-   "ev_pct": -4.55,
+   "ev_pct": -2.84,
    "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -5.01,
-   "trusted_prob": 0.5048,
+   "kelly_pct": -3.13,
+   "trusted_prob": 0.5119,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.73,
-   "pinn_dec": 1.926
+   "pinn_dec": 1.893
   },
   {
    "kind": "spread",
@@ -7804,14 +7833,14 @@
    "side": "home",
    "team": "SIUE",
    "opp": "N Illinois",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/266267571588314",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/226990248174453",
    "game_id": "401920916",
    "kickoff": "2026-11-25T19:00:00-05:00",
    "home": "SIUE",
    "away": "N Illinois",
-   "dec": 1.943,
-   "american": -106,
+   "dec": 1.847,
+   "american": -118,
    "game_model": {
     "game_id": "401920916",
     "home": "SIUE",
@@ -7841,8 +7870,8 @@
     },
     {
      "book": "fanduel",
-     "a": 1.943,
-     "b": 1.877
+     "a": 1.847,
+     "b": 1.962
     },
     {
      "book": "pinnacle",
@@ -7868,16 +7897,16 @@
     "additive": 0.522,
     "power": 0.5224
    },
-   "ev_pct": 1.26,
-   "min_ev": 1.87,
-   "units": 0.2663073378036871,
-   "base_units": 0.2663073378036871,
-   "kelly_pct": 1.33,
-   "trusted_prob": 0.5198,
+   "ev_pct": -3.75,
+   "min_ev": 1.57,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -4.42,
+   "trusted_prob": 0.5252,
    "unit_note": null,
    "edge_trust": 0.8,
-   "tier": "prime",
-   "second_ev": 0.53,
+   "tier": "single",
+   "second_ev": -4.86,
    "pinn_dec": 1.847
   },
   {
@@ -7974,5 +8003,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T13:13:23-05:00"
+ "odds_as_of": "2026-11-25T13:24:44-05:00"
 }
