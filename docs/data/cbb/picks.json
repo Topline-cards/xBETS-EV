@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T13:24:44-05:00",
+ "generated_at": "2026-11-25T13:36:07-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T13:30:00-05:00",
+ "next_kickoff": "2026-11-25T14:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 268,
+  "book_game_lines": 264,
   "book_unmatched": 13,
   "book_unmatched_games": [
    "Baylor @ Gonzaga",
@@ -24,8 +24,8 @@
    "Texas Tech @ Oregon",
    "West Florida @ NW State"
   ],
-  "pinnacle_game_lines": 781,
-  "pinnacle_unmatched": 4,
+  "pinnacle_game_lines": 762,
+  "pinnacle_unmatched": 5,
   "pinnacle_as_of": "2026-11-25T13:24:44-05:00"
  },
  "settings": {
@@ -550,11 +550,6 @@
  },
  "games": [
   {
-   "game_id": "401919007",
-   "label": "Tulane @ Davidson",
-   "kickoff": "2026-11-25T13:30:00-05:00"
-  },
-  {
    "game_id": "401921669",
    "label": "Arizona St @ LSU",
    "kickoff": "2026-11-25T14:00:00-05:00"
@@ -826,27 +821,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401919007",
-   "home": "Davidson",
-   "away": "Tulane",
-   "kickoff": "2026-11-25T13:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 75.7,
-   "proj_away": 66.0,
-   "proj_margin": 9.7,
-   "proj_total": 141.7,
-   "home_win_prob": 0.811,
-   "model": "FULL",
-   "slope": 7.97,
-   "matchup_x": 1.218,
-   "home_em": 7.0,
-   "away_em": -3.4,
-   "home_t": 66.0,
-   "away_t": 69.4,
-   "league_avg": 107.8
-  },
   {
    "game_id": "401921669",
    "home": "LSU",
@@ -1983,7 +1957,114 @@
   }
  ],
  "combined": [],
- "ev": [],
+ "ev": [
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Washington @ VCU",
+   "pkey": "401921713",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "VCU -3.5",
+   "line": -3.5,
+   "side": "home",
+   "team": "VCU",
+   "opp": "Washington",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/219303176189857",
+   "game_id": "401921713",
+   "kickoff": "2026-11-25T22:00:00-05:00",
+   "home": "VCU",
+   "away": "Washington",
+   "dec": 1.87,
+   "american": -115,
+   "game_model": {
+    "game_id": "401921713",
+    "home": "VCU",
+    "away": "Washington",
+    "kickoff": "2026-11-25T22:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 73.3,
+    "proj_away": 74.3,
+    "proj_margin": -1.0,
+    "proj_total": 147.6,
+    "home_win_prob": 0.462,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": -0.131,
+    "home_em": 13.7,
+    "away_em": 10.1,
+    "home_t": 67.6,
+    "away_t": 68.0,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.952
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.752,
+     "b": 2.11
+    }
+   ],
+   "model_prob": 0.341,
+   "model_edge": -4.5,
+   "model_edge_txt": "-4.5 pts",
+   "cheat_side": null,
+   "cbb_tier": null,
+   "pinnacle_line": "VCU -3.5 -133 / Washington +3.5 111",
+   "fair_prob": 0.5463,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5463,
+    0.5495
+   ],
+   "devig_all": {
+    "multiplicative": 0.5463,
+    "additive": 0.5484,
+    "power": 0.5495
+   },
+   "ev_pct": 2.17,
+   "min_ev": 1.64,
+   "units": 0.25,
+   "base_units": 0.4982231825568343,
+   "kelly_pct": 2.49,
+   "trusted_prob": 0.544,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.752,
+   "lane": "cbb:spread",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 0,
+    "days": 0,
+    "ev_vs_close": -4.03,
+    "roi_pct": null
+   },
+   "sizing": {
+    "base": 0.5,
+    "conf": 0.22,
+    "conf_why": [
+     "matchup points the other way",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 1,
+    "player_bets": 1,
+    "corr": 1.0,
+    "cap": 2.0,
+    "raw": 0.11
+   },
+   "exp_profit_units": 0.005
+  }
+ ],
  "cheat": [
   {
    "kind": "ml",
@@ -2592,93 +2673,6 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
-   "player": "Washington @ VCU",
-   "pkey": "401921713",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Washington Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Washington",
-   "opp": "VCU",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/149560528317750",
-   "game_id": "401921713",
-   "kickoff": "2026-11-25T22:00:00-05:00",
-   "home": "VCU",
-   "away": "Washington",
-   "dec": 2.7,
-   "american": 170,
-   "game_model": {
-    "game_id": "401921713",
-    "home": "VCU",
-    "away": "Washington",
-    "kickoff": "2026-11-25T22:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 73.3,
-    "proj_away": 74.3,
-    "proj_margin": -1.0,
-    "proj_total": 147.6,
-    "home_win_prob": 0.462,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": -0.131,
-    "home_em": 13.7,
-    "away_em": 10.1,
-    "home_t": 67.6,
-    "away_t": 68.0,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.488,
-     "b": 2.7
-    },
-    {
-     "book": "fanduel",
-     "a": 1.521,
-     "b": 2.6
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.505,
-     "b": 2.67
-    }
-   ],
-   "model_prob": 0.538,
-   "model_edge": 18.27,
-   "model_edge_txt": "+18.3%",
-   "cheat_side": "away",
-   "pinnacle_line": "VCU -198 / Washington +167",
-   "fair_prob": 0.3523,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.3523,
-    0.3605
-   ],
-   "devig_all": {
-    "multiplicative": 0.3605,
-    "additive": 0.355,
-    "power": 0.3523
-   },
-   "ev_pct": -4.89,
-   "min_ev": 4.78,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.87,
-   "trusted_prob": 0.3559,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.6,
-   "pinn_dec": 2.67
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
    "player": "E Washington @ LMU",
    "pkey": "401917545",
    "stat": "ml",
@@ -2762,6 +2756,93 @@
    "tier": "single",
    "second_ev": -2.96,
    "pinn_dec": 1.322
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-25",
+   "player": "Washington @ VCU",
+   "pkey": "401921713",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Washington Moneyline",
+   "line": null,
+   "side": "away",
+   "team": "Washington",
+   "opp": "VCU",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/16845758144696",
+   "game_id": "401921713",
+   "kickoff": "2026-11-25T22:00:00-05:00",
+   "home": "VCU",
+   "away": "Washington",
+   "dec": 2.55,
+   "american": 155,
+   "game_model": {
+    "game_id": "401921713",
+    "home": "VCU",
+    "away": "Washington",
+    "kickoff": "2026-11-25T22:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 73.3,
+    "proj_away": 74.3,
+    "proj_margin": -1.0,
+    "proj_total": 147.6,
+    "home_win_prob": 0.462,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": -0.131,
+    "home_em": 13.7,
+    "away_em": 10.1,
+    "home_t": 67.6,
+    "away_t": 68.0,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.541,
+     "b": 2.54
+    },
+    {
+     "book": "fanduel",
+     "a": 1.532,
+     "b": 2.55
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.505,
+     "b": 2.67
+    }
+   ],
+   "model_prob": 0.538,
+   "model_edge": 16.27,
+   "model_edge_txt": "+16.3%",
+   "cheat_side": "away",
+   "pinnacle_line": "VCU -198 / Washington +167",
+   "fair_prob": 0.3523,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.3523,
+    0.3605
+   ],
+   "devig_all": {
+    "multiplicative": 0.3605,
+    "additive": 0.355,
+    "power": 0.3523
+   },
+   "ev_pct": -10.17,
+   "min_ev": 4.11,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -6.56,
+   "trusted_prob": 0.3603,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -5.72,
+   "pinn_dec": 2.67
   },
   {
    "kind": "ml",
@@ -4043,14 +4124,14 @@
    "side": "home",
    "team": "Columbia",
    "opp": "Saint Peter's",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/156763568462990",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/17309356152200",
    "game_id": "401924705",
    "kickoff": "2026-11-25T14:00:00-05:00",
    "home": "Columbia",
    "away": "Saint Peter's",
-   "dec": 1.08,
-   "american": -1250,
+   "dec": 1.083,
+   "american": -1205,
    "game_model": {
     "game_id": "401924705",
     "home": "Columbia",
@@ -4075,8 +4156,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.074,
-     "b": 9.0
+     "a": 1.083,
+     "b": 8.5
     },
     {
      "book": "fanduel",
@@ -4090,8 +4171,8 @@
     }
    ],
    "model_prob": 0.996,
-   "model_edge": 10.76,
-   "model_edge_txt": "+10.8%",
+   "model_edge": 10.9,
+   "model_edge_txt": "+10.9%",
    "cheat_side": "home",
    "pinnacle_line": "Columbia -1266 / Saint Peter's +797",
    "fair_prob": 0.8926,
@@ -4106,16 +4187,16 @@
     "additive": 0.9077,
     "power": 0.9173
    },
-   "ev_pct": -3.6,
+   "ev_pct": -3.33,
    "min_ev": 1.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -44.95,
-   "trusted_prob": 0.8993,
+   "kelly_pct": -40.1,
+   "trusted_prob": 0.8988,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.51,
+   "second_ev": -3.78,
    "pinn_dec": 1.079
   },
   {
@@ -5952,14 +6033,14 @@
    "side": "away",
    "team": "Washington",
    "opp": "VCU",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/207813316951785",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/120474887733698",
    "game_id": "401921713",
    "kickoff": "2026-11-25T22:00:00-05:00",
    "home": "VCU",
    "away": "Washington",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.877,
+   "american": -114,
    "game_model": {
     "game_id": "401921713",
     "home": "VCU",
@@ -5983,14 +6064,9 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
      "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.943,
+     "b": 1.877
     },
     {
      "book": "pinnacle",
@@ -6016,16 +6092,16 @@
     "additive": 0.5,
     "power": 0.5
    },
-   "ev_pct": -4.55,
-   "min_ev": 1.76,
+   "ev_pct": -6.15,
+   "min_ev": 1.66,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -5.01,
-   "trusted_prob": 0.5048,
+   "kelly_pct": -7.01,
+   "trusted_prob": 0.5066,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.55,
+   "second_ev": null,
    "pinn_dec": 1.926
   },
   {
@@ -6303,14 +6379,14 @@
    "side": "away",
    "team": "AR-Pine Bluff",
    "opp": "South Dakota",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/131619278230414",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/262816276830988",
    "game_id": "401929406",
    "kickoff": "2026-11-25T14:00:00-05:00",
    "home": "South Dakota",
    "away": "AR-Pine Bluff",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.926,
+   "american": -108,
    "game_model": {
     "game_id": "401929406",
     "home": "South Dakota",
@@ -6333,6 +6409,11 @@
     "league_avg": 107.8
    },
    "books": [
+    {
+     "book": "draftkings",
+     "a": 1.893,
+     "b": 1.926
+    },
     {
      "book": "fanduel",
      "a": 1.909,
@@ -6362,16 +6443,16 @@
     "additive": 0.5093,
     "power": 0.5095
    },
-   "ev_pct": -2.84,
-   "min_ev": 1.76,
+   "ev_pct": -1.98,
+   "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.13,
-   "trusted_prob": 0.5119,
+   "kelly_pct": -2.13,
+   "trusted_prob": 0.511,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
+   "second_ev": -3.7,
    "pinn_dec": 1.893
   },
   {
@@ -7023,6 +7104,11 @@
    },
    "books": [
     {
+     "book": "draftkings",
+     "a": 1.893,
+     "b": 1.926
+    },
+    {
      "book": "fanduel",
      "a": 1.833,
      "b": 1.98
@@ -7060,7 +7146,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
+   "second_ev": -1.92,
    "pinn_dec": 2.07
   },
   {
@@ -8000,8 +8086,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0,
+  "ev": 0.25,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T13:24:44-05:00"
+ "odds_as_of": "2026-11-25T13:36:07-05:00"
 }
