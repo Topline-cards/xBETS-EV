@@ -1,19 +1,18 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T13:01:58-05:00",
+ "generated_at": "2026-11-25T13:13:23-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
  "next_kickoff": "2026-11-25T13:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 270,
-  "book_unmatched": 14,
+  "book_game_lines": 267,
+  "book_unmatched": 13,
   "book_unmatched_games": [
    "Baylor @ Gonzaga",
    "Clemson @ Colorado State",
    "Colorado State @ Clemson",
-   "Eastern Kentucky @ Miami OH",
    "Grambling @ New Orleans",
    "Kansas State @ Alabama",
    "Maryland @ San Diego State",
@@ -5194,93 +5193,6 @@
   {
    "kind": "ml",
    "week": "2026-11-25",
-   "player": "UConn @ Duke",
-   "pkey": "401909568",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Duke Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Duke",
-   "opp": "UConn",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/143500358608565",
-   "game_id": "401909568",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "Duke",
-   "away": "UConn",
-   "dec": 2.02,
-   "american": 102,
-   "game_model": {
-    "game_id": "401909568",
-    "home": "Duke",
-    "away": "UConn",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 73.6,
-    "proj_away": 72.5,
-    "proj_margin": 1.1,
-    "proj_total": 146.2,
-    "home_win_prob": 0.54,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 0.138,
-    "home_em": 25.8,
-    "away_em": 26.0,
-    "home_t": 71.5,
-    "away_t": 67.1,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.02,
-     "b": 1.82
-    },
-    {
-     "book": "fanduel",
-     "a": 2.02,
-     "b": 1.82
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.01,
-     "b": 1.847
-    }
-   ],
-   "model_prob": 0.54,
-   "model_edge": 6.6,
-   "model_edge_txt": "+6.6%",
-   "cheat_side": "home",
-   "pinnacle_line": "Duke +101 / UConn -118",
-   "fair_prob": 0.4776,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4776,
-    0.4789
-   ],
-   "devig_all": {
-    "multiplicative": 0.4789,
-    "additive": 0.478,
-    "power": 0.4776
-   },
-   "ev_pct": -3.52,
-   "min_ev": 2.12,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.45,
-   "trusted_prob": 0.4811,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -4.61,
-   "pinn_dec": 2.01
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
    "player": "UAlbany @ Syracuse",
    "pkey": "401909720",
    "stat": "ml",
@@ -5423,6 +5335,93 @@
    "tier": "single",
    "second_ev": -2.4,
    "pinn_dec": 1.926
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-25",
+   "player": "UConn @ Duke",
+   "pkey": "401909568",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Duke Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "Duke",
+   "opp": "UConn",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/143500358608565",
+   "game_id": "401909568",
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "home": "Duke",
+   "away": "UConn",
+   "dec": 2.0,
+   "american": 100,
+   "game_model": {
+    "game_id": "401909568",
+    "home": "Duke",
+    "away": "UConn",
+    "kickoff": "2026-11-25T19:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 73.6,
+    "proj_away": 72.5,
+    "proj_margin": 1.1,
+    "proj_total": 146.2,
+    "home_win_prob": 0.54,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 0.138,
+    "home_em": 25.8,
+    "away_em": 26.0,
+    "home_t": 71.5,
+    "away_t": 67.1,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 2.0,
+     "b": 1.833
+    },
+    {
+     "book": "fanduel",
+     "a": 2.0,
+     "b": 1.833
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.01,
+     "b": 1.847
+    }
+   ],
+   "model_prob": 0.54,
+   "model_edge": 6.18,
+   "model_edge_txt": "+6.2%",
+   "cheat_side": "home",
+   "pinnacle_line": "Duke +101 / UConn -118",
+   "fair_prob": 0.4776,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4776,
+    0.4789
+   ],
+   "devig_all": {
+    "multiplicative": 0.4789,
+    "additive": 0.478,
+    "power": 0.4776
+   },
+   "ev_pct": -4.47,
+   "min_ev": 2.05,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -4.47,
+   "trusted_prob": 0.4821,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -4.66,
+   "pinn_dec": 2.01
   },
   {
    "kind": "total",
@@ -5737,89 +5736,6 @@
    "tier": "single",
    "second_ev": -3.7,
    "pinn_dec": 1.98
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Norfolk St @ NC State",
-   "pkey": "401918960",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Norfolk St +28.5",
-   "line": -28.5,
-   "side": "away",
-   "team": "Norfolk St",
-   "opp": "NC State",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/148741030735399",
-   "game_id": "401918960",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "NC State",
-   "away": "Norfolk St",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401918960",
-    "home": "NC State",
-    "away": "Norfolk St",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 89.2,
-    "proj_away": 66.6,
-    "proj_margin": 22.6,
-    "proj_total": 155.8,
-    "home_win_prob": 0.98,
-    "model": "FULL",
-    "slope": 7.97,
-    "matchup_x": 2.459,
-    "home_em": 19.8,
-    "away_em": -18.7,
-    "home_t": 68.6,
-    "away_t": 67.7,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.06,
-     "b": 1.787
-    }
-   ],
-   "model_prob": 0.704,
-   "model_edge": 5.9,
-   "model_edge_txt": "+5.9 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "NC State -28.5 106 / Norfolk St +28.5 -127",
-   "fair_prob": 0.5355,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5355,
-    0.5379
-   ],
-   "devig_all": {
-    "multiplicative": 0.5355,
-    "additive": 0.5371,
-    "power": 0.5379
-   },
-   "ev_pct": 1.37,
-   "min_ev": 1.71,
-   "units": 0.30610958758166334,
-   "base_units": 0.30610958758166334,
-   "kelly_pct": 1.53,
-   "trusted_prob": 0.534,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.787
   },
   {
    "kind": "ml",
@@ -6437,6 +6353,94 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
+   "player": "Norfolk St @ NC State",
+   "pkey": "401918960",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Norfolk St +27.5",
+   "line": -27.5,
+   "side": "away",
+   "team": "Norfolk St",
+   "opp": "NC State",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/10556325242320",
+   "game_id": "401918960",
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "home": "NC State",
+   "away": "Norfolk St",
+   "dec": 1.98,
+   "american": -102,
+   "game_model": {
+    "game_id": "401918960",
+    "home": "NC State",
+    "away": "Norfolk St",
+    "kickoff": "2026-11-25T19:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 89.2,
+    "proj_away": 66.6,
+    "proj_margin": 22.6,
+    "proj_total": 155.8,
+    "home_win_prob": 0.98,
+    "model": "FULL",
+    "slope": 7.97,
+    "matchup_x": 2.459,
+    "home_em": 19.8,
+    "away_em": -18.7,
+    "home_t": 68.6,
+    "away_t": 67.7,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.952
+    },
+    {
+     "book": "fanduel",
+     "a": 1.833,
+     "b": 1.98
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.862,
+     "b": 1.971
+    }
+   ],
+   "model_prob": 0.672,
+   "model_edge": 4.9,
+   "model_edge_txt": "+4.9 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "NC State -27.5 -116 / Norfolk St +27.5 -103",
+   "fair_prob": 0.4848,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4848,
+    0.4858
+   ],
+   "devig_all": {
+    "multiplicative": 0.4858,
+    "additive": 0.4851,
+    "power": 0.4848
+   },
+   "ev_pct": -4.0,
+   "min_ev": 1.99,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -4.09,
+   "trusted_prob": 0.4889,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -3.27,
+   "pinn_dec": 1.971
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
    "player": "St Thomas @ UNC Wilmington",
    "pkey": "401920847",
    "stat": "spread",
@@ -7047,14 +7051,14 @@
    "side": "away",
    "team": "BYU",
    "opp": "Providence",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/126549242917028",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/114833891713235",
    "game_id": "401921716",
    "kickoff": "2026-11-25T17:30:00-05:00",
    "home": "Providence",
    "away": "BYU",
-   "dec": 2.0,
-   "american": 100,
+   "dec": 1.909,
+   "american": -110,
    "game_model": {
     "game_id": "401921716",
     "home": "Providence",
@@ -7077,11 +7081,6 @@
     "league_avg": 107.8
    },
    "books": [
-    {
-     "book": "draftkings",
-     "a": 1.833,
-     "b": 2.0
-    },
     {
      "book": "fanduel",
      "a": 1.909,
@@ -7111,16 +7110,16 @@
     "additive": 0.4954,
     "power": 0.4953
    },
-   "ev_pct": -0.93,
-   "min_ev": 2.05,
+   "ev_pct": -5.44,
+   "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -0.93,
-   "trusted_prob": 0.4963,
+   "kelly_pct": -5.99,
+   "trusted_prob": 0.501,
    "unit_note": null,
    "edge_trust": 0.8,
-   "tier": "prime",
-   "second_ev": 0.0,
+   "tier": "single",
+   "second_ev": null,
    "pinn_dec": 1.943
   },
   {
@@ -7370,14 +7369,14 @@
    "side": "home",
    "team": "Duke",
    "opp": "UConn",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/41204408087075",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/182299271062025",
    "game_id": "401909568",
    "kickoff": "2026-11-25T19:00:00-05:00",
    "home": "Duke",
    "away": "UConn",
-   "dec": 1.926,
-   "american": -108,
+   "dec": 1.909,
+   "american": -110,
    "game_model": {
     "game_id": "401909568",
     "home": "Duke",
@@ -7402,8 +7401,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
+     "a": 1.893,
+     "b": 1.926
     },
     {
      "book": "fanduel",
@@ -7434,16 +7433,16 @@
     "additive": 0.5,
     "power": 0.5
    },
-   "ev_pct": -3.7,
-   "min_ev": 1.82,
+   "ev_pct": -4.55,
+   "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.0,
-   "trusted_prob": 0.5038,
+   "kelly_pct": -5.01,
+   "trusted_prob": 0.5048,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.7,
+   "second_ev": -3.73,
    "pinn_dec": 1.926
   },
   {
@@ -7975,5 +7974,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T13:01:58-05:00"
+ "odds_as_of": "2026-11-25T13:13:23-05:00"
 }
