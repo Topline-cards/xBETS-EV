@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T09:09:53-05:00",
+ "generated_at": "2026-11-25T09:20:26-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
  "next_kickoff": "2026-11-25T10:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 298,
+  "book_game_lines": 297,
   "book_unmatched": 12,
   "book_unmatched_games": [
    "Baylor @ Gonzaga",
@@ -2407,7 +2407,7 @@
    "lane_info": {
     "graded": 0,
     "days": 0,
-    "ev_vs_close": 2.47,
+    "ev_vs_close": 2.7,
     "roi_pct": null
    },
    "sizing": {
@@ -2418,13 +2418,124 @@
      "one sharp source only",
      "lane still testing"
     ],
-    "game_bets": 1,
+    "game_bets": 2,
     "player_bets": 1,
-    "corr": 1.0,
+    "corr": 0.71,
     "cap": 2.0,
-    "raw": 0.17
+    "raw": 0.12
    },
    "exp_profit_units": 0.008
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Northern Iowa @ Charlotte",
+   "pkey": "401921702",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Northern Iowa +8.5",
+   "line": -8.5,
+   "side": "away",
+   "team": "Northern Iowa",
+   "opp": "Charlotte",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118647776670533",
+   "game_id": "401921702",
+   "kickoff": "2026-11-25T11:00:00-05:00",
+   "home": "Charlotte",
+   "away": "Northern Iowa",
+   "dec": 1.893,
+   "american": -112,
+   "game_model": {
+    "game_id": "401921702",
+    "home": "Charlotte",
+    "away": "Northern Iowa",
+    "kickoff": "2026-11-25T11:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 80.7,
+    "proj_away": 71.1,
+    "proj_margin": 9.6,
+    "proj_total": 151.9,
+    "home_win_prob": 0.809,
+    "model": "FULL",
+    "slope": 7.54,
+    "matchup_x": 1.277,
+    "home_em": 5.5,
+    "away_em": -1.9,
+    "home_t": 68.9,
+    "away_t": 72.3,
+    "league_avg": 105.6
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.926,
+     "b": 1.893
+    },
+    {
+     "book": "fanduel",
+     "a": 1.98,
+     "b": 1.833
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.09,
+     "b": 1.758
+    }
+   ],
+   "model_prob": 0.46,
+   "model_edge": -1.1,
+   "model_edge_txt": "-1.1 pts",
+   "cheat_side": null,
+   "cbb_tier": null,
+   "pinnacle_line": "Charlotte -8.5 109 / Northern Iowa +8.5 -132",
+   "fair_prob": 0.5431,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5431,
+    0.5462
+   ],
+   "devig_all": {
+    "multiplicative": 0.5431,
+    "additive": 0.5452,
+    "power": 0.5462
+   },
+   "ev_pct": 2.82,
+   "min_ev": 1.71,
+   "units": 0.25,
+   "base_units": 0.6307431559391248,
+   "kelly_pct": 3.15,
+   "trusted_prob": 0.5402,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -1.7,
+   "pinn_dec": 1.758,
+   "lane": "cbb:spread",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 0,
+    "days": 0,
+    "ev_vs_close": 2.88,
+    "roi_pct": null
+   },
+   "sizing": {
+    "base": 0.63,
+    "conf": 0.22,
+    "conf_why": [
+     "matchup points the other way",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 2,
+    "player_bets": 1,
+    "corr": 0.71,
+    "cap": 2.0,
+    "raw": 0.1
+   },
+   "exp_profit_units": 0.007
   }
  ],
  "cheat": [
@@ -2936,8 +3047,8 @@
     },
     {
      "book": "fanduel",
-     "a": 1.521,
-     "b": 2.6
+     "a": 1.532,
+     "b": 2.55
     }
    ],
    "model_prob": 0.889,
@@ -3010,14 +3121,14 @@
    "side": "away",
    "team": "Portland St",
    "opp": "UC Riverside",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/19149833321344",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/18837210387058",
    "game_id": "401925917",
    "kickoff": "2026-11-25T17:00:00-05:00",
    "home": "UC Riverside",
    "away": "Portland St",
-   "dec": 2.2,
-   "american": 120,
+   "dec": 2.25,
+   "american": 125,
    "game_model": {
     "game_id": "401925917",
     "home": "UC Riverside",
@@ -3047,13 +3158,13 @@
     },
     {
      "book": "fanduel",
-     "a": 1.725,
-     "b": 2.16
+     "a": 1.667,
+     "b": 2.25
     }
    ],
    "model_prob": 0.647,
-   "model_edge": 21.05,
-   "model_edge_txt": "+21.1%",
+   "model_edge": 22.14,
+   "model_edge_txt": "+22.1%",
    "cheat_side": "away"
   },
   {
@@ -3132,8 +3243,8 @@
    "kickoff": "2026-11-25T11:00:00-05:00",
    "home": "Ohio",
    "away": "Rice",
-   "dec": 2.64,
-   "american": 164,
+   "dec": 2.6,
+   "american": 160,
    "game_model": {
     "game_id": "401928845",
     "home": "Ohio",
@@ -3158,18 +3269,18 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.505,
-     "b": 2.64
+     "a": 1.521,
+     "b": 2.6
     },
     {
      "book": "fanduel",
-     "a": 1.521,
-     "b": 2.6
+     "a": 1.581,
+     "b": 2.42
     }
    ],
    "model_prob": 0.54,
-   "model_edge": 17.69,
-   "model_edge_txt": "+17.7%",
+   "model_edge": 17.09,
+   "model_edge_txt": "+17.1%",
    "cheat_side": "away"
   },
   {
@@ -3218,11 +3329,6 @@
      "book": "draftkings",
      "a": 1.388,
      "b": 3.1
-    },
-    {
-     "book": "fanduel",
-     "a": 1.377,
-     "b": 3.15
     }
    ],
    "model_prob": 0.861,
@@ -3417,8 +3523,8 @@
    "kickoff": "2026-11-25T17:00:00-05:00",
    "home": "Dartmouth",
    "away": "Holy Cross",
-   "dec": 1.133,
-   "american": -752,
+   "dec": 1.143,
+   "american": -699,
    "game_model": {
     "game_id": "401920237",
     "home": "Dartmouth",
@@ -3443,18 +3549,18 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.133,
-     "b": 6.25
+     "a": 1.143,
+     "b": 6.0
     },
     {
      "book": "fanduel",
      "a": 1.139,
-     "b": 6.3
+     "b": 6.2
     }
    ],
    "model_prob": 0.991,
-   "model_edge": 14.45,
-   "model_edge_txt": "+14.4%",
+   "model_edge": 15.1,
+   "model_edge_txt": "+15.1%",
    "cheat_side": "home"
   },
   {
@@ -3564,8 +3670,8 @@
     },
     {
      "book": "fanduel",
-     "a": 1.746,
-     "b": 2.12
+     "a": 1.758,
+     "b": 2.1
     }
    ],
    "model_prob": 0.678,
@@ -3961,8 +4067,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.388,
-     "b": 3.1
+     "a": 1.408,
+     "b": 3.0
     },
     {
      "book": "fanduel",
@@ -4310,7 +4416,7 @@
     {
      "book": "fanduel",
      "a": null,
-     "b": 26.0
+     "b": 36.0
     }
    ],
    "model_prob": 0.125,
@@ -4915,122 +5021,6 @@
    "pinn_dec": 1.971
   },
   {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Abilene Chrstn @ S Dakota St",
-   "pkey": "401917967",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "S Dakota St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "S Dakota St",
-   "opp": "Abilene Chrstn",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/130944696623970",
-   "game_id": "401917967",
-   "kickoff": "2026-11-25T14:00:00-05:00",
-   "home": "S Dakota St",
-   "away": "Abilene Chrstn",
-   "dec": 1.317,
-   "american": -315,
-   "game_model": {
-    "game_id": "401917967",
-    "home": "S Dakota St",
-    "away": "Abilene Chrstn",
-    "kickoff": "2026-11-25T14:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 77.2,
-    "proj_away": 67.4,
-    "proj_margin": 9.8,
-    "proj_total": 144.6,
-    "home_win_prob": 0.813,
-    "model": "FULL",
-    "slope": 7.54,
-    "matchup_x": 0.899,
-    "home_em": 8.1,
-    "away_em": 4.6,
-    "home_t": 69.6,
-    "away_t": 69.8,
-    "league_avg": 105.6
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.294,
-     "b": 3.7
-    },
-    {
-     "book": "fanduel",
-     "a": 1.317,
-     "b": 3.55
-    }
-   ],
-   "model_prob": 0.813,
-   "model_edge": 8.36,
-   "model_edge_txt": "+8.4%",
-   "cheat_side": "home"
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "Holy Cross @ Dartmouth",
-   "pkey": "401920237",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 147.5",
-   "line": 147.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/203593784278044",
-   "game_id": "401920237",
-   "kickoff": "2026-11-25T17:00:00-05:00",
-   "home": "Dartmouth",
-   "away": "Holy Cross",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401920237",
-    "home": "Dartmouth",
-    "away": "Holy Cross",
-    "kickoff": "2026-11-25T17:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 90.9,
-    "proj_away": 64.8,
-    "proj_margin": 26.1,
-    "proj_total": 155.8,
-    "home_win_prob": 0.991,
-    "model": "FULL",
-    "slope": 7.54,
-    "matchup_x": 3.06,
-    "home_em": 8.6,
-    "away_em": -9.8,
-    "home_t": 72.4,
-    "away_t": 72.6,
-    "league_avg": 105.6
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    }
-   ],
-   "model_prob": 0.71,
-   "model_edge": 8.3,
-   "model_edge_txt": "+8.3 pts",
-   "cheat_side": "over"
-  },
-  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "Longwood @ George Mason",
@@ -5154,14 +5144,14 @@
    "side": "over",
    "team": null,
    "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/213564270253901",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/80237812502230",
    "game_id": "401922285",
    "kickoff": "2026-11-25T19:00:00-05:00",
    "home": "The Citadel",
    "away": "SC Upstate",
-   "dec": 2.0,
-   "american": 100,
+   "dec": 1.909,
+   "american": -110,
    "game_model": {
     "game_id": "401922285",
     "home": "The Citadel",
@@ -5186,14 +5176,77 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 2.0,
-     "b": 1.769
+     "a": 1.893,
+     "b": 1.926
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
     }
    ],
    "model_prob": 0.705,
    "model_edge": 8.1,
    "model_edge_txt": "+8.1 pts",
    "cheat_side": "over"
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-25",
+   "player": "Abilene Chrstn @ S Dakota St",
+   "pkey": "401917967",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "S Dakota St Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "S Dakota St",
+   "opp": "Abilene Chrstn",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/130944696623970",
+   "game_id": "401917967",
+   "kickoff": "2026-11-25T14:00:00-05:00",
+   "home": "S Dakota St",
+   "away": "Abilene Chrstn",
+   "dec": 1.313,
+   "american": -319,
+   "game_model": {
+    "game_id": "401917967",
+    "home": "S Dakota St",
+    "away": "Abilene Chrstn",
+    "kickoff": "2026-11-25T14:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 77.2,
+    "proj_away": 67.4,
+    "proj_margin": 9.8,
+    "proj_total": 144.6,
+    "home_win_prob": 0.813,
+    "model": "FULL",
+    "slope": 7.54,
+    "matchup_x": 0.899,
+    "home_em": 8.1,
+    "away_em": 4.6,
+    "home_t": 69.6,
+    "away_t": 69.8,
+    "league_avg": 105.6
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.294,
+     "b": 3.7
+    },
+    {
+     "book": "fanduel",
+     "a": 1.313,
+     "b": 3.6
+    }
+   ],
+   "model_prob": 0.813,
+   "model_edge": 8.03,
+   "model_edge_txt": "+8.0%",
+   "cheat_side": "home"
   },
   {
    "kind": "ml",
@@ -5244,8 +5297,8 @@
     },
     {
      "book": "fanduel",
-     "a": 3.05,
-     "b": 1.4
+     "a": 3.02,
+     "b": 1.408
     }
    ],
    "model_prob": 0.386,
@@ -5265,14 +5318,14 @@
    "side": "under",
    "team": null,
    "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/16269839940858",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/255581554745170",
    "game_id": "401928359",
    "kickoff": "2026-11-25T15:30:00-05:00",
    "home": "FIU",
    "away": "Arkansas St",
-   "dec": 1.893,
-   "american": -112,
+   "dec": 1.909,
+   "american": -110,
    "game_model": {
     "game_id": "401928359",
     "home": "FIU",
@@ -5299,6 +5352,11 @@
      "book": "draftkings",
      "a": 1.926,
      "b": 1.893
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
     }
    ],
    "model_prob": 0.689,
@@ -5482,6 +5540,59 @@
    "cheat_side": "home"
   },
   {
+   "kind": "total",
+   "week": "2026-11-25",
+   "player": "Bellarmine @ N Kentucky",
+   "pkey": "401921108",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Over 147.5",
+   "line": 147.5,
+   "side": "over",
+   "team": null,
+   "opp": null,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/161851439558181",
+   "game_id": "401921108",
+   "kickoff": "2026-11-25T19:00:00-05:00",
+   "home": "N Kentucky",
+   "away": "Bellarmine",
+   "dec": 1.87,
+   "american": -115,
+   "game_model": {
+    "game_id": "401921108",
+    "home": "N Kentucky",
+    "away": "Bellarmine",
+    "kickoff": "2026-11-25T19:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 81.9,
+    "proj_away": 72.8,
+    "proj_margin": 9.1,
+    "proj_total": 154.7,
+    "home_win_prob": 0.795,
+    "model": "FULL",
+    "slope": 7.54,
+    "matchup_x": 0.804,
+    "home_em": -2.3,
+    "away_em": -2.0,
+    "home_t": 74.6,
+    "away_t": 67.7,
+    "league_avg": 105.6
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.952
+    }
+   ],
+   "model_prob": 0.684,
+   "model_edge": 7.2,
+   "model_edge_txt": "+7.2 pts",
+   "cheat_side": "over"
+  },
+  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "Washington @ VCU",
@@ -5638,8 +5749,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.29,
-     "b": 3.75
+     "a": 1.267,
+     "b": 3.95
     },
     {
      "book": "fanduel",
@@ -5678,7 +5789,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.35,
+   "second_ev": -1.65,
    "pinn_dec": 1.305
   },
   {
@@ -5693,14 +5804,14 @@
    "side": "away",
    "team": "Portland St",
    "opp": "UC Riverside",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/125048497393859",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/200885689310902",
    "game_id": "401925917",
    "kickoff": "2026-11-25T17:00:00-05:00",
    "home": "UC Riverside",
    "away": "Portland St",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.952,
+   "american": -105,
    "game_model": {
     "game_id": "401925917",
     "home": "UC Riverside",
@@ -5730,8 +5841,8 @@
     },
     {
      "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.87,
+     "b": 1.952
     }
    ],
    "model_prob": 0.729,
@@ -5816,8 +5927,8 @@
    "kickoff": "2026-11-25T12:30:00-05:00",
    "home": "Wright St",
    "away": "Yale",
-   "dec": 1.847,
-   "american": -118,
+   "dec": 1.926,
+   "american": -108,
    "game_model": {
     "game_id": "401928831",
     "home": "Wright St",
@@ -5842,8 +5953,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.847,
-     "b": 1.98
+     "a": 1.926,
+     "b": 1.893
     }
    ],
    "model_prob": 0.72,
@@ -5964,6 +6075,59 @@
    "cheat_side": "over"
   },
   {
+   "kind": "total",
+   "week": "2026-11-25",
+   "player": "Holy Cross @ Dartmouth",
+   "pkey": "401920237",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Over 149.5",
+   "line": 149.5,
+   "side": "over",
+   "team": null,
+   "opp": null,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/204010635460188",
+   "game_id": "401920237",
+   "kickoff": "2026-11-25T17:00:00-05:00",
+   "home": "Dartmouth",
+   "away": "Holy Cross",
+   "dec": 1.909,
+   "american": -110,
+   "game_model": {
+    "game_id": "401920237",
+    "home": "Dartmouth",
+    "away": "Holy Cross",
+    "kickoff": "2026-11-25T17:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 90.9,
+    "proj_away": 64.8,
+    "proj_margin": 26.1,
+    "proj_total": 155.8,
+    "home_win_prob": 0.991,
+    "model": "FULL",
+    "slope": 7.54,
+    "matchup_x": 3.06,
+    "home_em": 8.6,
+    "away_em": -9.8,
+    "home_t": 72.4,
+    "away_t": 72.6,
+    "league_avg": 105.6
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    }
+   ],
+   "model_prob": 0.663,
+   "model_edge": 6.3,
+   "model_edge_txt": "+6.3 pts",
+   "cheat_side": "over"
+  },
+  {
    "kind": "ml",
    "week": "2026-11-25",
    "player": "Tulane @ Davidson",
@@ -6020,117 +6184,6 @@
    "model_edge": 6.29,
    "model_edge_txt": "+6.3%",
    "cheat_side": "home"
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "Bellarmine @ N Kentucky",
-   "pkey": "401921108",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 148.5",
-   "line": 148.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/169048530541862",
-   "game_id": "401921108",
-   "kickoff": "2026-11-25T19:00:00-05:00",
-   "home": "N Kentucky",
-   "away": "Bellarmine",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401921108",
-    "home": "N Kentucky",
-    "away": "Bellarmine",
-    "kickoff": "2026-11-25T19:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 81.9,
-    "proj_away": 72.8,
-    "proj_margin": 9.1,
-    "proj_total": 154.7,
-    "home_win_prob": 0.795,
-    "model": "FULL",
-    "slope": 7.54,
-    "matchup_x": 0.804,
-    "home_em": -2.3,
-    "away_em": -2.0,
-    "home_t": 74.6,
-    "away_t": 67.7,
-    "league_avg": 105.6
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    }
-   ],
-   "model_prob": 0.66,
-   "model_edge": 6.2,
-   "model_edge_txt": "+6.2 pts",
-   "cheat_side": "over"
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "N Colorado @ Detroit Mercy",
-   "pkey": "401920547",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 146.5",
-   "line": 146.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/122124260558899",
-   "game_id": "401920547",
-   "kickoff": "2026-11-25T12:30:00-05:00",
-   "home": "Detroit Mercy",
-   "away": "N Colorado",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401920547",
-    "home": "Detroit Mercy",
-    "away": "N Colorado",
-    "kickoff": "2026-11-25T12:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 63.4,
-    "proj_away": 89.2,
-    "proj_margin": -25.9,
-    "proj_total": 152.6,
-    "home_win_prob": 0.009,
-    "model": "FULL",
-    "slope": 7.54,
-    "matchup_x": -3.432,
-    "home_em": -15.0,
-    "away_em": 0.8,
-    "home_t": 71.6,
-    "away_t": 73.4,
-    "league_avg": 105.6
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    }
-   ],
-   "model_prob": 0.658,
-   "model_edge": 6.1,
-   "model_edge_txt": "+6.1 pts",
-   "cheat_side": "over"
   },
   {
    "kind": "total",
@@ -6233,6 +6286,11 @@
    },
    "books": [
     {
+     "book": "draftkings",
+     "a": 1.893,
+     "b": 1.926
+    },
+    {
      "book": "fanduel",
      "a": 1.909,
      "b": 1.909
@@ -6255,14 +6313,14 @@
    "side": "over",
    "team": null,
    "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/267857357327956",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/175932424939948",
    "game_id": "401924737",
    "kickoff": "2026-11-25T16:00:00-05:00",
    "home": "Liberty",
    "away": "Princeton",
-   "dec": 1.87,
-   "american": -115,
+   "dec": 1.926,
+   "american": -108,
    "game_model": {
     "game_id": "401924737",
     "home": "Liberty",
@@ -6285,6 +6343,11 @@
     "league_avg": 105.6
    },
    "books": [
+    {
+     "book": "draftkings",
+     "a": 1.926,
+     "b": 1.893
+    },
     {
      "book": "fanduel",
      "a": 1.87,
@@ -6405,65 +6468,6 @@
    "model_prob": 0.698,
    "model_edge": 5.7,
    "model_edge_txt": "+5.7 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Rice @ Ohio",
-   "pkey": "401928845",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Rice +4.5",
-   "line": -4.5,
-   "side": "away",
-   "team": "Rice",
-   "opp": "Ohio",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/108353106514074",
-   "game_id": "401928845",
-   "kickoff": "2026-11-25T11:00:00-05:00",
-   "home": "Ohio",
-   "away": "Rice",
-   "dec": 1.952,
-   "american": -105,
-   "game_model": {
-    "game_id": "401928845",
-    "home": "Ohio",
-    "away": "Rice",
-    "kickoff": "2026-11-25T11:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 76.8,
-    "proj_away": 77.9,
-    "proj_margin": -1.1,
-    "proj_total": 154.6,
-    "home_win_prob": 0.46,
-    "model": "FULL",
-    "slope": 7.54,
-    "matchup_x": -0.147,
-    "home_em": 2.2,
-    "away_em": 4.7,
-    "home_t": 71.0,
-    "away_t": 72.8,
-    "league_avg": 105.6
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    }
-   ],
-   "model_prob": 0.695,
-   "model_edge": 5.6,
-   "model_edge_txt": "+5.6 pts \u00b7 GOOD",
    "cheat_side": "away",
    "cbb_tier": "GOOD"
   },
@@ -6755,6 +6759,123 @@
    "cheat_side": "over"
   },
   {
+   "kind": "total",
+   "week": "2026-11-25",
+   "player": "N Colorado @ Detroit Mercy",
+   "pkey": "401920547",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Over 147.5",
+   "line": 147.5,
+   "side": "over",
+   "team": null,
+   "opp": null,
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/131454650601874",
+   "game_id": "401920547",
+   "kickoff": "2026-11-25T12:30:00-05:00",
+   "home": "Detroit Mercy",
+   "away": "N Colorado",
+   "dec": 1.952,
+   "american": -105,
+   "game_model": {
+    "game_id": "401920547",
+    "home": "Detroit Mercy",
+    "away": "N Colorado",
+    "kickoff": "2026-11-25T12:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 63.4,
+    "proj_away": 89.2,
+    "proj_margin": -25.9,
+    "proj_total": 152.6,
+    "home_win_prob": 0.009,
+    "model": "FULL",
+    "slope": 7.54,
+    "matchup_x": -3.432,
+    "home_em": -15.0,
+    "away_em": 0.8,
+    "home_t": 71.6,
+    "away_t": 73.4,
+    "league_avg": 105.6
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.952,
+     "b": 1.87
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    }
+   ],
+   "model_prob": 0.633,
+   "model_edge": 5.1,
+   "model_edge_txt": "+5.1 pts",
+   "cheat_side": "over"
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Rice @ Ohio",
+   "pkey": "401928845",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Rice +3.5",
+   "line": -3.5,
+   "side": "away",
+   "team": "Rice",
+   "opp": "Ohio",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/121635634357000",
+   "game_id": "401928845",
+   "kickoff": "2026-11-25T11:00:00-05:00",
+   "home": "Ohio",
+   "away": "Rice",
+   "dec": 1.952,
+   "american": -105,
+   "game_model": {
+    "game_id": "401928845",
+    "home": "Ohio",
+    "away": "Rice",
+    "kickoff": "2026-11-25T11:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 76.8,
+    "proj_away": 77.9,
+    "proj_margin": -1.1,
+    "proj_total": 154.6,
+    "home_win_prob": 0.46,
+    "model": "FULL",
+    "slope": 7.54,
+    "matchup_x": -0.147,
+    "home_em": 2.2,
+    "away_em": 4.7,
+    "home_t": 71.0,
+    "away_t": 72.8,
+    "league_avg": 105.6
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.952
+    },
+    {
+     "book": "fanduel",
+     "a": 1.87,
+     "b": 1.952
+    }
+   ],
+   "model_prob": 0.662,
+   "model_edge": 4.6,
+   "model_edge_txt": "+4.6 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD"
+  },
+  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "Lindenwood @ Stony Brook",
@@ -7027,6 +7148,11 @@
     "league_avg": 105.6
    },
    "books": [
+    {
+     "book": "draftkings",
+     "a": 1.952,
+     "b": 1.87
+    },
     {
      "book": "fanduel",
      "a": 1.909,
@@ -7367,6 +7493,11 @@
    },
    "books": [
     {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.952
+    },
+    {
      "book": "fanduel",
      "a": 1.893,
      "b": 1.926
@@ -7573,8 +7704,8 @@
    "kickoff": "2026-11-25T14:00:00-05:00",
    "home": "S Dakota St",
    "away": "Abilene Chrstn",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.926,
+   "american": -108,
    "game_model": {
     "game_id": "401917967",
     "home": "S Dakota St",
@@ -7599,8 +7730,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.926,
+     "b": 1.893
     },
     {
      "book": "fanduel",
@@ -7613,89 +7744,6 @@
    "model_edge_txt": "+2.3 pts \u00b7 LEAN",
    "cheat_side": "home",
    "cbb_tier": "LEAN"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Northern Iowa @ Charlotte",
-   "pkey": "401921702",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Charlotte -7.5",
-   "line": -7.5,
-   "side": "home",
-   "team": "Charlotte",
-   "opp": "Northern Iowa",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/279350274691808",
-   "game_id": "401921702",
-   "kickoff": "2026-11-25T11:00:00-05:00",
-   "home": "Charlotte",
-   "away": "Northern Iowa",
-   "dec": 1.87,
-   "american": -115,
-   "game_model": {
-    "game_id": "401921702",
-    "home": "Charlotte",
-    "away": "Northern Iowa",
-    "kickoff": "2026-11-25T11:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 80.7,
-    "proj_away": 71.1,
-    "proj_margin": 9.6,
-    "proj_total": 151.9,
-    "home_win_prob": 0.809,
-    "model": "FULL",
-    "slope": 7.54,
-    "matchup_x": 1.277,
-    "home_em": 5.5,
-    "away_em": -1.9,
-    "home_t": 68.9,
-    "away_t": 72.3,
-    "league_avg": 105.6
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.901,
-     "b": 1.935
-    }
-   ],
-   "model_prob": 0.576,
-   "model_edge": 2.1,
-   "model_edge_txt": "+2.1 pts \u00b7 LEAN",
-   "cheat_side": "home",
-   "cbb_tier": "LEAN",
-   "pinnacle_line": "Charlotte -7.5 -111 / Northern Iowa +7.5 -107",
-   "fair_prob": 0.5044,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5044,
-    0.5047
-   ],
-   "devig_all": {
-    "multiplicative": 0.5044,
-    "additive": 0.5046,
-    "power": 0.5047
-   },
-   "ev_pct": -5.67,
-   "min_ev": 1.64,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.52,
-   "trusted_prob": 0.5105,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.901
   },
   {
    "kind": "spread",
@@ -7818,8 +7866,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.25,
+  "ev": 0.5,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T09:09:53-05:00"
+ "odds_as_of": "2026-11-25T09:20:26-05:00"
 }
