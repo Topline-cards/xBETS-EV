@@ -16,15 +16,21 @@ PROP_STATS = {
     "fg3": ("three_point_field_goals_made", "Threes Made"),
     "pra": ("pra", "Pts + Reb + Ast"),
 }
-POSITIONS = ("G", "F", "C")
+# Your NBA cheat sheet: 5 positions from Basketball-Reference (first listed position),
+# ESPN's listing as a fallback.
+POSITIONS = ("PG", "SG", "SF", "PF", "C")
+ESPN_POS_FALLBACK = {"PG": "PG", "SG": "SG", "SF": "SF", "PF": "PF", "C": "C",
+                     "G": "SG", "F": "SF", "G-F": "SG", "F-G": "SF", "F-C": "PF", "C-F": "C"}
+BLEND_DAYS = 14              # first 14 days of the season: blend in last season
+CURRENT_WEIGHT = 2.0         # ...with each current-season game counting double
 
 # ---------------------------------------------------------------- cheat sheet
-# NBA defense-vs-position swings are smaller than the NFL's, so the bar is lower.
-MATCHUP_GOOD = 1.06
-MATCHUP_BAD = 0.94
+# Matchup = what the opponent allows per game to the player's position vs the league.
+MATCHUP_GOOD = 1.08
+MATCHUP_BAD = 0.92
 CHEAT_MIN_EDGE_PCT = 8.0
 MATCHUP_WEIGHT = 0.5
-MATCHUP_FACTOR_RANGE = (0.75, 1.35)
+MATCHUP_FACTOR_RANGE = (0.70, 1.40)
 BASELINE_GAMES = 10          # player baseline = last 10 games played
 MIN_GAMES = 4
 MIN_MINUTES = 14             # ignore deep-bench roles (avg minutes, last 5 games)

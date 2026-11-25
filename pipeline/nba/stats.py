@@ -3,8 +3,11 @@ NBA data: ESPN box scores + schedule (sportsdataverse releases on GitHub,
 updated daily) and ESPN's injury report.
 """
 import io
+import json
+import os
 import re
 import time
+import unicodedata
 from datetime import datetime, timedelta
 from functools import lru_cache
 
@@ -136,6 +139,70 @@ def stat_from_text(text):
     return None
 
 
+# ------------------------------------------------------------------ positions
+BBREF = "https://www.basketball-reference.com/leagues/NBA_{year}_per_game.html"
+
+
+def norm(name):
+    """Your cheat sheet's name normalizer (ESPN / NBA.com / Basketball-Reference)."""
+    name = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode()
+    name = name.lower().replace("*", "").replace(".", "").replace("'", "").replace("-", " ")
+    name = re.sub(r"\b(jr|sr|ii|iii|iv|v)\b", "", name)
+    return re.sub(r"\s+", " ", name).strip()
+
+
+def _pos_cache(year):
+    from .. import build as pb
+    return os.path.join(pb.DATA if pb.DATA.endswith("nba") else os.path.join(pb.DATA, "nba"),
+                        f"positions_{year}.json")
+
+
+def fetch_positions(year, max_age_h=20):
+    """{norm(name): 'PG'|'SG'|'SF'|'PF'|'C'} from Basketball-Reference, cached in the repo."""
+    path = _pos_cache(year)
+    cached = {}
+    if os.path.exists(path):
+        cached = json.load(open(path))
+        age_h = (time.time() - cached.get("_at", 0)) / 3600
+        if age_h < max_age_h and cached.get("map"):
+            return cached["map"]
+    try:
+        r = requests.get(BBREF.format(year=year), timeout=30,
+                         headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                                                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"})
+        if r.status_code == 200:
+            df = pd.read_html(io.StringIO(r.text), attrs={"id": "per_game_stats"})[0]
+            df = df[(df["Player"] != "Player") & (df["Player"] != "League Average")].dropna(subset=["Pos"])
+            df["POS"] = df["Pos"].astype(str).str.split("-").str[0]
+            df = df[df["POS"].isin(config.POSITIONS)]
+            m = dict(zip(df["Player"].map(norm), df["POS"]))
+            if m:
+                os.makedirs(os.path.dirname(path), exist_ok=True)
+                json.dump({"_at": time.time(), "map": m}, open(path, "w"))
+                return m
+        print(f"Basketball-Reference {year}: HTTP {r.status_code}")
+    except Exception as e:
+        print(f"Basketball-Reference {year} failed: {e}")
+    return cached.get("map", {})
+
+
+def position_map(season):
+    m = dict(fetch_positions(season - 1, max_age_h=24 * 365))
+    m.update(fetch_positions(season))               # current season overrides
+    return m
+
+
+def add_positions(box, pos_map):
+    """5-position label per row: Basketball-Reference first, ESPN listing as fallback."""
+    if box is None or box.empty:
+        return box
+    key = box["athlete_display_name"].map(norm)
+    espn = box["athlete_position_abbreviation"].fillna("").map(config.ESPN_POS_FALLBACK)
+    box = box.copy()
+    box["pos"] = key.map(pos_map).fillna(espn).fillna("SF")
+    return box
+
+
 # ------------------------------------------------------------------ box scores
 def load_box(season):
     b = _parquet(f"{REL}/espn_nba_player_boxscores/player_box_{season}.parquet", _hour())
@@ -146,7 +213,7 @@ def load_box(season):
     b["when"] = pd.to_datetime(b["game_date_time"], utc=True).dt.tz_convert(ET)
     b["pra"] = b["points"].fillna(0) + b["rebounds"].fillna(0) + b["assists"].fillna(0)
     b["pkey"] = b["athlete_display_name"].map(odds.pkey)
-    b["pos"] = b["athlete_position_abbreviation"].fillna("").str[:1].replace({"": "F"})
+    b["pos"] = b["athlete_position_abbreviation"].fillna("").map(config.ESPN_POS_FALLBACK).fillna("SF")
     return b.sort_values("when").reset_index(drop=True)
 
 
@@ -158,36 +225,66 @@ def _lbl(ts):
     return f"{ts.month}/{ts.day}"
 
 
-def defense_vs_position(box, prior=None):
-    """
-    {(defense, pos, stat): avg allowed per game}, {(pos, stat): league avg},
-    plus logs[(defense, pos, stat)] = last 8 games.
-    Early in the season, last season's games are mixed in.
-    """
+def season_start(box):
+    return box["when"].min().date() if box is not None and not box.empty else None
+
+
+def _allowed_per_game(box, weight):
+    """Totals each defense allowed to each position, one row per game; a position with
+    nobody playing it that game counts as 0 (your cheat sheet's zero-fill)."""
     p = played(box)
-    per_team_games = p.groupby("opponent_team_abbreviation")["game_id"].nunique()
-    if prior is not None and not prior.empty and (per_team_games.median() if len(per_team_games) else 0) < config.DEF_MIN_GAMES:
-        p = pd.concat([played(prior).groupby("opponent_team_abbreviation").tail(150), p])
+    if p.empty:
+        return pd.DataFrame()
     cols = [c for c, _ in config.PROP_STATS.values()]
-    g = (p.groupby(["opponent_team_abbreviation", "game_id", "pos"])
-         .agg({**{c: "sum" for c in cols}, "when": "first", "team_abbreviation": "first", "season": "first"})
-         .reset_index())
+    tot = p.groupby(["opponent_team_abbreviation", "game_id", "pos"])[cols].sum()
+    meta = p.groupby(["opponent_team_abbreviation", "game_id"]).agg(
+        when=("when", "first"), vs=("team_abbreviation", "first"), season=("season", "first"))
+    idx = pd.MultiIndex.from_tuples([(o, g, pos) for o, g in meta.index for pos in config.POSITIONS],
+                                    names=["opponent_team_abbreviation", "game_id", "pos"])
+    tot = tot.reindex(idx, fill_value=0).reset_index()
+    tot = tot.merge(meta.reset_index(), on=["opponent_team_abbreviation", "game_id"])
+    tot["W"] = weight
+    return tot
+
+
+def defense_vs_position(box, prior=None, day=None):
+    """
+    Your NBA cheat sheet's defense vs position:
+      average each team allows per game to PG/SG/SF/PF/C (zero-filled),
+      first 14 days of the season = last season + this season blended, this season x2.
+    Returns {(defense, pos, stat): avg}, {(pos, stat): league avg}, logs (last 8 games).
+    """
+    start = season_start(box)
+    in_blend = start is None or day is None or day < start + timedelta(days=config.BLEND_DAYS)
+    frames = [_allowed_per_game(box, config.CURRENT_WEIGHT)]
+    if (in_blend or box is None or box.empty) and prior is not None:
+        frames.append(_allowed_per_game(prior, 1.0))
+    frames = [f for f in frames if not f.empty]
     allowed, league, logs = {}, {}, {}
+    if not frames:
+        return allowed, league, logs
+    g = pd.concat(frames, ignore_index=True)
+    defense_vs_position.label = "last season + this season blended" if len(frames) > 1 else "this season"
     for key, (col, _) in config.PROP_STATS.items():
+        g["_w"] = g[col] * g["W"]
+        sums = g.groupby(["opponent_team_abbreviation", "pos"])[["_w", "W"]].sum()
+        avg = (sums["_w"] / sums["W"])
+        for (team, pos), v in avg.items():
+            allowed[(team, pos, key)] = float(v)
         for pos in config.POSITIONS:
-            gp = g[g["pos"] == pos]
-            if gp.empty:
-                continue
-            by = gp.groupby("opponent_team_abbreviation")[col].mean()
-            league[(pos, key)] = float(by.mean())
-            for team, v in by.items():
-                allowed[(team, pos, key)] = float(v)
-            for team, gg in gp.sort_values("when").groupby("opponent_team_abbreviation"):
-                logs[(team, pos, key)] = [
-                    {"season": int(r.season), "wk": r.when.date().isoformat(), "lbl": _lbl(r.when),
-                     "vs": r.team_abbreviation, "v": round(float(getattr(r, col) or 0), 1)}
-                    for r in gg.itertuples()][-8:]
+            vals = [v for (t, ps), v in avg.items() if ps == pos]
+            if vals:
+                league[(pos, key)] = float(sum(vals) / len(vals))
+    for (team, pos), gg in g.sort_values("when").groupby(["opponent_team_abbreviation", "pos"]):
+        for key, (col, _) in config.PROP_STATS.items():
+            logs[(team, pos, key)] = [
+                {"season": int(r.season), "wk": r.when.date().isoformat(), "lbl": _lbl(r.when),
+                 "vs": r.vs, "v": round(float(getattr(r, col) or 0), 1)}
+                for r in gg.itertuples()][-8:]
     return allowed, league, logs
+
+
+defense_vs_position.label = ""
 
 
 def player_baselines(box, prior=None):

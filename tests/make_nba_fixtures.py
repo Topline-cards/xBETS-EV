@@ -14,8 +14,9 @@ now = datetime.fromisoformat(sys.argv[2])
 season = stats.season_for(now)
 s = stats.slate(stats.load_schedule(season)); day = stats.next_day(s, now)
 g = s[s.kickoff.dt.date.map(lambda d: d.isoformat()) == day]
-box, prior = stats.load_box(season), stats.load_box(season - 1)
-al, lg, _ = stats.defense_vs_position(box, prior)
+pm = stats.position_map(season)
+box, prior = stats.add_positions(stats.load_box(season), pm), stats.add_positions(stats.load_box(season - 1), pm)
+al, lg, _ = stats.defense_vs_position(box, prior, now.date())
 pr = build.projections(stats.player_baselines(box), al, lg, g, {})
 mt = {"pts": "player_points", "reb": "player_rebounds", "ast": "player_assists",
       "fg3": "player_made_threes", "pra": "player_points_+_rebounds_+_assists"}

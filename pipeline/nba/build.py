@@ -86,9 +86,10 @@ def _build(now, force):
     if state.get("pinn_day") != today:
         state.update(pinn_day=today, pinn_calls=0)
 
-    box = stats.load_box(season)
-    prior = stats.load_box(season - 1)
-    allowed, league, dlogs = stats.defense_vs_position(box, prior)
+    pos_map = stats.position_map(season)
+    box = stats.add_positions(stats.load_box(season), pos_map)
+    prior = stats.add_positions(stats.load_box(season - 1), pos_map)
+    allowed, league, dlogs = stats.defense_vs_position(box, prior, now.date())
     early = box.empty or box.groupby("team_abbreviation")["game_id"].nunique().median() < config.MIN_GAMES
     baselines = stats.player_baselines(box, prior if early else None)
     avail = stats.availability()
@@ -260,7 +261,8 @@ def _build(now, force):
             "suspect_ev": shared.SUSPECT_EV_PCT, "suspect_units": shared.SUSPECT_MAX_UNITS,
             "min_ev": shared.MIN_EV_PCT, "matchup_weight": config.MATCHUP_WEIGHT,
             "game_weight": config.GAME_MODEL_WEIGHT, "baseline_games": config.BASELINE_GAMES,
-            "home_field": config.HOME_FIELD_PTS},
+            "home_field": config.HOME_FIELD_PTS, "dvp_label": stats.defense_vs_position.label,
+            "positions_known": len(pos_map)},
         "logos": pb._safe(lambda: stats.team_logos(sched), {}),
         "games": games_list, "game_model": sorted(gm.values(), key=lambda m: m["kickoff"]),
         "combined": combined, "ev": ev_picks, "cheat": cheat_picks, "matchups": top,

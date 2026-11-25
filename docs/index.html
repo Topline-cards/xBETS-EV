@@ -202,7 +202,7 @@ const initialSport = (() => { const q = new URLSearchParams(location.search).get
   if (q && SPORTS[q]) return q; try { const v = localStorage.getItem(SPORT_KEY); if (SPORTS[v]) return v; } catch(e){} return "nfl"; })();
 const S = {sport: initialSport, data:null, results:null, gradedBy:{}, tab:"combined", game:"all", type:"all", book:"all", shown:[], mShown:[], gmShown:[]};
 const SP = () => SPORTS[S.sport];
-const POS_NAME = {G:"guards", F:"forwards", C:"centers"};
+const POS_NAME = {G:"guards", F:"forwards", C:"centers", PG:"point guards", SG:"shooting guards", SF:"small forwards", PF:"power forwards"};
 const posName = p => POS_NAME[p] || (p ? p + "s" : "");
 const logLbl = g => g.lbl || (g.season !== S.data.season ? g.season + " " : "") + "Wk " + g.wk;
 const BOOK = {draftkings:"DraftKings", fanduel:"FanDuel", pinnacle:"Pinnacle"};
@@ -544,12 +544,12 @@ function propModelSection(p){
   const f = p.matchup_factor ?? (1 + p.matchup_pct / 100);
   const lineBits = p.line != null ? `<span class="eq">vs line ${p.line}: ${pct(p.proj_edge_pct, 1)} · model chance of over ${p1(p.model_prob_over)}</span>` +
     (p.cheat_side ? `<b class="good">Cheat sheet likes the ${esc(p.cheat_side)}</b>` :
-     `<span class="note">Not a cheat-sheet play: it needs the projection 8%+ past the line <i>and</i> a matchup 10%+ in the same direction.</span>`) : "";
+     `<span class="note">Not a cheat-sheet play: it needs the projection 8%+ past the line <i>and</i> a matchup ${S.sport === "nba" ? "8" : "10"}%+ in the same direction.</span>`) : "";
   return `<div class="sec"><h3>Cheat sheet math</h3><div class="calc">
     <span class="note">1. Player's average over his last ${Math.min(n, p.games || n)} games:</span>
     <span class="eq">${esc(p.stat_label)} avg = ${p.baseline}</span>
     <span class="note">2. What ${esc(p.opp)} allows per game to ${esc(posName(p.position))} vs the league:</span>
-    <span class="eq">${esc(p.opp)} ${p.def_allowed} vs league ${p.league_avg} → <b class="${p.matchup_pct > 0 ? "good" : "bad"}">${pct(p.matchup_pct, 1)}</b> (rank ${p.def_rank ?? "–"}/32, 1 = softest)</span>
+    <span class="eq">${esc(p.opp)} ${p.def_allowed} vs league ${p.league_avg} → <b class="${p.matchup_pct > 0 ? "good" : "bad"}">${pct(p.matchup_pct, 1)}</b> (rank ${p.def_rank ?? "–"}/${p.def_n || 32}, 1 = gives up the most)${S.data.settings?.dvp_label ? " · " + esc(S.data.settings.dvp_label) : ""}</span>
     <span class="note">3. Projection, trusting ${Math.round(w * 100)}% of the matchup effect (defense numbers are noisy):</span>
     <span class="eq">${p.baseline} × (1 + ${w} × ${(f - 1).toFixed(3)}) = <b>${p.projection}</b></span>
     ${lineBits}</div></div>`;
