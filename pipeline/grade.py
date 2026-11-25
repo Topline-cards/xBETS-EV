@@ -92,8 +92,9 @@ def _grade_game(r, sched):
         _settle(r, adj > 0 if r["side"] == "home" else adj < 0, adj == 0)
 
 
-def summarize(log):
-    out = {}
+def summarize(log, sport="nfl"):
+    from . import ev
+    out = {"lanes": ev.lane_stats(log, sport)}
     for mode in ("combined", "ev", "cheat"):
         rs = [r for r in log["picks"].values() if r["mode"] == mode]
         graded = [r for r in rs if r["result"] in ("win", "loss", "push")]
@@ -110,6 +111,9 @@ def summarize(log):
             "avg_clv_pct": round(sum(clv) / len(clv), 2) if clv else None,
             "beat_close_pct": round(sum(c > 0 for c in clv) / len(clv) * 100, 1)
             if clv else None,
+            # playbook: show expected vs actual so normal downswings don't look like a broken system
+            "expected_units": round(sum((r.get("ev_pct") or 0) / 100 * r["units"] for r in graded
+                                        if r["result"] != "push"), 2),
         }
     recent = sorted(log["picks"].values(), key=lambda r: r["kickoff"], reverse=True)
     out["recent"] = recent[:150]

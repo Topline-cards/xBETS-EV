@@ -16,16 +16,27 @@ al, lg = stats.defense_vs_position(d)
 pr = matchups.build_projections(stats.player_baselines(b), al, lg, g)
 label = {"pass_yds": "passing_yards", "pass_comp": "pass_completions", "pass_att": "pass_attempts",
          "rush_yds": "rushing_yards", "rush_att": "rushing_attempts",
-         "rec_yds": "receiving_yards", "receptions": "receptions"}
+         "rec_yds": "receiving_yards", "receptions": "receptions", "pass_tds": "passing_touchdowns"}
 # PinnWire's real wording (from the Debug feeds sample)
 pinn_label = {"pass_yds": "Passing Yards", "pass_comp": "Pass Completions", "pass_att": "Pass Attempts",
               "rush_yds": "Rushing Yards", "rush_att": "Rush Attempts",
-              "rec_yds": "Receiving Yards", "receptions": "Receptions"}
+              "rec_yds": "Receiving Yards", "receptions": "Receptions", "pass_tds": "Touchdown Passes"}
 def am(p):  # fair prob + vig -> decimal
     return round(1 / p, 3)
 sharp, specials, mains = [], [], []
+import math
 for r in pr:
     if random.random() < 0.35: continue
+    if r["stat"] == "anytime_td":          # DK/FD "Yes" only, no line, no Pinnacle market
+        py = 1 - math.exp(-r["baseline"])
+        for book in ("draftkings", "fanduel"):
+            dec = round(1 / (min(max(py + random.gauss(0, 0.04), 0.05), 0.8) * 1.08), 3)
+            sharp.append({"sportsbook": book, "league": "nfl", "market_type": "anytime_touchdown_scorer",
+                "stat_category": "anytime_touchdown_scorer", "player_name": r["player"], "selection": r["player"],
+                "selection_type": "other", "line": None, "odds_decimal": dec,
+                "is_player_prop": True, "is_live": False, "is_main_line": True, "market_segment": "full_game",
+                "event_start_time": r["kickoff"], "deep_link": f"https://example.com/{book}"})
+        continue
     line = round(r["baseline"] * random.uniform(0.92, 1.05) * 2) / 2 + 0.0
     if line == int(line): line += 0.5
     true_over = min(max(0.5 + random.gauss(0, 0.05), 0.3), 0.7)

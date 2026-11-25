@@ -70,22 +70,65 @@ def _fmt_line(x):
 
 
 # ------------------------------------------------------------------ EV for one side
-def _price_side(p, dec, fair_pair, side_is_a):
-    """Fill EV / units fields on pick p from Pinnacle's two prices."""
-    if not fair_pair:
+def _price_side(p, dec, fair_pair, side_is_a, second_pair=None, source="Pinnacle",
+                shin=True, extra_ev=0.0, one_sided_margin=None):
+    """
+    Fill EV / units fields on pick p (playbook rules):
+      - devig the sharp pair four ways, bet off the WORST fair prob for our side
+      - one-sided markets (only "Yes" posted): assume a market vig, plus extra EV required
+      - sliding EV threshold by odds, too-good-to-be-true cap
+      - second opinion: the other US book's own no-vig price -> tier prime / single
+    """
+    if not fair_pair or not fair_pair[0 if side_is_a else 1]:
         return False
-    fa, fb = ev.devig_two_way(*fair_pair)
-    fp = fa if side_is_a else fb
+    a, b = fair_pair
+    if a and b:
+        fp, method, rng, allm = ev.worst_case(a, b, side_is_a, shin)
+    elif one_sided_margin is not None:
+        own = a if side_is_a else b
+        fp, method, rng, allm = (1 / own) / (1 + one_sided_margin), "assumed vig", None, {}
+    else:
+        return False
     e = ev.ev_pct(fp, dec)
-    base, kelly, trusted, note = ev.kelly_units(fp, dec, p.get("kind", "prop"))
-    units = base
-    p.update(fair_prob=round(fp, 4), ev_pct=round(e, 2), kelly_pct=kelly, units=units,
-             base_units=base,
-             trusted_prob=trusted, unit_note=note,
-             edge_trust=config.EDGE_TRUST.get(p.get("kind", "prop"), 0.5),
-             pinn_dec=round(fair_pair[0] if side_is_a else fair_pair[1], 3))
-    return (config.MIN_EV_PCT <= e <= config.MAX_EV_PCT and units > 0
-            and p["american"] <= config.MAX_ODDS_AMERICAN)
+    need = ev.min_ev_for(dec) + extra_ev
+    kind = "anytime_td" if p.get("stat") == "anytime_td" else p.get("kind", "prop")
+    base, kelly, trusted, note = ev.kelly_units(fp, dec, kind)
+    tier, ev2 = "single", None
+    if second_pair and second_pair[0] and second_pair[1] and source != "FanDuel":
+        sp = ev.worst_case(second_pair[0], second_pair[1], side_is_a, shin)[0]
+        ev2 = round(ev.ev_pct(sp, dec), 2)
+        tier = "prime" if ev2 >= 0 else "single"
+    p.update(fair_prob=round(fp, 4), fair_method=method, fair_source=source,
+             devig_range=[round(rng[0], 4), round(rng[1], 4)] if rng else None, devig_all=allm,
+             ev_pct=round(e, 2), min_ev=round(need, 2), units=base, base_units=base,
+             kelly_pct=kelly, trusted_prob=trusted, unit_note=note,
+             edge_trust=config.EDGE_TRUST.get(kind, 0.5),
+             tier=tier, second_ev=ev2,
+             pinn_dec=round((a if side_is_a else b) or 0, 3))
+    return need <= e <= config.MAX_EV_PCT and base > 0 and p["american"] <= config.MAX_ODDS_AMERICAN
+
+
+def other_book(rows, book, key):
+    """The other US book's pair on the same bet: rows = {(book, *key): (a, b)}."""
+    for (bk, *k), pair in rows.items():
+        if bk != book and tuple(k) == key:
+            return pair
+    return None
+
+
+def finish_ev(ev_picks, sport, log):
+    """Lane gate + slate sizing + rank by expected profit. Returns slate units."""
+    lanes = ev.lane_stats(log, sport)
+    for p in ev_picks:
+        p["lane"] = ev.lane_of(p, sport)
+        L = lanes.get(p["lane"])
+        p["lane_status"] = L["status"] if L else "testing"
+        p["lane_info"] = {k: L[k] for k in ("graded", "days", "ev_vs_close", "roi_pct")} if L else None
+    total = ev.size_slate(ev_picks)
+    for p in ev_picks:
+        p["exp_profit_units"] = round(p["ev_pct"] / 100 * p["units"], 3)
+    ev_picks.sort(key=lambda p: (-p["exp_profit_units"], -p["ev_pct"]))
+    return total, lanes
 
 
 # ------------------------------------------------------------------ main build
@@ -156,10 +199,14 @@ def build(now=None, force=False):
                 status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games))
             except Exception as e:
                 status["pinnacle_error"] = str(e)[:200]
-        if not p_props and not p_games and cache.get("at") and age_min < 90:
-            p_props, p_games = cache.get("props", []), cache.get("games", [])
-            status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games),
-                          pinnacle_as_of=cache["at"])
+        if not p_props and not p_games and cache.get("at"):
+            if age_min <= config.PINN_MAX_AGE_MIN:
+                p_props, p_games = cache.get("props", []), cache.get("games", [])
+                status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games),
+                              pinnacle_as_of=cache["at"])
+            else:
+                status["pinnacle_stale"] = f"last Pinnacle prices are {age_min:.0f} min old; no EV until refreshed"
+        status.setdefault("pinnacle_as_of", _iso(now) if (p_props or p_games) else None)
         if state["pinn_calls"] + 2 > PINN_DAILY_CAP and not fresh_enough and not fixtures:
             status["pinnacle_note"] = "daily PinnWire budget used; using last Pinnacle prices"
 
@@ -177,9 +224,13 @@ def build(now=None, force=False):
             {"book": g["book"], "a": g["a"], "b": g["b"]})
 
     ev_picks, cheat_picks = [], []
+    book_prop_pairs = {(b["book"], b["pkey"], b["stat"], b["line"]): (b["over"], b["under"]) for b in b_props}
+    book_game_pairs = {(g["book"], g["kind"], g["home"], g["away"], g["line"]): (g["a"], g["b"]) for g in b_games}
 
     # ---- player props -------------------------------------------------
     for b in b_props:
+        if b["stat"] == "anytime_td" and b["line"] != 0.5:
+            continue
         pr = proj_by.get((b["pkey"], b["stat"]))
         info = {
             "kind": "prop", "week": week, "player": pr["player"] if pr else b["player"],
@@ -196,7 +247,7 @@ def build(now=None, force=False):
         if not info["game_id"] or not _after(info["kickoff"], now):
             continue                       # only players in upcoming games we model
         if pr:
-            info.update(matchups.evaluate_line(pr, b["line"]))
+            info.update(matchups.evaluate_line(pr, b["line"], yes_dec=b["over"], under_dec=b["under"]))
             info.update({k: pr[k] for k in ("projection", "baseline", "matchup_pct",
                                              "matchup_factor", "def_rank", "last10", "log", "def_log",
                                              "vs_opp", "home_away", "player_id",
@@ -207,13 +258,24 @@ def build(now=None, force=False):
             dec = b[side]
             if not dec:
                 continue
-            p = dict(info, side=side, dec=round(dec, 3), american=ev.decimal_to_american(dec),
-                     title=f"{'Over' if side == 'over' else 'Under'} {b['line']} {info['stat_label']}")
+            title = (("Anytime TD" if side == "over" else "No TD") if b["stat"] == "anytime_td"
+                     else f"{'Over' if side == 'over' else 'Under'} {b['line']} {info['stat_label']}")
+            p = dict(info, side=side, dec=round(dec, 3), american=ev.decimal_to_american(dec), title=title)
             if fair:
                 p["pinnacle_line"] = (f"{fair['line']} o{ev.decimal_to_american(fair['over'])}"
                                       f"/u{ev.decimal_to_american(fair['under'])}")
-            if _price_side(p, dec, (fair["over"], fair["under"]) if fair else None,
-                           side == "over"):
+            second = other_book(book_prop_pairs, b["book"], (b["pkey"], b["stat"], b["line"]))
+            if b["stat"] == "anytime_td":
+                # Pinnacle has no anytime-TD market: FanDuel is the sharp-ish source for DK bets
+                ok = b["book"] == "draftkings" and second and _price_side(
+                    p, dec, second, side == "over", source="FanDuel",
+                    extra_ev=config.TD_EXTRA_EV, one_sided_margin=config.TD_ONE_SIDED_VIG)
+                if second and second[0]:
+                    p["pinnacle_line"] = f"FanDuel Yes {ev.decimal_to_american(second[0]):+d}"
+            else:
+                ok = _price_side(p, dec, (fair["over"], fair["under"]) if fair else None,
+                                 side == "over", second_pair=second)
+            if ok:
                 ev_picks.append(dict(p))
             if pr and p.get("cheat_side") == side:
                 cheat_picks.append(dict(p))
@@ -259,7 +321,9 @@ def build(now=None, force=False):
                                           f"{m['away']} {_fmt_line(-fair['line'])} {fb_}")
                 else:
                     p["pinnacle_line"] = f"{m['home']} {fa_:+d} / {m['away']} {fb_:+d}"
-            if _price_side(p, dec, (fair["a"], fair["b"]) if fair else None, i == 0):
+            second = other_book(book_game_pairs, g["book"], (g["kind"], g["home"], g["away"], g["line"]))
+            if _price_side(p, dec, (fair["a"], fair["b"]) if fair else None, i == 0,
+                           second_pair=second, shin=False):
                 ev_picks.append(dict(p))
             if p.get("cheat_side") == side:
                 cheat_picks.append(dict(p))
@@ -271,14 +335,13 @@ def build(now=None, force=False):
                           lambda p: (abs(p.get("proj_edge_pct") or p.get("model_edge") or 0), p["dec"]))
     combined = [dict(p) for p in ev_picks if p.get("cheat_side") == p["side"]]
 
-    slate_ev = ev.size_slate(ev_picks)
+    slate_ev, lanes = finish_ev(ev_picks, "nfl", _load("log.json", {"picks": {}}))
     sized = {(p["pkey"], p["stat"], p["side"], p["line"]): p for p in ev_picks}
     for c in combined:                      # same bet, same size on both tabs
         src = sized[(c["pkey"], c["stat"], c["side"], c["line"])]
-        c.update(units=src["units"], sizing=src["sizing"])
+        c.update({k: src.get(k) for k in ("units", "sizing", "lane", "lane_status", "lane_info", "exp_profit_units")})
     slate_comb = round(sum(c["units"] for c in combined), 2)
-    ev_picks.sort(key=lambda p: -p["ev_pct"])
-    combined.sort(key=lambda p: -p["ev_pct"])
+    combined.sort(key=lambda p: (-p["exp_profit_units"], -p["ev_pct"]))
     cheat_picks.sort(key=lambda p: (p["kind"] != "prop",
                                     -abs(p.get("proj_edge_pct") or p.get("model_edge") or 0)))
 
@@ -300,6 +363,7 @@ def build(now=None, force=False):
             "unit_usd": config.UNIT_USD,
             "max_units_prop": config.MAX_UNITS["prop"], "max_units_line": config.MAX_UNITS["line"],
             "suspect_ev": config.SUSPECT_EV_PCT, "suspect_units": config.SUSPECT_MAX_UNITS,
+            "td_vig": config.TD_ONE_SIDED_VIG,
             "min_ev": config.MIN_EV_PCT, "matchup_weight": config.MATCHUP_WEIGHT,
             "game_weight": config.GAME_MODEL_WEIGHT, "baseline_games": config.BASELINE_GAMES,
             "home_field": config.HOME_FIELD_PTS},
@@ -359,6 +423,8 @@ def update_log(out, pinn_prop, pinn_game, now):
                     "ev_pct": p.get("ev_pct"), "fair_prob": p.get("fair_prob"),
                     "kickoff": p["kickoff"], "team": p.get("team"), "opp": p.get("opp"),
                     "game_id": p.get("game_id"), "home": p.get("home"), "away": p.get("away"),
+                    "tier": p.get("tier"), "fair_source": p.get("fair_source"),
+                    "min_ev": p.get("min_ev"), "fair_method": p.get("fair_method"),
                     "result": None,
                 }
     # closing line: latest Pinnacle fair price before kickoff

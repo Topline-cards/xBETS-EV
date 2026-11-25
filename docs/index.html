@@ -88,6 +88,12 @@
   .presets{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
   .chip{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:999px;padding:7px 12px;font:600 13px/1 inherit;cursor:pointer}
   .chip.on{background:var(--cyan);border-color:var(--cyan);color:#071419}
+  .tier{font-size:10px;font-weight:800;letter-spacing:.05em;border-radius:5px;padding:2px 5px;margin-left:6px;vertical-align:1px}
+  .tier.prime{background:#173627;color:var(--green)} .tier.test{background:#2a2412;color:var(--amber)}
+  .dv{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-variant-numeric:tabular-nums;margin:4px 0 6px}
+  .dv .w{color:var(--amber);font-weight:700}
+  .rg{font-size:12px;color:var(--dim);text-align:center;margin:18px 4px 8px;line-height:1.5}
+  .rg a{color:var(--cyan)}
   .menu{border:0;background:none;color:var(--text);font-size:22px;line-height:1;padding:2px 10px 2px 0;cursor:pointer}
   .drawer{position:fixed;top:0;bottom:0;left:0;width:min(290px,82vw);background:var(--bg);border-right:1px solid var(--line);
     z-index:31;transform:translateX(-102%);transition:transform .22s ease;padding:18px 14px;overflow-y:auto}
@@ -293,7 +299,7 @@ const prefs = () => { try { return JSON.parse(localStorage.getItem(PREF_KEY) || 
 const prefOf = p => p && p.pkey ? (prefs()[p.pkey] || {}).v : null;
 const pctCls = v => v == null ? "" : v >= 0.6 ? "hi" : v <= 0.4 ? "lo" : "";
 const shortName = n => { const a = String(n || "").split(" "); return a.length > 1 && a[0].length > 2 ? a[0][0] + ". " + a.slice(1).join(" ") : n; };
-const STAT_SHORT = {pts:"Points", reb:"Rebounds", ast:"Assists", fg3:"3-Pointers", pra:"Pts+Reb+Ast", pass_yds:"Pass Yds", pass_comp:"Pass Compl", pass_att:"Pass Att", rush_yds:"Rush Yds", rush_att:"Rush Att", rec_yds:"Rec Yds", receptions:"Receptions"};
+const STAT_SHORT = {pts:"Points", reb:"Rebounds", ast:"Assists", fg3:"3-Pointers", pra:"Pts+Reb+Ast", anytime_td:"Anytime TD", pass_tds:"Pass TDs", pass_yds:"Pass Yds", pass_comp:"Pass Compl", pass_att:"Pass Att", rush_yds:"Rush Yds", rush_att:"Rush Att", rec_yds:"Rec Yds", receptions:"Receptions"};
 
 function trow(icon, text, val, cls="", rowCls=""){
   return `<div class="tr ${rowCls}">${ICON[icon]}<div class="tx">${text}</div><div class="pv ${cls}">${val ?? ""}</div></div>`;
@@ -317,7 +323,9 @@ function card(p, mode, i, inDetail){
   if (prop) {
     team = p.team;
     name = `${esc(shortName(p.player))}<span class="vs">${p.opp ? (p.home_away === "away" ? "@ " : "vs ") + esc(p.opp) : ""}</span>`;
-    bet = `<span class="${p.side === "over" ? "o" : "u"}">${p.side === "over" ? "Over" : "Under"} ${p.line}</span> ${esc(STAT_SHORT[p.stat] || p.stat_label)}`;
+    bet = p.stat === "anytime_td"
+      ? `<span class="${p.side === "over" ? "o" : "u"}">${p.side === "over" ? "Yes" : "No"}</span> Anytime TD`
+      : `<span class="${p.side === "over" ? "o" : "u"}">${p.side === "over" ? "Over" : "Under"} ${p.line}</span> ${esc(STAT_SHORT[p.stat] || p.stat_label)}`;
     rows.push(hitRow("bolt", "games", p.last10, p));
     rows.push(hitRow("shield", `games vs ${esc(p.opp)}`, (p.vs_opp || []).map(g => g.v), p));
     if (p.home_away) rows.push(hitRow("pin", `${p.home_away} games`, (p.log || []).filter(g => g.ha === p.home_away).map(g => g.v), p));
@@ -340,7 +348,9 @@ function card(p, mode, i, inDetail){
     rows.push(trow("shield", `Model vs ${p.kind === "ml" ? "book price" : "line"}`, esc(p.model_edge_txt), p.model_edge > 0 ? "hi" : "lo"));
   }
   if (mode !== "cheat" && p.ev_pct != null) {
-    rows.push(trow("dollar", `EV <b>${pct(p.ev_pct)}</b> vs Pinnacle fair ${p1(p.fair_prob)}`, "", "", "ev"));
+    const tier = p.tier === "prime" ? `<span class="tier prime" title="Pinnacle and the other book both say this price is good">2 SOURCES</span>` : "";
+    const lane = p.lane_status === "testing" ? `<span class="tier test" title="This market hasn't passed the promotion gate yet, so stakes are halved">TESTING</span>` : "";
+    rows.push(trow("dollar", `EV <b>${pct(p.ev_pct)}</b> vs ${esc(p.fair_source || "Pinnacle")} fair ${p1(p.fair_prob)}${tier}${lane}<br><span class="sub">needs ${pct(p.min_ev, 1)} at these odds</span>`, "", "", "ev"));
   }
   if (mode !== "cheat") {
     const u = p.units ? `${p.units}u${unitUsd() ? " · " + usd(p.units) : ""}` : "–";
@@ -365,15 +375,21 @@ function banner(){
   const d = S.data, st = d.status || {};
   const parts = [];
   if (d.odds_as_of) parts.push(`Odds updated <b>${ago(d.odds_as_of)}</b>`);
+  if (st.pinnacle_as_of && st.odds_checked) parts.push(`Pinnacle prices from <b>${ago(st.pinnacle_as_of)}</b>`);
   if (!st.odds_checked && d.next_kickoff) parts.push(`Odds checks start 4h before ${SP().kick} (next: <b>${when(d.next_kickoff)}</b>)`);
-  const errs = [st.book_error && "DK/FD feed: " + st.book_error, st.pinnacle_error && "Pinnacle feed: " + st.pinnacle_error].filter(Boolean);
+  const errs = [st.book_error && "DK/FD feed: " + st.book_error, st.pinnacle_error && "Pinnacle feed: " + st.pinnacle_error,
+    st.pinnacle_stale && "Pinnacle: " + st.pinnacle_stale].filter(Boolean);
+  const age = d.generated_at ? (Date.now() - new Date(d.generated_at)) / 60000 : 0;
+  const soon = d.next_kickoff && (new Date(d.next_kickoff) - Date.now()) / 3600000 < 4;
+  if (st.odds_checked && soon && age > 25) errs.unshift(`⚠️ This data is ${Math.round(age)} min old. Prices may have moved: re-check the price in the book before betting.`);
   return `<div class="banner">${parts.join(" · ") || "Waiting for first odds check"}</div>` +
     (errs.length ? `<div class="banner warn">${errs.map(esc).join("<br>")}</div>` : "");
 }
 
+const RG = `<div class="rg">Bet only what you can afford to lose. Paper-trade a market before staking it.<br>Gambling problem? Call <a href="tel:18004264537">1-800-GAMBLER</a>.</div>`;
 const INTRO = {
   combined: "Cheat-sheet plays that are also +EV against Pinnacle's fair line. The strictest list. Tap any bet to see the numbers behind it.",
-  ev: "DraftKings/FanDuel prices at least 3% better than Pinnacle's no-vig fair line. Every play gets a stake sized by edge, confidence and how many bets share the same game. Tap any bet for the math.",
+  ev: "DraftKings/FanDuel prices that beat the sharp no-vig fair line by enough for their odds (about 1% on favorites, up to 8–10% on +400 and longer). Sorted by expected profit. Tap any bet for the math.",
   cheat: "Matchup plays: player projections from defense vs position, plus a team scoring model for moneyline, spread and total. Tracked at 1u flat in Results.",
 };
 
@@ -397,7 +413,7 @@ function openSettings(){
       <div class="presets">${[5, 10, 20, 25, 50, 100].map(v => `<button class="chip ${v === d ? "on" : ""}" data-unit="${v}">$${v}</button>`).join("")}</div>
     </div>
     <button class="bet" id="save-settings" style="width:100%;border:0;font-size:16px">Save</button>
-    <div class="help" style="margin-top:10px">Saved on this device. These will move to your account once accounts are added.</div>`;
+    <div class="help" style="margin-top:10px">Saved on this device. These will move to your account once accounts are added.</div>${RG}`;
 
   $("#sheet").scrollTop = 0;
   $("#sheet").classList.add("open"); $("#shade").classList.add("open"); document.body.classList.add("lock");
@@ -406,7 +422,8 @@ function openSettings(){
 
 function renderList(mode){
   const pf = prefs();
-  const all = applyBudget((S.data[mode] || []).slice().sort((a, b) => (b.ev_pct || 0) - (a.ev_pct || 0)), mode)
+  const all = applyBudget((S.data[mode] || []).slice().sort((a, b) => mode === "cheat" ? 0
+      : ((b.exp_profit_units ?? b.ev_pct / 100 * b.units) - (a.exp_profit_units ?? a.ev_pct / 100 * a.units))), mode)
     .filter(p => (pf[p.pkey] || {}).v !== "down");
   const list = all.filter(matches);
   list.sort((a, b) => ((pf[b.pkey] || {}).v === "up") - ((pf[a.pkey] || {}).v === "up"));
@@ -424,7 +441,7 @@ function renderList(mode){
     if (skipped.length) html += `<button class="chip more-btn" id="toggle-skipped">${S.showSkipped ? "Hide" : "Show"} ${skipped.length} skipped play${skipped.length > 1 ? "s" : ""} (over budget or game limit)</button>`;
   }
   if (mode === "cheat") html += projTables();
-  return html;
+  return html + RG;
 }
 
 function projTables(){
@@ -478,24 +495,42 @@ function bookTable(p){
 
 function evSection(p){
   const st = S.data.settings || {};
-  if (p.ev_pct == null) return `<div class="sec"><h3>EV</h3><div class="calc note">Pinnacle has no matching line on this bet, so there's no fair price to compare against. No EV or unit sizing.</div></div>`;
+  if (p.ev_pct == null) return `<div class="sec"><h3>EV</h3><div class="calc note">${p.stat === "anytime_td"
+    ? "Pinnacle has no anytime-TD market. DraftKings TD prices are compared with FanDuel's; FanDuel TD prices have no sharp source to compare against."
+    : "Pinnacle has no matching line on this bet, so there's no fair price to compare against."} No EV or unit sizing.</div></div>`;
   const b = p.dec - 1, bookP = 1 / p.dec, tp = p.trusted_prob ?? p.fair_prob, trust = p.edge_trust ?? 0.5;
   const full = (b * tp - (1 - tp)) / b * 100;
+  const kf = p.dec >= 4 ? 0.10 : 0.25;
   const z = p.sizing || {base: p.units, conf: 1, corr: 1, game_bets: 1, player_bets: 1, raw: p.units, cap: 2, conf_why: []};
-  const cap = isProp(p) ? (st.max_units_prop ?? 1.5) : (st.max_units_line ?? 2);
-  const sus = p.unit_note ? `<span class="note" style="color:var(--amber)">EV over ${st.suspect_ev ?? 12}% usually means a stale or mismatched line, so it's held to ${st.suspect_units ?? 0.5}u. Check the price is still there.</span>` : "";
+  const src = p.fair_source || "Pinnacle";
+  const sus = p.unit_note ? `<span class="note" style="color:var(--amber)">EV over ${st.suspect_ev ?? 15}% is "too good to be true" territory: usually a stale or mismatched line. Held to ${st.suspect_units ?? 0.5}u. Check the price is still there.</span>` : "";
+  const NAMES = {multiplicative:"Multiplicative", additive:"Additive", power:"Power", shin:"Shin"};
+  const dv = p.devig_all && Object.keys(p.devig_all).length
+    ? `<div class="dv">${Object.entries(p.devig_all).map(([k, v]) => `<span class="${k === p.fair_method ? "w" : ""}">${NAMES[k] || k}${k === p.fair_method ? " (used: worst)" : ""}</span><span class="${k === p.fair_method ? "w" : ""}">${p1(v)}</span>`).join("")}</div>`
+    : `<span class="eq">${esc(src)} only posts "Yes" here, so we assume ${Math.round((st.td_vig ?? 0.08) * 100)}% vig on it: fair ${p1(p.fair_prob)}</span>`;
+  const second = p.second_ev != null
+    ? `<span class="eq">${BOOK[p.book === "draftkings" ? "fanduel" : "draftkings"]}'s own no-vig price: EV ${pct(p.second_ev, 1)} → ${p.tier === "prime" ? '<b class="good">agrees (2 sources)</b>' : '<b class="bad">disagrees</b>'}</span>`
+    : `<span class="eq">No second source on this line → one sharp source only</span>`;
+  const L = p.lane_info;
+  const lane = `<span class="eq">${esc(p.lane || "")}: ${p.lane_status === "proven" ? '<b class="good">proven</b>' : '<b style="color:var(--amber)">testing</b>'}${L ? ` · ${L.graded} graded over ${L.days} days · EV vs close ${L.ev_vs_close == null ? "–" : pct(L.ev_vs_close, 1)} · ROI ${L.roi_pct == null ? "–" : pct(L.roi_pct, 1)}` : " · no graded bets yet"}</span>`;
   return `<div class="sec"><h3>EV &amp; recommended units</h3><div class="calc">
-    <span class="note">1. Pinnacle's price with the vig removed gives the fair chance this hits:</span>
-    <span class="eq">Fair win % = ${p1(p.fair_prob)}  (Pinnacle ${esc(p.pinnacle_line || "")})</span>
-    <span class="note">2. Compare that to the ${BOOK[p.book] || p.book} price (${am(p.american)} = ${p.dec} decimal):</span>
+    <span class="note">1. ${esc(src)}'s price${p.pinnacle_line ? " (" + esc(p.pinnacle_line) + ")" : ""} with the vig removed, four ways. We bet off the least favorable one:</span>
+    ${dv}
+    <span class="note">2. Compare to the ${BOOK[p.book] || p.book} price (${am(p.american)} = ${p.dec} decimal):</span>
     <span class="eq">EV = ${p.fair_prob.toFixed(4)} × ${p.dec} − 1 = <b class="good">${pct(p.ev_pct, 2)}</b></span>
-    <span class="note">3. For sizing, only trust ${Math.round(trust * 100)}% of the gap between Pinnacle and this book${isProp(p) ? " (Pinnacle props are less sharp than its game lines)" : ""}:</span>
+    <span class="note">3. Longer odds need more EV, because the fair price is less certain:</span>
+    <span class="eq">Needed at ${am(p.american)}: ${pct(p.min_ev, 1)} → ${p.ev_pct >= p.min_ev ? '<b class="good">passes</b>' : '<b class="bad">fails</b>'}</span>
+    <span class="note">4. Second opinion:</span>
+    ${second}
+    <span class="note">5. For sizing, only trust ${Math.round(trust * 100)}% of the gap between the fair price and this book:</span>
     <span class="eq">${p1(bookP)} + ${trust} × (${p1(p.fair_prob)} − ${p1(bookP)}) = ${p1(tp)}</span>
-    <span class="note">4. Quarter-Kelly on that chance is the base stake:</span>
-    <span class="eq">Kelly ${full.toFixed(2)}% × ¼ = <b>${z.base}u</b> base</span>
-    <span class="note">5. Confidence${z.conf_why && z.conf_why.length ? " (" + esc(z.conf_why.join(", ")) + ")" : ""}:</span>
+    <span class="note">6. ${kf === 0.25 ? "Quarter" : "Tenth"}-Kelly on that chance is the base stake${kf < 0.25 ? " (longshots get 0.10 Kelly)" : ""}:</span>
+    <span class="eq">Kelly ${full.toFixed(2)}% × ${kf} = <b>${z.base}u</b> base</span>
+    <span class="note">7. Confidence${z.conf_why && z.conf_why.length ? " (" + esc(z.conf_why.join(", ")) + ")" : ""}:</span>
     <span class="eq">× ${z.conf}${z.conf === 1 ? " (no adjustment)" : ""}</span>
-    <span class="note">6. Correlation: bets in the same game (or on the same player) win and lose together, so they share a stake:</span>
+    <span class="note">8. Market lane: a market gets full stakes only after 30+ graded bets over 15+ days, with EV vs the closing line of at least +1% and a positive ROI:</span>
+    ${lane}
+    <span class="note">9. Correlation: bets in the same game (or on the same player) win and lose together, so they share a stake:</span>
     <span class="eq">${z.game_bets} bet${z.game_bets > 1 ? "s" : ""} in this game${z.player_bets > 1 ? ", " + z.player_bets + " on this player" : ""} → × ${z.corr}</span>
     <span class="eq">${z.base} × ${z.conf} × ${z.corr} = ${z.raw}u${z.raw >= z.cap ? " (capped at " + z.cap + "u)" : ""} → <b class="good">${p.units}u recommended</b>${unitUsd() ? " = " + usd(p.units) : ""}</span>
     <span class="note">Rounded to 0.25u, never below 0.25u, so every +EV play still gets a bet.</span>
@@ -654,13 +689,25 @@ function renderResults(){
       <div class="big ${r.profit_units > 0 ? "good" : r.profit_units < 0 ? "bad" : ""}">${r.profit_units == null ? "–" : (r.profit_units > 0 ? "+" : "") + r.profit_units + "u"}</div>
       <div class="sub">${r.wins || 0}-${r.losses || 0}${r.pushes ? "-" + r.pushes : ""}</div>
       <div class="sub">ROI ${r.roi_pct == null ? "–" : pct(r.roi_pct)}</div>
-      <div class="sub">Beat close ${r.beat_close_pct == null ? "–" : r.beat_close_pct + "%"}</div></div>`; };
+      <div class="sub">Beat close ${r.beat_close_pct == null ? "–" : r.beat_close_pct + "%"}</div>
+      <div class="sub">Expected ${r.expected_units == null ? "–" : (r.expected_units > 0 ? "+" : "") + r.expected_units + "u"}</div></div>`; };
+  const lanes = Object.entries(R.lanes || {}).sort((a, b) => b[1].graded - a[1].graded);
+  const ck = v => v ? '<span class="good">✓</span>' : '<span class="dim">·</span>';
+  const laneTable = lanes.length ? `<h2>Market lanes</h2><div class="help">A lane gets full stakes once it has 30+ graded bets over 15+ days, average EV vs the closing line of +1% or better, and a positive ROI. Until then its stakes are halved.</div>
+    <div class="card" style="cursor:default;overflow-x:auto"><table><tr><th>Lane</th><th class="num">Bets</th><th class="num">EV vs close</th><th class="num">ROI</th><th class="num">Status</th></tr>
+    ${lanes.map(([k, L]) => `<tr><td>${esc(k.split(":")[1].replace("_", " "))}<div class="sub">${L.days} day${L.days === 1 ? "" : "s"}${L.t_stat != null ? " · t " + L.t_stat : ""}</div></td>
+      <td class="num">${L.graded}${ck(L.checks.bets)}</td><td class="num">${L.ev_vs_close == null ? "–" : pct(L.ev_vs_close, 1)}${ck(L.checks.ev_vs_close)}</td>
+      <td class="num">${L.roi_pct == null ? "–" : pct(L.roi_pct, 1)}${ck(L.checks.roi)}</td>
+      <td class="num ${L.status === "proven" ? "good" : ""}" style="${L.status === "proven" ? "" : "color:var(--amber)"}">${L.status}</td></tr>`).join("")}</table></div>` : "";
   const rows = (R.recent || []).filter(r => r.mode !== "cheat").slice(0, 100).map(r => `<tr><td>${esc(r.player)}<div class="sub">${r.mode === "combined" ? "EV+CS" : r.mode === "ev" ? "EV" : "CS"} · ${esc(r.title || ((r.side === "over" ? "O " : "U ") + r.line + " " + r.stat_label))}</div></td>
       <td class="num">${am(r.american)}<div class="sub">${r.units}u</div></td>
       <td class="num">${r.actual ?? ""}<div class="sub ${r.result === "win" ? "good" : r.result === "loss" ? "bad" : ""}">${r.result || "pending"}</div></td></tr>`).join("");
-  return `<div class="help">App record: every EV play the app lists is logged at the price first seen and recommended units. <b>Beat close</b> is how often that price beat Pinnacle's final fair line. Over a few hundred bets, it's the best sign the edges are real.</div>
+  return `<div class="help">App record: every EV play the app lists is logged at the price first seen and recommended units. <b>Beat close</b> is how often that price beat the final sharp fair line. CLV and ROI together, over a few hundred bets, show whether the edges are real.</div>
     <div class="sumgrid" style="grid-template-columns:repeat(2,1fr)">${sbox("combined","EV + Cheat Sheet")}${sbox("ev","EV")}</div>
-    <div class="card" style="cursor:default"><table><tr><th>Pick</th><th class="num">Price</th><th class="num">Result</th></tr>${rows}</table></div>`;
+    <div class="help"><b>Expected</b> is what the edges should have earned. Real profit swings around it; a gap over a few dozen bets is normal variance.</div>
+    ${laneTable}
+    <h2>Recent picks</h2><div class="card" style="cursor:default"><table><tr><th>Pick</th><th class="num">Price</th><th class="num">Result</th></tr>${rows}</table></div>
+    ${RG}`;
 }
 
 function syncSport(){

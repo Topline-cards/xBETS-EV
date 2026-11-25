@@ -78,11 +78,42 @@ def rank_of(allowed, opp_team, position, stat):
     return None
 
 
-def evaluate_line(proj_row, line, cfg=config):
+def poisson_over(lam, line):
+    """P(X > line) for X ~ Poisson(lam)."""
+    import math
+    k_max = int(math.floor(line))
+    cdf = sum(math.exp(-lam) * lam ** k / math.factorial(k) for k in range(k_max + 1))
+    return 1 - cdf
+
+
+def evaluate_td(proj_row, line, over_dec=None, under_dec=None, cfg=config):
+    """
+    Touchdown props (anytime TD, passing TDs): Poisson on the matchup-adjusted TDs per game.
+    Edge is vs the book's own price (vig in, so conservative). Anytime TD never leans 'No'.
+    """
+    lam = max(proj_row["projection"], 0.01)
+    p_over = poisson_over(lam, line)
+    f = proj_row["matchup_factor"]
+    e_over = (p_over * over_dec - 1) * 100 if over_dec else -99
+    e_under = ((1 - p_over) * under_dec - 1) * 100 if under_dec else -99
+    side, edge = None, e_over
+    if e_over >= cfg.CHEAT_MIN_EDGE_PCT and f >= cfg.MATCHUP_GOOD:
+        side = "over"
+    elif proj_row.get("stat") != "anytime_td" and e_under >= cfg.CHEAT_MIN_EDGE_PCT and f <= cfg.MATCHUP_BAD:
+        side, edge = "under", -e_under
+    hits = proj_row["last10"]
+    return {"cheat_side": side, "proj_edge_pct": round(edge, 1),
+            "hit_rate_over": round(sum(v > line for v in hits) / len(hits), 2) if hits else None,
+            "model_prob_over": round(p_over, 3)}
+
+
+def evaluate_line(proj_row, line, cfg=config, yes_dec=None, under_dec=None):
     """
     Cheat-sheet read on a specific prop line.
     Returns dict with side ('over'/'under'/None), edge %, hit rate, model prob.
     """
+    if proj_row.get("stat") in ("anytime_td", "pass_tds"):
+        return evaluate_td(proj_row, line, yes_dec, under_dec, cfg)
     p = proj_row["projection"]
     edge = (p - line) / line * 100 if line else 0
     hits = [v for v in proj_row["last10"]]

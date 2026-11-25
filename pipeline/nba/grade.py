@@ -47,7 +47,7 @@ def _grade(now):
                 r["actual"] = actual
                 _settle(r, win)
     pb._save("log.json", log)
-    pb._save("results.json", summarize(log))
+    pb._save("results.json", summarize(log, "nba"))
     graded = {f"{r['week']}|{r['pkey']}|{r['stat']}|{r['side']}|{r['line']}":
               {"result": r["result"], "actual": r.get("actual")}
               for r in log["picks"].values() if r["result"] is not None}

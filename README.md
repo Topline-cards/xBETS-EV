@@ -45,6 +45,16 @@ Last Sunday replayed: 23 plays, 8u total.
 
 **Phone alerts:** install the free **ntfy** app, subscribe to a private topic name, and save that name as the repo secret `NTFY_TOPIC`. Each new EV play is announced once (⭐ = also a cheat-sheet play); tapping the alert opens the app.
 
+## Pricing rules (from the +EV Best Practices Playbook)
+- **Fair line:** Pinnacle (PinnWire). Devigged four ways (multiplicative, additive, power, Shin; Shin skipped on main lines); we bet off the **worst** result for our side.
+- **Sliding EV threshold:** ~1% at -150, 3% at +130, 5% at +175, 6.5% at +250, 8% at +400, 10% at +600 and longer. No odds cap. Over 15% EV = "too good to be true": flagged and held to 0.5u; over 30% dropped as bad data.
+- **Second opinion:** the other US book's own no-vig price. If it agrees, the play is tagged **2 SOURCES**; otherwise stakes x0.75.
+- **Freshness:** Pinnacle prices older than 25 min are not used.
+- **Sizing:** quarter-Kelly on a shrunk edge (0.10 Kelly at +300 and longer), confidence, correlation, caps. Sorted by expected profit (EV x stake).
+- **Lanes + promotion gate:** each sport x market is a lane. Full stakes only after 30+ graded bets over 15+ days, EV vs sharp close >= +1%, ROI > 0. Until then stakes are halved ("TESTING"). Record tab shows every lane plus expected vs actual profit.
+- **NFL touchdowns:** passing TDs priced vs Pinnacle. Anytime TD: Pinnacle has no market, so DraftKings is priced vs FanDuel (assumed 8% vig on FanDuel's "Yes", +2% extra EV required, single-source, ROI-only lane gate). Cheat sheet uses a Poisson model on matchup-adjusted TDs per game.
+- Not built (needs more books/feeds than DK + FD + Pinnacle): extra sharp books (SharpAPI's $399 tier), exchanges, DFS pick'em, live betting, arbs, promos.
+
 ## Setup (one time)
 
 1. **Secrets:** Settings → Secrets and variables → Actions → New repository secret

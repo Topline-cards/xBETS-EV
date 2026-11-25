@@ -93,7 +93,8 @@ def season_for(now=None):
 # ------------------------------------------------------------------ player stats
 def load_weekly(season, before_week=None):
     df = nflr.load_player_stats([season]).to_pandas()
-    df = df[df["season_type"] == "REG"]
+    df = df[df["season_type"] == "REG"].copy()
+    df["anytime_tds"] = df["rushing_tds"].fillna(0) + df["receiving_tds"].fillna(0)
     if before_week is not None:
         df = df[df["week"] < before_week]
     return df
@@ -250,7 +251,8 @@ def player_baselines(df):
                     "ha": _home_away(gid, t)}
                    for s, w, o, v, gid, t in zip(g["season"], g["week"], g["opponent_team"],
                                                  g[col], g["game_id"], g["team"])][-10:]
-            recent = vals[-config.BASELINE_GAMES:]
+            n_base = config.TD_BASELINE_GAMES if key == "anytime_td" else config.BASELINE_GAMES
+            recent = vals[-n_base:]
             if len(recent) < config.MIN_GAMES:
                 continue
             mean = sum(recent) / len(recent)

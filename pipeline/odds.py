@@ -42,6 +42,13 @@ def pkey(name):
 def stat_from_text(text):
     """Map any book's market wording to our stat keys. None = not supported."""
     t = (text or "").lower().replace("_", " ")
+    if ("touchdown" in t or " td" in f" {t}" or "scorer" in t) and "anytime" in t \
+            and not any(b in t for b in ("first", "last", "2+", "two", "3+", "pass", "1st", "half", "quarter")):
+        return "anytime_td"
+    if t.strip() in ("player touchdowns", "touchdowns", "anytime touchdown scorer"):
+        return "anytime_td"
+    if "touchdown" in t and "pass" in t and not any(b in t for b in ("1st", "first", "half", "quarter", "longest")):
+        return "pass_tds"
     bad = ("longest", "+", "and", "combined", "1st", "first", "half", "quarter",
            "touchdown", " td", "interception", "sack", "kick", "punt", "fantasy",
            "alt ", "milestone")
@@ -91,6 +98,7 @@ SHARP_MARKETS = [
     "player_passing_yards", "player_passing_completions", "player_passing_attempts",
     "player_rushing_yards", "player_rushing_attempts", "player_total_rush_attempts",
     "player_receiving_yards", "player_receptions", "player_total_receptions",
+    "anytime_touchdown_scorer", "player_touchdowns", "player_passing_touchdowns",
 ]
 def fetch_sharpapi(league="nfl", markets=None, stat_fn=None, abbr=None, fixture="sharpapi_odds.json"):
     """Returns (props, game_lines) for DK/FD. Defaults = NFL."""
@@ -131,9 +139,13 @@ def fetch_sharpapi(league="nfl", markets=None, stat_fn=None, abbr=None, fixture=
             if o.get("is_alternate_line"):
                 continue                     # main line only (skip alt ladders)
             stat = stat_fn(o.get("market_type") or o.get("stat_category"))
+            side = (o.get("selection_type") or o.get("selection") or "").lower()
+            if stat == "anytime_td":             # scorer markets: "Yes" (often typed "other"), no line
+                side = {"other": "over", "yes": "over", "no": "under"}.get(side, side)
+                if o.get("line") is None:
+                    o = dict(o, line=0.5)
             if not stat or o.get("line") is None or not o.get("player_name"):
                 continue
-            side = (o.get("selection_type") or o.get("selection") or "").lower()
             if side not in ("over", "under"):
                 continue
             k = (o["sportsbook"], pkey(o["player_name"]), stat, float(o["line"]))

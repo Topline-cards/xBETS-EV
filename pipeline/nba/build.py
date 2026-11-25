@@ -137,10 +137,14 @@ def _build(now, force):
                 status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games))
             except Exception as e:
                 status["pinnacle_error"] = str(e)[:200]
-        if not p_props and not p_games and cache.get("at") and age_min < 90:
-            p_props, p_games = cache.get("props", []), cache.get("games", [])
-            status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games),
-                          pinnacle_as_of=cache["at"])
+        if not p_props and not p_games and cache.get("at"):
+            if age_min <= shared.PINN_MAX_AGE_MIN:
+                p_props, p_games = cache.get("props", []), cache.get("games", [])
+                status.update(pinnacle_props=len(p_props), pinnacle_game_lines=len(p_games),
+                              pinnacle_as_of=cache["at"])
+            else:
+                status["pinnacle_stale"] = f"last Pinnacle prices are {age_min:.0f} min old; no EV until refreshed"
+        status.setdefault("pinnacle_as_of", pb._iso(now) if (p_props or p_games) else None)
 
     pinn_prop = {(p["pkey"], p["stat"], p["line"]): p for p in p_props if p["over"] and p["under"]}
     pinn_game = {(g["kind"], g["home"], g["away"], g["line"]): g for g in p_games}
@@ -153,6 +157,8 @@ def _build(now, force):
             {"book": g["book"], "a": g["a"], "b": g["b"]})
 
     ev_picks, cheat_picks = [], []
+    book_prop_pairs = {(b["book"], b["pkey"], b["stat"], b["line"]): (b["over"], b["under"]) for b in b_props}
+    book_game_pairs = {(g["book"], g["kind"], g["home"], g["away"], g["line"]): (g["a"], g["b"]) for g in b_games}
     for b in b_props:
         pr = proj_by.get((b["pkey"], b["stat"]))
         if not pr or not pb._after(pr["kickoff"], now):
@@ -176,7 +182,9 @@ def _build(now, force):
             if fair:
                 p["pinnacle_line"] = (f"{fair['line']} o{ev.decimal_to_american(fair['over'])}"
                                       f"/u{ev.decimal_to_american(fair['under'])}")
-            if pb._price_side(p, dec, (fair["over"], fair["under"]) if fair else None, side == "over"):
+            second = pb.other_book(book_prop_pairs, b["book"], (b["pkey"], b["stat"], b["line"]))
+            if pb._price_side(p, dec, (fair["over"], fair["under"]) if fair else None, side == "over",
+                              second_pair=second):
                 ev_picks.append(dict(p))
             if p.get("cheat_side") == side:
                 cheat_picks.append(dict(p))
@@ -218,7 +226,9 @@ def _build(now, force):
                                           f"{m['away']} {pb._fmt_line(-fair['line'])} {fb_}")
                 else:
                     p["pinnacle_line"] = f"{m['home']} {fa_:+d} / {m['away']} {fb_:+d}"
-            if pb._price_side(p, dec, (fair["a"], fair["b"]) if fair else None, i == 0):
+            second = pb.other_book(book_game_pairs, g["book"], (g["kind"], g["home"], g["away"], g["line"]))
+            if pb._price_side(p, dec, (fair["a"], fair["b"]) if fair else None, i == 0,
+                              second_pair=second, shin=False):
                 ev_picks.append(dict(p))
             if p.get("cheat_side") == side:
                 cheat_picks.append(dict(p))
@@ -227,13 +237,12 @@ def _build(now, force):
     cheat_picks = pb.best_by(cheat_picks, lambda p: (p["pkey"], p["stat"], p["side"]),
                              lambda p: (abs(p.get("proj_edge_pct") or p.get("model_edge") or 0), p["dec"]))
     combined = [dict(p) for p in ev_picks if p.get("cheat_side") == p["side"]]
-    slate_ev = ev.size_slate(ev_picks)
+    slate_ev, lanes = pb.finish_ev(ev_picks, "nba", pb._load("log.json", {"picks": {}}))
     sized = {(p["pkey"], p["stat"], p["side"], p["line"]): p for p in ev_picks}
     for c in combined:
         src = sized[(c["pkey"], c["stat"], c["side"], c["line"])]
-        c.update(units=src["units"], sizing=src["sizing"])
-    ev_picks.sort(key=lambda p: -p["ev_pct"])
-    combined.sort(key=lambda p: -p["ev_pct"])
+        c.update({k: src.get(k) for k in ("units", "sizing", "lane", "lane_status", "lane_info", "exp_profit_units")})
+    combined.sort(key=lambda p: (-p["exp_profit_units"], -p["ev_pct"]))
     cheat_picks.sort(key=lambda p: (p["kind"] != "prop", -abs(p.get("proj_edge_pct") or p.get("model_edge") or 0)))
 
     top = sorted(proj, key=lambda r: -abs(r["matchup_pct"]))
