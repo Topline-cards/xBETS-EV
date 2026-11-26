@@ -1,39 +1,39 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T20:20:28-05:00",
+ "generated_at": "2026-11-25T20:31:01-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T20:30:00-05:00",
+ "next_kickoff": "2026-11-25T21:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 44,
-  "book_unmatched": 33,
+  "book_game_lines": 36,
+  "book_unmatched": 31,
   "book_unmatched_games": [
    "Arkansas @ Michigan State",
    "Army @ UTSA",
    "Baylor @ Gonzaga",
    "Boston College @ UCF",
-   "Clemson @ Colorado State",
    "Colorado State @ Clemson",
    "Creighton @ TCU",
    "DePaul @ Pittsburgh",
+   "Eastern Michigan @ UTEP",
    "Georgetown @ Texas",
    "Georgia @ Cincinnati",
    "Gonzaga @ Baylor",
    "Iowa State @ Tennessee",
    "Jacksonville State @ UC Davis",
    "Kansas State @ Alabama",
-   "Maryland @ San Diego State",
    "Miami FL @ Michigan",
    "Michigan @ Miami",
    "Mississippi Valley @ New Mexico",
    "Nebraska Omaha @ Pacific",
-   "Oklahoma @ Purdue"
+   "Oklahoma @ Purdue",
+   "Oregon @ Texas Tech"
   ],
-  "pinnacle_game_lines": 143,
+  "pinnacle_game_lines": 124,
   "pinnacle_unmatched": 1,
-  "pinnacle_as_of": "2026-11-25T20:09:53-05:00"
+  "pinnacle_as_of": "2026-11-25T20:31:01-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -557,11 +557,6 @@
  },
  "games": [
   {
-   "game_id": "401920550",
-   "label": "E Michigan @ UTEP",
-   "kickoff": "2026-11-25T20:30:00-05:00"
-  },
-  {
    "game_id": "401917545",
    "label": "E Washington @ LMU",
    "kickoff": "2026-11-25T21:00:00-05:00"
@@ -603,27 +598,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401920550",
-   "home": "UTEP",
-   "away": "E Michigan",
-   "kickoff": "2026-11-25T20:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 65.9,
-   "proj_away": 69.0,
-   "proj_margin": -3.2,
-   "proj_total": 134.9,
-   "home_win_prob": 0.387,
-   "model": "FULL",
-   "slope": 7.92,
-   "matchup_x": -0.399,
-   "home_em": 2.2,
-   "away_em": 0.6,
-   "home_t": 68.2,
-   "away_t": 65.9,
-   "league_avg": 107.8
-  },
   {
    "game_id": "401917545",
    "home": "LMU",
@@ -926,11 +900,6 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.541,
-     "b": 2.54
-    },
-    {
      "book": "fanduel",
      "a": 1.532,
      "b": 2.55
@@ -967,7 +936,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -5.72,
+   "second_ev": null,
    "pinn_dec": 2.58
   },
   {
@@ -1024,125 +993,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.328,
-     "b": 3.5
+     "a": 1.333,
+     "b": 3.47
     }
    ],
    "model_prob": 0.913,
    "model_edge": 18.73,
    "model_edge_txt": "+18.7%",
    "cheat_side": "home",
-   "pinnacle_line": "LMU -305 / E Washington +250",
-   "fair_prob": 0.7249,
+   "pinnacle_line": "LMU -300 / E Washington +247",
+   "fair_prob": 0.7225,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.7249,
-    0.7382
+    0.7225,
+    0.7355
    ],
    "devig_all": {
-    "multiplicative": 0.7249,
-    "additive": 0.7336,
-    "power": 0.7382
+    "multiplicative": 0.7225,
+    "additive": 0.731,
+    "power": 0.7355
    },
-   "ev_pct": -4.09,
+   "ev_pct": -4.42,
    "min_ev": 1.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -12.66,
-   "trusted_prob": 0.7311,
+   "kelly_pct": -13.68,
+   "trusted_prob": 0.7291,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.99,
-   "pinn_dec": 1.328
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "E Michigan @ UTEP",
-   "pkey": "401920550",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "E Michigan Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "E Michigan",
-   "opp": "UTEP",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/158952976171831",
-   "game_id": "401920550",
-   "kickoff": "2026-11-25T20:30:00-05:00",
-   "home": "UTEP",
-   "away": "E Michigan",
-   "dec": 1.943,
-   "american": -106,
-   "game_model": {
-    "game_id": "401920550",
-    "home": "UTEP",
-    "away": "E Michigan",
-    "kickoff": "2026-11-25T20:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 65.9,
-    "proj_away": 69.0,
-    "proj_margin": -3.2,
-    "proj_total": 134.9,
-    "home_win_prob": 0.387,
-    "model": "FULL",
-    "slope": 7.92,
-    "matchup_x": -0.399,
-    "home_em": 2.2,
-    "away_em": 0.6,
-    "home_t": 68.2,
-    "away_t": 65.9,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.885,
-     "b": 1.943
-    },
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.855,
-     "b": 2.0
-    }
-   ],
-   "model_prob": 0.613,
-   "model_edge": 12.06,
-   "model_edge_txt": "+12.1%",
-   "cheat_side": "away",
-   "pinnacle_line": "UTEP -117 / E Michigan +100",
-   "fair_prob": 0.4801,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4801,
-    0.4812
-   ],
-   "devig_all": {
-    "multiplicative": 0.4812,
-    "additive": 0.4805,
-    "power": 0.4801
-   },
-   "ev_pct": -6.72,
-   "min_ev": 1.87,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -7.12,
-   "trusted_prob": 0.487,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.75,
-   "pinn_dec": 2.0
+   "pinn_dec": 1.333
   },
   {
    "kind": "spread",
@@ -1198,8 +1080,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.962,
-     "b": 1.893
+     "a": 1.98,
+     "b": 1.877
     }
    ],
    "model_prob": 0.749,
@@ -1207,30 +1089,30 @@
    "model_edge_txt": "+7.4 pts \u00b7 STRONG",
    "cheat_side": "home",
    "cbb_tier": "STRONG",
-   "pinnacle_line": "LMU -7.5 -104 / E Washington +7.5 -112",
-   "fair_prob": 0.4905,
+   "pinnacle_line": "LMU -7.5 -102 / E Washington +7.5 -114",
+   "fair_prob": 0.4859,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4905,
-    0.4911
+    0.4859,
+    0.4866
    ],
    "devig_all": {
-    "multiplicative": 0.4911,
-    "additive": 0.4907,
-    "power": 0.4905
+    "multiplicative": 0.4866,
+    "additive": 0.4861,
+    "power": 0.4859
    },
-   "ev_pct": -4.25,
+   "ev_pct": -5.15,
    "min_ev": 1.9,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.46,
-   "trusted_prob": 0.4949,
+   "kelly_pct": -5.41,
+   "trusted_prob": 0.4912,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -4.64,
-   "pinn_dec": 1.962
+   "pinn_dec": 1.98
   },
   {
    "kind": "spread",
@@ -1275,11 +1157,6 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.98,
-     "b": 1.847
-    },
-    {
      "book": "fanduel",
      "a": 1.943,
      "b": 1.877
@@ -1317,90 +1194,8 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -2.89,
-   "pinn_dec": 1.813
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "E Michigan @ UTEP",
-   "pkey": "401920550",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 128.5",
-   "line": 128.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/209619908828869",
-   "game_id": "401920550",
-   "kickoff": "2026-11-25T20:30:00-05:00",
-   "home": "UTEP",
-   "away": "E Michigan",
-   "dec": 1.87,
-   "american": -115,
-   "game_model": {
-    "game_id": "401920550",
-    "home": "UTEP",
-    "away": "E Michigan",
-    "kickoff": "2026-11-25T20:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 65.9,
-    "proj_away": 69.0,
-    "proj_margin": -3.2,
-    "proj_total": 134.9,
-    "home_win_prob": 0.387,
-    "model": "FULL",
-    "slope": 7.92,
-    "matchup_x": -0.399,
-    "home_em": 2.2,
-    "away_em": 0.6,
-    "home_t": 68.2,
-    "away_t": 65.9,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.826,
-     "b": 1.98
-    }
-   ],
-   "model_prob": 0.665,
-   "model_edge": 6.4,
-   "model_edge_txt": "+6.4 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "128.5 o-121/u-102",
-   "fair_prob": 0.5202,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5202,
-    0.5219
-   ],
-   "devig_all": {
-    "multiplicative": 0.5202,
-    "additive": 0.5213,
-    "power": 0.5219
-   },
-   "ev_pct": -2.72,
-   "min_ev": 1.64,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.12,
-   "trusted_prob": 0.5231,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
    "second_ev": null,
-   "pinn_dec": 1.826
+   "pinn_dec": 1.813
   },
   {
    "kind": "total",
@@ -1570,94 +1365,6 @@
    "tier": "prime",
    "second_ev": 1.01,
    "pinn_dec": 2.52
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "E Michigan @ UTEP",
-   "pkey": "401920550",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "E Michigan +1.5",
-   "line": -1.5,
-   "side": "away",
-   "team": "E Michigan",
-   "opp": "UTEP",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/115698162189376",
-   "game_id": "401920550",
-   "kickoff": "2026-11-25T20:30:00-05:00",
-   "home": "UTEP",
-   "away": "E Michigan",
-   "dec": 1.847,
-   "american": -118,
-   "game_model": {
-    "game_id": "401920550",
-    "home": "UTEP",
-    "away": "E Michigan",
-    "kickoff": "2026-11-25T20:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 65.9,
-    "proj_away": 69.0,
-    "proj_margin": -3.2,
-    "proj_total": 134.9,
-    "home_win_prob": 0.387,
-    "model": "FULL",
-    "slope": 7.92,
-    "matchup_x": -0.399,
-    "home_em": 2.2,
-    "away_em": 0.6,
-    "home_t": 68.2,
-    "away_t": 65.9,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.962,
-     "b": 1.847
-    },
-    {
-     "book": "draftkings",
-     "a": 2.05,
-     "b": 1.8
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.962,
-     "b": 1.877
-    }
-   ],
-   "model_prob": 0.665,
-   "model_edge": 4.7,
-   "model_edge_txt": "+4.7 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "UTEP -1.5 -104 / E Michigan +1.5 -114",
-   "fair_prob": 0.5111,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5111,
-    0.5118
-   ],
-   "devig_all": {
-    "multiplicative": 0.5111,
-    "additive": 0.5115,
-    "power": 0.5118
-   },
-   "ev_pct": -5.61,
-   "min_ev": 1.57,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.62,
-   "trusted_prob": 0.5171,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.65,
-   "pinn_dec": 1.877
   },
   {
    "kind": "spread",
@@ -1836,5 +1543,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T20:20:28-05:00"
+ "odds_as_of": "2026-11-25T20:31:01-05:00"
 }
