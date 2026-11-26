@@ -1,6 +1,6 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T19:37:16-05:00",
+ "generated_at": "2026-11-25T19:48:17-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
@@ -32,8 +32,8 @@
    "Oklahoma @ Purdue"
   ],
   "pinnacle_game_lines": 181,
-  "pinnacle_unmatched": 2,
-  "pinnacle_as_of": "2026-11-25T19:26:19-05:00"
+  "pinnacle_unmatched": 1,
+  "pinnacle_as_of": "2026-11-25T19:48:17-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -846,7 +846,113 @@
   }
  ],
  "combined": [],
- "ev": [],
+ "ev": [
+  {
+   "kind": "total",
+   "week": "2026-11-25",
+   "player": "Grand Canyon @ Colorado",
+   "pkey": "401921671",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Under 152.5",
+   "line": 152.5,
+   "side": "under",
+   "team": null,
+   "opp": null,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/215186152610955",
+   "game_id": "401921671",
+   "kickoff": "2026-11-25T21:30:00-05:00",
+   "home": "Colorado",
+   "away": "Grand Canyon",
+   "dec": 1.909,
+   "american": -110,
+   "game_model": {
+    "game_id": "401921671",
+    "home": "Colorado",
+    "away": "Grand Canyon",
+    "kickoff": "2026-11-25T21:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 72.1,
+    "proj_away": 82.7,
+    "proj_margin": -10.6,
+    "proj_total": 154.8,
+    "home_win_prob": 0.168,
+    "model": "FULL",
+    "slope": 7.92,
+    "matchup_x": -1.334,
+    "home_em": 5.7,
+    "away_em": 16.6,
+    "home_t": 69.6,
+    "away_t": 72.5,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.04,
+     "b": 1.781
+    }
+   ],
+   "model_prob": 0.439,
+   "model_edge": -2.3,
+   "model_edge_txt": "-2.3 pts",
+   "cheat_side": null,
+   "pinnacle_line": "152.5 o104/u-128",
+   "fair_prob": 0.5339,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5339,
+    0.5365
+   ],
+   "devig_all": {
+    "multiplicative": 0.5339,
+    "additive": 0.5356,
+    "power": 0.5365
+   },
+   "ev_pct": 1.92,
+   "min_ev": 1.76,
+   "units": 0.25,
+   "base_units": 0.42242381788558286,
+   "kelly_pct": 2.11,
+   "trusted_prob": 0.5319,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.781,
+   "lane": "cbb:total",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 0,
+    "days": 0,
+    "ev_vs_close": 0.04,
+    "roi_pct": null
+   },
+   "sizing": {
+    "base": 0.42,
+    "conf": 0.22,
+    "conf_why": [
+     "matchup points the other way",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 1,
+    "player_bets": 1,
+    "corr": 1.0,
+    "cap": 2.0,
+    "raw": 0.1
+   },
+   "exp_profit_units": 0.005
+  }
+ ],
  "cheat": [
   {
    "kind": "ml",
@@ -1301,8 +1407,8 @@
    "kickoff": "2026-11-25T20:30:00-05:00",
    "home": "UTEP",
    "away": "E Michigan",
-   "dec": 1.962,
-   "american": -104,
+   "dec": 1.943,
+   "american": -106,
    "game_model": {
     "game_id": "401920550",
     "home": "UTEP",
@@ -1332,8 +1438,8 @@
     },
     {
      "book": "fanduel",
-     "a": 1.87,
-     "b": 1.962
+     "a": 1.885,
+     "b": 1.943
     },
     {
      "book": "pinnacle",
@@ -1342,8 +1448,8 @@
     }
    ],
    "model_prob": 0.613,
-   "model_edge": 12.5,
-   "model_edge_txt": "+12.5%",
+   "model_edge": 12.06,
+   "model_edge_txt": "+12.1%",
    "cheat_side": "away",
    "pinnacle_line": "UTEP -118 / E Michigan +101",
    "fair_prob": 0.4776,
@@ -1358,16 +1464,16 @@
     "additive": 0.478,
     "power": 0.4776
    },
-   "ev_pct": -6.29,
-   "min_ev": 1.93,
+   "ev_pct": -7.2,
+   "min_ev": 1.87,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -6.54,
-   "trusted_prob": 0.484,
+   "kelly_pct": -7.63,
+   "trusted_prob": 0.485,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -2.81,
+   "second_ev": -3.75,
    "pinn_dec": 2.01
   },
   {
@@ -1632,6 +1738,88 @@
   {
    "kind": "total",
    "week": "2026-11-25",
+   "player": "E Michigan @ UTEP",
+   "pkey": "401920550",
+   "stat": "total",
+   "stat_label": "Total",
+   "title": "Over 128.5",
+   "line": 128.5,
+   "side": "over",
+   "team": null,
+   "opp": null,
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/209619908828869",
+   "game_id": "401920550",
+   "kickoff": "2026-11-25T20:30:00-05:00",
+   "home": "UTEP",
+   "away": "E Michigan",
+   "dec": 1.87,
+   "american": -115,
+   "game_model": {
+    "game_id": "401920550",
+    "home": "UTEP",
+    "away": "E Michigan",
+    "kickoff": "2026-11-25T20:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 65.9,
+    "proj_away": 69.0,
+    "proj_margin": -3.2,
+    "proj_total": 134.9,
+    "home_win_prob": 0.387,
+    "model": "FULL",
+    "slope": 7.92,
+    "matchup_x": -0.399,
+    "home_em": 2.2,
+    "away_em": 0.6,
+    "home_t": 68.2,
+    "away_t": 65.9,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.87,
+     "b": 1.952
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.826,
+     "b": 1.98
+    }
+   ],
+   "model_prob": 0.665,
+   "model_edge": 6.4,
+   "model_edge_txt": "+6.4 pts",
+   "cheat_side": "over",
+   "pinnacle_line": "128.5 o-121/u-102",
+   "fair_prob": 0.5202,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5202,
+    0.5219
+   ],
+   "devig_all": {
+    "multiplicative": 0.5202,
+    "additive": 0.5213,
+    "power": 0.5219
+   },
+   "ev_pct": -2.72,
+   "min_ev": 1.64,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -3.12,
+   "trusted_prob": 0.5231,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.826
+  },
+  {
+   "kind": "total",
+   "week": "2026-11-25",
    "player": "Bakersfield @ Pepperdine",
    "pkey": "401920138",
    "stat": "total",
@@ -1641,14 +1829,14 @@
    "side": "over",
    "team": null,
    "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/275330049502068",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/112998131748223",
    "game_id": "401920138",
    "kickoff": "2026-11-25T20:00:00-05:00",
    "home": "Pepperdine",
    "away": "Bakersfield",
-   "dec": 1.893,
-   "american": -112,
+   "dec": 1.87,
+   "american": -115,
    "game_model": {
     "game_id": "401920138",
     "home": "Pepperdine",
@@ -1671,11 +1859,6 @@
     "league_avg": 107.8
    },
    "books": [
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
     {
      "book": "fanduel",
      "a": 1.87,
@@ -1704,16 +1887,16 @@
     "additive": 0.5192,
     "power": 0.5197
    },
-   "ev_pct": -1.88,
-   "min_ev": 1.71,
+   "ev_pct": -3.07,
+   "min_ev": 1.64,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.11,
-   "trusted_prob": 0.5203,
+   "kelly_pct": -3.53,
+   "trusted_prob": 0.5216,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.32,
+   "second_ev": null,
    "pinn_dec": 1.84
   },
   {
@@ -1797,6 +1980,89 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 2.04
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-25",
+   "player": "Omaha @ UC Davis",
+   "pkey": "401911522",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "UC Davis -3.5",
+   "line": -3.5,
+   "side": "home",
+   "team": "UC Davis",
+   "opp": "Omaha",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/21881856585365",
+   "game_id": "401911522",
+   "kickoff": "2026-11-25T20:00:00-05:00",
+   "home": "UC Davis",
+   "away": "Omaha",
+   "dec": 1.87,
+   "american": -115,
+   "game_model": {
+    "game_id": "401911522",
+    "home": "UC Davis",
+    "away": "Omaha",
+    "kickoff": "2026-11-25T20:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 76.9,
+    "proj_away": 68.0,
+    "proj_margin": 8.9,
+    "proj_total": 144.8,
+    "home_win_prob": 0.791,
+    "model": "FULL",
+    "slope": 7.92,
+    "matchup_x": 1.126,
+    "home_em": -4.5,
+    "away_em": -14.3,
+    "home_t": 71.0,
+    "away_t": 69.0,
+    "league_avg": 107.8
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.952
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.84,
+     "b": 2.0
+    }
+   ],
+   "model_prob": 0.688,
+   "model_edge": 5.4,
+   "model_edge_txt": "+5.4 pts \u00b7 GOOD",
+   "cheat_side": "home",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "UC Davis -3.5 -119 / Omaha +3.5 100",
+   "fair_prob": 0.5208,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5208,
+    0.5222
+   ],
+   "devig_all": {
+    "multiplicative": 0.5208,
+    "additive": 0.5217,
+    "power": 0.5222
+   },
+   "ev_pct": -2.6,
+   "min_ev": 1.64,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -2.99,
+   "trusted_prob": 0.5236,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.84
   },
   {
    "kind": "ml",
@@ -2059,94 +2325,6 @@
   {
    "kind": "spread",
    "week": "2026-11-25",
-   "player": "Omaha @ UC Davis",
-   "pkey": "401911522",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "UC Davis -4.5",
-   "line": -4.5,
-   "side": "home",
-   "team": "UC Davis",
-   "opp": "Omaha",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/101939813017635",
-   "game_id": "401911522",
-   "kickoff": "2026-11-25T20:00:00-05:00",
-   "home": "UC Davis",
-   "away": "Omaha",
-   "dec": 1.98,
-   "american": -102,
-   "game_model": {
-    "game_id": "401911522",
-    "home": "UC Davis",
-    "away": "Omaha",
-    "kickoff": "2026-11-25T20:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 76.9,
-    "proj_away": 68.0,
-    "proj_margin": 8.9,
-    "proj_total": 144.8,
-    "home_win_prob": 0.791,
-    "model": "FULL",
-    "slope": 7.92,
-    "matchup_x": 1.126,
-    "home_em": -4.5,
-    "away_em": -14.3,
-    "home_t": 71.0,
-    "away_t": 69.0,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.98,
-     "b": 1.847
-    },
-    {
-     "book": "fanduel",
-     "a": 1.98,
-     "b": 1.833
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.03,
-     "b": 1.813
-    }
-   ],
-   "model_prob": 0.655,
-   "model_edge": 4.4,
-   "model_edge_txt": "+4.4 pts \u00b7 GOOD",
-   "cheat_side": "home",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "UC Davis -4.5 103 / Omaha +4.5 -123",
-   "fair_prob": 0.4699,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4699,
-    0.4718
-   ],
-   "devig_all": {
-    "multiplicative": 0.4718,
-    "additive": 0.4705,
-    "power": 0.4699
-   },
-   "ev_pct": -6.96,
-   "min_ev": 1.99,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -7.1,
-   "trusted_prob": 0.4769,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -5.11,
-   "pinn_dec": 2.03
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
    "player": "Stanford @ Saint Louis",
    "pkey": "401921672",
    "stat": "spread",
@@ -2235,8 +2413,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0,
+  "ev": 0.25,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T19:37:16-05:00"
+ "odds_as_of": "2026-11-25T19:48:17-05:00"
 }
