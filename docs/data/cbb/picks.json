@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T20:51:57-05:00",
+ "generated_at": "2026-11-25T21:02:19-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T21:00:00-05:00",
+ "next_kickoff": "2026-11-25T21:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 38,
+  "book_game_lines": 30,
   "book_unmatched": 34,
   "book_unmatched_games": [
    "Arkansas @ Michigan State",
@@ -18,7 +18,7 @@
    "Colorado State @ Clemson",
    "Creighton @ TCU",
    "DePaul @ Pittsburgh",
-   "Eastern Michigan @ UTEP",
+   "Eastern Washington @ Loyola Marymount",
    "Georgetown @ Texas",
    "Georgia @ Cincinnati",
    "Gonzaga @ Baylor",
@@ -31,8 +31,8 @@
    "Mississippi Valley @ New Mexico",
    "Nebraska Omaha @ Pacific"
   ],
-  "pinnacle_game_lines": 123,
-  "pinnacle_unmatched": 1,
+  "pinnacle_game_lines": 94,
+  "pinnacle_unmatched": 3,
   "pinnacle_as_of": "2026-11-25T20:51:57-05:00"
  },
  "settings": {
@@ -557,21 +557,6 @@
  },
  "games": [
   {
-   "game_id": "401917545",
-   "label": "E Washington @ LMU",
-   "kickoff": "2026-11-25T21:00:00-05:00"
-  },
-  {
-   "game_id": "401924897",
-   "label": "Miss Valley St @ New Mexico",
-   "kickoff": "2026-11-25T21:00:00-05:00"
-  },
-  {
-   "game_id": "401925880",
-   "label": "NW Indian @ Montana St",
-   "kickoff": "2026-11-25T21:00:00-05:00"
-  },
-  {
    "game_id": "401921671",
    "label": "Grand Canyon @ Colorado",
    "kickoff": "2026-11-25T21:30:00-05:00"
@@ -598,69 +583,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401917545",
-   "home": "LMU",
-   "away": "E Washington",
-   "kickoff": "2026-11-25T21:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 84.8,
-   "proj_away": 69.9,
-   "proj_margin": 14.9,
-   "proj_total": 154.7,
-   "home_win_prob": 0.913,
-   "model": "FULL",
-   "slope": 7.92,
-   "matchup_x": 1.508,
-   "home_em": 2.1,
-   "away_em": -2.8,
-   "home_t": 68.6,
-   "away_t": 70.3,
-   "league_avg": 107.8
-  },
-  {
-   "game_id": "401924897",
-   "home": "New Mexico",
-   "away": "Miss Valley St",
-   "kickoff": "2026-11-25T21:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 88.7,
-   "proj_away": 56.8,
-   "proj_margin": 31.9,
-   "proj_total": 145.5,
-   "home_win_prob": 0.998,
-   "model": "FULL",
-   "slope": 7.92,
-   "matchup_x": 3.647,
-   "home_em": 11.7,
-   "away_em": -18.9,
-   "home_t": 70.5,
-   "away_t": 68.6,
-   "league_avg": 107.8
-  },
-  {
-   "game_id": "401925880",
-   "home": "Montana St",
-   "away": "NW Indian",
-   "kickoff": "2026-11-25T21:00:00-05:00",
-   "neutral": false,
-   "non_d1": "away",
-   "proj_home": 85.9,
-   "proj_away": 57.3,
-   "proj_margin": 28.7,
-   "proj_total": 143.2,
-   "home_win_prob": 0.995,
-   "model": "FULL",
-   "slope": 7.92,
-   "matchup_x": 3.242,
-   "home_em": 5.9,
-   "away_em": -29.8,
-   "home_t": 67.6,
-   "away_t": 69.0,
-   "league_avg": 107.8
-  },
   {
    "game_id": "401921671",
    "home": "Colorado",
@@ -945,181 +867,6 @@
    "pinn_dec": 2.6
   },
   {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "E Washington @ LMU",
-   "pkey": "401917545",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "LMU Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "LMU",
-   "opp": "E Washington",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/243229443454858",
-   "game_id": "401917545",
-   "kickoff": "2026-11-25T21:00:00-05:00",
-   "home": "LMU",
-   "away": "E Washington",
-   "dec": 1.323,
-   "american": -310,
-   "game_model": {
-    "game_id": "401917545",
-    "home": "LMU",
-    "away": "E Washington",
-    "kickoff": "2026-11-25T21:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 84.8,
-    "proj_away": 69.9,
-    "proj_margin": 14.9,
-    "proj_total": 154.7,
-    "home_win_prob": 0.913,
-    "model": "FULL",
-    "slope": 7.92,
-    "matchup_x": 1.508,
-    "home_em": 2.1,
-    "away_em": -2.8,
-    "home_t": 68.6,
-    "away_t": 70.3,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.323,
-     "b": 3.5
-    },
-    {
-     "book": "fanduel",
-     "a": 1.323,
-     "b": 3.5
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.333,
-     "b": 3.47
-    }
-   ],
-   "model_prob": 0.913,
-   "model_edge": 18.73,
-   "model_edge_txt": "+18.7%",
-   "cheat_side": "home",
-   "pinnacle_line": "LMU -300 / E Washington +247",
-   "fair_prob": 0.7225,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.7225,
-    0.7355
-   ],
-   "devig_all": {
-    "multiplicative": 0.7225,
-    "additive": 0.731,
-    "power": 0.7355
-   },
-   "ev_pct": -4.42,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -13.68,
-   "trusted_prob": 0.7291,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.99,
-   "pinn_dec": 1.333
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "E Washington @ LMU",
-   "pkey": "401917545",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "LMU -7.5",
-   "line": -7.5,
-   "side": "home",
-   "team": "LMU",
-   "opp": "E Washington",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/130397475751814",
-   "game_id": "401917545",
-   "kickoff": "2026-11-25T21:00:00-05:00",
-   "home": "LMU",
-   "away": "E Washington",
-   "dec": 1.952,
-   "american": -105,
-   "game_model": {
-    "game_id": "401917545",
-    "home": "LMU",
-    "away": "E Washington",
-    "kickoff": "2026-11-25T21:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 84.8,
-    "proj_away": 69.9,
-    "proj_margin": 14.9,
-    "proj_total": 154.7,
-    "home_win_prob": 0.913,
-    "model": "FULL",
-    "slope": 7.92,
-    "matchup_x": 1.508,
-    "home_em": 2.1,
-    "away_em": -2.8,
-    "home_t": 68.6,
-    "away_t": 70.3,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.952,
-     "b": 1.87
-    },
-    {
-     "book": "fanduel",
-     "a": 1.952,
-     "b": 1.87
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.98,
-     "b": 1.877
-    }
-   ],
-   "model_prob": 0.749,
-   "model_edge": 7.4,
-   "model_edge_txt": "+7.4 pts \u00b7 STRONG",
-   "cheat_side": "home",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "LMU -7.5 -102 / E Washington +7.5 -114",
-   "fair_prob": 0.4859,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4859,
-    0.4866
-   ],
-   "devig_all": {
-    "multiplicative": 0.4866,
-    "additive": 0.4861,
-    "power": 0.4859
-   },
-   "ev_pct": -5.15,
-   "min_ev": 1.9,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -5.41,
-   "trusted_prob": 0.4912,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -4.64,
-   "pinn_dec": 1.98
-  },
-  {
    "kind": "spread",
    "week": "2026-11-25",
    "player": "Washington @ VCU",
@@ -1208,88 +955,6 @@
    "pinn_dec": 1.82
   },
   {
-   "kind": "total",
-   "week": "2026-11-25",
-   "player": "Miss Valley St @ New Mexico",
-   "pkey": "401924897",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Under 151.5",
-   "line": 151.5,
-   "side": "under",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/21698048249003",
-   "game_id": "401924897",
-   "kickoff": "2026-11-25T21:00:00-05:00",
-   "home": "New Mexico",
-   "away": "Miss Valley St",
-   "dec": 1.952,
-   "american": -105,
-   "game_model": {
-    "game_id": "401924897",
-    "home": "New Mexico",
-    "away": "Miss Valley St",
-    "kickoff": "2026-11-25T21:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 88.7,
-    "proj_away": 56.8,
-    "proj_margin": 31.9,
-    "proj_total": 145.5,
-    "home_win_prob": 0.998,
-    "model": "FULL",
-    "slope": 7.92,
-    "matchup_x": 3.647,
-    "home_em": 11.7,
-    "away_em": -18.9,
-    "home_t": 70.5,
-    "away_t": 68.6,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.781,
-     "b": 2.04
-    }
-   ],
-   "model_prob": 0.655,
-   "model_edge": 6.0,
-   "model_edge_txt": "+6.0 pts",
-   "cheat_side": "under",
-   "pinnacle_line": "151.5 o-128/u104",
-   "fair_prob": 0.4635,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4635,
-    0.4661
-   ],
-   "devig_all": {
-    "multiplicative": 0.4661,
-    "additive": 0.4644,
-    "power": 0.4635
-   },
-   "ev_pct": -9.53,
-   "min_ev": 1.9,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -10.02,
-   "trusted_prob": 0.4732,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 2.04
-  },
-  {
    "kind": "ml",
    "week": "2026-11-25",
    "player": "Stanford @ Saint Louis",
@@ -1375,89 +1040,6 @@
    "tier": "prime",
    "second_ev": 1.01,
    "pinn_dec": 2.52
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-25",
-   "player": "Miss Valley St @ New Mexico",
-   "pkey": "401924897",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Miss Valley St +36.5",
-   "line": -36.5,
-   "side": "away",
-   "team": "Miss Valley St",
-   "opp": "New Mexico",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/117826223464981",
-   "game_id": "401924897",
-   "kickoff": "2026-11-25T21:00:00-05:00",
-   "home": "New Mexico",
-   "away": "Miss Valley St",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401924897",
-    "home": "New Mexico",
-    "away": "Miss Valley St",
-    "kickoff": "2026-11-25T21:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 88.7,
-    "proj_away": 56.8,
-    "proj_margin": 31.9,
-    "proj_total": 145.5,
-    "home_win_prob": 0.998,
-    "model": "FULL",
-    "slope": 7.92,
-    "matchup_x": 3.647,
-    "home_em": 11.7,
-    "away_em": -18.9,
-    "home_t": 70.5,
-    "away_t": 68.6,
-    "league_avg": 107.8
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.0,
-     "b": 1.84
-    }
-   ],
-   "model_prob": 0.662,
-   "model_edge": 4.6,
-   "model_edge_txt": "+4.6 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "New Mexico -36.5 100 / Miss Valley St +36.5 -119",
-   "fair_prob": 0.5208,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5208,
-    0.5222
-   ],
-   "devig_all": {
-    "multiplicative": 0.5208,
-    "additive": 0.5217,
-    "power": 0.5222
-   },
-   "ev_pct": -0.57,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -0.63,
-   "trusted_prob": 0.5214,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.84
   },
   {
    "kind": "spread",
@@ -1553,5 +1135,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T20:51:57-05:00"
+ "odds_as_of": "2026-11-25T21:02:19-05:00"
 }
