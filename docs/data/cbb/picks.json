@@ -1,14 +1,14 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-25T22:26:21-05:00",
+ "generated_at": "2026-11-25T22:36:35-05:00",
  "season": 2027,
  "week": "2026-11-25",
  "day": "2026-11-25",
- "next_kickoff": "2026-11-25T22:30:00-05:00",
+ "next_kickoff": "2026-11-25T23:59:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 18,
-  "book_unmatched": 31,
+  "book_game_lines": 12,
+  "book_unmatched": 33,
   "book_unmatched_games": [
    "Arkansas @ Michigan State",
    "Army @ UTSA",
@@ -31,9 +31,9 @@
    "Oklahoma @ Purdue",
    "Oregon @ Texas Tech"
   ],
-  "pinnacle_game_lines": 56,
+  "pinnacle_game_lines": 37,
   "pinnacle_unmatched": 11,
-  "pinnacle_as_of": "2026-11-25T22:15:17-05:00"
+  "pinnacle_as_of": "2026-11-25T22:36:35-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -557,11 +557,6 @@
  },
  "games": [
   {
-   "game_id": "401917544",
-   "label": "Pacific @ Jax State",
-   "kickoff": "2026-11-25T22:30:00-05:00"
-  },
-  {
    "game_id": "401929005",
    "label": "Incarnate Word @ Hawai'i",
    "kickoff": "2026-11-25T23:59:00-05:00"
@@ -573,27 +568,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401917544",
-   "home": "Jax State",
-   "away": "Pacific",
-   "kickoff": "2026-11-25T22:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 59.3,
-   "proj_away": 76.0,
-   "proj_margin": -16.8,
-   "proj_total": 135.3,
-   "home_win_prob": 0.064,
-   "model": "FULL",
-   "slope": 7.91,
-   "matchup_x": -2.119,
-   "home_em": -4.1,
-   "away_em": 4.3,
-   "home_t": 66.0,
-   "away_t": 67.4,
-   "league_avg": 108.0
-  },
   {
    "game_id": "401929005",
    "home": "Hawai'i",
@@ -640,93 +614,6 @@
  "combined": [],
  "ev": [],
  "cheat": [
-  {
-   "kind": "ml",
-   "week": "2026-11-25",
-   "player": "Pacific @ Jax State",
-   "pkey": "401917544",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Pacific Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Pacific",
-   "opp": "Jax State",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/183224235213995",
-   "game_id": "401917544",
-   "kickoff": "2026-11-25T22:30:00-05:00",
-   "home": "Jax State",
-   "away": "Pacific",
-   "dec": 1.581,
-   "american": -172,
-   "game_model": {
-    "game_id": "401917544",
-    "home": "Jax State",
-    "away": "Pacific",
-    "kickoff": "2026-11-25T22:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 59.3,
-    "proj_away": 76.0,
-    "proj_margin": -16.8,
-    "proj_total": 135.3,
-    "home_win_prob": 0.064,
-    "model": "FULL",
-    "slope": 7.91,
-    "matchup_x": -2.119,
-    "home_em": -4.1,
-    "away_em": 4.3,
-    "home_t": 66.0,
-    "away_t": 67.4,
-    "league_avg": 108.0
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.5,
-     "b": 1.556
-    },
-    {
-     "book": "fanduel",
-     "a": 2.42,
-     "b": 1.581
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.47,
-     "b": 1.578
-    }
-   ],
-   "model_prob": 0.936,
-   "model_edge": 33.12,
-   "model_edge_txt": "+33.1%",
-   "cheat_side": "away",
-   "pinnacle_line": "Jax State +147 / Pacific -173",
-   "fair_prob": 0.6102,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.6102,
-    0.6166
-   ],
-   "devig_all": {
-    "multiplicative": 0.6102,
-    "additive": 0.6144,
-    "power": 0.6166
-   },
-   "ev_pct": -3.53,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.08,
-   "trusted_prob": 0.6146,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.55,
-   "pinn_dec": 1.578
-  },
   {
    "kind": "ml",
    "week": "2026-11-25",
@@ -781,7 +668,7 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.559,
+     "a": 1.562,
      "b": 2.52
     }
    ],
@@ -789,25 +676,25 @@
    "model_edge": 5.34,
    "model_edge_txt": "+5.3%",
    "cheat_side": "away",
-   "pinnacle_line": "Saint Louis -179 / Stanford +152",
-   "fair_prob": 0.3754,
+   "pinnacle_line": "Saint Louis -178 / Stanford +152",
+   "fair_prob": 0.3761,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.3754,
-    0.3822
+    0.3761,
+    0.3827
    ],
    "devig_all": {
-    "multiplicative": 0.3822,
-    "additive": 0.3777,
-    "power": 0.3754
+    "multiplicative": 0.3827,
+    "additive": 0.3783,
+    "power": 0.3761
    },
-   "ev_pct": -6.14,
+   "ev_pct": -5.97,
    "min_ev": 3.89,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.1,
-   "trusted_prob": 0.3803,
+   "kelly_pct": -3.98,
+   "trusted_prob": 0.3809,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "prime",
@@ -868,8 +755,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.847,
-     "b": 2.01
+     "a": 1.84,
+     "b": 2.0
     }
    ],
    "model_prob": 0.565,
@@ -877,30 +764,30 @@
    "model_edge_txt": "+1.8 pts \u00b7 LEAN",
    "cheat_side": "away",
    "cbb_tier": "LEAN",
-   "pinnacle_line": "Saint Louis -3.5 -118 / Stanford +3.5 101",
-   "fair_prob": 0.4776,
+   "pinnacle_line": "Saint Louis -3.5 -119 / Stanford +3.5 100",
+   "fair_prob": 0.4778,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4776,
-    0.4789
+    0.4778,
+    0.4792
    ],
    "devig_all": {
-    "multiplicative": 0.4789,
-    "additive": 0.478,
-    "power": 0.4776
+    "multiplicative": 0.4792,
+    "additive": 0.4783,
+    "power": 0.4778
    },
-   "ev_pct": -5.43,
+   "ev_pct": -5.39,
    "min_ev": 1.99,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -5.54,
-   "trusted_prob": 0.4831,
+   "kelly_pct": -5.5,
+   "trusted_prob": 0.4833,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -1.0,
-   "pinn_dec": 2.01
+   "pinn_dec": 2.0
   }
  ],
  "matchups": [],
@@ -908,5 +795,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-25T22:26:21-05:00"
+ "odds_as_of": "2026-11-25T22:36:35-05:00"
 }
