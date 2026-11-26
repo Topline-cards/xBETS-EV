@@ -11467,8 +11467,8 @@
    "home": "BUF",
    "away": "KC",
    "result": null,
-   "close_fair_prob": 0.4051,
-   "clv_pct": -6.83
+   "close_fair_prob": 0.3966,
+   "clv_pct": -8.78
   },
   "cheat|12|2026_12_PHI_DAL|ml|away|None|draftkings": {
    "mode": "cheat",
@@ -11719,8 +11719,8 @@
    "home": "BUF",
    "away": "KC",
    "result": null,
-   "close_fair_prob": 0.515,
-   "clv_pct": -5.6
+   "close_fair_prob": 0.5069,
+   "clv_pct": -7.09
   },
   "cheat|12|2026_12_LV_CLE|spread|away|-4.5|fanduel": {
    "mode": "cheat",
@@ -14008,7 +14008,9 @@
    "fair_source": null,
    "min_ev": null,
    "fair_method": null,
-   "result": null
+   "result": null,
+   "close_fair_prob": 0.4848,
+   "clv_pct": 6.66
   },
   "cheat|12|jared goff|anytime_td|over|0.5|draftkings": {
    "mode": "cheat",
@@ -15989,8 +15991,8 @@
    "min_ev": 1.71,
    "fair_method": "multiplicative",
    "result": null,
-   "close_fair_prob": 0.515,
-   "clv_pct": -2.51
+   "close_fair_prob": 0.5069,
+   "clv_pct": -4.04
   },
   "cheat|12|2026_12_CHI_DET|spread|home|1.5|fanduel": {
    "mode": "cheat",
@@ -17548,7 +17550,9 @@
    "fair_source": null,
    "min_ev": null,
    "fair_method": null,
-   "result": null
+   "result": null,
+   "close_fair_prob": 0.4848,
+   "clv_pct": -6.63
   },
   "cheat|12|keon coleman|rec_yds|under|21.5|fanduel": {
    "mode": "cheat",
@@ -19051,6 +19055,66 @@
    "result": null,
    "close_fair_prob": 0.5,
    "clv_pct": -4.55
+  },
+  "cheat|12|mack hollins|anytime_td|over|0.5|draftkings": {
+   "mode": "cheat",
+   "kind": "prop",
+   "first_seen": "2026-11-26T17:31:34-05:00",
+   "week": 12,
+   "player": "Mack Hollins",
+   "title": "Anytime TD",
+   "pkey": "mack hollins",
+   "stat": "anytime_td",
+   "stat_label": "Anytime TD",
+   "side": "over",
+   "line": 0.5,
+   "book": "draftkings",
+   "dec": 6.0,
+   "american": 500,
+   "units": 1.0,
+   "ev_pct": -5.84,
+   "fair_prob": 0.1569,
+   "kickoff": "2026-11-29T16:05:00-05:00",
+   "team": "NE",
+   "opp": "LAC",
+   "game_id": "2026_12_NE_LAC",
+   "home": null,
+   "away": null,
+   "tier": "single",
+   "fair_source": "FanDuel",
+   "min_ev": 11.0,
+   "fair_method": "assumed vig",
+   "result": null
+  },
+  "cheat|12|j j mccarthy|rush_yds|over|16.5|draftkings": {
+   "mode": "cheat",
+   "kind": "prop",
+   "first_seen": "2026-11-26T17:31:34-05:00",
+   "week": 12,
+   "player": "J.J. McCarthy",
+   "title": "Over 16.5 Rushing Yards",
+   "pkey": "j j mccarthy",
+   "stat": "rush_yds",
+   "stat_label": "Rushing Yards",
+   "side": "over",
+   "line": 16.5,
+   "book": "draftkings",
+   "dec": 1.855,
+   "american": -117,
+   "units": 1.0,
+   "ev_pct": null,
+   "fair_prob": null,
+   "kickoff": "2026-11-29T13:00:00-05:00",
+   "team": "NYG",
+   "opp": "IND",
+   "game_id": "2026_12_NYG_IND",
+   "home": null,
+   "away": null,
+   "tier": null,
+   "fair_source": null,
+   "min_ev": null,
+   "fair_method": null,
+   "result": null
   }
  }
 }
