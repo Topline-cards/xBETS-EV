@@ -1,14 +1,14 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T17:48:46-05:00",
+ "generated_at": "2026-11-27T18:00:21-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T18:00:00-05:00",
+ "next_kickoff": "2026-11-27T19:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 118,
-  "book_unmatched": 36,
+  "book_game_lines": 100,
+  "book_unmatched": 38,
   "book_unmatched_games": [
    "Austin Peay @ Furman",
    "Ball State @ Southern Indiana",
@@ -31,8 +31,8 @@
    "Northern Illinois @ Eastern Illinois",
    "Portland State @ Southern Illinois"
   ],
-  "pinnacle_game_lines": 315,
-  "pinnacle_unmatched": 2,
+  "pinnacle_game_lines": 276,
+  "pinnacle_unmatched": 5,
   "pinnacle_as_of": "2026-11-27T17:46:44-05:00"
  },
  "settings": {
@@ -558,26 +558,6 @@
  },
  "games": [
   {
-   "game_id": "401933055",
-   "label": "S Wesleyan @ SC Upstate",
-   "kickoff": "2026-11-27T18:00:00-05:00"
-  },
-  {
-   "game_id": "401911030",
-   "label": "Bowling Green @ Indiana",
-   "kickoff": "2026-11-27T18:00:00-05:00"
-  },
-  {
-   "game_id": "401913531",
-   "label": "Western KY @ Illinois",
-   "kickoff": "2026-11-27T18:00:00-05:00"
-  },
-  {
-   "game_id": "401921185",
-   "label": "Towson @ Penn",
-   "kickoff": "2026-11-27T18:00:00-05:00"
-  },
-  {
    "game_id": "401929284",
    "label": "UCF @ Georgia",
    "kickoff": "2026-11-27T19:00:00-05:00"
@@ -674,90 +654,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401933055",
-   "home": "SC Upstate",
-   "away": "S Wesleyan",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "neutral": false,
-   "non_d1": "away",
-   "proj_home": 84.4,
-   "proj_away": 57.1,
-   "proj_margin": 27.3,
-   "proj_total": 141.5,
-   "home_win_prob": 0.993,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 3.127,
-   "home_em": -21.8,
-   "away_em": -29.7,
-   "home_t": 68.6,
-   "away_t": 69.0,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401911030",
-   "home": "Indiana",
-   "away": "Bowling Green",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 86.0,
-   "proj_away": 74.6,
-   "proj_margin": 11.4,
-   "proj_total": 160.6,
-   "home_win_prob": 0.85,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 1.085,
-   "home_em": 20.9,
-   "away_em": -1.6,
-   "home_t": 69.1,
-   "away_t": 68.1,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401913531",
-   "home": "Illinois",
-   "away": "Western KY",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 96.6,
-   "proj_away": 75.9,
-   "proj_margin": 20.7,
-   "proj_total": 172.6,
-   "home_win_prob": 0.97,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 2.281,
-   "home_em": 31.2,
-   "away_em": 9.0,
-   "home_t": 74.4,
-   "away_t": 72.2,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401921185",
-   "home": "Penn",
-   "away": "Towson",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 71.5,
-   "proj_away": 72.7,
-   "proj_margin": -1.2,
-   "proj_total": 144.2,
-   "home_win_prob": 0.458,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -0.535,
-   "home_em": 3.6,
-   "away_em": -1.1,
-   "home_t": 72.0,
-   "away_t": 66.4,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401929284",
    "home": "Georgia",
@@ -1891,8 +1787,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 3.4,
-     "b": 1.336
+     "a": 3.3,
+     "b": 1.351
     },
     {
      "book": "fanduel",
@@ -1931,95 +1827,8 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -2.08,
+   "second_ev": -3.22,
    "pinn_dec": 1.37
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Towson @ Penn",
-   "pkey": "401921185",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Towson Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Towson",
-   "opp": "Penn",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/175686020809738",
-   "game_id": "401921185",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "home": "Penn",
-   "away": "Towson",
-   "dec": 2.42,
-   "american": 142,
-   "game_model": {
-    "game_id": "401921185",
-    "home": "Penn",
-    "away": "Towson",
-    "kickoff": "2026-11-27T18:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 71.5,
-    "proj_away": 72.7,
-    "proj_margin": -1.2,
-    "proj_total": 144.2,
-    "home_win_prob": 0.458,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.535,
-    "home_em": 3.6,
-    "away_em": -1.1,
-    "home_t": 72.0,
-    "away_t": 66.4,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.588,
-     "b": 2.42
-    },
-    {
-     "book": "fanduel",
-     "a": 1.617,
-     "b": 2.36
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.637,
-     "b": 2.34
-    }
-   ],
-   "model_prob": 0.542,
-   "model_edge": 14.58,
-   "model_edge_txt": "+14.6%",
-   "cheat_side": "away",
-   "pinnacle_line": "Penn -157 / Towson +134",
-   "fair_prob": 0.4065,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4065,
-    0.4116
-   ],
-   "devig_all": {
-    "multiplicative": 0.4116,
-    "additive": 0.4082,
-    "power": 0.4065
-   },
-   "ev_pct": -1.62,
-   "min_ev": 3.53,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -1.14,
-   "trusted_prob": 0.4079,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.04,
-   "pinn_dec": 2.34
   },
   {
    "kind": "ml",
@@ -2107,94 +1916,6 @@
    "tier": "single",
    "second_ev": -5.32,
    "pinn_dec": 2.4
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Bowling Green @ Indiana",
-   "pkey": "401911030",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Bowling Green +22.5",
-   "line": -22.5,
-   "side": "away",
-   "team": "Bowling Green",
-   "opp": "Indiana",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100284831785274",
-   "game_id": "401911030",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "home": "Indiana",
-   "away": "Bowling Green",
-   "dec": 1.926,
-   "american": -108,
-   "game_model": {
-    "game_id": "401911030",
-    "home": "Indiana",
-    "away": "Bowling Green",
-    "kickoff": "2026-11-27T18:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 86.0,
-    "proj_away": 74.6,
-    "proj_margin": 11.4,
-    "proj_total": 160.6,
-    "home_win_prob": 0.85,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 1.085,
-    "home_em": 20.9,
-    "away_em": -1.6,
-    "home_t": 69.1,
-    "away_t": 68.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.885,
-     "b": 1.971
-    }
-   ],
-   "model_prob": 0.844,
-   "model_edge": 11.1,
-   "model_edge_txt": "+11.1 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Indiana -22.5 -113 / Bowling Green +22.5 -103",
-   "fair_prob": 0.4882,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4882,
-    0.4888
-   ],
-   "devig_all": {
-    "multiplicative": 0.4888,
-    "additive": 0.4884,
-    "power": 0.4882
-   },
-   "ev_pct": -5.97,
-   "min_ev": 1.82,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.45,
-   "trusted_prob": 0.4944,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.7,
-   "pinn_dec": 1.971
   },
   {
    "kind": "ml",
@@ -2461,64 +2182,6 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
-   "player": "Bowling Green @ Indiana",
-   "pkey": "401911030",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Bowling Green Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Bowling Green",
-   "opp": "Indiana",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/166225035259337",
-   "game_id": "401911030",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "home": "Indiana",
-   "away": "Bowling Green",
-   "dec": 21.0,
-   "american": 2000,
-   "game_model": {
-    "game_id": "401911030",
-    "home": "Indiana",
-    "away": "Bowling Green",
-    "kickoff": "2026-11-27T18:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 86.0,
-    "proj_away": 74.6,
-    "proj_margin": 11.4,
-    "proj_total": 160.6,
-    "home_win_prob": 0.85,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 1.085,
-    "home_em": 20.9,
-    "away_em": -1.6,
-    "home_t": 69.1,
-    "away_t": 68.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": null,
-     "b": 19.0
-    },
-    {
-     "book": "fanduel",
-     "a": null,
-     "b": 21.0
-    }
-   ],
-   "model_prob": 0.15,
-   "model_edge": 10.24,
-   "model_edge_txt": "+10.2%",
-   "cheat_side": "away"
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
    "player": "Jax State @ Omaha",
    "pkey": "401926783",
    "stat": "ml",
@@ -2606,93 +2269,6 @@
   {
    "kind": "total",
    "week": "2026-11-27",
-   "player": "Bowling Green @ Indiana",
-   "pkey": "401911030",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 151.5",
-   "line": 151.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/156808880929441",
-   "game_id": "401911030",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "home": "Indiana",
-   "away": "Bowling Green",
-   "dec": 1.926,
-   "american": -108,
-   "game_model": {
-    "game_id": "401911030",
-    "home": "Indiana",
-    "away": "Bowling Green",
-    "kickoff": "2026-11-27T18:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 86.0,
-    "proj_away": 74.6,
-    "proj_margin": 11.4,
-    "proj_total": 160.6,
-    "home_win_prob": 0.85,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 1.085,
-    "home_em": 20.9,
-    "away_em": -1.6,
-    "home_t": 69.1,
-    "away_t": 68.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "fanduel",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.893,
-     "b": 1.909
-    }
-   ],
-   "model_prob": 0.728,
-   "model_edge": 9.1,
-   "model_edge_txt": "+9.1 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "151.5 o-112/u-110",
-   "fair_prob": 0.5021,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5021,
-    0.5023
-   ],
-   "devig_all": {
-    "multiplicative": 0.5021,
-    "additive": 0.5022,
-    "power": 0.5023
-   },
-   "ev_pct": -3.29,
-   "min_ev": 1.82,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.56,
-   "trusted_prob": 0.5055,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.7,
-   "pinn_dec": 1.893
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-27",
    "player": "Oakland @ Houston",
    "pkey": "401925703",
    "stat": "total",
@@ -2771,89 +2347,6 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 1.877
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Western KY @ Illinois",
-   "pkey": "401913531",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Western KY +27.5",
-   "line": -27.5,
-   "side": "away",
-   "team": "Western KY",
-   "opp": "Illinois",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/187573844259242",
-   "game_id": "401913531",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "home": "Illinois",
-   "away": "Western KY",
-   "dec": 1.862,
-   "american": -116,
-   "game_model": {
-    "game_id": "401913531",
-    "home": "Illinois",
-    "away": "Western KY",
-    "kickoff": "2026-11-27T18:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 96.6,
-    "proj_away": 75.9,
-    "proj_margin": 20.7,
-    "proj_total": 172.6,
-    "home_win_prob": 0.97,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 2.281,
-    "home_em": 31.2,
-    "away_em": 9.0,
-    "home_t": 74.4,
-    "away_t": 72.2,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.962,
-     "b": 1.862
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.05,
-     "b": 1.8
-    }
-   ],
-   "model_prob": 0.732,
-   "model_edge": 6.8,
-   "model_edge_txt": "+6.8 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Illinois -27.5 105 / Western KY +27.5 -125",
-   "fair_prob": 0.5325,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5325,
-    0.5346
-   ],
-   "devig_all": {
-    "multiplicative": 0.5325,
-    "additive": 0.5339,
-    "power": 0.5346
-   },
-   "ev_pct": -0.85,
-   "min_ev": 1.62,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -0.99,
-   "trusted_prob": 0.5334,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.8
   },
   {
    "kind": "total",
@@ -3418,14 +2911,14 @@
    "side": "away",
    "team": "Pacific",
    "opp": "UC Davis",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/140540509094274",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/192574906709591",
    "game_id": "401911524",
    "kickoff": "2026-11-27T20:00:00-05:00",
    "home": "UC Davis",
    "away": "Pacific",
-   "dec": 1.877,
-   "american": -114,
+   "dec": 1.926,
+   "american": -108,
    "game_model": {
     "game_id": "401911524",
     "home": "UC Davis",
@@ -3450,8 +2943,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.971,
-     "b": 1.855
+     "a": 1.893,
+     "b": 1.926
     },
     {
      "book": "fanduel",
@@ -3482,104 +2975,16 @@
     "additive": 0.5093,
     "power": 0.5095
    },
-   "ev_pct": -4.47,
-   "min_ev": 1.66,
+   "ev_pct": -1.98,
+   "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -5.1,
-   "trusted_prob": 0.5137,
+   "kelly_pct": -2.13,
+   "trusted_prob": 0.511,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.3,
-   "pinn_dec": 1.893
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Towson @ Penn",
-   "pkey": "401921185",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Towson +3.5",
-   "line": -3.5,
-   "side": "away",
-   "team": "Towson",
-   "opp": "Penn",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/2946428967032",
-   "game_id": "401921185",
-   "kickoff": "2026-11-27T18:00:00-05:00",
-   "home": "Penn",
-   "away": "Towson",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401921185",
-    "home": "Penn",
-    "away": "Towson",
-    "kickoff": "2026-11-27T18:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 71.5,
-    "proj_away": 72.7,
-    "proj_margin": -1.2,
-    "proj_total": 144.2,
-    "home_win_prob": 0.458,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.535,
-    "home_em": 3.6,
-    "away_em": -1.1,
-    "home_t": 72.0,
-    "away_t": 66.4,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.917,
-     "b": 1.901
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.952,
-     "b": 1.893
-    }
-   ],
-   "model_prob": 0.665,
-   "model_edge": 4.7,
-   "model_edge_txt": "+4.7 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "Penn -3.5 -105 / Towson +3.5 -112",
-   "fair_prob": 0.5077,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5077,
-    0.5081
-   ],
-   "devig_all": {
-    "multiplicative": 0.5077,
-    "additive": 0.508,
-    "power": 0.5081
-   },
-   "ev_pct": -3.09,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.39,
-   "trusted_prob": 0.5109,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -4.15,
+   "second_ev": -2.04,
    "pinn_dec": 1.893
   },
   {
@@ -4165,5 +3570,5 @@
   "ev": 0.25,
   "combined": 0
  },
- "odds_as_of": "2026-11-27T17:48:46-05:00"
+ "odds_as_of": "2026-11-27T18:00:21-05:00"
 }
