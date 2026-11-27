@@ -1,20 +1,21 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T16:25:39-05:00",
+ "generated_at": "2026-11-27T16:37:18-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T16:30:00-05:00",
+ "next_kickoff": "2026-11-27T17:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 166,
-  "book_unmatched": 29,
+  "book_game_lines": 152,
+  "book_unmatched": 32,
   "book_unmatched_games": [
    "Austin Peay @ Furman",
    "Ball State @ Southern Indiana",
    "Buffalo @ Towson",
    "California @ Minnesota",
    "Delaware @ Stony Brook",
+   "Denver @ New Mexico State",
    "Drake @ North Dakota State",
    "Drexel @ Mount Saint Marys",
    "Elon @ NC State",
@@ -23,17 +24,16 @@
    "Loyola Marymount @ UC San Diego",
    "Marist @ George Mason",
    "Merrimack @ Hofstra",
+   "Niagara @ Lafayette",
    "North Texas @ Boise State",
    "Northern Arizona @ CSU Bakersfield",
    "Portland State @ Southern Illinois",
    "Princeton @ Saint Thomas MN",
-   "Robert Morris @ Northern Iowa",
-   "SE Missouri State @ UMKC",
-   "Saint Josephs @ Monmouth"
+   "Robert Morris @ Northern Iowa"
   ],
-  "pinnacle_game_lines": 466,
+  "pinnacle_game_lines": 428,
   "pinnacle_unmatched": 2,
-  "pinnacle_as_of": "2026-11-27T16:13:57-05:00"
+  "pinnacle_as_of": "2026-11-27T16:37:18-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -558,16 +558,6 @@
  },
  "games": [
   {
-   "game_id": "401924845",
-   "label": "Niagara @ Lafayette",
-   "kickoff": "2026-11-27T16:30:00-05:00"
-  },
-  {
-   "game_id": "401929283",
-   "label": "Cincinnati @ Boston College",
-   "kickoff": "2026-11-27T16:30:00-05:00"
-  },
-  {
    "game_id": "401920382",
    "label": "Old Dominion @ Virginia Tech",
    "kickoff": "2026-11-27T17:00:00-05:00"
@@ -714,48 +704,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401924845",
-   "home": "Lafayette",
-   "away": "Niagara",
-   "kickoff": "2026-11-27T16:30:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 79.0,
-   "proj_away": 63.2,
-   "proj_margin": 15.8,
-   "proj_total": 142.2,
-   "home_win_prob": 0.925,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 1.649,
-   "home_em": -10.9,
-   "away_em": -14.8,
-   "home_t": 68.6,
-   "away_t": 68.3,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401929283",
-   "home": "Boston College",
-   "away": "Cincinnati",
-   "kickoff": "2026-11-27T16:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 68.6,
-   "proj_away": 69.7,
-   "proj_margin": -1.1,
-   "proj_total": 138.3,
-   "home_win_prob": 0.459,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -0.147,
-   "home_em": 8.7,
-   "away_em": 19.1,
-   "home_t": 62.9,
-   "away_t": 68.9,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401920382",
    "home": "Virginia Tech",
@@ -2034,180 +1982,6 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
-   "player": "Niagara @ Lafayette",
-   "pkey": "401924845",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Lafayette Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Lafayette",
-   "opp": "Niagara",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/204301957192718",
-   "game_id": "401924845",
-   "kickoff": "2026-11-27T16:30:00-05:00",
-   "home": "Lafayette",
-   "away": "Niagara",
-   "dec": 1.488,
-   "american": -205,
-   "game_model": {
-    "game_id": "401924845",
-    "home": "Lafayette",
-    "away": "Niagara",
-    "kickoff": "2026-11-27T16:30:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 79.0,
-    "proj_away": 63.2,
-    "proj_margin": 15.8,
-    "proj_total": 142.2,
-    "home_win_prob": 0.925,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 1.649,
-    "home_em": -10.9,
-    "away_em": -14.8,
-    "home_t": 68.6,
-    "away_t": 68.3,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.488,
-     "b": 2.68
-    },
-    {
-     "book": "draftkings",
-     "a": 1.444,
-     "b": 2.85
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.45,
-     "b": 2.87
-    }
-   ],
-   "model_prob": 0.925,
-   "model_edge": 28.2,
-   "model_edge_txt": "+28.2%",
-   "cheat_side": "home",
-   "pinnacle_line": "Lafayette -222 / Niagara +187",
-   "fair_prob": 0.6644,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.6644,
-    0.6738
-   ],
-   "devig_all": {
-    "multiplicative": 0.6644,
-    "additive": 0.6706,
-    "power": 0.6738
-   },
-   "ev_pct": -1.14,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.35,
-   "trusted_prob": 0.6659,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.24,
-   "pinn_dec": 1.45
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Cincinnati @ Boston College",
-   "pkey": "401929283",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Boston College Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Boston College",
-   "opp": "Cincinnati",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/196871077740480",
-   "game_id": "401929283",
-   "kickoff": "2026-11-27T16:30:00-05:00",
-   "home": "Boston College",
-   "away": "Cincinnati",
-   "dec": 4.2,
-   "american": 320,
-   "game_model": {
-    "game_id": "401929283",
-    "home": "Boston College",
-    "away": "Cincinnati",
-    "kickoff": "2026-11-27T16:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 68.6,
-    "proj_away": 69.7,
-    "proj_margin": -1.1,
-    "proj_total": 138.3,
-    "home_win_prob": 0.459,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.147,
-    "home_em": 8.7,
-    "away_em": 19.1,
-    "home_t": 62.9,
-    "away_t": 68.9,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 3.8,
-     "b": 1.278
-    },
-    {
-     "book": "draftkings",
-     "a": 4.2,
-     "b": 1.244
-    },
-    {
-     "book": "pinnacle",
-     "a": 4.32,
-     "b": 1.239
-    }
-   ],
-   "model_prob": 0.459,
-   "model_edge": 23.05,
-   "model_edge_txt": "+23.0%",
-   "cheat_side": "home",
-   "pinnacle_line": "Boston College +332 / Cincinnati -418",
-   "fair_prob": 0.2064,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.2064,
-    0.2229
-   ],
-   "devig_all": {
-    "multiplicative": 0.2229,
-    "additive": 0.2122,
-    "power": 0.2064
-   },
-   "ev_pct": -13.33,
-   "min_ev": 7.2,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.16,
-   "trusted_prob": 0.2127,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.66,
-   "pinn_dec": 4.32
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
    "player": "Miami @ Alabama",
    "pkey": "401920543",
    "stat": "ml",
@@ -2926,38 +2700,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 3.73,
-     "b": 1.322
+     "a": 3.87,
+     "b": 1.306
     }
    ],
    "model_prob": 0.883,
    "model_edge": 14.21,
    "model_edge_txt": "+14.2%",
    "cheat_side": "away",
-   "pinnacle_line": "Saint Mary's +273 / Texas -311",
-   "fair_prob": 0.7383,
+   "pinnacle_line": "Saint Mary's +287 / Texas -327",
+   "fair_prob": 0.7477,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.7383,
-    0.7471
+    0.7477,
+    0.7567
    ],
    "devig_all": {
-    "multiplicative": 0.7383,
-    "additive": 0.7442,
-    "power": 0.7471
+    "multiplicative": 0.7477,
+    "additive": 0.7536,
+    "power": 0.7567
    },
-   "ev_pct": -4.46,
+   "ev_pct": -3.25,
    "min_ev": 1.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -15.17,
-   "trusted_prob": 0.7452,
+   "kelly_pct": -11.05,
+   "trusted_prob": 0.7527,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.32,
-   "pinn_dec": 1.322
+   "pinn_dec": 1.306
   },
   {
    "kind": "ml",
@@ -3223,89 +2997,6 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
-   "player": "Niagara @ Lafayette",
-   "pkey": "401924845",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Lafayette -4.5",
-   "line": -4.5,
-   "side": "home",
-   "team": "Lafayette",
-   "opp": "Niagara",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/127234835676761",
-   "game_id": "401924845",
-   "kickoff": "2026-11-27T16:30:00-05:00",
-   "home": "Lafayette",
-   "away": "Niagara",
-   "dec": 1.833,
-   "american": -120,
-   "game_model": {
-    "game_id": "401924845",
-    "home": "Lafayette",
-    "away": "Niagara",
-    "kickoff": "2026-11-27T16:30:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 79.0,
-    "proj_away": 63.2,
-    "proj_margin": 15.8,
-    "proj_total": 142.2,
-    "home_win_prob": 0.925,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 1.649,
-    "home_em": -10.9,
-    "away_em": -14.8,
-    "home_t": 68.6,
-    "away_t": 68.3,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.794,
-     "b": 2.05
-    }
-   ],
-   "model_prob": 0.848,
-   "model_edge": 11.3,
-   "model_edge_txt": "+11.3 pts \u00b7 STRONG",
-   "cheat_side": "home",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Lafayette -4.5 -126 / Niagara +4.5 105",
-   "fair_prob": 0.5333,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5333,
-    0.5356
-   ],
-   "devig_all": {
-    "multiplicative": 0.5333,
-    "additive": 0.5348,
-    "power": 0.5356
-   },
-   "ev_pct": -2.25,
-   "min_ev": 1.52,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.7,
-   "trusted_prob": 0.5357,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.794
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
    "player": "Bowling Green @ Indiana",
    "pkey": "401911030",
    "stat": "spread",
@@ -3352,8 +3043,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 2.0,
-     "b": 1.855
+     "a": 1.971,
+     "b": 1.885
     }
    ],
    "model_prob": 0.844,
@@ -3361,30 +3052,30 @@
    "model_edge_txt": "+11.1 pts \u00b7 STRONG",
    "cheat_side": "away",
    "cbb_tier": "STRONG",
-   "pinnacle_line": "Indiana -22.5 100 / Bowling Green +22.5 -117",
-   "fair_prob": 0.5188,
+   "pinnacle_line": "Indiana -22.5 -103 / Bowling Green +22.5 -113",
+   "fair_prob": 0.5112,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5188,
-    0.5199
+    0.5112,
+    0.5118
    ],
    "devig_all": {
-    "multiplicative": 0.5188,
-    "additive": 0.5195,
-    "power": 0.5199
+    "multiplicative": 0.5112,
+    "additive": 0.5116,
+    "power": 0.5118
    },
-   "ev_pct": -0.96,
+   "ev_pct": -2.42,
    "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -1.06,
-   "trusted_prob": 0.5198,
+   "kelly_pct": -2.66,
+   "trusted_prob": 0.5137,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": null,
-   "pinn_dec": 1.855
+   "pinn_dec": 1.885
   },
   {
    "kind": "ml",
@@ -4130,94 +3821,6 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
-   "player": "Cincinnati @ Boston College",
-   "pkey": "401929283",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Boston College +8.5",
-   "line": 8.5,
-   "side": "home",
-   "team": "Boston College",
-   "opp": "Cincinnati",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/277019161212419",
-   "game_id": "401929283",
-   "kickoff": "2026-11-27T16:30:00-05:00",
-   "home": "Boston College",
-   "away": "Cincinnati",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401929283",
-    "home": "Boston College",
-    "away": "Cincinnati",
-    "kickoff": "2026-11-27T16:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 68.6,
-    "proj_away": 69.7,
-    "proj_margin": -1.1,
-    "proj_total": 138.3,
-    "home_win_prob": 0.459,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.147,
-    "home_em": 8.7,
-    "away_em": 19.1,
-    "home_t": 62.9,
-    "away_t": 68.9,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.877,
-     "b": 1.943
-    },
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.935,
-     "b": 1.917
-    }
-   ],
-   "model_prob": 0.749,
-   "model_edge": 7.4,
-   "model_edge_txt": "+7.4 pts \u00b7 STRONG",
-   "cheat_side": "home",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Boston College +8.5 -107 / Cincinnati -8.5 -109",
-   "fair_prob": 0.4975,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4975,
-    0.4977
-   ],
-   "devig_all": {
-    "multiplicative": 0.4977,
-    "additive": 0.4976,
-    "power": 0.4975
-   },
-   "ev_pct": -5.82,
-   "min_ev": 1.71,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.51,
-   "trusted_prob": 0.5037,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.71,
-   "pinn_dec": 1.935
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
    "player": "Western KY @ Illinois",
    "pkey": "401913531",
    "stat": "spread",
@@ -4704,89 +4307,6 @@
    "pinn_dec": 1.971
   },
   {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Texas @ Saint Mary's",
-   "pkey": "401921718",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Texas -7.5",
-   "line": 7.5,
-   "side": "away",
-   "team": "Texas",
-   "opp": "Saint Mary's",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/106947249410407",
-   "game_id": "401921718",
-   "kickoff": "2026-11-27T17:00:00-05:00",
-   "home": "Saint Mary's",
-   "away": "Texas",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401921718",
-    "home": "Saint Mary's",
-    "away": "Texas",
-    "kickoff": "2026-11-27T17:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 74.8,
-    "proj_away": 87.9,
-    "proj_margin": -13.1,
-    "proj_total": 162.7,
-    "home_win_prob": 0.117,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.687,
-    "home_em": 18.5,
-    "away_em": 23.0,
-    "home_t": 69.7,
-    "away_t": 71.0,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.962,
-     "b": 1.901
-    }
-   ],
-   "model_prob": 0.695,
-   "model_edge": 5.6,
-   "model_edge_txt": "+5.6 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "Saint Mary's +7.5 -104 / Texas -7.5 -111",
-   "fair_prob": 0.5079,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5079,
-    0.5083
-   ],
-   "devig_all": {
-    "multiplicative": 0.5079,
-    "additive": 0.5082,
-    "power": 0.5083
-   },
-   "ev_pct": -3.86,
-   "min_ev": 1.71,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.32,
-   "trusted_prob": 0.512,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.901
-  },
-  {
    "kind": "ml",
    "week": "2026-11-27",
    "player": "Creighton @ Gonzaga",
@@ -5190,6 +4710,89 @@
    "tier": "single",
    "second_ev": -4.15,
    "pinn_dec": 1.877
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Texas @ Saint Mary's",
+   "pkey": "401921718",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Texas -8.5",
+   "line": 8.5,
+   "side": "away",
+   "team": "Texas",
+   "opp": "Saint Mary's",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/203939148408654",
+   "game_id": "401921718",
+   "kickoff": "2026-11-27T17:00:00-05:00",
+   "home": "Saint Mary's",
+   "away": "Texas",
+   "dec": 1.98,
+   "american": -102,
+   "game_model": {
+    "game_id": "401921718",
+    "home": "Saint Mary's",
+    "away": "Texas",
+    "kickoff": "2026-11-27T17:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 74.8,
+    "proj_away": 87.9,
+    "proj_margin": -13.1,
+    "proj_total": 162.7,
+    "home_win_prob": 0.117,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -1.687,
+    "home_em": 18.5,
+    "away_em": 23.0,
+    "home_t": 69.7,
+    "away_t": 71.0,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.833,
+     "b": 1.98
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.833,
+     "b": 2.05
+    }
+   ],
+   "model_prob": 0.662,
+   "model_edge": 4.6,
+   "model_edge_txt": "+4.6 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Saint Mary's +8.5 -120 / Texas -8.5 105",
+   "fair_prob": 0.4707,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4707,
+    0.4721
+   ],
+   "devig_all": {
+    "multiplicative": 0.4721,
+    "additive": 0.4711,
+    "power": 0.4707
+   },
+   "ev_pct": -6.81,
+   "min_ev": 1.99,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -6.95,
+   "trusted_prob": 0.4775,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 2.05
   },
   {
    "kind": "spread",
@@ -5852,5 +5455,5 @@
   "ev": 0.75,
   "combined": 0.25
  },
- "odds_as_of": "2026-11-27T16:25:39-05:00"
+ "odds_as_of": "2026-11-27T16:37:18-05:00"
 }
