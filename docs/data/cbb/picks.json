@@ -1,6 +1,6 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T16:02:17-05:00",
+ "generated_at": "2026-11-27T16:13:57-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
@@ -8,7 +8,7 @@
  "status": {
   "odds_checked": true,
   "book_game_lines": 166,
-  "book_unmatched": 22,
+  "book_unmatched": 23,
   "book_unmatched_games": [
    "Austin Peay @ Furman",
    "Ball State @ Southern Indiana",
@@ -23,17 +23,17 @@
    "North Texas @ Boise State",
    "Portland State @ Southern Illinois",
    "Princeton @ Saint Thomas MN",
-   "Radford @ American",
    "Robert Morris @ Northern Iowa",
    "SE Missouri State @ UMKC",
+   "Saint Josephs @ Monmouth",
    "San Jose State @ Utah Valley",
    "Siena @ Seton Hall",
-   "Troy @ Chattanooga",
-   "UMBC @ GW Revolutionaries"
+   "South Alabama @ South Dakota State",
+   "Troy @ Chattanooga"
   ],
   "pinnacle_game_lines": 466,
-  "pinnacle_unmatched": 5,
-  "pinnacle_as_of": "2026-11-27T15:50:35-05:00"
+  "pinnacle_unmatched": 2,
+  "pinnacle_as_of": "2026-11-27T16:13:57-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -2926,38 +2926,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 3.68,
-     "b": 1.304
+     "a": 3.73,
+     "b": 1.322
     }
    ],
    "model_prob": 0.883,
    "model_edge": 14.21,
    "model_edge_txt": "+14.2%",
    "cheat_side": "away",
-   "pinnacle_line": "Saint Mary's +268 / Texas -329",
-   "fair_prob": 0.7384,
+   "pinnacle_line": "Saint Mary's +273 / Texas -311",
+   "fair_prob": 0.7383,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.7384,
-    0.7524
+    0.7383,
+    0.7471
    ],
    "devig_all": {
-    "multiplicative": 0.7384,
-    "additive": 0.7476,
-    "power": 0.7524
+    "multiplicative": 0.7383,
+    "additive": 0.7442,
+    "power": 0.7471
    },
    "ev_pct": -4.46,
    "min_ev": 1.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -15.16,
+   "kelly_pct": -15.17,
    "trusted_prob": 0.7452,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.32,
-   "pinn_dec": 1.304
+   "pinn_dec": 1.322
   },
   {
    "kind": "ml",
@@ -3841,39 +3841,44 @@
      "b": 1.901
     },
     {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
      "book": "pinnacle",
-     "a": 1.893,
-     "b": 1.926
+     "a": 1.98,
+     "b": 1.84
     }
    ],
    "model_prob": 0.737,
    "model_edge": 9.5,
    "model_edge_txt": "+9.5 pts",
    "cheat_side": "over",
-   "pinnacle_line": "141.5 o-112/u-108",
-   "fair_prob": 0.5043,
-   "fair_method": "multiplicative",
+   "pinnacle_line": "141.5 o-102/u-119",
+   "fair_prob": 0.4803,
+   "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5043,
-    0.5046
+    0.4803,
+    0.4817
    ],
    "devig_all": {
-    "multiplicative": 0.5043,
-    "additive": 0.5045,
-    "power": 0.5046
+    "multiplicative": 0.4817,
+    "additive": 0.4808,
+    "power": 0.4803
    },
-   "ev_pct": -2.87,
+   "ev_pct": -7.49,
    "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.1,
-   "trusted_prob": 0.5073,
+   "kelly_pct": -8.09,
+   "trusted_prob": 0.4881,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.893
+   "second_ev": -3.7,
+   "pinn_dec": 1.98
   },
   {
    "kind": "total",
@@ -4747,8 +4752,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.943,
-     "b": 1.885
+     "a": 1.962,
+     "b": 1.901
     }
    ],
    "model_prob": 0.695,
@@ -4756,30 +4761,30 @@
    "model_edge_txt": "+5.6 pts \u00b7 GOOD",
    "cheat_side": "away",
    "cbb_tier": "GOOD",
-   "pinnacle_line": "Saint Mary's +7.5 -106 / Texas -7.5 -113",
-   "fair_prob": 0.5076,
+   "pinnacle_line": "Saint Mary's +7.5 -104 / Texas -7.5 -111",
+   "fair_prob": 0.5079,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5076,
-    0.5081
+    0.5079,
+    0.5083
    ],
    "devig_all": {
-    "multiplicative": 0.5076,
-    "additive": 0.5079,
-    "power": 0.5081
+    "multiplicative": 0.5079,
+    "additive": 0.5082,
+    "power": 0.5083
    },
-   "ev_pct": -3.92,
+   "ev_pct": -3.86,
    "min_ev": 1.71,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.39,
-   "trusted_prob": 0.5117,
+   "kelly_pct": -4.32,
+   "trusted_prob": 0.512,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": null,
-   "pinn_dec": 1.885
+   "pinn_dec": 1.901
   },
   {
    "kind": "ml",
@@ -5847,5 +5852,5 @@
   "ev": 0.75,
   "combined": 0.25
  },
- "odds_as_of": "2026-11-27T16:02:17-05:00"
+ "odds_as_of": "2026-11-27T16:13:57-05:00"
 }
