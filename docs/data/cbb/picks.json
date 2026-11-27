@@ -1,6 +1,6 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T18:00:21-05:00",
+ "generated_at": "2026-11-27T18:11:50-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
@@ -8,7 +8,7 @@
  "status": {
   "odds_checked": true,
   "book_game_lines": 100,
-  "book_unmatched": 38,
+  "book_unmatched": 37,
   "book_unmatched_games": [
    "Austin Peay @ Furman",
    "Ball State @ Southern Indiana",
@@ -32,8 +32,8 @@
    "Portland State @ Southern Illinois"
   ],
   "pinnacle_game_lines": 276,
-  "pinnacle_unmatched": 5,
-  "pinnacle_as_of": "2026-11-27T17:46:44-05:00"
+  "pinnacle_unmatched": 2,
+  "pinnacle_as_of": "2026-11-27T18:11:50-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -1055,113 +1055,7 @@
   }
  ],
  "combined": [],
- "ev": [
-  {
-   "kind": "total",
-   "week": "2026-11-27",
-   "player": "Lehigh @ Santa Barbara",
-   "pkey": "401926756",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Under 144.5",
-   "line": 144.5,
-   "side": "under",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/105399717276287",
-   "game_id": "401926756",
-   "kickoff": "2026-11-27T19:00:00-05:00",
-   "home": "Santa Barbara",
-   "away": "Lehigh",
-   "dec": 1.952,
-   "american": -105,
-   "game_model": {
-    "game_id": "401926756",
-    "home": "Santa Barbara",
-    "away": "Lehigh",
-    "kickoff": "2026-11-27T19:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 81.8,
-    "proj_away": 65.9,
-    "proj_margin": 15.9,
-    "proj_total": 147.7,
-    "home_win_prob": 0.926,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 2.054,
-    "home_em": 11.1,
-    "away_em": -5.7,
-    "home_t": 66.6,
-    "away_t": 68.6,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.87,
-     "b": 1.952
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.03,
-     "b": 1.787
-    }
-   ],
-   "model_prob": 0.416,
-   "model_edge": -3.2,
-   "model_edge_txt": "-3.2 pts",
-   "cheat_side": null,
-   "pinnacle_line": "144.5 o103/u-127",
-   "fair_prob": 0.5318,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5318,
-    0.5344
-   ],
-   "devig_all": {
-    "multiplicative": 0.5318,
-    "additive": 0.5335,
-    "power": 0.5344
-   },
-   "ev_pct": 3.81,
-   "min_ev": 1.9,
-   "units": 0.25,
-   "base_units": 0.8011483346285814,
-   "kelly_pct": 4.01,
-   "trusted_prob": 0.5279,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.787,
-   "lane": "cbb:total",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 21,
-    "days": 1,
-    "ev_vs_close": 0.4,
-    "roi_pct": 5.1
-   },
-   "sizing": {
-    "base": 0.8,
-    "conf": 0.22,
-    "conf_why": [
-     "matchup points the other way",
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 1,
-    "player_bets": 1,
-    "corr": 1.0,
-    "cap": 2.0,
-    "raw": 0.18
-   },
-   "exp_profit_units": 0.01
-  }
- ],
+ "ev": [],
  "cheat": [
   {
    "kind": "ml",
@@ -1304,38 +1198,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.49,
-     "b": 2.72
+     "a": 1.498,
+     "b": 2.7
     }
    ],
    "model_prob": 0.719,
    "model_edge": 36.37,
    "model_edge_txt": "+36.4%",
    "cheat_side": "away",
-   "pinnacle_line": "Kentucky -204 / Wichita St +172",
-   "fair_prob": 0.3454,
+   "pinnacle_line": "Kentucky -201 / Wichita St +170",
+   "fair_prob": 0.3487,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.3454,
-    0.3539
+    0.3487,
+    0.3568
    ],
    "devig_all": {
-    "multiplicative": 0.3539,
-    "additive": 0.3483,
-    "power": 0.3454
+    "multiplicative": 0.3568,
+    "additive": 0.3514,
+    "power": 0.3487
    },
-   "ev_pct": -6.75,
+   "ev_pct": -5.86,
    "min_ev": 4.78,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.97,
-   "trusted_prob": 0.3504,
+   "kelly_pct": -3.45,
+   "trusted_prob": 0.353,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -1.5,
-   "pinn_dec": 2.72
+   "pinn_dec": 2.7
   },
   {
    "kind": "ml",
@@ -1478,38 +1372,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.326,
-     "b": 3.52
+     "a": 1.348,
+     "b": 3.36
     }
    ],
    "model_prob": 0.483,
    "model_edge": 20.09,
    "model_edge_txt": "+20.1%",
    "cheat_side": "away",
-   "pinnacle_line": "Mississippi St -307 / Penn State +252",
-   "fair_prob": 0.2604,
+   "pinnacle_line": "Mississippi St -287 / Penn State +236",
+   "fair_prob": 0.2735,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.2604,
-    0.2736
+    0.2735,
+    0.2863
    ],
    "devig_all": {
-    "multiplicative": 0.2736,
-    "additive": 0.265,
-    "power": 0.2604
+    "multiplicative": 0.2863,
+    "additive": 0.2779,
+    "power": 0.2735
    },
-   "ev_pct": -11.46,
+   "ev_pct": -7.02,
    "min_ev": 6.3,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.77,
-   "trusted_prob": 0.2672,
+   "kelly_pct": -2.93,
+   "trusted_prob": 0.2776,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.81,
-   "pinn_dec": 3.52
+   "pinn_dec": 3.36
   },
   {
    "kind": "ml",
@@ -1797,38 +1691,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 3.24,
-     "b": 1.37
+     "a": 3.13,
+     "b": 1.391
     }
    ],
    "model_prob": 0.849,
    "model_edge": 14.79,
    "model_edge_txt": "+14.8%",
    "cheat_side": "away",
-   "pinnacle_line": "UC Davis +224 / Pacific -270",
-   "fair_prob": 0.7028,
+   "pinnacle_line": "UC Davis +213 / Pacific -256",
+   "fair_prob": 0.6923,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.7028,
-    0.7147
+    0.6923,
+    0.7035
    ],
    "devig_all": {
-    "multiplicative": 0.7028,
-    "additive": 0.7106,
-    "power": 0.7147
+    "multiplicative": 0.6923,
+    "additive": 0.6997,
+    "power": 0.7035
    },
-   "ev_pct": -4.14,
+   "ev_pct": -5.57,
    "min_ev": 1.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -11.36,
-   "trusted_prob": 0.7089,
+   "kelly_pct": -15.29,
+   "trusted_prob": 0.7005,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.22,
-   "pinn_dec": 1.37
+   "pinn_dec": 1.391
   },
   {
    "kind": "ml",
@@ -1884,38 +1778,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 2.4,
-     "b": 1.649
+     "a": 2.38,
+     "b": 1.658
     }
    ],
    "model_prob": 0.54,
    "model_edge": 12.36,
    "model_edge_txt": "+12.4%",
    "cheat_side": "home",
-   "pinnacle_line": "North Carolina +140 / West Virginia -154",
-   "fair_prob": 0.4041,
+   "pinnacle_line": "North Carolina +138 / West Virginia -152",
+   "fair_prob": 0.4075,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4041,
-    0.4073
+    0.4075,
+    0.4106
    ],
    "devig_all": {
-    "multiplicative": 0.4073,
-    "additive": 0.4051,
-    "power": 0.4041
+    "multiplicative": 0.4106,
+    "additive": 0.4085,
+    "power": 0.4075
    },
-   "ev_pct": -7.06,
+   "ev_pct": -6.27,
    "min_ev": 3.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -5.43,
-   "trusted_prob": 0.4102,
+   "kelly_pct": -4.82,
+   "trusted_prob": 0.413,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -5.32,
-   "pinn_dec": 2.4
+   "pinn_dec": 2.38
   },
   {
    "kind": "ml",
@@ -2058,8 +1952,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.893,
-     "b": 1.952
+     "a": 1.909,
+     "b": 1.943
     }
    ],
    "model_prob": 0.839,
@@ -2067,30 +1961,30 @@
    "model_edge_txt": "+10.9 pts \u00b7 STRONG",
    "cheat_side": "away",
    "cbb_tier": "STRONG",
-   "pinnacle_line": "Kentucky -4.5 -112 / Wichita St +4.5 -105",
-   "fair_prob": 0.4919,
+   "pinnacle_line": "Kentucky -4.5 -110 / Wichita St +4.5 -106",
+   "fair_prob": 0.4953,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4919,
-    0.4923
+    0.4953,
+    0.4956
    ],
    "devig_all": {
-    "multiplicative": 0.4923,
-    "additive": 0.492,
-    "power": 0.4919
+    "multiplicative": 0.4956,
+    "additive": 0.4954,
+    "power": 0.4953
    },
-   "ev_pct": -5.27,
+   "ev_pct": -4.6,
    "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -5.69,
-   "trusted_prob": 0.4973,
+   "kelly_pct": -4.97,
+   "trusted_prob": 0.5001,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.7,
-   "pinn_dec": 1.952
+   "pinn_dec": 1.943
   },
   {
    "kind": "ml",
@@ -2146,38 +2040,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 3.97,
-     "b": 1.271
+     "a": 4.01,
+     "b": 1.267
     }
    ],
    "model_prob": 0.346,
    "model_edge": 10.6,
    "model_edge_txt": "+10.6%",
    "cheat_side": "home",
-   "pinnacle_line": "San Diego St +297 / Texas Tech -369",
-   "fair_prob": 0.2272,
+   "pinnacle_line": "San Diego St +301 / Texas Tech -375",
+   "fair_prob": 0.2247,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.2272,
-    0.2425
+    0.2247,
+    0.2401
    ],
    "devig_all": {
-    "multiplicative": 0.2425,
-    "additive": 0.2326,
-    "power": 0.2272
+    "multiplicative": 0.2401,
+    "additive": 0.2301,
+    "power": 0.2247
    },
-   "ev_pct": -9.12,
+   "ev_pct": -10.14,
    "min_ev": 7.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.04,
-   "trusted_prob": 0.2318,
+   "kelly_pct": -3.38,
+   "trusted_prob": 0.2297,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -6.34,
-   "pinn_dec": 3.97
+   "pinn_dec": 4.01
   },
   {
    "kind": "ml",
@@ -2631,8 +2525,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.8,
-     "b": 2.05
+     "a": 1.877,
+     "b": 1.962
     }
    ],
    "model_prob": 0.707,
@@ -2640,30 +2534,30 @@
    "model_edge_txt": "+6.0 pts \u00b7 STRONG",
    "cheat_side": "away",
    "cbb_tier": "STRONG",
-   "pinnacle_line": "Mississippi St -6.5 -125 / Penn State +6.5 105",
-   "fair_prob": 0.4654,
+   "pinnacle_line": "Mississippi St -6.5 -114 / Penn State +6.5 -104",
+   "fair_prob": 0.4882,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4654,
-    0.4675
+    0.4882,
+    0.4889
    ],
    "devig_all": {
-    "multiplicative": 0.4675,
-    "additive": 0.4661,
-    "power": 0.4654
+    "multiplicative": 0.4889,
+    "additive": 0.4885,
+    "power": 0.4882
    },
-   "ev_pct": -10.36,
+   "ev_pct": -5.97,
    "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -11.19,
-   "trusted_prob": 0.4762,
+   "kelly_pct": -6.45,
+   "trusted_prob": 0.4944,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.7,
-   "pinn_dec": 2.05
+   "pinn_dec": 1.962
   },
   {
    "kind": "spread",
@@ -2953,8 +2847,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.962,
-     "b": 1.893
+     "a": 1.893,
+     "b": 1.962
     }
    ],
    "model_prob": 0.672,
@@ -2962,30 +2856,30 @@
    "model_edge_txt": "+4.9 pts \u00b7 GOOD",
    "cheat_side": "away",
    "cbb_tier": "GOOD",
-   "pinnacle_line": "UC Davis +6.5 -104 / Pacific -6.5 -112",
-   "fair_prob": 0.5089,
-   "fair_method": "multiplicative",
+   "pinnacle_line": "UC Davis +6.5 -112 / Pacific -6.5 -104",
+   "fair_prob": 0.4905,
+   "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5089,
-    0.5095
+    0.4905,
+    0.4911
    ],
    "devig_all": {
-    "multiplicative": 0.5089,
-    "additive": 0.5093,
-    "power": 0.5095
+    "multiplicative": 0.4911,
+    "additive": 0.4907,
+    "power": 0.4905
    },
-   "ev_pct": -1.98,
+   "ev_pct": -5.52,
    "min_ev": 1.82,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.13,
-   "trusted_prob": 0.511,
+   "kelly_pct": -5.96,
+   "trusted_prob": 0.4963,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -2.04,
-   "pinn_dec": 1.893
+   "pinn_dec": 1.962
   },
   {
    "kind": "spread",
@@ -3041,8 +2935,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.98
+     "a": 1.901,
+     "b": 1.99
     }
    ],
    "model_prob": 0.662,
@@ -3050,30 +2944,30 @@
    "model_edge_txt": "+4.6 pts \u00b7 GOOD",
    "cheat_side": "home",
    "cbb_tier": "GOOD",
-   "pinnacle_line": "North Carolina +3.5 -110 / West Virginia -3.5 -102",
-   "fair_prob": 0.5091,
+   "pinnacle_line": "North Carolina +3.5 -111 / West Virginia -3.5 -101",
+   "fair_prob": 0.5114,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5091,
-    0.5095
+    0.5114,
+    0.5119
    ],
    "devig_all": {
-    "multiplicative": 0.5091,
-    "additive": 0.5094,
-    "power": 0.5095
+    "multiplicative": 0.5114,
+    "additive": 0.5118,
+    "power": 0.5119
    },
-   "ev_pct": -2.81,
+   "ev_pct": -2.37,
    "min_ev": 1.76,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.09,
-   "trusted_prob": 0.5121,
+   "kelly_pct": -2.6,
+   "trusted_prob": 0.5139,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -2.9,
-   "pinn_dec": 1.909
+   "pinn_dec": 1.901
   },
   {
    "kind": "spread",
@@ -3129,8 +3023,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.943
+     "a": 1.917,
+     "b": 1.935
     }
    ],
    "model_prob": 0.645,
@@ -3138,30 +3032,30 @@
    "model_edge_txt": "+4.1 pts \u00b7 GOOD",
    "cheat_side": "home",
    "cbb_tier": "GOOD",
-   "pinnacle_line": "San Diego St +8.5 -110 / Texas Tech -8.5 -106",
-   "fair_prob": 0.5044,
+   "pinnacle_line": "San Diego St +8.5 -109 / Texas Tech -8.5 -107",
+   "fair_prob": 0.5023,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5044,
-    0.5047
+    0.5023,
+    0.5025
    ],
    "devig_all": {
-    "multiplicative": 0.5044,
-    "additive": 0.5046,
-    "power": 0.5047
+    "multiplicative": 0.5023,
+    "additive": 0.5024,
+    "power": 0.5025
    },
-   "ev_pct": -1.54,
+   "ev_pct": -1.94,
    "min_ev": 1.9,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -1.62,
-   "trusted_prob": 0.506,
+   "kelly_pct": -2.04,
+   "trusted_prob": 0.5043,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -0.31,
-   "pinn_dec": 1.909
+   "pinn_dec": 1.917
   },
   {
    "kind": "spread",
@@ -3383,8 +3277,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.926
+     "a": 1.893,
+     "b": 1.943
     }
    ],
    "model_prob": 0.586,
@@ -3392,30 +3286,30 @@
    "model_edge_txt": "+2.4 pts \u00b7 LEAN",
    "cheat_side": "home",
    "cbb_tier": "LEAN",
-   "pinnacle_line": "Santa Barbara -13.5 -110 / Lehigh +13.5 -108",
-   "fair_prob": 0.5022,
+   "pinnacle_line": "Santa Barbara -13.5 -112 / Lehigh +13.5 -106",
+   "fair_prob": 0.5065,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5022,
-    0.5024
+    0.5065,
+    0.5069
    ],
    "devig_all": {
-    "multiplicative": 0.5022,
-    "additive": 0.5023,
-    "power": 0.5024
+    "multiplicative": 0.5065,
+    "additive": 0.5068,
+    "power": 0.5069
    },
-   "ev_pct": -1.97,
+   "ev_pct": -1.13,
    "min_ev": 1.9,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.07,
-   "trusted_prob": 0.5042,
+   "kelly_pct": -1.18,
+   "trusted_prob": 0.5077,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -1.12,
-   "pinn_dec": 1.909
+   "pinn_dec": 1.893
   },
   {
    "kind": "spread",
@@ -3567,8 +3461,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.25,
+  "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-27T18:00:21-05:00"
+ "odds_as_of": "2026-11-27T18:11:50-05:00"
 }
