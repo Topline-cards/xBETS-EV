@@ -1,19 +1,19 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T12:58:45-05:00",
+ "generated_at": "2026-11-27T13:09:13-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T13:00:00-05:00",
+ "next_kickoff": "2026-11-27T13:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 262,
+  "book_game_lines": 252,
   "book_unmatched": 1,
   "book_unmatched_games": [
    "UMBC @ GW Revolutionaries"
   ],
-  "pinnacle_game_lines": 781,
-  "pinnacle_unmatched": 3,
+  "pinnacle_game_lines": 724,
+  "pinnacle_unmatched": 6,
   "pinnacle_as_of": "2026-11-27T12:58:45-05:00"
  },
  "settings": {
@@ -539,26 +539,6 @@
  },
  "games": [
   {
-   "game_id": "401920753",
-   "label": "Bryant Str OH @ Youngstown St",
-   "kickoff": "2026-11-27T13:00:00-05:00"
-  },
-  {
-   "game_id": "401921416",
-   "label": "Hampton @ UMass Lowell",
-   "kickoff": "2026-11-27T13:00:00-05:00"
-  },
-  {
-   "game_id": "401924810",
-   "label": "Vermont @ Merrimack",
-   "kickoff": "2026-11-27T13:00:00-05:00"
-  },
-  {
-   "game_id": "401920533",
-   "label": "St John's @ Iowa State",
-   "kickoff": "2026-11-27T13:00:00-05:00"
-  },
-  {
    "game_id": "401929288",
    "label": "Wake Forest @ Memphis",
    "kickoff": "2026-11-27T13:30:00-05:00"
@@ -805,90 +785,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401920753",
-   "home": "Youngstown St",
-   "away": "Bryant Str OH",
-   "kickoff": "2026-11-27T13:00:00-05:00",
-   "neutral": false,
-   "non_d1": "away",
-   "proj_home": 85.6,
-   "proj_away": 60.6,
-   "proj_margin": 25.0,
-   "proj_total": 146.2,
-   "home_win_prob": 0.988,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 2.832,
-   "home_em": -9.4,
-   "away_em": -29.7,
-   "home_t": 69.7,
-   "away_t": 69.0,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401921416",
-   "home": "UMass Lowell",
-   "away": "Hampton",
-   "kickoff": "2026-11-27T13:00:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 70.2,
-   "proj_away": 69.0,
-   "proj_margin": 1.2,
-   "proj_total": 139.3,
-   "home_win_prob": 0.544,
-   "model": "BASE",
-   "slope": 11.24,
-   "matchup_x": 0.108,
-   "home_em": -6.9,
-   "away_em": -8.2,
-   "home_t": 69.5,
-   "away_t": 66.7,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401924810",
-   "home": "Merrimack",
-   "away": "Vermont",
-   "kickoff": "2026-11-27T13:00:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 58.6,
-   "proj_away": 74.7,
-   "proj_margin": -16.2,
-   "proj_total": 133.3,
-   "home_win_prob": 0.071,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -2.086,
-   "home_em": -7.4,
-   "away_em": -2.8,
-   "home_t": 64.4,
-   "away_t": 64.7,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401920533",
-   "home": "Iowa State",
-   "away": "St John's",
-   "kickoff": "2026-11-27T13:00:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 72.8,
-   "proj_away": 76.5,
-   "proj_margin": -3.7,
-   "proj_total": 149.3,
-   "home_win_prob": 0.368,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -0.479,
-   "home_em": 20.9,
-   "away_em": 25.8,
-   "home_t": 69.0,
-   "away_t": 72.5,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401929288",
    "home": "Memphis",
@@ -2007,7 +1903,7 @@
    "lane_info": {
     "graded": 21,
     "days": 1,
-    "ev_vs_close": 0.09,
+    "ev_vs_close": 0.12,
     "roi_pct": 5.1
    },
    "sizing": {
@@ -2114,88 +2010,6 @@
    "tier": "single",
    "second_ev": -14.72,
    "pinn_dec": 6.23
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Vermont @ Merrimack",
-   "pkey": "401924810",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Vermont Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Vermont",
-   "opp": "Merrimack",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/111092826264245",
-   "game_id": "401924810",
-   "kickoff": "2026-11-27T13:00:00-05:00",
-   "home": "Merrimack",
-   "away": "Vermont",
-   "dec": 1.8,
-   "american": -125,
-   "game_model": {
-    "game_id": "401924810",
-    "home": "Merrimack",
-    "away": "Vermont",
-    "kickoff": "2026-11-27T13:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 58.6,
-    "proj_away": 74.7,
-    "proj_margin": -16.2,
-    "proj_total": 133.3,
-    "home_win_prob": 0.071,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -2.086,
-    "home_em": -7.4,
-    "away_em": -2.8,
-    "home_t": 64.4,
-    "away_t": 64.7,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.05,
-     "b": 1.8
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.06,
-     "b": 1.806
-    }
-   ],
-   "model_prob": 0.929,
-   "model_edge": 39.65,
-   "model_edge_txt": "+39.7%",
-   "cheat_side": "away",
-   "pinnacle_line": "Merrimack +106 / Vermont -124",
-   "fair_prob": 0.5329,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5329,
-    0.5348
-   ],
-   "devig_all": {
-    "multiplicative": 0.5329,
-    "additive": 0.5341,
-    "power": 0.5348
-   },
-   "ev_pct": -4.09,
-   "min_ev": 1.42,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -5.11,
-   "trusted_prob": 0.5374,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.806
   },
   {
    "kind": "ml",
@@ -2528,8 +2342,8 @@
    "side": "away",
    "team": "Wake Forest",
    "opp": "Memphis",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/169317847469175",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/177457310431900",
    "game_id": "401929288",
    "kickoff": "2026-11-27T13:30:00-05:00",
    "home": "Memphis",
@@ -2560,8 +2374,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.82,
-     "b": 2.02
+     "a": 1.847,
+     "b": 1.98
     },
     {
      "book": "fanduel",
@@ -2600,7 +2414,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.61,
+   "second_ev": -2.76,
    "pinn_dec": 2.04
   },
   {
@@ -3001,7 +2815,7 @@
     {
      "book": "fanduel",
      "a": 1.667,
-     "b": 2.25
+     "b": null
     },
     {
      "book": "pinnacle",
@@ -3035,8 +2849,95 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -0.74,
+   "second_ev": null,
    "pinn_dec": 2.28
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-27",
+   "player": "Navy @ Fairfield",
+   "pkey": "401921224",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Navy Moneyline",
+   "line": null,
+   "side": "away",
+   "team": "Navy",
+   "opp": "Fairfield",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/28062425735043",
+   "game_id": "401921224",
+   "kickoff": "2026-11-27T14:00:00-05:00",
+   "home": "Fairfield",
+   "away": "Navy",
+   "dec": 2.8,
+   "american": 180,
+   "game_model": {
+    "game_id": "401921224",
+    "home": "Fairfield",
+    "away": "Navy",
+    "kickoff": "2026-11-27T14:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 66.1,
+    "proj_away": 66.7,
+    "proj_margin": -0.6,
+    "proj_total": 132.7,
+    "home_win_prob": 0.478,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.465,
+    "home_em": -10.3,
+    "away_em": -14.2,
+    "home_t": 69.3,
+    "away_t": 66.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.459,
+     "b": 2.8
+    },
+    {
+     "book": "fanduel",
+     "a": 1.476,
+     "b": 2.72
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.495,
+     "b": 2.7
+    }
+   ],
+   "model_prob": 0.522,
+   "model_edge": 17.94,
+   "model_edge_txt": "+17.9%",
+   "cheat_side": "away",
+   "pinnacle_line": "Fairfield -202 / Navy +170",
+   "fair_prob": 0.3479,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.3479,
+    0.3564
+   ],
+   "devig_all": {
+    "multiplicative": 0.3564,
+    "additive": 0.3507,
+    "power": 0.3479
+   },
+   "ev_pct": -2.6,
+   "min_ev": 5.1,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -1.44,
+   "trusted_prob": 0.3497,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -4.35,
+   "pinn_dec": 2.7
   },
   {
    "kind": "ml",
@@ -3124,93 +3025,6 @@
    "tier": "single",
    "second_ev": -1.82,
    "pinn_dec": 1.301
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Navy @ Fairfield",
-   "pkey": "401921224",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Navy Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Navy",
-   "opp": "Fairfield",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/165706609063180",
-   "game_id": "401921224",
-   "kickoff": "2026-11-27T14:00:00-05:00",
-   "home": "Fairfield",
-   "away": "Navy",
-   "dec": 2.72,
-   "american": 172,
-   "game_model": {
-    "game_id": "401921224",
-    "home": "Fairfield",
-    "away": "Navy",
-    "kickoff": "2026-11-27T14:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 66.1,
-    "proj_away": 66.7,
-    "proj_margin": -0.6,
-    "proj_total": 132.7,
-    "home_win_prob": 0.478,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.465,
-    "home_em": -10.3,
-    "away_em": -14.2,
-    "home_t": 69.3,
-    "away_t": 66.2,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.488,
-     "b": 2.7
-    },
-    {
-     "book": "fanduel",
-     "a": 1.476,
-     "b": 2.72
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.495,
-     "b": 2.7
-    }
-   ],
-   "model_prob": 0.522,
-   "model_edge": 17.02,
-   "model_edge_txt": "+17.0%",
-   "cheat_side": "away",
-   "pinnacle_line": "Fairfield -202 / Navy +170",
-   "fair_prob": 0.3479,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.3479,
-    0.3564
-   ],
-   "devig_all": {
-    "multiplicative": 0.3564,
-    "additive": 0.3507,
-    "power": 0.3479
-   },
-   "ev_pct": -5.38,
-   "min_ev": 4.87,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.13,
-   "trusted_prob": 0.3518,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -5.89,
-   "pinn_dec": 2.7
   },
   {
    "kind": "ml",
@@ -3754,8 +3568,8 @@
     },
     {
      "book": "fanduel",
-     "a": 2.28,
-     "b": 1.658
+     "a": 2.3,
+     "b": 1.625
     },
     {
      "book": "pinnacle",
@@ -3789,7 +3603,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -1.81,
+   "second_ev": -3.84,
    "pinn_dec": 2.45
   },
   {
@@ -4930,11 +4744,6 @@
      "b": 2.6
     },
     {
-     "book": "fanduel",
-     "a": 1.515,
-     "b": 2.62
-    },
-    {
      "book": "pinnacle",
      "a": 1.532,
      "b": 2.59
@@ -4966,7 +4775,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.63,
+   "second_ev": null,
    "pinn_dec": 1.532
   },
   {
@@ -5325,8 +5134,8 @@
    "side": "away",
    "team": "Wake Forest",
    "opp": "Memphis",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/19158126912143",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/232619031434124",
    "game_id": "401929288",
    "kickoff": "2026-11-27T13:30:00-05:00",
    "home": "Memphis",
@@ -5357,8 +5166,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
+     "a": 1.943,
+     "b": 1.877
     },
     {
      "book": "fanduel",
@@ -5398,7 +5207,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.55,
+   "second_ev": -2.9,
    "pinn_dec": 1.943
   },
   {
@@ -7129,6 +6938,11 @@
      "b": 1.909
     },
     {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
      "book": "pinnacle",
      "a": 1.952,
      "b": 1.901
@@ -7161,7 +6975,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
+   "second_ev": -4.55,
    "pinn_dec": 1.952
   },
   {
@@ -8513,8 +8327,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.855,
-     "b": 1.971
+     "a": 1.885,
+     "b": 1.935
     },
     {
      "book": "fanduel",
@@ -8554,7 +8368,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.21,
+   "second_ev": -2.39,
    "pinn_dec": 1.971
   },
   {
@@ -8676,5 +8490,5 @@
   "ev": 0.25,
   "combined": 0
  },
- "odds_as_of": "2026-11-27T12:58:45-05:00"
+ "odds_as_of": "2026-11-27T13:09:13-05:00"
 }
