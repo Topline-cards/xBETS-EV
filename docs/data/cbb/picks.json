@@ -1,30 +1,38 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T15:50:35-05:00",
+ "generated_at": "2026-11-27T16:02:17-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T16:00:00-05:00",
+ "next_kickoff": "2026-11-27T16:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 179,
-  "book_unmatched": 12,
+  "book_game_lines": 166,
+  "book_unmatched": 22,
   "book_unmatched_games": [
+   "Austin Peay @ Furman",
    "Ball State @ Southern Indiana",
+   "California @ Minnesota",
+   "Drake @ North Dakota State",
    "Elon @ NC State",
    "Fordham @ Harvard",
    "Liberty @ UNC Wilmington",
+   "Loyola Marymount @ UC San Diego",
    "Marist @ George Mason",
+   "Merrimack @ Hofstra",
+   "North Texas @ Boise State",
+   "Portland State @ Southern Illinois",
    "Princeton @ Saint Thomas MN",
+   "Radford @ American",
    "Robert Morris @ Northern Iowa",
    "SE Missouri State @ UMKC",
+   "San Jose State @ Utah Valley",
    "Siena @ Seton Hall",
    "Troy @ Chattanooga",
-   "UMBC @ GW Revolutionaries",
-   "Wofford @ Purdue Fort Wayne"
+   "UMBC @ GW Revolutionaries"
   ],
-  "pinnacle_game_lines": 495,
-  "pinnacle_unmatched": 3,
+  "pinnacle_game_lines": 466,
+  "pinnacle_unmatched": 5,
   "pinnacle_as_of": "2026-11-27T15:50:35-05:00"
  },
  "settings": {
@@ -550,21 +558,6 @@
  },
  "games": [
   {
-   "game_id": "401921818",
-   "label": "AR-Pine Bluff @ Missouri",
-   "kickoff": "2026-11-27T16:00:00-05:00"
-  },
-  {
-   "game_id": "401911212",
-   "label": "UMBC @ G Washington",
-   "kickoff": "2026-11-27T16:00:00-05:00"
-  },
-  {
-   "game_id": "401912213",
-   "label": "Radford @ American",
-   "kickoff": "2026-11-27T16:00:00-05:00"
-  },
-  {
    "game_id": "401924845",
    "label": "Niagara @ Lafayette",
    "kickoff": "2026-11-27T16:30:00-05:00"
@@ -721,69 +714,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401921818",
-   "home": "Missouri",
-   "away": "AR-Pine Bluff",
-   "kickoff": "2026-11-27T16:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 104.1,
-   "proj_away": 54.8,
-   "proj_margin": 49.3,
-   "proj_total": 158.9,
-   "home_win_prob": 1.0,
-   "model": "BASE",
-   "slope": 11.24,
-   "matchup_x": 4.117,
-   "home_em": 20.5,
-   "away_em": -30.8,
-   "home_t": 69.2,
-   "away_t": 72.9,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401911212",
-   "home": "G Washington",
-   "away": "UMBC",
-   "kickoff": "2026-11-27T16:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 87.1,
-   "proj_away": 64.2,
-   "proj_margin": 23.0,
-   "proj_total": 151.3,
-   "home_win_prob": 0.982,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 2.571,
-   "home_em": 11.5,
-   "away_em": -12.9,
-   "home_t": 69.9,
-   "away_t": 72.4,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401912213",
-   "home": "American",
-   "away": "Radford",
-   "kickoff": "2026-11-27T16:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 76.8,
-   "proj_away": 70.2,
-   "proj_margin": 6.6,
-   "proj_total": 147.0,
-   "home_win_prob": 0.727,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 0.47,
-   "home_em": -0.7,
-   "away_em": -7.2,
-   "home_t": 67.5,
-   "away_t": 69.6,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401924845",
    "home": "Lafayette",
@@ -1538,7 +1468,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.24,
+    "ev_vs_close": -0.26,
     "roi_pct": -43.9
    },
    "exp_profit_units": 0.006
@@ -1742,7 +1672,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.24,
+    "ev_vs_close": -0.26,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -1848,7 +1778,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.24,
+    "ev_vs_close": -0.26,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -4406,6 +4336,11 @@
    },
    "books": [
     {
+     "book": "draftkings",
+     "a": 1.893,
+     "b": 1.926
+    },
+    {
      "book": "fanduel",
      "a": 1.909,
      "b": 1.909
@@ -5905,60 +5840,6 @@
    "model_edge_txt": "+1.7 pts \u00b7 LEAN",
    "cheat_side": "home",
    "cbb_tier": "LEAN"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "UMBC @ G Washington",
-   "pkey": "401911212",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "G Washington -21.5",
-   "line": -21.5,
-   "side": "home",
-   "team": "G Washington",
-   "opp": "UMBC",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/142567590986738",
-   "game_id": "401911212",
-   "kickoff": "2026-11-27T16:00:00-05:00",
-   "home": "G Washington",
-   "away": "UMBC",
-   "dec": 1.877,
-   "american": -114,
-   "game_model": {
-    "game_id": "401911212",
-    "home": "G Washington",
-    "away": "UMBC",
-    "kickoff": "2026-11-27T16:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 87.1,
-    "proj_away": 64.2,
-    "proj_margin": 23.0,
-    "proj_total": 151.3,
-    "home_win_prob": 0.982,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 2.571,
-    "home_em": 11.5,
-    "away_em": -12.9,
-    "home_t": 69.9,
-    "away_t": 72.4,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.877,
-     "b": 1.943
-    }
-   ],
-   "model_prob": 0.554,
-   "model_edge": 1.5,
-   "model_edge_txt": "+1.5 pts \u00b7 LEAN",
-   "cheat_side": "home",
-   "cbb_tier": "LEAN"
   }
  ],
  "matchups": [],
@@ -5966,5 +5847,5 @@
   "ev": 0.75,
   "combined": 0.25
  },
- "odds_as_of": "2026-11-27T15:50:35-05:00"
+ "odds_as_of": "2026-11-27T16:02:17-05:00"
 }
