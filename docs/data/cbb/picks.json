@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T08:45:58-05:00",
+ "generated_at": "2026-11-27T08:56:28-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
  "next_kickoff": "2026-11-27T11:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 277,
+  "book_game_lines": 282,
   "book_unmatched": 1,
   "book_unmatched_games": [
    "UMBC @ GW Revolutionaries"
@@ -2078,119 +2078,13 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -1.0,
+    "ev_vs_close": -0.96,
     "roi_pct": -43.9
    },
    "exp_profit_units": 0.005
   }
  ],
  "ev": [
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Texas St @ Louisiana Tech",
-   "pkey": "401928468",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Louisiana Tech +5.5",
-   "line": 5.5,
-   "side": "home",
-   "team": "Louisiana Tech",
-   "opp": "Texas St",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/174186110405432",
-   "game_id": "401928468",
-   "kickoff": "2026-11-27T15:00:00-05:00",
-   "home": "Louisiana Tech",
-   "away": "Texas St",
-   "dec": 1.833,
-   "american": -120,
-   "game_model": {
-    "game_id": "401928468",
-    "home": "Louisiana Tech",
-    "away": "Texas St",
-    "kickoff": "2026-11-27T15:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 64.7,
-    "proj_away": 72.0,
-    "proj_margin": -7.4,
-    "proj_total": 136.7,
-    "home_win_prob": 0.252,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.336,
-    "home_em": -3.7,
-    "away_em": 11.0,
-    "home_t": 67.7,
-    "away_t": 66.9,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.704,
-     "b": 2.18
-    }
-   ],
-   "model_prob": 0.431,
-   "model_edge": -1.9,
-   "model_edge_txt": "-1.9 pts",
-   "cheat_side": null,
-   "cbb_tier": null,
-   "pinnacle_line": "Louisiana Tech +5.5 -142 / Texas St -5.5 118",
-   "fair_prob": 0.5613,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5613,
-    0.5655
-   ],
-   "devig_all": {
-    "multiplicative": 0.5613,
-    "additive": 0.5641,
-    "power": 0.5655
-   },
-   "ev_pct": 2.88,
-   "min_ev": 1.52,
-   "units": 0.25,
-   "base_units": 0.691976069521529,
-   "kelly_pct": 3.46,
-   "trusted_prob": 0.5581,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.704,
-   "lane": "cbb:spread",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 27,
-    "days": 1,
-    "ev_vs_close": -1.0,
-    "roi_pct": -43.9
-   },
-   "sizing": {
-    "base": 0.69,
-    "conf": 0.22,
-    "conf_why": [
-     "matchup points the other way",
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 1,
-    "player_bets": 1,
-    "corr": 1.0,
-    "cap": 2.0,
-    "raw": 0.16
-   },
-   "exp_profit_units": 0.007
-  },
   {
    "kind": "total",
    "week": "2026-11-27",
@@ -2277,7 +2171,7 @@
    "lane_info": {
     "graded": 21,
     "days": 1,
-    "ev_vs_close": -0.58,
+    "ev_vs_close": -0.47,
     "roi_pct": 5.1
    },
    "sizing": {
@@ -2388,7 +2282,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -1.0,
+    "ev_vs_close": -0.96,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -2717,8 +2611,8 @@
    "kickoff": "2026-11-27T16:30:00-05:00",
    "home": "Lafayette",
    "away": "Niagara",
-   "dec": 1.476,
-   "american": -210,
+   "dec": 1.488,
+   "american": -205,
    "game_model": {
     "game_id": "401924845",
     "home": "Lafayette",
@@ -2748,13 +2642,13 @@
     },
     {
      "book": "fanduel",
-     "a": 1.476,
-     "b": 2.72
+     "a": 1.488,
+     "b": 2.68
     }
    ],
    "model_prob": 0.925,
-   "model_edge": 27.68,
-   "model_edge_txt": "+27.7%",
+   "model_edge": 28.2,
+   "model_edge_txt": "+28.2%",
    "cheat_side": "home"
   },
   {
@@ -3659,6 +3553,93 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
+   "player": "Texas St @ Louisiana Tech",
+   "pkey": "401928468",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Texas St Moneyline",
+   "line": null,
+   "side": "away",
+   "team": "Texas St",
+   "opp": "Louisiana Tech",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/84918143563698",
+   "game_id": "401928468",
+   "kickoff": "2026-11-27T15:00:00-05:00",
+   "home": "Louisiana Tech",
+   "away": "Texas St",
+   "dec": 1.581,
+   "american": -172,
+   "game_model": {
+    "game_id": "401928468",
+    "home": "Louisiana Tech",
+    "away": "Texas St",
+    "kickoff": "2026-11-27T15:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 64.7,
+    "proj_away": 72.0,
+    "proj_margin": -7.4,
+    "proj_total": 136.7,
+    "home_win_prob": 0.252,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -1.336,
+    "home_em": -3.7,
+    "away_em": 11.0,
+    "home_t": 67.7,
+    "away_t": 66.9,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 2.6,
+     "b": 1.521
+    },
+    {
+     "book": "fanduel",
+     "a": 2.42,
+     "b": 1.581
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.63,
+     "b": 1.518
+    }
+   ],
+   "model_prob": 0.748,
+   "model_edge": 14.32,
+   "model_edge_txt": "+14.3%",
+   "cheat_side": "away",
+   "pinnacle_line": "Louisiana Tech +163 / Texas St -193",
+   "fair_prob": 0.634,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.634,
+    0.6419
+   ],
+   "devig_all": {
+    "multiplicative": 0.634,
+    "additive": 0.6393,
+    "power": 0.6419
+   },
+   "ev_pct": 0.24,
+   "min_ev": 1.0,
+   "units": 0.08323692898055372,
+   "base_units": 0.08323692898055372,
+   "kelly_pct": 0.42,
+   "trusted_prob": 0.6337,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -0.25,
+   "pinn_dec": 1.518
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-27",
    "player": "Michigan @ Kansas St",
    "pkey": "401920541",
    "stat": "ml",
@@ -3668,8 +3649,8 @@
    "side": "home",
    "team": "Kansas St",
    "opp": "Michigan",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118202410246659",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/160282905619279",
    "game_id": "401920541",
    "kickoff": "2026-11-27T17:30:00-05:00",
    "home": "Kansas St",
@@ -3699,14 +3680,19 @@
    },
    "books": [
     {
+     "book": "draftkings",
+     "a": 3.8,
+     "b": 1.282
+    },
+    {
      "book": "fanduel",
      "a": 3.8,
      "b": 1.286
     }
    ],
    "model_prob": 0.392,
-   "model_edge": 13.91,
-   "model_edge_txt": "+13.9%",
+   "model_edge": 13.97,
+   "model_edge_txt": "+14.0%",
    "cheat_side": "home"
   },
   {
@@ -4231,93 +4217,6 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
-   "player": "Texas St @ Louisiana Tech",
-   "pkey": "401928468",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Texas St Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Texas St",
-   "opp": "Louisiana Tech",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/84918143563698",
-   "game_id": "401928468",
-   "kickoff": "2026-11-27T15:00:00-05:00",
-   "home": "Louisiana Tech",
-   "away": "Texas St",
-   "dec": 1.488,
-   "american": -205,
-   "game_model": {
-    "game_id": "401928468",
-    "home": "Louisiana Tech",
-    "away": "Texas St",
-    "kickoff": "2026-11-27T15:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 64.7,
-    "proj_away": 72.0,
-    "proj_margin": -7.4,
-    "proj_total": 136.7,
-    "home_win_prob": 0.252,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.336,
-    "home_em": -3.7,
-    "away_em": 11.0,
-    "home_t": 67.7,
-    "away_t": 66.9,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.8,
-     "b": 1.459
-    },
-    {
-     "book": "fanduel",
-     "a": 2.68,
-     "b": 1.488
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.63,
-     "b": 1.518
-    }
-   ],
-   "model_prob": 0.748,
-   "model_edge": 10.5,
-   "model_edge_txt": "+10.5%",
-   "cheat_side": "away",
-   "pinnacle_line": "Louisiana Tech +163 / Texas St -193",
-   "fair_prob": 0.634,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.634,
-    0.6419
-   ],
-   "devig_all": {
-    "multiplicative": 0.634,
-    "additive": 0.6393,
-    "power": 0.6419
-   },
-   "ev_pct": -5.65,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -11.59,
-   "trusted_prob": 0.6416,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.17,
-   "pinn_dec": 1.518
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
    "player": "Bowling Green @ Indiana",
    "pkey": "401911030",
    "stat": "ml",
@@ -4374,6 +4273,59 @@
    "cheat_side": "away"
   },
   {
+   "kind": "ml",
+   "week": "2026-11-27",
+   "player": "Tennessee @ Louisville",
+   "pkey": "401920534",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Tennessee Moneyline",
+   "line": null,
+   "side": "away",
+   "team": "Tennessee",
+   "opp": "Louisville",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/201165888469128",
+   "game_id": "401920534",
+   "kickoff": "2026-11-27T21:00:00-05:00",
+   "home": "Louisville",
+   "away": "Tennessee",
+   "dec": 1.962,
+   "american": -104,
+   "game_model": {
+    "game_id": "401920534",
+    "home": "Louisville",
+    "away": "Tennessee",
+    "kickoff": "2026-11-27T21:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 71.5,
+    "proj_away": 73.9,
+    "proj_margin": -2.5,
+    "proj_total": 145.4,
+    "home_win_prob": 0.411,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.32,
+    "home_em": 21.3,
+    "away_em": 23.0,
+    "home_t": 69.9,
+    "away_t": 68.0,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.87,
+     "b": 1.962
+    }
+   ],
+   "model_prob": 0.589,
+   "model_edge": 10.1,
+   "model_edge_txt": "+10.1%",
+   "cheat_side": "away"
+  },
+  {
    "kind": "spread",
    "week": "2026-11-27",
    "player": "Wichita St @ Kentucky",
@@ -4385,8 +4337,8 @@
    "side": "away",
    "team": "Wichita St",
    "opp": "Kentucky",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/239295699535306",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/171206839707049",
    "game_id": "401919033",
    "kickoff": "2026-11-27T21:00:00-05:00",
    "home": "Kentucky",
@@ -4417,8 +4369,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
+     "a": 1.847,
+     "b": 1.98
     },
     {
      "book": "fanduel",
@@ -4458,7 +4410,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -1.92,
+   "second_ev": -5.11,
    "pinn_dec": 1.98
   },
   {
@@ -4629,59 +4581,6 @@
    "tier": "single",
    "second_ev": -7.98,
    "pinn_dec": 3.5
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Tennessee @ Louisville",
-   "pkey": "401920534",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Tennessee Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Tennessee",
-   "opp": "Louisville",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/201165888469128",
-   "game_id": "401920534",
-   "kickoff": "2026-11-27T21:00:00-05:00",
-   "home": "Louisville",
-   "away": "Tennessee",
-   "dec": 1.901,
-   "american": -111,
-   "game_model": {
-    "game_id": "401920534",
-    "home": "Louisville",
-    "away": "Tennessee",
-    "kickoff": "2026-11-27T21:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 71.5,
-    "proj_away": 73.9,
-    "proj_margin": -2.5,
-    "proj_total": 145.4,
-    "home_win_prob": 0.411,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.32,
-    "home_em": 21.3,
-    "away_em": 23.0,
-    "home_t": 69.9,
-    "away_t": 68.0,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.926,
-     "b": 1.901
-    }
-   ],
-   "model_prob": 0.589,
-   "model_edge": 8.57,
-   "model_edge_txt": "+8.6%",
-   "cheat_side": "away"
   },
   {
    "kind": "ml",
@@ -5103,14 +5002,14 @@
    "side": "away",
    "team": "Wake Forest",
    "opp": "Memphis",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/232619031434124",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/19158126912143",
    "game_id": "401929288",
    "kickoff": "2026-11-27T13:30:00-05:00",
    "home": "Memphis",
    "away": "Wake Forest",
-   "dec": 1.909,
-   "american": -110,
+   "dec": 1.952,
+   "american": -105,
    "game_model": {
     "game_id": "401929288",
     "home": "Memphis",
@@ -5133,6 +5032,11 @@
     "league_avg": 108.2
    },
    "books": [
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.952
+    },
     {
      "book": "fanduel",
      "a": 1.909,
@@ -5162,16 +5066,16 @@
     "additive": 0.4783,
     "power": 0.4778
    },
-   "ev_pct": -8.79,
-   "min_ev": 1.76,
+   "ev_pct": -6.73,
+   "min_ev": 1.9,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -9.67,
-   "trusted_prob": 0.487,
+   "kelly_pct": -7.07,
+   "trusted_prob": 0.4847,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
+   "second_ev": -2.4,
    "pinn_dec": 2.0
   },
   {
@@ -6218,60 +6122,6 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
-   "player": "Michigan @ Kansas St",
-   "pkey": "401920541",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Kansas St +8.5",
-   "line": 8.5,
-   "side": "home",
-   "team": "Kansas St",
-   "opp": "Michigan",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/204586098065665",
-   "game_id": "401920541",
-   "kickoff": "2026-11-27T17:30:00-05:00",
-   "home": "Kansas St",
-   "away": "Michigan",
-   "dec": 1.794,
-   "american": -126,
-   "game_model": {
-    "game_id": "401920541",
-    "home": "Kansas St",
-    "away": "Michigan",
-    "kickoff": "2026-11-27T17:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 81.1,
-    "proj_away": 84.2,
-    "proj_margin": -3.0,
-    "proj_total": 165.3,
-    "home_win_prob": 0.392,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.389,
-    "home_em": 7.8,
-    "away_em": 17.2,
-    "home_t": 71.6,
-    "away_t": 73.2,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.794,
-     "b": 1.926
-    }
-   ],
-   "model_prob": 0.691,
-   "model_edge": 5.5,
-   "model_edge_txt": "+5.5 pts \u00b7 GOOD",
-   "cheat_side": "home",
-   "cbb_tier": "GOOD"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
    "player": "Miami @ Alabama",
    "pkey": "401920543",
    "stat": "spread",
@@ -6533,64 +6383,6 @@
    "cheat_side": "under"
   },
   {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Texas Tech @ San Diego St",
-   "pkey": "401920535",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "San Diego St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "San Diego St",
-   "opp": "Texas Tech",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/177454590760686",
-   "game_id": "401920535",
-   "kickoff": "2026-11-27T23:30:00-05:00",
-   "home": "San Diego St",
-   "away": "Texas Tech",
-   "dec": 3.25,
-   "american": 225,
-   "game_model": {
-    "game_id": "401920535",
-    "home": "San Diego St",
-    "away": "Texas Tech",
-    "kickoff": "2026-11-27T23:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 70.0,
-    "proj_away": 74.3,
-    "proj_margin": -4.4,
-    "proj_total": 144.3,
-    "home_win_prob": 0.346,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.563,
-    "home_em": 15.4,
-    "away_em": 24.8,
-    "home_t": 69.6,
-    "away_t": 67.7,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 3.25,
-     "b": 1.36
-    },
-    {
-     "book": "fanduel",
-     "a": 3.15,
-     "b": 1.377
-    }
-   ],
-   "model_prob": 0.346,
-   "model_edge": 5.1,
-   "model_edge_txt": "+5.1%",
-   "cheat_side": "home"
-  },
-  {
    "kind": "spread",
    "week": "2026-11-27",
    "player": "UCF @ Georgia",
@@ -6652,6 +6444,60 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
+   "player": "Tennessee @ Louisville",
+   "pkey": "401920534",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Tennessee +2.5",
+   "line": -2.5,
+   "side": "away",
+   "team": "Tennessee",
+   "opp": "Louisville",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/33696235102733",
+   "game_id": "401920534",
+   "kickoff": "2026-11-27T21:00:00-05:00",
+   "home": "Louisville",
+   "away": "Tennessee",
+   "dec": 1.694,
+   "american": -144,
+   "game_model": {
+    "game_id": "401920534",
+    "home": "Louisville",
+    "away": "Tennessee",
+    "kickoff": "2026-11-27T21:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 71.5,
+    "proj_away": 73.9,
+    "proj_margin": -2.5,
+    "proj_total": 145.4,
+    "home_win_prob": 0.411,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.32,
+    "home_em": 21.3,
+    "away_em": 23.0,
+    "home_t": 69.9,
+    "away_t": 68.0,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 2.06,
+     "b": 1.694
+    }
+   ],
+   "model_prob": 0.675,
+   "model_edge": 5.0,
+   "model_edge_txt": "+5.0 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD"
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
    "player": "Texas @ Saint Mary's",
    "pkey": "401921718",
    "stat": "spread",
@@ -6707,6 +6553,148 @@
    "model_edge_txt": "+4.6 pts \u00b7 GOOD",
    "cheat_side": "away",
    "cbb_tier": "GOOD"
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Michigan @ Kansas St",
+   "pkey": "401920541",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Kansas St +7.5",
+   "line": 7.5,
+   "side": "home",
+   "team": "Kansas St",
+   "opp": "Michigan",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/270250214361187",
+   "game_id": "401920541",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Kansas St",
+   "away": "Michigan",
+   "dec": 1.98,
+   "american": -102,
+   "game_model": {
+    "game_id": "401920541",
+    "home": "Kansas St",
+    "away": "Michigan",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 81.1,
+    "proj_away": 84.2,
+    "proj_margin": -3.0,
+    "proj_total": 165.3,
+    "home_win_prob": 0.392,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.389,
+    "home_em": 7.8,
+    "away_em": 17.2,
+    "home_t": 71.6,
+    "away_t": 73.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.952,
+     "b": 1.87
+    },
+    {
+     "book": "fanduel",
+     "a": 1.98,
+     "b": 1.833
+    }
+   ],
+   "model_prob": 0.659,
+   "model_edge": 4.5,
+   "model_edge_txt": "+4.5 pts \u00b7 GOOD",
+   "cheat_side": "home",
+   "cbb_tier": "GOOD"
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Texas St @ Louisiana Tech",
+   "pkey": "401928468",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Texas St -3.5",
+   "line": 3.5,
+   "side": "away",
+   "team": "Texas St",
+   "opp": "Louisiana Tech",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/176171728987002",
+   "game_id": "401928468",
+   "kickoff": "2026-11-27T15:00:00-05:00",
+   "home": "Louisiana Tech",
+   "away": "Texas St",
+   "dec": 1.847,
+   "american": -118,
+   "game_model": {
+    "game_id": "401928468",
+    "home": "Louisiana Tech",
+    "away": "Texas St",
+    "kickoff": "2026-11-27T15:00:00-05:00",
+    "neutral": false,
+    "non_d1": null,
+    "proj_home": 64.7,
+    "proj_away": 72.0,
+    "proj_margin": -7.4,
+    "proj_total": 136.7,
+    "home_win_prob": 0.252,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -1.336,
+    "home_em": -3.7,
+    "away_em": 11.0,
+    "home_t": 67.7,
+    "away_t": 66.9,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.98,
+     "b": 1.847
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.04,
+     "b": 1.806
+    }
+   ],
+   "model_prob": 0.639,
+   "model_edge": 3.9,
+   "model_edge_txt": "+3.9 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Louisiana Tech +3.5 104 / Texas St -3.5 -124",
+   "fair_prob": 0.5304,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5304,
+    0.5324
+   ],
+   "devig_all": {
+    "multiplicative": 0.5304,
+    "additive": 0.5318,
+    "power": 0.5324
+   },
+   "ev_pct": -2.03,
+   "min_ev": 1.57,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -2.4,
+   "trusted_prob": 0.5326,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.806
   },
   {
    "kind": "spread",
@@ -7171,60 +7159,6 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
-   "player": "Texas Tech @ San Diego St",
-   "pkey": "401920535",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "San Diego St +7.5",
-   "line": 7.5,
-   "side": "home",
-   "team": "San Diego St",
-   "opp": "Texas Tech",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/211035585323979",
-   "game_id": "401920535",
-   "kickoff": "2026-11-27T23:30:00-05:00",
-   "home": "San Diego St",
-   "away": "Texas Tech",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401920535",
-    "home": "San Diego St",
-    "away": "Texas Tech",
-    "kickoff": "2026-11-27T23:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 70.0,
-    "proj_away": 74.3,
-    "proj_margin": -4.4,
-    "proj_total": 144.3,
-    "home_win_prob": 0.346,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.563,
-    "home_em": 15.4,
-    "away_em": 24.8,
-    "home_t": 69.6,
-    "away_t": 67.7,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    }
-   ],
-   "model_prob": 0.611,
-   "model_edge": 3.1,
-   "model_edge_txt": "+3.1 pts \u00b7 GOOD",
-   "cheat_side": "home",
-   "cbb_tier": "GOOD"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
    "player": "Liberty @ St Thomas",
    "pkey": "401920848",
    "stat": "spread",
@@ -7265,6 +7199,11 @@
    },
    "books": [
     {
+     "book": "draftkings",
+     "a": 2.1,
+     "b": 1.769
+    },
+    {
      "book": "fanduel",
      "a": 2.02,
      "b": 1.806
@@ -7302,7 +7241,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
+   "second_ev": -1.97,
    "pinn_dec": 1.8
   },
   {
@@ -7626,6 +7565,60 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
+   "player": "Texas Tech @ San Diego St",
+   "pkey": "401920535",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "San Diego St +6.5",
+   "line": 6.5,
+   "side": "home",
+   "team": "San Diego St",
+   "opp": "Texas Tech",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/279939592269728",
+   "game_id": "401920535",
+   "kickoff": "2026-11-27T23:30:00-05:00",
+   "home": "San Diego St",
+   "away": "Texas Tech",
+   "dec": 1.909,
+   "american": -110,
+   "game_model": {
+    "game_id": "401920535",
+    "home": "San Diego St",
+    "away": "Texas Tech",
+    "kickoff": "2026-11-27T23:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 70.0,
+    "proj_away": 74.3,
+    "proj_margin": -4.4,
+    "proj_total": 144.3,
+    "home_win_prob": 0.346,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.563,
+    "home_em": 15.4,
+    "away_em": 24.8,
+    "home_t": 69.6,
+    "away_t": 67.7,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    }
+   ],
+   "model_prob": 0.576,
+   "model_edge": 2.1,
+   "model_edge_txt": "+2.1 pts \u00b7 LEAN",
+   "cheat_side": "home",
+   "cbb_tier": "LEAN"
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
    "player": "Georgetown @ UCLA",
    "pkey": "401921717",
    "stat": "spread",
@@ -7681,89 +7674,6 @@
    "model_edge_txt": "+2.0 pts \u00b7 LEAN",
    "cheat_side": "home",
    "cbb_tier": "LEAN"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Texas St @ Louisiana Tech",
-   "pkey": "401928468",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Texas St -5.5",
-   "line": 5.5,
-   "side": "away",
-   "team": "Texas St",
-   "opp": "Louisiana Tech",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/174186110405432",
-   "game_id": "401928468",
-   "kickoff": "2026-11-27T15:00:00-05:00",
-   "home": "Louisiana Tech",
-   "away": "Texas St",
-   "dec": 1.98,
-   "american": -102,
-   "game_model": {
-    "game_id": "401928468",
-    "home": "Louisiana Tech",
-    "away": "Texas St",
-    "kickoff": "2026-11-27T15:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 64.7,
-    "proj_away": 72.0,
-    "proj_margin": -7.4,
-    "proj_total": 136.7,
-    "home_win_prob": 0.252,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.336,
-    "home_em": -3.7,
-    "away_em": 11.0,
-    "home_t": 67.7,
-    "away_t": 66.9,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.704,
-     "b": 2.18
-    }
-   ],
-   "model_prob": 0.569,
-   "model_edge": 1.9,
-   "model_edge_txt": "+1.9 pts \u00b7 LEAN",
-   "cheat_side": "away",
-   "cbb_tier": "LEAN",
-   "pinnacle_line": "Louisiana Tech +5.5 -142 / Texas St -5.5 118",
-   "fair_prob": 0.4345,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4345,
-    0.4387
-   ],
-   "devig_all": {
-    "multiplicative": 0.4387,
-    "additive": 0.4359,
-    "power": 0.4345
-   },
-   "ev_pct": -13.97,
-   "min_ev": 1.99,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -14.25,
-   "trusted_prob": 0.4486,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 2.18
   },
   {
    "kind": "spread",
@@ -7881,8 +7791,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.75,
+  "ev": 0.5,
   "combined": 0.25
  },
- "odds_as_of": "2026-11-27T08:45:58-05:00"
+ "odds_as_of": "2026-11-27T08:56:28-05:00"
 }
