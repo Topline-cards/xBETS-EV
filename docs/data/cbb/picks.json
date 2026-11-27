@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T16:37:18-05:00",
+ "generated_at": "2026-11-27T16:48:59-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
  "next_kickoff": "2026-11-27T17:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 152,
+  "book_game_lines": 154,
   "book_unmatched": 32,
   "book_unmatched_games": [
    "Austin Peay @ Furman",
@@ -1318,6 +1318,227 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
+   "player": "Marquette @ Texas A&M",
+   "pkey": "401920810",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Texas A&M +2.5",
+   "line": 2.5,
+   "side": "home",
+   "team": "Texas A&M",
+   "opp": "Marquette",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/168052592415262",
+   "game_id": "401920810",
+   "kickoff": "2026-11-27T17:00:00-05:00",
+   "home": "Texas A&M",
+   "away": "Marquette",
+   "dec": 1.935,
+   "american": -107,
+   "game_model": {
+    "game_id": "401920810",
+    "home": "Texas A&M",
+    "away": "Marquette",
+    "kickoff": "2026-11-27T17:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 76.6,
+    "proj_margin": 2.3,
+    "proj_total": 155.6,
+    "home_win_prob": 0.584,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.302,
+    "home_em": 20.4,
+    "away_em": 18.7,
+    "home_t": 75.1,
+    "away_t": 68.4,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "draftkings",
+     "a": 1.935,
+     "b": 1.885
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.787,
+     "b": 2.11
+    }
+   ],
+   "model_prob": 0.669,
+   "model_edge": 4.8,
+   "model_edge_txt": "+4.8 pts \u00b7 GOOD",
+   "cheat_side": "home",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Texas A&M +2.5 -127 / Marquette -2.5 111",
+   "fair_prob": 0.5414,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5414,
+    0.5435
+   ],
+   "devig_all": {
+    "multiplicative": 0.5414,
+    "additive": 0.5428,
+    "power": 0.5435
+   },
+   "ev_pct": 4.77,
+   "min_ev": 1.85,
+   "units": 0.25,
+   "base_units": 1.0201183139642545,
+   "kelly_pct": 5.1,
+   "trusted_prob": 0.5365,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -3.25,
+   "pinn_dec": 1.787,
+   "sizing": {
+    "base": 1.02,
+    "conf": 0.47,
+    "conf_why": [
+     "cheat sheet agrees",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 2,
+    "player_bets": 1,
+    "corr": 0.71,
+    "cap": 2.0,
+    "raw": 0.34
+   },
+   "lane": "cbb:spread",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 27,
+    "days": 1,
+    "ev_vs_close": -0.29,
+    "roi_pct": -43.9
+   },
+   "exp_profit_units": 0.012
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-27",
+   "player": "Marquette @ Texas A&M",
+   "pkey": "401920810",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Texas A&M Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "Texas A&M",
+   "opp": "Marquette",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/21238128260926",
+   "game_id": "401920810",
+   "kickoff": "2026-11-27T17:00:00-05:00",
+   "home": "Texas A&M",
+   "away": "Marquette",
+   "dec": 2.24,
+   "american": 124,
+   "game_model": {
+    "game_id": "401920810",
+    "home": "Texas A&M",
+    "away": "Marquette",
+    "kickoff": "2026-11-27T17:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 76.6,
+    "proj_margin": 2.3,
+    "proj_total": 155.6,
+    "home_win_prob": 0.584,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.302,
+    "home_em": 20.4,
+    "away_em": 18.7,
+    "home_t": 75.1,
+    "away_t": 68.4,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 2.16,
+     "b": 1.725
+    },
+    {
+     "book": "draftkings",
+     "a": 2.24,
+     "b": 1.676
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.08,
+     "b": 1.833
+    }
+   ],
+   "model_prob": 0.584,
+   "model_edge": 15.6,
+   "model_edge_txt": "+15.6%",
+   "cheat_side": "home",
+   "pinnacle_line": "Texas A&M +108 / Marquette -120",
+   "fair_prob": 0.4672,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4672,
+    0.4684
+   ],
+   "devig_all": {
+    "multiplicative": 0.4684,
+    "additive": 0.4676,
+    "power": 0.4672
+   },
+   "ev_pct": 4.65,
+   "min_ev": 2.81,
+   "units": 0.25,
+   "base_units": 0.7507779613817956,
+   "kelly_pct": 3.75,
+   "trusted_prob": 0.4631,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -1.35,
+   "pinn_dec": 2.08,
+   "sizing": {
+    "base": 0.75,
+    "conf": 0.47,
+    "conf_why": [
+     "cheat sheet agrees",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 2,
+    "player_bets": 1,
+    "corr": 0.71,
+    "cap": 2.0,
+    "raw": 0.25
+   },
+   "lane": "cbb:ml",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 5,
+    "days": 1,
+    "ev_vs_close": -0.17,
+    "roi_pct": -44.7
+   },
+   "exp_profit_units": 0.012
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
    "player": "Drake @ Boise St",
    "pkey": "401927366",
    "stat": "spread",
@@ -1416,13 +1637,234 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.26,
+    "ev_vs_close": -0.29,
     "roi_pct": -43.9
    },
    "exp_profit_units": 0.006
   }
  ],
  "ev": [
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Marquette @ Texas A&M",
+   "pkey": "401920810",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Texas A&M +2.5",
+   "line": 2.5,
+   "side": "home",
+   "team": "Texas A&M",
+   "opp": "Marquette",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/168052592415262",
+   "game_id": "401920810",
+   "kickoff": "2026-11-27T17:00:00-05:00",
+   "home": "Texas A&M",
+   "away": "Marquette",
+   "dec": 1.935,
+   "american": -107,
+   "game_model": {
+    "game_id": "401920810",
+    "home": "Texas A&M",
+    "away": "Marquette",
+    "kickoff": "2026-11-27T17:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 76.6,
+    "proj_margin": 2.3,
+    "proj_total": 155.6,
+    "home_win_prob": 0.584,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.302,
+    "home_em": 20.4,
+    "away_em": 18.7,
+    "home_t": 75.1,
+    "away_t": 68.4,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "draftkings",
+     "a": 1.935,
+     "b": 1.885
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.787,
+     "b": 2.11
+    }
+   ],
+   "model_prob": 0.669,
+   "model_edge": 4.8,
+   "model_edge_txt": "+4.8 pts \u00b7 GOOD",
+   "cheat_side": "home",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Texas A&M +2.5 -127 / Marquette -2.5 111",
+   "fair_prob": 0.5414,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5414,
+    0.5435
+   ],
+   "devig_all": {
+    "multiplicative": 0.5414,
+    "additive": 0.5428,
+    "power": 0.5435
+   },
+   "ev_pct": 4.77,
+   "min_ev": 1.85,
+   "units": 0.25,
+   "base_units": 1.0201183139642545,
+   "kelly_pct": 5.1,
+   "trusted_prob": 0.5365,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -3.25,
+   "pinn_dec": 1.787,
+   "lane": "cbb:spread",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 27,
+    "days": 1,
+    "ev_vs_close": -0.29,
+    "roi_pct": -43.9
+   },
+   "sizing": {
+    "base": 1.02,
+    "conf": 0.47,
+    "conf_why": [
+     "cheat sheet agrees",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 2,
+    "player_bets": 1,
+    "corr": 0.71,
+    "cap": 2.0,
+    "raw": 0.34
+   },
+   "exp_profit_units": 0.012
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-27",
+   "player": "Marquette @ Texas A&M",
+   "pkey": "401920810",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Texas A&M Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "Texas A&M",
+   "opp": "Marquette",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/21238128260926",
+   "game_id": "401920810",
+   "kickoff": "2026-11-27T17:00:00-05:00",
+   "home": "Texas A&M",
+   "away": "Marquette",
+   "dec": 2.24,
+   "american": 124,
+   "game_model": {
+    "game_id": "401920810",
+    "home": "Texas A&M",
+    "away": "Marquette",
+    "kickoff": "2026-11-27T17:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 76.6,
+    "proj_margin": 2.3,
+    "proj_total": 155.6,
+    "home_win_prob": 0.584,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.302,
+    "home_em": 20.4,
+    "away_em": 18.7,
+    "home_t": 75.1,
+    "away_t": 68.4,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 2.16,
+     "b": 1.725
+    },
+    {
+     "book": "draftkings",
+     "a": 2.24,
+     "b": 1.676
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.08,
+     "b": 1.833
+    }
+   ],
+   "model_prob": 0.584,
+   "model_edge": 15.6,
+   "model_edge_txt": "+15.6%",
+   "cheat_side": "home",
+   "pinnacle_line": "Texas A&M +108 / Marquette -120",
+   "fair_prob": 0.4672,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4672,
+    0.4684
+   ],
+   "devig_all": {
+    "multiplicative": 0.4684,
+    "additive": 0.4676,
+    "power": 0.4672
+   },
+   "ev_pct": 4.65,
+   "min_ev": 2.81,
+   "units": 0.25,
+   "base_units": 0.7507779613817956,
+   "kelly_pct": 3.75,
+   "trusted_prob": 0.4631,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -1.35,
+   "pinn_dec": 2.08,
+   "lane": "cbb:ml",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 5,
+    "days": 1,
+    "ev_vs_close": -0.17,
+    "roi_pct": -44.7
+   },
+   "sizing": {
+    "base": 0.75,
+    "conf": 0.47,
+    "conf_why": [
+     "cheat sheet agrees",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 2,
+    "player_bets": 1,
+    "corr": 0.71,
+    "cap": 2.0,
+    "raw": 0.25
+   },
+   "exp_profit_units": 0.012
+  },
   {
    "kind": "total",
    "week": "2026-11-27",
@@ -1514,7 +1956,7 @@
    "lane_info": {
     "graded": 21,
     "days": 1,
-    "ev_vs_close": 0.39,
+    "ev_vs_close": 0.4,
     "roi_pct": 5.1
    },
    "sizing": {
@@ -1620,7 +2062,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.26,
+    "ev_vs_close": -0.29,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -1726,7 +2168,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.26,
+    "ev_vs_close": -0.29,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -1964,14 +2406,14 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.036,
-     "b": 14.0
-    },
-    {
      "book": "fanduel",
      "a": 1.033,
      "b": 13.8
+    },
+    {
+     "book": "draftkings",
+     "a": 1.036,
+     "b": 14.0
     }
    ],
    "model_prob": 0.425,
@@ -2475,6 +2917,93 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
+   "player": "Marquette @ Texas A&M",
+   "pkey": "401920810",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Texas A&M Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "Texas A&M",
+   "opp": "Marquette",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/21238128260926",
+   "game_id": "401920810",
+   "kickoff": "2026-11-27T17:00:00-05:00",
+   "home": "Texas A&M",
+   "away": "Marquette",
+   "dec": 2.24,
+   "american": 124,
+   "game_model": {
+    "game_id": "401920810",
+    "home": "Texas A&M",
+    "away": "Marquette",
+    "kickoff": "2026-11-27T17:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 76.6,
+    "proj_margin": 2.3,
+    "proj_total": 155.6,
+    "home_win_prob": 0.584,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.302,
+    "home_em": 20.4,
+    "away_em": 18.7,
+    "home_t": 75.1,
+    "away_t": 68.4,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 2.16,
+     "b": 1.725
+    },
+    {
+     "book": "draftkings",
+     "a": 2.24,
+     "b": 1.676
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.08,
+     "b": 1.833
+    }
+   ],
+   "model_prob": 0.584,
+   "model_edge": 15.6,
+   "model_edge_txt": "+15.6%",
+   "cheat_side": "home",
+   "pinnacle_line": "Texas A&M +108 / Marquette -120",
+   "fair_prob": 0.4672,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4672,
+    0.4684
+   ],
+   "devig_all": {
+    "multiplicative": 0.4684,
+    "additive": 0.4676,
+    "power": 0.4672
+   },
+   "ev_pct": 4.65,
+   "min_ev": 2.81,
+   "units": 0.7507779613817956,
+   "base_units": 0.7507779613817956,
+   "kelly_pct": 3.75,
+   "trusted_prob": 0.4631,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -1.35,
+   "pinn_dec": 2.08
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-27",
    "player": "Pacific @ UC Davis",
    "pkey": "401911524",
    "stat": "ml",
@@ -2906,93 +3435,6 @@
    "tier": "single",
    "second_ev": -5.32,
    "pinn_dec": 2.37
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Marquette @ Texas A&M",
-   "pkey": "401920810",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Texas A&M Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Texas A&M",
-   "opp": "Marquette",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/21238128260926",
-   "game_id": "401920810",
-   "kickoff": "2026-11-27T17:00:00-05:00",
-   "home": "Texas A&M",
-   "away": "Marquette",
-   "dec": 2.05,
-   "american": 105,
-   "game_model": {
-    "game_id": "401920810",
-    "home": "Texas A&M",
-    "away": "Marquette",
-    "kickoff": "2026-11-27T17:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 79.0,
-    "proj_away": 76.6,
-    "proj_margin": 2.3,
-    "proj_total": 155.6,
-    "home_win_prob": 0.584,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.302,
-    "home_em": 20.4,
-    "away_em": 18.7,
-    "home_t": 75.1,
-    "away_t": 68.4,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 2.05,
-     "b": 1.8
-    },
-    {
-     "book": "fanduel",
-     "a": 1.98,
-     "b": 1.847
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.08,
-     "b": 1.833
-    }
-   ],
-   "model_prob": 0.584,
-   "model_edge": 11.65,
-   "model_edge_txt": "+11.6%",
-   "cheat_side": "home",
-   "pinnacle_line": "Texas A&M +108 / Marquette -120",
-   "fair_prob": 0.4672,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4672,
-    0.4684
-   ],
-   "devig_all": {
-    "multiplicative": 0.4684,
-    "additive": 0.4676,
-    "power": 0.4672
-   },
-   "ev_pct": -4.22,
-   "min_ev": 2.21,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.02,
-   "trusted_prob": 0.4713,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.31,
-   "pinn_dec": 2.08
   },
   {
    "kind": "spread",
@@ -3527,14 +3969,14 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.952,
-     "b": 1.87
-    },
-    {
      "book": "fanduel",
      "a": 1.909,
      "b": 1.909
+    },
+    {
+     "book": "draftkings",
+     "a": 1.952,
+     "b": 1.87
     },
     {
      "book": "pinnacle",
@@ -4307,6 +4749,89 @@
    "pinn_dec": 1.971
   },
   {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Texas @ Saint Mary's",
+   "pkey": "401921718",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Texas -7.5",
+   "line": 7.5,
+   "side": "away",
+   "team": "Texas",
+   "opp": "Saint Mary's",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/106947249410407",
+   "game_id": "401921718",
+   "kickoff": "2026-11-27T17:00:00-05:00",
+   "home": "Saint Mary's",
+   "away": "Texas",
+   "dec": 1.855,
+   "american": -117,
+   "game_model": {
+    "game_id": "401921718",
+    "home": "Saint Mary's",
+    "away": "Texas",
+    "kickoff": "2026-11-27T17:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 74.8,
+    "proj_away": 87.9,
+    "proj_margin": -13.1,
+    "proj_total": 162.7,
+    "home_win_prob": 0.117,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -1.687,
+    "home_em": 18.5,
+    "away_em": 23.0,
+    "home_t": 69.7,
+    "away_t": 71.0,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.971,
+     "b": 1.855
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.03,
+     "b": 1.847
+    }
+   ],
+   "model_prob": 0.695,
+   "model_edge": 5.6,
+   "model_edge_txt": "+5.6 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Saint Mary's +7.5 103 / Texas -7.5 -118",
+   "fair_prob": 0.5236,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5236,
+    0.5248
+   ],
+   "devig_all": {
+    "multiplicative": 0.5236,
+    "additive": 0.5244,
+    "power": 0.5248
+   },
+   "ev_pct": -2.87,
+   "min_ev": 1.59,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -3.36,
+   "trusted_prob": 0.5267,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.847
+  },
+  {
    "kind": "ml",
    "week": "2026-11-27",
    "player": "Creighton @ Gonzaga",
@@ -4626,6 +5151,94 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
+   "player": "Marquette @ Texas A&M",
+   "pkey": "401920810",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Texas A&M +2.5",
+   "line": 2.5,
+   "side": "home",
+   "team": "Texas A&M",
+   "opp": "Marquette",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/168052592415262",
+   "game_id": "401920810",
+   "kickoff": "2026-11-27T17:00:00-05:00",
+   "home": "Texas A&M",
+   "away": "Marquette",
+   "dec": 1.935,
+   "american": -107,
+   "game_model": {
+    "game_id": "401920810",
+    "home": "Texas A&M",
+    "away": "Marquette",
+    "kickoff": "2026-11-27T17:00:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 76.6,
+    "proj_margin": 2.3,
+    "proj_total": 155.6,
+    "home_win_prob": 0.584,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.302,
+    "home_em": 20.4,
+    "away_em": 18.7,
+    "home_t": 75.1,
+    "away_t": 68.4,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
+    },
+    {
+     "book": "draftkings",
+     "a": 1.935,
+     "b": 1.885
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.787,
+     "b": 2.11
+    }
+   ],
+   "model_prob": 0.669,
+   "model_edge": 4.8,
+   "model_edge_txt": "+4.8 pts \u00b7 GOOD",
+   "cheat_side": "home",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Texas A&M +2.5 -127 / Marquette -2.5 111",
+   "fair_prob": 0.5414,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5414,
+    0.5435
+   ],
+   "devig_all": {
+    "multiplicative": 0.5414,
+    "additive": 0.5428,
+    "power": 0.5435
+   },
+   "ev_pct": 4.77,
+   "min_ev": 1.85,
+   "units": 1.0201183139642545,
+   "base_units": 1.0201183139642545,
+   "kelly_pct": 5.1,
+   "trusted_prob": 0.5365,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -3.25,
+   "pinn_dec": 1.787
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
    "player": "Towson @ Penn",
    "pkey": "401921185",
    "stat": "spread",
@@ -4710,89 +5323,6 @@
    "tier": "single",
    "second_ev": -4.15,
    "pinn_dec": 1.877
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Texas @ Saint Mary's",
-   "pkey": "401921718",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Texas -8.5",
-   "line": 8.5,
-   "side": "away",
-   "team": "Texas",
-   "opp": "Saint Mary's",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/203939148408654",
-   "game_id": "401921718",
-   "kickoff": "2026-11-27T17:00:00-05:00",
-   "home": "Saint Mary's",
-   "away": "Texas",
-   "dec": 1.98,
-   "american": -102,
-   "game_model": {
-    "game_id": "401921718",
-    "home": "Saint Mary's",
-    "away": "Texas",
-    "kickoff": "2026-11-27T17:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 74.8,
-    "proj_away": 87.9,
-    "proj_margin": -13.1,
-    "proj_total": 162.7,
-    "home_win_prob": 0.117,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.687,
-    "home_em": 18.5,
-    "away_em": 23.0,
-    "home_t": 69.7,
-    "away_t": 71.0,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.833,
-     "b": 2.05
-    }
-   ],
-   "model_prob": 0.662,
-   "model_edge": 4.6,
-   "model_edge_txt": "+4.6 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "Saint Mary's +8.5 -120 / Texas -8.5 105",
-   "fair_prob": 0.4707,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4707,
-    0.4721
-   ],
-   "devig_all": {
-    "multiplicative": 0.4721,
-    "additive": 0.4711,
-    "power": 0.4707
-   },
-   "ev_pct": -6.81,
-   "min_ev": 1.99,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.95,
-   "trusted_prob": 0.4775,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 2.05
   },
   {
    "kind": "spread",
@@ -4964,94 +5494,6 @@
    "tier": "single",
    "second_ev": -0.31,
    "pinn_dec": 1.909
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Marquette @ Texas A&M",
-   "pkey": "401920810",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Texas A&M +1.5",
-   "line": 1.5,
-   "side": "home",
-   "team": "Texas A&M",
-   "opp": "Marquette",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/231625155871193",
-   "game_id": "401920810",
-   "kickoff": "2026-11-27T17:00:00-05:00",
-   "home": "Texas A&M",
-   "away": "Marquette",
-   "dec": 1.926,
-   "american": -108,
-   "game_model": {
-    "game_id": "401920810",
-    "home": "Texas A&M",
-    "away": "Marquette",
-    "kickoff": "2026-11-27T17:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 79.0,
-    "proj_away": 76.6,
-    "proj_margin": 2.3,
-    "proj_total": 155.6,
-    "home_win_prob": 0.584,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.302,
-    "home_em": 20.4,
-    "away_em": 18.7,
-    "home_t": 75.1,
-    "away_t": 68.4,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "fanduel",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.943,
-     "b": 1.926
-    }
-   ],
-   "model_prob": 0.635,
-   "model_edge": 3.8,
-   "model_edge_txt": "+3.8 pts \u00b7 GOOD",
-   "cheat_side": "home",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "Texas A&M +1.5 -106 / Marquette -1.5 -108",
-   "fair_prob": 0.4977,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4977,
-    0.4978
-   ],
-   "devig_all": {
-    "multiplicative": 0.4978,
-    "additive": 0.4977,
-    "power": 0.4977
-   },
-   "ev_pct": -4.14,
-   "min_ev": 1.82,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.48,
-   "trusted_prob": 0.502,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.87,
-   "pinn_dec": 1.943
   },
   {
    "kind": "spread",
@@ -5452,8 +5894,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.75,
-  "combined": 0.25
+  "ev": 1.25,
+  "combined": 0.75
  },
- "odds_as_of": "2026-11-27T16:37:18-05:00"
+ "odds_as_of": "2026-11-27T16:48:59-05:00"
 }
