@@ -1,16 +1,12 @@
 {
- "generated_at": "2026-11-26T20:19:29-05:00",
+ "generated_at": "2026-11-26T20:21:49-05:00",
  "season": 2026,
  "week": 12,
  "stats_mode": "current_only",
- "next_kickoff": "2026-11-26T20:20:00-05:00",
+ "next_kickoff": "2026-11-29T13:00:00-05:00",
  "status": {
-  "odds_checked": true,
-  "book_props": 1621,
-  "book_game_lines": 132,
-  "pinnacle_props": 523,
-  "pinnacle_game_lines": 346,
-  "pinnacle_as_of": "2026-11-26T20:19:29-05:00"
+  "odds_checked": false,
+  "reason": "no game within 4h"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -64,11 +60,6 @@
  },
  "games": [
   {
-   "game_id": "2026_12_KC_BUF",
-   "label": "KC @ BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00"
-  },
-  {
    "game_id": "2026_12_NO_CIN",
    "label": "NO @ CIN",
    "kickoff": "2026-11-29T13:00:00-05:00"
@@ -120,24 +111,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "2026_12_KC_BUF",
-   "home": "BUF",
-   "away": "KC",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "proj_home": 23.2,
-   "proj_away": 23.1,
-   "proj_margin": 0.1,
-   "proj_total": 46.4,
-   "home_pf": 31.3,
-   "home_pa": 20.8,
-   "away_pf": 27.1,
-   "away_pa": 16.3,
-   "home_games": 10,
-   "away_games": 10,
-   "league_avg": 23.13,
-   "home_win_prob": 0.503
-  },
   {
    "game_id": "2026_12_NO_CIN",
    "home": "CIN",
@@ -2098,218 +2071,6 @@
     "raw": 0.04
    },
    "exp_profit_units": 0.007
-  },
-  {
-   "kind": "prop",
-   "week": 12,
-   "player": "Rashee Rice",
-   "pkey": "rashee rice",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "line": 4.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/148333606676987",
-   "team": "KC",
-   "opp": "BUF",
-   "position": "WR",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/qhkbqrydjeur8zvrrmfl",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 2.0,
-     "under": 1.714
-    },
-    {
-     "book": "draftkings",
-     "over": 1.98,
-     "under": 1.8
-    },
-    {
-     "book": "pinnacle",
-     "over": 2.2,
-     "under": 1.685
-    }
-   ],
-   "cheat_side": null,
-   "proj_edge_pct": 24.4,
-   "hit_rate_over": 0.71,
-   "model_prob_over": 0.729,
-   "projection": 5.6,
-   "baseline": 5.7,
-   "matchup_pct": -2.0,
-   "matchup_factor": 0.98,
-   "def_rank": 17,
-   "last10": [
-    2.0,
-    4.0,
-    7.0,
-    7.0,
-    5.0,
-    5.0,
-    6.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 4.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 7.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 7.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 5.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 5.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 6.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 13.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 13.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 23.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 6.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 6.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 14.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 7.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "away",
-   "player_id": "00-0039067",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 11.1,
-   "league_avg": 11.3,
-   "games": 6,
-   "side": "under",
-   "dec": 1.8,
-   "american": -125,
-   "title": "Under 4.5 Receptions",
-   "pinnacle_line": "4.5 o120/u-146",
-   "fair_prob": 0.5663,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5663,
-    0.5711
-   ],
-   "devig_all": {
-    "multiplicative": 0.5663,
-    "additive": 0.5695,
-    "power": 0.5711,
-    "shin": 0.5695
-   },
-   "ev_pct": 1.93,
-   "min_ev": 1.42,
-   "units": 0.25,
-   "base_units": 0.3016409266409295,
-   "kelly_pct": 2.41,
-   "trusted_prob": 0.5609,
-   "unit_note": null,
-   "edge_trust": 0.5,
-   "tier": "single",
-   "second_ev": -3.07,
-   "pinn_dec": 1.685,
-   "lane": "nfl:receptions",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 24,
-    "days": 3,
-    "ev_vs_close": 1.91,
-    "roi_pct": 27.1
-   },
-   "sizing": {
-    "base": 0.3,
-    "conf": 0.38,
-    "conf_why": [
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 1,
-    "player_bets": 1,
-    "corr": 1.0,
-    "cap": 1.5,
-    "raw": 0.11
-   },
-   "exp_profit_units": 0.005
   }
  ],
  "cheat": [
@@ -2465,159 +2226,6 @@
    "american": 1900,
    "title": "Anytime TD",
    "pinnacle_line": "FanDuel Yes +1700"
-  },
-  {
-   "kind": "prop",
-   "week": 12,
-   "player": "Andrew Armstrong",
-   "pkey": "andrew armstrong",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "line": 0.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/60610269631597",
-   "team": "KC",
-   "opp": "BUF",
-   "position": "WR",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/hkw32xqnimm6dvx2qfvl",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 28.0,
-     "under": null
-    },
-    {
-     "book": "draftkings",
-     "over": 26.0,
-     "under": null
-    }
-   ],
-   "cheat_side": "over",
-   "proj_edge_pct": 407.6,
-   "hit_rate_over": 0.17,
-   "model_prob_over": 0.181,
-   "projection": 0.2,
-   "baseline": 0.2,
-   "matchup_pct": 20.3,
-   "matchup_factor": 1.203,
-   "def_rank": 9,
-   "last10": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 0.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 0.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "away",
-   "player_id": "00-0040298",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 1.1,
-   "league_avg": 0.9,
-   "games": 6,
-   "side": "over",
-   "dec": 28.0,
-   "american": 2700,
-   "title": "Anytime TD",
-   "pinnacle_line": "FanDuel Yes +2500"
   },
   {
    "kind": "prop",
@@ -7226,185 +6834,6 @@
   {
    "kind": "prop",
    "week": 12,
-   "player": "Jalen Royals",
-   "pkey": "jalen royals",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "line": 0.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/42227605995152",
-   "team": "KC",
-   "opp": "BUF",
-   "position": "WR",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/sqrid1hnmwqymcp2vxfx",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 17.0,
-     "under": null
-    }
-   ],
-   "cheat_side": "over",
-   "proj_edge_pct": 61.8,
-   "hit_rate_over": 0.1,
-   "model_prob_over": 0.095,
-   "projection": 0.1,
-   "baseline": 0.1,
-   "matchup_pct": 20.3,
-   "matchup_factor": 1.203,
-   "def_rank": 9,
-   "last10": [
-    0.0,
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LV",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 0.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 0.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "away",
-   "player_id": "00-0040646",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 1.1,
-   "league_avg": 0.9,
-   "games": 10,
-   "side": "over",
-   "dec": 17.0,
-   "american": 1600,
-   "title": "Anytime TD"
-  },
-  {
-   "kind": "prop",
-   "week": 12,
    "player": "Derius Davis",
    "pkey": "derius davis",
    "stat": "anytime_td",
@@ -8025,215 +7454,6 @@
    "tier": "prime",
    "second_ev": 3.43,
    "pinn_dec": 1.488
-  },
-  {
-   "kind": "prop",
-   "week": 12,
-   "player": "Emmett Johnson",
-   "pkey": "emmett johnson",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "line": 30.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/181216598300143",
-   "team": "KC",
-   "opp": "BUF",
-   "position": "RB",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/avdz4njz1slqn7ktqcuq",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 1.885,
-     "under": 1.885
-    },
-    {
-     "book": "pinnacle",
-     "over": 1.901,
-     "under": 1.917
-    }
-   ],
-   "cheat_side": "over",
-   "proj_edge_pct": 58.7,
-   "hit_rate_over": 0.4,
-   "model_prob_over": 0.676,
-   "projection": 48.4,
-   "baseline": 45.2,
-   "matchup_pct": 14.3,
-   "matchup_factor": 1.143,
-   "def_rank": 10,
-   "last10": [
-    44.0,
-    20.0,
-    0.0,
-    10.0,
-    18.0,
-    17.0,
-    128.0,
-    0.0,
-    70.0,
-    38.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 44.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 20.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LV",
-     "v": 10.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 18.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 17.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 128.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 70.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 38.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 9.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 27.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 80.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 42.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 27.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 14.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 73.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 5.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "away",
-   "player_id": "00-0041013",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 36.8,
-   "league_avg": 32.2,
-   "games": 6,
-   "side": "over",
-   "dec": 1.885,
-   "american": -113,
-   "title": "Over 30.5 Receiving Yards",
-   "pinnacle_line": "30.5 o-111/u-109",
-   "fair_prob": 0.5021,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5021,
-    0.5022
-   ],
-   "devig_all": {
-    "multiplicative": 0.5021,
-    "additive": 0.5022,
-    "power": 0.5022,
-    "shin": 0.5022
-   },
-   "ev_pct": -5.36,
-   "min_ev": 1.69,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.05,
-   "trusted_prob": 0.5163,
-   "unit_note": null,
-   "edge_trust": 0.5,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.901
   },
   {
    "kind": "prop",
@@ -9312,185 +8532,6 @@
   {
    "kind": "prop",
    "week": 12,
-   "player": "Emmett Johnson",
-   "pkey": "emmett johnson",
-   "stat": "rush_yds",
-   "stat_label": "Rushing Yards",
-   "line": 80.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/215827092630178",
-   "team": "KC",
-   "opp": "BUF",
-   "position": "RB",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/avdz4njz1slqn7ktqcuq",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 1.885,
-     "under": 1.885
-    }
-   ],
-   "cheat_side": "under",
-   "proj_edge_pct": -50.1,
-   "hit_rate_over": 0.2,
-   "model_prob_over": 0.151,
-   "projection": 40.2,
-   "baseline": 43.5,
-   "matchup_pct": -15.3,
-   "matchup_factor": 0.847,
-   "def_rank": 22,
-   "last10": [
-    24.0,
-    15.0,
-    17.0,
-    0.0,
-    6.0,
-    0.0,
-    15.0,
-    34.0,
-    101.0,
-    105.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 24.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 15.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 17.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LV",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 6.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 15.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 34.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 101.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 105.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 114.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 89.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 68.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 65.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 73.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 51.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 81.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 79.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "away",
-   "player_id": "00-0041013",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 78.1,
-   "league_avg": 92.2,
-   "games": 6,
-   "side": "under",
-   "dec": 1.885,
-   "american": -113,
-   "title": "Under 80.5 Rushing Yards"
-  },
-  {
-   "kind": "prop",
-   "week": 12,
    "player": "Jaxon Smith-Njigba",
    "pkey": "jaxon smith njigba",
    "stat": "anytime_td",
@@ -10438,185 +9479,6 @@
    "tier": "single",
    "second_ev": -4.15,
    "pinn_dec": 1.877
-  },
-  {
-   "kind": "prop",
-   "week": 12,
-   "player": "Josh Allen",
-   "pkey": "josh allen",
-   "stat": "rush_att",
-   "stat_label": "Rush Attempts",
-   "line": 8.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/115862046203953",
-   "team": "BUF",
-   "opp": "KC",
-   "position": "QB",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ynrhq9iv30ysjpwmrfdv",
-   "books": [
-    {
-     "book": "draftkings",
-     "over": 2.07,
-     "under": 1.735
-    }
-   ],
-   "cheat_side": "under",
-   "proj_edge_pct": -40.0,
-   "hit_rate_over": 0.2,
-   "model_prob_over": 0.179,
-   "projection": 5.1,
-   "baseline": 5.5,
-   "matchup_pct": -14.8,
-   "matchup_factor": 0.852,
-   "def_rank": 24,
-   "last10": [
-    6.0,
-    14.0,
-    8.0,
-    5.0,
-    10.0,
-    5.0,
-    7.0,
-    6.0,
-    5.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 6.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 14.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 8.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 5.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 10.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 5.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 7.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 6.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 5.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 9.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 4.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 2.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "home",
-   "player_id": "00-0034857",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 3.2,
-   "league_avg": 3.8,
-   "games": 6,
-   "side": "under",
-   "dec": 1.735,
-   "american": -136,
-   "title": "Under 8.5 Rush Attempts"
   },
   {
    "kind": "prop",
@@ -11915,220 +10777,6 @@
    "american": 420,
    "title": "Anytime TD",
    "pinnacle_line": "FanDuel Yes +400"
-  },
-  {
-   "kind": "prop",
-   "week": 12,
-   "player": "Dawson Knox",
-   "pkey": "dawson knox",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "line": 1.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/24076024914185",
-   "team": "BUF",
-   "opp": "KC",
-   "position": "TE",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ihlvyh95aub97tfklmr1",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 1.943,
-     "under": 1.8
-    },
-    {
-     "book": "draftkings",
-     "over": 2.07,
-     "under": 1.735
-    },
-    {
-     "book": "pinnacle",
-     "over": 2.05,
-     "under": 1.787
-    }
-   ],
-   "cheat_side": "over",
-   "proj_edge_pct": 33.3,
-   "hit_rate_over": 0.4,
-   "model_prob_over": 0.691,
-   "projection": 2.0,
-   "baseline": 1.7,
-   "matchup_pct": 30.5,
-   "matchup_factor": 1.305,
-   "def_rank": 1,
-   "last10": [
-    1.0,
-    2.0,
-    1.0,
-    2.0,
-    1.0,
-    1.0,
-    1.0,
-    4.0,
-    1.0,
-    2.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 4.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 2.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 16.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 6.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 4.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 5.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 11.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "home",
-   "player_id": "00-0035689",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 6.9,
-   "league_avg": 5.3,
-   "games": 6,
-   "side": "over",
-   "dec": 2.07,
-   "american": 107,
-   "title": "Over 1.5 Receptions",
-   "pinnacle_line": "1.5 o105/u-127",
-   "fair_prob": 0.4633,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4633,
-    0.4657
-   ],
-   "devig_all": {
-    "multiplicative": 0.4657,
-    "additive": 0.4641,
-    "power": 0.4633,
-    "shin": 0.4641
-   },
-   "ev_pct": -4.1,
-   "min_ev": 2.27,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.83,
-   "trusted_prob": 0.4732,
-   "unit_note": null,
-   "edge_trust": 0.5,
-   "tier": "single",
-   "second_ev": -0.88,
-   "pinn_dec": 2.05
   },
   {
    "kind": "prop",
@@ -15355,182 +14003,6 @@
   {
    "kind": "prop",
    "week": 12,
-   "player": "Dalton Kincaid",
-   "pkey": "dalton kincaid",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "line": 33.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/100587772860923",
-   "team": "BUF",
-   "opp": "KC",
-   "position": "TE",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/cmrfup2mfx13pjb0qznw",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 1.885,
-     "under": 1.885
-    },
-    {
-     "book": "draftkings",
-     "over": 1.893,
-     "under": 1.893
-    }
-   ],
-   "cheat_side": "over",
-   "proj_edge_pct": 22.7,
-   "hit_rate_over": 0.67,
-   "model_prob_over": 0.572,
-   "projection": 41.1,
-   "baseline": 37.3,
-   "matchup_pct": 20.2,
-   "matchup_factor": 1.202,
-   "def_rank": 6,
-   "last10": [
-    130.0,
-    95.0,
-    38.0,
-    7.0,
-    7.0,
-    38.0,
-    86.0,
-    28.0,
-    58.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 130.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 95.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 38.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 7.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 7.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 38.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 86.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 28.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 58.0,
-     "ha": "away"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 55.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 200.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 37.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 59.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 34.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 60.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 58.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 69.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "home",
-   "player_id": "00-0038933",
-   "injury_status": "Questionable",
-   "injury": "Thumb",
-   "def_allowed": 64.6,
-   "league_avg": 53.7,
-   "games": 6,
-   "side": "over",
-   "dec": 1.893,
-   "american": -112,
-   "title": "Over 33.5 Receiving Yards"
-  },
-  {
-   "kind": "prop",
-   "week": 12,
    "player": "Jacoby Brissett",
    "pkey": "jacoby brissett",
    "stat": "pass_tds",
@@ -16377,220 +14849,6 @@
   {
    "kind": "prop",
    "week": 12,
-   "player": "Josh Allen",
-   "pkey": "josh allen",
-   "stat": "pass_tds",
-   "stat_label": "Passing TDs",
-   "line": 1.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/123594202444206",
-   "team": "BUF",
-   "opp": "KC",
-   "position": "QB",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ynrhq9iv30ysjpwmrfdv",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 2.42,
-     "under": 1.532
-    },
-    {
-     "book": "draftkings",
-     "over": 2.25,
-     "under": 1.625
-    },
-    {
-     "book": "pinnacle",
-     "over": 2.34,
-     "under": 1.61
-    }
-   ],
-   "cheat_side": "under",
-   "proj_edge_pct": -19.6,
-   "hit_rate_over": 0.4,
-   "model_prob_over": 0.264,
-   "projection": 1.0,
-   "baseline": 1.3,
-   "matchup_pct": -40.0,
-   "matchup_factor": 0.6,
-   "def_rank": 32,
-   "last10": [
-    2.0,
-    3.0,
-    0.0,
-    1.0,
-    1.0,
-    2.0,
-    2.0,
-    1.0,
-    1.0,
-    1.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 3.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 1.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 1.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "home",
-   "player_id": "00-0034857",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 0.8,
-   "league_avg": 1.5,
-   "games": 6,
-   "side": "under",
-   "dec": 1.625,
-   "american": -160,
-   "title": "Under 1.5 Passing TDs",
-   "pinnacle_line": "1.5 o134/u-164",
-   "fair_prob": 0.5924,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5924,
-    0.5992
-   ],
-   "devig_all": {
-    "multiplicative": 0.5924,
-    "additive": 0.5969,
-    "power": 0.5992,
-    "shin": 0.5969
-   },
-   "ev_pct": -3.73,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -5.97,
-   "trusted_prob": 0.6039,
-   "unit_note": null,
-   "edge_trust": 0.5,
-   "tier": "single",
-   "second_ev": -0.49,
-   "pinn_dec": 1.61
-  },
-  {
-   "kind": "prop",
-   "week": 12,
    "player": "Ja'Kobi Lane",
    "pkey": "ja kobi lane",
    "stat": "rec_yds",
@@ -17327,196 +15585,6 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 1.877
-  },
-  {
-   "kind": "prop",
-   "week": 12,
-   "player": "Xavier Worthy",
-   "pkey": "xavier worthy",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "line": 0.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/126932751398319",
-   "team": "KC",
-   "opp": "BUF",
-   "position": "WR",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/u6fmnffwteccoxn3uguq",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 6.5,
-     "under": null
-    },
-    {
-     "book": "draftkings",
-     "over": 6.5,
-     "under": null
-    },
-    {
-     "book": "pinnacle",
-     "over": 6.1,
-     "under": 1.132
-    }
-   ],
-   "cheat_side": "over",
-   "proj_edge_pct": 17.8,
-   "hit_rate_over": 0.2,
-   "model_prob_over": 0.181,
-   "projection": 0.2,
-   "baseline": 0.2,
-   "matchup_pct": 20.3,
-   "matchup_factor": 1.203,
-   "def_rank": 9,
-   "last10": [
-    0.0,
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LV",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 1.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 3.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 0.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "away",
-   "player_id": "00-0039894",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 1.1,
-   "league_avg": 0.9,
-   "games": 10,
-   "side": "over",
-   "dec": 6.5,
-   "american": 550,
-   "title": "Anytime TD",
-   "pinnacle_line": "FanDuel Yes +550"
   },
   {
    "kind": "prop",
@@ -18267,215 +16335,6 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 1.877
-  },
-  {
-   "kind": "prop",
-   "week": 12,
-   "player": "Keon Coleman",
-   "pkey": "keon coleman",
-   "stat": "rec_yds",
-   "stat_label": "Receiving Yards",
-   "line": 20.5,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/217215807390945",
-   "team": "BUF",
-   "opp": "KC",
-   "position": "WR",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/garesglkqop2fvgc5bgh",
-   "books": [
-    {
-     "book": "fanduel",
-     "over": 1.885,
-     "under": 1.885
-    },
-    {
-     "book": "pinnacle",
-     "over": 1.909,
-     "under": 1.909
-    }
-   ],
-   "cheat_side": "under",
-   "proj_edge_pct": -15.1,
-   "hit_rate_over": 0.4,
-   "model_prob_over": 0.466,
-   "projection": 17.4,
-   "baseline": 19.2,
-   "matchup_pct": -18.9,
-   "matchup_factor": 0.811,
-   "def_rank": 29,
-   "last10": [
-    1.0,
-    63.0,
-    37.0,
-    116.0,
-    7.0,
-    59.0,
-    4.0,
-    17.0,
-    11.0,
-    17.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 63.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 37.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 116.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 7.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 59.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 4.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 17.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 11.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 17.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 141.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 89.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 127.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 171.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 115.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 58.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 215.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 76.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "home",
-   "player_id": "00-0039901",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 119.6,
-   "league_avg": 147.6,
-   "games": 6,
-   "side": "under",
-   "dec": 1.885,
-   "american": -113,
-   "title": "Under 20.5 Receiving Yards",
-   "pinnacle_line": "20.5 o-110/u-110",
-   "fair_prob": 0.5,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5,
-    0.5
-   ],
-   "devig_all": {
-    "multiplicative": 0.5,
-    "additive": 0.5,
-    "power": 0.5,
-    "shin": 0.5
-   },
-   "ev_pct": -5.75,
-   "min_ev": 1.69,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.5,
-   "trusted_prob": 0.5153,
-   "unit_note": null,
-   "edge_trust": 0.5,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.909
   },
   {
    "kind": "prop",
@@ -20550,185 +18409,6 @@
   {
    "kind": "prop",
    "week": 12,
-   "player": "Patrick Mahomes",
-   "pkey": "patrick mahomes",
-   "stat": "pass_att",
-   "stat_label": "Pass Attempts",
-   "line": 33.5,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/271621752828692",
-   "team": "KC",
-   "opp": "BUF",
-   "position": "QB",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/wdckwtob1lybvkmxnf7p",
-   "books": [
-    {
-     "book": "draftkings",
-     "over": 1.98,
-     "under": 1.8
-    }
-   ],
-   "cheat_side": "over",
-   "proj_edge_pct": 10.7,
-   "hit_rate_over": 0.4,
-   "model_prob_over": 0.699,
-   "projection": 37.1,
-   "baseline": 34.8,
-   "matchup_pct": 13.3,
-   "matchup_factor": 1.133,
-   "def_rank": 2,
-   "last10": [
-    27.0,
-    47.0,
-    24.0,
-    30.0,
-    30.0,
-    33.0,
-    41.0,
-    31.0,
-    35.0,
-    39.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 27.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 47.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 24.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LV",
-     "v": 30.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 30.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 33.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 41.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 31.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 35.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 39.0,
-     "ha": "home"
-    }
-   ],
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 34.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 37.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 54.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 41.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 26.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 32.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 41.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 33.0
-    }
-   ],
-   "vs_opp": [],
-   "home_away": "away",
-   "player_id": "00-0033873",
-   "injury_status": null,
-   "injury": null,
-   "def_allowed": 37.4,
-   "league_avg": 33.0,
-   "games": 6,
-   "side": "over",
-   "dec": 1.98,
-   "american": -102,
-   "title": "Over 33.5 Pass Attempts"
-  },
-  {
-   "kind": "prop",
-   "week": 12,
    "player": "Jacory Croskey-Merritt",
    "pkey": "jacory croskey merritt",
    "stat": "rush_att",
@@ -21633,90 +19313,6 @@
    "pinn_dec": 3.32
   },
   {
-   "kind": "ml",
-   "week": 12,
-   "player": "KC @ BUF",
-   "pkey": "2026_12_KC_BUF",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "KC Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "KC",
-   "opp": "BUF",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/130056637164981",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home": "BUF",
-   "away": "KC",
-   "dec": 2.4,
-   "american": 140,
-   "game_model": {
-    "game_id": "2026_12_KC_BUF",
-    "home": "BUF",
-    "away": "KC",
-    "kickoff": "2026-11-26T20:20:00-05:00",
-    "proj_home": 23.2,
-    "proj_away": 23.1,
-    "proj_margin": 0.1,
-    "proj_total": 46.4,
-    "home_pf": 31.3,
-    "home_pa": 20.8,
-    "away_pf": 27.1,
-    "away_pa": 16.3,
-    "home_games": 10,
-    "away_games": 10,
-    "league_avg": 23.13,
-    "home_win_prob": 0.503
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.595,
-     "b": 2.4
-    },
-    {
-     "book": "draftkings",
-     "a": 1.649,
-     "b": 2.3
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.617,
-     "b": 2.45
-    }
-   ],
-   "model_prob": 0.497,
-   "model_edge": 9.78,
-   "model_edge_txt": "+9.8%",
-   "cheat_side": "away",
-   "pinnacle_line": "BUF -162 / KC +145",
-   "fair_prob": 0.3935,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.3935,
-    0.3976
-   ],
-   "devig_all": {
-    "multiplicative": 0.3976,
-    "additive": 0.3949,
-    "power": 0.3935
-   },
-   "ev_pct": -5.55,
-   "min_ev": 3.44,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.96,
-   "trusted_prob": 0.3982,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.01,
-   "pinn_dec": 2.45
-  },
-  {
    "kind": "total",
    "week": 12,
    "player": "NE @ LAC",
@@ -22377,90 +19973,6 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 1.885
-  },
-  {
-   "kind": "spread",
-   "week": 12,
-   "player": "KC @ BUF",
-   "pkey": "2026_12_KC_BUF",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "KC +3",
-   "line": -3.0,
-   "side": "away",
-   "team": "KC",
-   "opp": "BUF",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/108464220204990",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home": "BUF",
-   "away": "KC",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "2026_12_KC_BUF",
-    "home": "BUF",
-    "away": "KC",
-    "kickoff": "2026-11-26T20:20:00-05:00",
-    "proj_home": 23.2,
-    "proj_away": 23.1,
-    "proj_margin": 0.1,
-    "proj_total": 46.4,
-    "home_pf": 31.3,
-    "home_pa": 20.8,
-    "away_pf": 27.1,
-    "away_pa": 16.3,
-    "home_games": 10,
-    "away_games": 10,
-    "league_avg": 23.13,
-    "home_win_prob": 0.503
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "draftkings",
-     "a": 1.99,
-     "b": 1.84
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.98,
-     "b": 1.917
-    }
-   ],
-   "model_prob": 0.585,
-   "model_edge": 2.9,
-   "model_edge_txt": "+2.9 pts",
-   "cheat_side": "away",
-   "pinnacle_line": "BUF -3 -102 / KC +3 -109",
-   "fair_prob": 0.5081,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5081,
-    0.5084
-   ],
-   "devig_all": {
-    "multiplicative": 0.5081,
-    "additive": 0.5083,
-    "power": 0.5084
-   },
-   "ev_pct": -3.01,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.31,
-   "trusted_prob": 0.5112,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -0.81,
-   "pinn_dec": 1.917
   },
   {
    "kind": "spread",
@@ -28355,166 +25867,6 @@
    "vs_opp": []
   },
   {
-   "player": "Travis Kelce",
-   "player_id": "00-0030506",
-   "team": "KC",
-   "injury_status": null,
-   "injury": null,
-   "opp": "BUF",
-   "position": "TE",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dpxovcfku6ud2aohgf6a",
-   "baseline": 0.5,
-   "sd": 0.7,
-   "games": 10,
-   "last10": [
-    0.0,
-    1.0,
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0,
-    0.0,
-    2.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LV",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 2.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 0.1,
-   "league_avg": 0.5,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 0.4,
-   "def_rank": 29,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 0.0
-    }
-   ],
-   "pkey": "travis kelce",
-   "vs_opp": []
-  },
-  {
    "player": "Mike Evans",
    "player_id": "00-0031408",
    "team": "SF",
@@ -29075,166 +26427,6 @@
    "vs_opp": []
   },
   {
-   "player": "Patrick Mahomes",
-   "player_id": "00-0033873",
-   "team": "KC",
-   "injury_status": null,
-   "injury": null,
-   "opp": "BUF",
-   "position": "QB",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/wdckwtob1lybvkmxnf7p",
-   "baseline": 0.1,
-   "sd": 0.3,
-   "games": 10,
-   "last10": [
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LV",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 0.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 0.0,
-   "league_avg": 0.2,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 0.1,
-   "def_rank": 25,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 0.0
-    }
-   ],
-   "pkey": "patrick mahomes",
-   "vs_opp": []
-  },
-  {
    "player": "Mark Andrews",
    "player_id": "00-0034753",
    "team": "BAL",
@@ -29395,150 +26587,6 @@
    "vs_opp": []
   },
   {
-   "player": "DJ Moore",
-   "player_id": "00-0034827",
-   "team": "BUF",
-   "injury_status": null,
-   "injury": null,
-   "opp": "KC",
-   "position": "WR",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/tmiale9dvql5ol2xmhf1",
-   "baseline": 0.5,
-   "sd": 0.5,
-   "games": 8,
-   "last10": [
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0,
-    0.0,
-    1.0,
-    1.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 1.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 0.3,
-   "league_avg": 0.9,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 0.4,
-   "def_rank": 32,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 1.0
-    }
-   ],
-   "pkey": "dj moore",
-   "vs_opp": []
-  },
-  {
    "player": "Calvin Ridley",
    "player_id": "00-0034837",
    "team": "TEN",
@@ -29672,326 +26720,6 @@
     }
    ],
    "pkey": "calvin ridley",
-   "vs_opp": []
-  },
-  {
-   "player": "Josh Allen",
-   "player_id": "00-0034857",
-   "team": "BUF",
-   "injury_status": null,
-   "injury": null,
-   "opp": "KC",
-   "position": "QB",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ynrhq9iv30ysjpwmrfdv",
-   "baseline": 1.1,
-   "sd": 0.9,
-   "games": 10,
-   "last10": [
-    2.0,
-    2.0,
-    2.0,
-    1.0,
-    1.0,
-    0.0,
-    1.0,
-    0.0,
-    2.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 0.0,
-   "league_avg": 0.2,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 0.9,
-   "def_rank": 28,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 0.0
-    }
-   ],
-   "pkey": "josh allen",
-   "vs_opp": []
-  },
-  {
-   "player": "Josh Allen",
-   "player_id": "00-0034857",
-   "team": "BUF",
-   "injury_status": null,
-   "injury": null,
-   "opp": "KC",
-   "position": "QB",
-   "stat": "pass_tds",
-   "stat_label": "Passing TDs",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ynrhq9iv30ysjpwmrfdv",
-   "baseline": 1.3,
-   "sd": 0.8,
-   "games": 6,
-   "last10": [
-    2.0,
-    3.0,
-    0.0,
-    1.0,
-    1.0,
-    2.0,
-    2.0,
-    1.0,
-    1.0,
-    1.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 3.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 2.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 2.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 1.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 0.8,
-   "league_avg": 1.5,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 1.0,
-   "def_rank": 32,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 2.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 1.0
-    }
-   ],
-   "pkey": "josh allen",
    "vs_opp": []
   },
   {
@@ -31059,326 +27787,6 @@
    "vs_opp": []
   },
   {
-   "player": "Noah Gray",
-   "player_id": "00-0036637",
-   "team": "KC",
-   "injury_status": "Questionable",
-   "injury": "Rib",
-   "opp": "BUF",
-   "position": "TE",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home_away": "away",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/bpmlguml8jth2rbdfyp5",
-   "baseline": 0.1,
-   "sd": 0.3,
-   "games": 10,
-   "last10": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0,
-    0.0,
-    0.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "DEN",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "IND",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "LV",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "opp": "SEA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "DEN",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "NYJ",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "ATL",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "ARI",
-     "v": 0.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 0.1,
-   "league_avg": 0.5,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 0.1,
-   "def_rank": 29,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "NE",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "vs": "LA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LV",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "BAL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "MIN",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "MIA",
-     "v": 0.0
-    }
-   ],
-   "pkey": "noah gray",
-   "vs_opp": []
-  },
-  {
-   "player": "Khalil Shakir",
-   "player_id": "00-0037261",
-   "team": "BUF",
-   "injury_status": null,
-   "injury": null,
-   "opp": "KC",
-   "position": "WR",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ituuwxmqtheiha2kkrvt",
-   "baseline": 0.1,
-   "sd": 0.3,
-   "games": 10,
-   "last10": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 0.3,
-   "league_avg": 0.9,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 0.1,
-   "def_rank": 32,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 1.0
-    }
-   ],
-   "pkey": "khalil shakir",
-   "vs_opp": []
-  },
-  {
    "player": "Brock Purdy",
    "player_id": "00-0037834",
    "team": "SF",
@@ -31992,166 +28400,6 @@
     }
    ],
    "pkey": "drake maye",
-   "vs_opp": []
-  },
-  {
-   "player": "Keon Coleman",
-   "player_id": "00-0039901",
-   "team": "BUF",
-   "injury_status": null,
-   "injury": null,
-   "opp": "KC",
-   "position": "WR",
-   "stat": "anytime_td",
-   "stat_label": "Anytime TD",
-   "game_id": "2026_12_KC_BUF",
-   "kickoff": "2026-11-26T20:20:00-05:00",
-   "home_away": "home",
-   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/garesglkqop2fvgc5bgh",
-   "baseline": 0.3,
-   "sd": 0.5,
-   "games": 10,
-   "last10": [
-    0.0,
-    0.0,
-    0.0,
-    1.0,
-    1.0,
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0
-   ],
-   "log": [
-    {
-     "season": 2026,
-     "wk": 1,
-     "opp": "HOU",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 2,
-     "opp": "DET",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 3,
-     "opp": "LAC",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "opp": "NE",
-     "v": 1.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 5,
-     "opp": "LA",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "opp": "LV",
-     "v": 1.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "opp": "BAL",
-     "v": 0.0,
-     "ha": "home"
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "opp": "MIN",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "opp": "NYJ",
-     "v": 0.0,
-     "ha": "away"
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "opp": "MIA",
-     "v": 0.0,
-     "ha": "home"
-    }
-   ],
-   "def_allowed": 0.3,
-   "league_avg": 0.9,
-   "matchup_factor": 0.6,
-   "matchup_pct": -40.0,
-   "projection": 0.2,
-   "def_rank": 32,
-   "def_log": [
-    {
-     "season": 2026,
-     "wk": 3,
-     "vs": "MIA",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 4,
-     "vs": "LV",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 6,
-     "vs": "LAC",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 7,
-     "vs": "SEA",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 8,
-     "vs": "DEN",
-     "v": 1.0
-    },
-    {
-     "season": 2026,
-     "wk": 9,
-     "vs": "NYJ",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 10,
-     "vs": "ATL",
-     "v": 0.0
-    },
-    {
-     "season": 2026,
-     "wk": 11,
-     "vs": "ARI",
-     "v": 1.0
-    }
-   ],
-   "pkey": "keon coleman",
    "vs_opp": []
   },
   {
@@ -34649,11 +30897,1091 @@
    ],
    "pkey": "deshaun watson",
    "vs_opp": []
+  },
+  {
+   "player": "Jadarian Price",
+   "player_id": "00-0041512",
+   "team": "SEA",
+   "injury_status": null,
+   "injury": null,
+   "opp": "SF",
+   "position": "RB",
+   "stat": "receptions",
+   "stat_label": "Receptions",
+   "game_id": "2026_12_SEA_SF",
+   "kickoff": "2026-11-29T16:25:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/toy90i08oumgbdlvctja",
+   "baseline": 1.8,
+   "sd": 1.2,
+   "games": 6,
+   "last10": [
+    2.0,
+    1.0,
+    1.0,
+    2.0,
+    4.0,
+    1.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "NE",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "ARI",
+     "v": 1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "WAS",
+     "v": 1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "CHI",
+     "v": 2.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "ARI",
+     "v": 4.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "LV",
+     "v": 1.0,
+     "ha": "away"
+    }
+   ],
+   "def_allowed": 6.0,
+   "league_avg": 4.4,
+   "matchup_factor": 1.372,
+   "matchup_pct": 37.2,
+   "projection": 2.1,
+   "def_rank": 1,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "ARI",
+     "v": 9.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "DEN",
+     "v": 14.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "SEA",
+     "v": 6.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "WAS",
+     "v": 6.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "ATL",
+     "v": 6.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "LV",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "DAL",
+     "v": 3.0
+    },
+    {
+     "season": 2026,
+     "wk": 11,
+     "vs": "MIN",
+     "v": 3.0
+    }
+   ],
+   "pkey": "jadarian price",
+   "vs_opp": []
+  },
+  {
+   "player": "Keenan Allen",
+   "player_id": "00-0030279",
+   "team": "SF",
+   "injury_status": null,
+   "injury": null,
+   "opp": "SEA",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_12_SEA_SF",
+   "kickoff": "2026-11-29T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ngk2iwpbmdeivvrpwk9h",
+   "baseline": 50.8,
+   "sd": 23.1,
+   "games": 6,
+   "last10": [
+    32.0,
+    5.0,
+    63.0,
+    45.0,
+    82.0,
+    31.0,
+    67.0,
+    26.0,
+    61.0,
+    38.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "BAL",
+     "v": 32.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "KC",
+     "v": 5.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "HOU",
+     "v": 63.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "PIT",
+     "v": 45.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "TEN",
+     "v": 82.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "MIN",
+     "v": 31.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "JAX",
+     "v": 67.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "DAL",
+     "v": 26.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "DAL",
+     "v": 61.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 11,
+     "opp": "MIN",
+     "v": 38.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 93.6,
+   "league_avg": 147.6,
+   "matchup_factor": 0.634,
+   "matchup_pct": -36.6,
+   "projection": 41.5,
+   "def_rank": 32,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "WAS",
+     "v": 159.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "LAC",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "SF",
+     "v": 150.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "DEN",
+     "v": 58.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "KC",
+     "v": 39.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "CHI",
+     "v": 161.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "ARI",
+     "v": 93.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "LV",
+     "v": 40.0
+    }
+   ],
+   "pkey": "keenan allen",
+   "vs_opp": []
+  },
+  {
+   "player": "Mike Evans",
+   "player_id": "00-0031408",
+   "team": "SF",
+   "injury_status": null,
+   "injury": null,
+   "opp": "SEA",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_12_SEA_SF",
+   "kickoff": "2026-11-29T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zc4ujpmndyxrbiyyjomz",
+   "baseline": 80.0,
+   "sd": 31.0,
+   "games": 6,
+   "last10": [
+    49.0,
+    54.0,
+    34.0,
+    76.0,
+    113.0,
+    94.0,
+    109.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "LA",
+     "v": 49.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "MIA",
+     "v": 54.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "ARI",
+     "v": 34.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "DEN",
+     "v": 76.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "SEA",
+     "v": 113.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "WAS",
+     "v": 94.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 11,
+     "opp": "MIN",
+     "v": 109.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 93.6,
+   "league_avg": 147.6,
+   "matchup_factor": 0.634,
+   "matchup_pct": -36.6,
+   "projection": 65.4,
+   "def_rank": 32,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "WAS",
+     "v": 159.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "LAC",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "SF",
+     "v": 150.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "DEN",
+     "v": 58.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "KC",
+     "v": 39.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "CHI",
+     "v": 161.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "ARI",
+     "v": 93.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "LV",
+     "v": 40.0
+    }
+   ],
+   "pkey": "mike evans",
+   "vs_opp": []
+  },
+  {
+   "player": "Demarcus Robinson",
+   "player_id": "00-0032775",
+   "team": "SF",
+   "injury_status": null,
+   "injury": null,
+   "opp": "SEA",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_12_SEA_SF",
+   "kickoff": "2026-11-29T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/cokassoz2z7hb4wk2krh",
+   "baseline": 35.3,
+   "sd": 14.0,
+   "games": 3,
+   "last10": [
+    50.0,
+    34.0,
+    22.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "LA",
+     "v": 50.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "MIA",
+     "v": 34.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "LV",
+     "v": 22.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 93.6,
+   "league_avg": 147.6,
+   "matchup_factor": 0.634,
+   "matchup_pct": -36.6,
+   "projection": 28.8,
+   "def_rank": 32,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "WAS",
+     "v": 159.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "LAC",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "SF",
+     "v": 150.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "DEN",
+     "v": 58.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "KC",
+     "v": 39.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "CHI",
+     "v": 161.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "ARI",
+     "v": 93.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "LV",
+     "v": 40.0
+    }
+   ],
+   "pkey": "demarcus robinson",
+   "vs_opp": []
+  },
+  {
+   "player": "Deebo Samuel Sr.",
+   "player_id": "00-0035719",
+   "team": "SF",
+   "injury_status": null,
+   "injury": null,
+   "opp": "SEA",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_12_SEA_SF",
+   "kickoff": "2026-11-29T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ntgyhqg6hq7fanhhsqiw",
+   "baseline": 34.8,
+   "sd": 21.2,
+   "games": 6,
+   "last10": [
+    48.0,
+    31.0,
+    80.0,
+    26.0,
+    21.0,
+    31.0,
+    20.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "LA",
+     "v": 48.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "MIA",
+     "v": 31.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "ARI",
+     "v": 80.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "DEN",
+     "v": 26.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "SEA",
+     "v": 21.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "DAL",
+     "v": 31.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 11,
+     "opp": "MIN",
+     "v": 20.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 93.6,
+   "league_avg": 147.6,
+   "matchup_factor": 0.634,
+   "matchup_pct": -36.6,
+   "projection": 28.4,
+   "def_rank": 32,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "WAS",
+     "v": 159.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "LAC",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "SF",
+     "v": 150.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "DEN",
+     "v": 58.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "KC",
+     "v": 39.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "CHI",
+     "v": 161.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "ARI",
+     "v": 93.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "LV",
+     "v": 40.0
+    }
+   ],
+   "pkey": "deebo samuel",
+   "vs_opp": []
+  },
+  {
+   "player": "Jordan Watkins",
+   "player_id": "00-0040172",
+   "team": "SF",
+   "injury_status": null,
+   "injury": null,
+   "opp": "SEA",
+   "position": "WR",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_12_SEA_SF",
+   "kickoff": "2026-11-29T16:25:00-05:00",
+   "home_away": "home",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/agcwewjrj4dfssqkzksp",
+   "baseline": 48.7,
+   "sd": 25.2,
+   "games": 6,
+   "last10": [
+    60.0,
+    22.0,
+    56.0,
+    86.0,
+    49.0,
+    19.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "ARI",
+     "v": 60.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "WAS",
+     "v": 22.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "ATL",
+     "v": 56.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "opp": "LV",
+     "v": 86.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "DAL",
+     "v": 49.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 11,
+     "opp": "MIN",
+     "v": 19.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 93.6,
+   "league_avg": 147.6,
+   "matchup_factor": 0.634,
+   "matchup_pct": -36.6,
+   "projection": 39.8,
+   "def_rank": 32,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "WAS",
+     "v": 159.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "LAC",
+     "v": 110.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "SF",
+     "v": 150.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "DEN",
+     "v": 58.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "KC",
+     "v": 39.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "CHI",
+     "v": 161.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "ARI",
+     "v": 93.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "LV",
+     "v": 40.0
+    }
+   ],
+   "pkey": "jordan watkins",
+   "vs_opp": []
+  },
+  {
+   "player": "Gunnar Helm",
+   "player_id": "00-0040584",
+   "team": "TEN",
+   "injury_status": null,
+   "injury": null,
+   "opp": "JAX",
+   "position": "TE",
+   "stat": "rec_yds",
+   "stat_label": "Receiving Yards",
+   "game_id": "2026_12_TEN_JAX",
+   "kickoff": "2026-11-29T13:00:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vxm3tzziboxezsb9thjm",
+   "baseline": 23.7,
+   "sd": 22.2,
+   "games": 6,
+   "last10": [
+    28.0,
+    13.0,
+    14.0,
+    5.0,
+    0.0,
+    24.0,
+    76.0,
+    23.0,
+    14.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 1,
+     "opp": "NYJ",
+     "v": 28.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "PHI",
+     "v": 13.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "NYG",
+     "v": 14.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "BAL",
+     "v": 5.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "opp": "HOU",
+     "v": 0.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "CLE",
+     "v": 24.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "CIN",
+     "v": 76.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "JAX",
+     "v": 23.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 11,
+     "opp": "DAL",
+     "v": 14.0,
+     "ha": "away"
+    }
+   ],
+   "def_allowed": 34.3,
+   "league_avg": 53.7,
+   "matchup_factor": 0.638,
+   "matchup_pct": -36.2,
+   "projection": 19.4,
+   "def_rank": 32,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "NE",
+     "v": 5.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "CIN",
+     "v": 42.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "PHI",
+     "v": 38.0
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "vs": "HOU",
+     "v": 39.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "IND",
+     "v": 18.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BAL",
+     "v": 24.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "TEN",
+     "v": 29.0
+    },
+    {
+     "season": 2026,
+     "wk": 11,
+     "vs": "NYG",
+     "v": 64.0
+    }
+   ],
+   "pkey": "gunnar helm",
+   "vs_opp": []
+  },
+  {
+   "player": "Austin Hooper",
+   "player_id": "00-0032392",
+   "team": "ATL",
+   "injury_status": null,
+   "injury": null,
+   "opp": "MIN",
+   "position": "TE",
+   "stat": "anytime_td",
+   "stat_label": "Anytime TD",
+   "game_id": "2026_12_ATL_MIN",
+   "kickoff": "2026-11-29T13:00:00-05:00",
+   "home_away": "away",
+   "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xcl350pogjbc7ilaqhjk",
+   "baseline": 0.1,
+   "sd": 0.4,
+   "games": 7,
+   "last10": [
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "log": [
+    {
+     "season": 2026,
+     "wk": 2,
+     "opp": "CAR",
+     "v": 0.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 3,
+     "opp": "GB",
+     "v": 1.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "opp": "NO",
+     "v": 0.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 6,
+     "opp": "CHI",
+     "v": 0.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "opp": "SF",
+     "v": 0.0,
+     "ha": "home"
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "opp": "TB",
+     "v": 0.0,
+     "ha": "away"
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "opp": "KC",
+     "v": 0.0,
+     "ha": "home"
+    }
+   ],
+   "def_allowed": 0.3,
+   "league_avg": 0.5,
+   "matchup_factor": 0.64,
+   "matchup_pct": -36.0,
+   "projection": 0.1,
+   "def_rank": 22,
+   "def_log": [
+    {
+     "season": 2026,
+     "wk": 3,
+     "vs": "TB",
+     "v": 0.0
+    },
+    {
+     "season": 2026,
+     "wk": 4,
+     "vs": "MIA",
+     "v": 0.0
+    },
+    {
+     "season": 2026,
+     "wk": 5,
+     "vs": "NO",
+     "v": 0.0
+    },
+    {
+     "season": 2026,
+     "wk": 7,
+     "vs": "IND",
+     "v": 0.0
+    },
+    {
+     "season": 2026,
+     "wk": 8,
+     "vs": "DET",
+     "v": 0.0
+    },
+    {
+     "season": 2026,
+     "wk": 9,
+     "vs": "BUF",
+     "v": 1.0
+    },
+    {
+     "season": 2026,
+     "wk": 10,
+     "vs": "GB",
+     "v": 0.0
+    },
+    {
+     "season": 2026,
+     "wk": 11,
+     "vs": "SF",
+     "v": 2.0
+    }
+   ],
+   "pkey": "austin hooper",
+   "vs_opp": []
   }
  ],
  "slate_units": {
-  "ev": 1.75,
-  "combined": 0.5
+  "ev": 0,
+  "combined": 0
  },
  "odds_as_of": "2026-11-26T20:19:29-05:00"
 }
