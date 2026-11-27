@@ -1,24 +1,30 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T15:27:20-05:00",
+ "generated_at": "2026-11-27T15:39:02-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T15:30:00-05:00",
+ "next_kickoff": "2026-11-27T16:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 197,
-  "book_unmatched": 6,
+  "book_game_lines": 179,
+  "book_unmatched": 12,
   "book_unmatched_games": [
+   "Ball State @ Southern Indiana",
    "Elon @ NC State",
+   "Fordham @ Harvard",
+   "Marist @ George Mason",
+   "Oregon @ Maryland",
    "Princeton @ Saint Thomas MN",
    "Robert Morris @ Northern Iowa",
+   "SE Missouri State @ UMKC",
    "Siena @ Seton Hall",
+   "Troy @ Chattanooga",
    "UMBC @ GW Revolutionaries",
    "Wofford @ Purdue Fort Wayne"
   ],
-  "pinnacle_game_lines": 552,
-  "pinnacle_unmatched": 3,
+  "pinnacle_game_lines": 495,
+  "pinnacle_unmatched": 6,
   "pinnacle_as_of": "2026-11-27T15:27:20-05:00"
  },
  "settings": {
@@ -544,21 +550,6 @@
  },
  "games": [
   {
-   "game_id": "401921417",
-   "label": "La Salle @ Bucknell",
-   "kickoff": "2026-11-27T15:30:00-05:00"
-  },
-  {
-   "game_id": "401920774",
-   "label": "Colgate @ Hofstra",
-   "kickoff": "2026-11-27T15:30:00-05:00"
-  },
-  {
-   "game_id": "401920532",
-   "label": "Oregon @ Maryland",
-   "kickoff": "2026-11-27T15:30:00-05:00"
-  },
-  {
    "game_id": "401921818",
    "label": "AR-Pine Bluff @ Missouri",
    "kickoff": "2026-11-27T16:00:00-05:00"
@@ -730,69 +721,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401921417",
-   "home": "Bucknell",
-   "away": "La Salle",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 65.5,
-   "proj_away": 81.7,
-   "proj_margin": -16.2,
-   "proj_total": 147.2,
-   "home_win_prob": 0.07,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -2.09,
-   "home_em": -15.7,
-   "away_em": -2.3,
-   "home_t": 68.1,
-   "away_t": 69.1,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401920774",
-   "home": "Hofstra",
-   "away": "Colgate",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 68.0,
-   "proj_away": 68.3,
-   "proj_margin": -0.3,
-   "proj_total": 136.4,
-   "home_win_prob": 0.489,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -0.427,
-   "home_em": -2.2,
-   "away_em": -5.5,
-   "home_t": 66.1,
-   "away_t": 68.6,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401920532",
-   "home": "Maryland",
-   "away": "Oregon",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 78.7,
-   "proj_away": 78.0,
-   "proj_margin": 0.8,
-   "proj_total": 156.7,
-   "home_win_prob": 0.528,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 0.098,
-   "home_em": 15.0,
-   "away_em": 15.4,
-   "home_t": 69.0,
-   "away_t": 69.0,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401921818",
    "home": "Missouri",
@@ -1610,7 +1538,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.17,
+    "ev_vs_close": -0.24,
     "roi_pct": -43.9
    },
    "exp_profit_units": 0.006
@@ -1708,7 +1636,7 @@
    "lane_info": {
     "graded": 21,
     "days": 1,
-    "ev_vs_close": 0.52,
+    "ev_vs_close": 0.5,
     "roi_pct": 5.1
    },
    "sizing": {
@@ -1814,7 +1742,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.17,
+    "ev_vs_close": -0.24,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -1920,7 +1848,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.17,
+    "ev_vs_close": -0.24,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -3104,93 +3032,6 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
-   "player": "La Salle @ Bucknell",
-   "pkey": "401921417",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "La Salle Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "La Salle",
-   "opp": "Bucknell",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/227283797559914",
-   "game_id": "401921417",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "home": "Bucknell",
-   "away": "La Salle",
-   "dec": 1.213,
-   "american": -469,
-   "game_model": {
-    "game_id": "401921417",
-    "home": "Bucknell",
-    "away": "La Salle",
-    "kickoff": "2026-11-27T15:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 65.5,
-    "proj_away": 81.7,
-    "proj_margin": -16.2,
-    "proj_total": 147.2,
-    "home_win_prob": 0.07,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -2.09,
-    "home_em": -15.7,
-    "away_em": -2.3,
-    "home_t": 68.1,
-    "away_t": 69.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 4.65,
-     "b": 1.215
-    },
-    {
-     "book": "draftkings",
-     "a": 4.6,
-     "b": 1.213
-    },
-    {
-     "book": "pinnacle",
-     "a": 4.69,
-     "b": 1.212
-    }
-   ],
-   "model_prob": 0.93,
-   "model_edge": 13.87,
-   "model_edge_txt": "+13.9%",
-   "cheat_side": "away",
-   "pinnacle_line": "Bucknell +369 / La Salle -472",
-   "fair_prob": 0.7946,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.7946,
-    0.8122
-   ],
-   "devig_all": {
-    "multiplicative": 0.7946,
-    "additive": 0.8059,
-    "power": 0.8122
-   },
-   "ev_pct": -3.61,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -16.95,
-   "trusted_prob": 0.8006,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.83,
-   "pinn_dec": 1.212
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
    "player": "Drake @ Boise St",
    "pkey": "401927366",
    "stat": "ml",
@@ -4189,93 +4030,6 @@
   {
    "kind": "total",
    "week": "2026-11-27",
-   "player": "Oregon @ Maryland",
-   "pkey": "401920532",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 148.5",
-   "line": 148.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/277923193617382",
-   "game_id": "401920532",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "home": "Maryland",
-   "away": "Oregon",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401920532",
-    "home": "Maryland",
-    "away": "Oregon",
-    "kickoff": "2026-11-27T15:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 78.7,
-    "proj_away": 78.0,
-    "proj_margin": 0.8,
-    "proj_total": 156.7,
-    "home_win_prob": 0.528,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.098,
-    "home_em": 15.0,
-    "away_em": 15.4,
-    "home_t": 69.0,
-    "away_t": 69.0,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "draftkings",
-     "a": 1.901,
-     "b": 1.917
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.87,
-     "b": 1.935
-    }
-   ],
-   "model_prob": 0.708,
-   "model_edge": 8.2,
-   "model_edge_txt": "+8.2 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "148.5 o-115/u-107",
-   "fair_prob": 0.5085,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5085,
-    0.5092
-   ],
-   "devig_all": {
-    "multiplicative": 0.5085,
-    "additive": 0.509,
-    "power": 0.5092
-   },
-   "ev_pct": -2.92,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.21,
-   "trusted_prob": 0.5116,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -4.15,
-   "pinn_dec": 1.87
-  },
-  {
-   "kind": "total",
-   "week": "2026-11-27",
    "player": "Oakland @ Houston",
    "pkey": "401925703",
    "stat": "total",
@@ -4444,93 +4198,6 @@
    "pinn_dec": 1.935
   },
   {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Oregon @ Maryland",
-   "pkey": "401920532",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Oregon Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Oregon",
-   "opp": "Maryland",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/84389710861944",
-   "game_id": "401920532",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "home": "Maryland",
-   "away": "Oregon",
-   "dec": 2.4,
-   "american": 140,
-   "game_model": {
-    "game_id": "401920532",
-    "home": "Maryland",
-    "away": "Oregon",
-    "kickoff": "2026-11-27T15:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 78.7,
-    "proj_away": 78.0,
-    "proj_margin": 0.8,
-    "proj_total": 156.7,
-    "home_win_prob": 0.528,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.098,
-    "home_em": 15.0,
-    "away_em": 15.4,
-    "home_t": 69.0,
-    "away_t": 69.0,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.625,
-     "b": 2.34
-    },
-    {
-     "book": "draftkings",
-     "a": 1.602,
-     "b": 2.4
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.602,
-     "b": 2.42
-    }
-   ],
-   "model_prob": 0.472,
-   "model_edge": 7.17,
-   "model_edge_txt": "+7.2%",
-   "cheat_side": "away",
-   "pinnacle_line": "Maryland -166 / Oregon +142",
-   "fair_prob": 0.3926,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.3926,
-    0.3983
-   ],
-   "devig_all": {
-    "multiplicative": 0.3983,
-    "additive": 0.3945,
-    "power": 0.3926
-   },
-   "ev_pct": -5.78,
-   "min_ev": 3.44,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.13,
-   "trusted_prob": 0.3974,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.03,
-   "pinn_dec": 2.42
-  },
-  {
    "kind": "spread",
    "week": "2026-11-27",
    "player": "Western KY @ Illinois",
@@ -4612,94 +4279,6 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 1.8
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "La Salle @ Bucknell",
-   "pkey": "401921417",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "La Salle -9.5",
-   "line": 9.5,
-   "side": "away",
-   "team": "La Salle",
-   "opp": "Bucknell",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/134760682089726",
-   "game_id": "401921417",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "home": "Bucknell",
-   "away": "La Salle",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401921417",
-    "home": "Bucknell",
-    "away": "La Salle",
-    "kickoff": "2026-11-27T15:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 65.5,
-    "proj_away": 81.7,
-    "proj_margin": -16.2,
-    "proj_total": 147.2,
-    "home_win_prob": 0.07,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -2.09,
-    "home_em": -15.7,
-    "away_em": -2.3,
-    "home_t": 68.1,
-    "away_t": 69.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "draftkings",
-     "a": 1.926,
-     "b": 1.893
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.943
-    }
-   ],
-   "model_prob": 0.729,
-   "model_edge": 6.7,
-   "model_edge_txt": "+6.7 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Bucknell +9.5 -110 / La Salle -9.5 -106",
-   "fair_prob": 0.4953,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4953,
-    0.4956
-   ],
-   "devig_all": {
-    "multiplicative": 0.4956,
-    "additive": 0.4954,
-    "power": 0.4953
-   },
-   "ev_pct": -5.44,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -5.99,
-   "trusted_prob": 0.501,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.73,
-   "pinn_dec": 1.943
   },
   {
    "kind": "spread",
@@ -5271,93 +4850,6 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 1.885
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Colgate @ Hofstra",
-   "pkey": "401920774",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Colgate Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Colgate",
-   "opp": "Hofstra",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/266117809048524",
-   "game_id": "401920774",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "home": "Hofstra",
-   "away": "Colgate",
-   "dec": 2.1,
-   "american": 110,
-   "game_model": {
-    "game_id": "401920774",
-    "home": "Hofstra",
-    "away": "Colgate",
-    "kickoff": "2026-11-27T15:30:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 68.0,
-    "proj_away": 68.3,
-    "proj_margin": -0.3,
-    "proj_total": 136.4,
-    "home_win_prob": 0.489,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.427,
-    "home_em": -2.2,
-    "away_em": -5.5,
-    "home_t": 66.1,
-    "away_t": 68.6,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.758,
-     "b": 2.1
-    },
-    {
-     "book": "draftkings",
-     "a": 1.8,
-     "b": 2.05
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.847,
-     "b": 2.01
-    }
-   ],
-   "model_prob": 0.511,
-   "model_edge": 5.53,
-   "model_edge_txt": "+5.5%",
-   "cheat_side": "away",
-   "pinnacle_line": "Hofstra -118 / Colgate +101",
-   "fair_prob": 0.4776,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4776,
-    0.4789
-   ],
-   "devig_all": {
-    "multiplicative": 0.4789,
-    "additive": 0.478,
-    "power": 0.4776
-   },
-   "ev_pct": 0.3,
-   "min_ev": 2.37,
-   "units": 0.05523984330931112,
-   "base_units": 0.05523984330931112,
-   "kelly_pct": 0.28,
-   "trusted_prob": 0.4773,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.26,
-   "pinn_dec": 2.01
   },
   {
    "kind": "ml",
@@ -6280,94 +5772,6 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
-   "player": "Oregon @ Maryland",
-   "pkey": "401920532",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Oregon +3.5",
-   "line": -3.5,
-   "side": "away",
-   "team": "Oregon",
-   "opp": "Maryland",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/15251182938941",
-   "game_id": "401920532",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "home": "Maryland",
-   "away": "Oregon",
-   "dec": 1.935,
-   "american": -107,
-   "game_model": {
-    "game_id": "401920532",
-    "home": "Maryland",
-    "away": "Oregon",
-    "kickoff": "2026-11-27T15:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 78.7,
-    "proj_away": 78.0,
-    "proj_margin": 0.8,
-    "proj_total": 156.7,
-    "home_win_prob": 0.528,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.098,
-    "home_em": 15.0,
-    "away_em": 15.4,
-    "home_t": 69.0,
-    "away_t": 69.0,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "draftkings",
-     "a": 1.885,
-     "b": 1.935
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.943
-    }
-   ],
-   "model_prob": 0.597,
-   "model_edge": 2.7,
-   "model_edge_txt": "+2.7 pts \u00b7 LEAN",
-   "cheat_side": "away",
-   "cbb_tier": "LEAN",
-   "pinnacle_line": "Maryland -3.5 -110 / Oregon +3.5 -106",
-   "fair_prob": 0.4953,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4953,
-    0.4956
-   ],
-   "devig_all": {
-    "multiplicative": 0.4956,
-    "additive": 0.4954,
-    "power": 0.4953
-   },
-   "ev_pct": -4.15,
-   "min_ev": 1.85,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.44,
-   "trusted_prob": 0.4996,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.25,
-   "pinn_dec": 1.943
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
    "player": "Lehigh @ Santa Barbara",
    "pkey": "401926756",
    "stat": "spread",
@@ -6447,94 +5851,6 @@
    "tier": "single",
    "second_ev": null,
    "pinn_dec": 1.909
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Colgate @ Hofstra",
-   "pkey": "401920774",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Colgate +1.5",
-   "line": -1.5,
-   "side": "away",
-   "team": "Colgate",
-   "opp": "Hofstra",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/17782857642964",
-   "game_id": "401920774",
-   "kickoff": "2026-11-27T15:30:00-05:00",
-   "home": "Hofstra",
-   "away": "Colgate",
-   "dec": 1.98,
-   "american": -102,
-   "game_model": {
-    "game_id": "401920774",
-    "home": "Hofstra",
-    "away": "Colgate",
-    "kickoff": "2026-11-27T15:30:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 68.0,
-    "proj_away": 68.3,
-    "proj_margin": -0.3,
-    "proj_total": 136.4,
-    "home_win_prob": 0.489,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.427,
-    "home_em": -2.2,
-    "away_em": -5.5,
-    "home_t": 66.1,
-    "away_t": 68.6,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    },
-    {
-     "book": "draftkings",
-     "a": 1.935,
-     "b": 1.885
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.943,
-     "b": 1.893
-    }
-   ],
-   "model_prob": 0.565,
-   "model_edge": 1.8,
-   "model_edge_txt": "+1.8 pts \u00b7 LEAN",
-   "cheat_side": "away",
-   "cbb_tier": "LEAN",
-   "pinnacle_line": "Hofstra -1.5 -106 / Colgate +1.5 -112",
-   "fair_prob": 0.5065,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5065,
-    0.5069
-   ],
-   "devig_all": {
-    "multiplicative": 0.5065,
-    "additive": 0.5068,
-    "power": 0.5069
-   },
-   "ev_pct": 0.29,
-   "min_ev": 1.99,
-   "units": 0.05926666808537727,
-   "base_units": 0.05926666808537727,
-   "kelly_pct": 0.3,
-   "trusted_prob": 0.5062,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "prime",
-   "second_ev": 0.3,
-   "pinn_dec": 1.893
   },
   {
    "kind": "spread",
@@ -6655,5 +5971,5 @@
   "ev": 0.75,
   "combined": 0.25
  },
- "odds_as_of": "2026-11-27T15:27:20-05:00"
+ "odds_as_of": "2026-11-27T15:39:02-05:00"
 }
