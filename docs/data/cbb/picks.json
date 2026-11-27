@@ -1,19 +1,15 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T14:01:26-05:00",
+ "generated_at": "2026-11-27T14:11:53-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
  "next_kickoff": "2026-11-27T14:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 224,
-  "book_unmatched": 5,
+  "book_game_lines": 227,
+  "book_unmatched": 1,
   "book_unmatched_games": [
-   "Maine @ Le Moyne",
-   "Navy @ Fairfield",
-   "South Alabama @ Fresno State",
-   "Southern University @ Vanderbilt",
    "UMBC @ GW Revolutionaries"
   ],
   "pinnacle_game_lines": 642,
@@ -1667,6 +1663,112 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
+   "player": "Drake @ Boise St",
+   "pkey": "401927366",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Drake +6.5",
+   "line": -6.5,
+   "side": "away",
+   "team": "Drake",
+   "opp": "Boise St",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/201320464619195",
+   "game_id": "401927366",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Boise St",
+   "away": "Drake",
+   "dec": 1.901,
+   "american": -111,
+   "game_model": {
+    "game_id": "401927366",
+    "home": "Boise St",
+    "away": "Drake",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 77.4,
+    "proj_margin": 1.6,
+    "proj_total": 156.4,
+    "home_win_prob": 0.557,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.203,
+    "home_em": 8.2,
+    "away_em": -0.8,
+    "home_t": 72.3,
+    "away_t": 68.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.917,
+     "b": 1.901
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.08,
+     "b": 1.781
+    }
+   ],
+   "model_prob": 0.672,
+   "model_edge": 4.9,
+   "model_edge_txt": "+4.9 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Boise St -6.5 108 / Drake +6.5 -128",
+   "fair_prob": 0.5387,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5387,
+    0.5412
+   ],
+   "devig_all": {
+    "multiplicative": 0.5387,
+    "additive": 0.5404,
+    "power": 0.5412
+   },
+   "ev_pct": 2.41,
+   "min_ev": 1.74,
+   "units": 0.25,
+   "base_units": 0.5351330545559152,
+   "kelly_pct": 2.68,
+   "trusted_prob": 0.5362,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.781,
+   "sizing": {
+    "base": 0.54,
+    "conf": 0.47,
+    "conf_why": [
+     "cheat sheet agrees",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 1,
+    "player_bets": 1,
+    "corr": 1.0,
+    "cap": 2.0,
+    "raw": 0.25
+   },
+   "lane": "cbb:spread",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 27,
+    "days": 1,
+    "ev_vs_close": -0.34,
+    "roi_pct": -43.9
+   },
+   "exp_profit_units": 0.006
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
    "player": "Princeton @ UNC Wilmington",
    "pkey": "401924738",
    "stat": "spread",
@@ -1765,10 +1867,116 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.27,
+    "ev_vs_close": -0.34,
     "roi_pct": -43.9
    },
    "exp_profit_units": 0.006
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Michigan @ Kansas St",
+   "pkey": "401920541",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Kansas St +10.5",
+   "line": 10.5,
+   "side": "home",
+   "team": "Kansas St",
+   "opp": "Michigan",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/270250214361187",
+   "game_id": "401920541",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Kansas St",
+   "away": "Michigan",
+   "dec": 1.877,
+   "american": -114,
+   "game_model": {
+    "game_id": "401920541",
+    "home": "Kansas St",
+    "away": "Michigan",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 81.1,
+    "proj_away": 84.2,
+    "proj_margin": -3.0,
+    "proj_total": 165.3,
+    "home_win_prob": 0.392,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.389,
+    "home_em": 7.8,
+    "away_em": 17.2,
+    "home_t": 71.6,
+    "away_t": 73.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.877,
+     "b": 1.943
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.758,
+     "b": 2.1
+    }
+   ],
+   "model_prob": 0.752,
+   "model_edge": 7.5,
+   "model_edge_txt": "+7.5 pts \u00b7 STRONG",
+   "cheat_side": "home",
+   "cbb_tier": "STRONG",
+   "pinnacle_line": "Kansas St +10.5 -132 / Michigan -10.5 110",
+   "fair_prob": 0.5443,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5443,
+    0.5473
+   ],
+   "devig_all": {
+    "multiplicative": 0.5443,
+    "additive": 0.5463,
+    "power": 0.5473
+   },
+   "ev_pct": 2.17,
+   "min_ev": 1.66,
+   "units": 0.25,
+   "base_units": 0.49475892472393546,
+   "kelly_pct": 2.47,
+   "trusted_prob": 0.542,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.758,
+   "sizing": {
+    "base": 0.49,
+    "conf": 0.47,
+    "conf_why": [
+     "cheat sheet agrees",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 1,
+    "player_bets": 1,
+    "corr": 1.0,
+    "cap": 2.0,
+    "raw": 0.23
+   },
+   "lane": "cbb:spread",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 27,
+    "days": 1,
+    "ev_vs_close": -0.34,
+    "roi_pct": -43.9
+   },
+   "exp_profit_units": 0.005
   }
  ],
  "ev": [
@@ -1858,7 +2066,7 @@
    "lane_info": {
     "graded": 21,
     "days": 1,
-    "ev_vs_close": 0.15,
+    "ev_vs_close": 0.18,
     "roi_pct": 5.1
    },
    "sizing": {
@@ -1876,6 +2084,112 @@
     "raw": 0.1
    },
    "exp_profit_units": 0.007
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Drake @ Boise St",
+   "pkey": "401927366",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Drake +6.5",
+   "line": -6.5,
+   "side": "away",
+   "team": "Drake",
+   "opp": "Boise St",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/201320464619195",
+   "game_id": "401927366",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Boise St",
+   "away": "Drake",
+   "dec": 1.901,
+   "american": -111,
+   "game_model": {
+    "game_id": "401927366",
+    "home": "Boise St",
+    "away": "Drake",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 77.4,
+    "proj_margin": 1.6,
+    "proj_total": 156.4,
+    "home_win_prob": 0.557,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.203,
+    "home_em": 8.2,
+    "away_em": -0.8,
+    "home_t": 72.3,
+    "away_t": 68.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.917,
+     "b": 1.901
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.08,
+     "b": 1.781
+    }
+   ],
+   "model_prob": 0.672,
+   "model_edge": 4.9,
+   "model_edge_txt": "+4.9 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Boise St -6.5 108 / Drake +6.5 -128",
+   "fair_prob": 0.5387,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5387,
+    0.5412
+   ],
+   "devig_all": {
+    "multiplicative": 0.5387,
+    "additive": 0.5404,
+    "power": 0.5412
+   },
+   "ev_pct": 2.41,
+   "min_ev": 1.74,
+   "units": 0.25,
+   "base_units": 0.5351330545559152,
+   "kelly_pct": 2.68,
+   "trusted_prob": 0.5362,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.781,
+   "lane": "cbb:spread",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 27,
+    "days": 1,
+    "ev_vs_close": -0.34,
+    "roi_pct": -43.9
+   },
+   "sizing": {
+    "base": 0.54,
+    "conf": 0.47,
+    "conf_why": [
+     "cheat sheet agrees",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 1,
+    "player_bets": 1,
+    "corr": 1.0,
+    "cap": 2.0,
+    "raw": 0.25
+   },
+   "exp_profit_units": 0.006
   },
   {
    "kind": "spread",
@@ -1964,7 +2278,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.27,
+    "ev_vs_close": -0.34,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -1982,6 +2296,112 @@
     "raw": 0.26
    },
    "exp_profit_units": 0.006
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Michigan @ Kansas St",
+   "pkey": "401920541",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Kansas St +10.5",
+   "line": 10.5,
+   "side": "home",
+   "team": "Kansas St",
+   "opp": "Michigan",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/270250214361187",
+   "game_id": "401920541",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Kansas St",
+   "away": "Michigan",
+   "dec": 1.877,
+   "american": -114,
+   "game_model": {
+    "game_id": "401920541",
+    "home": "Kansas St",
+    "away": "Michigan",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 81.1,
+    "proj_away": 84.2,
+    "proj_margin": -3.0,
+    "proj_total": 165.3,
+    "home_win_prob": 0.392,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.389,
+    "home_em": 7.8,
+    "away_em": 17.2,
+    "home_t": 71.6,
+    "away_t": 73.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.877,
+     "b": 1.943
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.758,
+     "b": 2.1
+    }
+   ],
+   "model_prob": 0.752,
+   "model_edge": 7.5,
+   "model_edge_txt": "+7.5 pts \u00b7 STRONG",
+   "cheat_side": "home",
+   "cbb_tier": "STRONG",
+   "pinnacle_line": "Kansas St +10.5 -132 / Michigan -10.5 110",
+   "fair_prob": 0.5443,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5443,
+    0.5473
+   ],
+   "devig_all": {
+    "multiplicative": 0.5443,
+    "additive": 0.5463,
+    "power": 0.5473
+   },
+   "ev_pct": 2.17,
+   "min_ev": 1.66,
+   "units": 0.25,
+   "base_units": 0.49475892472393546,
+   "kelly_pct": 2.47,
+   "trusted_prob": 0.542,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.758,
+   "lane": "cbb:spread",
+   "lane_status": "testing",
+   "lane_info": {
+    "graded": 27,
+    "days": 1,
+    "ev_vs_close": -0.34,
+    "roi_pct": -43.9
+   },
+   "sizing": {
+    "base": 0.49,
+    "conf": 0.47,
+    "conf_why": [
+     "cheat sheet agrees",
+     "one sharp source only",
+     "lane still testing"
+    ],
+    "game_bets": 1,
+    "player_bets": 1,
+    "corr": 1.0,
+    "cap": 2.0,
+    "raw": 0.23
+   },
+   "exp_profit_units": 0.005
   },
   {
    "kind": "spread",
@@ -2070,7 +2490,7 @@
    "lane_info": {
     "graded": 27,
     "days": 1,
-    "ev_vs_close": -0.27,
+    "ev_vs_close": -0.34,
     "roi_pct": -43.9
    },
    "sizing": {
@@ -2587,6 +3007,93 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
+   "player": "Michigan @ Kansas St",
+   "pkey": "401920541",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Kansas St Moneyline",
+   "line": null,
+   "side": "home",
+   "team": "Kansas St",
+   "opp": "Michigan",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118202410246659",
+   "game_id": "401920541",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Kansas St",
+   "away": "Michigan",
+   "dec": 5.3,
+   "american": 430,
+   "game_model": {
+    "game_id": "401920541",
+    "home": "Kansas St",
+    "away": "Michigan",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 81.1,
+    "proj_away": 84.2,
+    "proj_margin": -3.0,
+    "proj_total": 165.3,
+    "home_win_prob": 0.392,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.389,
+    "home_em": 7.8,
+    "away_em": 17.2,
+    "home_t": 71.6,
+    "away_t": 73.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 4.6,
+     "b": 1.213
+    },
+    {
+     "book": "fanduel",
+     "a": 5.3,
+     "b": 1.172
+    },
+    {
+     "book": "pinnacle",
+     "a": 4.55,
+     "b": 1.221
+    }
+   ],
+   "model_prob": 0.392,
+   "model_edge": 21.09,
+   "model_edge_txt": "+21.1%",
+   "cheat_side": "home",
+   "pinnacle_line": "Kansas St +355 / Michigan -452",
+   "fair_prob": 0.1942,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.1942,
+    0.2116
+   ],
+   "devig_all": {
+    "multiplicative": 0.2116,
+    "additive": 0.2004,
+    "power": 0.1942
+   },
+   "ev_pct": 2.94,
+   "min_ev": 8.3,
+   "units": 0.05473220734895219,
+   "base_units": 0.05473220734895219,
+   "kelly_pct": 0.68,
+   "trusted_prob": 0.1931,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "prime",
+   "second_ev": 0.54,
+   "pinn_dec": 4.55
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-27",
    "player": "Missouri St @ Oral Roberts",
    "pkey": "401928624",
    "stat": "ml",
@@ -2670,93 +3177,6 @@
    "tier": "single",
    "second_ev": -3.16,
    "pinn_dec": 2.67
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Michigan @ Kansas St",
-   "pkey": "401920541",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Kansas St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "Kansas St",
-   "opp": "Michigan",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118202410246659",
-   "game_id": "401920541",
-   "kickoff": "2026-11-27T17:30:00-05:00",
-   "home": "Kansas St",
-   "away": "Michigan",
-   "dec": 4.75,
-   "american": 375,
-   "game_model": {
-    "game_id": "401920541",
-    "home": "Kansas St",
-    "away": "Michigan",
-    "kickoff": "2026-11-27T17:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 81.1,
-    "proj_away": 84.2,
-    "proj_margin": -3.0,
-    "proj_total": 165.3,
-    "home_win_prob": 0.392,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.389,
-    "home_em": 7.8,
-    "away_em": 17.2,
-    "home_t": 71.6,
-    "away_t": 73.2,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 4.4,
-     "b": 1.227
-    },
-    {
-     "book": "fanduel",
-     "a": 4.75,
-     "b": 1.204
-    },
-    {
-     "book": "pinnacle",
-     "a": 4.55,
-     "b": 1.221
-    }
-   ],
-   "model_prob": 0.392,
-   "model_edge": 18.98,
-   "model_edge_txt": "+19.0%",
-   "cheat_side": "home",
-   "pinnacle_line": "Kansas St +355 / Michigan -452",
-   "fair_prob": 0.1942,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.1942,
-    0.2116
-   ],
-   "devig_all": {
-    "multiplicative": 0.2116,
-    "additive": 0.2004,
-    "power": 0.1942
-   },
-   "ev_pct": -7.74,
-   "min_ev": 7.75,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.06,
-   "trusted_prob": 0.1975,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -5.23,
-   "pinn_dec": 4.55
   },
   {
    "kind": "ml",
@@ -3515,6 +3935,93 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
+   "player": "Drake @ Boise St",
+   "pkey": "401927366",
+   "stat": "ml",
+   "stat_label": "Moneyline",
+   "title": "Drake Moneyline",
+   "line": null,
+   "side": "away",
+   "team": "Drake",
+   "opp": "Boise St",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/151661089095996",
+   "game_id": "401927366",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Boise St",
+   "away": "Drake",
+   "dec": 3.1,
+   "american": 210,
+   "game_model": {
+    "game_id": "401927366",
+    "home": "Boise St",
+    "away": "Drake",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 77.4,
+    "proj_margin": 1.6,
+    "proj_total": 156.4,
+    "home_win_prob": 0.557,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.203,
+    "home_em": 8.2,
+    "away_em": -0.8,
+    "home_t": 72.3,
+    "away_t": 68.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.388,
+     "b": 3.1
+    },
+    {
+     "book": "fanduel",
+     "a": 1.417,
+     "b": 2.95
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.42,
+     "b": 2.99
+    }
+   ],
+   "model_prob": 0.443,
+   "model_edge": 13.37,
+   "model_edge_txt": "+13.4%",
+   "cheat_side": "away",
+   "pinnacle_line": "Boise St -238 / Drake +199",
+   "fair_prob": 0.3116,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.3116,
+    0.322
+   ],
+   "devig_all": {
+    "multiplicative": 0.322,
+    "additive": 0.3151,
+    "power": 0.3116
+   },
+   "ev_pct": -3.41,
+   "min_ev": 5.7,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -1.63,
+   "trusted_prob": 0.3138,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": -3.12,
+   "pinn_dec": 2.99
+  },
+  {
+   "kind": "ml",
+   "week": "2026-11-27",
    "player": "West Virginia @ North Carolina",
    "pkey": "401912711",
    "stat": "ml",
@@ -3598,88 +4105,6 @@
    "tier": "single",
    "second_ev": -3.84,
    "pinn_dec": 2.41
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Drake @ Boise St",
-   "pkey": "401927366",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Drake Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Drake",
-   "opp": "Boise St",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/151661089095996",
-   "game_id": "401927366",
-   "kickoff": "2026-11-27T17:30:00-05:00",
-   "home": "Boise St",
-   "away": "Drake",
-   "dec": 3.0,
-   "american": 200,
-   "game_model": {
-    "game_id": "401927366",
-    "home": "Boise St",
-    "away": "Drake",
-    "kickoff": "2026-11-27T17:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 79.0,
-    "proj_away": 77.4,
-    "proj_margin": 1.6,
-    "proj_total": 156.4,
-    "home_win_prob": 0.557,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.203,
-    "home_em": 8.2,
-    "away_em": -0.8,
-    "home_t": 72.3,
-    "away_t": 68.2,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.408,
-     "b": 3.0
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.42,
-     "b": 2.99
-    }
-   ],
-   "model_prob": 0.443,
-   "model_edge": 12.36,
-   "model_edge_txt": "+12.4%",
-   "cheat_side": "away",
-   "pinnacle_line": "Boise St -238 / Drake +199",
-   "fair_prob": 0.3116,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.3116,
-    0.322
-   ],
-   "devig_all": {
-    "multiplicative": 0.322,
-    "additive": 0.3151,
-    "power": 0.3116
-   },
-   "ev_pct": -6.53,
-   "min_ev": 5.5,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.26,
-   "trusted_prob": 0.3159,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 2.99
   },
   {
    "kind": "ml",
@@ -4640,14 +5065,14 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.282,
-     "b": 3.8
-    },
-    {
      "book": "fanduel",
      "a": 1.29,
      "b": 3.75
+    },
+    {
+     "book": "draftkings",
+     "a": 1.282,
+     "b": 3.8
     },
     {
      "book": "pinnacle",
@@ -4939,6 +5364,89 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
+   "player": "Michigan @ Kansas St",
+   "pkey": "401920541",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Kansas St +10.5",
+   "line": 10.5,
+   "side": "home",
+   "team": "Kansas St",
+   "opp": "Michigan",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/270250214361187",
+   "game_id": "401920541",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Kansas St",
+   "away": "Michigan",
+   "dec": 1.877,
+   "american": -114,
+   "game_model": {
+    "game_id": "401920541",
+    "home": "Kansas St",
+    "away": "Michigan",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 81.1,
+    "proj_away": 84.2,
+    "proj_margin": -3.0,
+    "proj_total": 165.3,
+    "home_win_prob": 0.392,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -0.389,
+    "home_em": 7.8,
+    "away_em": 17.2,
+    "home_t": 71.6,
+    "away_t": 73.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.877,
+     "b": 1.943
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.758,
+     "b": 2.1
+    }
+   ],
+   "model_prob": 0.752,
+   "model_edge": 7.5,
+   "model_edge_txt": "+7.5 pts \u00b7 STRONG",
+   "cheat_side": "home",
+   "cbb_tier": "STRONG",
+   "pinnacle_line": "Kansas St +10.5 -132 / Michigan -10.5 110",
+   "fair_prob": 0.5443,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5443,
+    0.5473
+   ],
+   "devig_all": {
+    "multiplicative": 0.5443,
+    "additive": 0.5463,
+    "power": 0.5473
+   },
+   "ev_pct": 2.17,
+   "min_ev": 1.66,
+   "units": 0.49475892472393546,
+   "base_units": 0.49475892472393546,
+   "kelly_pct": 2.47,
+   "trusted_prob": 0.542,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.758
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
    "player": "Cincinnati @ Boston College",
    "pkey": "401929283",
    "stat": "spread",
@@ -5197,94 +5705,6 @@
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -3.73,
-   "pinn_dec": 1.935
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Michigan @ Kansas St",
-   "pkey": "401920541",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Kansas St +9.5",
-   "line": 9.5,
-   "side": "home",
-   "team": "Kansas St",
-   "opp": "Michigan",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/139062409024904",
-   "game_id": "401920541",
-   "kickoff": "2026-11-27T17:30:00-05:00",
-   "home": "Kansas St",
-   "away": "Michigan",
-   "dec": 1.935,
-   "american": -107,
-   "game_model": {
-    "game_id": "401920541",
-    "home": "Kansas St",
-    "away": "Michigan",
-    "kickoff": "2026-11-27T17:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 81.1,
-    "proj_away": 84.2,
-    "proj_margin": -3.0,
-    "proj_total": 165.3,
-    "home_win_prob": 0.392,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.389,
-    "home_em": 7.8,
-    "away_em": 17.2,
-    "home_t": 71.6,
-    "away_t": 73.2,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.935,
-     "b": 1.885
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.935,
-     "b": 1.917
-    }
-   ],
-   "model_prob": 0.723,
-   "model_edge": 6.5,
-   "model_edge_txt": "+6.5 pts \u00b7 STRONG",
-   "cheat_side": "home",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Kansas St +9.5 -107 / Michigan -9.5 -109",
-   "fair_prob": 0.4975,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4975,
-    0.4977
-   ],
-   "devig_all": {
-    "multiplicative": 0.4977,
-    "additive": 0.4976,
-    "power": 0.4975
-   },
-   "ev_pct": -3.73,
-   "min_ev": 1.85,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.99,
-   "trusted_prob": 0.5014,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.25,
    "pinn_dec": 1.935
   },
   {
@@ -5616,8 +6036,8 @@
    "side": "over",
    "team": null,
    "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/106178360208852",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/113182367565881",
    "game_id": "401921717",
    "kickoff": "2026-11-27T14:30:00-05:00",
    "home": "UCLA",
@@ -5647,12 +6067,12 @@
    },
    "books": [
     {
-     "book": "draftkings",
+     "book": "fanduel",
      "a": 1.909,
      "b": 1.909
     },
     {
-     "book": "fanduel",
+     "book": "draftkings",
      "a": 1.909,
      "b": 1.909
     },
@@ -5950,88 +6370,6 @@
    "pinn_dec": 2.05
   },
   {
-   "kind": "total",
-   "week": "2026-11-27",
-   "player": "Radford @ American",
-   "pkey": "401912213",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 141.5",
-   "line": 141.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/266632030007115",
-   "game_id": "401912213",
-   "kickoff": "2026-11-27T16:00:00-05:00",
-   "home": "American",
-   "away": "Radford",
-   "dec": 1.885,
-   "american": -113,
-   "game_model": {
-    "game_id": "401912213",
-    "home": "American",
-    "away": "Radford",
-    "kickoff": "2026-11-27T16:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 76.8,
-    "proj_away": 70.2,
-    "proj_margin": 6.6,
-    "proj_total": 147.0,
-    "home_win_prob": 0.727,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.47,
-    "home_em": -0.7,
-    "away_em": -7.2,
-    "home_t": 67.5,
-    "away_t": 69.6,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.885,
-     "b": 1.935
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.82,
-     "b": 1.99
-    }
-   ],
-   "model_prob": 0.643,
-   "model_edge": 5.5,
-   "model_edge_txt": "+5.5 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "141.5 o-122/u-101",
-   "fair_prob": 0.5223,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5223,
-    0.5241
-   ],
-   "devig_all": {
-    "multiplicative": 0.5223,
-    "additive": 0.5235,
-    "power": 0.5241
-   },
-   "ev_pct": -1.54,
-   "min_ev": 1.69,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -1.75,
-   "trusted_prob": 0.5239,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.82
-  },
-  {
    "kind": "spread",
    "week": "2026-11-27",
    "player": "Miami @ Alabama",
@@ -6268,6 +6606,89 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
+   "player": "Drake @ Boise St",
+   "pkey": "401927366",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Drake +6.5",
+   "line": -6.5,
+   "side": "away",
+   "team": "Drake",
+   "opp": "Boise St",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/201320464619195",
+   "game_id": "401927366",
+   "kickoff": "2026-11-27T17:30:00-05:00",
+   "home": "Boise St",
+   "away": "Drake",
+   "dec": 1.901,
+   "american": -111,
+   "game_model": {
+    "game_id": "401927366",
+    "home": "Boise St",
+    "away": "Drake",
+    "kickoff": "2026-11-27T17:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 79.0,
+    "proj_away": 77.4,
+    "proj_margin": 1.6,
+    "proj_total": 156.4,
+    "home_win_prob": 0.557,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": 0.203,
+    "home_em": 8.2,
+    "away_em": -0.8,
+    "home_t": 72.3,
+    "away_t": 68.2,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "draftkings",
+     "a": 1.917,
+     "b": 1.901
+    },
+    {
+     "book": "pinnacle",
+     "a": 2.08,
+     "b": 1.781
+    }
+   ],
+   "model_prob": 0.672,
+   "model_edge": 4.9,
+   "model_edge_txt": "+4.9 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Boise St -6.5 108 / Drake +6.5 -128",
+   "fair_prob": 0.5387,
+   "fair_method": "multiplicative",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.5387,
+    0.5412
+   ],
+   "devig_all": {
+    "multiplicative": 0.5387,
+    "additive": 0.5404,
+    "power": 0.5412
+   },
+   "ev_pct": 2.41,
+   "min_ev": 1.74,
+   "units": 0.5351330545559152,
+   "base_units": 0.5351330545559152,
+   "kelly_pct": 2.68,
+   "trusted_prob": 0.5362,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 1.781
+  },
+  {
+   "kind": "spread",
+   "week": "2026-11-27",
    "player": "Pacific @ UC Davis",
    "pkey": "401911524",
    "stat": "spread",
@@ -6453,8 +6874,8 @@
    "side": "home",
    "team": "North Carolina",
    "opp": "West Virginia",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/69624788965805",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/17242189753579",
    "game_id": "401912711",
    "kickoff": "2026-11-27T19:00:00-05:00",
    "home": "North Carolina",
@@ -6483,11 +6904,6 @@
     "league_avg": 108.2
    },
    "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
     {
      "book": "fanduel",
      "a": 1.909,
@@ -6526,7 +6942,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.55,
+   "second_ev": null,
    "pinn_dec": 1.917
   },
   {
@@ -6919,14 +7335,14 @@
    },
    "books": [
     {
-     "book": "draftkings",
-     "a": 1.87,
-     "b": 1.943
-    },
-    {
      "book": "fanduel",
      "a": 1.833,
      "b": 1.98
+    },
+    {
+     "book": "draftkings",
+     "a": 1.87,
+     "b": 1.943
     },
     {
      "book": "pinnacle",
@@ -7691,8 +8107,8 @@
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.75,
-  "combined": 0.25
+  "ev": 1.25,
+  "combined": 0.75
  },
- "odds_as_of": "2026-11-27T14:01:26-05:00"
+ "odds_as_of": "2026-11-27T14:11:53-05:00"
 }
