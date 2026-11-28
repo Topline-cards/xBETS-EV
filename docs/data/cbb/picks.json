@@ -1,6 +1,6 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T23:12:12-05:00",
+ "generated_at": "2026-11-27T23:22:46-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
@@ -8,7 +8,7 @@
  "status": {
   "odds_checked": true,
   "book_game_lines": 6,
-  "book_unmatched": 76,
+  "book_unmatched": 75,
   "book_unmatched_games": [
    "Alcorn @ Georgia Tech",
    "Alcorn State @ Georgia Tech",
@@ -24,16 +24,16 @@
    "Chicago State @ Bradley",
    "Citadel @ High Point",
    "Colgate @ Vermont",
-   "Creighton @ Gonzaga",
    "Delaware @ Stony Brook",
    "Delaware State @ North Carolina A&T",
    "Denver @ New Mexico State",
    "Drake @ North Dakota State",
-   "Drexel @ Mount Saint Marys"
+   "Drexel @ Mount Saint Marys",
+   "Drexel @ Mt. St. Mary's"
   ],
-  "pinnacle_game_lines": 19,
-  "pinnacle_unmatched": 1,
-  "pinnacle_as_of": "2026-11-27T23:00:39-05:00"
+  "pinnacle_game_lines": 0,
+  "pinnacle_unmatched": 17,
+  "pinnacle_as_of": "2026-11-27T23:22:46-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -607,8 +607,8 @@
    "kickoff": "2026-11-27T23:30:00-05:00",
    "home": "San Diego St",
    "away": "Texas Tech",
-   "dec": 4.1,
-   "american": 310,
+   "dec": 4.3,
+   "american": 330,
    "game_model": {
     "game_id": "401920535",
     "home": "San Diego St",
@@ -633,48 +633,19 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 4.1,
-     "b": 1.253
+     "a": 4.3,
+     "b": 1.235
     },
     {
      "book": "fanduel",
      "a": 3.9,
      "b": 1.267
-    },
-    {
-     "book": "pinnacle",
-     "a": 4.1,
-     "b": 1.259
     }
    ],
    "model_prob": 0.346,
-   "model_edge": 11.19,
-   "model_edge_txt": "+11.2%",
-   "cheat_side": "home",
-   "pinnacle_line": "San Diego St +310 / Texas Tech -386",
-   "fair_prob": 0.2194,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.2194,
-    0.2349
-   ],
-   "devig_all": {
-    "multiplicative": 0.2349,
-    "additive": 0.2248,
-    "power": 0.2194
-   },
-   "ev_pct": -10.06,
-   "min_ev": 7.1,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.25,
-   "trusted_prob": 0.2243,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -6.86,
-   "pinn_dec": 4.1
+   "model_edge": 12.29,
+   "model_edge_txt": "+12.3%",
+   "cheat_side": "home"
   },
   {
    "kind": "spread",
@@ -683,19 +654,19 @@
    "pkey": "401920535",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "San Diego St +8.5",
-   "line": 8.5,
+   "title": "San Diego St +9.5",
+   "line": 9.5,
    "side": "home",
    "team": "San Diego St",
    "opp": "Texas Tech",
    "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/163522671428723",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/134505605683166",
    "game_id": "401920535",
    "kickoff": "2026-11-27T23:30:00-05:00",
    "home": "San Diego St",
    "away": "Texas Tech",
-   "dec": 1.952,
-   "american": -105,
+   "dec": 1.901,
+   "american": -111,
    "game_model": {
     "game_id": "401920535",
     "home": "San Diego St",
@@ -720,49 +691,15 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.952,
-     "b": 1.87
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.962,
-     "b": 1.893
+     "a": 1.901,
+     "b": 1.917
     }
    ],
-   "model_prob": 0.645,
-   "model_edge": 4.1,
-   "model_edge_txt": "+4.1 pts \u00b7 GOOD",
+   "model_prob": 0.679,
+   "model_edge": 5.1,
+   "model_edge_txt": "+5.1 pts \u00b7 GOOD",
    "cheat_side": "home",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "San Diego St +8.5 -104 / Texas Tech -8.5 -112",
-   "fair_prob": 0.4905,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4905,
-    0.4911
-   ],
-   "devig_all": {
-    "multiplicative": 0.4911,
-    "additive": 0.4907,
-    "power": 0.4905
-   },
-   "ev_pct": -4.25,
-   "min_ev": 1.9,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.46,
-   "trusted_prob": 0.4949,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.4,
-   "pinn_dec": 1.962
+   "cbb_tier": "GOOD"
   }
  ],
  "matchups": [],
@@ -770,5 +707,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-27T23:12:12-05:00"
+ "odds_as_of": "2026-11-27T23:22:46-05:00"
 }
