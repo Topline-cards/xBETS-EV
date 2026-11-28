@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T20:29:47-05:00",
+ "generated_at": "2026-11-27T20:41:05-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T20:30:00-05:00",
+ "next_kickoff": "2026-11-27T21:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 36,
+  "book_game_lines": 30,
   "book_unmatched": 69,
   "book_unmatched_games": [
    "Alcorn @ Georgia Tech",
@@ -31,8 +31,8 @@
    "Fordham @ Harvard",
    "Georgia Southern @ UNC Asheville"
   ],
-  "pinnacle_game_lines": 114,
-  "pinnacle_unmatched": 0,
+  "pinnacle_game_lines": 95,
+  "pinnacle_unmatched": 1,
   "pinnacle_as_of": "2026-11-27T20:29:47-05:00"
  },
  "settings": {
@@ -558,11 +558,6 @@
  },
  "games": [
   {
-   "game_id": "401920543",
-   "label": "Miami @ Alabama",
-   "kickoff": "2026-11-27T20:30:00-05:00"
-  },
-  {
    "game_id": "401919033",
    "label": "Wichita St @ Kentucky",
    "kickoff": "2026-11-27T21:00:00-05:00"
@@ -589,27 +584,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401920543",
-   "home": "Alabama",
-   "away": "Miami",
-   "kickoff": "2026-11-27T20:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 80.8,
-   "proj_away": 88.8,
-   "proj_margin": -8.0,
-   "proj_total": 169.7,
-   "home_win_prob": 0.233,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -1.031,
-   "home_em": 20.8,
-   "away_em": 23.2,
-   "home_t": 74.0,
-   "away_t": 71.9,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401919033",
    "home": "Kentucky",
@@ -809,93 +783,6 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
-   "player": "Miami @ Alabama",
-   "pkey": "401920543",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Miami Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Miami",
-   "opp": "Alabama",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/181125745237393",
-   "game_id": "401920543",
-   "kickoff": "2026-11-27T20:30:00-05:00",
-   "home": "Alabama",
-   "away": "Miami",
-   "dec": 1.769,
-   "american": -130,
-   "game_model": {
-    "game_id": "401920543",
-    "home": "Alabama",
-    "away": "Miami",
-    "kickoff": "2026-11-27T20:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 80.8,
-    "proj_away": 88.8,
-    "proj_margin": -8.0,
-    "proj_total": 169.7,
-    "home_win_prob": 0.233,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.031,
-    "home_em": 20.8,
-    "away_em": 23.2,
-    "home_t": 74.0,
-    "away_t": 71.9,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 2.08,
-     "b": 1.769
-    },
-    {
-     "book": "draftkings",
-     "a": 2.1,
-     "b": 1.769
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.14,
-     "b": 1.794
-    }
-   ],
-   "model_prob": 0.767,
-   "model_edge": 22.66,
-   "model_edge_txt": "+22.7%",
-   "cheat_side": "away",
-   "pinnacle_line": "Alabama +114 / Miami -126",
-   "fair_prob": 0.544,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.544,
-    0.5456
-   ],
-   "devig_all": {
-    "multiplicative": 0.544,
-    "additive": 0.5451,
-    "power": 0.5456
-   },
-   "ev_pct": -3.77,
-   "min_ev": 1.32,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.9,
-   "trusted_prob": 0.5482,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.98,
-   "pinn_dec": 1.794
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
    "player": "Tennessee @ Louisville",
    "pkey": "401920534",
    "stat": "ml",
@@ -911,8 +798,8 @@
    "kickoff": "2026-11-27T21:00:00-05:00",
    "home": "Louisville",
    "away": "Tennessee",
-   "dec": 2.42,
-   "american": 142,
+   "dec": 2.4,
+   "american": 140,
    "game_model": {
     "game_id": "401920534",
     "home": "Louisville",
@@ -937,8 +824,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.588,
-     "b": 2.42
+     "a": 1.602,
+     "b": 2.4
     },
     {
      "book": "fanduel",
@@ -952,8 +839,8 @@
     }
    ],
    "model_prob": 0.589,
-   "model_edge": 19.28,
-   "model_edge_txt": "+19.3%",
+   "model_edge": 18.87,
+   "model_edge_txt": "+18.9%",
    "cheat_side": "away",
    "pinnacle_line": "Louisville -171 / Tennessee +154",
    "fair_prob": 0.38,
@@ -968,16 +855,16 @@
     "additive": 0.3814,
     "power": 0.38
    },
-   "ev_pct": -8.04,
-   "min_ev": 3.53,
+   "ev_pct": -8.8,
+   "min_ev": 3.44,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -5.66,
-   "trusted_prob": 0.3867,
+   "kelly_pct": -6.28,
+   "trusted_prob": 0.3873,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -2.23,
+   "second_ev": -3.03,
    "pinn_dec": 2.54
   },
   {
@@ -1249,19 +1136,19 @@
    "pkey": "401920534",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "Tennessee +4.5",
-   "line": -4.5,
+   "title": "Tennessee +3.5",
+   "line": -3.5,
    "side": "away",
    "team": "Tennessee",
    "opp": "Louisville",
    "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/129468109996964",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/209662664452713",
    "game_id": "401920534",
    "kickoff": "2026-11-27T21:00:00-05:00",
    "home": "Louisville",
    "away": "Tennessee",
-   "dec": 1.877,
-   "american": -114,
+   "dec": 1.935,
+   "american": -107,
    "game_model": {
     "game_id": "401920534",
     "home": "Louisville",
@@ -1286,127 +1173,49 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.943,
-     "b": 1.877
+     "a": 1.885,
+     "b": 1.935
+    },
+    {
+     "book": "fanduel",
+     "a": 1.909,
+     "b": 1.909
     },
     {
      "book": "pinnacle",
-     "a": 2.06,
-     "b": 1.826
+     "a": 1.855,
+     "b": 2.02
     }
    ],
-   "model_prob": 0.738,
-   "model_edge": 7.0,
-   "model_edge_txt": "+7.0 pts \u00b7 STRONG",
+   "model_prob": 0.707,
+   "model_edge": 6.0,
+   "model_edge_txt": "+6.0 pts \u00b7 STRONG",
    "cheat_side": "away",
    "cbb_tier": "STRONG",
-   "pinnacle_line": "Louisville -4.5 106 / Tennessee +4.5 -121",
-   "fair_prob": 0.5301,
-   "fair_method": "multiplicative",
+   "pinnacle_line": "Louisville -3.5 -117 / Tennessee +3.5 102",
+   "fair_prob": 0.4776,
+   "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.5301,
-    0.5316
+    0.4776,
+    0.4787
    ],
    "devig_all": {
-    "multiplicative": 0.5301,
-    "additive": 0.5311,
-    "power": 0.5316
+    "multiplicative": 0.4787,
+    "additive": 0.478,
+    "power": 0.4776
    },
-   "ev_pct": -0.5,
-   "min_ev": 1.66,
+   "ev_pct": -7.58,
+   "min_ev": 1.85,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -0.57,
-   "trusted_prob": 0.5306,
+   "kelly_pct": -8.11,
+   "trusted_prob": 0.4855,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.826
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Miami @ Alabama",
-   "pkey": "401920543",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Miami -1.5",
-   "line": 1.5,
-   "side": "away",
-   "team": "Miami",
-   "opp": "Alabama",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/197609958418137",
-   "game_id": "401920543",
-   "kickoff": "2026-11-27T20:30:00-05:00",
-   "home": "Alabama",
-   "away": "Miami",
-   "dec": 1.855,
-   "american": -117,
-   "game_model": {
-    "game_id": "401920543",
-    "home": "Alabama",
-    "away": "Miami",
-    "kickoff": "2026-11-27T20:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 80.8,
-    "proj_away": 88.8,
-    "proj_margin": -8.0,
-    "proj_total": 169.7,
-    "home_win_prob": 0.233,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.031,
-    "home_em": 20.8,
-    "away_em": 23.2,
-    "home_t": 74.0,
-    "away_t": 71.9,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.971,
-     "b": 1.855
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.04,
-     "b": 1.84
-    }
-   ],
-   "model_prob": 0.723,
-   "model_edge": 6.5,
-   "model_edge_txt": "+6.5 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Alabama +1.5 104 / Miami -1.5 -119",
-   "fair_prob": 0.5258,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5258,
-    0.5271
-   ],
-   "devig_all": {
-    "multiplicative": 0.5258,
-    "additive": 0.5266,
-    "power": 0.5271
-   },
-   "ev_pct": -2.47,
-   "min_ev": 1.59,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.89,
-   "trusted_prob": 0.5284,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.84
+   "second_ev": -3.25,
+   "pinn_dec": 2.02
   },
   {
    "kind": "ml",
@@ -1672,5 +1481,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-27T20:29:47-05:00"
+ "odds_as_of": "2026-11-27T20:41:05-05:00"
 }
