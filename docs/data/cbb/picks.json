@@ -1,14 +1,14 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T19:21:32-05:00",
+ "generated_at": "2026-11-27T19:33:07-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T19:30:00-05:00",
+ "next_kickoff": "2026-11-27T20:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 74,
-  "book_unmatched": 61,
+  "book_game_lines": 63,
+  "book_unmatched": 65,
   "book_unmatched_games": [
    "Alcorn @ Georgia Tech",
    "Austin Peay @ Furman",
@@ -31,8 +31,8 @@
    "Georgia Southern @ UNC Asheville",
    "Hampton @ Radford"
   ],
-  "pinnacle_game_lines": 238,
-  "pinnacle_unmatched": 0,
+  "pinnacle_game_lines": 209,
+  "pinnacle_unmatched": 2,
   "pinnacle_as_of": "2026-11-27T19:21:32-05:00"
  },
  "settings": {
@@ -558,16 +558,6 @@
  },
  "games": [
   {
-   "game_id": "401925703",
-   "label": "Oakland @ Houston",
-   "kickoff": "2026-11-27T19:30:00-05:00"
-  },
-  {
-   "game_id": "401929289",
-   "label": "Penn State @ Mississippi St",
-   "kickoff": "2026-11-27T19:30:00-05:00"
-  },
-  {
    "game_id": "401911524",
    "label": "Pacific @ UC Davis",
    "kickoff": "2026-11-27T20:00:00-05:00"
@@ -629,48 +619,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401925703",
-   "home": "Houston",
-   "away": "Oakland",
-   "kickoff": "2026-11-27T19:30:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 92.4,
-   "proj_away": 58.9,
-   "proj_margin": 33.4,
-   "proj_total": 151.3,
-   "home_win_prob": 0.999,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 3.919,
-   "home_em": 32.8,
-   "away_em": -7.5,
-   "home_t": 67.8,
-   "away_t": 68.0,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401929289",
-   "home": "Mississippi St",
-   "away": "Penn State",
-   "kickoff": "2026-11-27T19:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 79.0,
-   "proj_away": 78.5,
-   "proj_margin": 0.5,
-   "proj_total": 157.5,
-   "home_win_prob": 0.517,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 0.059,
-   "home_em": 14.6,
-   "away_em": 7.1,
-   "home_t": 69.1,
-   "away_t": 70.5,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401911524",
    "home": "UC Davis",
@@ -1113,14 +1061,14 @@
    "side": "away",
    "team": "Miami",
    "opp": "Alabama",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/181125745237393",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/130198735002775",
    "game_id": "401920543",
    "kickoff": "2026-11-27T20:30:00-05:00",
    "home": "Alabama",
    "away": "Miami",
-   "dec": 1.758,
-   "american": -132,
+   "dec": 1.741,
+   "american": -135,
    "game_model": {
     "game_id": "401920543",
     "home": "Alabama",
@@ -1149,19 +1097,14 @@
      "b": 1.741
     },
     {
-     "book": "fanduel",
-     "a": 2.1,
-     "b": 1.758
-    },
-    {
      "book": "pinnacle",
      "a": 2.16,
      "b": 1.781
     }
    ],
    "model_prob": 0.767,
-   "model_edge": 22.27,
-   "model_edge_txt": "+22.3%",
+   "model_edge": 21.56,
+   "model_edge_txt": "+21.6%",
    "cheat_side": "away",
    "pinnacle_line": "Alabama +116 / Miami -128",
    "fair_prob": 0.5481,
@@ -1176,104 +1119,17 @@
     "additive": 0.5493,
     "power": 0.5498
    },
-   "ev_pct": -3.65,
-   "min_ev": 1.29,
+   "ev_pct": -4.58,
+   "min_ev": 1.23,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -4.81,
-   "trusted_prob": 0.5522,
+   "kelly_pct": -6.18,
+   "trusted_prob": 0.5533,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.06,
+   "second_ev": null,
    "pinn_dec": 1.781
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Penn State @ Mississippi St",
-   "pkey": "401929289",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Penn State Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Penn State",
-   "opp": "Mississippi St",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/103784401546679",
-   "game_id": "401929289",
-   "kickoff": "2026-11-27T19:30:00-05:00",
-   "home": "Mississippi St",
-   "away": "Penn State",
-   "dec": 3.4,
-   "american": 240,
-   "game_model": {
-    "game_id": "401929289",
-    "home": "Mississippi St",
-    "away": "Penn State",
-    "kickoff": "2026-11-27T19:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 79.0,
-    "proj_away": 78.5,
-    "proj_margin": 0.5,
-    "proj_total": 157.5,
-    "home_win_prob": 0.517,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.059,
-    "home_em": 14.6,
-    "away_em": 7.1,
-    "home_t": 69.1,
-    "away_t": 70.5,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.336,
-     "b": 3.4
-    },
-    {
-     "book": "fanduel",
-     "a": 1.364,
-     "b": 3.25
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.348,
-     "b": 3.36
-    }
-   ],
-   "model_prob": 0.483,
-   "model_edge": 20.09,
-   "model_edge_txt": "+20.1%",
-   "cheat_side": "away",
-   "pinnacle_line": "Mississippi St -287 / Penn State +236",
-   "fair_prob": 0.2735,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.2735,
-    0.2863
-   ],
-   "devig_all": {
-    "multiplicative": 0.2863,
-    "additive": 0.2779,
-    "power": 0.2735
-   },
-   "ev_pct": -7.02,
-   "min_ev": 6.3,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.93,
-   "trusted_prob": 0.2776,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.81,
-   "pinn_dec": 3.36
   },
   {
    "kind": "ml",
@@ -1461,14 +1317,14 @@
    "side": "away",
    "team": "Pacific",
    "opp": "UC Davis",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/177500605553759",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/76161497010387",
    "game_id": "401911524",
    "kickoff": "2026-11-27T20:00:00-05:00",
    "home": "UC Davis",
    "away": "Pacific",
-   "dec": 1.364,
-   "american": -275,
+   "dec": 1.37,
+   "american": -270,
    "game_model": {
     "game_id": "401911524",
     "home": "UC Davis",
@@ -1493,8 +1349,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 3.3,
-     "b": 1.351
+     "a": 3.2,
+     "b": 1.37
     },
     {
      "book": "fanduel",
@@ -1508,8 +1364,8 @@
     }
    ],
    "model_prob": 0.849,
-   "model_edge": 14.79,
-   "model_edge_txt": "+14.8%",
+   "model_edge": 14.88,
+   "model_edge_txt": "+14.9%",
    "cheat_side": "away",
    "pinnacle_line": "UC Davis +213 / Pacific -256",
    "fair_prob": 0.6923,
@@ -1524,16 +1380,16 @@
     "additive": 0.6997,
     "power": 0.7035
    },
-   "ev_pct": -5.57,
+   "ev_pct": -5.15,
    "min_ev": 1.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -15.29,
-   "trusted_prob": 0.7005,
+   "kelly_pct": -13.92,
+   "trusted_prob": 0.6998,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.22,
+   "second_ev": -3.94,
    "pinn_dec": 1.391
   },
   {
@@ -1886,171 +1742,6 @@
    "pinn_dec": 1.422
   },
   {
-   "kind": "total",
-   "week": "2026-11-27",
-   "player": "Oakland @ Houston",
-   "pkey": "401925703",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 144.5",
-   "line": 144.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/132962803046166",
-   "game_id": "401925703",
-   "kickoff": "2026-11-27T19:30:00-05:00",
-   "home": "Houston",
-   "away": "Oakland",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401925703",
-    "home": "Houston",
-    "away": "Oakland",
-    "kickoff": "2026-11-27T19:30:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 92.4,
-    "proj_away": 58.9,
-    "proj_margin": 33.4,
-    "proj_total": 151.3,
-    "home_win_prob": 0.999,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 3.919,
-    "home_em": 32.8,
-    "away_em": -7.5,
-    "home_t": 67.8,
-    "away_t": 68.0,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.909,
-     "b": 1.893
-    }
-   ],
-   "model_prob": 0.675,
-   "model_edge": 6.8,
-   "model_edge_txt": "+6.8 pts",
-   "cheat_side": "over",
-   "pinnacle_line": "144.5 o-110/u-112",
-   "fair_prob": 0.4977,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4977,
-    0.4979
-   ],
-   "devig_all": {
-    "multiplicative": 0.4979,
-    "additive": 0.4978,
-    "power": 0.4977
-   },
-   "ev_pct": -4.98,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -5.48,
-   "trusted_prob": 0.503,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.909
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Miami @ Alabama",
-   "pkey": "401920543",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Miami -1.5",
-   "line": 1.5,
-   "side": "away",
-   "team": "Miami",
-   "opp": "Alabama",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/197609958418137",
-   "game_id": "401920543",
-   "kickoff": "2026-11-27T20:30:00-05:00",
-   "home": "Alabama",
-   "away": "Miami",
-   "dec": 1.862,
-   "american": -116,
-   "game_model": {
-    "game_id": "401920543",
-    "home": "Alabama",
-    "away": "Miami",
-    "kickoff": "2026-11-27T20:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 80.8,
-    "proj_away": 88.8,
-    "proj_margin": -8.0,
-    "proj_total": 169.7,
-    "home_win_prob": 0.233,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.031,
-    "home_em": 20.8,
-    "away_em": 23.2,
-    "home_t": 74.0,
-    "away_t": 71.9,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.962,
-     "b": 1.862
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.06,
-     "b": 1.826
-    }
-   ],
-   "model_prob": 0.723,
-   "model_edge": 6.5,
-   "model_edge_txt": "+6.5 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Alabama +1.5 106 / Miami -1.5 -121",
-   "fair_prob": 0.5301,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5301,
-    0.5316
-   ],
-   "devig_all": {
-    "multiplicative": 0.5301,
-    "additive": 0.5311,
-    "power": 0.5316
-   },
-   "ev_pct": -1.29,
-   "min_ev": 1.62,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -1.5,
-   "trusted_prob": 0.5315,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.826
-  },
-  {
    "kind": "spread",
    "week": "2026-11-27",
    "player": "Missouri St @ Oral Roberts",
@@ -2141,94 +1832,6 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
-   "player": "Penn State @ Mississippi St",
-   "pkey": "401929289",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Penn State +6.5",
-   "line": -6.5,
-   "side": "away",
-   "team": "Penn State",
-   "opp": "Mississippi St",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/188406947420267",
-   "game_id": "401929289",
-   "kickoff": "2026-11-27T19:30:00-05:00",
-   "home": "Mississippi St",
-   "away": "Penn State",
-   "dec": 1.926,
-   "american": -108,
-   "game_model": {
-    "game_id": "401929289",
-    "home": "Mississippi St",
-    "away": "Penn State",
-    "kickoff": "2026-11-27T19:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 79.0,
-    "proj_away": 78.5,
-    "proj_margin": 0.5,
-    "proj_total": 157.5,
-    "home_win_prob": 0.517,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 0.059,
-    "home_em": 14.6,
-    "away_em": 7.1,
-    "home_t": 69.1,
-    "away_t": 70.5,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.926
-    },
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.877,
-     "b": 1.962
-    }
-   ],
-   "model_prob": 0.707,
-   "model_edge": 6.0,
-   "model_edge_txt": "+6.0 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Mississippi St -6.5 -114 / Penn State +6.5 -104",
-   "fair_prob": 0.4882,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4882,
-    0.4889
-   ],
-   "devig_all": {
-    "multiplicative": 0.4889,
-    "additive": 0.4885,
-    "power": 0.4882
-   },
-   "ev_pct": -5.97,
-   "min_ev": 1.82,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.45,
-   "trusted_prob": 0.4944,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.7,
-   "pinn_dec": 1.962
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
    "player": "Tennessee @ Louisville",
    "pkey": "401920534",
    "stat": "spread",
@@ -2315,6 +1918,89 @@
    "pinn_dec": 1.935
   },
   {
+   "kind": "spread",
+   "week": "2026-11-27",
+   "player": "Miami @ Alabama",
+   "pkey": "401920543",
+   "stat": "spread",
+   "stat_label": "Spread",
+   "title": "Miami -2.5",
+   "line": 2.5,
+   "side": "away",
+   "team": "Miami",
+   "opp": "Alabama",
+   "book": "fanduel",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/138885556125855",
+   "game_id": "401920543",
+   "kickoff": "2026-11-27T20:30:00-05:00",
+   "home": "Alabama",
+   "away": "Miami",
+   "dec": 1.962,
+   "american": -104,
+   "game_model": {
+    "game_id": "401920543",
+    "home": "Alabama",
+    "away": "Miami",
+    "kickoff": "2026-11-27T20:30:00-05:00",
+    "neutral": true,
+    "non_d1": null,
+    "proj_home": 80.8,
+    "proj_away": 88.8,
+    "proj_margin": -8.0,
+    "proj_total": 169.7,
+    "home_win_prob": 0.233,
+    "model": "FULL",
+    "slope": 7.76,
+    "matchup_x": -1.031,
+    "home_em": 20.8,
+    "away_em": 23.2,
+    "home_t": 74.0,
+    "away_t": 71.9,
+    "league_avg": 108.2
+   },
+   "books": [
+    {
+     "book": "fanduel",
+     "a": 1.847,
+     "b": 1.962
+    },
+    {
+     "book": "pinnacle",
+     "a": 1.855,
+     "b": 2.02
+    }
+   ],
+   "model_prob": 0.691,
+   "model_edge": 5.5,
+   "model_edge_txt": "+5.5 pts \u00b7 GOOD",
+   "cheat_side": "away",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Alabama +2.5 -117 / Miami -2.5 102",
+   "fair_prob": 0.4776,
+   "fair_method": "power",
+   "fair_source": "Pinnacle",
+   "devig_range": [
+    0.4776,
+    0.4787
+   ],
+   "devig_all": {
+    "multiplicative": 0.4787,
+    "additive": 0.478,
+    "power": 0.4776
+   },
+   "ev_pct": -6.29,
+   "min_ev": 1.93,
+   "units": 0.0,
+   "base_units": 0.0,
+   "kelly_pct": -6.54,
+   "trusted_prob": 0.484,
+   "unit_note": null,
+   "edge_trust": 0.8,
+   "tier": "single",
+   "second_ev": null,
+   "pinn_dec": 2.02
+  },
+  {
    "kind": "ml",
    "week": "2026-11-27",
    "player": "Creighton @ Gonzaga",
@@ -2358,8 +2044,8 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.4,
-     "b": 3.05
+     "a": 1.377,
+     "b": 3.15
     },
     {
      "book": "fanduel",
@@ -2398,7 +2084,7 @@
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -3.5,
+   "second_ev": -2.03,
    "pinn_dec": 1.375
   },
   {
@@ -2663,60 +2349,6 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
-   "player": "Oakland @ Houston",
-   "pkey": "401925703",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Oakland +35.5",
-   "line": -35.5,
-   "side": "away",
-   "team": "Oakland",
-   "opp": "Houston",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/234309209338398",
-   "game_id": "401925703",
-   "kickoff": "2026-11-27T19:30:00-05:00",
-   "home": "Houston",
-   "away": "Oakland",
-   "dec": 1.962,
-   "american": -104,
-   "game_model": {
-    "game_id": "401925703",
-    "home": "Houston",
-    "away": "Oakland",
-    "kickoff": "2026-11-27T19:30:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 92.4,
-    "proj_away": 58.9,
-    "proj_margin": 33.4,
-    "proj_total": 151.3,
-    "home_win_prob": 0.999,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 3.919,
-    "home_em": 32.8,
-    "away_em": -7.5,
-    "home_t": 67.8,
-    "away_t": 68.0,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.847,
-     "b": 1.962
-    }
-   ],
-   "model_prob": 0.576,
-   "model_edge": 2.1,
-   "model_edge_txt": "+2.1 pts \u00b7 LEAN",
-   "cheat_side": "away",
-   "cbb_tier": "LEAN"
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
    "player": "Jax State @ Omaha",
    "pkey": "401926783",
    "stat": "spread",
@@ -2808,5 +2440,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-27T19:21:32-05:00"
+ "odds_as_of": "2026-11-27T19:33:07-05:00"
 }
