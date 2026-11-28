@@ -1,13 +1,13 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T22:29:04-05:00",
+ "generated_at": "2026-11-27T22:39:36-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T22:30:00-05:00",
+ "next_kickoff": "2026-11-27T23:00:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 18,
+  "book_game_lines": 12,
   "book_unmatched": 75,
   "book_unmatched_games": [
    "Alcorn @ Georgia Tech",
@@ -31,9 +31,9 @@
    "Drexel @ Mount Saint Marys",
    "Drexel @ Mt. St. Mary's"
   ],
-  "pinnacle_game_lines": 57,
+  "pinnacle_game_lines": 38,
   "pinnacle_unmatched": 0,
-  "pinnacle_as_of": "2026-11-27T22:18:31-05:00"
+  "pinnacle_as_of": "2026-11-27T22:39:36-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -558,11 +558,6 @@
  },
  "games": [
   {
-   "game_id": "401926783",
-   "label": "Jax State @ Omaha",
-   "kickoff": "2026-11-27T22:30:00-05:00"
-  },
-  {
    "game_id": "401920544",
    "label": "Creighton @ Gonzaga",
    "kickoff": "2026-11-27T23:00:00-05:00"
@@ -574,27 +569,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401926783",
-   "home": "Omaha",
-   "away": "Jax State",
-   "kickoff": "2026-11-27T22:30:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 67.6,
-   "proj_away": 75.2,
-   "proj_margin": -7.6,
-   "proj_total": 142.9,
-   "home_win_prob": 0.245,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -0.979,
-   "home_em": -13.2,
-   "away_em": -2.6,
-   "home_t": 68.6,
-   "away_t": 65.7,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401920544",
    "home": "Gonzaga",
@@ -695,125 +669,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 4.04,
-     "b": 1.265
+     "a": 4.09,
+     "b": 1.26
     }
    ],
    "model_prob": 0.346,
    "model_edge": 11.19,
    "model_edge_txt": "+11.2%",
    "cheat_side": "home",
-   "pinnacle_line": "San Diego St +304 / Texas Tech -377",
-   "fair_prob": 0.2232,
+   "pinnacle_line": "San Diego St +309 / Texas Tech -385",
+   "fair_prob": 0.22,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.2232,
-    0.2385
+    0.22,
+    0.2355
    ],
    "devig_all": {
-    "multiplicative": 0.2385,
-    "additive": 0.2285,
-    "power": 0.2232
+    "multiplicative": 0.2355,
+    "additive": 0.2254,
+    "power": 0.22
    },
-   "ev_pct": -8.51,
+   "ev_pct": -9.81,
    "min_ev": 7.1,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.74,
-   "trusted_prob": 0.2273,
+   "kelly_pct": -3.16,
+   "trusted_prob": 0.2248,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -6.86,
-   "pinn_dec": 4.04
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Jax State @ Omaha",
-   "pkey": "401926783",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Jax State Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Jax State",
-   "opp": "Omaha",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/150862262597050",
-   "game_id": "401926783",
-   "kickoff": "2026-11-27T22:30:00-05:00",
-   "home": "Omaha",
-   "away": "Jax State",
-   "dec": 1.465,
-   "american": -215,
-   "game_model": {
-    "game_id": "401926783",
-    "home": "Omaha",
-    "away": "Jax State",
-    "kickoff": "2026-11-27T22:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 67.6,
-    "proj_away": 75.2,
-    "proj_margin": -7.6,
-    "proj_total": 142.9,
-    "home_win_prob": 0.245,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.979,
-    "home_em": -13.2,
-    "away_em": -2.6,
-    "home_t": 68.6,
-    "away_t": 65.7,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 2.8,
-     "b": 1.465
-    },
-    {
-     "book": "draftkings",
-     "a": 2.95,
-     "b": 1.42
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.94,
-     "b": 1.431
-    }
-   ],
-   "model_prob": 0.755,
-   "model_edge": 9.85,
-   "model_edge_txt": "+9.8%",
-   "cheat_side": "away",
-   "pinnacle_line": "Omaha +194 / Jax State -232",
-   "fair_prob": 0.6726,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.6726,
-    0.6828
-   ],
-   "devig_all": {
-    "multiplicative": 0.6726,
-    "additive": 0.6793,
-    "power": 0.6828
-   },
-   "ev_pct": -1.46,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.14,
-   "trusted_prob": 0.6746,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -1.1,
-   "pinn_dec": 1.431
+   "pinn_dec": 4.09
   },
   {
    "kind": "ml",
@@ -869,38 +756,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.391,
-     "b": 3.27
+     "a": 1.408,
+     "b": 3.18
     }
    ],
    "model_prob": 0.734,
    "model_edge": 5.2,
    "model_edge_txt": "+5.2%",
    "cheat_side": "home",
-   "pinnacle_line": "Gonzaga -256 / Creighton +227",
-   "fair_prob": 0.7016,
+   "pinnacle_line": "Gonzaga -245 / Creighton +218",
+   "fair_prob": 0.6931,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.7016,
-    0.709
+    0.6931,
+    0.7002
    ],
    "devig_all": {
-    "multiplicative": 0.7016,
-    "additive": 0.7065,
-    "power": 0.709
+    "multiplicative": 0.6931,
+    "additive": 0.6979,
+    "power": 0.7002
    },
-   "ev_pct": -1.22,
+   "ev_pct": -2.41,
    "min_ev": 1.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.99,
-   "trusted_prob": 0.7033,
+   "kelly_pct": -5.91,
+   "trusted_prob": 0.6965,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -2.03,
-   "pinn_dec": 1.391
+   "pinn_dec": 1.408
   },
   {
    "kind": "spread",
@@ -956,8 +843,8 @@
     },
     {
      "book": "pinnacle",
-     "a": 1.935,
-     "b": 1.917
+     "a": 1.952,
+     "b": 1.901
     }
    ],
    "model_prob": 0.645,
@@ -965,113 +852,30 @@
    "model_edge_txt": "+4.1 pts \u00b7 GOOD",
    "cheat_side": "home",
    "cbb_tier": "GOOD",
-   "pinnacle_line": "San Diego St +8.5 -107 / Texas Tech -8.5 -109",
-   "fair_prob": 0.4975,
+   "pinnacle_line": "San Diego St +8.5 -105 / Texas Tech -8.5 -111",
+   "fair_prob": 0.493,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4975,
-    0.4977
+    0.493,
+    0.4934
    ],
    "devig_all": {
-    "multiplicative": 0.4977,
-    "additive": 0.4976,
-    "power": 0.4975
+    "multiplicative": 0.4934,
+    "additive": 0.4931,
+    "power": 0.493
    },
-   "ev_pct": -2.88,
+   "ev_pct": -3.77,
    "min_ev": 1.9,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.03,
-   "trusted_prob": 0.5005,
+   "kelly_pct": -3.96,
+   "trusted_prob": 0.4969,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -2.4,
-   "pinn_dec": 1.935
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Jax State @ Omaha",
-   "pkey": "401926783",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Jax State -4.5",
-   "line": 4.5,
-   "side": "away",
-   "team": "Jax State",
-   "opp": "Omaha",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118309553696557",
-   "game_id": "401926783",
-   "kickoff": "2026-11-27T22:30:00-05:00",
-   "home": "Omaha",
-   "away": "Jax State",
-   "dec": 1.84,
-   "american": -119,
-   "game_model": {
-    "game_id": "401926783",
-    "home": "Omaha",
-    "away": "Jax State",
-    "kickoff": "2026-11-27T22:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 67.6,
-    "proj_away": 75.2,
-    "proj_margin": -7.6,
-    "proj_total": 142.9,
-    "home_win_prob": 0.245,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.979,
-    "home_em": -13.2,
-    "away_em": -2.6,
-    "home_t": 68.6,
-    "away_t": 65.7,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.98,
-     "b": 1.84
-    },
-    {
-     "book": "pinnacle",
-     "a": 2.02,
-     "b": 1.826
-    }
-   ],
-   "model_prob": 0.611,
-   "model_edge": 3.1,
-   "model_edge_txt": "+3.1 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "Omaha +4.5 102 / Jax State -4.5 -121",
-   "fair_prob": 0.5252,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5252,
-    0.5268
-   ],
-   "devig_all": {
-    "multiplicative": 0.5252,
-    "additive": 0.5263,
-    "power": 0.5268
-   },
-   "ev_pct": -3.36,
-   "min_ev": 1.55,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -4.0,
-   "trusted_prob": 0.5289,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.826
+   "pinn_dec": 1.952
   }
  ],
  "matchups": [],
@@ -1079,5 +883,5 @@
   "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-27T22:29:04-05:00"
+ "odds_as_of": "2026-11-27T22:39:36-05:00"
 }
