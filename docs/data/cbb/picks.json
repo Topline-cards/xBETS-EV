@@ -1,14 +1,14 @@
 {
  "sport": "cbb",
- "generated_at": "2026-11-27T19:56:00-05:00",
+ "generated_at": "2026-11-27T20:07:17-05:00",
  "season": 2027,
  "week": "2026-11-27",
  "day": "2026-11-27",
- "next_kickoff": "2026-11-27T20:00:00-05:00",
+ "next_kickoff": "2026-11-27T20:30:00-05:00",
  "status": {
   "odds_checked": true,
-  "book_game_lines": 66,
-  "book_unmatched": 69,
+  "book_game_lines": 36,
+  "book_unmatched": 66,
   "book_unmatched_games": [
    "Alcorn @ Georgia Tech",
    "Austin Peay @ Furman",
@@ -31,9 +31,9 @@
    "Fordham @ Harvard",
    "Georgia Southern @ UNC Asheville"
   ],
-  "pinnacle_game_lines": 209,
+  "pinnacle_game_lines": 114,
   "pinnacle_unmatched": 0,
-  "pinnacle_as_of": "2026-11-27T19:44:41-05:00"
+  "pinnacle_as_of": "2026-11-27T20:07:17-05:00"
  },
  "settings": {
   "unit_pct": 1.0,
@@ -558,36 +558,6 @@
  },
  "games": [
   {
-   "game_id": "401911524",
-   "label": "Pacific @ UC Davis",
-   "kickoff": "2026-11-27T20:00:00-05:00"
-  },
-  {
-   "game_id": "401920737",
-   "label": "Northeastern @ Northwestern",
-   "kickoff": "2026-11-27T20:00:00-05:00"
-  },
-  {
-   "game_id": "401922264",
-   "label": "Idaho @ Washington St",
-   "kickoff": "2026-11-27T20:00:00-05:00"
-  },
-  {
-   "game_id": "401925829",
-   "label": "N Dakota St @ North Texas",
-   "kickoff": "2026-11-27T20:00:00-05:00"
-  },
-  {
-   "game_id": "401928624",
-   "label": "Missouri St @ Oral Roberts",
-   "kickoff": "2026-11-27T20:00:00-05:00"
-  },
-  {
-   "game_id": "401929381",
-   "label": "Lane College @ Little Rock",
-   "kickoff": "2026-11-27T20:00:00-05:00"
-  },
-  {
    "game_id": "401920543",
    "label": "Miami @ Alabama",
    "kickoff": "2026-11-27T20:30:00-05:00"
@@ -619,132 +589,6 @@
   }
  ],
  "game_model": [
-  {
-   "game_id": "401911524",
-   "home": "UC Davis",
-   "away": "Pacific",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 64.7,
-   "proj_away": 76.1,
-   "proj_margin": -11.4,
-   "proj_total": 140.8,
-   "home_win_prob": 0.151,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -1.463,
-   "home_em": -5.0,
-   "away_em": 2.6,
-   "home_t": 70.6,
-   "away_t": 67.1,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401920737",
-   "home": "Northwestern",
-   "away": "Northeastern",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 80.8,
-   "proj_away": 68.0,
-   "proj_margin": 12.8,
-   "proj_total": 148.8,
-   "home_win_prob": 0.878,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 1.261,
-   "home_em": 8.4,
-   "away_em": -7.0,
-   "home_t": 65.0,
-   "away_t": 70.3,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401922264",
-   "home": "Washington St",
-   "away": "Idaho",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 72.5,
-   "proj_away": 77.1,
-   "proj_margin": -4.6,
-   "proj_total": 149.6,
-   "home_win_prob": 0.339,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -0.974,
-   "home_em": 2.8,
-   "away_em": -5.3,
-   "home_t": 67.8,
-   "away_t": 68.5,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401925829",
-   "home": "North Texas",
-   "away": "N Dakota St",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "neutral": true,
-   "non_d1": null,
-   "proj_home": 75.8,
-   "proj_away": 66.9,
-   "proj_margin": 8.9,
-   "proj_total": 142.8,
-   "home_win_prob": 0.791,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 1.148,
-   "home_em": 2.9,
-   "away_em": -4.7,
-   "home_t": 67.3,
-   "away_t": 67.5,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401928624",
-   "home": "Oral Roberts",
-   "away": "Missouri St",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "neutral": false,
-   "non_d1": null,
-   "proj_home": 71.7,
-   "proj_away": 73.3,
-   "proj_margin": -1.6,
-   "proj_total": 145.1,
-   "home_win_prob": 0.443,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": -0.59,
-   "home_em": -4.9,
-   "away_em": -6.3,
-   "home_t": 69.3,
-   "away_t": 67.3,
-   "league_avg": 108.2
-  },
-  {
-   "game_id": "401929381",
-   "home": "Little Rock",
-   "away": "Lane College",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "neutral": false,
-   "non_d1": "away",
-   "proj_home": 91.6,
-   "proj_away": 62.1,
-   "proj_margin": 29.5,
-   "proj_total": 153.7,
-   "home_win_prob": 0.996,
-   "model": "FULL",
-   "slope": 7.76,
-   "matchup_x": 3.416,
-   "home_em": -9.3,
-   "away_em": -29.7,
-   "home_t": 69.7,
-   "away_t": 69.0,
-   "league_avg": 108.2
-  },
   {
    "game_id": "401920543",
    "home": "Alabama",
@@ -873,305 +717,8 @@
   }
  ],
  "combined": [],
- "ev": [
-  {
-   "kind": "total",
-   "week": "2026-11-27",
-   "player": "Pacific @ UC Davis",
-   "pkey": "401911524",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 136.5",
-   "line": 136.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/241648978400374",
-   "game_id": "401911524",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "UC Davis",
-   "away": "Pacific",
-   "dec": 1.935,
-   "american": -107,
-   "game_model": {
-    "game_id": "401911524",
-    "home": "UC Davis",
-    "away": "Pacific",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 64.7,
-    "proj_away": 76.1,
-    "proj_margin": -11.4,
-    "proj_total": 140.8,
-    "home_win_prob": 0.151,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.463,
-    "home_em": -5.0,
-    "away_em": 2.6,
-    "home_t": 70.6,
-    "away_t": 67.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.935,
-     "b": 1.885
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.769,
-     "b": 2.05
-    }
-   ],
-   "model_prob": 0.613,
-   "model_edge": 4.3,
-   "model_edge_txt": "+4.3 pts",
-   "cheat_side": null,
-   "pinnacle_line": "136.5 o-130/u105",
-   "fair_prob": 0.5368,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5368,
-    0.5398
-   ],
-   "devig_all": {
-    "multiplicative": 0.5368,
-    "additive": 0.5387,
-    "power": 0.5398
-   },
-   "ev_pct": 3.87,
-   "min_ev": 1.85,
-   "units": 0.25,
-   "base_units": 0.8275537594885153,
-   "kelly_pct": 4.14,
-   "trusted_prob": 0.5328,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.769,
-   "lane": "cbb:total",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 21,
-    "days": 1,
-    "ev_vs_close": 0.22,
-    "roi_pct": 5.1
-   },
-   "sizing": {
-    "base": 0.83,
-    "conf": 0.38,
-    "conf_why": [
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 1,
-    "player_bets": 1,
-    "corr": 1.0,
-    "cap": 2.0,
-    "raw": 0.31
-   },
-   "exp_profit_units": 0.01
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Northeastern @ Northwestern",
-   "pkey": "401920737",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Northwestern -11.5",
-   "line": -11.5,
-   "side": "home",
-   "team": "Northwestern",
-   "opp": "Northeastern",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/113415942857227",
-   "game_id": "401920737",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "Northwestern",
-   "away": "Northeastern",
-   "dec": 1.833,
-   "american": -120,
-   "game_model": {
-    "game_id": "401920737",
-    "home": "Northwestern",
-    "away": "Northeastern",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 80.8,
-    "proj_away": 68.0,
-    "proj_margin": 12.8,
-    "proj_total": 148.8,
-    "home_win_prob": 0.878,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 1.261,
-    "home_em": 8.4,
-    "away_em": -7.0,
-    "home_t": 65.0,
-    "away_t": 70.3,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.833,
-     "b": 1.98
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.704,
-     "b": 2.19
-    }
-   ],
-   "model_prob": 0.547,
-   "model_edge": 1.3,
-   "model_edge_txt": "+1.3 pts \u00b7 PASS",
-   "cheat_side": null,
-   "cbb_tier": "PASS",
-   "pinnacle_line": "Northwestern -11.5 -142 / Northeastern +11.5 119",
-   "fair_prob": 0.5624,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5624,
-    0.5665
-   ],
-   "devig_all": {
-    "multiplicative": 0.5624,
-    "additive": 0.5651,
-    "power": 0.5665
-   },
-   "ev_pct": 3.09,
-   "min_ev": 1.52,
-   "units": 0.25,
-   "base_units": 0.7415601063229595,
-   "kelly_pct": 3.71,
-   "trusted_prob": 0.559,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.704,
-   "lane": "cbb:spread",
-   "lane_status": "testing",
-   "lane_info": {
-    "graded": 27,
-    "days": 1,
-    "ev_vs_close": -0.48,
-    "roi_pct": -43.9
-   },
-   "sizing": {
-    "base": 0.74,
-    "conf": 0.38,
-    "conf_why": [
-     "one sharp source only",
-     "lane still testing"
-    ],
-    "game_bets": 1,
-    "player_bets": 1,
-    "corr": 1.0,
-    "cap": 2.0,
-    "raw": 0.28
-   },
-   "exp_profit_units": 0.008
-  }
- ],
+ "ev": [],
  "cheat": [
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Idaho @ Washington St",
-   "pkey": "401922264",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Idaho Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Idaho",
-   "opp": "Washington St",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/176060158730693",
-   "game_id": "401922264",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "Washington St",
-   "away": "Idaho",
-   "dec": 6.7,
-   "american": 570,
-   "game_model": {
-    "game_id": "401922264",
-    "home": "Washington St",
-    "away": "Idaho",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 72.5,
-    "proj_away": 77.1,
-    "proj_margin": -4.6,
-    "proj_total": 149.6,
-    "home_win_prob": 0.339,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.974,
-    "home_em": 2.8,
-    "away_em": -5.3,
-    "home_t": 67.8,
-    "away_t": 68.5,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.125,
-     "b": 6.5
-    },
-    {
-     "book": "fanduel",
-     "a": 1.125,
-     "b": 6.7
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.121,
-     "b": 6.82
-    }
-   ],
-   "model_prob": 0.661,
-   "model_edge": 51.72,
-   "model_edge_txt": "+51.7%",
-   "cheat_side": "away",
-   "pinnacle_line": "Washington St -826 / Idaho +582",
-   "fair_prob": 0.119,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.119,
-    0.1412
-   ],
-   "devig_all": {
-    "multiplicative": 0.1412,
-    "additive": 0.1273,
-    "power": 0.119
-   },
-   "ev_pct": -20.29,
-   "min_ev": 9.7,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.56,
-   "trusted_prob": 0.125,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -17.34,
-   "pinn_dec": 6.82
-  },
   {
    "kind": "ml",
    "week": "2026-11-27",
@@ -1227,37 +774,37 @@
     {
      "book": "pinnacle",
      "a": 1.508,
-     "b": 2.66
+     "b": 2.67
     }
    ],
    "model_prob": 0.719,
    "model_edge": 36.37,
    "model_edge_txt": "+36.4%",
    "cheat_side": "away",
-   "pinnacle_line": "Kentucky -197 / Wichita St +166",
-   "fair_prob": 0.3537,
+   "pinnacle_line": "Kentucky -197 / Wichita St +167",
+   "fair_prob": 0.3531,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.3537,
-    0.3618
+    0.3531,
+    0.3609
    ],
    "devig_all": {
-    "multiplicative": 0.3618,
-    "additive": 0.3564,
-    "power": 0.3537
+    "multiplicative": 0.3609,
+    "additive": 0.3557,
+    "power": 0.3531
    },
-   "ev_pct": -4.51,
+   "ev_pct": -4.68,
    "min_ev": 4.78,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -2.65,
-   "trusted_prob": 0.357,
+   "kelly_pct": -2.75,
+   "trusted_prob": 0.3565,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -1.5,
-   "pinn_dec": 2.66
+   "pinn_dec": 2.67
   },
   {
    "kind": "ml",
@@ -1436,263 +983,89 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
-   "player": "Missouri St @ Oral Roberts",
-   "pkey": "401928624",
+   "player": "Texas Tech @ San Diego St",
+   "pkey": "401920535",
    "stat": "ml",
    "stat_label": "Moneyline",
-   "title": "Missouri St Moneyline",
+   "title": "San Diego St Moneyline",
    "line": null,
-   "side": "away",
-   "team": "Missouri St",
-   "opp": "Oral Roberts",
+   "side": "home",
+   "team": "San Diego St",
+   "opp": "Texas Tech",
    "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/195745158874987",
-   "game_id": "401928624",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "Oral Roberts",
-   "away": "Missouri St",
-   "dec": 2.6,
-   "american": 160,
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/177454590760686",
+   "game_id": "401920535",
+   "kickoff": "2026-11-27T23:30:00-05:00",
+   "home": "San Diego St",
+   "away": "Texas Tech",
+   "dec": 4.1,
+   "american": 310,
    "game_model": {
-    "game_id": "401928624",
-    "home": "Oral Roberts",
-    "away": "Missouri St",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": false,
+    "game_id": "401920535",
+    "home": "San Diego St",
+    "away": "Texas Tech",
+    "kickoff": "2026-11-27T23:30:00-05:00",
+    "neutral": true,
     "non_d1": null,
-    "proj_home": 71.7,
-    "proj_away": 73.3,
-    "proj_margin": -1.6,
-    "proj_total": 145.1,
-    "home_win_prob": 0.443,
+    "proj_home": 70.0,
+    "proj_away": 74.3,
+    "proj_margin": -4.4,
+    "proj_total": 144.3,
+    "home_win_prob": 0.346,
     "model": "FULL",
     "slope": 7.76,
-    "matchup_x": -0.59,
-    "home_em": -4.9,
-    "away_em": -6.3,
-    "home_t": 69.3,
-    "away_t": 67.3,
+    "matchup_x": -0.563,
+    "home_em": 15.4,
+    "away_em": 24.8,
+    "home_t": 69.6,
+    "away_t": 67.7,
     "league_avg": 108.2
    },
    "books": [
     {
-     "book": "fanduel",
-     "a": 1.532,
-     "b": 2.58
+     "book": "draftkings",
+     "a": 4.1,
+     "b": 1.253
     },
     {
-     "book": "draftkings",
-     "a": 1.521,
-     "b": 2.6
+     "book": "fanduel",
+     "a": 3.75,
+     "b": 1.29
     },
     {
      "book": "pinnacle",
-     "a": 1.532,
-     "b": 2.59
+     "a": 4.0,
+     "b": 1.268
     }
    ],
-   "model_prob": 0.557,
-   "model_edge": 18.79,
-   "model_edge_txt": "+18.8%",
-   "cheat_side": "away",
-   "pinnacle_line": "Oral Roberts -188 / Missouri St +159",
-   "fair_prob": 0.3642,
+   "model_prob": 0.346,
+   "model_edge": 11.19,
+   "model_edge_txt": "+11.2%",
+   "cheat_side": "home",
+   "pinnacle_line": "San Diego St +300 / Texas Tech -373",
+   "fair_prob": 0.2253,
    "fair_method": "power",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.3642,
-    0.3717
+    0.2253,
+    0.2407
    ],
    "devig_all": {
-    "multiplicative": 0.3717,
-    "additive": 0.3667,
-    "power": 0.3642
+    "multiplicative": 0.2407,
+    "additive": 0.2307,
+    "power": 0.2253
    },
-   "ev_pct": -5.32,
-   "min_ev": 4.33,
+   "ev_pct": -7.63,
+   "min_ev": 7.1,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -3.32,
-   "trusted_prob": 0.3682,
+   "kelly_pct": -2.46,
+   "trusted_prob": 0.229,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -5.15,
-   "pinn_dec": 2.59
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "Pacific @ UC Davis",
-   "pkey": "401911524",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "Pacific Moneyline",
-   "line": null,
-   "side": "away",
-   "team": "Pacific",
-   "opp": "UC Davis",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/177500605553759",
-   "game_id": "401911524",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "UC Davis",
-   "away": "Pacific",
-   "dec": 1.364,
-   "american": -275,
-   "game_model": {
-    "game_id": "401911524",
-    "home": "UC Davis",
-    "away": "Pacific",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 64.7,
-    "proj_away": 76.1,
-    "proj_margin": -11.4,
-    "proj_total": 140.8,
-    "home_win_prob": 0.151,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.463,
-    "home_em": -5.0,
-    "away_em": 2.6,
-    "home_t": 70.6,
-    "away_t": 67.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 3.3,
-     "b": 1.351
-    },
-    {
-     "book": "fanduel",
-     "a": 3.25,
-     "b": 1.364
-    },
-    {
-     "book": "pinnacle",
-     "a": 3.13,
-     "b": 1.391
-    }
-   ],
-   "model_prob": 0.849,
-   "model_edge": 14.46,
-   "model_edge_txt": "+14.5%",
-   "cheat_side": "away",
-   "pinnacle_line": "UC Davis +213 / Pacific -256",
-   "fair_prob": 0.6923,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.6923,
-    0.7035
-   ],
-   "devig_all": {
-    "multiplicative": 0.6923,
-    "additive": 0.6997,
-    "power": 0.7035
-   },
-   "ev_pct": -5.57,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -15.29,
-   "trusted_prob": 0.7005,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.22,
-   "pinn_dec": 1.391
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
-   "player": "N Dakota St @ North Texas",
-   "pkey": "401925829",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "North Texas Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "North Texas",
-   "opp": "N Dakota St",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/109675731708709",
-   "game_id": "401925829",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "North Texas",
-   "away": "N Dakota St",
-   "dec": 1.408,
-   "american": -245,
-   "game_model": {
-    "game_id": "401925829",
-    "home": "North Texas",
-    "away": "N Dakota St",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 75.8,
-    "proj_away": 66.9,
-    "proj_margin": 8.9,
-    "proj_total": 142.8,
-    "home_win_prob": 0.791,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 1.148,
-    "home_em": 2.9,
-    "away_em": -4.7,
-    "home_t": 67.3,
-    "away_t": 67.5,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.4,
-     "b": 3.05
-    },
-    {
-     "book": "fanduel",
-     "a": 1.408,
-     "b": 3.02
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.391,
-     "b": 3.13
-    }
-   ],
-   "model_prob": 0.791,
-   "model_edge": 10.9,
-   "model_edge_txt": "+10.9%",
-   "cheat_side": "home",
-   "pinnacle_line": "North Texas -256 / N Dakota St +213",
-   "fair_prob": 0.6923,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.6923,
-    0.7035
-   ],
-   "devig_all": {
-    "multiplicative": 0.6923,
-    "additive": 0.6997,
-    "power": 0.7035
-   },
-   "ev_pct": -2.52,
-   "min_ev": 1.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.18,
-   "trusted_prob": 0.6959,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -3.5,
-   "pinn_dec": 1.391
+   "second_ev": -1.5,
+   "pinn_dec": 4.0
   },
   {
    "kind": "spread",
@@ -1785,93 +1158,6 @@
   {
    "kind": "ml",
    "week": "2026-11-27",
-   "player": "Texas Tech @ San Diego St",
-   "pkey": "401920535",
-   "stat": "ml",
-   "stat_label": "Moneyline",
-   "title": "San Diego St Moneyline",
-   "line": null,
-   "side": "home",
-   "team": "San Diego St",
-   "opp": "Texas Tech",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/177454590760686",
-   "game_id": "401920535",
-   "kickoff": "2026-11-27T23:30:00-05:00",
-   "home": "San Diego St",
-   "away": "Texas Tech",
-   "dec": 4.0,
-   "american": 300,
-   "game_model": {
-    "game_id": "401920535",
-    "home": "San Diego St",
-    "away": "Texas Tech",
-    "kickoff": "2026-11-27T23:30:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 70.0,
-    "proj_away": 74.3,
-    "proj_margin": -4.4,
-    "proj_total": 144.3,
-    "home_win_prob": 0.346,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.563,
-    "home_em": 15.4,
-    "away_em": 24.8,
-    "home_t": 69.6,
-    "away_t": 67.7,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 4.0,
-     "b": 1.263
-    },
-    {
-     "book": "fanduel",
-     "a": 3.8,
-     "b": 1.278
-    },
-    {
-     "book": "pinnacle",
-     "a": 4.01,
-     "b": 1.267
-    }
-   ],
-   "model_prob": 0.346,
-   "model_edge": 10.6,
-   "model_edge_txt": "+10.6%",
-   "cheat_side": "home",
-   "pinnacle_line": "San Diego St +301 / Texas Tech -375",
-   "fair_prob": 0.2247,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.2247,
-    0.2401
-   ],
-   "devig_all": {
-    "multiplicative": 0.2401,
-    "additive": 0.2301,
-    "power": 0.2247
-   },
-   "ev_pct": -10.14,
-   "min_ev": 7.0,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -3.38,
-   "trusted_prob": 0.2297,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -6.34,
-   "pinn_dec": 4.01
-  },
-  {
-   "kind": "ml",
-   "week": "2026-11-27",
    "player": "Jax State @ Omaha",
    "pkey": "401926783",
    "stat": "ml",
@@ -1923,126 +1209,38 @@
     },
     {
      "book": "pinnacle",
-     "a": 2.98,
-     "b": 1.422
+     "a": 2.95,
+     "b": 1.431
     }
    ],
    "model_prob": 0.755,
    "model_edge": 10.17,
    "model_edge_txt": "+10.2%",
    "cheat_side": "away",
-   "pinnacle_line": "Omaha +198 / Jax State -237",
-   "fair_prob": 0.677,
+   "pinnacle_line": "Omaha +195 / Jax State -232",
+   "fair_prob": 0.6734,
    "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.677,
-    0.6874
+    0.6734,
+    0.6833
    ],
    "devig_all": {
-    "multiplicative": 0.677,
-    "additive": 0.6838,
-    "power": 0.6874
+    "multiplicative": 0.6734,
+    "additive": 0.6799,
+    "power": 0.6833
    },
-   "ev_pct": -0.82,
+   "ev_pct": -1.35,
    "min_ev": 1.0,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -1.77,
-   "trusted_prob": 0.6781,
+   "kelly_pct": -2.91,
+   "trusted_prob": 0.6752,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
    "second_ev": -1.1,
-   "pinn_dec": 1.422
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Missouri St @ Oral Roberts",
-   "pkey": "401928624",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Missouri St +4.5",
-   "line": -4.5,
-   "side": "away",
-   "team": "Missouri St",
-   "opp": "Oral Roberts",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/119385240917129",
-   "game_id": "401928624",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "Oral Roberts",
-   "away": "Missouri St",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401928624",
-    "home": "Oral Roberts",
-    "away": "Missouri St",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": false,
-    "non_d1": null,
-    "proj_home": 71.7,
-    "proj_away": 73.3,
-    "proj_margin": -1.6,
-    "proj_total": 145.1,
-    "home_win_prob": 0.443,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -0.59,
-    "home_em": -4.9,
-    "away_em": -6.3,
-    "home_t": 69.3,
-    "away_t": 67.3,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "draftkings",
-     "a": 1.943,
-     "b": 1.877
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.971,
-     "b": 1.877
-    }
-   ],
-   "model_prob": 0.71,
-   "model_edge": 6.1,
-   "model_edge_txt": "+6.1 pts \u00b7 STRONG",
-   "cheat_side": "away",
-   "cbb_tier": "STRONG",
-   "pinnacle_line": "Oral Roberts -4.5 -103 / Missouri St +4.5 -114",
-   "fair_prob": 0.5122,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5122,
-    0.5129
-   ],
-   "devig_all": {
-    "multiplicative": 0.5122,
-    "additive": 0.5127,
-    "power": 0.5129
-   },
-   "ev_pct": -2.22,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.44,
-   "trusted_prob": 0.5145,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.9,
-   "pinn_dec": 1.877
+   "pinn_dec": 1.431
   },
   {
    "kind": "spread",
@@ -2221,59 +1419,6 @@
    "pinn_dec": 2.03
   },
   {
-   "kind": "total",
-   "week": "2026-11-27",
-   "player": "Pacific @ UC Davis",
-   "pkey": "401911524",
-   "stat": "total",
-   "stat_label": "Total",
-   "title": "Over 135.5",
-   "line": 135.5,
-   "side": "over",
-   "team": null,
-   "opp": null,
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/190163123203028",
-   "game_id": "401911524",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "UC Davis",
-   "away": "Pacific",
-   "dec": 1.87,
-   "american": -115,
-   "game_model": {
-    "game_id": "401911524",
-    "home": "UC Davis",
-    "away": "Pacific",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 64.7,
-    "proj_away": 76.1,
-    "proj_margin": -11.4,
-    "proj_total": 140.8,
-    "home_win_prob": 0.151,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.463,
-    "home_em": -5.0,
-    "away_em": 2.6,
-    "home_t": 70.6,
-    "away_t": 67.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "fanduel",
-     "a": 1.87,
-     "b": 1.952
-    }
-   ],
-   "model_prob": 0.638,
-   "model_edge": 5.3,
-   "model_edge_txt": "+5.3 pts",
-   "cheat_side": "over"
-  },
-  {
    "kind": "ml",
    "week": "2026-11-27",
    "player": "Creighton @ Gonzaga",
@@ -2359,94 +1504,6 @@
    "tier": "single",
    "second_ev": -2.03,
    "pinn_dec": 1.365
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
-   "player": "Pacific @ UC Davis",
-   "pkey": "401911524",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "Pacific -6.5",
-   "line": 6.5,
-   "side": "away",
-   "team": "Pacific",
-   "opp": "UC Davis",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/192574906709591",
-   "game_id": "401911524",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "UC Davis",
-   "away": "Pacific",
-   "dec": 1.909,
-   "american": -110,
-   "game_model": {
-    "game_id": "401911524",
-    "home": "UC Davis",
-    "away": "Pacific",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 64.7,
-    "proj_away": 76.1,
-    "proj_margin": -11.4,
-    "proj_total": 140.8,
-    "home_win_prob": 0.151,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": -1.463,
-    "home_em": -5.0,
-    "away_em": 2.6,
-    "home_t": 70.6,
-    "away_t": 67.1,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.909,
-     "b": 1.909
-    },
-    {
-     "book": "fanduel",
-     "a": 1.943,
-     "b": 1.877
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.893,
-     "b": 1.962
-    }
-   ],
-   "model_prob": 0.672,
-   "model_edge": 4.9,
-   "model_edge_txt": "+4.9 pts \u00b7 GOOD",
-   "cheat_side": "away",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "UC Davis +6.5 -112 / Pacific -6.5 -104",
-   "fair_prob": 0.4905,
-   "fair_method": "power",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.4905,
-    0.4911
-   ],
-   "devig_all": {
-    "multiplicative": 0.4911,
-    "additive": 0.4907,
-    "power": 0.4905
-   },
-   "ev_pct": -6.36,
-   "min_ev": 1.76,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -6.99,
-   "trusted_prob": 0.4972,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": -2.9,
-   "pinn_dec": 1.962
   },
   {
    "kind": "spread",
@@ -2539,106 +1596,23 @@
   {
    "kind": "spread",
    "week": "2026-11-27",
-   "player": "N Dakota St @ North Texas",
-   "pkey": "401925829",
-   "stat": "spread",
-   "stat_label": "Spread",
-   "title": "North Texas -5.5",
-   "line": -5.5,
-   "side": "home",
-   "team": "North Texas",
-   "opp": "N Dakota St",
-   "book": "draftkings",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/110552141580462",
-   "game_id": "401925829",
-   "kickoff": "2026-11-27T20:00:00-05:00",
-   "home": "North Texas",
-   "away": "N Dakota St",
-   "dec": 1.893,
-   "american": -112,
-   "game_model": {
-    "game_id": "401925829",
-    "home": "North Texas",
-    "away": "N Dakota St",
-    "kickoff": "2026-11-27T20:00:00-05:00",
-    "neutral": true,
-    "non_d1": null,
-    "proj_home": 75.8,
-    "proj_away": 66.9,
-    "proj_margin": 8.9,
-    "proj_total": 142.8,
-    "home_win_prob": 0.791,
-    "model": "FULL",
-    "slope": 7.76,
-    "matchup_x": 1.148,
-    "home_em": 2.9,
-    "away_em": -4.7,
-    "home_t": 67.3,
-    "away_t": 67.5,
-    "league_avg": 108.2
-   },
-   "books": [
-    {
-     "book": "draftkings",
-     "a": 1.893,
-     "b": 1.935
-    },
-    {
-     "book": "pinnacle",
-     "a": 1.855,
-     "b": 1.99
-    }
-   ],
-   "model_prob": 0.621,
-   "model_edge": 3.4,
-   "model_edge_txt": "+3.4 pts \u00b7 GOOD",
-   "cheat_side": "home",
-   "cbb_tier": "GOOD",
-   "pinnacle_line": "North Texas -5.5 -117 / N Dakota St +5.5 -101",
-   "fair_prob": 0.5176,
-   "fair_method": "multiplicative",
-   "fair_source": "Pinnacle",
-   "devig_range": [
-    0.5176,
-    0.5187
-   ],
-   "devig_all": {
-    "multiplicative": 0.5176,
-    "additive": 0.5183,
-    "power": 0.5187
-   },
-   "ev_pct": -2.03,
-   "min_ev": 1.71,
-   "units": 0.0,
-   "base_units": 0.0,
-   "kelly_pct": -2.27,
-   "trusted_prob": 0.5197,
-   "unit_note": null,
-   "edge_trust": 0.8,
-   "tier": "single",
-   "second_ev": null,
-   "pinn_dec": 1.855
-  },
-  {
-   "kind": "spread",
-   "week": "2026-11-27",
    "player": "Jax State @ Omaha",
    "pkey": "401926783",
    "stat": "spread",
    "stat_label": "Spread",
-   "title": "Jax State -5.5",
-   "line": 5.5,
+   "title": "Jax State -4.5",
+   "line": 4.5,
    "side": "away",
    "team": "Jax State",
    "opp": "Omaha",
-   "book": "fanduel",
-   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/242879094950855",
+   "book": "draftkings",
+   "deep_link": "https://api.sharpapi.io/api/v1/deeplink/118309553696557",
    "game_id": "401926783",
    "kickoff": "2026-11-27T22:30:00-05:00",
    "home": "Omaha",
    "away": "Jax State",
-   "dec": 1.943,
-   "american": -106,
+   "dec": 1.84,
+   "american": -119,
    "game_model": {
     "game_id": "401926783",
     "home": "Omaha",
@@ -2663,55 +1637,50 @@
    "books": [
     {
      "book": "draftkings",
-     "a": 1.885,
-     "b": 1.935
-    },
-    {
-     "book": "fanduel",
-     "a": 1.877,
-     "b": 1.943
+     "a": 1.98,
+     "b": 1.84
     },
     {
      "book": "pinnacle",
-     "a": 1.855,
-     "b": 2.0
+     "a": 2.03,
+     "b": 1.82
     }
    ],
-   "model_prob": 0.576,
-   "model_edge": 2.1,
-   "model_edge_txt": "+2.1 pts \u00b7 LEAN",
+   "model_prob": 0.611,
+   "model_edge": 3.1,
+   "model_edge_txt": "+3.1 pts \u00b7 GOOD",
    "cheat_side": "away",
-   "cbb_tier": "LEAN",
-   "pinnacle_line": "Omaha +5.5 -117 / Jax State -5.5 100",
-   "fair_prob": 0.4801,
-   "fair_method": "power",
+   "cbb_tier": "GOOD",
+   "pinnacle_line": "Omaha +4.5 103 / Jax State -4.5 -122",
+   "fair_prob": 0.5273,
+   "fair_method": "multiplicative",
    "fair_source": "Pinnacle",
    "devig_range": [
-    0.4801,
-    0.4812
+    0.5273,
+    0.529
    ],
    "devig_all": {
-    "multiplicative": 0.4812,
-    "additive": 0.4805,
-    "power": 0.4801
+    "multiplicative": 0.5273,
+    "additive": 0.5284,
+    "power": 0.529
    },
-   "ev_pct": -6.72,
-   "min_ev": 1.87,
+   "ev_pct": -2.98,
+   "min_ev": 1.55,
    "units": 0.0,
    "base_units": 0.0,
-   "kelly_pct": -7.12,
-   "trusted_prob": 0.487,
+   "kelly_pct": -3.55,
+   "trusted_prob": 0.5305,
    "unit_note": null,
    "edge_trust": 0.8,
    "tier": "single",
-   "second_ev": -4.21,
-   "pinn_dec": 2.0
+   "second_ev": null,
+   "pinn_dec": 1.82
   }
  ],
  "matchups": [],
  "slate_units": {
-  "ev": 0.5,
+  "ev": 0,
   "combined": 0
  },
- "odds_as_of": "2026-11-27T19:56:00-05:00"
+ "odds_as_of": "2026-11-27T20:07:17-05:00"
 }
